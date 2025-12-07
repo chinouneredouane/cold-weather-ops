@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Final Video — Domestic Airlines Cold Weather Ops</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body >
+  <header class="topbar">
+    <div class="brand">
+      <img src="assets/logo.png" alt="Domestic Airlines Logo" class="logo" />
+      <div class="brand-text">
+        <div class="ar">الخطوط الجوية الداخلية</div>
+        <div class="en">DOMESTIC AIRLINES — Cold Weather Operations</div>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="finale.html">Final Video</a>
+    </nav>
+  </header>
+  <div class="progress"><div id="progressBar"></div></div>
+  <section class="content">
+    <h1>Closure Video</h1>
+    <p>Place your closing video file at <code>assets/finale.mp4</code>. The player below will use it automatically.</p>
+    <div class="video-wrap">
+      <video id="finaleVideo" controls playsinline>
+        <source src="assets/finale.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div id="videoPlaceholder" class="placeholder">
+        <p>No video file found. Add <code>assets/finale.mp4</code> to enable playback.</p>
+      </div>
+    </div>
+    <div class="nav-buttons">
+      <a class="btn" href="index.html">Back to Home</a>
+      <a class="btn" href="quiz.html">Go to Quiz</a>
+    </div>
+  </section>
+  <script>
+    const v = document.getElementById('finaleVideo');
+    v.addEventListener('error', () => document.getElementById('videoPlaceholder').style.display='block');
+    v.addEventListener('loadeddata', () => document.getElementById('videoPlaceholder').style.display='none');
+  </script>
+
+  <footer class="bottombar">
+    <img src="assets/logo.png" alt="Domestic Airlines Logo" class="logo small" />
+    <div class="copy">&copy; Domestic Airlines — Training</div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

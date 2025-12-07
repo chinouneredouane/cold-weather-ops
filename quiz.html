@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Course Quiz — Domestic Airlines Cold Weather Ops</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header class="topbar">
+        <div class="brand">
+            <img src="assets/logo.png" alt="Domestic Airlines Logo" class="logo" />
+            <div class="brand-text">
+                <div class="ar">الخطوط الجوية الداخلية</div>
+                <div class="en">DOMESTIC AIRLINES — Cold Weather Operations</div>
+            </div>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="finale.html">Final Video</a>
+        </nav>
+    </header>
+
+    <div class="progress"><div id="progressBar"></div></div>
+
+    <main class="content quiz">
+        <h1>Final Quiz</h1>
+        <p>20 questions will be drawn at random from a bank of 50. You need 80% to pass.</p>
+
+        <form id="quizForm"></form>
+
+        <div class="nav-buttons">
+            <button class="btn primary" id="submitQuiz">Submit Quiz</button>
+            <button class="btn" id="retryQuiz" style="display:none">Retry</button>
+            <a class="btn" href="finale.html" id="toVideo" style="display:none">Proceed to Final Video ▶</a>
+        </div>
+
+        <div id="quizResult" class="result" aria-live="polite"></div>
+    </main>
+
+    <footer class="bottombar">
+        <img src="assets/logo.png" alt="Domestic Airlines Logo" class="logo small" />
+        <div class="copy">&copy; Domestic Airlines — Training</div>
+    </footer>
+
+    <!-- Load main JS first -->
+    <script src="js/main.js"></script>
+
+    <!-- ⭐ REQUIRED: Load quiz.js (your quiz engine) -->
+    <script src="js/quiz.js"></script>
+</body>
+</html>
