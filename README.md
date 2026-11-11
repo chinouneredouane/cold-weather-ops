@@ -52,7 +52,7 @@ The build also validates the content. It checks that every lesson belongs to a m
 
 ## Narration and video
 
-- **Narration:** every lesson has a *Listen* button that reads the lesson aloud with the browser's voice. To use a recorded voice instead, put `lesson-01.mp3` … in `courses/<slug>/media/audio/`; the player switches to the recording automatically. Recording scripts are in `courses/<slug>/narration/`.
+- **Narration:** every lesson has a recorded MP3 in `courses/<slug>/media/audio/`, generated with the open-source Kokoro neural voice by `tools/make_audio.py` (the setup steps are at the top of that file). The lesson page shows an audio player when its MP3 exists. If the MP3 is missing, the page offers a *Listen* button that uses the device's own voice instead; on iPhone that voice is silent while the phone is in Silent mode. To use a human voice-over, record from the scripts in `courses/<slug>/narration/` and replace the MP3 files. **After changing a lesson's text, regenerate its MP3:** `--lessons 5` regenerates lesson 5 only.
 - **Closing video:** put `finale.mp4` in `courses/<slug>/media/video/`.
 
 ## Progress and certificates

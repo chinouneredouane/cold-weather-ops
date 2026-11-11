@@ -170,22 +170,35 @@
         return;
       }
       if (ttsBtn) ttsBtn.style.display = '';
-      if (status) status.textContent = 'Narration uses your browser voice. Press “Listen” to hear this lesson.';
+      var ios = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+      if (status) status.textContent = 'Narration uses your device voice. Press “Listen” to hear this lesson.' +
+        (ios ? ' On iPhone/iPad, turn off Silent mode and raise the volume.' : '');
+    }
+    function useRecording() {
+      audio.style.display = '';
+      if (ttsBtn) ttsBtn.style.display = 'none';
+      if (stopBtn) stopBtn.style.display = 'none';
+      if (status) status.textContent = 'Recorded narration for this lesson — press play.';
     }
 
     if (audio) {
-      var settled = false;
-      audio.addEventListener('loadedmetadata', function () {
-        settled = true;
-        audio.style.display = '';
-        if (ttsBtn) ttsBtn.style.display = 'none';
-        if (stopBtn) stopBtn.style.display = 'none';
-        if (status) status.textContent = 'Recorded narration for this lesson.';
-      });
-      audio.addEventListener('error', function () { settled = true; useTTS(); }, true);
+      // Check that the MP3 exists with a lightweight request. Media events are not
+      // reliable here: iOS does not load audio until the user presses play.
       var src = audio.querySelector('source');
-      if (src) src.addEventListener('error', function () { settled = true; useTTS(); });
-      setTimeout(function () { if (!settled && audio.readyState === 0) useTTS(); }, 2500);
+      var url = src ? src.getAttribute('src') : '';
+      var decided = false;
+      function decide(hasFile) { if (decided) return; decided = true; hasFile ? useRecording() : useTTS(); }
+      if (url && window.fetch && /^https?:/.test(location.protocol)) {
+        fetch(url, { method: 'HEAD', cache: 'no-cache' })
+          .then(function (r) { decide(r.ok && !/text\/html/.test(r.headers.get('content-type') || '')); })
+          .catch(function () { decide(false); });
+      } else {
+        // Opened from disk (file://): fall back to media events
+        audio.addEventListener('loadedmetadata', function () { decide(true); });
+        if (src) src.addEventListener('error', function () { decide(false); });
+        setTimeout(function () { decide(audio.readyState > 0); }, 2500);
+      }
+      audio.addEventListener('error', function () { if (!decided) decide(false); }, true);
     } else {
       useTTS();
     }
@@ -218,27 +231,39 @@
       return out;
     }
 
-    if (ttsBtn) ttsBtn.addEventListener('click', function () {
-      if (synth.speaking && synth.paused) { synth.resume(); ttsBtn.textContent = 'Pause'; return; }
-      if (synth.speaking) { synth.pause(); ttsBtn.textContent = 'Resume'; return; }
+    // Speak one passage at a time (queuing many utterances is unreliable on iOS and Chrome).
+    var queue = [], idx = 0, playing = false, paused = false;
+    if (synth && synth.addEventListener) synth.addEventListener('voiceschanged', function () {});
+    function finish() {
+      playing = false; paused = false; idx = 0;
+      if (ttsBtn) ttsBtn.textContent = 'Listen';
+      if (stopBtn) stopBtn.style.display = 'none';
+    }
+    function speakNext() {
+      if (!playing) return;
+      if (idx >= queue.length) { finish(); return; }
+      var u = new SpeechSynthesisUtterance(queue[idx]);
       var voice = pickVoice();
-      var pieces = chunk(narrationText());
-      pieces.forEach(function (p, i) {
-        var u = new SpeechSynthesisUtterance(p);
-        if (voice) u.voice = voice;
-        u.lang = voice ? voice.lang : 'en-GB';
-        u.rate = 0.98;
-        if (i === pieces.length - 1) u.onend = function () { ttsBtn.textContent = 'Listen'; if (stopBtn) stopBtn.style.display = 'none'; };
-        synth.speak(u);
-      });
+      if (voice) u.voice = voice;
+      u.lang = voice ? voice.lang : 'en-US';
+      u.rate = 0.98;
+      u.onend = function () { if (playing && !paused) { idx++; speakNext(); } };
+      u.onerror = function (e) { if (e && e.error !== 'interrupted' && e.error !== 'canceled') { idx++; speakNext(); } };
+      synth.speak(u);
+    }
+
+    if (ttsBtn) ttsBtn.addEventListener('click', function () {
+      if (playing && !paused) {           // pause: cancel and remember position (pause() is unreliable on iOS)
+        paused = true; synth.cancel(); ttsBtn.textContent = 'Resume'; return;
+      }
+      if (playing && paused) { paused = false; ttsBtn.textContent = 'Pause'; speakNext(); return; }
+      synth.cancel();
+      queue = chunk(narrationText()); idx = 0; playing = true; paused = false;
       ttsBtn.textContent = 'Pause';
       if (stopBtn) stopBtn.style.display = '';
+      speakNext();
     });
-    if (stopBtn) stopBtn.addEventListener('click', function () {
-      synth.cancel();
-      if (ttsBtn) ttsBtn.textContent = 'Listen';
-      stopBtn.style.display = 'none';
-    });
+    if (stopBtn) stopBtn.addEventListener('click', function () { playing = false; synth.cancel(); finish(); });
     window.addEventListener('pagehide', function () { if (synth) synth.cancel(); });
   }
 

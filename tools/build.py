@@ -291,6 +291,9 @@ def build_lesson(course, n):
     next_btn = (f'<a class="btn primary" id="nextLesson" href="{lesson_file(n+1)}">Next ▶<small>{esc(course["lessons"][n]["title"])}</small></a>'
                 if n < total else '<a class="btn primary" id="nextLesson" href="../quiz.html">Take the Final Quiz ▶</a>')
     audio_src = f"../media/audio/lesson-{n:02d}.mp3"
+    img = course.get("images", {}).get(n)
+    picture = (f'<figure class="lesson-figure"><img src="../media/images/lesson-{n:02d}.jpg" alt="{esc(img[1])}" loading="lazy" decoding="async">'
+               f'<figcaption>{esc(img[2])}</figcaption></figure>') if img else ""
 
     main = f"""
     <div class="lesson-layout">
@@ -317,6 +320,7 @@ def build_lesson(course, n):
             <h2>Learning objectives</h2>
             <ul>{objectives}</ul>
           </section>
+          {picture}
           <div data-narrate>
 {L['body']}
           </div>
@@ -388,18 +392,49 @@ def build_quiz(course):
 
 
 def build_finale(course):
-    main = f"""
+    yt = course.get("finale_youtube")  # YouTube video ID: embed instead of hosting a copy
+    if yt:
+        main = f"""
     <section class="content">
       <div class="eyebrow">{esc(course['title'])}</div>
       <h1>Closing Video</h1>
       <p>Thank you for completing the {esc(course['title'])} course. Fly safe this winter.</p>
       <div class="video-wrap">
-        <video id="finaleVideo" controls playsinline preload="metadata">
+        <iframe src="https://www.youtube-nocookie.com/embed/{esc(yt)}?rel=0" title="Closing video" style="width:100%;height:100%;border:0"
+          allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <p class="muted" style="text-align:center;font-size:13.5px">Video embedded from YouTube; all rights belong to its creator.</p>
+      <div class="btn-row" style="justify-content:center;margin-top:20px">
+        <a class="btn" href="index.html">Back to course home</a>
+        <a class="btn" href="quiz.html">Go to quiz</a>
+        <a class="btn primary" href="certificate.html">Certificate</a>
+      </div>
+    </section>"""
+        out = page(title=f"Closing Video — {course['title']}", description=f"Closing video for {course['title']}.",
+                   root="../../", course=dict(course, _base=""), active="finale", body_attrs=course_attrs(course),
+                   main=main, scripts=["../../assets/js/course.js"])
+        write(f"courses/{course['slug']}/finale.html", out)
+        return
+    main = f"""
+    <section class="content">
+      <div class="eyebrow">{esc(course['title'])}</div>
+      <h1>Closing Case Study: Air Ontario Flight 1363</h1>
+      <p>Thank you for completing the {esc(course['title'])} course. This closing video revisits the 1989 Dryden accident step by step, links each link in the accident chain to the lessons you have studied, and ends with three questions to discuss with your crew or instructor. Duration: about 6 minutes.</p>
+      <div class="video-wrap">
+        <video id="finaleVideo" controls playsinline preload="metadata" poster="media/video/finale-poster.jpg">
           <source src="media/video/finale.mp4" type="video/mp4">
         </video>
         <div id="videoPlaceholder" class="placeholder">
           <div><p><strong>The closing video is not available yet.</strong></p><p>Add the file <code>media/video/finale.mp4</code> to this course folder to enable playback.</p></div>
         </div>
+      </div>
+      <div class="card panel" style="margin-top:20px">
+        <h2 style="margin-top:0;font-size:19px">Further reading</h2>
+        <ul>
+          <li><a href="https://www.faa.gov/lessons_learned/transport_airplane/accidents/C-FONF" target="_blank" rel="noopener">FAA Lessons Learned — Air Ontario Flight 1363 (C-FONF)</a></li>
+          <li><a href="https://publications.gc.ca/site/eng/9.896149/publication.html" target="_blank" rel="noopener">Government of Canada — Final response to the Commission of Inquiry into the Air Ontario Crash at Dryden</a></li>
+          <li><a href="https://aircrafticing.grc.nasa.gov/2_5_2_1.html" target="_blank" rel="noopener">NASA — A Pilot's Guide to Ground Icing (interactive course)</a></li>
+        </ul>
       </div>
       <div class="btn-row" style="justify-content:center;margin-top:20px">
         <a class="btn" href="index.html">Back to course home</a>
@@ -494,7 +529,7 @@ def build_media_readme(course):
 ## Lesson narration (optional)
 Put one MP3 per lesson in `audio/`, named `lesson-01.mp3` … `lesson-{len(course['lessons']):02d}.mp3`.
 When a file is present, the lesson page plays it. Otherwise the page reads the lesson aloud with the browser's text-to-speech voice.
-Scripts for recording are in `../narration/`.
+Scripts for recording are in `../narration/`. To regenerate the neural-voice MP3s, use `tools/make_audio.py`.
 
 ## Closing video (optional)
 Put the closing video at `video/finale.mp4` (H.264/AAC MP4 recommended, ideally under 50 MB).

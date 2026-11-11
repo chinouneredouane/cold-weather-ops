@@ -160,6 +160,8 @@ th{background:var(--green-tint);color:var(--ink);font-weight:700;white-space:now
 tr:last-child td{border-bottom:0}
 td.code{font-weight:800;font-size:18px;text-align:center;width:60px}
 figure{margin:22px 0}
+.lesson-figure{margin:0 0 26px}
+.lesson-figure img{display:block;width:100%;max-height:520px;object-fit:contain;background:var(--green-tint);border:1px solid var(--line);border-radius:var(--radius-sm)}
 figure svg{width:100%;height:auto;display:block}
 figcaption{font-size:14px;color:var(--muted);margin-top:8px}
 .diagram{background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);padding:12px}

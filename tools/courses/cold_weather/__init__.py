@@ -3,6 +3,7 @@ from .lessons_a import LESSONS_A
 from .lessons_b import LESSONS_B
 from .lessons_c import LESSONS_C
 from .questions import QUESTIONS
+from .images import IMAGES
 
 COURSE = dict(
     slug="cold-weather-operations",
@@ -15,6 +16,7 @@ COURSE = dict(
             "performance on contaminated runways.",
     audience="Flight crew (primary). Also suitable for cabin crew, flight dispatchers and ground operations staff.",
     icon="snow",
+    finale_youtube="",  # e.g. "dQw4w9WgXcQ" — the ID from a YouTube link; leave empty to use media/video/finale.mp4
     quiz_count=20,
     pass_mark=80,
     modules=[
@@ -27,4 +29,5 @@ COURSE = dict(
     ],
     lessons=LESSONS_A + LESSONS_B + LESSONS_C,
     questions=QUESTIONS,
+    images=IMAGES,
 )
