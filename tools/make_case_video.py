@@ -14,8 +14,7 @@ import tempfile
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
-from case_video.dryden import SLIDES  # noqa: E402
-from courses.cold_weather import COURSE  # noqa: E402
+import importlib  # noqa: E402
 
 G, GD, GDEEP, RED, AMBER = "#1d7a3e", "#125a2b", "#0c3d1e", "#c8102e", "#d08a00"
 
@@ -72,11 +71,12 @@ ol.chain.two{{columns:2;column-gap:24px}}ol.chain.two li{{break-inside:avoid;fon
 """
 
 
-def slide_html(s, logo):
-    art = f'<div class="art">{ART[s["art"]]}</div>' if s.get("art") else ""
+def slide_html(s, logo, art_map=None, footer="Cold Weather Operations · Case study"):
+    arts = dict(ART, **(art_map or {}))
+    art = f'<div class="art">{arts[s["art"]]}</div>' if s.get("art") else ""
     return f"""<!doctype html><html><head><meta charset="utf-8"><style>{CSS}</style></head><body>
 <div class="slide {s['kind']}"><div class="snowfx"></div><div class="content">{s['html']}</div>{art}
-<div class="bar"><img src="{logo}" alt=""><span>Cold Weather Operations · Case study</span></div></div></body></html>"""
+<div class="bar"><img src="{logo}" alt=""><span>{footer}</span></div></div></body></html>"""
 
 
 def main():
@@ -84,7 +84,13 @@ def main():
     ap.add_argument("--model", required=True)
     ap.add_argument("--voices", required=True)
     ap.add_argument("--voice", default="af_heart")
+    ap.add_argument("--case", default="dryden", help="module in tools/case_video")
     a = ap.parse_args()
+    case = importlib.import_module(f"case_video.{a.case}")
+    SLIDES = case.SLIDES
+    COURSE = importlib.import_module(f"courses.{getattr(case, 'COURSE', 'cold_weather')}").COURSE
+    footer = getattr(case, "FOOTER", "Cold Weather Operations · Case study")
+    art_map = getattr(case, "ART", {})
 
     import numpy as np
     import soundfile as sf
@@ -98,7 +104,7 @@ def main():
     for i, s in enumerate(SLIDES):
         p = os.path.join(work, f"s{i:02d}.html")
         with open(p, "w", encoding="utf-8") as f:
-            f.write(slide_html(s, logo))
+            f.write(slide_html(s, logo, art_map, footer))
         pages.append(p)
 
     # Screenshots (1920x1080 via device scale 1.5)
@@ -139,7 +145,7 @@ await b.close(); })();""")
     os.makedirs(outdir, exist_ok=True)
     out = os.path.join(outdir, "finale.mp4")
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy",
-                    "-movflags", "+faststart", "-metadata", "title=Case Study — Air Ontario Flight 1363",
+                    "-movflags", "+faststart", "-metadata", f"title={getattr(case, 'TITLE', 'Case study')}",
                     "-metadata", "artist=Domestic Airlines Training", out], check=True)
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", pages[0].replace(".html", ".png"), "-vf", "scale=1280:720",
                     os.path.join(outdir, "finale-poster.jpg")], check=True)

@@ -56,9 +56,12 @@ COURSE = dict(
     quiz_count=20,
     pass_mark=80,
     finale=dict(
-        title="Closing Video",
-        intro="Thank you for completing the Upset Prevention and Recovery course.",
+        title="Closing Case Study: Air France Flight 447",
+        intro="Thank you for completing the Upset Prevention and Recovery course. This closing video follows the 2009 "
+              "Air France 447 accident minute by minute, using the facts of the official BEA final report, links each step "
+              "to the lessons you have studied, and ends with three questions to discuss with your crew or instructor. Duration: about 7 minutes.",
         further=[
+            ("BEA — Final Report on the accident to Air France flight AF 447 (July 2012)", "https://bea.aero/fileadmin/documents/docspa/2009/f-cp090601.en/pdf/f-cp090601.en.pdf"),
             ("ICAO — Airplane Upset Prevention and Recovery Training Aid (AUPRTA), Revision 3", "https://www.icao.int/safety/LOCI/AUPRTA/index.html"),
             ("SKYbrary — Loss of Control", "https://skybrary.aero/articles/loss-control"),
         ],
