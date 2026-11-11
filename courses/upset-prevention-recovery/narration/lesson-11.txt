@@ -1,0 +1,46 @@
+Domestic Airlines — Upset Prevention and Recovery
+Lesson 11: Weight and Balance Effects
+
+Learning objectives:
+- Explain how weight affects stall speed, performance and buffet margin.
+- Describe the effects of forward and aft centre of gravity on stability and control.
+- Recognise how loading errors can contribute to an upset.
+
+Weight
+
+Stall speed increases with the square root of weight. A heavier aircraft must fly faster for the same margin.
+
+At high altitude, higher weight reduces the buffet margin and the maximum altitude (Lesson 7).
+
+Climb performance and acceleration are lower at high weight — less energy is available in a recovery.
+
+An incorrect weight entered in the FMS produces incorrect speeds, which can erode the stall margin from take-off onwards.
+
+Centre of gravity
+
+Forward CG Aft CG
+
+Longitudinal stability Greater Reduced
+
+Pitch control forces Heavier Lighter — easy to over-control
+
+Stall speed Slightly higher Slightly lower
+
+Elevator authority More needed to rotate and flare Less nose-down authority for stall recovery
+
+Fuel consumption Slightly higher (more tail down-force) Slightly lower
+
+Loading errors
+
+Cargo or passengers loaded differently from the load sheet can move the CG outside the envelope.
+
+Unsecured cargo that shifts during rotation or in turbulence can cause a sudden, large pitch change.
+
+Incorrect trim settings for take-off — from a wrong CG — can cause an early or late rotation and a nose-high or tail-strike situation.
+
+Prevention Check the load sheet and the FMS entries carefully, cross-check weight and CG with the fuel and passenger figures, and be alert to unusual control forces at rotation. If the aircraft does not feel right, say so.
+
+Key takeaways:
+- Higher weight: higher stall speed, lower buffet margin, less excess energy.
+- Aft CG: less stable, lighter forces, less nose-down authority. Forward CG: heavier forces, higher stall speed.
+- Loading and FMS weight errors erode margins before the flight begins.

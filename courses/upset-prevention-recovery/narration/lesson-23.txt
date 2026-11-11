@@ -1,0 +1,42 @@
+Domestic Airlines — Upset Prevention and Recovery
+Lesson 23: Lessons from Accidents
+
+Learning objectives:
+- Describe key loss of control accidents and their causal factors.
+- Link each accident to the prevention and recovery principles of this course.
+- Recognise the common threads in LOC-I accidents.
+
+Case studies
+
+Accident What happened Lesson for us
+
+American Airlines 587 Airbus A300-600, New York, November 2001 After encountering wake turbulence on climb-out, the first officer made repeated full rudder inputs in alternating directions. The loads exceeded the vertical stabiliser's design limits and it separated. 265 people died. Never use alternating rudder inputs. Respect wake separation. V A does not protect against cyclic inputs.
+
+Colgan Air 3407 Bombardier Q400, Buffalo, February 2009 During the approach the speed decayed until the stick shaker activated. The captain responded with nose-up inputs; the stick pusher activated and was overridden. The aircraft stalled and crashed into a house. 50 people died. Monitor speed. Respond to the stall warning by reducing angle of attack. Never fight the stick pusher.
+
+Turkish Airlines 1951 Boeing 737-800, Amsterdam, February 2009 A faulty radio altimeter caused the autothrottle to reduce thrust to idle during the approach. The crew did not notice the speed decay in time. The aircraft stalled at low altitude and crashed short of the runway. 9 people died. Monitor the automation and the FMA. Watch the speed. Apply the stall recovery promptly.
+
+Air France 447 Airbus A330-200, South Atlantic, June 2009 In cruise, ice crystals blocked the pitot probes; airspeed became unreliable, the autopilot disconnected and the flight control law degraded. The pilot flying made sustained nose-up inputs; the aircraft climbed, stalled, and descended in a stall until it hit the ocean. 228 people died. Unreliable airspeed: pitch and power, small inputs. At high altitude, recover by reducing angle of attack. Recognise a stall even in degraded modes.
+
+Gulf Air 072 Airbus A320, Bahrain, August 2000 During a go-around at night over the sea, the aircraft was pitched nose-down and descended into the water. Spatial disorientation (somatogravic illusion) was found to be a likely factor. 143 people died. Go-arounds at night: follow the attitude indicator. Use standard callouts and intervene.
+
+Indonesia AirAsia 8501 Airbus A320, Java Sea, December 2014 Repeated faults in the rudder travel limiter led the crew to reset a flight control computer in flight. The autopilot disengaged, the control law degraded, and the aircraft rolled. The subsequent inputs led to a stall that was not recovered. 162 people died. Do not perform non-procedural resets. Fly the aircraft first after an autopilot disconnect. Recognise and recover from the stall.
+
+The common threads
+
+A trigger — weather, a technical fault, or a distraction.
+
+Monitoring failures — speed, automation modes or attitude were not watched closely enough.
+
+Startle and surprise — the situation did not match the crew's expectations.
+
+Inappropriate reaction — pulling back, chasing false indications, or using the wrong control.
+
+No recovery — the stall was not recognised, or the recovery was incomplete.
+
+Each of these steps could have been interrupted by the principles in this course: monitoring, callouts, pitch and power, angle of attack awareness and the recovery templates.
+
+Key takeaways:
+- LOC-I accidents follow a pattern: trigger → monitoring failure → startle → wrong reaction → no recovery.
+- Every link can be broken by monitoring, callouts, pitch and power, and correct recovery technique.
+- Reduce angle of attack in any stall — at any altitude, with any automation state.

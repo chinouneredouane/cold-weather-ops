@@ -1,0 +1,59 @@
+Domestic Airlines — Upset Prevention and Recovery
+Lesson 5: The Stall
+
+Learning objectives:
+- Describe the aerodynamic characteristics of an approach to stall and a full stall.
+- Identify stall warning systems and natural stall cues.
+- Explain the factors that change stall speed and stall behaviour.
+
+Approach to stall and full stall
+
+Approach to stall (impending stall) — the angle of attack is approaching the critical value. Indications: stall warning (stick shaker, aural warning), low-speed indications, and possibly the onset of buffet.
+
+Full stall — the critical angle of attack has been exceeded. Indications may include buffet (sometimes heavy), an uncommanded nose-down pitch or roll, inability to arrest a descent, loss of pitch authority, and stick pusher activation on aircraft that have one.
+
+Both require the same immediate action: reduce the angle of attack .
+
+Stall warning and protection systems
+
+Stall warning (stick shaker, aural alert) activates with a margin before the stall — on transport aeroplanes, at a speed and angle of attack set by certification requirements.
+
+Stick pusher (some types) pushes the control column forward to prevent the aircraft from reaching an aerodynamic stall. Do not fight it.
+
+Envelope protection (fly-by-wire types in normal law) limits angle of attack — but protections can be lost when the control law degrades, for example with unreliable air data.
+
+Stall warning is scheduled for a clean wing . With ice or contamination, the stall may occur before the warning.
+
+What changes the stall speed
+
+Factor Effect on stall speed
+
+Higher weight Increases (stall speed is proportional to √weight)
+
+Higher load factor (turns, pull-ups) Increases with √n — about 41 % higher at 2 g (Lesson 6)
+
+Flaps and slats extended Decreases (higher CLmax)
+
+Ice or contamination Increases, and the critical angle of attack decreases
+
+Forward centre of gravity Increases slightly (more tail down-force needed)
+
+Higher altitude Indicated stall speed changes little at low altitude, but Mach effects raise it at high altitude (Lesson 7)
+
+Stall behaviour
+
+Swept wings tend to stall at the tips first, which can cause roll-off and a nose-up pitching tendency. Design features (washout, vortex generators, fences) reduce this.
+
+Aircraft with T-tails may be susceptible to a deep stall , which is why they are often fitted with stick pushers.
+
+Power effects: on aircraft with underwing engines, high thrust gives a nose-up pitching moment (Lesson 10) which can work against stall recovery.
+
+Simulators may not reproduce full-stall behaviour accurately outside their validated envelope (Lesson 24).
+
+Remember Pulling back to "hold altitude" when the stall warning activates increases the angle of attack — the opposite of what is needed. Altitude loss is secondary; reducing the angle of attack is the priority .
+
+Key takeaways:
+- Approach to stall and full stall both require an immediate reduction in angle of attack.
+- Stall warning is scheduled for a clean wing — ice can cause a stall without warning.
+- Weight, load factor, configuration and contamination change the stall speed.
+- Do not fight a stick pusher.

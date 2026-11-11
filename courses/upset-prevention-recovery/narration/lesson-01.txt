@@ -1,0 +1,56 @@
+Domestic Airlines — Upset Prevention and Recovery
+Lesson 1: Course Orientation and the UPRT Framework
+
+Learning objectives:
+- Describe the purpose, structure and assessment of this course.
+- Identify the ICAO provisions and guidance that define upset prevention and recovery training (UPRT).
+- Explain the three components of UPRT: academic, simulator (FSTD) and on-aeroplane training.
+
+Why this course exists
+
+Loss of control in flight (LOC-I) has been the largest single cause of fatalities in commercial air transport for many years. LOC-I accidents are rare, but most of them are not survivable. Investigations repeatedly found that crews met an unusual situation they had never practised, and they either did not recognise it in time or did not apply an effective recovery.
+
+The aim of UPRT is first to prevent upsets — through knowledge, awareness and good flight path management — and then to make sure that pilots can recognise and recover from one if it happens. Prevention always comes first.
+
+The international framework
+
+Document Content
+
+ICAO Annex 1 — Personnel Licensing UPRT requirements in pilot licence training, including the multi-crew pilot licence (MPL)
+
+ICAO Annex 6, Part I — Operation of Aircraft UPRT within operators' flight crew training programmes
+
+PANS-TRG (ICAO Doc 9868) Procedures for training, including UPRT in licence and type rating training
+
+ICAO Doc 10011 — Manual on Aeroplane Upset Prevention and Recovery Training The guidance on which this course is based: definitions, academic training elements, FSTD and on-aeroplane training
+
+Airplane Upset Prevention and Recovery Training Aid (AUPRTA), Revision 3 Industry guidance by the major manufacturers with ICAO, including recovery techniques
+
+National authorities, such as EASA and the FAA, have turned these provisions into licensing and operator requirements. The Domestic Airlines Operations Manual and the aircraft manufacturer's procedures (FCOM, QRH, FCTM) apply them to our fleet.
+
+The three components of UPRT
+
+Academic training — the knowledge behind prevention and recovery: aerodynamics, causes of upsets, human factors and recovery principles. This course covers the academic component.
+
+FSTD (simulator) training — practice of prevention and recovery in the aircraft type, within the validated training envelope of the simulator.
+
+On-aeroplane training — training in a suitable aeroplane, usually during licence training, which gives the real physiological sensations of g and unusual attitudes.
+
+How to use this course
+
+24 lessons in 7 modules, about 3 hours in total. A lesson is marked complete when you reach its end or press Next .
+
+Each lesson has narration, a picture, diagrams, key takeaways and a practice knowledge check.
+
+The final quiz draws 20 questions from the question bank. The pass mark is 80 %.
+
+Your progress is saved in this browser on this device.
+
+Important
+Recovery techniques in this course are generic principles from ICAO and industry guidance. Always use the procedures of the aircraft manufacturer (FCOM, QRH and FCTM) for your type. Where they differ from this course, the manufacturer's procedures take precedence.
+
+Key takeaways:
+- LOC-I is the leading cause of fatalities in commercial air transport; prevention comes first.
+- ICAO Doc 10011 defines UPRT; Annex 1, Annex 6 and PANS-TRG require it.
+- UPRT has three parts: academic, FSTD and on-aeroplane. This course is the academic part.
+- Manufacturer procedures always take precedence over generic recovery techniques.

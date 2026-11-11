@@ -1,0 +1,118 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Lesson 04: Lift, Angle of Attack and Flight Path — Upset Prevention and Recovery</title>
+<style>
+@page{size:A4;margin:18mm 16mm 20mm}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#24342b;font-size:10.5pt;line-height:1.5;margin:0}
+h1,h2,h3{color:#14231b;line-height:1.25;break-after:avoid}
+h1{font-size:21pt;margin:0 0 6pt}h2{font-size:14pt;margin:16pt 0 6pt}h3{font-size:12pt;margin:12pt 0 4pt}
+p{margin:0 0 7pt}ul,ol{margin:0 0 8pt;padding-left:16pt}li{margin:2pt 0}
+a{color:#125a2b;text-decoration:none}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:9pt;background:#f3f9f5;border:1px solid #dbe5df;padding:0 3pt;border-radius:3pt}
+.cover{height:257mm;display:flex;flex-direction:column;justify-content:center;break-after:page;
+  background:linear-gradient(120deg,#0c3d1e,#125a2b 55%,#2a8a50);color:#fff;padding:22mm;border-radius:4mm;margin:0}
+.cover h1{color:#fff;font-size:34pt}.cover .k{letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#bfe3cb;font-size:10pt}
+.cover p{color:#e3f1e8;font-size:13pt}.cover .logo{background:#fff;padding:5mm 7mm;border-radius:3mm;display:inline-block;margin-bottom:14mm}
+.cover .logo img{height:16mm}.cover .meta{margin-top:12mm;font-size:10.5pt;color:#d3ebdb}
+.toc{break-after:page}.toc h2{margin-top:0}.toc ol{list-style:none;padding:0}
+.toc li{display:flex;gap:8pt;padding:3pt 0;border-bottom:1px dotted #c9d8cf}.toc .n{width:22pt;font-weight:700;color:#5b6b62}
+.toc .mod{margin-top:9pt;font-weight:800;color:#125a2b;border:0;text-transform:uppercase;font-size:9pt;letter-spacing:.06em}
+.lesson{break-before:page}
+.lesson-head{background:linear-gradient(120deg,#0c3d1e,#1d7a3e);color:#fff;border-radius:3mm;padding:9pt 13pt;margin-bottom:10pt}
+.lesson-head h1{color:#fff;font-size:17pt;margin:2pt 0}.lesson-head .k{font-size:8.5pt;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#c7e8d2}
+.lesson-head .m{font-size:9pt;color:#dbefe2}
+.objectives{background:#f3f9f5;border:1px solid #dbe5df;border-radius:2mm;padding:7pt 11pt;margin:0 0 10pt}
+.objectives h2,.takeaways h2,.kc h2{font-size:9.5pt;text-transform:uppercase;letter-spacing:.06em;margin:0 0 3pt;color:#125a2b}
+.lesson-figure{margin:0 0 10pt;break-inside:avoid}.lesson-figure img{width:100%;max-height:85mm;object-fit:contain;border:1px solid #dbe5df;border-radius:2mm;background:#f3f9f5}
+figure{margin:9pt 0;break-inside:avoid}figure svg{width:100%;height:auto}figcaption{font-size:8.5pt;color:#5b6b62;margin-top:3pt}
+.diagram{border:1px solid #dbe5df;border-radius:2mm;padding:5pt}
+.table-wrap{margin:8pt 0;border:1px solid #dbe5df;border-radius:2mm;overflow:hidden}
+table{border-collapse:collapse;width:100%;font-size:9pt}th,td{text-align:left;vertical-align:top;padding:4pt 6pt;border-bottom:1px solid #dbe5df}
+th{background:#f3f9f5}tr{break-inside:avoid}td.code{font-weight:800;font-size:12pt;text-align:center;width:34pt}
+.callout{border-left:3pt solid #1d7a3e;background:#f3f9f5;padding:6pt 10pt;margin:8pt 0;border-radius:0 2mm 2mm 0;break-inside:avoid}
+.callout .label{display:block;font-size:8.5pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#125a2b}
+.callout.warn{border-color:#c8102e;background:#fdecef}.callout.warn .label{color:#c8102e}
+.callout.caution{border-color:#d08a00;background:#fff5e0}.callout.caution .label{color:#9a6200}
+.callout.info{border-color:#1f5f99;background:#e9f2fb}.callout.info .label{color:#1f5f99}
+.callout > :last-child{margin-bottom:0}
+.steps{list-style:none;padding:0;counter-reset:s}.steps>li{counter-increment:s;position:relative;padding-left:20pt;margin:4pt 0}
+.steps>li::before{content:counter(s);position:absolute;left:0;top:0;width:14pt;height:14pt;border-radius:50%;background:#1d7a3e;color:#fff;font-weight:800;font-size:8pt;display:flex;align-items:center;justify-content:center}
+.dialog{border:1px solid #dbe5df;border-radius:2mm;padding:4pt 10pt;margin:8pt 0;break-inside:avoid}.dialog p{margin:4pt 0}.dialog b{color:#125a2b}
+.muted{color:#5b6b62}
+.takeaways{background:#0c3d1e;color:#e8f5ec;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}.takeaways h2{color:#fff}
+.kc{border:1.5pt dashed #b9d7c3;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}
+.kc .q{font-weight:700;margin:2pt 0 4pt}.kc ol{list-style:upper-alpha}.kc .a{font-size:9pt;margin-top:4pt;color:#125a2b}
+.disclaimer{font-size:8.5pt;color:#5b6b62;border-top:1px solid #dbe5df;padding-top:6pt;margin-top:14pt}
+</style></head><body>
+<section class="lesson" style="break-before:auto" id="lesson-4">
+  <div class="lesson-head"><div class="k">Module 2 · Aerodynamics</div>
+    <h1>Lesson 04: Lift, Angle of Attack and Flight Path</h1><div class="m">Lesson 4 of 24 · about 9 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Explain the relationship between lift, airspeed, air density and angle of attack.</li><li>Distinguish pitch attitude, flight path angle and angle of attack.</li><li>Explain why angle of attack, not attitude or speed, determines the stall.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-04.jpg" alt="Airliner with smooth airflow lines around it"><figcaption>Lift depends on angle of attack — and the wing stalls at its critical angle.</figcaption></figure>
+  
+<h2>The lift equation</h2>
+<p>Lift depends on four things: <strong>air density</strong>, <strong>true airspeed (squared)</strong>, <strong>wing area</strong> and the <strong>lift coefficient</strong>, which mainly depends on the angle of attack and the wing configuration (flaps and slats).</p>
+<p><code>Lift = ½ × ρ × V² × S × CL</code></p>
+<p>At a given weight, the aircraft needs a certain amount of lift. If the speed decreases, the angle of attack must increase to keep the same lift — until the wing reaches its <strong>critical angle of attack</strong>. Speed and angle of attack are linked, but they are not the same thing.</p>
+
+<h2>Three different angles</h2>
+
+<figure class="diagram">
+<svg viewBox="0 0 860 250" role="img" aria-label="Pitch attitude, flight path angle and angle of attack"><title>Pitch attitude, flight path angle and angle of attack</title><desc>The aircraft pitch attitude equals flight path angle plus angle of attack.</desc>
+<g font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="13" fill="#24342b"><defs><marker id="ar1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="context-stroke"/></marker></defs>
+<line x1="30" y1="210" x2="680" y2="210" stroke="#5b6b62" stroke-dasharray="6 5"/><text x="680" y="230" text-anchor="end" fill="#5b6b62">horizon</text>
+<g transform="rotate(-15 250 210)">
+  <path d="M130 210 Q150 196 250 198 L380 202 Q400 206 380 214 L250 222 Q150 224 130 210z" fill="#e9eef1" stroke="#24342b" stroke-width="2"/>
+  <path d="M150 206 L120 170 L138 170 L182 204z" fill="#e9eef1" stroke="#24342b" stroke-width="2"/>
+</g>
+<line x1="250" y1="210" x2="597.7" y2="116.8" stroke="#1f5f99" stroke-width="2.5"/>
+<line x1="250" y1="210" x2="628.6" y2="176.9" stroke="#1d7a3e" stroke-width="3" marker-end="url(#ar1)"/>
+<path d="M425.0 210.0 A175 175 0 0 0 419.0 164.7" fill="none" stroke="#1f5f99" stroke-width="2.5"/><path d="M390.0 210.0 A140 140 0 0 0 389.5 197.8" fill="none" stroke="#1d7a3e" stroke-width="2.5"/><path d="M477.1 190.1 A228 228 0 0 0 470.2 151.0" fill="none" stroke="#c76a00" stroke-width="4"/>
+<text x="605.7" y="120.8" fill="#1f5f99" font-weight="700">wing chord / pitch attitude</text>
+<text x="636.6" y="181.9" fill="#1d7a3e" font-weight="700">flight path (relative airflow)</text>
+<text x="426.2" y="169.1" fill="#1f5f99" font-weight="800" font-size="15">θ</text>
+<text x="395.9" y="205.9" fill="#1d7a3e" font-weight="800" font-size="15">γ</text>
+<text x="482.5" y="174.4" fill="#c76a00" font-weight="800" font-size="16">α</text>
+<text x="30" y="34" font-size="15" font-weight="700">Pitch attitude = flight path angle + angle of attack (θ = γ + α)</text>
+<text x="30" y="56" fill="#5b6b62">Angle of attack is measured between the wing chord and the relative airflow — not the horizon.</text></g></svg>
+<figcaption>The attitude indicator shows pitch, not angle of attack. An aircraft can be nose-up and still descending at a very high angle of attack.</figcaption>
+</figure>
+
+<ul>
+  <li><strong>Pitch attitude (θ)</strong> — the angle between the aircraft's longitudinal axis and the horizon. It is what the attitude indicator shows.</li>
+  <li><strong>Flight path angle (γ)</strong> — the angle between the aircraft's path through the air and the horizon. A flight path vector, where fitted, shows it.</li>
+  <li><strong>Angle of attack (α)</strong> — the angle between the wing chord and the relative airflow. It decides how much lift the wing produces, and whether it stalls.</li>
+</ul>
+<p>In normal flight the three are close together and easy to confuse. In an upset they can be very different. An aircraft in a stalled descent can have a nose-up pitch attitude, a steeply descending flight path, and an angle of attack far above the critical value.</p>
+
+<h2>The lift curve</h2>
+
+<figure class="diagram">
+<svg viewBox="0 0 680 330" role="img" aria-label="Lift coefficient against angle of attack"><title>Lift coefficient against angle of attack</title><desc>Lift rises with angle of attack up to the critical angle, then falls.</desc>
+<g font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="13" fill="#24342b">
+<line x1="70" y1="280" x2="640" y2="280" stroke="#5b6b62" stroke-width="1.5"/><line x1="70" y1="280" x2="70" y2="30" stroke="#5b6b62" stroke-width="1.5"/>
+<text x="355" y="315" text-anchor="middle">Angle of attack →</text><text x="28" y="155" text-anchor="middle" transform="rotate(-90 28 155)">Lift coefficient →</text>
+<rect x="110" y="34" width="210" height="246" fill="#1d7a3e" opacity=".08"/><text x="215" y="270" text-anchor="middle" fill="#125a2b" font-weight="700">normal operating range</text>
+<path d="M70 262 L420 70 Q470 40 500 52 Q540 70 600 160" fill="none" stroke="#1d7a3e" stroke-width="4"/>
+<line x1="492" y1="34" x2="492" y2="280" stroke="#c8102e" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="500" y="232" fill="#c8102e" font-weight="700">critical angle</text><text x="500" y="249" fill="#c8102e">of attack: STALL</text>
+<line x1="430" y1="34" x2="430" y2="280" stroke="#c76a00" stroke-width="2" stroke-dasharray="4 4"/>
+<text x="424" y="200" text-anchor="end" fill="#c76a00" font-weight="700">stall warning</text><text x="424" y="216" text-anchor="end" fill="#c76a00">(stick shaker)</text>
+</g></svg>
+<figcaption>A wing stalls at its critical angle of attack — at any airspeed, attitude or power setting. Stall warning activates a few degrees earlier.</figcaption>
+</figure>
+
+<p>As the angle of attack increases, lift increases almost linearly — until the airflow can no longer follow the upper surface of the wing. Beyond the critical angle of attack, the flow separates, lift falls and drag rises sharply. This is the <strong>stall</strong>.</p>
+<div class="callout warn"><span class="label">Key principle</span><p>A wing can stall at <strong>any airspeed, any attitude and any power setting</strong>. The only way to unstall it is to <strong>reduce the angle of attack</strong>.</p></div>
+
+<h2>Angle of attack information on the flight deck</h2>
+<ul>
+  <li>Stall warning (stick shaker, aural warning) and, on some types, a stick pusher are triggered by angle of attack sensors.</li>
+  <li>Low-speed bands, pitch limit indicators and angle of attack indicators (where fitted) help you see how close you are to the critical angle.</li>
+  <li>Know which of these your aircraft has, and how they behave if air data is unreliable.</li>
+</ul>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Lift depends on density, speed², wing area and lift coefficient (angle of attack and configuration).</li><li>Pitch attitude = flight path angle + angle of attack — they can be very different in an upset.</li><li>The wing stalls at its critical angle of attack — at any speed, attitude or power.</li><li>The only cure for a stall is to reduce the angle of attack.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">An aircraft is 10° nose-up but descending steeply. What does this tell you about its angle of attack?</p>
+    <ol><li>It must be close to zero</li><li>It is very high — possibly beyond the critical angle</li><li>It is negative</li><li>It cannot be determined from attitude and flight path</li></ol>
+    <p class="a"><b>Answer: B.</b> Angle of attack = pitch attitude − flight path angle. With the nose up and the path steeply down, the angle of attack is very high.</p></div>
+</section><p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p></body></html>

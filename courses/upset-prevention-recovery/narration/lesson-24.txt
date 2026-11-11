@@ -1,0 +1,50 @@
+Domestic Airlines — Upset Prevention and Recovery
+Lesson 24: Course Review and Simulator Training
+
+Learning objectives:
+- Review the essential principles of upset prevention and recovery.
+- Explain the limitations of flight simulators in UPRT.
+- Prepare for the practical (FSTD) component of UPRT.
+
+The essential principles
+
+Prevention first. Flight path management, monitoring and energy awareness stop most upsets before they start.
+
+Know the aerodynamics. The wing stalls at its critical angle of attack — at any speed, attitude or power.
+
+Respect the margins — speed, buffet and g. Most upsets begin with an eroded margin.
+
+Understand the automation — and expect it to hand you a problem when it disconnects.
+
+Manage startle — small inputs, attitude first, then act on a plan.
+
+Communicate — callouts, clear transfer of control, no dual inputs.
+
+Stall recovery first — reduce the angle of attack, accept the altitude loss.
+
+Recover with the right technique — nose-high: unload, reduce thrust, bank if needed; nose-low: roll wings level, then pull.
+
+Simulator (FSTD) training
+
+The FSTD component of UPRT lets you practise recognition and recovery in your aircraft type. Doc 10011 emphasises that simulator training must stay within the validated training envelope of the device:
+
+Simulators are based on flight test data. Beyond the stall, at extreme attitudes or sideslip, the data may be extrapolated — the simulator may not behave like the real aircraft.
+
+A simulator cannot reproduce sustained g forces or the full physiological effects of an upset — this is why on-aeroplane training exists in licence training.
+
+Training outside the valid envelope risks negative training : learning a technique that would not work, or would be dangerous, in the real aircraft.
+
+Instructors must be trained to use the FSTD correctly, to recognise when it is outside its valid envelope, and to debrief using the instructor station tools.
+
+Your next steps
+
+Complete the final quiz (20 questions, pass mark 80 %).
+
+Review your type's FCOM and QRH procedures for stall recovery, unreliable airspeed, windshear and upset recovery.
+
+Bring your questions to the next simulator session and practise prevention as well as recovery.
+
+Key takeaways:
+- Prevention first; stall recovery first; the right technique for nose-high and nose-low.
+- FSTD training must stay within the simulator's validated envelope to avoid negative training.
+- Simulators cannot reproduce sustained g; on-aeroplane training fills that gap in licence training.

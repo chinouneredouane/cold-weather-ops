@@ -1,0 +1,56 @@
+Domestic Airlines — Upset Prevention and Recovery
+Lesson 15: CRM, Monitoring and Intervention
+
+Learning objectives:
+- Describe the role of the pilot monitoring in upset prevention.
+- Use standard callouts and intervention techniques.
+- Apply clear transfer of control during an upset.
+
+The pilot monitoring is the first line of defence
+
+Many developing upsets are first visible to the pilot who is not flying. Effective monitoring means actively checking the flight path, the automation modes and the energy state — not just looking at the instruments.
+
+Monitor during periods of low workload as carefully as during high workload. Developing upsets often start in cruise.
+
+Watch for trends: speed decaying, bank slowly increasing, pitch rising, vertical speed growing.
+
+Plan monitoring during high-workload phases, such as approach and go-around, so that someone is always watching the flight path.
+
+Callouts
+
+Use the standard callouts of your Operations Manual. Typical examples:
+
+Deviation Typical callout
+
+Speed below target or trend towards the low-speed band “Speed”
+
+Excessive bank “Bank angle”
+
+Excessive pitch “Pitch”
+
+Excessive descent rate “Sink rate”
+
+Upset recognised “Nose high” / “Nose low”, with the bank direction
+
+The pilot flying acknowledges and corrects. If there is no response, the pilot monitoring repeats the callout, then states the action needed — and is ready to take control.
+
+Intervention and transfer of control
+
+If the pilot flying does not respond to callouts, or is clearly incapacitated or disoriented, the pilot monitoring takes control : “I have control.”
+
+Transfer of control must be clear and acknowledged — “You have control.” Never let two pilots make inputs at the same time; on side-stick aircraft, dual inputs are summed.
+
+The company supports any crew member who intervenes in good faith to protect the flight.
+
+Communication in a recovery
+
+The pilot flying announces the upset and the recovery: “Nose low, rolling left, recovering.”
+
+The pilot monitoring calls attitude, speed and altitude, watches for g limits and the stall warning, and reads relevant checklists only once the aircraft is stable.
+
+Inform ATC as soon as possible after control is regained.
+
+Key takeaways:
+- The pilot monitoring is often first to see a developing upset — monitor actively, especially trends.
+- Use standard callouts: speed, bank angle, pitch, sink rate, nose high / nose low.
+- Transfer control clearly: “I have control” — “You have control.” No dual inputs.

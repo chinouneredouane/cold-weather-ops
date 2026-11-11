@@ -1,0 +1,97 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Lesson 11: Weight and Balance Effects — Upset Prevention and Recovery</title>
+<style>
+@page{size:A4;margin:18mm 16mm 20mm}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#24342b;font-size:10.5pt;line-height:1.5;margin:0}
+h1,h2,h3{color:#14231b;line-height:1.25;break-after:avoid}
+h1{font-size:21pt;margin:0 0 6pt}h2{font-size:14pt;margin:16pt 0 6pt}h3{font-size:12pt;margin:12pt 0 4pt}
+p{margin:0 0 7pt}ul,ol{margin:0 0 8pt;padding-left:16pt}li{margin:2pt 0}
+a{color:#125a2b;text-decoration:none}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:9pt;background:#f3f9f5;border:1px solid #dbe5df;padding:0 3pt;border-radius:3pt}
+.cover{height:257mm;display:flex;flex-direction:column;justify-content:center;break-after:page;
+  background:linear-gradient(120deg,#0c3d1e,#125a2b 55%,#2a8a50);color:#fff;padding:22mm;border-radius:4mm;margin:0}
+.cover h1{color:#fff;font-size:34pt}.cover .k{letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#bfe3cb;font-size:10pt}
+.cover p{color:#e3f1e8;font-size:13pt}.cover .logo{background:#fff;padding:5mm 7mm;border-radius:3mm;display:inline-block;margin-bottom:14mm}
+.cover .logo img{height:16mm}.cover .meta{margin-top:12mm;font-size:10.5pt;color:#d3ebdb}
+.toc{break-after:page}.toc h2{margin-top:0}.toc ol{list-style:none;padding:0}
+.toc li{display:flex;gap:8pt;padding:3pt 0;border-bottom:1px dotted #c9d8cf}.toc .n{width:22pt;font-weight:700;color:#5b6b62}
+.toc .mod{margin-top:9pt;font-weight:800;color:#125a2b;border:0;text-transform:uppercase;font-size:9pt;letter-spacing:.06em}
+.lesson{break-before:page}
+.lesson-head{background:linear-gradient(120deg,#0c3d1e,#1d7a3e);color:#fff;border-radius:3mm;padding:9pt 13pt;margin-bottom:10pt}
+.lesson-head h1{color:#fff;font-size:17pt;margin:2pt 0}.lesson-head .k{font-size:8.5pt;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#c7e8d2}
+.lesson-head .m{font-size:9pt;color:#dbefe2}
+.objectives{background:#f3f9f5;border:1px solid #dbe5df;border-radius:2mm;padding:7pt 11pt;margin:0 0 10pt}
+.objectives h2,.takeaways h2,.kc h2{font-size:9.5pt;text-transform:uppercase;letter-spacing:.06em;margin:0 0 3pt;color:#125a2b}
+.lesson-figure{margin:0 0 10pt;break-inside:avoid}.lesson-figure img{width:100%;max-height:85mm;object-fit:contain;border:1px solid #dbe5df;border-radius:2mm;background:#f3f9f5}
+figure{margin:9pt 0;break-inside:avoid}figure svg{width:100%;height:auto}figcaption{font-size:8.5pt;color:#5b6b62;margin-top:3pt}
+.diagram{border:1px solid #dbe5df;border-radius:2mm;padding:5pt}
+.table-wrap{margin:8pt 0;border:1px solid #dbe5df;border-radius:2mm;overflow:hidden}
+table{border-collapse:collapse;width:100%;font-size:9pt}th,td{text-align:left;vertical-align:top;padding:4pt 6pt;border-bottom:1px solid #dbe5df}
+th{background:#f3f9f5}tr{break-inside:avoid}td.code{font-weight:800;font-size:12pt;text-align:center;width:34pt}
+.callout{border-left:3pt solid #1d7a3e;background:#f3f9f5;padding:6pt 10pt;margin:8pt 0;border-radius:0 2mm 2mm 0;break-inside:avoid}
+.callout .label{display:block;font-size:8.5pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#125a2b}
+.callout.warn{border-color:#c8102e;background:#fdecef}.callout.warn .label{color:#c8102e}
+.callout.caution{border-color:#d08a00;background:#fff5e0}.callout.caution .label{color:#9a6200}
+.callout.info{border-color:#1f5f99;background:#e9f2fb}.callout.info .label{color:#1f5f99}
+.callout > :last-child{margin-bottom:0}
+.steps{list-style:none;padding:0;counter-reset:s}.steps>li{counter-increment:s;position:relative;padding-left:20pt;margin:4pt 0}
+.steps>li::before{content:counter(s);position:absolute;left:0;top:0;width:14pt;height:14pt;border-radius:50%;background:#1d7a3e;color:#fff;font-weight:800;font-size:8pt;display:flex;align-items:center;justify-content:center}
+.dialog{border:1px solid #dbe5df;border-radius:2mm;padding:4pt 10pt;margin:8pt 0;break-inside:avoid}.dialog p{margin:4pt 0}.dialog b{color:#125a2b}
+.muted{color:#5b6b62}
+.takeaways{background:#0c3d1e;color:#e8f5ec;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}.takeaways h2{color:#fff}
+.kc{border:1.5pt dashed #b9d7c3;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}
+.kc .q{font-weight:700;margin:2pt 0 4pt}.kc ol{list-style:upper-alpha}.kc .a{font-size:9pt;margin-top:4pt;color:#125a2b}
+.disclaimer{font-size:8.5pt;color:#5b6b62;border-top:1px solid #dbe5df;padding-top:6pt;margin-top:14pt}
+</style></head><body>
+<section class="lesson" style="break-before:auto" id="lesson-11">
+  <div class="lesson-head"><div class="k">Module 3 · Certification, Performance and Loading</div>
+    <h1>Lesson 11: Weight and Balance Effects</h1><div class="m">Lesson 11 of 24 · about 7 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Explain how weight affects stall speed, performance and buffet margin.</li><li>Describe the effects of forward and aft centre of gravity on stability and control.</li><li>Recognise how loading errors can contribute to an upset.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-11.jpg" alt="Airliner on the ground balanced on a beam at its centre of gravity"><figcaption>Weight and centre of gravity shape stability, stall speed and control authority.</figcaption></figure>
+  
+<h2>Weight</h2>
+<ul>
+  <li>Stall speed increases with the square root of weight. A heavier aircraft must fly faster for the same margin.</li>
+  <li>At high altitude, higher weight reduces the buffet margin and the maximum altitude (Lesson 7).</li>
+  <li>Climb performance and acceleration are lower at high weight — less energy is available in a recovery.</li>
+  <li>An incorrect weight entered in the FMS produces incorrect speeds, which can erode the stall margin from take-off onwards.</li>
+</ul>
+
+<h2>Centre of gravity</h2>
+
+<figure class="diagram">
+<svg viewBox="0 0 700 290" role="img" aria-label="Effects of centre of gravity position"><title>Effects of centre of gravity position</title><desc>Forward and aft centre of gravity effects.</desc>
+<g font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="13" fill="#24342b">
+<path d="M60 130 Q80 110 170 110 L520 116 Q560 120 520 136 L170 146 Q80 148 60 130z" fill="#e9eef1" stroke="#24342b" stroke-width="2"/>
+<rect x="230" y="160" width="200" height="12" fill="#dbe5df"/><rect x="250" y="160" width="160" height="12" fill="#1d7a3e" opacity=".5"/>
+<line x1="250" y1="150" x2="250" y2="182" stroke="#1f5f99" stroke-width="3"/><line x1="410" y1="150" x2="410" y2="182" stroke="#c8102e" stroke-width="3"/>
+<text x="250" y="200" text-anchor="middle" fill="#1f5f99" font-weight="700">forward limit</text><text x="410" y="200" text-anchor="middle" fill="#c8102e" font-weight="700">aft limit</text>
+<g font-size="13"><text x="60" y="235" fill="#1f5f99" font-weight="700">Forward CG</text>
+<text x="60" y="255">more stable, heavier pitch forces,</text><text x="60" y="273">higher stall speed, more elevator to rotate and flare</text>
+<text x="400" y="235" fill="#c8102e" font-weight="700">Aft CG</text>
+<text x="400" y="255">less stable, lighter pitch forces,</text><text x="400" y="273">easy to over-control, less nose-down authority</text></g></g></svg>
+<figcaption>The CG must stay within its certified limits. Loading errors outside the envelope can leave too little control authority to prevent or recover from an upset.</figcaption>
+</figure>
+
+<div class="table-wrap"><table>
+  <tr><th></th><th>Forward CG</th><th>Aft CG</th></tr>
+  <tr><td>Longitudinal stability</td><td>Greater</td><td>Reduced</td></tr>
+  <tr><td>Pitch control forces</td><td>Heavier</td><td>Lighter — easy to over-control</td></tr>
+  <tr><td>Stall speed</td><td>Slightly higher</td><td>Slightly lower</td></tr>
+  <tr><td>Elevator authority</td><td>More needed to rotate and flare</td><td>Less nose-down authority for stall recovery</td></tr>
+  <tr><td>Fuel consumption</td><td>Slightly higher (more tail down-force)</td><td>Slightly lower</td></tr>
+</table></div>
+
+<h2>Loading errors</h2>
+<ul>
+  <li>Cargo or passengers loaded differently from the load sheet can move the CG outside the envelope.</li>
+  <li>Unsecured cargo that shifts during rotation or in turbulence can cause a sudden, large pitch change.</li>
+  <li>Incorrect trim settings for take-off — from a wrong CG — can cause an early or late rotation and a nose-high or tail-strike situation.</li>
+</ul>
+<div class="callout"><span class="label">Prevention</span><p>Check the load sheet and the FMS entries carefully, cross-check weight and CG with the fuel and passenger figures, and be alert to unusual control forces at rotation. If the aircraft does not feel right, say so.</p></div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Higher weight: higher stall speed, lower buffet margin, less excess energy.</li><li>Aft CG: less stable, lighter forces, less nose-down authority. Forward CG: heavier forces, higher stall speed.</li><li>Loading and FMS weight errors erode margins before the flight begins.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">What is a typical effect of an aft centre of gravity?</p>
+    <ol><li>Heavier pitch control forces</li><li>Reduced longitudinal stability and lighter pitch forces</li><li>Higher stall speed</li><li>More nose-down elevator authority</li></ol>
+    <p class="a"><b>Answer: B.</b> An aft CG reduces stability and makes pitch forces lighter, so the aircraft is easier to over-control.</p></div>
+</section><p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p></body></html>

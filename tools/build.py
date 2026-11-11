@@ -18,13 +18,13 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 
 from courses.cold_weather import COURSE as COLD_WEATHER  # noqa: E402
+from courses.upset_recovery import COURSE as UPSET_RECOVERY  # noqa: E402
 from handbook import build_print  # noqa: E402
 
-COURSES = [COLD_WEATHER]
+COURSES = [COLD_WEATHER, UPSET_RECOVERY]
 
 # Courses shown on the portal as "in preparation" (no pages yet).
 UPCOMING = [
-    dict(title="Upset Prevention and Recovery", tagline="Aerodynamics, stall, stability, performance and human factors of aeroplane upsets.", cover="alt", icon="gear"),
     dict(title="Command Upgrade", tagline="Leadership, decision-making and the responsibilities of the commander.", cover="slate", icon="people"),
 ]
 
@@ -38,6 +38,7 @@ ICONS = {
     "search": '<circle cx="42" cy="42" r="26" fill="none" stroke="currentColor" stroke-width="7"/><path d="M62 62l26 26" stroke="currentColor" stroke-width="9" stroke-linecap="round"/>',
     "runway": '<path d="M34 92L44 8h12l10 84z" fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/><path d="M50 20v10M50 42v10M50 64v10" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>',
     "gear": '<circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" stroke-width="7"/><path d="M50 8v14M50 78v14M8 50h14M78 50h14M20 20l10 10M70 70l10 10M80 20L70 30M30 70L20 80" stroke="currentColor" stroke-width="8" stroke-linecap="round"/><circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="6"/>',
+    "plane": '<path d="M50 8c5 0 7 6 7 12v22l33 18v9l-33-9v20l10 8v7l-17-5-17 5v-7l10-8V60l-33 9v-9l33-18V20c0-6 2-12 7-12z" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/>',
     "people": '<circle cx="34" cy="32" r="13" fill="none" stroke="currentColor" stroke-width="6"/><circle cx="68" cy="36" r="11" fill="none" stroke="currentColor" stroke-width="6"/><path d="M10 86c2-18 12-28 24-28s22 10 24 28M54 86c1-14 7-22 14-22s14 8 16 22" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>',
 }
 
@@ -199,15 +200,7 @@ def build_course_home(course):
           <ul class="lesson-list">{items}</ul>
         </details>""")
 
-    objectives = [
-        "Identify contamination and icing hazards and their effect on performance",
-        "Apply the Clean Aircraft Concept and the ground de-icing/anti-icing programme",
-        "Use holdover time guidelines and pre-take-off checks correctly",
-        "Interpret runway condition reports and assess contaminated runway performance",
-        "Operate aircraft systems safely after cold soak and in icing conditions",
-        "Apply cold temperature altimeter corrections",
-        "Use CRM and TEM to resist time pressure in winter operations",
-    ]
+    objectives = course["objectives"]
     main = f"""
     <section class="hero">
       {icon(course['icon'], 'hero-art')}
@@ -394,13 +387,15 @@ def build_quiz(course):
 
 
 def build_finale(course):
+    fin = course["finale"]
+    further = "".join(f'<li><a href="{esc(u)}" target="_blank" rel="noopener">{esc(t)}</a></li>' for t, u in fin.get("further", []))
     yt = course.get("finale_youtube")  # YouTube video ID: embed instead of hosting a copy
     if yt:
         main = f"""
     <section class="content">
       <div class="eyebrow">{esc(course['title'])}</div>
       <h1>Closing Video</h1>
-      <p>Thank you for completing the {esc(course['title'])} course. Fly safe this winter.</p>
+      <p>{esc(fin['intro'])}</p>
       <div class="video-wrap">
         <iframe src="https://www.youtube-nocookie.com/embed/{esc(yt)}?rel=0" title="Closing video" style="width:100%;height:100%;border:0"
           allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe>
@@ -420,8 +415,8 @@ def build_finale(course):
     main = f"""
     <section class="content">
       <div class="eyebrow">{esc(course['title'])}</div>
-      <h1>Closing Case Study: Air Ontario Flight 1363</h1>
-      <p>Thank you for completing the {esc(course['title'])} course. This closing video revisits the 1989 Dryden accident step by step, links each link in the accident chain to the lessons you have studied, and ends with three questions to discuss with your crew or instructor. Duration: about 6 minutes.</p>
+      <h1>{esc(fin['title'])}</h1>
+      <p>{esc(fin['intro'])}</p>
       <div class="video-wrap">
         <video id="finaleVideo" controls playsinline preload="metadata" poster="media/video/finale-poster.jpg">
           <source src="media/video/finale.mp4" type="video/mp4">
@@ -433,9 +428,7 @@ def build_finale(course):
       <div class="card panel" style="margin-top:20px">
         <h2 style="margin-top:0;font-size:19px">Further reading</h2>
         <ul>
-          <li><a href="https://www.faa.gov/lessons_learned/transport_airplane/accidents/C-FONF" target="_blank" rel="noopener">FAA Lessons Learned — Air Ontario Flight 1363 (C-FONF)</a></li>
-          <li><a href="https://publications.gc.ca/site/eng/9.896149/publication.html" target="_blank" rel="noopener">Government of Canada — Final response to the Commission of Inquiry into the Air Ontario Crash at Dryden</a></li>
-          <li><a href="https://aircrafticing.grc.nasa.gov/2_5_2_1.html" target="_blank" rel="noopener">NASA — A Pilot's Guide to Ground Icing (interactive course)</a></li>
+          {further}
         </ul>
       </div>
       <div class="btn-row" style="justify-content:center;margin-top:20px">
@@ -504,7 +497,7 @@ def build_certificate(course):
           var d = new Date(q.date);
           document.getElementById('certDate').textContent = d.toLocaleDateString('en-GB', {{ day: 'numeric', month: 'long', year: 'numeric' }});
           document.getElementById('certScore').textContent = q.pct + ' %';
-          var ref = 'CWO-' + d.getFullYear() + String(d.getMonth() + 1).padStart(2, '0') + String(d.getDate()).padStart(2, '0') + '-' + String(d.getTime()).slice(-5);
+          var ref = '{course.get("cert_prefix", "DA")}-' + d.getFullYear() + String(d.getMonth() + 1).padStart(2, '0') + String(d.getDate()).padStart(2, '0') + '-' + String(d.getTime()).slice(-5);
           document.getElementById('certId').textContent = ref;
           var input = document.getElementById('learnerName');
           var out = document.getElementById('certName');

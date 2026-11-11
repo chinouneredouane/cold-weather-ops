@@ -1,0 +1,44 @@
+Domestic Airlines — Upset Prevention and Recovery
+Lesson 17: Recognising a Developing Upset
+
+Learning objectives:
+- Identify the flight-deck cues of a developing upset.
+- Read an attitude indicator quickly and correctly in an unusual attitude.
+- Confirm the situation by cross-checking instruments.
+
+Cues of a developing upset
+
+Speed: trend vector towards the low-speed band or the overspeed limit; speed not stabilising after a thrust change.
+
+Attitude: pitch or bank increasing without an intended input; pitch limit indicator approaching the aircraft symbol.
+
+Energy: thrust at idle when it should be climbing; pitch high and speed decaying.
+
+Automation: unexpected mode changes, autopilot or autothrust disconnect, flight control law changes.
+
+Physical: buffet, unusual noise, unexpected control forces, g changes.
+
+Warnings: stall warning, overspeed, bank angle aural alert, windshear alert.
+
+Reading the attitude indicator
+
+Look at the attitude indicator first. Determine pitch (sky or ground? which pitch line?) and bank (where is the sky pointer?).
+
+The sky pointer (or bank pointer) always points towards the sky. In a nose-low, high-bank upset, roll towards the sky pointer to bring the wings level.
+
+At extreme attitudes, the display may show mostly sky or mostly ground, and chevrons may point the way back to the horizon. Know your PFD.
+
+Confirm before you act
+
+Cross-check both primary attitude indicators and the standby instrument. A single failed indicator can create a false upset.
+
+Confirm the trend with airspeed, altitude and vertical speed. A nose-high attitude with decaying speed and a climbing altimeter is very different from a nose-high attitude with a rapid descent (possible stall).
+
+Say what you see: “Nose high, wings level, speed decreasing.” This helps both pilots build the same picture.
+
+Act early If you recognise a developing upset, correct it immediately with small, smooth inputs. A small correction now prevents a large recovery later.
+
+Key takeaways:
+- Developing upsets show up as speed, attitude, energy, automation, physical and warning cues.
+- Read the attitude indicator first; the sky pointer always points to the sky.
+- Confirm with the other attitude indicator, the standby instrument and the speed, altitude and vertical speed trends.

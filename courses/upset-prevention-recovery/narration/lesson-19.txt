@@ -1,0 +1,53 @@
+Domestic Airlines — Upset Prevention and Recovery
+Lesson 19: Upset Recovery Principles
+
+Learning objectives:
+- State the general principles of upset recovery.
+- Explain why stall recovery takes priority.
+- Describe the correct use of automation, thrust, rudder and g during recovery.
+
+The recovery sequence
+
+Recognise and confirm the situation — attitude first, cross-checked (Lesson 17).
+
+Disconnect the autopilot and autothrust — they may be causing or worsening the upset, and their behaviour is unpredictable at extreme attitudes.
+
+If stalled, recover from the stall first — reduce angle of attack (Lesson 20). Attitude cannot be recovered while the wing is stalled.
+
+Recover the attitude using the nose-high or nose-low technique (Lessons 21 and 22).
+
+Return to a safe flight path — level flight or a climb, appropriate speed, trimmed.
+
+General principles
+
+Use the manufacturer's procedures. The generic principles here explain why ; the FCOM and QRH tell you how for your type.
+
+Pitch is controlled with elevator and stabiliser trim. Use trim carefully to assist a large pitch input, not as the primary control.
+
+Roll with aileron and spoiler. Full deflection may be needed. Rudder is normally not required and must never be used in rapid alternating inputs.
+
+Thrust is used as required — remember pitch-power coupling: reducing thrust can help lower the nose, adding thrust helps a nose-low recovery only after the wings are level and the speed allows it.
+
+Respect g limits. Unload in a nose-high recovery; avoid a rolling pull and excessive g in a nose-low recovery.
+
+Do not change configuration (flaps, gear) unless the procedure requires it. Speedbrakes may be used in high-speed nose-low situations.
+
+Communicate — announce the upset and the recovery; the pilot monitoring calls out attitude, speed and altitude.
+
+Common errors
+
+Pulling back in a stall or a nose-low, high-bank attitude.
+
+Applying full thrust in a nose-high, low-speed upset on an aircraft with underwing engines.
+
+Over-controlling — large inputs in both directions, especially at high altitude.
+
+Using rudder to roll, or making alternating rudder inputs.
+
+Failing to disconnect the automation, or re-engaging it too early.
+
+Key takeaways:
+- Recognise and confirm → automation off → stall recovery first → attitude recovery → safe flight path.
+- Elevator and trim for pitch; aileron and spoiler for roll; rudder normally not needed.
+- Use thrust as required, with pitch-power coupling in mind.
+- Communicate throughout; follow the manufacturer's procedures.

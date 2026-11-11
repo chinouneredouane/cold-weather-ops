@@ -1,0 +1,52 @@
+Domestic Airlines — Upset Prevention and Recovery
+Lesson 18: Unreliable Airspeed and Instrument Failures
+
+Learning objectives:
+- Recognise the symptoms of unreliable airspeed.
+- Apply the generic memory actions: pitch and thrust.
+- Describe how to troubleshoot and stabilise after unreliable air data.
+
+Causes
+
+Pitot probes blocked by ice crystals, heavy rain, volcanic ash, insects or covers left in place.
+
+Static ports blocked — for example by tape or residue after maintenance or washing.
+
+Failed probe heaters, damaged probes, or faulty air data computers.
+
+Symptoms
+
+Disagreement between the captain's, first officer's and standby airspeed or altitude.
+
+Speed that does not match the pitch and thrust (for example, speed rising in a climb at constant thrust).
+
+Simultaneous, contradictory warnings: overspeed and stall warning together, or "rudder ratio", "Mach trim" and altitude alerts.
+
+Autopilot and autothrust disconnect, flight control law degradation on fly-by-wire types.
+
+Memory actions
+
+Most manufacturers' unreliable airspeed procedures begin with memory items along these lines:
+
+Autopilot and autothrust — disconnect (they may be using the faulty data).
+
+Flight directors — off where the procedure requires it.
+
+Pitch and thrust — set to the memory values for the flight phase (for example, a climb attitude and climb thrust after take-off; a level-flight attitude at cruise).
+
+Use the exact values and procedure from your QRH. Do not chase the airspeed indication.
+
+Stabilise, then troubleshoot
+
+When safe — above minimum safe altitude, wings level, stable pitch and thrust — use the QRH tables to set pitch and thrust for the phase of flight and weight.
+
+Use other information: GPS ground speed, angle of attack indication where fitted, the flight path vector, and ATC for ground speed and altitude (in an emergency).
+
+Identify a reliable source if possible. If none, continue with pitch and power tables.
+
+Key lesson In several accidents, a short air data problem became a fatal stall because the crew reacted to the false indications with large, sustained pitch inputs. Pitch and power first , avoid large inputs, and respect the stall warning.
+
+Key takeaways:
+- Unreliable airspeed: disagreements, impossible combinations, contradictory warnings.
+- Memory items: autopilot and autothrust off, flight directors off as required, set memory pitch and thrust.
+- Stabilise first, then troubleshoot with QRH tables and other data.

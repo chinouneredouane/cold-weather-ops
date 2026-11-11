@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lesson 07: High-Altitude Aerodynamics — Upset Prevention and Recovery</title>
+  <meta name="description" content="Explain the effects of Mach number and low air density on aircraft handling at high altitude." />
+  <meta name="theme-color" content="#125a2b" />
+  <link rel="icon" type="image/png" href="../../../assets/img/logo.png" />
+  <link rel="stylesheet" href="../../../assets/css/academy.css" />
+</head>
+<body data-course="upset-prevention-recovery" data-total="24" data-lesson="7">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="brand">
+      <a href="../index.html"><img src="../../../assets/img/logo.png" alt="Domestic Airlines Logo" class="logo" /></a>
+      <div class="brand-text">
+        <div class="ar">الخطوط الجوية الداخلية</div>
+        <div class="en">DOMESTIC AIRLINES — Upset Prevention and Recovery</div>
+      </div>
+    </div>
+    <nav aria-label="Main">
+      <a href="../index.html">Home</a>
+      <a href="../quiz.html">Quiz</a>
+      <a href="../finale.html">Final Video</a>
+    </nav>
+  </header>
+  <div class="progress" aria-hidden="true"><div id="progressBar"></div></div>
+  <main id="main">
+
+    <div class="lesson-layout">
+      <div>
+        <button class="btn ghost sidebar-toggle" aria-controls="courseContents" aria-expanded="false">Show course contents</button>
+        <nav class="card sidebar" id="courseContents" aria-label="Course contents"><h2>Module 1 · Introduction</h2><ul><li><a href="lesson-01.html" data-lesson-link="1"><span class="state" aria-hidden="true"></span><span>01. Course Orientation and the UPRT Framework</span></a></li><li><a href="lesson-02.html" data-lesson-link="2"><span class="state" aria-hidden="true"></span><span>02. Upsets and Loss of Control: Definitions</span></a></li><li><a href="lesson-03.html" data-lesson-link="3"><span class="state" aria-hidden="true"></span><span>03. Causes and Contributing Factors of Upsets</span></a></li></ul><h2>Module 2 · Aerodynamics</h2><ul><li><a href="lesson-04.html" data-lesson-link="4"><span class="state" aria-hidden="true"></span><span>04. Lift, Angle of Attack and Flight Path</span></a></li><li><a href="lesson-05.html" data-lesson-link="5"><span class="state" aria-hidden="true"></span><span>05. The Stall</span></a></li><li><a href="lesson-06.html" data-lesson-link="6"><span class="state" aria-hidden="true"></span><span>06. Load Factor and g-Awareness</span></a></li><li><a href="lesson-07.html" data-lesson-link="7" aria-current="page"><span class="state" aria-hidden="true"></span><span>07. High-Altitude Aerodynamics</span></a></li><li><a href="lesson-08.html" data-lesson-link="8"><span class="state" aria-hidden="true"></span><span>08. Stability, Control and Rudder Use</span></a></li></ul><h2>Module 3 · Certification, Performance and Loading</h2><ul><li><a href="lesson-09.html" data-lesson-link="9"><span class="state" aria-hidden="true"></span><span>09. Aeroplane Certification and the Flight Envelope</span></a></li><li><a href="lesson-10.html" data-lesson-link="10"><span class="state" aria-hidden="true"></span><span>10. Energy Management and Pitch-Power Coupling</span></a></li><li><a href="lesson-11.html" data-lesson-link="11"><span class="state" aria-hidden="true"></span><span>11. Weight and Balance Effects</span></a></li></ul><h2>Module 4 · Threats and Human Factors</h2><ul><li><a href="lesson-12.html" data-lesson-link="12"><span class="state" aria-hidden="true"></span><span>12. Environmental Threats</span></a></li><li><a href="lesson-13.html" data-lesson-link="13"><span class="state" aria-hidden="true"></span><span>13. Automation, Flight Control Laws and System Failures</span></a></li><li><a href="lesson-14.html" data-lesson-link="14"><span class="state" aria-hidden="true"></span><span>14. Startle, Surprise and Spatial Disorientation</span></a></li><li><a href="lesson-15.html" data-lesson-link="15"><span class="state" aria-hidden="true"></span><span>15. CRM, Monitoring and Intervention</span></a></li></ul><h2>Module 5 · Prevention</h2><ul><li><a href="lesson-16.html" data-lesson-link="16"><span class="state" aria-hidden="true"></span><span>16. Flight Path Management and Manual Handling</span></a></li><li><a href="lesson-17.html" data-lesson-link="17"><span class="state" aria-hidden="true"></span><span>17. Recognising a Developing Upset</span></a></li><li><a href="lesson-18.html" data-lesson-link="18"><span class="state" aria-hidden="true"></span><span>18. Unreliable Airspeed and Instrument Failures</span></a></li></ul><h2>Module 6 · Recovery</h2><ul><li><a href="lesson-19.html" data-lesson-link="19"><span class="state" aria-hidden="true"></span><span>19. Upset Recovery Principles</span></a></li><li><a href="lesson-20.html" data-lesson-link="20"><span class="state" aria-hidden="true"></span><span>20. Stall Recovery</span></a></li><li><a href="lesson-21.html" data-lesson-link="21"><span class="state" aria-hidden="true"></span><span>21. Nose-High Upset Recovery</span></a></li><li><a href="lesson-22.html" data-lesson-link="22"><span class="state" aria-hidden="true"></span><span>22. Nose-Low and High-Bank Upset Recovery</span></a></li></ul><h2>Module 7 · Lessons Learned</h2><ul><li><a href="lesson-23.html" data-lesson-link="23"><span class="state" aria-hidden="true"></span><span>23. Lessons from Accidents</span></a></li><li><a href="lesson-24.html" data-lesson-link="24"><span class="state" aria-hidden="true"></span><span>24. Course Review and Simulator Training</span></a></li></ul></nav>
+      </div>
+      <article class="lesson">
+        <header class="lesson-head">
+          <svg viewBox="0 0 100 100" class="art" aria-hidden="true" focusable="false"><circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" stroke-width="7"/><path d="M50 8v14M50 78v14M8 50h14M78 50h14M20 20l10 10M70 70l10 10M80 20L70 30M30 70L20 80" stroke="currentColor" stroke-width="8" stroke-linecap="round"/><circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="6"/></svg>
+          <div class="eyebrow">Module 2 · Aerodynamics</div>
+          <h1>Lesson 07: High-Altitude Aerodynamics</h1>
+          <div class="meta"><span>Lesson 7 of 24</span><span>≈ 9 min</span><a class="pdf-link" href="../pdf/lesson-07.pdf" download>⬇ Download PDF</a></div>
+        </header>
+        <div class="card lesson-body">
+          <div class="audio-block">
+            <span class="label">Lesson narration</span>
+            <audio controls preload="metadata" style="display:none"><source src="../media/audio/lesson-07.mp3" type="audio/mpeg"></audio>
+            <button type="button" class="btn primary" data-tts style="display:none">Listen</button>
+            <button type="button" class="btn ghost" data-tts-stop style="display:none">Stop</button>
+            <div class="audio-status" aria-live="polite">Checking for narration…</div>
+          </div>
+          <section class="objectives" data-narrate>
+            <h2>Learning objectives</h2>
+            <ul><li>Explain the effects of Mach number and low air density on aircraft handling at high altitude.</li><li>Describe buffet boundaries, buffet margins and the coffin corner.</li><li>Recognise why recovery at high altitude needs a different approach from recovery at low altitude.</li></ul>
+          </section>
+          <figure class="lesson-figure"><img src="../media/images/lesson-07.jpg" alt="Airliner cruising at high altitude above the clouds with a dark blue sky" loading="lazy" decoding="async"><figcaption>At high altitude, the margins are smaller and the air is thin.</figcaption></figure>
+          <div data-narrate>
+
+<h2>Thin air and Mach effects</h2>
+<p>At high altitude the air is thin. To produce the required lift, the aircraft flies at a high true airspeed and a relatively high angle of attack. At the same time, the speed of sound is lower in colder air, so the aircraft operates close to its <strong>critical Mach number</strong>. Two important consequences follow:</p>
+<ul>
+  <li>The critical angle of attack <strong>decreases</strong> as Mach number increases. The aircraft can stall at a lower angle of attack — and a higher indicated speed — than at low altitude.</li>
+  <li>Engines produce much less excess thrust. There is little energy available to accelerate or climb.</li>
+</ul>
+
+<h2>Buffet boundaries and the coffin corner</h2>
+
+<figure class="diagram">
+<svg viewBox="0 0 640 340" role="img" aria-label="Buffet boundaries and the coffin corner"><title>Buffet boundaries and the coffin corner</title><desc>Low-speed and high-speed buffet boundaries converge at high altitude.</desc>
+<g font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="13" fill="#24342b">
+<line x1="70" y1="290" x2="620" y2="290" stroke="#5b6b62" stroke-width="1.5"/><line x1="70" y1="290" x2="70" y2="20" stroke="#5b6b62" stroke-width="1.5"/>
+<text x="345" y="325" text-anchor="middle">Speed (Mach) →</text><text x="28" y="160" text-anchor="middle" transform="rotate(-90 28 160)">Altitude →</text>
+<path d="M120 290 Q200 160 330 62" fill="none" stroke="#c8102e" stroke-width="4"/>
+<path d="M560 290 Q500 160 360 62" fill="none" stroke="#c76a00" stroke-width="4"/>
+<path d="M120 290 Q200 160 330 62 L345 52 L360 62 Q500 160 560 290 z" fill="#1d7a3e" opacity=".1"/>
+<circle cx="345" cy="54" r="7" fill="#24342b"/><text x="360" y="40" font-weight="700">“coffin corner”</text>
+<text x="80" y="110" fill="#c8102e" font-weight="700">low-speed buffet / stall</text>
+<text x="452" y="110" fill="#c76a00" font-weight="700">high-speed (Mach) buffet</text>
+<text x="350" y="240" text-anchor="middle" fill="#125a2b" font-weight="700">usable speed range</text>
+<line x1="232" y1="150" x2="470" y2="150" stroke="#24342b" stroke-width="2" marker-end="url(#ar2)" marker-start="url(#ar2)"/><defs><marker id="ar2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="context-stroke"/></marker></defs>
+<text x="350" y="174" text-anchor="middle" font-size="12">margin shrinks with altitude, weight and g</text></g></svg>
+<figcaption>At high altitude the margin between low-speed buffet and Mach buffet becomes small. Higher weight, turbulence or bank (more g) reduce it further.</figcaption>
+</figure>
+
+<ul>
+  <li><strong>Low-speed buffet</strong> is the onset of airflow separation as the stall approaches.</li>
+  <li><strong>High-speed (Mach) buffet</strong> is caused by shock waves and flow separation as the aircraft approaches its maximum Mach.</li>
+  <li>As altitude and weight increase, the two boundaries come closer together. The point where they meet is often called the <strong>coffin corner</strong>.</li>
+</ul>
+<p>Operators commonly plan cruise levels with a margin to buffet of at least <strong>1.3 g</strong> — enough to absorb turbulence or a bank of about 40° without reaching buffet. The FMS "maximum altitude" usually includes such a margin. Flying above the optimum altitude reduces it.</p>
+
+<h2>Handling at high altitude</h2>
+<ul>
+  <li><strong>Aerodynamic damping is lower</strong>: the aircraft responds more slowly and oscillations take longer to settle.</li>
+  <li><strong>Small pitch changes produce large vertical speeds</strong> because of the high true airspeed.</li>
+  <li><strong>Control inputs should be smooth and small.</strong> Large, rapid inputs can quickly exceed the buffet margin.</li>
+  <li>Watch for temperature increases and wind shifts that suddenly reduce the Mach or speed margin.</li>
+</ul>
+
+<h2>Recovery at high altitude</h2>
+<div class="callout warn"><span class="label">Key principle</span>
+<p>At high altitude, an aircraft at or near the stall <strong>cannot be "powered out" of it</strong>. The excess thrust is too small. The angle of attack must be reduced, and the aircraft must be allowed to <strong>lose altitude</strong> to regain speed and margin. Trading altitude for speed is the correct action.</p>
+</div>
+<p>Accept a significant altitude loss. Return to the cleared level only after the aircraft is under control and the speed is appropriate. Inform ATC as soon as possible.</p>
+
+          </div>
+          <section class="takeaways" data-narrate>
+            <h2>Key takeaways</h2>
+            <ul><li>The critical angle of attack decreases as Mach increases — high-altitude stalls occur at lower angles.</li><li>Buffet boundaries converge with altitude and weight; keep at least the planned buffet margin.</li><li>Damping is low and vertical speed changes are large — use small, smooth inputs.</li><li>At high altitude, recover by reducing angle of attack and trading altitude for speed.</li></ul>
+          </section>
+          <section class="kc" data-answer="1" data-explain="Excess thrust at high altitude is small. The angle of attack must be reduced, and altitude traded for speed.">
+            <h2>Knowledge check</h2>
+            <p class="q">At FL390 the aircraft approaches a stall. What is the most effective recovery action?</p>
+            <div class="opts"><button type="button" class="opt" aria-pressed="false">Apply maximum thrust and hold altitude</button><button type="button" class="opt" aria-pressed="false">Reduce the angle of attack and accept an altitude loss to regain speed</button><button type="button" class="opt" aria-pressed="false">Increase pitch to climb above the turbulence</button><button type="button" class="opt" aria-pressed="false">Extend flaps to lower the stall speed</button></div>
+            <div class="fb" aria-live="polite"></div>
+          </section>
+          <div class="lesson-end"></div>
+        </div>
+        <nav class="lesson-nav" aria-label="Lesson navigation"><a class="btn" href="lesson-06.html">◀ Previous<small>Load Factor and g-Awareness</small></a><a class="btn primary" id="nextLesson" href="lesson-08.html">Next ▶<small>Stability, Control and Rudder Use</small></a></nav>
+      </article>
+    </div>
+  </main>
+  <footer class="bottombar">
+    <img src="../../../assets/img/logo.png" alt="Domestic Airlines Logo" class="logo small" />
+    <div class="copy">&copy; 2026 Domestic Airlines — Training</div>
+    <a href="../../../index.html">All courses</a>
+    <p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p>
+  </footer>
+<script src="../../../assets/js/course.js"></script>
+</body>
+</html>

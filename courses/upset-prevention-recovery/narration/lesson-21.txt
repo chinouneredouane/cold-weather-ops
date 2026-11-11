@@ -1,0 +1,44 @@
+Domestic Airlines — Upset Prevention and Recovery
+Lesson 21: Nose-High Upset Recovery
+
+Learning objectives:
+- Apply the generic nose-high recovery technique.
+- Explain the use of bank and thrust to lower the nose.
+- Complete the recovery without over-correcting into a nose-low upset.
+
+The situation
+
+The pitch attitude is unintentionally high — for example more than 25° nose-up — and the airspeed is decreasing, or is already low. The aircraft is heading towards a stall. The goal is to lower the nose and regain speed before the angle of attack reaches the critical value.
+
+Generic technique (based on industry guidance)
+
+Recognise and confirm the situation. Announce “Nose high”.
+
+Autopilot and autothrust — disconnect.
+
+Apply as much as full nose-down elevator. Accept reduced g — the feeling of being light in your seat. Use nose-down stabiliser trim if needed.
+
+If more is needed to lower the nose:
+
+Reduce thrust (aircraft with underwing engines) to reduce the nose-up moment;
+
+Roll to a bank angle that helps the nose drop — the lift vector moves away from the vertical, and the nose falls towards the horizon. Do not normally exceed about 60° of bank.
+
+Complete the recovery: as the nose approaches the horizon, roll wings level, check the airspeed, adjust thrust and establish the required pitch attitude.
+
+Always follow the manufacturer's procedure for your type.
+
+Points to remember
+
+If the aircraft is stalled , apply the stall recovery first (Lesson 20).
+
+Unloading reduces the angle of attack and the stall speed. A low-g sensation is expected and acceptable.
+
+Do not over-correct. A nose-high upset recovered too aggressively can become a nose-low, high-speed upset.
+
+Unsecured objects and passengers or crew without seat belts may be thrown upwards during unloading.
+
+Key takeaways:
+- Nose-high: automation off, nose-down elevator (as much as full), trim as needed.
+- If needed: reduce thrust (underwing engines) and/or roll to bank to help the nose drop — normally not more than about 60°.
+- Approaching the horizon: wings level, check speed, set thrust and pitch.

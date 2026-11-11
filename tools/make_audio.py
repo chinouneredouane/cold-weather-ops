@@ -23,10 +23,34 @@ from concurrent.futures import ProcessPoolExecutor
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
-from courses.cold_weather import COURSE  # noqa: E402
+import importlib  # noqa: E402
+
+COURSE = None
+
+
+def load_course(name):
+    global COURSE
+    COURSE = importlib.import_module(f"courses.{name}").COURSE
+    return COURSE
 
 # Spoken forms for abbreviations and symbols (applied in order).
 SPOKEN = [
+    (r"\s*\(kt\)", " in knots"),
+    (r"VS\(n\) = VS × √n", "the stall speed at load factor n equals the normal stall speed times the square root of n"),
+    (r"\bLOC-I\b", "loss of control in flight"), (r"\bUPRT\b", "U P R T"), (r"\bFSTDs?\b", "simulator"),
+    (r"\bAUPRTA\b", "the upset training aid"), (r"\bPANS-TRG\b", "pans T R G"), (r"\bMPL\b", "M P L"),
+    (r"\bCS-25\b", "C S 25"), (r"\bFAR Part 25\b", "F A R part 25"), (r"\bFCTM\b", "F C T M"), (r"\bFMA\b", "F M A"),
+    (r"\bPFD\b", "P F D"), (r"\bPF\b", "pilot flying"), (r"\bPM\b", "pilot monitoring"), (r"\bCG\b", "C G"),
+    (r"\bGPS\b", "G P S"), (r"\bFD\b", "flight director"), (r"\bA300-600\b", "A 300, 600"), (r"\bA330-200\b", "A 330, 200"),
+    (r"\bA320\b", "A 320"), (r"\bQ400\b", "Q 400"), (r"\bB737-800\b", "Boeing 737, 800"), (r"Boeing 737-800", "Boeing 737, 800"),
+    (r"V(MO|D|A|FE|LE|LO|S1g|SR|S)\b", lambda m: "V " + " ".join(m.group(1).replace("1g", " 1 g"))),
+    (r"\bM(MO|D)\b", lambda m: "M " + " ".join(m.group(1))),
+    (r"(\d(?:\.\d)?) g\b", r"\1 g"), (r"([+−-])(\d(?:\.\d)?) g", lambda m: ("plus " if m.group(1) == "+" else "minus ") + m.group(2) + " g"),
+    (r"θ = γ \+ α", "pitch equals flight path angle plus angle of attack"), (r"\(θ\)|\(γ\)|\(α\)", ""),
+    (r"n = 1 ?/ ?cos\(?bank(?: angle)?\)?", "n equals one over the cosine of the bank angle"),
+    (r"\+(\d)", r"plus \1"), (r" = ", " equals "),
+    (r"(\d)\.(\d)", r"\1 point \2"),
+    (r"Lift = ½ × ρ × V² × S × CL", "lift equals one half, times air density, times speed squared, times wing area, times the lift coefficient"),
     (r"\be\.g\.", "for example"), (r"\bi\.e\.", "that is"), (r"\betc\.", "and so on"),
     (r"(\d)\s?°C", r"\1 degrees"), (r"°C", "degrees"), (r"°", " degrees"),
     (r"−|–(?=\d)", "minus "), (r"≈", "approximately "), (r"≤", "at most "), (r"√", "the square root of "),
@@ -90,6 +114,8 @@ def to_speech(html_text):
 
 
 def lesson_script(n):
+    if COURSE is None:
+        load_course("cold_weather")
     L = COURSE["lessons"][n - 1]
     parts = [f"Lesson {n}. {L['title']}.", "Learning objectives. " + " ".join(L["objectives"]), L["body"],
              "Key takeaways. " + " ".join(L["takeaways"])]
@@ -113,7 +139,8 @@ def sentences(text, limit=300):
 
 
 def render(args):
-    n, model, voices, voice, speed, outdir = args
+    n, model, voices, voice, speed, outdir, course = args
+    load_course(course)
     import numpy as np
     import soundfile as sf
     from kokoro_onnx import Kokoro
@@ -144,14 +171,16 @@ def main():
     ap.add_argument("--lessons", default="")
     ap.add_argument("--jobs", type=int, default=2)
     ap.add_argument("--print-script", type=int, default=0, help="print the spoken text of one lesson and exit")
+    ap.add_argument("--course", default="cold_weather", help="course package under tools/courses (e.g. upset_recovery)")
     a = ap.parse_args()
+    load_course(a.course)
     if a.print_script:
         print(lesson_script(a.print_script))
         return
     nums = [int(x) for x in a.lessons.split(",") if x] or list(range(1, len(COURSE["lessons"]) + 1))
     outdir = os.path.join(ROOT, "courses", COURSE["slug"], "media", "audio")
     os.makedirs(outdir, exist_ok=True)
-    jobs = [(n, a.model, a.voices, a.voice, a.speed, outdir) for n in nums]
+    jobs = [(n, a.model, a.voices, a.voice, a.speed, outdir, a.course) for n in nums]
     with ProcessPoolExecutor(max_workers=a.jobs) as ex:
         for n, secs in ex.map(render, jobs):
             print(f"lesson {n:02d}: {secs/60:.1f} min", flush=True)

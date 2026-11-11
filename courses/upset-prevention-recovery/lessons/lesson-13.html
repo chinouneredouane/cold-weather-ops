@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lesson 13: Automation, Flight Control Laws and System Failures — Upset Prevention and Recovery</title>
+  <meta name="description" content="Describe how automation can mask or create a developing upset." />
+  <meta name="theme-color" content="#125a2b" />
+  <link rel="icon" type="image/png" href="../../../assets/img/logo.png" />
+  <link rel="stylesheet" href="../../../assets/css/academy.css" />
+</head>
+<body data-course="upset-prevention-recovery" data-total="24" data-lesson="13">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="brand">
+      <a href="../index.html"><img src="../../../assets/img/logo.png" alt="Domestic Airlines Logo" class="logo" /></a>
+      <div class="brand-text">
+        <div class="ar">الخطوط الجوية الداخلية</div>
+        <div class="en">DOMESTIC AIRLINES — Upset Prevention and Recovery</div>
+      </div>
+    </div>
+    <nav aria-label="Main">
+      <a href="../index.html">Home</a>
+      <a href="../quiz.html">Quiz</a>
+      <a href="../finale.html">Final Video</a>
+    </nav>
+  </header>
+  <div class="progress" aria-hidden="true"><div id="progressBar"></div></div>
+  <main id="main">
+
+    <div class="lesson-layout">
+      <div>
+        <button class="btn ghost sidebar-toggle" aria-controls="courseContents" aria-expanded="false">Show course contents</button>
+        <nav class="card sidebar" id="courseContents" aria-label="Course contents"><h2>Module 1 · Introduction</h2><ul><li><a href="lesson-01.html" data-lesson-link="1"><span class="state" aria-hidden="true"></span><span>01. Course Orientation and the UPRT Framework</span></a></li><li><a href="lesson-02.html" data-lesson-link="2"><span class="state" aria-hidden="true"></span><span>02. Upsets and Loss of Control: Definitions</span></a></li><li><a href="lesson-03.html" data-lesson-link="3"><span class="state" aria-hidden="true"></span><span>03. Causes and Contributing Factors of Upsets</span></a></li></ul><h2>Module 2 · Aerodynamics</h2><ul><li><a href="lesson-04.html" data-lesson-link="4"><span class="state" aria-hidden="true"></span><span>04. Lift, Angle of Attack and Flight Path</span></a></li><li><a href="lesson-05.html" data-lesson-link="5"><span class="state" aria-hidden="true"></span><span>05. The Stall</span></a></li><li><a href="lesson-06.html" data-lesson-link="6"><span class="state" aria-hidden="true"></span><span>06. Load Factor and g-Awareness</span></a></li><li><a href="lesson-07.html" data-lesson-link="7"><span class="state" aria-hidden="true"></span><span>07. High-Altitude Aerodynamics</span></a></li><li><a href="lesson-08.html" data-lesson-link="8"><span class="state" aria-hidden="true"></span><span>08. Stability, Control and Rudder Use</span></a></li></ul><h2>Module 3 · Certification, Performance and Loading</h2><ul><li><a href="lesson-09.html" data-lesson-link="9"><span class="state" aria-hidden="true"></span><span>09. Aeroplane Certification and the Flight Envelope</span></a></li><li><a href="lesson-10.html" data-lesson-link="10"><span class="state" aria-hidden="true"></span><span>10. Energy Management and Pitch-Power Coupling</span></a></li><li><a href="lesson-11.html" data-lesson-link="11"><span class="state" aria-hidden="true"></span><span>11. Weight and Balance Effects</span></a></li></ul><h2>Module 4 · Threats and Human Factors</h2><ul><li><a href="lesson-12.html" data-lesson-link="12"><span class="state" aria-hidden="true"></span><span>12. Environmental Threats</span></a></li><li><a href="lesson-13.html" data-lesson-link="13" aria-current="page"><span class="state" aria-hidden="true"></span><span>13. Automation, Flight Control Laws and System Failures</span></a></li><li><a href="lesson-14.html" data-lesson-link="14"><span class="state" aria-hidden="true"></span><span>14. Startle, Surprise and Spatial Disorientation</span></a></li><li><a href="lesson-15.html" data-lesson-link="15"><span class="state" aria-hidden="true"></span><span>15. CRM, Monitoring and Intervention</span></a></li></ul><h2>Module 5 · Prevention</h2><ul><li><a href="lesson-16.html" data-lesson-link="16"><span class="state" aria-hidden="true"></span><span>16. Flight Path Management and Manual Handling</span></a></li><li><a href="lesson-17.html" data-lesson-link="17"><span class="state" aria-hidden="true"></span><span>17. Recognising a Developing Upset</span></a></li><li><a href="lesson-18.html" data-lesson-link="18"><span class="state" aria-hidden="true"></span><span>18. Unreliable Airspeed and Instrument Failures</span></a></li></ul><h2>Module 6 · Recovery</h2><ul><li><a href="lesson-19.html" data-lesson-link="19"><span class="state" aria-hidden="true"></span><span>19. Upset Recovery Principles</span></a></li><li><a href="lesson-20.html" data-lesson-link="20"><span class="state" aria-hidden="true"></span><span>20. Stall Recovery</span></a></li><li><a href="lesson-21.html" data-lesson-link="21"><span class="state" aria-hidden="true"></span><span>21. Nose-High Upset Recovery</span></a></li><li><a href="lesson-22.html" data-lesson-link="22"><span class="state" aria-hidden="true"></span><span>22. Nose-Low and High-Bank Upset Recovery</span></a></li></ul><h2>Module 7 · Lessons Learned</h2><ul><li><a href="lesson-23.html" data-lesson-link="23"><span class="state" aria-hidden="true"></span><span>23. Lessons from Accidents</span></a></li><li><a href="lesson-24.html" data-lesson-link="24"><span class="state" aria-hidden="true"></span><span>24. Course Review and Simulator Training</span></a></li></ul></nav>
+      </div>
+      <article class="lesson">
+        <header class="lesson-head">
+          <svg viewBox="0 0 100 100" class="art" aria-hidden="true" focusable="false"><circle cx="34" cy="32" r="13" fill="none" stroke="currentColor" stroke-width="6"/><circle cx="68" cy="36" r="11" fill="none" stroke="currentColor" stroke-width="6"/><path d="M10 86c2-18 12-28 24-28s22 10 24 28M54 86c1-14 7-22 14-22s14 8 16 22" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/></svg>
+          <div class="eyebrow">Module 4 · Threats and Human Factors</div>
+          <h1>Lesson 13: Automation, Flight Control Laws and System Failures</h1>
+          <div class="meta"><span>Lesson 13 of 24</span><span>≈ 8 min</span><a class="pdf-link" href="../pdf/lesson-13.pdf" download>⬇ Download PDF</a></div>
+        </header>
+        <div class="card lesson-body">
+          <div class="audio-block">
+            <span class="label">Lesson narration</span>
+            <audio controls preload="metadata" style="display:none"><source src="../media/audio/lesson-13.mp3" type="audio/mpeg"></audio>
+            <button type="button" class="btn primary" data-tts style="display:none">Listen</button>
+            <button type="button" class="btn ghost" data-tts-stop style="display:none">Stop</button>
+            <div class="audio-status" aria-live="polite">Checking for narration…</div>
+          </div>
+          <section class="objectives" data-narrate>
+            <h2>Learning objectives</h2>
+            <ul><li>Describe how automation can mask or create a developing upset.</li><li>Explain the effects of autopilot disconnect, mode confusion and degraded flight control laws.</li><li>Apply automation management principles to upset prevention.</li></ul>
+          </section>
+          <figure class="lesson-figure"><img src="../media/images/lesson-13.jpg" alt="Flight-deck view with autopilot-off caution on the displays" loading="lazy" decoding="async"><figcaption>Automation can mask a developing upset — until it disconnects.</figcaption></figure>
+          <div data-narrate>
+
+<h2>Advantages and limits of automation</h2>
+<p>Automation flies precisely and reduces workload, which helps prevent many upsets. But it can also:</p>
+<ul>
+  <li><strong>mask</strong> a developing problem — the autopilot holds the aircraft against an asymmetry, ice accretion or mis-trim until it reaches its limit and disconnects, handing the pilot an aircraft that is already out of trim;</li>
+  <li><strong>create</strong> an upset — an unexpected mode, a faulty sensor driving the autothrust or a flight control system, or a disconnect at a critical moment;</li>
+  <li>reduce the pilot's awareness of the aircraft's energy state and the manual flying skill needed to recover.</li>
+</ul>
+
+<h2>Mode awareness</h2>
+<ul>
+  <li>The <strong>flight mode annunciator (FMA)</strong> shows what the automation is actually doing. Read it, announce changes, and cross-check.</li>
+  <li>Watch for modes where the autothrust is <strong>not</strong> controlling speed — such as idle-thrust descent modes, "hold" modes, or after the autothrust has disconnected.</li>
+  <li>If the automation does not do what you expect, <strong>reduce the level of automation</strong> or fly manually — do not spend time reprogramming at low altitude.</li>
+</ul>
+
+<h2>Autopilot disconnect</h2>
+<p>An unexpected disconnect, with its aural warning, is a classic trigger for startle. Be ready for an out-of-trim condition. The pilot flying takes control smoothly, announces it, and stabilises the attitude and speed before doing anything else.</p>
+
+<h2>Fly-by-wire control laws</h2>
+<ul>
+  <li>In <strong>normal law</strong>, envelope protections typically limit bank, pitch, load factor, angle of attack and overspeed.</li>
+  <li>Failures — such as unreliable air data or certain system faults — can cause the system to revert to an <strong>alternate or direct law</strong>, in which some or all protections are lost. Handling may also change.</li>
+  <li>In a degraded law, the aircraft <strong>can be stalled</strong>. Stall warning and recovery become the pilot's responsibility.</li>
+</ul>
+
+<h2>Other system-induced threats</h2>
+<ul>
+  <li>Engine failure or asymmetric thrust at low speed — yaw and roll that the autopilot may initially hide.</li>
+  <li>Flight control malfunctions — jammed or runaway trim, spoiler or rudder problems. Know the memory items.</li>
+  <li>Instrument failures — compare the attitude indicators with each other and with the standby instrument.</li>
+</ul>
+<div class="callout"><span class="label">Principle</span><p>Use the level of automation that best suits the situation — and always be able to fly the aircraft manually.</p></div>
+
+          </div>
+          <section class="takeaways" data-narrate>
+            <h2>Key takeaways</h2>
+            <ul><li>Automation can mask a developing upset until it disconnects — expect an out-of-trim aircraft.</li><li>Read and announce the FMA; reduce automation if it does not do what you expect.</li><li>In degraded fly-by-wire laws, protections may be lost and the aircraft can stall.</li></ul>
+          </section>
+          <section class="kc" data-answer="1" data-explain="Fly the aircraft first: take control, announce it, and stabilise the attitude and speed, expecting a possible out-of-trim condition.">
+            <h2>Knowledge check</h2>
+            <p class="q">The autopilot disconnects unexpectedly in cruise. What should the pilot flying do first?</p>
+            <div class="opts"><button type="button" class="opt" aria-pressed="false">Re-engage the autopilot immediately</button><button type="button" class="opt" aria-pressed="false">Take control smoothly, announce it, and stabilise attitude and speed</button><button type="button" class="opt" aria-pressed="false">Check the circuit breakers</button><button type="button" class="opt" aria-pressed="false">Call the cabin crew</button></div>
+            <div class="fb" aria-live="polite"></div>
+          </section>
+          <div class="lesson-end"></div>
+        </div>
+        <nav class="lesson-nav" aria-label="Lesson navigation"><a class="btn" href="lesson-12.html">◀ Previous<small>Environmental Threats</small></a><a class="btn primary" id="nextLesson" href="lesson-14.html">Next ▶<small>Startle, Surprise and Spatial Disorientation</small></a></nav>
+      </article>
+    </div>
+  </main>
+  <footer class="bottombar">
+    <img src="../../../assets/img/logo.png" alt="Domestic Airlines Logo" class="logo small" />
+    <div class="copy">&copy; 2026 Domestic Airlines — Training</div>
+    <a href="../../../index.html">All courses</a>
+    <p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p>
+  </footer>
+<script src="../../../assets/js/course.js"></script>
+</body>
+</html>

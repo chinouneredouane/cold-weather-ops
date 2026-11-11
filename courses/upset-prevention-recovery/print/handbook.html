@@ -1,0 +1,1212 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Upset Prevention and Recovery — Course handbook</title>
+<style>
+@page{size:A4;margin:18mm 16mm 20mm}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#24342b;font-size:10.5pt;line-height:1.5;margin:0}
+h1,h2,h3{color:#14231b;line-height:1.25;break-after:avoid}
+h1{font-size:21pt;margin:0 0 6pt}h2{font-size:14pt;margin:16pt 0 6pt}h3{font-size:12pt;margin:12pt 0 4pt}
+p{margin:0 0 7pt}ul,ol{margin:0 0 8pt;padding-left:16pt}li{margin:2pt 0}
+a{color:#125a2b;text-decoration:none}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:9pt;background:#f3f9f5;border:1px solid #dbe5df;padding:0 3pt;border-radius:3pt}
+.cover{height:257mm;display:flex;flex-direction:column;justify-content:center;break-after:page;
+  background:linear-gradient(120deg,#0c3d1e,#125a2b 55%,#2a8a50);color:#fff;padding:22mm;border-radius:4mm;margin:0}
+.cover h1{color:#fff;font-size:34pt}.cover .k{letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#bfe3cb;font-size:10pt}
+.cover p{color:#e3f1e8;font-size:13pt}.cover .logo{background:#fff;padding:5mm 7mm;border-radius:3mm;display:inline-block;margin-bottom:14mm}
+.cover .logo img{height:16mm}.cover .meta{margin-top:12mm;font-size:10.5pt;color:#d3ebdb}
+.toc{break-after:page}.toc h2{margin-top:0}.toc ol{list-style:none;padding:0}
+.toc li{display:flex;gap:8pt;padding:3pt 0;border-bottom:1px dotted #c9d8cf}.toc .n{width:22pt;font-weight:700;color:#5b6b62}
+.toc .mod{margin-top:9pt;font-weight:800;color:#125a2b;border:0;text-transform:uppercase;font-size:9pt;letter-spacing:.06em}
+.lesson{break-before:page}
+.lesson-head{background:linear-gradient(120deg,#0c3d1e,#1d7a3e);color:#fff;border-radius:3mm;padding:9pt 13pt;margin-bottom:10pt}
+.lesson-head h1{color:#fff;font-size:17pt;margin:2pt 0}.lesson-head .k{font-size:8.5pt;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#c7e8d2}
+.lesson-head .m{font-size:9pt;color:#dbefe2}
+.objectives{background:#f3f9f5;border:1px solid #dbe5df;border-radius:2mm;padding:7pt 11pt;margin:0 0 10pt}
+.objectives h2,.takeaways h2,.kc h2{font-size:9.5pt;text-transform:uppercase;letter-spacing:.06em;margin:0 0 3pt;color:#125a2b}
+.lesson-figure{margin:0 0 10pt;break-inside:avoid}.lesson-figure img{width:100%;max-height:85mm;object-fit:contain;border:1px solid #dbe5df;border-radius:2mm;background:#f3f9f5}
+figure{margin:9pt 0;break-inside:avoid}figure svg{width:100%;height:auto}figcaption{font-size:8.5pt;color:#5b6b62;margin-top:3pt}
+.diagram{border:1px solid #dbe5df;border-radius:2mm;padding:5pt}
+.table-wrap{margin:8pt 0;border:1px solid #dbe5df;border-radius:2mm;overflow:hidden}
+table{border-collapse:collapse;width:100%;font-size:9pt}th,td{text-align:left;vertical-align:top;padding:4pt 6pt;border-bottom:1px solid #dbe5df}
+th{background:#f3f9f5}tr{break-inside:avoid}td.code{font-weight:800;font-size:12pt;text-align:center;width:34pt}
+.callout{border-left:3pt solid #1d7a3e;background:#f3f9f5;padding:6pt 10pt;margin:8pt 0;border-radius:0 2mm 2mm 0;break-inside:avoid}
+.callout .label{display:block;font-size:8.5pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#125a2b}
+.callout.warn{border-color:#c8102e;background:#fdecef}.callout.warn .label{color:#c8102e}
+.callout.caution{border-color:#d08a00;background:#fff5e0}.callout.caution .label{color:#9a6200}
+.callout.info{border-color:#1f5f99;background:#e9f2fb}.callout.info .label{color:#1f5f99}
+.callout > :last-child{margin-bottom:0}
+.steps{list-style:none;padding:0;counter-reset:s}.steps>li{counter-increment:s;position:relative;padding-left:20pt;margin:4pt 0}
+.steps>li::before{content:counter(s);position:absolute;left:0;top:0;width:14pt;height:14pt;border-radius:50%;background:#1d7a3e;color:#fff;font-weight:800;font-size:8pt;display:flex;align-items:center;justify-content:center}
+.dialog{border:1px solid #dbe5df;border-radius:2mm;padding:4pt 10pt;margin:8pt 0;break-inside:avoid}.dialog p{margin:4pt 0}.dialog b{color:#125a2b}
+.muted{color:#5b6b62}
+.takeaways{background:#0c3d1e;color:#e8f5ec;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}.takeaways h2{color:#fff}
+.kc{border:1.5pt dashed #b9d7c3;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}
+.kc .q{font-weight:700;margin:2pt 0 4pt}.kc ol{list-style:upper-alpha}.kc .a{font-size:9pt;margin-top:4pt;color:#125a2b}
+.disclaimer{font-size:8.5pt;color:#5b6b62;border-top:1px solid #dbe5df;padding-top:6pt;margin-top:14pt}
+</style></head><body>
+<section class="cover"><div><span class="logo"><img src="../../../assets/img/logo.png" alt="Domestic Airlines"></span></div>
+  <div class="k">Domestic Airlines — Training</div><h1>Upset Prevention and Recovery</h1>
+  <p>Course handbook</p><p>Academic upset prevention and recovery training (UPRT): aerodynamics, causes of upsets, human factors, prevention and recovery techniques — aligned with ICAO Doc 10011.</p>
+  <div class="meta">24 lessons · 7 modules · about 3.5 hours</div>
+  <div class="meta">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</div></section>
+<section class="toc"><h2>Contents</h2><ol><li class="mod">Module 1 — Introduction</li><li><span class="n">01</span><a href="#lesson-1">Course Orientation and the UPRT Framework</a></li><li><span class="n">02</span><a href="#lesson-2">Upsets and Loss of Control: Definitions</a></li><li><span class="n">03</span><a href="#lesson-3">Causes and Contributing Factors of Upsets</a></li><li class="mod">Module 2 — Aerodynamics</li><li><span class="n">04</span><a href="#lesson-4">Lift, Angle of Attack and Flight Path</a></li><li><span class="n">05</span><a href="#lesson-5">The Stall</a></li><li><span class="n">06</span><a href="#lesson-6">Load Factor and g-Awareness</a></li><li><span class="n">07</span><a href="#lesson-7">High-Altitude Aerodynamics</a></li><li><span class="n">08</span><a href="#lesson-8">Stability, Control and Rudder Use</a></li><li class="mod">Module 3 — Certification, Performance and Loading</li><li><span class="n">09</span><a href="#lesson-9">Aeroplane Certification and the Flight Envelope</a></li><li><span class="n">10</span><a href="#lesson-10">Energy Management and Pitch-Power Coupling</a></li><li><span class="n">11</span><a href="#lesson-11">Weight and Balance Effects</a></li><li class="mod">Module 4 — Threats and Human Factors</li><li><span class="n">12</span><a href="#lesson-12">Environmental Threats</a></li><li><span class="n">13</span><a href="#lesson-13">Automation, Flight Control Laws and System Failures</a></li><li><span class="n">14</span><a href="#lesson-14">Startle, Surprise and Spatial Disorientation</a></li><li><span class="n">15</span><a href="#lesson-15">CRM, Monitoring and Intervention</a></li><li class="mod">Module 5 — Prevention</li><li><span class="n">16</span><a href="#lesson-16">Flight Path Management and Manual Handling</a></li><li><span class="n">17</span><a href="#lesson-17">Recognising a Developing Upset</a></li><li><span class="n">18</span><a href="#lesson-18">Unreliable Airspeed and Instrument Failures</a></li><li class="mod">Module 6 — Recovery</li><li><span class="n">19</span><a href="#lesson-19">Upset Recovery Principles</a></li><li><span class="n">20</span><a href="#lesson-20">Stall Recovery</a></li><li><span class="n">21</span><a href="#lesson-21">Nose-High Upset Recovery</a></li><li><span class="n">22</span><a href="#lesson-22">Nose-Low and High-Bank Upset Recovery</a></li><li class="mod">Module 7 — Lessons Learned</li><li><span class="n">23</span><a href="#lesson-23">Lessons from Accidents</a></li><li><span class="n">24</span><a href="#lesson-24">Course Review and Simulator Training</a></li></ol></section>
+<section class="lesson" id="lesson-1">
+  <div class="lesson-head"><div class="k">Module 1 · Introduction</div>
+    <h1>Lesson 01: Course Orientation and the UPRT Framework</h1><div class="m">Lesson 1 of 24 · about 7 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Describe the purpose, structure and assessment of this course.</li><li>Identify the ICAO provisions and guidance that define upset prevention and recovery training (UPRT).</li><li>Explain the three components of UPRT: academic, simulator (FSTD) and on-aeroplane training.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-01.jpg" alt="Illustration of an airliner climbing above clouds"><figcaption>UPRT starts with prevention: knowledge, awareness and good flight path management.</figcaption></figure>
+  
+<h2>Why this course exists</h2>
+<p>Loss of control in flight (LOC-I) has been the largest single cause of fatalities in commercial air transport for many years. LOC-I accidents are rare, but most of them are not survivable. Investigations repeatedly found that crews met an unusual situation they had never practised, and they either did not recognise it in time or did not apply an effective recovery.</p>
+<p>The aim of UPRT is first to <strong>prevent</strong> upsets — through knowledge, awareness and good flight path management — and then to make sure that pilots can <strong>recognise and recover</strong> from one if it happens. Prevention always comes first.</p>
+
+<h2>The international framework</h2>
+<div class="table-wrap"><table>
+  <tr><th>Document</th><th>Content</th></tr>
+  <tr><td>ICAO Annex 1 — Personnel Licensing</td><td>UPRT requirements in pilot licence training, including the multi-crew pilot licence (MPL)</td></tr>
+  <tr><td>ICAO Annex 6, Part I — Operation of Aircraft</td><td>UPRT within operators' flight crew training programmes</td></tr>
+  <tr><td>PANS-TRG (ICAO Doc 9868)</td><td>Procedures for training, including UPRT in licence and type rating training</td></tr>
+  <tr><td>ICAO Doc 10011 — Manual on Aeroplane Upset Prevention and Recovery Training</td><td>The guidance on which this course is based: definitions, academic training elements, FSTD and on-aeroplane training</td></tr>
+  <tr><td>Airplane Upset Prevention and Recovery Training Aid (AUPRTA), Revision 3</td><td>Industry guidance by the major manufacturers with ICAO, including recovery techniques</td></tr>
+</table></div>
+<p>National authorities, such as EASA and the FAA, have turned these provisions into licensing and operator requirements. The Domestic Airlines Operations Manual and the aircraft manufacturer's procedures (FCOM, QRH, FCTM) apply them to our fleet.</p>
+
+<h2>The three components of UPRT</h2>
+<ul>
+  <li><strong>Academic training</strong> — the knowledge behind prevention and recovery: aerodynamics, causes of upsets, human factors and recovery principles. <em>This course covers the academic component.</em></li>
+  <li><strong>FSTD (simulator) training</strong> — practice of prevention and recovery in the aircraft type, within the validated training envelope of the simulator.</li>
+  <li><strong>On-aeroplane training</strong> — training in a suitable aeroplane, usually during licence training, which gives the real physiological sensations of g and unusual attitudes.</li>
+</ul>
+
+<h2>How to use this course</h2>
+<ul>
+  <li>24 lessons in 7 modules, about 3 hours in total. A lesson is marked complete when you reach its end or press <em>Next</em>.</li>
+  <li>Each lesson has narration, a picture, diagrams, key takeaways and a practice knowledge check.</li>
+  <li>The final quiz draws 20 questions from the question bank. The pass mark is 80 %.</li>
+  <li>Your progress is saved in this browser on this device.</li>
+</ul>
+
+<div class="callout warn"><span class="label">Important</span>
+<p>Recovery techniques in this course are generic principles from ICAO and industry guidance. <strong>Always use the procedures of the aircraft manufacturer</strong> (FCOM, QRH and FCTM) for your type. Where they differ from this course, the manufacturer's procedures take precedence.</p>
+</div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>LOC-I is the leading cause of fatalities in commercial air transport; prevention comes first.</li><li>ICAO Doc 10011 defines UPRT; Annex 1, Annex 6 and PANS-TRG require it.</li><li>UPRT has three parts: academic, FSTD and on-aeroplane. This course is the academic part.</li><li>Manufacturer procedures always take precedence over generic recovery techniques.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">Which ICAO document is the main guidance manual for upset prevention and recovery training?</p>
+    <ol><li>Doc 9640</li><li>Doc 10011</li><li>Doc 4444</li><li>Doc 9981</li></ol>
+    <p class="a"><b>Answer: B.</b> ICAO Doc 10011 is the Manual on Aeroplane Upset Prevention and Recovery Training.</p></div>
+</section>
+<section class="lesson" id="lesson-2">
+  <div class="lesson-head"><div class="k">Module 1 · Introduction</div>
+    <h1>Lesson 02: Upsets and Loss of Control: Definitions</h1><div class="m">Lesson 2 of 24 · about 7 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>State the definition of an aeroplane upset.</li><li>Distinguish a developing upset from a fully developed upset and from loss of control in flight.</li><li>Explain why early recognition is the most effective defence.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-02.jpg" alt="Flight-deck view in a 50-degree bank with the attitude indicator"><figcaption>More than 45° of bank, unintended — by definition an upset.</figcaption></figure>
+  
+<h2>What is an upset?</h2>
+<p>An <strong>upset</strong> is an undesired aircraft state characterised by unintentional divergences from the parameters normally experienced during line operations or training. In practice, an aeroplane is generally considered to be in an upset when it unintentionally exceeds one or more of these values:</p>
+<ul>
+  <li><strong>pitch attitude more than 25° nose-up;</strong></li>
+  <li><strong>pitch attitude more than 10° nose-down;</strong></li>
+  <li><strong>bank angle more than 45°;</strong></li>
+  <li>or, within these values, an <strong>airspeed inappropriate for the conditions</strong>.</li>
+</ul>
+
+<figure class="diagram">
+<svg viewBox="0 0 620 330" role="img" aria-label="Upset thresholds on an attitude indicator"><title>Upset thresholds on an attitude indicator</title><desc>Red lines at 25 degrees nose-up, 10 degrees nose-down and 45 degrees of bank.</desc>
+<g font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="13" fill="#24342b"><defs><clipPath id="clipenv"><circle cx="170" cy="160" r="130"/></clipPath></defs><g clip-path="url(#clipenv)"><g transform="rotate(0 170 160) translate(0 0.0)"><rect x="-220" y="-430" width="780" height="590" fill="#5aa6e0"/><rect x="-220" y="160" width="780" height="590" fill="#a0693a"/><line x1="-220" y1="160" x2="560" y2="160" stroke="#fff" stroke-width="2.5"/><line x1="136" y1="538.0" x2="204" y2="538.0" stroke="#fff" stroke-width="2"/><text x="210" y="543.0" fill="#fff" font-size="13" font-weight="700">90</text><text x="130" y="543.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">90</text><line x1="154" y1="517.0" x2="186" y2="517.0" stroke="#fff" stroke-width="2"/><line x1="136" y1="496.0" x2="204" y2="496.0" stroke="#fff" stroke-width="2"/><text x="210" y="501.0" fill="#fff" font-size="13" font-weight="700">80</text><text x="130" y="501.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">80</text><line x1="154" y1="475.0" x2="186" y2="475.0" stroke="#fff" stroke-width="2"/><line x1="136" y1="454.0" x2="204" y2="454.0" stroke="#fff" stroke-width="2"/><text x="210" y="459.0" fill="#fff" font-size="13" font-weight="700">70</text><text x="130" y="459.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">70</text><line x1="154" y1="433.0" x2="186" y2="433.0" stroke="#fff" stroke-width="2"/><line x1="136" y1="412.0" x2="204" y2="412.0" stroke="#fff" stroke-width="2"/><text x="210" y="417.0" fill="#fff" font-size="13" font-weight="700">60</text><text x="130" y="417.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">60</text><line x1="154" y1="391.0" x2="186" y2="391.0" stroke="#fff" stroke-width="2"/><line x1="136" y1="370.0" x2="204" y2="370.0" stroke="#fff" stroke-width="2"/><text x="210" y="375.0" fill="#fff" font-size="13" font-weight="700">50</text><text x="130" y="375.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">50</text><line x1="154" y1="349.0" x2="186" y2="349.0" stroke="#fff" stroke-width="2"/><line x1="136" y1="328.0" x2="204" y2="328.0" stroke="#fff" stroke-width="2"/><text x="210" y="333.0" fill="#fff" font-size="13" font-weight="700">40</text><text x="130" y="333.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">40</text><line x1="154" y1="307.0" x2="186" y2="307.0" stroke="#fff" stroke-width="2"/><line x1="136" y1="286.0" x2="204" y2="286.0" stroke="#fff" stroke-width="2"/><text x="210" y="291.0" fill="#fff" font-size="13" font-weight="700">30</text><text x="130" y="291.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">30</text><line x1="154" y1="265.0" x2="186" y2="265.0" stroke="#fff" stroke-width="2"/><line x1="136" y1="244.0" x2="204" y2="244.0" stroke="#fff" stroke-width="2"/><text x="210" y="249.0" fill="#fff" font-size="13" font-weight="700">20</text><text x="130" y="249.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">20</text><line x1="154" y1="223.0" x2="186" y2="223.0" stroke="#fff" stroke-width="2"/><line x1="136" y1="202.0" x2="204" y2="202.0" stroke="#fff" stroke-width="2"/><text x="210" y="207.0" fill="#fff" font-size="13" font-weight="700">10</text><text x="130" y="207.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">10</text><line x1="154" y1="181.0" x2="186" y2="181.0" stroke="#fff" stroke-width="2"/><line x1="154" y1="139.0" x2="186" y2="139.0" stroke="#fff" stroke-width="2"/><line x1="136" y1="118.0" x2="204" y2="118.0" stroke="#fff" stroke-width="2"/><text x="210" y="123.0" fill="#fff" font-size="13" font-weight="700">10</text><text x="130" y="123.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">10</text><line x1="154" y1="97.0" x2="186" y2="97.0" stroke="#fff" stroke-width="2"/><line x1="136" y1="76.0" x2="204" y2="76.0" stroke="#fff" stroke-width="2"/><text x="210" y="81.0" fill="#fff" font-size="13" font-weight="700">20</text><text x="130" y="81.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">20</text><line x1="154" y1="55.0" x2="186" y2="55.0" stroke="#fff" stroke-width="2"/><line x1="136" y1="34.0" x2="204" y2="34.0" stroke="#fff" stroke-width="2"/><text x="210" y="39.0" fill="#fff" font-size="13" font-weight="700">30</text><text x="130" y="39.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">30</text><line x1="154" y1="13.0" x2="186" y2="13.0" stroke="#fff" stroke-width="2"/><line x1="136" y1="-8.0" x2="204" y2="-8.0" stroke="#fff" stroke-width="2"/><text x="210" y="-3.0" fill="#fff" font-size="13" font-weight="700">40</text><text x="130" y="-3.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">40</text><line x1="154" y1="-29.0" x2="186" y2="-29.0" stroke="#fff" stroke-width="2"/><line x1="136" y1="-50.0" x2="204" y2="-50.0" stroke="#fff" stroke-width="2"/><text x="210" y="-45.0" fill="#fff" font-size="13" font-weight="700">50</text><text x="130" y="-45.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">50</text><line x1="154" y1="-71.0" x2="186" y2="-71.0" stroke="#fff" stroke-width="2"/><line x1="136" y1="-92.0" x2="204" y2="-92.0" stroke="#fff" stroke-width="2"/><text x="210" y="-87.0" fill="#fff" font-size="13" font-weight="700">60</text><text x="130" y="-87.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">60</text><line x1="154" y1="-113.0" x2="186" y2="-113.0" stroke="#fff" stroke-width="2"/><line x1="136" y1="-134.0" x2="204" y2="-134.0" stroke="#fff" stroke-width="2"/><text x="210" y="-129.0" fill="#fff" font-size="13" font-weight="700">70</text><text x="130" y="-129.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">70</text><line x1="154" y1="-155.0" x2="186" y2="-155.0" stroke="#fff" stroke-width="2"/><line x1="136" y1="-176.0" x2="204" y2="-176.0" stroke="#fff" stroke-width="2"/><text x="210" y="-171.0" fill="#fff" font-size="13" font-weight="700">80</text><text x="130" y="-171.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">80</text><line x1="154" y1="-197.0" x2="186" y2="-197.0" stroke="#fff" stroke-width="2"/><line x1="136" y1="-218.0" x2="204" y2="-218.0" stroke="#fff" stroke-width="2"/><text x="210" y="-213.0" fill="#fff" font-size="13" font-weight="700">90</text><text x="130" y="-213.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">90</text></g></g><line x1="60.9" y1="97.0" x2="73.0" y2="104.0" stroke="#fff" stroke-width="2.5"/><line x1="80.9" y1="70.9" x2="85.9" y2="75.9" stroke="#fff" stroke-width="2.5"/><line x1="107.0" y1="50.9" x2="114.0" y2="63.0" stroke="#fff" stroke-width="2.5"/><line x1="126.9" y1="41.6" x2="129.3" y2="48.2" stroke="#fff" stroke-width="2.5"/><line x1="148.1" y1="35.9" x2="149.3" y2="42.8" stroke="#fff" stroke-width="2.5"/><line x1="170.0" y1="34.0" x2="170.0" y2="48.0" stroke="#fff" stroke-width="2.5"/><line x1="191.9" y1="35.9" x2="190.7" y2="42.8" stroke="#fff" stroke-width="2.5"/><line x1="213.1" y1="41.6" x2="210.7" y2="48.2" stroke="#fff" stroke-width="2.5"/><line x1="233.0" y1="50.9" x2="226.0" y2="63.0" stroke="#fff" stroke-width="2.5"/><line x1="259.1" y1="70.9" x2="254.1" y2="75.9" stroke="#fff" stroke-width="2.5"/><line x1="279.1" y1="97.0" x2="267.0" y2="104.0" stroke="#fff" stroke-width="2.5"/><g transform="rotate(0 170 160)"><path d="M170 50 l-9 15 h18 z" fill="#ffd24a" stroke="#333" stroke-width="1"/></g><path d="M170 36 l-8 -12 h16 z" fill="#fff"/><g fill="#ffd24a" stroke="#222" stroke-width="1.2"><rect x="100" y="156" width="44" height="8" rx="2"/><rect x="196" y="156" width="44" height="8" rx="2"/><rect x="165" y="155" width="10" height="10"/></g><circle cx="170" cy="160" r="130" fill="none" stroke="#1e2a24" stroke-width="7"/><line x1="60" y1="55.0" x2="280" y2="55.0" stroke="#c8102e" stroke-width="3" stroke-dasharray="7 5"/><line x1="60" y1="202.0" x2="280" y2="202.0" stroke="#c8102e" stroke-width="3" stroke-dasharray="7 5"/><line x1="170" y1="160" x2="63.9" y2="53.9" stroke="#c8102e" stroke-width="3" stroke-dasharray="7 5"/><line x1="170" y1="160" x2="276.1" y2="53.9" stroke="#c8102e" stroke-width="3" stroke-dasharray="7 5"/>
+<g font-size="15">
+<text x="330" y="60" font-weight="700" fill="#c8102e">Pitch more than 25° nose-up</text>
+<text x="330" y="110" font-weight="700" fill="#c8102e">Bank more than 45°</text>
+<text x="330" y="207.0" font-weight="700" fill="#c8102e">Pitch more than 10° nose-down</text>
+<text x="330" y="262" font-weight="700" fill="#24342b">…or airspeed inappropriate</text>
+<text x="330" y="282" fill="#24342b">for the conditions, within these limits</text>
+</g></g></svg>
+<figcaption>The upset thresholds used in ICAO Doc 10011 and the industry training aid. They describe an upset — they are not targets or limits for normal flight.</figcaption>
+</figure>
+
+<h2>Developing and developed upsets</h2>
+<p>An upset does not appear from nowhere. It nearly always begins as a <strong>developing upset</strong> — a deviation that is growing: speed decaying on approach, bank slowly increasing after an autopilot disconnect, pitch rising in turbulence. At this stage a small, early correction is usually enough.</p>
+<p>If the deviation is not detected or corrected, it becomes a <strong>developed upset</strong>, where large control inputs and a structured recovery are needed. If recovery is not achieved, the result is <strong>loss of control in flight (LOC-I)</strong>: the aircraft departs from controlled flight, often with a stall, and may not be recoverable in the altitude available.</p>
+<div class="callout"><span class="label">The key idea</span><p>The earlier a deviation is recognised, the smaller the correction and the larger the safety margin. Prevention and early recognition are far more effective than any recovery technique.</p></div>
+
+<h2>Stall and upset</h2>
+<p>A stall can be both a <strong>cause</strong> and a <strong>result</strong> of an upset. A stalled aeroplane may roll or pitch uncontrollably; an aeroplane in a nose-high upset may stall. In every case, <strong>stall recovery takes priority</strong> — you cannot recover the attitude while the wing is stalled (Lesson 19).</p>
+
+<h2>Why upsets are dangerous</h2>
+<ul>
+  <li>They are rare, so most pilots have little or no real experience of them.</li>
+  <li>They often arrive with <strong>startle and surprise</strong>, which slow down recognition and decision-making (Lesson 14).</li>
+  <li>They may happen at night, in cloud or with failed instruments, where visual references are missing.</li>
+  <li>The wrong instinctive reaction — such as pulling back when the aeroplane is stalled — can make them worse.</li>
+</ul>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Upset: unintentional pitch above 25° nose-up or 10° nose-down, bank above 45°, or inappropriate speed.</li><li>Developing upsets need small, early corrections; developed upsets need a structured recovery.</li><li>Stall recovery always takes priority over attitude recovery.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">Which of these situations meets the definition of an upset?</p>
+    <ol><li>A 30° bank turn in a holding pattern</li><li>Unintentional bank of 55° after an autopilot disconnect</li><li>A 15° nose-up pitch during a normal take-off</li><li>A 3° glide path on approach</li></ol>
+    <p class="a"><b>Answer: B.</b> An unintentional bank angle greater than 45° is an upset. The other situations are normal, intended manoeuvres.</p></div>
+</section>
+<section class="lesson" id="lesson-3">
+  <div class="lesson-head"><div class="k">Module 1 · Introduction</div>
+    <h1>Lesson 03: Causes and Contributing Factors of Upsets</h1><div class="m">Lesson 3 of 24 · about 8 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Describe the three main families of upset causes: environmental, systems-induced and pilot-induced.</li><li>Recognise how several factors usually combine in an upset.</li><li>Relate each family of causes to prevention strategies.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-03.jpg" alt="Airliner near a thunderstorm with lightning over the sea"><figcaption>Environmental, systems and pilot factors usually combine to cause an upset.</figcaption></figure>
+  
+<h2>Three families of causes</h2>
+<div class="table-wrap"><table>
+  <tr><th>Family</th><th>Examples</th></tr>
+  <tr><td><strong>Environmentally induced</strong></td><td>Turbulence and clear-air turbulence; mountain waves; windshear and microbursts; wake turbulence; thunderstorms; airframe icing; temperature changes at high altitude</td></tr>
+  <tr><td><strong>Systems-induced</strong></td><td>Autopilot or autothrust behaviour and disconnects; flight control malfunctions or degraded control laws; erroneous air data (unreliable airspeed); instrument failures; asymmetric thrust or engine failure</td></tr>
+  <tr><td><strong>Pilot-induced</strong></td><td>Inattention and poor monitoring; distraction; inappropriate control inputs; mode confusion; poor energy management; spatial disorientation; startle; fatigue; inadequate manual flying skill</td></tr>
+</table></div>
+
+<h2>Upsets are rarely caused by one factor</h2>
+<p>Accident investigations show a typical pattern: an <strong>initial trigger</strong> — often environmental or technical — followed by <strong>human responses</strong> that do not contain it, or that make it worse. For example:</p>
+<ul>
+  <li>Ice crystals block the pitot probes (environmental) → the autopilot disconnects and air data is unreliable (systems) → the pilot makes sustained nose-up inputs under stress (pilot-induced) → the aircraft stalls.</li>
+  <li>A faulty sensor causes the autothrust to reduce thrust (systems) → the crew does not notice the speed decay (monitoring) → the stall warning surprises them at low altitude (startle).</li>
+</ul>
+
+<h2>Prevention strategies for each family</h2>
+<ul>
+  <li><strong>Environmental:</strong> knowledge of the threats, weather avoidance, respecting wake separation, briefing and planning, and using the right speeds and altitudes with adequate margins (Lesson 12).</li>
+  <li><strong>Systems:</strong> understanding the automation and its modes, monitoring the flight mode annunciations, knowing the memory items for unreliable airspeed and flight control malfunctions (Lessons 13 and 18).</li>
+  <li><strong>Pilot:</strong> disciplined monitoring, manual handling practice, energy awareness, managing startle, fatigue awareness and CRM (Lessons 14–16).</li>
+</ul>
+<div class="callout"><span class="label">Threat and error management</span><p>Treat every cause as a <strong>threat</strong> to be anticipated and briefed. Most upset-related accidents could have been stopped at the threat or error stage — long before an upset recovery was needed.</p></div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Causes are environmental, systems-induced or pilot-induced — usually in combination.</li><li>A technical or weather trigger often becomes an upset through human responses.</li><li>Each family of causes has its own prevention strategy.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">Which is an example of a systems-induced upset cause?</p>
+    <ol><li>Wake turbulence from a preceding aircraft</li><li>Unreliable airspeed after a pitot probe blockage</li><li>A microburst on approach</li><li>Fatigue during a night flight</li></ol>
+    <p class="a"><b>Answer: B.</b> Erroneous air data from a blocked pitot probe is a systems-induced factor, even if the blockage itself was caused by weather.</p></div>
+</section>
+<section class="lesson" id="lesson-4">
+  <div class="lesson-head"><div class="k">Module 2 · Aerodynamics</div>
+    <h1>Lesson 04: Lift, Angle of Attack and Flight Path</h1><div class="m">Lesson 4 of 24 · about 9 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Explain the relationship between lift, airspeed, air density and angle of attack.</li><li>Distinguish pitch attitude, flight path angle and angle of attack.</li><li>Explain why angle of attack, not attitude or speed, determines the stall.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-04.jpg" alt="Airliner with smooth airflow lines around it"><figcaption>Lift depends on angle of attack — and the wing stalls at its critical angle.</figcaption></figure>
+  
+<h2>The lift equation</h2>
+<p>Lift depends on four things: <strong>air density</strong>, <strong>true airspeed (squared)</strong>, <strong>wing area</strong> and the <strong>lift coefficient</strong>, which mainly depends on the angle of attack and the wing configuration (flaps and slats).</p>
+<p><code>Lift = ½ × ρ × V² × S × CL</code></p>
+<p>At a given weight, the aircraft needs a certain amount of lift. If the speed decreases, the angle of attack must increase to keep the same lift — until the wing reaches its <strong>critical angle of attack</strong>. Speed and angle of attack are linked, but they are not the same thing.</p>
+
+<h2>Three different angles</h2>
+
+<figure class="diagram">
+<svg viewBox="0 0 860 250" role="img" aria-label="Pitch attitude, flight path angle and angle of attack"><title>Pitch attitude, flight path angle and angle of attack</title><desc>The aircraft pitch attitude equals flight path angle plus angle of attack.</desc>
+<g font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="13" fill="#24342b"><defs><marker id="ar1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="context-stroke"/></marker></defs>
+<line x1="30" y1="210" x2="680" y2="210" stroke="#5b6b62" stroke-dasharray="6 5"/><text x="680" y="230" text-anchor="end" fill="#5b6b62">horizon</text>
+<g transform="rotate(-15 250 210)">
+  <path d="M130 210 Q150 196 250 198 L380 202 Q400 206 380 214 L250 222 Q150 224 130 210z" fill="#e9eef1" stroke="#24342b" stroke-width="2"/>
+  <path d="M150 206 L120 170 L138 170 L182 204z" fill="#e9eef1" stroke="#24342b" stroke-width="2"/>
+</g>
+<line x1="250" y1="210" x2="597.7" y2="116.8" stroke="#1f5f99" stroke-width="2.5"/>
+<line x1="250" y1="210" x2="628.6" y2="176.9" stroke="#1d7a3e" stroke-width="3" marker-end="url(#ar1)"/>
+<path d="M425.0 210.0 A175 175 0 0 0 419.0 164.7" fill="none" stroke="#1f5f99" stroke-width="2.5"/><path d="M390.0 210.0 A140 140 0 0 0 389.5 197.8" fill="none" stroke="#1d7a3e" stroke-width="2.5"/><path d="M477.1 190.1 A228 228 0 0 0 470.2 151.0" fill="none" stroke="#c76a00" stroke-width="4"/>
+<text x="605.7" y="120.8" fill="#1f5f99" font-weight="700">wing chord / pitch attitude</text>
+<text x="636.6" y="181.9" fill="#1d7a3e" font-weight="700">flight path (relative airflow)</text>
+<text x="426.2" y="169.1" fill="#1f5f99" font-weight="800" font-size="15">θ</text>
+<text x="395.9" y="205.9" fill="#1d7a3e" font-weight="800" font-size="15">γ</text>
+<text x="482.5" y="174.4" fill="#c76a00" font-weight="800" font-size="16">α</text>
+<text x="30" y="34" font-size="15" font-weight="700">Pitch attitude = flight path angle + angle of attack (θ = γ + α)</text>
+<text x="30" y="56" fill="#5b6b62">Angle of attack is measured between the wing chord and the relative airflow — not the horizon.</text></g></svg>
+<figcaption>The attitude indicator shows pitch, not angle of attack. An aircraft can be nose-up and still descending at a very high angle of attack.</figcaption>
+</figure>
+
+<ul>
+  <li><strong>Pitch attitude (θ)</strong> — the angle between the aircraft's longitudinal axis and the horizon. It is what the attitude indicator shows.</li>
+  <li><strong>Flight path angle (γ)</strong> — the angle between the aircraft's path through the air and the horizon. A flight path vector, where fitted, shows it.</li>
+  <li><strong>Angle of attack (α)</strong> — the angle between the wing chord and the relative airflow. It decides how much lift the wing produces, and whether it stalls.</li>
+</ul>
+<p>In normal flight the three are close together and easy to confuse. In an upset they can be very different. An aircraft in a stalled descent can have a nose-up pitch attitude, a steeply descending flight path, and an angle of attack far above the critical value.</p>
+
+<h2>The lift curve</h2>
+
+<figure class="diagram">
+<svg viewBox="0 0 680 330" role="img" aria-label="Lift coefficient against angle of attack"><title>Lift coefficient against angle of attack</title><desc>Lift rises with angle of attack up to the critical angle, then falls.</desc>
+<g font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="13" fill="#24342b">
+<line x1="70" y1="280" x2="640" y2="280" stroke="#5b6b62" stroke-width="1.5"/><line x1="70" y1="280" x2="70" y2="30" stroke="#5b6b62" stroke-width="1.5"/>
+<text x="355" y="315" text-anchor="middle">Angle of attack →</text><text x="28" y="155" text-anchor="middle" transform="rotate(-90 28 155)">Lift coefficient →</text>
+<rect x="110" y="34" width="210" height="246" fill="#1d7a3e" opacity=".08"/><text x="215" y="270" text-anchor="middle" fill="#125a2b" font-weight="700">normal operating range</text>
+<path d="M70 262 L420 70 Q470 40 500 52 Q540 70 600 160" fill="none" stroke="#1d7a3e" stroke-width="4"/>
+<line x1="492" y1="34" x2="492" y2="280" stroke="#c8102e" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="500" y="232" fill="#c8102e" font-weight="700">critical angle</text><text x="500" y="249" fill="#c8102e">of attack: STALL</text>
+<line x1="430" y1="34" x2="430" y2="280" stroke="#c76a00" stroke-width="2" stroke-dasharray="4 4"/>
+<text x="424" y="200" text-anchor="end" fill="#c76a00" font-weight="700">stall warning</text><text x="424" y="216" text-anchor="end" fill="#c76a00">(stick shaker)</text>
+</g></svg>
+<figcaption>A wing stalls at its critical angle of attack — at any airspeed, attitude or power setting. Stall warning activates a few degrees earlier.</figcaption>
+</figure>
+
+<p>As the angle of attack increases, lift increases almost linearly — until the airflow can no longer follow the upper surface of the wing. Beyond the critical angle of attack, the flow separates, lift falls and drag rises sharply. This is the <strong>stall</strong>.</p>
+<div class="callout warn"><span class="label">Key principle</span><p>A wing can stall at <strong>any airspeed, any attitude and any power setting</strong>. The only way to unstall it is to <strong>reduce the angle of attack</strong>.</p></div>
+
+<h2>Angle of attack information on the flight deck</h2>
+<ul>
+  <li>Stall warning (stick shaker, aural warning) and, on some types, a stick pusher are triggered by angle of attack sensors.</li>
+  <li>Low-speed bands, pitch limit indicators and angle of attack indicators (where fitted) help you see how close you are to the critical angle.</li>
+  <li>Know which of these your aircraft has, and how they behave if air data is unreliable.</li>
+</ul>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Lift depends on density, speed², wing area and lift coefficient (angle of attack and configuration).</li><li>Pitch attitude = flight path angle + angle of attack — they can be very different in an upset.</li><li>The wing stalls at its critical angle of attack — at any speed, attitude or power.</li><li>The only cure for a stall is to reduce the angle of attack.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">An aircraft is 10° nose-up but descending steeply. What does this tell you about its angle of attack?</p>
+    <ol><li>It must be close to zero</li><li>It is very high — possibly beyond the critical angle</li><li>It is negative</li><li>It cannot be determined from attitude and flight path</li></ol>
+    <p class="a"><b>Answer: B.</b> Angle of attack = pitch attitude − flight path angle. With the nose up and the path steeply down, the angle of attack is very high.</p></div>
+</section>
+<section class="lesson" id="lesson-5">
+  <div class="lesson-head"><div class="k">Module 2 · Aerodynamics</div>
+    <h1>Lesson 05: The Stall</h1><div class="m">Lesson 5 of 24 · about 9 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Describe the aerodynamic characteristics of an approach to stall and a full stall.</li><li>Identify stall warning systems and natural stall cues.</li><li>Explain the factors that change stall speed and stall behaviour.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-05.jpg" alt="Airliner at a high nose-up attitude with separated airflow behind the wing"><figcaption>In a stall the airflow separates from the upper surface of the wing.</figcaption></figure>
+  
+<h2>Approach to stall and full stall</h2>
+<ul>
+  <li><strong>Approach to stall (impending stall)</strong> — the angle of attack is approaching the critical value. Indications: stall warning (stick shaker, aural warning), low-speed indications, and possibly the onset of buffet.</li>
+  <li><strong>Full stall</strong> — the critical angle of attack has been exceeded. Indications may include buffet (sometimes heavy), an uncommanded nose-down pitch or roll, inability to arrest a descent, loss of pitch authority, and stick pusher activation on aircraft that have one.</li>
+</ul>
+<p>Both require the same immediate action: <strong>reduce the angle of attack</strong>.</p>
+
+<h2>Stall warning and protection systems</h2>
+<ul>
+  <li><strong>Stall warning</strong> (stick shaker, aural alert) activates with a margin before the stall — on transport aeroplanes, at a speed and angle of attack set by certification requirements.</li>
+  <li><strong>Stick pusher</strong> (some types) pushes the control column forward to prevent the aircraft from reaching an aerodynamic stall. Do not fight it.</li>
+  <li><strong>Envelope protection</strong> (fly-by-wire types in normal law) limits angle of attack — but protections can be lost when the control law degrades, for example with unreliable air data.</li>
+  <li>Stall warning is scheduled for a <strong>clean wing</strong>. With ice or contamination, the stall may occur <strong>before</strong> the warning.</li>
+</ul>
+
+<h2>What changes the stall speed</h2>
+<div class="table-wrap"><table>
+  <tr><th>Factor</th><th>Effect on stall speed</th></tr>
+  <tr><td>Higher weight</td><td>Increases (stall speed is proportional to √weight)</td></tr>
+  <tr><td>Higher load factor (turns, pull-ups)</td><td>Increases with √n — about 41 % higher at 2 g (Lesson 6)</td></tr>
+  <tr><td>Flaps and slats extended</td><td>Decreases (higher CLmax)</td></tr>
+  <tr><td>Ice or contamination</td><td>Increases, and the critical angle of attack decreases</td></tr>
+  <tr><td>Forward centre of gravity</td><td>Increases slightly (more tail down-force needed)</td></tr>
+  <tr><td>Higher altitude</td><td>Indicated stall speed changes little at low altitude, but Mach effects raise it at high altitude (Lesson 7)</td></tr>
+</table></div>
+
+<h2>Stall behaviour</h2>
+<ul>
+  <li>Swept wings tend to stall at the tips first, which can cause roll-off and a nose-up pitching tendency. Design features (washout, vortex generators, fences) reduce this.</li>
+  <li>Aircraft with T-tails may be susceptible to a <strong>deep stall</strong>, which is why they are often fitted with stick pushers.</li>
+  <li>Power effects: on aircraft with underwing engines, high thrust gives a nose-up pitching moment (Lesson 10) which can work against stall recovery.</li>
+  <li>Simulators may not reproduce full-stall behaviour accurately outside their validated envelope (Lesson 24).</li>
+</ul>
+<div class="callout caution"><span class="label">Remember</span><p>Pulling back to "hold altitude" when the stall warning activates increases the angle of attack — the opposite of what is needed. Altitude loss is secondary; <strong>reducing the angle of attack is the priority</strong>.</p></div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Approach to stall and full stall both require an immediate reduction in angle of attack.</li><li>Stall warning is scheduled for a clean wing — ice can cause a stall without warning.</li><li>Weight, load factor, configuration and contamination change the stall speed.</li><li>Do not fight a stick pusher.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">The stick shaker activates during a level-off. What is the first priority?</p>
+    <ol><li>Maintain altitude with back pressure</li><li>Reduce the angle of attack</li><li>Increase bank to turn away</li><li>Extend the speedbrakes</li></ol>
+    <p class="a"><b>Answer: B.</b> The stall warning indicates a high angle of attack. Reducing the angle of attack is the first priority, even at the cost of altitude.</p></div>
+</section>
+<section class="lesson" id="lesson-6">
+  <div class="lesson-head"><div class="k">Module 2 · Aerodynamics</div>
+    <h1>Lesson 06: Load Factor and g-Awareness</h1><div class="m">Lesson 6 of 24 · about 8 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Calculate load factor in a level turn and its effect on stall speed.</li><li>State the structural limit load factors of transport aeroplanes and the meaning of manoeuvring speed.</li><li>Apply g-awareness during upset recovery.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-06.jpg" alt="Flight-deck view in a 60-degree bank"><figcaption>A 60° level turn means 2 g — and a stall speed 41 % higher.</figcaption></figure>
+  
+<h2>Load factor</h2>
+<p><strong>Load factor (n)</strong> is the ratio of lift to weight, felt as "g". In straight and level flight n = 1. In a level turn the wing must produce extra lift to hold altitude:</p>
+<p><code>n = 1 / cos(bank angle)</code> — 30° gives 1.15 g, 45° gives 1.41 g, 60° gives 2 g.</p>
+
+<figure class="diagram">
+<svg viewBox="0 0 640 340" role="img" aria-label="Load factor and stall speed against bank angle"><title>Load factor and stall speed against bank angle</title><desc>Load factor equals one over the cosine of bank angle.</desc>
+<g font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="13" fill="#24342b">
+<line x1="70" y1="280" x2="610" y2="280" stroke="#5b6b62" stroke-width="1.5"/><line x1="70" y1="280" x2="70" y2="20" stroke="#5b6b62" stroke-width="1.5"/>
+<line x1="70" y1="280" x2="70" y2="286" stroke="#5b6b62"/><text x="70" y="302" text-anchor="middle" font-size="12">0°</text><line x1="175" y1="280" x2="175" y2="286" stroke="#5b6b62"/><text x="175" y="302" text-anchor="middle" font-size="12">15°</text><line x1="280" y1="280" x2="280" y2="286" stroke="#5b6b62"/><text x="280" y="302" text-anchor="middle" font-size="12">30°</text><line x1="385" y1="280" x2="385" y2="286" stroke="#5b6b62"/><text x="385" y="302" text-anchor="middle" font-size="12">45°</text><line x1="490" y1="280" x2="490" y2="286" stroke="#5b6b62"/><text x="490" y="302" text-anchor="middle" font-size="12">60°</text><line x1="595" y1="280" x2="595" y2="286" stroke="#5b6b62"/><text x="595" y="302" text-anchor="middle" font-size="12">75°</text>
+<text x="60" y="284" text-anchor="end" font-size="12">1 g</text><line x1="70" y1="280" x2="610" y2="280" stroke="#dbe5df"/><text x="60" y="214" text-anchor="end" font-size="12">2 g</text><line x1="70" y1="210" x2="610" y2="210" stroke="#dbe5df"/><text x="60" y="144" text-anchor="end" font-size="12">3 g</text><line x1="70" y1="140" x2="610" y2="140" stroke="#dbe5df"/><text x="60" y="74" text-anchor="end" font-size="12">4 g</text><line x1="70" y1="70" x2="610" y2="70" stroke="#dbe5df"/>
+<polyline points="70.0,280.0 77.0,280.0 84.0,280.0 91.0,279.9 98.0,279.8 105.0,279.7 112.0,279.6 119.0,279.5 126.0,279.3 133.0,279.1 140.0,278.9 147.0,278.7 154.0,278.4 161.0,278.2 168.0,277.9 175.0,277.5 182.0,277.2 189.0,276.8 196.0,276.4 203.0,276.0 210.0,275.5 217.0,275.0 224.0,274.5 231.0,274.0 238.0,273.4 245.0,272.8 252.0,272.1 259.0,271.4 266.0,270.7 273.0,270.0 280.0,269.2 287.0,268.3 294.0,267.5 301.0,266.5 308.0,265.6 315.0,264.5 322.0,263.5 329.0,262.4 336.0,261.2 343.0,259.9 350.0,258.6 357.0,257.2 364.0,255.8 371.0,254.3 378.0,252.7 385.0,251.0 392.0,249.2 399.0,247.4 406.0,245.4 413.0,243.3 420.0,241.1 427.0,238.8 434.0,236.3 441.0,233.7 448.0,230.9 455.0,228.0 462.0,224.8 469.0,221.5 476.0,217.9 483.0,214.1 490.0,210.0 497.0,205.6 504.0,200.9 511.0,195.8 518.0,190.3 525.0,184.4 532.0,177.9 539.0,170.8 546.0,163.1 553.0,154.7 560.0,145.3 567.0,135.0 574.0,123.5 581.0,110.6 588.0,96.0 595.0,79.5" fill="none" stroke="#1f5f99" stroke-width="4"/>
+<polyline points="70.0,280.0 77.0,280.0 84.0,280.0 91.0,279.9 98.0,279.8 105.0,279.7 112.0,279.6 119.0,279.5 126.0,279.3 133.0,279.1 140.0,278.9 147.0,278.7 154.0,278.4 161.0,278.2 168.0,277.9 175.0,277.6 182.0,277.2 189.0,276.8 196.0,276.4 203.0,276.0 210.0,275.6 217.0,275.1 224.0,274.6 231.0,274.1 238.0,273.5 245.0,272.9 252.0,272.3 259.0,271.7 266.0,271.0 273.0,270.3 280.0,269.6 287.0,268.8 294.0,268.0 301.0,267.1 308.0,266.2 315.0,265.3 322.0,264.3 329.0,263.3 336.0,262.3 343.0,261.2 350.0,260.0 357.0,258.8 364.0,257.6 371.0,256.3 378.0,254.9 385.0,253.5 392.0,252.0 399.0,250.5 406.0,248.9 413.0,247.2 420.0,245.4 427.0,243.5 434.0,241.6 441.0,239.5 448.0,237.4 455.0,235.1 462.0,232.8 469.0,230.3 476.0,227.7 483.0,224.9 490.0,222.0 497.0,218.9 504.0,215.7 511.0,212.2 518.0,208.6 525.0,204.6 532.0,200.5 539.0,196.0 546.0,191.3 553.0,186.1 560.0,180.6 567.0,174.6 574.0,168.2 581.0,161.1 588.0,153.3 595.0,144.8" fill="none" stroke="#c8102e" stroke-width="3" stroke-dasharray="8 5"/>
+<circle cx="490" cy="210" r="6" fill="#1f5f99"/><text x="480" y="198" text-anchor="end" fill="#1f5f99" font-weight="700">60° bank = 2 g</text>
+<circle cx="490" cy="222.0" r="6" fill="#c8102e"/><text x="502" y="240.0" fill="#c8102e" font-weight="700">stall speed +41 %</text>
+<text x="340" y="325" text-anchor="middle">Bank angle in a level turn →</text>
+<text x="90" y="40" fill="#1f5f99" font-weight="700">Load factor n = 1 / cos(bank)</text>
+<text x="90" y="60" fill="#c8102e" font-weight="700">Stall speed rises with √n</text></g></svg>
+<figcaption>In a level turn, load factor rises steeply above 45° of bank, and the stall speed rises with it. Unloading (reducing g) lowers the stall speed again.</figcaption>
+</figure>
+
+<h2>Load factor and stall speed</h2>
+<p>Stall speed increases with the square root of the load factor: <code>V<sub>S(n)</sub> = V<sub>S</sub> × √n</code>. At 60° of bank (2 g) the stall speed is about 41 % higher. This is why steep turns at low speed are dangerous, and why <strong>unloading</strong> — relaxing back pressure to reduce g — is a powerful way to lower the stall speed and the angle of attack during recovery.</p>
+
+<h2>Structural limits</h2>
+<ul>
+  <li>Transport aeroplanes are typically designed for limit manoeuvring load factors of <strong>+2.5 g to −1.0 g</strong> with flaps retracted, and <strong>+2.0 g to 0 g</strong> with flaps extended. Check your AFM.</li>
+  <li>Exceeding these limits may cause permanent structural deformation; the ultimate load (1.5 × limit) is where failure may occur.</li>
+  <li>Rolling and pulling at the same time (a "rolling pull") produces asymmetric loads, which have lower limits.</li>
+</ul>
+
+<h2>Manoeuvring speed (V<sub>A</sub>)</h2>
+<p>Below V<sub>A</sub>, a single full deflection of one flight control <strong>in one axis</strong> should not exceed structural limits. V<sub>A</sub> does <strong>not</strong> protect against:</p>
+<ul>
+  <li>full deflections in more than one axis at the same time;</li>
+  <li>rapid <strong>alternating</strong> or reversing inputs, especially of the rudder (Lesson 8 — American Airlines 587).</li>
+</ul>
+
+<h2>g-awareness in recovery</h2>
+<ul>
+  <li>In a <strong>nose-high</strong> recovery, reduced or even slightly negative g (unloading) is often needed. It may feel uncomfortable; loose objects and unrestrained people can be thrown about.</li>
+  <li>In a <strong>nose-low</strong> recovery, roll wings level <strong>before</strong> pulling, then pull smoothly — avoiding both the stall warning and excessive g.</li>
+  <li>The sensation of g is not a reliable indicator of attitude; use the instruments.</li>
+</ul>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Level turn: n = 1/cos(bank); 60° of bank = 2 g.</li><li>Stall speed rises with √n: +41 % at 2 g. Unloading lowers stall speed and angle of attack.</li><li>Typical limits flaps up: +2.5 g / −1.0 g. Avoid rolling pulls.</li><li>VA does not protect against multiple-axis or alternating full inputs.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">An aircraft with a 1 g stall speed of 120 kt is in a level 60° bank turn. What is its approximate stall speed?</p>
+    <ol><li>120 kt</li><li>about 140 kt</li><li>about 170 kt</li><li>240 kt</li></ol>
+    <p class="a"><b>Answer: C.</b> 60° of bank gives 2 g; √2 ≈ 1.41; 120 × 1.41 ≈ 170 kt.</p></div>
+</section>
+<section class="lesson" id="lesson-7">
+  <div class="lesson-head"><div class="k">Module 2 · Aerodynamics</div>
+    <h1>Lesson 07: High-Altitude Aerodynamics</h1><div class="m">Lesson 7 of 24 · about 9 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Explain the effects of Mach number and low air density on aircraft handling at high altitude.</li><li>Describe buffet boundaries, buffet margins and the coffin corner.</li><li>Recognise why recovery at high altitude needs a different approach from recovery at low altitude.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-07.jpg" alt="Airliner cruising at high altitude above the clouds with a dark blue sky"><figcaption>At high altitude, the margins are smaller and the air is thin.</figcaption></figure>
+  
+<h2>Thin air and Mach effects</h2>
+<p>At high altitude the air is thin. To produce the required lift, the aircraft flies at a high true airspeed and a relatively high angle of attack. At the same time, the speed of sound is lower in colder air, so the aircraft operates close to its <strong>critical Mach number</strong>. Two important consequences follow:</p>
+<ul>
+  <li>The critical angle of attack <strong>decreases</strong> as Mach number increases. The aircraft can stall at a lower angle of attack — and a higher indicated speed — than at low altitude.</li>
+  <li>Engines produce much less excess thrust. There is little energy available to accelerate or climb.</li>
+</ul>
+
+<h2>Buffet boundaries and the coffin corner</h2>
+
+<figure class="diagram">
+<svg viewBox="0 0 640 340" role="img" aria-label="Buffet boundaries and the coffin corner"><title>Buffet boundaries and the coffin corner</title><desc>Low-speed and high-speed buffet boundaries converge at high altitude.</desc>
+<g font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="13" fill="#24342b">
+<line x1="70" y1="290" x2="620" y2="290" stroke="#5b6b62" stroke-width="1.5"/><line x1="70" y1="290" x2="70" y2="20" stroke="#5b6b62" stroke-width="1.5"/>
+<text x="345" y="325" text-anchor="middle">Speed (Mach) →</text><text x="28" y="160" text-anchor="middle" transform="rotate(-90 28 160)">Altitude →</text>
+<path d="M120 290 Q200 160 330 62" fill="none" stroke="#c8102e" stroke-width="4"/>
+<path d="M560 290 Q500 160 360 62" fill="none" stroke="#c76a00" stroke-width="4"/>
+<path d="M120 290 Q200 160 330 62 L345 52 L360 62 Q500 160 560 290 z" fill="#1d7a3e" opacity=".1"/>
+<circle cx="345" cy="54" r="7" fill="#24342b"/><text x="360" y="40" font-weight="700">“coffin corner”</text>
+<text x="80" y="110" fill="#c8102e" font-weight="700">low-speed buffet / stall</text>
+<text x="452" y="110" fill="#c76a00" font-weight="700">high-speed (Mach) buffet</text>
+<text x="350" y="240" text-anchor="middle" fill="#125a2b" font-weight="700">usable speed range</text>
+<line x1="232" y1="150" x2="470" y2="150" stroke="#24342b" stroke-width="2" marker-end="url(#ar2)" marker-start="url(#ar2)"/><defs><marker id="ar2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="context-stroke"/></marker></defs>
+<text x="350" y="174" text-anchor="middle" font-size="12">margin shrinks with altitude, weight and g</text></g></svg>
+<figcaption>At high altitude the margin between low-speed buffet and Mach buffet becomes small. Higher weight, turbulence or bank (more g) reduce it further.</figcaption>
+</figure>
+
+<ul>
+  <li><strong>Low-speed buffet</strong> is the onset of airflow separation as the stall approaches.</li>
+  <li><strong>High-speed (Mach) buffet</strong> is caused by shock waves and flow separation as the aircraft approaches its maximum Mach.</li>
+  <li>As altitude and weight increase, the two boundaries come closer together. The point where they meet is often called the <strong>coffin corner</strong>.</li>
+</ul>
+<p>Operators commonly plan cruise levels with a margin to buffet of at least <strong>1.3 g</strong> — enough to absorb turbulence or a bank of about 40° without reaching buffet. The FMS "maximum altitude" usually includes such a margin. Flying above the optimum altitude reduces it.</p>
+
+<h2>Handling at high altitude</h2>
+<ul>
+  <li><strong>Aerodynamic damping is lower</strong>: the aircraft responds more slowly and oscillations take longer to settle.</li>
+  <li><strong>Small pitch changes produce large vertical speeds</strong> because of the high true airspeed.</li>
+  <li><strong>Control inputs should be smooth and small.</strong> Large, rapid inputs can quickly exceed the buffet margin.</li>
+  <li>Watch for temperature increases and wind shifts that suddenly reduce the Mach or speed margin.</li>
+</ul>
+
+<h2>Recovery at high altitude</h2>
+<div class="callout warn"><span class="label">Key principle</span>
+<p>At high altitude, an aircraft at or near the stall <strong>cannot be "powered out" of it</strong>. The excess thrust is too small. The angle of attack must be reduced, and the aircraft must be allowed to <strong>lose altitude</strong> to regain speed and margin. Trading altitude for speed is the correct action.</p>
+</div>
+<p>Accept a significant altitude loss. Return to the cleared level only after the aircraft is under control and the speed is appropriate. Inform ATC as soon as possible.</p>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>The critical angle of attack decreases as Mach increases — high-altitude stalls occur at lower angles.</li><li>Buffet boundaries converge with altitude and weight; keep at least the planned buffet margin.</li><li>Damping is low and vertical speed changes are large — use small, smooth inputs.</li><li>At high altitude, recover by reducing angle of attack and trading altitude for speed.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">At FL390 the aircraft approaches a stall. What is the most effective recovery action?</p>
+    <ol><li>Apply maximum thrust and hold altitude</li><li>Reduce the angle of attack and accept an altitude loss to regain speed</li><li>Increase pitch to climb above the turbulence</li><li>Extend flaps to lower the stall speed</li></ol>
+    <p class="a"><b>Answer: B.</b> Excess thrust at high altitude is small. The angle of attack must be reduced, and altitude traded for speed.</p></div>
+</section>
+<section class="lesson" id="lesson-8">
+  <div class="lesson-head"><div class="k">Module 2 · Aerodynamics</div>
+    <h1>Lesson 08: Stability, Control and Rudder Use</h1><div class="m">Lesson 8 of 24 · about 9 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Describe static and dynamic stability in pitch, roll and yaw.</li><li>Explain the role of trim and the dangers of an out-of-trim condition.</li><li>Apply correct rudder use and avoid hazardous rudder inputs.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-08.jpg" alt="Airliner over the sea with an oscillating flight path"><figcaption>Stability decides how the aircraft responds after a disturbance.</figcaption></figure>
+  
+<h2>Static and dynamic stability</h2>
+
+<figure class="diagram">
+<svg viewBox="0 0 640 240" role="img" aria-label="Static stability: stable, neutral and unstable"><title>Static stability: stable, neutral and unstable</title><desc>A ball in a bowl, on a flat surface and on a hill.</desc>
+<g font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="13" fill="#24342b"><path d="M40 70 Q110 190 180 70" fill="none" stroke="#24342b" stroke-width="4"/><circle cx="110" cy="117" r="13" fill="#1d7a3e"/><path d="M250 130 L390 130" fill="none" stroke="#24342b" stroke-width="4"/><circle cx="320" cy="117" r="13" fill="#c76a00"/><path d="M460 150 Q530 30 600 150" fill="none" stroke="#24342b" stroke-width="4"/><circle cx="530" cy="77" r="13" fill="#c8102e"/><g text-anchor="middle" font-weight="700"><text x="110" y="200">Positive (stable)</text><text x="320" y="200">Neutral</text><text x="530" y="200">Negative (unstable)</text></g><g text-anchor="middle" fill="#5b6b62"><text x="110" y="220">returns after a disturbance</text><text x="320" y="220">stays where it is put</text><text x="530" y="220">moves further away</text></g></g></svg>
+<figcaption>Static stability describes the first tendency after a disturbance. Transport aeroplanes are certified with positive stability, but it reduces as the centre of gravity moves aft.</figcaption>
+</figure>
+
+<ul>
+  <li><strong>Static stability</strong> is the initial tendency after a disturbance. <strong>Dynamic stability</strong> is what happens over time — whether the oscillations die out, continue or grow.</li>
+  <li><strong>Longitudinal (pitch) stability</strong> depends mainly on the centre of gravity position relative to the neutral point. Aft CG reduces it (Lesson 11).</li>
+  <li><strong>Lateral (roll) stability</strong> comes from wing dihedral and sweep. Swept wings produce a strong roll from sideslip (dihedral effect).</li>
+  <li><strong>Directional (yaw) stability</strong> comes from the vertical stabiliser. The interaction of yaw and roll produces <strong>Dutch roll</strong>, which yaw dampers suppress.</li>
+</ul>
+
+<h2>Control surface fundamentals</h2>
+<ul>
+  <li>Control effectiveness depends on dynamic pressure: at low speed, larger deflections are needed; at high speed, small inputs have large effects.</li>
+  <li>Spoilers assist roll on many jets. At high angles of attack, aileron effectiveness may be reduced and adverse yaw increased.</li>
+  <li>The horizontal stabiliser (trim) is much more powerful than the elevator. If the stabiliser is trimmed fully nose-up, the elevator alone may not be able to lower the nose.</li>
+</ul>
+
+<h2>Trim</h2>
+<p>The autopilot trims continuously. When it disconnects, the aircraft can be out of trim — for example after the autopilot has been holding a roll against an asymmetry, or trimming nose-up while speed decayed. Be ready for this whenever the autopilot disconnects. In a recovery, use <strong>pitch trim</strong> carefully to help achieve the required pitch, and do not leave the aircraft trimmed for an unsafe condition.</p>
+
+<h2>Rudder use</h2>
+<div class="callout warn"><span class="label">Warning</span>
+<p>Rapid, <strong>alternating</strong> (cyclic) rudder inputs can generate loads beyond the design limits of the vertical stabiliser — even below V<sub>A</sub>. In November 2001, American Airlines Flight 587, an Airbus A300-600, encountered wake turbulence after take-off from New York. The first officer made repeated full rudder inputs from side to side. The vertical stabiliser separated and the aircraft crashed, killing 265 people.</p>
+</div>
+<ul>
+  <li>On swept-wing transport aeroplanes, the rudder is mainly used for <strong>asymmetric thrust</strong>, crosswind take-offs and landings, and specific procedures.</li>
+  <li>It is <strong>not</strong> normally used to roll the aircraft in upset recovery. Roll with aileron and spoiler. Use rudder only as the manufacturer's procedure states — for example when aileron and spoiler authority is not enough.</li>
+  <li>Large rudder inputs at high speed produce sideslip and strong roll moments.</li>
+</ul>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Static stability is the first tendency; dynamic stability is the behaviour over time.</li><li>The stabiliser is more powerful than the elevator — mis-trim can limit recovery.</li><li>Expect an out-of-trim condition when the autopilot disconnects.</li><li>Never make rapid alternating rudder inputs; roll with aileron and spoiler.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">What was the key lesson of the American Airlines 587 accident?</p>
+    <ol><li>Use full rudder to recover from wake turbulence</li><li>Alternating rudder inputs can overload the vertical stabiliser even below VA</li><li>Autopilot should be engaged in wake turbulence</li><li>Spoilers are ineffective at high speed</li></ol>
+    <p class="a"><b>Answer: B.</b> Repeated full rudder reversals generated loads that exceeded the vertical stabiliser&#x27;s limits, even though the aircraft was below manoeuvring speed.</p></div>
+</section>
+<section class="lesson" id="lesson-9">
+  <div class="lesson-head"><div class="k">Module 3 · Certification, Performance and Loading</div>
+    <h1>Lesson 09: Aeroplane Certification and the Flight Envelope</h1><div class="m">Lesson 9 of 24 · about 7 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Describe what certification does — and does not — demonstrate about aircraft handling.</li><li>Identify the main speed and load limits of the flight envelope.</li><li>Explain why upset recovery may take the aircraft outside the conditions tested in certification.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-09.jpg" alt="Airliner at dusk inside a dashed flight envelope outline"><figcaption>Certification demonstrates behaviour inside the normal flight envelope.</figcaption></figure>
+  
+<h2>What certification demonstrates</h2>
+<p>Transport aeroplanes are certified to standards such as CS-25 and FAR Part 25. Test pilots demonstrate that, within the <strong>normal flight envelope</strong>, the aeroplane has adequate stability, controllability, stall warning and stall characteristics, and the required structural strength.</p>
+<p>Certification does <strong>not</strong> demonstrate:</p>
+<ul>
+  <li>recovery from every possible attitude — such as inverted flight or very high bank;</li>
+  <li>behaviour far beyond the stall, at extreme sideslip, or combined with failures;</li>
+  <li>how an average line pilot performs when startled at night.</li>
+</ul>
+<p>Upsets can therefore take the aircraft into conditions where its behaviour is <strong>less well known</strong> — and where simulator data may also be limited (Lesson 24).</p>
+
+<h2>The flight envelope</h2>
+<div class="table-wrap"><table>
+  <tr><th>Limit</th><th>Meaning</th></tr>
+  <tr><td>V<sub>MO</sub> / M<sub>MO</sub></td><td>Maximum operating speed / Mach number — not to be deliberately exceeded</td></tr>
+  <tr><td>V<sub>D</sub> / M<sub>D</sub></td><td>Design dive speed — demonstrated in flight test, with structural margin; not for line use</td></tr>
+  <tr><td>V<sub>A</sub></td><td>Design manoeuvring speed — full deflection of one control in one axis is acceptable below it (Lesson 6)</td></tr>
+  <tr><td>V<sub>FE</sub>, V<sub>LE</sub>, V<sub>LO</sub></td><td>Flap and landing gear speed limits</td></tr>
+  <tr><td>V<sub>S1g</sub> / V<sub>SR</sub></td><td>Reference stall speed — the basis for take-off and approach speeds</td></tr>
+  <tr><td>Load factor limits</td><td>Typically +2.5 / −1.0 g clean, +2.0 / 0 g with flaps extended</td></tr>
+</table></div>
+
+<h2>Margins in normal operation</h2>
+<ul>
+  <li>Operating speeds include margins above the stall: for example, the final approach reference speed is typically about 1.23 × V<sub>SR</sub> in the landing configuration.</li>
+  <li>Manoeuvring speeds for each flap setting, and the speed bands on the PFD, show the safe range for normal manoeuvres.</li>
+  <li>The buffet margin at cruise (Lesson 7) protects against turbulence and bank.</li>
+</ul>
+<p>These margins are what prevention protects. Most developing upsets begin as an erosion of one of these margins — usually speed.</p>
+
+<div class="callout"><span class="label">In a recovery</span><p>Exceeding a speed or load limit to save the aircraft is acceptable when there is no alternative — but avoid it if you can, and report any exceedance so that maintenance can inspect the aircraft.</p></div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Certification demonstrates behaviour within the normal envelope, not every possible upset.</li><li>Know VMO/MMO, VA, flap/gear limits, stall reference speed and g limits.</li><li>Operating speeds include margins; most upsets start with an eroded margin.</li><li>Report any limit exceedance after a recovery.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">Which statement about certification is correct?</p>
+    <ol><li>Certification proves recovery from any attitude</li><li>Certification demonstrates handling within the normal flight envelope, not every upset condition</li><li>Certification tests are done with startled line pilots</li><li>VD may be used in normal line operations</li></ol>
+    <p class="a"><b>Answer: B.</b> Certification demonstrates stability, control and stall behaviour within the normal envelope. Extreme upset conditions may be outside what was tested.</p></div>
+</section>
+<section class="lesson" id="lesson-10">
+  <div class="lesson-head"><div class="k">Module 3 · Certification, Performance and Loading</div>
+    <h1>Lesson 10: Energy Management and Pitch-Power Coupling</h1><div class="m">Lesson 10 of 24 · about 8 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Describe aircraft energy states and how pitch, thrust and drag change them.</li><li>Explain the effect of underwing engines on pitch.</li><li>Apply energy awareness to prevention and recovery.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-10.jpg" alt="Airliner descending over mountains along a curved path"><figcaption>Altitude and speed are two forms of the same energy.</figcaption></figure>
+  
+<h2>Energy states</h2>
+
+<figure class="diagram">
+<svg viewBox="0 0 640 280" role="img" aria-label="Energy management: potential, kinetic, thrust and drag"><title>Energy management: potential, kinetic, thrust and drag</title><desc>Altitude and airspeed can be exchanged; thrust minus drag changes total energy.</desc>
+<g font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="13" fill="#24342b"><defs><marker id="ar4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="context-stroke"/></marker></defs>
+<rect x="60" y="60" width="170" height="90" rx="12" fill="#1f5f99" opacity=".15" stroke="#1f5f99" stroke-width="2"/>
+<text x="145" y="98" text-anchor="middle" font-weight="800" fill="#1f5f99">Potential energy</text><text x="145" y="120" text-anchor="middle">altitude</text>
+<rect x="410" y="60" width="170" height="90" rx="12" fill="#1d7a3e" opacity=".15" stroke="#1d7a3e" stroke-width="2"/>
+<text x="495" y="98" text-anchor="middle" font-weight="800" fill="#125a2b">Kinetic energy</text><text x="495" y="120" text-anchor="middle">airspeed</text>
+<path d="M235 90 L405 90" stroke="#24342b" stroke-width="2.5" marker-end="url(#ar4)"/><path d="M405 125 L235 125" stroke="#24342b" stroke-width="2.5" marker-end="url(#ar4)"/>
+<text x="320" y="80" text-anchor="middle" font-size="12">descend → gain speed</text><text x="320" y="145" text-anchor="middle" font-size="12">climb → lose speed</text>
+<rect x="235" y="190" width="170" height="70" rx="12" fill="#c76a00" opacity=".15" stroke="#c76a00" stroke-width="2"/>
+<text x="320" y="220" text-anchor="middle" font-weight="800" fill="#c76a00">Thrust − drag</text><text x="320" y="242" text-anchor="middle">adds or removes total energy</text>
+<path d="M290 190 L180 154" stroke="#c76a00" stroke-width="2" marker-end="url(#ar4)"/><path d="M350 190 L460 154" stroke="#c76a00" stroke-width="2" marker-end="url(#ar4)"/></g></svg>
+<figcaption>Total energy is altitude plus speed. Pitch exchanges one for the other; only thrust and drag change the total. Know which state you are in before you act.</figcaption>
+</figure>
+
+<p>An aircraft's total energy is the sum of its <strong>potential energy</strong> (altitude) and <strong>kinetic energy</strong> (airspeed). Pitch exchanges one for the other. Only <strong>thrust and drag</strong> change the total. Common unsafe energy states:</p>
+<ul>
+  <li><strong>Low energy</strong> — low speed and low altitude, for example after a speed decay on approach. Few options remain.</li>
+  <li><strong>High energy</strong> — high speed in a descent, for example in a nose-low upset. The risk is overspeed and structural overload.</li>
+  <li><strong>Mismatch</strong> — high pitch with decaying speed (the energy is going into the climb), or low thrust with a level attitude.</li>
+</ul>
+
+<h2>Thrust response</h2>
+<ul>
+  <li>Jet engines take several seconds to accelerate from idle. Thrust is not an instant cure for a low-energy state — anticipate.</li>
+  <li>At high altitude, excess thrust is small (Lesson 7).</li>
+  <li>On the "back side" of the drag curve, below minimum drag speed, slowing down <em>increases</em> drag and the thrust needed. Speed can decay quickly if not corrected.</li>
+</ul>
+
+<h2>Pitch-power coupling</h2>
+
+<figure class="diagram">
+<svg viewBox="0 0 640 250" role="img" aria-label="Pitch-power coupling with underwing engines"><title>Pitch-power coupling with underwing engines</title><desc>Thrust line below the centre of gravity gives a nose-up moment.</desc>
+<g font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="13" fill="#24342b"><defs><marker id="ar3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="context-stroke"/></marker></defs>
+<path d="M90 160 Q110 140 200 140 L520 146 Q560 150 520 166 L200 176 Q110 178 90 160z" fill="#e9eef1" stroke="#24342b" stroke-width="2"/>
+<path d="M500 148 L560 90 L585 90 L560 150z" fill="#e9eef1" stroke="#24342b" stroke-width="2"/>
+<rect x="250" y="186" width="90" height="30" rx="14" fill="#cfd8d3" stroke="#24342b" stroke-width="2"/>
+<circle cx="320" cy="158" r="8" fill="#24342b"/><text x="332" y="130" font-weight="700">CG</text>
+<line x1="250" y1="201" x2="110" y2="201" stroke="#c76a00" stroke-width="5" marker-end="url(#ar3)"/>
+<text x="100" y="232" fill="#c76a00" font-weight="700">thrust line below the CG</text>
+<path d="M235 100 A95 95 0 0 1 365 100" fill="none" stroke="#c8102e" stroke-width="4" marker-end="url(#ar3)"/>
+<text x="300" y="34" text-anchor="middle" fill="#c8102e" font-weight="700">nose-up pitching moment when thrust increases</text>
+<path d="M60 120 l-14 -26" stroke="#c8102e" stroke-width="3" marker-end="url(#ar3)"/><text x="30" y="84" fill="#c8102e" font-size="12">nose</text></g></svg>
+<figcaption>With engines mounted below the wing, adding thrust pitches the nose up and reducing thrust pitches it down. At low speed, with little elevator authority, this coupling can be strong.</figcaption>
+</figure>
+
+<p>With engines mounted below the wing, the thrust line is below the centre of gravity. Increasing thrust produces a <strong>nose-up</strong> pitching moment; reducing thrust produces a nose-down moment. Expect it during a go-around, and in recoveries:</p>
+<ul>
+  <li>In a <strong>nose-high, low-speed</strong> situation, high thrust can make it harder to lower the nose. Reducing thrust may be necessary to regain pitch control.</li>
+  <li>In a <strong>stall recovery</strong>, adding thrust too early can work against the nose-down input.</li>
+  <li>A go-around with full thrust from a low speed produces a strong pitch-up; follow the pitch target and trim as required.</li>
+</ul>
+
+<h2>Speedbrakes and configuration</h2>
+<p>Speedbrakes increase drag and, on many types, the stall speed. They are a tool for high-energy situations — such as a nose-low, high-speed upset — but should be retracted in a low-energy situation or stall recovery. Do not change the flap or gear configuration in a recovery unless the procedure requires it.</p>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Total energy = altitude + speed. Pitch exchanges them; thrust and drag change the total.</li><li>Jet thrust takes time to build — anticipate low-energy situations.</li><li>Underwing engines: more thrust = nose-up moment; less thrust = nose-down.</li><li>Speedbrakes for high energy only; retract them in a stall recovery.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">In a nose-high, low-speed situation on an aircraft with underwing engines, why may thrust need to be reduced?</p>
+    <ol><li>To save fuel</li><li>Because high thrust creates a nose-up moment that resists lowering the nose</li><li>To increase the stall speed</li><li>To engage the autopilot</li></ol>
+    <p class="a"><b>Answer: B.</b> The thrust line below the CG produces a nose-up moment. Reducing thrust helps the elevator lower the nose.</p></div>
+</section>
+<section class="lesson" id="lesson-11">
+  <div class="lesson-head"><div class="k">Module 3 · Certification, Performance and Loading</div>
+    <h1>Lesson 11: Weight and Balance Effects</h1><div class="m">Lesson 11 of 24 · about 7 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Explain how weight affects stall speed, performance and buffet margin.</li><li>Describe the effects of forward and aft centre of gravity on stability and control.</li><li>Recognise how loading errors can contribute to an upset.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-11.jpg" alt="Airliner on the ground balanced on a beam at its centre of gravity"><figcaption>Weight and centre of gravity shape stability, stall speed and control authority.</figcaption></figure>
+  
+<h2>Weight</h2>
+<ul>
+  <li>Stall speed increases with the square root of weight. A heavier aircraft must fly faster for the same margin.</li>
+  <li>At high altitude, higher weight reduces the buffet margin and the maximum altitude (Lesson 7).</li>
+  <li>Climb performance and acceleration are lower at high weight — less energy is available in a recovery.</li>
+  <li>An incorrect weight entered in the FMS produces incorrect speeds, which can erode the stall margin from take-off onwards.</li>
+</ul>
+
+<h2>Centre of gravity</h2>
+
+<figure class="diagram">
+<svg viewBox="0 0 700 290" role="img" aria-label="Effects of centre of gravity position"><title>Effects of centre of gravity position</title><desc>Forward and aft centre of gravity effects.</desc>
+<g font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="13" fill="#24342b">
+<path d="M60 130 Q80 110 170 110 L520 116 Q560 120 520 136 L170 146 Q80 148 60 130z" fill="#e9eef1" stroke="#24342b" stroke-width="2"/>
+<rect x="230" y="160" width="200" height="12" fill="#dbe5df"/><rect x="250" y="160" width="160" height="12" fill="#1d7a3e" opacity=".5"/>
+<line x1="250" y1="150" x2="250" y2="182" stroke="#1f5f99" stroke-width="3"/><line x1="410" y1="150" x2="410" y2="182" stroke="#c8102e" stroke-width="3"/>
+<text x="250" y="200" text-anchor="middle" fill="#1f5f99" font-weight="700">forward limit</text><text x="410" y="200" text-anchor="middle" fill="#c8102e" font-weight="700">aft limit</text>
+<g font-size="13"><text x="60" y="235" fill="#1f5f99" font-weight="700">Forward CG</text>
+<text x="60" y="255">more stable, heavier pitch forces,</text><text x="60" y="273">higher stall speed, more elevator to rotate and flare</text>
+<text x="400" y="235" fill="#c8102e" font-weight="700">Aft CG</text>
+<text x="400" y="255">less stable, lighter pitch forces,</text><text x="400" y="273">easy to over-control, less nose-down authority</text></g></g></svg>
+<figcaption>The CG must stay within its certified limits. Loading errors outside the envelope can leave too little control authority to prevent or recover from an upset.</figcaption>
+</figure>
+
+<div class="table-wrap"><table>
+  <tr><th></th><th>Forward CG</th><th>Aft CG</th></tr>
+  <tr><td>Longitudinal stability</td><td>Greater</td><td>Reduced</td></tr>
+  <tr><td>Pitch control forces</td><td>Heavier</td><td>Lighter — easy to over-control</td></tr>
+  <tr><td>Stall speed</td><td>Slightly higher</td><td>Slightly lower</td></tr>
+  <tr><td>Elevator authority</td><td>More needed to rotate and flare</td><td>Less nose-down authority for stall recovery</td></tr>
+  <tr><td>Fuel consumption</td><td>Slightly higher (more tail down-force)</td><td>Slightly lower</td></tr>
+</table></div>
+
+<h2>Loading errors</h2>
+<ul>
+  <li>Cargo or passengers loaded differently from the load sheet can move the CG outside the envelope.</li>
+  <li>Unsecured cargo that shifts during rotation or in turbulence can cause a sudden, large pitch change.</li>
+  <li>Incorrect trim settings for take-off — from a wrong CG — can cause an early or late rotation and a nose-high or tail-strike situation.</li>
+</ul>
+<div class="callout"><span class="label">Prevention</span><p>Check the load sheet and the FMS entries carefully, cross-check weight and CG with the fuel and passenger figures, and be alert to unusual control forces at rotation. If the aircraft does not feel right, say so.</p></div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Higher weight: higher stall speed, lower buffet margin, less excess energy.</li><li>Aft CG: less stable, lighter forces, less nose-down authority. Forward CG: heavier forces, higher stall speed.</li><li>Loading and FMS weight errors erode margins before the flight begins.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">What is a typical effect of an aft centre of gravity?</p>
+    <ol><li>Heavier pitch control forces</li><li>Reduced longitudinal stability and lighter pitch forces</li><li>Higher stall speed</li><li>More nose-down elevator authority</li></ol>
+    <p class="a"><b>Answer: B.</b> An aft CG reduces stability and makes pitch forces lighter, so the aircraft is easier to over-control.</p></div>
+</section>
+<section class="lesson" id="lesson-12">
+  <div class="lesson-head"><div class="k">Module 4 · Threats and Human Factors</div>
+    <h1>Lesson 12: Environmental Threats</h1><div class="m">Lesson 12 of 24 · about 9 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Describe the upset hazards of turbulence, mountain waves, windshear, wake turbulence, thunderstorms and icing.</li><li>Apply avoidance strategies for each.</li><li>State the main actions for windshear and wake encounters.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-12.jpg" alt="Airliner flying over mountains with lenticular wave clouds"><figcaption>Mountain waves, windshear, wake and thunderstorms are environmental threats.</figcaption></figure>
+  
+<h2>Turbulence and mountain waves</h2>
+<ul>
+  <li><strong>Severe turbulence</strong> and clear-air turbulence can cause large, rapid attitude and altitude changes. Use the recommended turbulence penetration speed, keep seat belts fastened, and avoid large control inputs. The autopilot may remain engaged unless the procedure says otherwise.</li>
+  <li><strong>Mountain waves</strong> — strong winds across ridges create waves with powerful up- and downdrafts, sometimes marked by lenticular clouds. They can exceed the climb capability of the aircraft and cause speed excursions at high altitude.</li>
+</ul>
+
+<h2>Windshear and microbursts</h2>
+
+<figure class="diagram">
+<svg viewBox="0 0 640 290" role="img" aria-label="Microburst windshear on approach"><title>Microburst windshear on approach</title><desc>Headwind, downdraft and tailwind phases of a microburst.</desc>
+<g font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="13" fill="#24342b"><defs><marker id="ar5" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="context-stroke"/></marker></defs>
+<path d="M220 30 Q320 0 420 30 Q460 40 450 60 L190 60 Q180 40 220 30z" fill="#c9d3da"/>
+<path d="M270 70 L270 190" stroke="#1f5f99" stroke-width="3" marker-end="url(#ar5)"/><path d="M320 70 L320 190" stroke="#1f5f99" stroke-width="3" marker-end="url(#ar5)"/><path d="M370 70 L370 190" stroke="#1f5f99" stroke-width="3" marker-end="url(#ar5)"/>
+<path d="M300 200 Q200 220 80 215" stroke="#1f5f99" stroke-width="3" fill="none" marker-end="url(#ar5)"/>
+<path d="M340 200 Q440 220 560 215" stroke="#1f5f99" stroke-width="3" fill="none" marker-end="url(#ar5)"/>
+<line x1="30" y1="240" x2="610" y2="240" stroke="#a0693a" stroke-width="6"/>
+<path d="M600 120 Q470 128 400 150 Q330 175 260 200 Q190 222 120 232" fill="none" stroke="#c8102e" stroke-width="3" stroke-dasharray="8 6"/>
+<g font-weight="700"><text x="630" y="105" text-anchor="end" fill="#125a2b">1. headwind: speed and climb increase</text>
+<text x="160" y="130" fill="#c76a00">2. downdraft</text><text x="30" y="275" fill="#c8102e">3. tailwind: speed and lift lost</text></g></g></svg>
+<figcaption>A microburst first gives a performance-increasing headwind, then a downdraft and a performance-decreasing tailwind. Avoid it; if caught, apply the windshear escape manoeuvre.</figcaption>
+</figure>
+
+<ul>
+  <li><strong>Avoid</strong> — delay take-off or approach when windshear is reported or forecast, especially near convective weather.</li>
+  <li><strong>Recognise</strong> — predictive and reactive windshear warnings; unexplained speed changes of 15 kt or more; large vertical speed or pitch deviations.</li>
+  <li><strong>Recover</strong> — apply the manufacturer's windshear escape manoeuvre: typically maximum (go-around) thrust, wings level, pitch towards the target or flight director guidance, <strong>no configuration change</strong> until clear, and respect the stall warning.</li>
+</ul>
+
+<h2>Wake turbulence</h2>
+
+<figure class="diagram">
+<svg viewBox="0 0 640 240" role="img" aria-label="Wake vortices behind an aircraft"><title>Wake vortices behind an aircraft</title><desc>Two vortices trail from the wing tips.</desc>
+<g font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="13" fill="#24342b">
+<path d="M40 120 Q60 106 140 106 L250 110 Q270 114 250 124 L140 132 Q60 134 40 120z" fill="#e9eef1" stroke="#24342b" stroke-width="2"/>
+<path d="M150 112 L120 40 L140 40 L190 110z M150 128 L120 200 L140 200 L190 130z" fill="#e9eef1" stroke="#24342b" stroke-width="2"/>
+<ellipse cx="260" cy="48" rx="14" ry="10" fill="none" stroke="#1f5f99" stroke-width="2.5" opacity="1.0"/><ellipse cx="260" cy="192" rx="14" ry="10" fill="none" stroke="#1f5f99" stroke-width="2.5" opacity="1.0"/><ellipse cx="320" cy="52" rx="17" ry="12" fill="none" stroke="#1f5f99" stroke-width="2.5" opacity="0.87"/><ellipse cx="320" cy="196" rx="17" ry="12" fill="none" stroke="#1f5f99" stroke-width="2.5" opacity="0.87"/><ellipse cx="380" cy="56" rx="20" ry="14" fill="none" stroke="#1f5f99" stroke-width="2.5" opacity="0.74"/><ellipse cx="380" cy="200" rx="20" ry="14" fill="none" stroke="#1f5f99" stroke-width="2.5" opacity="0.74"/><ellipse cx="440" cy="60" rx="23" ry="16" fill="none" stroke="#1f5f99" stroke-width="2.5" opacity="0.61"/><ellipse cx="440" cy="204" rx="23" ry="16" fill="none" stroke="#1f5f99" stroke-width="2.5" opacity="0.61"/><ellipse cx="500" cy="64" rx="26" ry="18" fill="none" stroke="#1f5f99" stroke-width="2.5" opacity="0.48"/><ellipse cx="500" cy="208" rx="26" ry="18" fill="none" stroke="#1f5f99" stroke-width="2.5" opacity="0.48"/><ellipse cx="560" cy="68" rx="29" ry="20" fill="none" stroke="#1f5f99" stroke-width="2.5" opacity="0.35"/><ellipse cx="560" cy="212" rx="29" ry="20" fill="none" stroke="#1f5f99" stroke-width="2.5" opacity="0.35"/>
+<text x="330" y="125" font-weight="700" fill="#1f5f99">counter-rotating vortices from each wing tip —</text>
+<text x="330" y="145" fill="#1f5f99">they sink and drift with the wind</text></g></svg>
+<figcaption>Wake vortices can roll a following aircraft faster than its ailerons can counter. Respect wake separation, and stay at or above the preceding aircraft's flight path.</figcaption>
+</figure>
+
+<ul>
+  <li>Wake vortices from a heavier aircraft can cause a roll rate greater than the following aircraft's roll authority.</li>
+  <li>Respect wake separation; stay at or above the preceding aircraft's flight path; be most careful in calm wind conditions, where vortices persist.</li>
+  <li>If you encounter a wake: release excessive back pressure, roll wings level with aileron, and <strong>do not use aggressive or alternating rudder</strong> (Lesson 8).</li>
+</ul>
+
+<h2>Thunderstorms</h2>
+<p>Thunderstorms combine severe turbulence, windshear, hail, icing and lightning. Avoid them by a wide margin — company guidance typically recommends at least 20 NM laterally from severe cells — and never fly under the anvil or between closely spaced cells.</p>
+
+<h2>Icing</h2>
+<ul>
+  <li>Airframe ice reduces the critical angle of attack, so the stall can occur before stall warning.</li>
+  <li><strong>Supercooled large droplets</strong> and severe icing create ice behind protected areas, and can cause roll upsets. Leave the conditions immediately.</li>
+  <li><strong>Tailplane icing</strong> can cause a nose-down pitch upset with flap extension.</li>
+  <li><strong>Ice crystals</strong> at high altitude can block pitot probes and cause unreliable airspeed (Lesson 18).</li>
+</ul>
+<p class="muted">Icing is covered in detail in the Cold Weather Operations course.</p>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Avoid known threats: windshear, thunderstorms, mountain waves and wake turbulence.</li><li>Windshear escape: maximum thrust, wings level, follow pitch guidance, no configuration change.</li><li>Wake encounter: unload, roll wings level with aileron, no alternating rudder.</li><li>Ice can cause a stall before the warning; ice crystals can cause unreliable airspeed.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">During an approach you receive a reactive windshear warning. What is a typical element of the escape manoeuvre?</p>
+    <ol><li>Retract the flaps to reduce drag</li><li>Apply maximum thrust and follow pitch guidance, without changing configuration</li><li>Lower the nose to gain speed</li><li>Extend the speedbrakes</li></ol>
+    <p class="a"><b>Answer: B.</b> The windshear escape manoeuvre applies maximum thrust, keeps the wings level, follows the pitch target, and leaves the configuration unchanged until clear of the windshear.</p></div>
+</section>
+<section class="lesson" id="lesson-13">
+  <div class="lesson-head"><div class="k">Module 4 · Threats and Human Factors</div>
+    <h1>Lesson 13: Automation, Flight Control Laws and System Failures</h1><div class="m">Lesson 13 of 24 · about 8 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Describe how automation can mask or create a developing upset.</li><li>Explain the effects of autopilot disconnect, mode confusion and degraded flight control laws.</li><li>Apply automation management principles to upset prevention.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-13.jpg" alt="Flight-deck view with autopilot-off caution on the displays"><figcaption>Automation can mask a developing upset — until it disconnects.</figcaption></figure>
+  
+<h2>Advantages and limits of automation</h2>
+<p>Automation flies precisely and reduces workload, which helps prevent many upsets. But it can also:</p>
+<ul>
+  <li><strong>mask</strong> a developing problem — the autopilot holds the aircraft against an asymmetry, ice accretion or mis-trim until it reaches its limit and disconnects, handing the pilot an aircraft that is already out of trim;</li>
+  <li><strong>create</strong> an upset — an unexpected mode, a faulty sensor driving the autothrust or a flight control system, or a disconnect at a critical moment;</li>
+  <li>reduce the pilot's awareness of the aircraft's energy state and the manual flying skill needed to recover.</li>
+</ul>
+
+<h2>Mode awareness</h2>
+<ul>
+  <li>The <strong>flight mode annunciator (FMA)</strong> shows what the automation is actually doing. Read it, announce changes, and cross-check.</li>
+  <li>Watch for modes where the autothrust is <strong>not</strong> controlling speed — such as idle-thrust descent modes, "hold" modes, or after the autothrust has disconnected.</li>
+  <li>If the automation does not do what you expect, <strong>reduce the level of automation</strong> or fly manually — do not spend time reprogramming at low altitude.</li>
+</ul>
+
+<h2>Autopilot disconnect</h2>
+<p>An unexpected disconnect, with its aural warning, is a classic trigger for startle. Be ready for an out-of-trim condition. The pilot flying takes control smoothly, announces it, and stabilises the attitude and speed before doing anything else.</p>
+
+<h2>Fly-by-wire control laws</h2>
+<ul>
+  <li>In <strong>normal law</strong>, envelope protections typically limit bank, pitch, load factor, angle of attack and overspeed.</li>
+  <li>Failures — such as unreliable air data or certain system faults — can cause the system to revert to an <strong>alternate or direct law</strong>, in which some or all protections are lost. Handling may also change.</li>
+  <li>In a degraded law, the aircraft <strong>can be stalled</strong>. Stall warning and recovery become the pilot's responsibility.</li>
+</ul>
+
+<h2>Other system-induced threats</h2>
+<ul>
+  <li>Engine failure or asymmetric thrust at low speed — yaw and roll that the autopilot may initially hide.</li>
+  <li>Flight control malfunctions — jammed or runaway trim, spoiler or rudder problems. Know the memory items.</li>
+  <li>Instrument failures — compare the attitude indicators with each other and with the standby instrument.</li>
+</ul>
+<div class="callout"><span class="label">Principle</span><p>Use the level of automation that best suits the situation — and always be able to fly the aircraft manually.</p></div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Automation can mask a developing upset until it disconnects — expect an out-of-trim aircraft.</li><li>Read and announce the FMA; reduce automation if it does not do what you expect.</li><li>In degraded fly-by-wire laws, protections may be lost and the aircraft can stall.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">The autopilot disconnects unexpectedly in cruise. What should the pilot flying do first?</p>
+    <ol><li>Re-engage the autopilot immediately</li><li>Take control smoothly, announce it, and stabilise attitude and speed</li><li>Check the circuit breakers</li><li>Call the cabin crew</li></ol>
+    <p class="a"><b>Answer: B.</b> Fly the aircraft first: take control, announce it, and stabilise the attitude and speed, expecting a possible out-of-trim condition.</p></div>
+</section>
+<section class="lesson" id="lesson-14">
+  <div class="lesson-head"><div class="k">Module 4 · Threats and Human Factors</div>
+    <h1>Lesson 14: Startle, Surprise and Spatial Disorientation</h1><div class="m">Lesson 14 of 24 · about 9 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Distinguish startle from surprise and describe their effects on performance.</li><li>Describe the main vestibular and visual illusions that lead to upsets.</li><li>Apply strategies to manage startle and disorientation.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-14.jpg" alt="Night flight-deck view with no visible horizon"><figcaption>At night, without a visible horizon, trust the instruments.</figcaption></figure>
+  
+<h2>Startle and surprise</h2>
+<ul>
+  <li><strong>Startle</strong> is an automatic physical reflex to a sudden, intense event — a loud warning, a bang, a violent jolt. It lasts seconds and can cause an involuntary movement on the controls.</li>
+  <li><strong>Surprise</strong> is a mental reaction to something unexpected: the situation does not match what you thought was happening. It can last much longer.</li>
+</ul>
+<p>Together they can cause stress, tunnel vision, freezing, an inappropriate instinctive reaction (such as pulling back), or a delay in recognising what is happening. Investigators have found these effects in many LOC-I accidents.</p>
+
+<h2>Managing startle and surprise</h2>
+<ul>
+  <li><strong>Expect the unexpected</strong> — brief threats, think through "what if", and practise unusual situations in the simulator.</li>
+  <li><strong>Control the first reaction</strong> — keep inputs small, avoid sudden large movements, and breathe.</li>
+  <li><strong>Re-establish the picture</strong> — look at the attitude indicator first, then speed, altitude and vertical speed. Say what you see.</li>
+  <li><strong>Act on a plan</strong> — apply the trained recovery or procedure once the situation is recognised.</li>
+</ul>
+
+<h2>Spatial disorientation</h2>
+<p>Without visual references, the body's balance organs are easily misled. The most dangerous illusions in transport flying are:</p>
+
+<figure class="diagram">
+<svg viewBox="0 0 680 300" role="img" aria-label="Somatogravic illusion"><title>Somatogravic illusion</title><desc>Acceleration combined with gravity feels like a nose-up attitude.</desc>
+<g font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="13" fill="#24342b"><defs><marker id="ar6" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="context-stroke"/></marker></defs>
+<circle cx="200" cy="80" r="26" fill="#f1d7bd" stroke="#24342b" stroke-width="2"/><rect x="180" y="106" width="40" height="70" rx="12" fill="#cfd8d3" stroke="#24342b" stroke-width="2"/>
+<line x1="200" y1="160" x2="200" y2="260" stroke="#24342b" stroke-width="3" marker-end="url(#ar6)"/><text x="210" y="250">gravity</text>
+<line x1="200" y1="160" x2="80" y2="160" stroke="#c76a00" stroke-width="3" marker-end="url(#ar6)"/><text x="40" y="128" fill="#c76a00">inertia from</text><text x="40" y="146" fill="#c76a00">acceleration</text>
+<line x1="200" y1="160" x2="95" y2="262" stroke="#c8102e" stroke-width="4" marker-end="url(#ar6)"/>
+<text x="20" y="290" fill="#c8102e" font-weight="700">resultant feels like “down” → false sensation of nose-up</text>
+<text x="360" y="90" font-weight="700" font-size="15">Somatogravic illusion</text>
+<text x="360" y="115">Strong forward acceleration — a go-around,</text><text x="360" y="134">a take-off in darkness — feels like pitching up.</text>
+<text x="360" y="162">The natural reaction is to push the nose down,</text><text x="360" y="181">towards the ground.</text>
+<text x="360" y="215" fill="#125a2b" font-weight="700">Countermeasure: believe the attitude indicator.</text></g></svg>
+<figcaption>Vestibular illusions are strongest without visual references. Several go-around accidents at night followed exactly this pattern.</figcaption>
+</figure>
+
+<ul>
+  <li><strong>Somatogravic illusion</strong> — acceleration feels like a nose-up pitch; deceleration feels like nose-down. Strongest during go-arounds and night take-offs over dark terrain or water.</li>
+  <li><strong>Somatogyral illusions</strong> — "the leans": a slow roll is not felt, and correcting it feels like a bank the other way. In the <strong>graveyard spiral</strong>, a sustained, unfelt bank becomes a descending spiral, and pulling back only tightens it.</li>
+  <li><strong>Visual illusions</strong> — a sloping cloud deck taken as the horizon; lights on the ground confused with stars; the "black hole" approach over dark terrain.</li>
+</ul>
+<div class="callout warn"><span class="label">Countermeasure</span><p>When sensations and instruments disagree, <strong>believe the instruments</strong>. Cross-check both attitude indicators and the standby instrument. The pilot monitoring calls out any deviation in pitch, bank or vertical speed.</p></div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Startle is a reflex lasting seconds; surprise is a mental mismatch that can last longer.</li><li>Manage startle: small inputs, breathe, attitude first, then act on a plan.</li><li>Somatogravic illusion: acceleration feels like pitching up — dangerous in night go-arounds.</li><li>When senses and instruments disagree, believe the instruments.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">During a night go-around with high thrust, the pilot feels the aircraft is pitching up steeply. What is the likely cause?</p>
+    <ol><li>A pitot blockage</li><li>The somatogravic illusion caused by acceleration</li><li>Tailplane icing</li><li>Wake turbulence</li></ol>
+    <p class="a"><b>Answer: B.</b> Strong forward acceleration creates a false sensation of nose-up pitch. The natural reaction — pushing forward — can fly the aircraft into the ground.</p></div>
+</section>
+<section class="lesson" id="lesson-15">
+  <div class="lesson-head"><div class="k">Module 4 · Threats and Human Factors</div>
+    <h1>Lesson 15: CRM, Monitoring and Intervention</h1><div class="m">Lesson 15 of 24 · about 8 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Describe the role of the pilot monitoring in upset prevention.</li><li>Use standard callouts and intervention techniques.</li><li>Apply clear transfer of control during an upset.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-15.jpg" alt="Two pilots on the flight deck at dusk"><figcaption>The pilot monitoring is the first line of defence.</figcaption></figure>
+  
+<h2>The pilot monitoring is the first line of defence</h2>
+<p>Many developing upsets are first visible to the pilot who is <strong>not</strong> flying. Effective monitoring means actively checking the flight path, the automation modes and the energy state — not just looking at the instruments.</p>
+<ul>
+  <li>Monitor during periods of low workload as carefully as during high workload. Developing upsets often start in cruise.</li>
+  <li>Watch for trends: speed decaying, bank slowly increasing, pitch rising, vertical speed growing.</li>
+  <li>Plan monitoring during high-workload phases, such as approach and go-around, so that someone is always watching the flight path.</li>
+</ul>
+
+<h2>Callouts</h2>
+<p>Use the standard callouts of your Operations Manual. Typical examples:</p>
+<div class="table-wrap"><table>
+  <tr><th>Deviation</th><th>Typical callout</th></tr>
+  <tr><td>Speed below target or trend towards the low-speed band</td><td>“Speed”</td></tr>
+  <tr><td>Excessive bank</td><td>“Bank angle”</td></tr>
+  <tr><td>Excessive pitch</td><td>“Pitch”</td></tr>
+  <tr><td>Excessive descent rate</td><td>“Sink rate”</td></tr>
+  <tr><td>Upset recognised</td><td>“Nose high” / “Nose low”, with the bank direction</td></tr>
+</table></div>
+<p>The pilot flying acknowledges and corrects. If there is no response, the pilot monitoring repeats the callout, then states the action needed — and is ready to take control.</p>
+
+<h2>Intervention and transfer of control</h2>
+<ul>
+  <li>If the pilot flying does not respond to callouts, or is clearly incapacitated or disoriented, the pilot monitoring <strong>takes control</strong>: “I have control.”</li>
+  <li>Transfer of control must be <strong>clear and acknowledged</strong> — “You have control.” Never let two pilots make inputs at the same time; on side-stick aircraft, dual inputs are summed.</li>
+  <li>The company supports any crew member who intervenes in good faith to protect the flight.</li>
+</ul>
+
+<h2>Communication in a recovery</h2>
+<ul>
+  <li>The pilot flying announces the upset and the recovery: “Nose low, rolling left, recovering.”</li>
+  <li>The pilot monitoring calls attitude, speed and altitude, watches for g limits and the stall warning, and reads relevant checklists only once the aircraft is stable.</li>
+  <li>Inform ATC as soon as possible after control is regained.</li>
+</ul>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>The pilot monitoring is often first to see a developing upset — monitor actively, especially trends.</li><li>Use standard callouts: speed, bank angle, pitch, sink rate, nose high / nose low.</li><li>Transfer control clearly: “I have control” — “You have control.” No dual inputs.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">The pilot flying does not respond to two “Bank angle” callouts as bank increases through 50°. What should the pilot monitoring do?</p>
+    <ol><li>Wait for the autopilot to correct</li><li>Take control clearly with “I have control” and recover</li><li>Make an input on the controls without saying anything</li><li>Inform ATC first</li></ol>
+    <p class="a"><b>Answer: B.</b> If callouts are not answered, the pilot monitoring takes control with a clear, acknowledged transfer, then recovers the aircraft.</p></div>
+</section>
+<section class="lesson" id="lesson-16">
+  <div class="lesson-head"><div class="k">Module 5 · Prevention</div>
+    <h1>Lesson 16: Flight Path Management and Manual Handling</h1><div class="m">Lesson 16 of 24 · about 8 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Describe flight path management as the core of upset prevention.</li><li>Apply the pitch-and-power method to manual flying.</li><li>Maintain manual handling skills and know when to use them.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-16.jpg" alt="Airliner on approach following a glide path to a runway"><figcaption>Flight path management: plan, execute, monitor.</figcaption></figure>
+  
+<h2>Flight path management</h2>
+<p>Flight path management is the planning, execution and monitoring of the aircraft's trajectory and energy — whether flown manually or with automation. It is the most important upset prevention tool. It includes:</p>
+<ul>
+  <li><strong>planning</strong> — briefing the expected path, speeds, configuration changes and threats;</li>
+  <li><strong>executing</strong> — choosing the right level of automation and flying accurately;</li>
+  <li><strong>monitoring</strong> — checking that the aircraft is doing what was planned, and recognising deviations early.</li>
+</ul>
+
+<h2>Pitch and power</h2>
+<p>Manual flying is built on <strong>known pitch attitudes and thrust settings</strong> for each phase of flight. If you know that a given pitch and thrust produce level flight at a given speed and configuration, you can fly the aircraft safely even with unreliable instruments — and you will recognise immediately when something is wrong.</p>
+<ul>
+  <li>Set the attitude first, then the thrust, then trim. Wait for the aircraft to settle before making further changes.</li>
+  <li>Use small, smooth inputs. Make a correction, hold it, and observe the result.</li>
+  <li>Learn the typical values for your type from the FCTM and the unreliable airspeed tables.</li>
+</ul>
+
+<h2>The instrument scan</h2>
+<p>The attitude indicator is the centre of the scan. Move from attitude to speed, attitude to altitude, attitude to heading, and back. A good scan detects a developing upset within seconds.</p>
+
+<h2>Keeping manual skills current</h2>
+<ul>
+  <li>Hand-fly when conditions, workload and company policy allow — for example a departure or an approach in good weather.</li>
+  <li>Practise manual flying with the flight director off in the simulator.</li>
+  <li>Use automation as a tool — not as a substitute for understanding where the aircraft is and where it is going.</li>
+</ul>
+<div class="callout"><span class="label">Golden rules</span><p><strong>Fly the aircraft</strong> first. Then navigate, then communicate. Whatever happens, someone must always be flying and monitoring the flight path.</p></div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Flight path management — plan, execute, monitor — is the core of prevention.</li><li>Pitch + power = performance: know the values for your type.</li><li>Attitude indicator at the centre of the scan; small, smooth inputs.</li><li>Keep manual skills current within company policy.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">What is the basis of the pitch-and-power method?</p>
+    <ol><li>Following the flight director at all times</li><li>Known pitch attitudes and thrust settings produce predictable performance</li><li>Using full thrust whenever speed decays</li><li>Flying by vertical speed only</li></ol>
+    <p class="a"><b>Answer: B.</b> For a given configuration and weight, a known pitch attitude and thrust setting produce predictable speed and vertical speed.</p></div>
+</section>
+<section class="lesson" id="lesson-17">
+  <div class="lesson-head"><div class="k">Module 5 · Prevention</div>
+    <h1>Lesson 17: Recognising a Developing Upset</h1><div class="m">Lesson 17 of 24 · about 8 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Identify the flight-deck cues of a developing upset.</li><li>Read an attitude indicator quickly and correctly in an unusual attitude.</li><li>Confirm the situation by cross-checking instruments.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-17.jpg" alt="Flight-deck view in cloud with the attitude indicator showing nose-low and bank"><figcaption>Recognise early — attitude first, then confirm.</figcaption></figure>
+  
+<h2>Cues of a developing upset</h2>
+<ul>
+  <li><strong>Speed:</strong> trend vector towards the low-speed band or the overspeed limit; speed not stabilising after a thrust change.</li>
+  <li><strong>Attitude:</strong> pitch or bank increasing without an intended input; pitch limit indicator approaching the aircraft symbol.</li>
+  <li><strong>Energy:</strong> thrust at idle when it should be climbing; pitch high and speed decaying.</li>
+  <li><strong>Automation:</strong> unexpected mode changes, autopilot or autothrust disconnect, flight control law changes.</li>
+  <li><strong>Physical:</strong> buffet, unusual noise, unexpected control forces, g changes.</li>
+  <li><strong>Warnings:</strong> stall warning, overspeed, bank angle aural alert, windshear alert.</li>
+</ul>
+
+<h2>Reading the attitude indicator</h2>
+
+<figure class="diagram">
+<svg viewBox="0 0 600 290" role="img" aria-label="Two attitude indicators: nose-high and nose-low high-bank"><title>Two attitude indicators: nose-high and nose-low high-bank</title><desc>Two example upsets as they appear on the attitude indicator.</desc>
+<g font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="13" fill="#24342b"><defs><clipPath id="clipnh"><circle cx="150" cy="140" r="105"/></clipPath></defs><g clip-path="url(#clipnh)"><g transform="rotate(0 150 140) translate(0 147.0)"><rect x="-165" y="-375" width="630" height="515" fill="#5aa6e0"/><rect x="-165" y="140" width="630" height="515" fill="#a0693a"/><line x1="-165" y1="140" x2="465" y2="140" stroke="#fff" stroke-width="2.5"/><line x1="116" y1="518.0" x2="184" y2="518.0" stroke="#fff" stroke-width="2"/><text x="190" y="523.0" fill="#fff" font-size="13" font-weight="700">90</text><text x="110" y="523.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">90</text><line x1="134" y1="497.0" x2="166" y2="497.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="476.0" x2="184" y2="476.0" stroke="#fff" stroke-width="2"/><text x="190" y="481.0" fill="#fff" font-size="13" font-weight="700">80</text><text x="110" y="481.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">80</text><line x1="134" y1="455.0" x2="166" y2="455.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="434.0" x2="184" y2="434.0" stroke="#fff" stroke-width="2"/><text x="190" y="439.0" fill="#fff" font-size="13" font-weight="700">70</text><text x="110" y="439.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">70</text><line x1="134" y1="413.0" x2="166" y2="413.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="392.0" x2="184" y2="392.0" stroke="#fff" stroke-width="2"/><text x="190" y="397.0" fill="#fff" font-size="13" font-weight="700">60</text><text x="110" y="397.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">60</text><line x1="134" y1="371.0" x2="166" y2="371.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="350.0" x2="184" y2="350.0" stroke="#fff" stroke-width="2"/><text x="190" y="355.0" fill="#fff" font-size="13" font-weight="700">50</text><text x="110" y="355.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">50</text><line x1="134" y1="329.0" x2="166" y2="329.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="308.0" x2="184" y2="308.0" stroke="#fff" stroke-width="2"/><text x="190" y="313.0" fill="#fff" font-size="13" font-weight="700">40</text><text x="110" y="313.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">40</text><line x1="134" y1="287.0" x2="166" y2="287.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="266.0" x2="184" y2="266.0" stroke="#fff" stroke-width="2"/><text x="190" y="271.0" fill="#fff" font-size="13" font-weight="700">30</text><text x="110" y="271.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">30</text><line x1="134" y1="245.0" x2="166" y2="245.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="224.0" x2="184" y2="224.0" stroke="#fff" stroke-width="2"/><text x="190" y="229.0" fill="#fff" font-size="13" font-weight="700">20</text><text x="110" y="229.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">20</text><line x1="134" y1="203.0" x2="166" y2="203.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="182.0" x2="184" y2="182.0" stroke="#fff" stroke-width="2"/><text x="190" y="187.0" fill="#fff" font-size="13" font-weight="700">10</text><text x="110" y="187.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">10</text><line x1="134" y1="161.0" x2="166" y2="161.0" stroke="#fff" stroke-width="2"/><line x1="134" y1="119.0" x2="166" y2="119.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="98.0" x2="184" y2="98.0" stroke="#fff" stroke-width="2"/><text x="190" y="103.0" fill="#fff" font-size="13" font-weight="700">10</text><text x="110" y="103.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">10</text><line x1="134" y1="77.0" x2="166" y2="77.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="56.0" x2="184" y2="56.0" stroke="#fff" stroke-width="2"/><text x="190" y="61.0" fill="#fff" font-size="13" font-weight="700">20</text><text x="110" y="61.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">20</text><line x1="134" y1="35.0" x2="166" y2="35.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="14.0" x2="184" y2="14.0" stroke="#fff" stroke-width="2"/><text x="190" y="19.0" fill="#fff" font-size="13" font-weight="700">30</text><text x="110" y="19.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">30</text><line x1="134" y1="-7.0" x2="166" y2="-7.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="-28.0" x2="184" y2="-28.0" stroke="#fff" stroke-width="2"/><text x="190" y="-23.0" fill="#fff" font-size="13" font-weight="700">40</text><text x="110" y="-23.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">40</text><line x1="134" y1="-49.0" x2="166" y2="-49.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="-70.0" x2="184" y2="-70.0" stroke="#fff" stroke-width="2"/><text x="190" y="-65.0" fill="#fff" font-size="13" font-weight="700">50</text><text x="110" y="-65.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">50</text><line x1="134" y1="-91.0" x2="166" y2="-91.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="-112.0" x2="184" y2="-112.0" stroke="#fff" stroke-width="2"/><text x="190" y="-107.0" fill="#fff" font-size="13" font-weight="700">60</text><text x="110" y="-107.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">60</text><line x1="134" y1="-133.0" x2="166" y2="-133.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="-154.0" x2="184" y2="-154.0" stroke="#fff" stroke-width="2"/><text x="190" y="-149.0" fill="#fff" font-size="13" font-weight="700">70</text><text x="110" y="-149.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">70</text><line x1="134" y1="-175.0" x2="166" y2="-175.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="-196.0" x2="184" y2="-196.0" stroke="#fff" stroke-width="2"/><text x="190" y="-191.0" fill="#fff" font-size="13" font-weight="700">80</text><text x="110" y="-191.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">80</text><line x1="134" y1="-217.0" x2="166" y2="-217.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="-238.0" x2="184" y2="-238.0" stroke="#fff" stroke-width="2"/><text x="190" y="-233.0" fill="#fff" font-size="13" font-weight="700">90</text><text x="110" y="-233.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">90</text></g></g><line x1="62.5" y1="89.5" x2="74.7" y2="96.5" stroke="#fff" stroke-width="2.5"/><line x1="78.6" y1="68.6" x2="83.5" y2="73.5" stroke="#fff" stroke-width="2.5"/><line x1="99.5" y1="52.5" x2="106.5" y2="64.7" stroke="#fff" stroke-width="2.5"/><line x1="115.5" y1="45.1" x2="117.9" y2="51.7" stroke="#fff" stroke-width="2.5"/><line x1="132.5" y1="40.5" x2="133.7" y2="47.4" stroke="#fff" stroke-width="2.5"/><line x1="150.0" y1="39.0" x2="150.0" y2="53.0" stroke="#fff" stroke-width="2.5"/><line x1="167.5" y1="40.5" x2="166.3" y2="47.4" stroke="#fff" stroke-width="2.5"/><line x1="184.5" y1="45.1" x2="182.1" y2="51.7" stroke="#fff" stroke-width="2.5"/><line x1="200.5" y1="52.5" x2="193.5" y2="64.7" stroke="#fff" stroke-width="2.5"/><line x1="221.4" y1="68.6" x2="216.5" y2="73.5" stroke="#fff" stroke-width="2.5"/><line x1="237.5" y1="89.5" x2="225.3" y2="96.5" stroke="#fff" stroke-width="2.5"/><g transform="rotate(0 150 140)"><path d="M150 55 l-9 15 h18 z" fill="#ffd24a" stroke="#333" stroke-width="1"/></g><path d="M150 41 l-8 -12 h16 z" fill="#fff"/><g fill="#ffd24a" stroke="#222" stroke-width="1.2"><rect x="80" y="136" width="44" height="8" rx="2"/><rect x="176" y="136" width="44" height="8" rx="2"/><rect x="145" y="135" width="10" height="10"/></g><circle cx="150" cy="140" r="105" fill="none" stroke="#1e2a24" stroke-width="7"/><text x="150" y="275" text-anchor="middle" font-weight="700" font-size="15">Nose-high, wings level</text><defs><clipPath id="clipnl"><circle cx="450" cy="140" r="105"/></clipPath></defs><g clip-path="url(#clipnl)"><g transform="rotate(-75 450 140) translate(0 -84.0)"><rect x="135" y="-375" width="630" height="515" fill="#5aa6e0"/><rect x="135" y="140" width="630" height="515" fill="#a0693a"/><line x1="135" y1="140" x2="765" y2="140" stroke="#fff" stroke-width="2.5"/><line x1="416" y1="518.0" x2="484" y2="518.0" stroke="#fff" stroke-width="2"/><text x="490" y="523.0" fill="#fff" font-size="13" font-weight="700">90</text><text x="410" y="523.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">90</text><line x1="434" y1="497.0" x2="466" y2="497.0" stroke="#fff" stroke-width="2"/><line x1="416" y1="476.0" x2="484" y2="476.0" stroke="#fff" stroke-width="2"/><text x="490" y="481.0" fill="#fff" font-size="13" font-weight="700">80</text><text x="410" y="481.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">80</text><line x1="434" y1="455.0" x2="466" y2="455.0" stroke="#fff" stroke-width="2"/><line x1="416" y1="434.0" x2="484" y2="434.0" stroke="#fff" stroke-width="2"/><text x="490" y="439.0" fill="#fff" font-size="13" font-weight="700">70</text><text x="410" y="439.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">70</text><line x1="434" y1="413.0" x2="466" y2="413.0" stroke="#fff" stroke-width="2"/><line x1="416" y1="392.0" x2="484" y2="392.0" stroke="#fff" stroke-width="2"/><text x="490" y="397.0" fill="#fff" font-size="13" font-weight="700">60</text><text x="410" y="397.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">60</text><line x1="434" y1="371.0" x2="466" y2="371.0" stroke="#fff" stroke-width="2"/><line x1="416" y1="350.0" x2="484" y2="350.0" stroke="#fff" stroke-width="2"/><text x="490" y="355.0" fill="#fff" font-size="13" font-weight="700">50</text><text x="410" y="355.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">50</text><line x1="434" y1="329.0" x2="466" y2="329.0" stroke="#fff" stroke-width="2"/><line x1="416" y1="308.0" x2="484" y2="308.0" stroke="#fff" stroke-width="2"/><text x="490" y="313.0" fill="#fff" font-size="13" font-weight="700">40</text><text x="410" y="313.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">40</text><line x1="434" y1="287.0" x2="466" y2="287.0" stroke="#fff" stroke-width="2"/><line x1="416" y1="266.0" x2="484" y2="266.0" stroke="#fff" stroke-width="2"/><text x="490" y="271.0" fill="#fff" font-size="13" font-weight="700">30</text><text x="410" y="271.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">30</text><line x1="434" y1="245.0" x2="466" y2="245.0" stroke="#fff" stroke-width="2"/><line x1="416" y1="224.0" x2="484" y2="224.0" stroke="#fff" stroke-width="2"/><text x="490" y="229.0" fill="#fff" font-size="13" font-weight="700">20</text><text x="410" y="229.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">20</text><line x1="434" y1="203.0" x2="466" y2="203.0" stroke="#fff" stroke-width="2"/><line x1="416" y1="182.0" x2="484" y2="182.0" stroke="#fff" stroke-width="2"/><text x="490" y="187.0" fill="#fff" font-size="13" font-weight="700">10</text><text x="410" y="187.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">10</text><line x1="434" y1="161.0" x2="466" y2="161.0" stroke="#fff" stroke-width="2"/><line x1="434" y1="119.0" x2="466" y2="119.0" stroke="#fff" stroke-width="2"/><line x1="416" y1="98.0" x2="484" y2="98.0" stroke="#fff" stroke-width="2"/><text x="490" y="103.0" fill="#fff" font-size="13" font-weight="700">10</text><text x="410" y="103.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">10</text><line x1="434" y1="77.0" x2="466" y2="77.0" stroke="#fff" stroke-width="2"/><line x1="416" y1="56.0" x2="484" y2="56.0" stroke="#fff" stroke-width="2"/><text x="490" y="61.0" fill="#fff" font-size="13" font-weight="700">20</text><text x="410" y="61.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">20</text><line x1="434" y1="35.0" x2="466" y2="35.0" stroke="#fff" stroke-width="2"/><line x1="416" y1="14.0" x2="484" y2="14.0" stroke="#fff" stroke-width="2"/><text x="490" y="19.0" fill="#fff" font-size="13" font-weight="700">30</text><text x="410" y="19.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">30</text><line x1="434" y1="-7.0" x2="466" y2="-7.0" stroke="#fff" stroke-width="2"/><line x1="416" y1="-28.0" x2="484" y2="-28.0" stroke="#fff" stroke-width="2"/><text x="490" y="-23.0" fill="#fff" font-size="13" font-weight="700">40</text><text x="410" y="-23.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">40</text><line x1="434" y1="-49.0" x2="466" y2="-49.0" stroke="#fff" stroke-width="2"/><line x1="416" y1="-70.0" x2="484" y2="-70.0" stroke="#fff" stroke-width="2"/><text x="490" y="-65.0" fill="#fff" font-size="13" font-weight="700">50</text><text x="410" y="-65.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">50</text><line x1="434" y1="-91.0" x2="466" y2="-91.0" stroke="#fff" stroke-width="2"/><line x1="416" y1="-112.0" x2="484" y2="-112.0" stroke="#fff" stroke-width="2"/><text x="490" y="-107.0" fill="#fff" font-size="13" font-weight="700">60</text><text x="410" y="-107.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">60</text><line x1="434" y1="-133.0" x2="466" y2="-133.0" stroke="#fff" stroke-width="2"/><line x1="416" y1="-154.0" x2="484" y2="-154.0" stroke="#fff" stroke-width="2"/><text x="490" y="-149.0" fill="#fff" font-size="13" font-weight="700">70</text><text x="410" y="-149.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">70</text><line x1="434" y1="-175.0" x2="466" y2="-175.0" stroke="#fff" stroke-width="2"/><line x1="416" y1="-196.0" x2="484" y2="-196.0" stroke="#fff" stroke-width="2"/><text x="490" y="-191.0" fill="#fff" font-size="13" font-weight="700">80</text><text x="410" y="-191.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">80</text><line x1="434" y1="-217.0" x2="466" y2="-217.0" stroke="#fff" stroke-width="2"/><line x1="416" y1="-238.0" x2="484" y2="-238.0" stroke="#fff" stroke-width="2"/><text x="490" y="-233.0" fill="#fff" font-size="13" font-weight="700">90</text><text x="410" y="-233.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">90</text></g></g><line x1="362.5" y1="89.5" x2="374.7" y2="96.5" stroke="#fff" stroke-width="2.5"/><line x1="378.6" y1="68.6" x2="383.5" y2="73.5" stroke="#fff" stroke-width="2.5"/><line x1="399.5" y1="52.5" x2="406.5" y2="64.7" stroke="#fff" stroke-width="2.5"/><line x1="415.5" y1="45.1" x2="417.9" y2="51.7" stroke="#fff" stroke-width="2.5"/><line x1="432.5" y1="40.5" x2="433.7" y2="47.4" stroke="#fff" stroke-width="2.5"/><line x1="450.0" y1="39.0" x2="450.0" y2="53.0" stroke="#fff" stroke-width="2.5"/><line x1="467.5" y1="40.5" x2="466.3" y2="47.4" stroke="#fff" stroke-width="2.5"/><line x1="484.5" y1="45.1" x2="482.1" y2="51.7" stroke="#fff" stroke-width="2.5"/><line x1="500.5" y1="52.5" x2="493.5" y2="64.7" stroke="#fff" stroke-width="2.5"/><line x1="521.4" y1="68.6" x2="516.5" y2="73.5" stroke="#fff" stroke-width="2.5"/><line x1="537.5" y1="89.5" x2="525.3" y2="96.5" stroke="#fff" stroke-width="2.5"/><g transform="rotate(-75 450 140)"><path d="M450 55 l-9 15 h18 z" fill="#ffd24a" stroke="#333" stroke-width="1"/></g><path d="M450 41 l-8 -12 h16 z" fill="#fff"/><g fill="#ffd24a" stroke="#222" stroke-width="1.2"><rect x="380" y="136" width="44" height="8" rx="2"/><rect x="476" y="136" width="44" height="8" rx="2"/><rect x="445" y="135" width="10" height="10"/></g><circle cx="450" cy="140" r="105" fill="none" stroke="#1e2a24" stroke-width="7"/><text x="450" y="275" text-anchor="middle" font-weight="700" font-size="15">Nose-low, high bank</text></g></svg>
+<figcaption>Recognise the upset from the attitude indicator first. Left: about 35° nose-up. Right: about 20° nose-down with about 75° of right bank — the sky pointer points to the sky, so roll towards it.</figcaption>
+</figure>
+
+<ul>
+  <li><strong>Look at the attitude indicator first.</strong> Determine pitch (sky or ground? which pitch line?) and bank (where is the sky pointer?).</li>
+  <li>The <strong>sky pointer</strong> (or bank pointer) always points towards the sky. In a nose-low, high-bank upset, <strong>roll towards the sky pointer</strong> to bring the wings level.</li>
+  <li>At extreme attitudes, the display may show mostly sky or mostly ground, and chevrons may point the way back to the horizon. Know your PFD.</li>
+</ul>
+
+<h2>Confirm before you act</h2>
+<ul>
+  <li>Cross-check both primary attitude indicators and the <strong>standby</strong> instrument. A single failed indicator can create a false upset.</li>
+  <li>Confirm the trend with airspeed, altitude and vertical speed. A nose-high attitude with decaying speed and a climbing altimeter is very different from a nose-high attitude with a rapid descent (possible stall).</li>
+  <li>Say what you see: “Nose high, wings level, speed decreasing.” This helps both pilots build the same picture.</li>
+</ul>
+<div class="callout"><span class="label">Act early</span><p>If you recognise a developing upset, correct it immediately with small, smooth inputs. A small correction now prevents a large recovery later.</p></div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Developing upsets show up as speed, attitude, energy, automation, physical and warning cues.</li><li>Read the attitude indicator first; the sky pointer always points to the sky.</li><li>Confirm with the other attitude indicator, the standby instrument and the speed, altitude and vertical speed trends.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">In a nose-low, high-bank upset, which way should you roll to bring the wings level?</p>
+    <ol><li>Away from the sky pointer</li><li>Towards the sky pointer — the shortest direction to wings level</li><li>Always to the left</li><li>It does not matter</li></ol>
+    <p class="a"><b>Answer: B.</b> The sky pointer points towards the sky. Rolling towards it brings the lift vector up and the wings level by the shortest way.</p></div>
+</section>
+<section class="lesson" id="lesson-18">
+  <div class="lesson-head"><div class="k">Module 5 · Prevention</div>
+    <h1>Lesson 18: Unreliable Airspeed and Instrument Failures</h1><div class="m">Lesson 18 of 24 · about 8 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Recognise the symptoms of unreliable airspeed.</li><li>Apply the generic memory actions: pitch and thrust.</li><li>Describe how to troubleshoot and stabilise after unreliable air data.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-18.jpg" alt="Airliner in cloud with an inset showing an iced pitot probe"><figcaption>Ice crystals can block pitot probes and make airspeed unreliable.</figcaption></figure>
+  
+<h2>Causes</h2>
+<ul>
+  <li>Pitot probes blocked by ice crystals, heavy rain, volcanic ash, insects or covers left in place.</li>
+  <li>Static ports blocked — for example by tape or residue after maintenance or washing.</li>
+  <li>Failed probe heaters, damaged probes, or faulty air data computers.</li>
+</ul>
+
+<h2>Symptoms</h2>
+<ul>
+  <li>Disagreement between the captain's, first officer's and standby airspeed or altitude.</li>
+  <li>Speed that does not match the pitch and thrust (for example, speed rising in a climb at constant thrust).</li>
+  <li>Simultaneous, contradictory warnings: overspeed and stall warning together, or "rudder ratio", "Mach trim" and altitude alerts.</li>
+  <li>Autopilot and autothrust disconnect, flight control law degradation on fly-by-wire types.</li>
+</ul>
+
+<h2>Memory actions</h2>
+<p>Most manufacturers' unreliable airspeed procedures begin with memory items along these lines:</p>
+<ol class="steps">
+  <li><strong>Autopilot and autothrust — disconnect</strong> (they may be using the faulty data).</li>
+  <li><strong>Flight directors — off</strong> where the procedure requires it.</li>
+  <li><strong>Pitch and thrust — set</strong> to the memory values for the flight phase (for example, a climb attitude and climb thrust after take-off; a level-flight attitude at cruise).</li>
+</ol>
+<p>Use the <strong>exact values and procedure</strong> from your QRH. Do not chase the airspeed indication.</p>
+
+<h2>Stabilise, then troubleshoot</h2>
+<ul>
+  <li>When safe — above minimum safe altitude, wings level, stable pitch and thrust — use the QRH tables to set pitch and thrust for the phase of flight and weight.</li>
+  <li>Use other information: GPS ground speed, angle of attack indication where fitted, the flight path vector, and ATC for ground speed and altitude (in an emergency).</li>
+  <li>Identify a reliable source if possible. If none, continue with pitch and power tables.</li>
+</ul>
+<div class="callout warn"><span class="label">Key lesson</span><p>In several accidents, a short air data problem became a fatal stall because the crew reacted to the false indications with large, sustained pitch inputs. <strong>Pitch and power first</strong>, avoid large inputs, and respect the stall warning.</p></div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Unreliable airspeed: disagreements, impossible combinations, contradictory warnings.</li><li>Memory items: autopilot and autothrust off, flight directors off as required, set memory pitch and thrust.</li><li>Stabilise first, then troubleshoot with QRH tables and other data.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">Shortly after take-off, the airspeed indications disagree and both overspeed and stall warnings occur. What is the first action?</p>
+    <ol><li>Follow the flight director</li><li>Apply the unreliable airspeed memory items: autopilot and autothrust off, set memory pitch and thrust</li><li>Pull up to reduce the overspeed</li><li>Reduce thrust to idle</li></ol>
+    <p class="a"><b>Answer: B.</b> Contradictory warnings indicate unreliable air data. Disconnect the automation and fly the memory pitch and thrust.</p></div>
+</section>
+<section class="lesson" id="lesson-19">
+  <div class="lesson-head"><div class="k">Module 6 · Recovery</div>
+    <h1>Lesson 19: Upset Recovery Principles</h1><div class="m">Lesson 19 of 24 · about 8 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>State the general principles of upset recovery.</li><li>Explain why stall recovery takes priority.</li><li>Describe the correct use of automation, thrust, rudder and g during recovery.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-19.jpg" alt="Flight-deck view in a 70-degree bank with the attitude indicator"><figcaption>Recognise, deal with any stall, recover, stabilise.</figcaption></figure>
+  
+<h2>The recovery sequence</h2>
+
+<figure class="diagram">
+<svg viewBox="0 0 640 170" role="img" aria-label="Upset recovery sequence"><title>Upset recovery sequence</title><desc>Recognise, deal with any stall, recover, stabilise.</desc>
+<g font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="13" fill="#24342b"><defs><marker id="ar7" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="context-stroke"/></marker></defs>
+<g font-weight="700" text-anchor="middle">
+<rect x="20" y="40" width="140" height="70" rx="12" fill="#1f5f99"/><text x="90" y="72" fill="#fff">Recognise</text><text x="90" y="92" fill="#fff" font-weight="400">and confirm</text>
+<rect x="180" y="40" width="140" height="70" rx="12" fill="#c76a00"/><text x="250" y="72" fill="#fff">Stalled?</text><text x="250" y="92" fill="#fff" font-weight="400">reduce AoA first</text>
+<rect x="340" y="40" width="140" height="70" rx="12" fill="#1d7a3e"/><text x="410" y="72" fill="#fff">Recover</text><text x="410" y="92" fill="#fff" font-weight="400">nose-high / nose-low</text>
+<rect x="500" y="40" width="120" height="70" rx="12" fill="#125a2b"/><text x="560" y="72" fill="#fff">Stabilise</text><text x="560" y="92" fill="#fff" font-weight="400">safe flight path</text>
+</g>
+<path d="M160 75 L178 75" stroke="#24342b" stroke-width="3" marker-end="url(#ar7)"/><path d="M320 75 L338 75" stroke="#24342b" stroke-width="3" marker-end="url(#ar7)"/><path d="M480 75 L498 75" stroke="#24342b" stroke-width="3" marker-end="url(#ar7)"/>
+<text x="20" y="145" fill="#5b6b62">Throughout: communicate (PF/PM callouts), avoid excessive g,</text><text x="20" y="163" fill="#5b6b62">and follow the manufacturer's procedures.</text></g></svg>
+<figcaption>Stall recovery always takes priority: you cannot recover attitude while the wing is stalled.</figcaption>
+</figure>
+
+<ol class="steps">
+  <li><strong>Recognise and confirm</strong> the situation — attitude first, cross-checked (Lesson 17).</li>
+  <li><strong>Disconnect the autopilot and autothrust</strong> — they may be causing or worsening the upset, and their behaviour is unpredictable at extreme attitudes.</li>
+  <li><strong>If stalled, recover from the stall first</strong> — reduce angle of attack (Lesson 20). Attitude cannot be recovered while the wing is stalled.</li>
+  <li><strong>Recover the attitude</strong> using the nose-high or nose-low technique (Lessons 21 and 22).</li>
+  <li><strong>Return to a safe flight path</strong> — level flight or a climb, appropriate speed, trimmed.</li>
+</ol>
+
+<h2>General principles</h2>
+<ul>
+  <li><strong>Use the manufacturer's procedures.</strong> The generic principles here explain <em>why</em>; the FCOM and QRH tell you <em>how</em> for your type.</li>
+  <li><strong>Pitch is controlled with elevator and stabiliser trim.</strong> Use trim carefully to assist a large pitch input, not as the primary control.</li>
+  <li><strong>Roll with aileron and spoiler.</strong> Full deflection may be needed. Rudder is normally not required and must never be used in rapid alternating inputs.</li>
+  <li><strong>Thrust is used as required</strong> — remember pitch-power coupling: reducing thrust can help lower the nose, adding thrust helps a nose-low recovery only after the wings are level and the speed allows it.</li>
+  <li><strong>Respect g limits.</strong> Unload in a nose-high recovery; avoid a rolling pull and excessive g in a nose-low recovery.</li>
+  <li><strong>Do not change configuration</strong> (flaps, gear) unless the procedure requires it. Speedbrakes may be used in high-speed nose-low situations.</li>
+  <li><strong>Communicate</strong> — announce the upset and the recovery; the pilot monitoring calls out attitude, speed and altitude.</li>
+</ul>
+
+<h2>Common errors</h2>
+<ul>
+  <li>Pulling back in a stall or a nose-low, high-bank attitude.</li>
+  <li>Applying full thrust in a nose-high, low-speed upset on an aircraft with underwing engines.</li>
+  <li>Over-controlling — large inputs in both directions, especially at high altitude.</li>
+  <li>Using rudder to roll, or making alternating rudder inputs.</li>
+  <li>Failing to disconnect the automation, or re-engaging it too early.</li>
+</ul>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Recognise and confirm → automation off → stall recovery first → attitude recovery → safe flight path.</li><li>Elevator and trim for pitch; aileron and spoiler for roll; rudder normally not needed.</li><li>Use thrust as required, with pitch-power coupling in mind.</li><li>Communicate throughout; follow the manufacturer&#x27;s procedures.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">An aircraft is nose-high, rolling, with the stall warning active. What is the priority?</p>
+    <ol><li>Roll the wings level first</li><li>Recover from the stall — reduce the angle of attack</li><li>Apply full thrust</li><li>Extend the flaps</li></ol>
+    <p class="a"><b>Answer: B.</b> Stall recovery always takes priority. Attitude cannot be recovered while the wing is stalled.</p></div>
+</section>
+<section class="lesson" id="lesson-20">
+  <div class="lesson-head"><div class="k">Module 6 · Recovery</div>
+    <h1>Lesson 20: Stall Recovery</h1><div class="m">Lesson 20 of 24 · about 8 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Apply the industry stall recovery template.</li><li>Explain each step and the reasons behind it.</li><li>Recognise the conditions that make stall recovery difficult.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-20.jpg" alt="Stalled airliner with an arrow showing nose-down pitch"><figcaption>Stall recovery: reduce angle of attack first.</figcaption></figure>
+  
+<h2>The stall recovery template</h2>
+<p>Following accidents in which crews tried to "power out" of stalls while holding altitude, manufacturers and authorities adopted a common stall recovery template. A typical version is shown below. <strong>Use your manufacturer's procedure.</strong></p>
+<div class="table-wrap"><table>
+  <tr><th>Step</th><th>Action</th><th>Why</th></tr>
+  <tr><td>1</td><td><strong>Autopilot and autothrust — disconnect</strong></td><td>The automation may be holding the nose up or reducing thrust; it will not recover a stall.</td></tr>
+  <tr><td>2a</td><td><strong>Nose-down pitch control — apply until the stall warning stops</strong> and the aircraft is no longer stalled</td><td>Reducing the angle of attack is the only way to unstall the wing.</td></tr>
+  <tr><td>2b</td><td><strong>Nose-down pitch trim — as needed</strong></td><td>If the aircraft was trimmed nose-up, the elevator alone may not be enough.</td></tr>
+  <tr><td>3</td><td><strong>Bank — wings level</strong></td><td>Levelling the wings directs the lift vector upwards and reduces the load factor.</td></tr>
+  <tr><td>4</td><td><strong>Thrust — as needed</strong></td><td>Add thrust once the angle of attack is reduced; be aware of the nose-up pitching moment of underwing engines. At low speed with high thrust, reducing thrust may be needed to lower the nose.</td></tr>
+  <tr><td>5</td><td><strong>Speedbrakes / spoilers — retract</strong></td><td>They increase drag and the stall speed.</td></tr>
+  <tr><td>6</td><td><strong>Return to the desired flight path</strong></td><td>Recover smoothly, avoiding a secondary stall warning or excessive g.</td></tr>
+</table></div>
+
+<h2>Important points</h2>
+<ul>
+  <li><strong>Reducing angle of attack comes before everything else — including altitude.</strong> Accept the altitude loss.</li>
+  <li><strong>The stall warning is a stall.</strong> Treat any stall warning (except a confirmed false warning on take-off, if your procedure allows) as requiring the recovery template.</li>
+  <li>A nose-down input may need to be <strong>large and sustained</strong>. A pitch attitude below the horizon may be required.</li>
+  <li>Avoid a <strong>secondary stall</strong>: do not pull up too quickly after the warning stops.</li>
+  <li>If the stick pusher activates, <strong>do not oppose it</strong>.</li>
+  <li>Near the ground, the same template applies; only the urgency changes.</li>
+</ul>
+
+<h2>When stall recovery becomes difficult</h2>
+<ul>
+  <li>High altitude — little excess thrust, large altitude loss needed (Lesson 7).</li>
+  <li>Nose-up trim — the stabiliser may need to be trimmed nose-down.</li>
+  <li>High thrust with underwing engines — the nose-up moment opposes the recovery.</li>
+  <li>Startle and unreliable instruments — the crew may not recognise that the aircraft is stalled.</li>
+</ul>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Template: automation off → nose down (and trim) until unstalled → wings level → thrust as needed → speedbrakes retracted → return to flight path.</li><li>Angle of attack first — altitude is secondary.</li><li>Avoid a secondary stall; never oppose the stick pusher.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">During stall recovery, the nose-down elevator input does not reduce the angle of attack enough. What else may be needed?</p>
+    <ol><li>Nose-up trim</li><li>Nose-down pitch trim, and reducing thrust if high thrust is causing a nose-up moment</li><li>Full rudder</li><li>Extending the speedbrakes</li></ol>
+    <p class="a"><b>Answer: B.</b> If the aircraft is trimmed nose-up or high underwing thrust is pitching it up, nose-down trim and a thrust reduction may be needed to reduce the angle of attack.</p></div>
+</section>
+<section class="lesson" id="lesson-21">
+  <div class="lesson-head"><div class="k">Module 6 · Recovery</div>
+    <h1>Lesson 21: Nose-High Upset Recovery</h1><div class="m">Lesson 21 of 24 · about 8 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Apply the generic nose-high recovery technique.</li><li>Explain the use of bank and thrust to lower the nose.</li><li>Complete the recovery without over-correcting into a nose-low upset.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-21.jpg" alt="Airliner climbing steeply at about 40 degrees nose-up"><figcaption>Nose-high: unload, reduce thrust, bank if needed.</figcaption></figure>
+  
+<h2>The situation</h2>
+<p>The pitch attitude is unintentionally high — for example more than 25° nose-up — and the airspeed is decreasing, or is already low. The aircraft is heading towards a stall. The goal is to <strong>lower the nose</strong> and regain speed before the angle of attack reaches the critical value.</p>
+
+<figure class="diagram">
+<svg viewBox="0 0 300 290" style="max-width:340px;margin:0 auto" role="img" aria-label="Attitude indicator showing nose-high"><title>Attitude indicator showing nose-high</title><desc>35 degrees nose-up, wings level.</desc>
+<g font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="13" fill="#24342b"><defs><clipPath id="clipnh2"><circle cx="150" cy="140" r="105"/></clipPath></defs><g clip-path="url(#clipnh2)"><g transform="rotate(0 150 140) translate(0 147.0)"><rect x="-165" y="-375" width="630" height="515" fill="#5aa6e0"/><rect x="-165" y="140" width="630" height="515" fill="#a0693a"/><line x1="-165" y1="140" x2="465" y2="140" stroke="#fff" stroke-width="2.5"/><line x1="116" y1="518.0" x2="184" y2="518.0" stroke="#fff" stroke-width="2"/><text x="190" y="523.0" fill="#fff" font-size="13" font-weight="700">90</text><text x="110" y="523.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">90</text><line x1="134" y1="497.0" x2="166" y2="497.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="476.0" x2="184" y2="476.0" stroke="#fff" stroke-width="2"/><text x="190" y="481.0" fill="#fff" font-size="13" font-weight="700">80</text><text x="110" y="481.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">80</text><line x1="134" y1="455.0" x2="166" y2="455.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="434.0" x2="184" y2="434.0" stroke="#fff" stroke-width="2"/><text x="190" y="439.0" fill="#fff" font-size="13" font-weight="700">70</text><text x="110" y="439.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">70</text><line x1="134" y1="413.0" x2="166" y2="413.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="392.0" x2="184" y2="392.0" stroke="#fff" stroke-width="2"/><text x="190" y="397.0" fill="#fff" font-size="13" font-weight="700">60</text><text x="110" y="397.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">60</text><line x1="134" y1="371.0" x2="166" y2="371.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="350.0" x2="184" y2="350.0" stroke="#fff" stroke-width="2"/><text x="190" y="355.0" fill="#fff" font-size="13" font-weight="700">50</text><text x="110" y="355.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">50</text><line x1="134" y1="329.0" x2="166" y2="329.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="308.0" x2="184" y2="308.0" stroke="#fff" stroke-width="2"/><text x="190" y="313.0" fill="#fff" font-size="13" font-weight="700">40</text><text x="110" y="313.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">40</text><line x1="134" y1="287.0" x2="166" y2="287.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="266.0" x2="184" y2="266.0" stroke="#fff" stroke-width="2"/><text x="190" y="271.0" fill="#fff" font-size="13" font-weight="700">30</text><text x="110" y="271.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">30</text><line x1="134" y1="245.0" x2="166" y2="245.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="224.0" x2="184" y2="224.0" stroke="#fff" stroke-width="2"/><text x="190" y="229.0" fill="#fff" font-size="13" font-weight="700">20</text><text x="110" y="229.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">20</text><line x1="134" y1="203.0" x2="166" y2="203.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="182.0" x2="184" y2="182.0" stroke="#fff" stroke-width="2"/><text x="190" y="187.0" fill="#fff" font-size="13" font-weight="700">10</text><text x="110" y="187.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">10</text><line x1="134" y1="161.0" x2="166" y2="161.0" stroke="#fff" stroke-width="2"/><line x1="134" y1="119.0" x2="166" y2="119.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="98.0" x2="184" y2="98.0" stroke="#fff" stroke-width="2"/><text x="190" y="103.0" fill="#fff" font-size="13" font-weight="700">10</text><text x="110" y="103.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">10</text><line x1="134" y1="77.0" x2="166" y2="77.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="56.0" x2="184" y2="56.0" stroke="#fff" stroke-width="2"/><text x="190" y="61.0" fill="#fff" font-size="13" font-weight="700">20</text><text x="110" y="61.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">20</text><line x1="134" y1="35.0" x2="166" y2="35.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="14.0" x2="184" y2="14.0" stroke="#fff" stroke-width="2"/><text x="190" y="19.0" fill="#fff" font-size="13" font-weight="700">30</text><text x="110" y="19.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">30</text><line x1="134" y1="-7.0" x2="166" y2="-7.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="-28.0" x2="184" y2="-28.0" stroke="#fff" stroke-width="2"/><text x="190" y="-23.0" fill="#fff" font-size="13" font-weight="700">40</text><text x="110" y="-23.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">40</text><line x1="134" y1="-49.0" x2="166" y2="-49.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="-70.0" x2="184" y2="-70.0" stroke="#fff" stroke-width="2"/><text x="190" y="-65.0" fill="#fff" font-size="13" font-weight="700">50</text><text x="110" y="-65.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">50</text><line x1="134" y1="-91.0" x2="166" y2="-91.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="-112.0" x2="184" y2="-112.0" stroke="#fff" stroke-width="2"/><text x="190" y="-107.0" fill="#fff" font-size="13" font-weight="700">60</text><text x="110" y="-107.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">60</text><line x1="134" y1="-133.0" x2="166" y2="-133.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="-154.0" x2="184" y2="-154.0" stroke="#fff" stroke-width="2"/><text x="190" y="-149.0" fill="#fff" font-size="13" font-weight="700">70</text><text x="110" y="-149.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">70</text><line x1="134" y1="-175.0" x2="166" y2="-175.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="-196.0" x2="184" y2="-196.0" stroke="#fff" stroke-width="2"/><text x="190" y="-191.0" fill="#fff" font-size="13" font-weight="700">80</text><text x="110" y="-191.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">80</text><line x1="134" y1="-217.0" x2="166" y2="-217.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="-238.0" x2="184" y2="-238.0" stroke="#fff" stroke-width="2"/><text x="190" y="-233.0" fill="#fff" font-size="13" font-weight="700">90</text><text x="110" y="-233.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">90</text></g></g><line x1="62.5" y1="89.5" x2="74.7" y2="96.5" stroke="#fff" stroke-width="2.5"/><line x1="78.6" y1="68.6" x2="83.5" y2="73.5" stroke="#fff" stroke-width="2.5"/><line x1="99.5" y1="52.5" x2="106.5" y2="64.7" stroke="#fff" stroke-width="2.5"/><line x1="115.5" y1="45.1" x2="117.9" y2="51.7" stroke="#fff" stroke-width="2.5"/><line x1="132.5" y1="40.5" x2="133.7" y2="47.4" stroke="#fff" stroke-width="2.5"/><line x1="150.0" y1="39.0" x2="150.0" y2="53.0" stroke="#fff" stroke-width="2.5"/><line x1="167.5" y1="40.5" x2="166.3" y2="47.4" stroke="#fff" stroke-width="2.5"/><line x1="184.5" y1="45.1" x2="182.1" y2="51.7" stroke="#fff" stroke-width="2.5"/><line x1="200.5" y1="52.5" x2="193.5" y2="64.7" stroke="#fff" stroke-width="2.5"/><line x1="221.4" y1="68.6" x2="216.5" y2="73.5" stroke="#fff" stroke-width="2.5"/><line x1="237.5" y1="89.5" x2="225.3" y2="96.5" stroke="#fff" stroke-width="2.5"/><g transform="rotate(0 150 140)"><path d="M150 55 l-9 15 h18 z" fill="#ffd24a" stroke="#333" stroke-width="1"/></g><path d="M150 41 l-8 -12 h16 z" fill="#fff"/><g fill="#ffd24a" stroke="#222" stroke-width="1.2"><rect x="80" y="136" width="44" height="8" rx="2"/><rect x="176" y="136" width="44" height="8" rx="2"/><rect x="145" y="135" width="10" height="10"/></g><circle cx="150" cy="140" r="105" fill="none" stroke="#1e2a24" stroke-width="7"/><text x="150" y="275" text-anchor="middle" font-weight="700" font-size="15">Nose-high: about 35° up, wings level</text></g></svg>
+<figcaption>Nose-high upset. The speed is decaying; recognise it early.</figcaption>
+</figure>
+
+<h2>Generic technique (based on industry guidance)</h2>
+<ol class="steps">
+  <li><strong>Recognise and confirm</strong> the situation. Announce “Nose high”.</li>
+  <li><strong>Autopilot and autothrust — disconnect.</strong></li>
+  <li><strong>Apply as much as full nose-down elevator.</strong> Accept reduced g — the feeling of being light in your seat. Use nose-down stabiliser trim if needed.</li>
+  <li><strong>If more is needed to lower the nose:</strong>
+    <ul>
+      <li><strong>Reduce thrust</strong> (aircraft with underwing engines) to reduce the nose-up moment;</li>
+      <li><strong>Roll</strong> to a bank angle that helps the nose drop — the lift vector moves away from the vertical, and the nose falls towards the horizon. Do not normally exceed about 60° of bank.</li>
+    </ul>
+  </li>
+  <li><strong>Complete the recovery:</strong> as the nose approaches the horizon, roll wings level, check the airspeed, adjust thrust and establish the required pitch attitude.</li>
+</ol>
+<p class="muted">Always follow the manufacturer's procedure for your type.</p>
+
+<h2>Points to remember</h2>
+<ul>
+  <li>If the aircraft is <strong>stalled</strong>, apply the stall recovery first (Lesson 20).</li>
+  <li>Unloading reduces the angle of attack and the stall speed. A low-g sensation is expected and acceptable.</li>
+  <li>Do not over-correct. A nose-high upset recovered too aggressively can become a nose-low, high-speed upset.</li>
+  <li>Unsecured objects and passengers or crew without seat belts may be thrown upwards during unloading.</li>
+</ul>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Nose-high: automation off, nose-down elevator (as much as full), trim as needed.</li><li>If needed: reduce thrust (underwing engines) and/or roll to bank to help the nose drop — normally not more than about 60°.</li><li>Approaching the horizon: wings level, check speed, set thrust and pitch.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">In a nose-high upset, full nose-down elevator is not lowering the nose quickly enough. Which additional techniques can help?</p>
+    <ol><li>Add thrust and pull up</li><li>Reduce thrust and/or roll to a moderate bank angle</li><li>Extend the flaps</li><li>Apply alternating rudder</li></ol>
+    <p class="a"><b>Answer: B.</b> Reducing thrust removes the nose-up moment of underwing engines, and banking lets the nose fall towards the horizon.</p></div>
+</section>
+<section class="lesson" id="lesson-22">
+  <div class="lesson-head"><div class="k">Module 6 · Recovery</div>
+    <h1>Lesson 22: Nose-Low and High-Bank Upset Recovery</h1><div class="m">Lesson 22 of 24 · about 8 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Apply the generic nose-low recovery technique.</li><li>Explain why the wings must be levelled before pulling.</li><li>Manage speed and g in a high-speed, nose-low recovery.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-22.jpg" alt="Airliner nose-down and banked over sloping terrain"><figcaption>Nose-low: roll wings level first, then pull.</figcaption></figure>
+  
+<h2>The situation</h2>
+<p>The pitch is unintentionally low — for example more than 10° nose-down — often combined with a high bank angle. The speed is usually increasing. The danger is <strong>overspeed</strong>, <strong>structural overload</strong> and ground contact — and, if the aircraft is stalled, a continued uncontrolled descent.</p>
+
+<figure class="diagram">
+<svg viewBox="0 0 300 290" style="max-width:340px;margin:0 auto" role="img" aria-label="Attitude indicator showing nose-low, high bank"><title>Attitude indicator showing nose-low, high bank</title><desc>20 degrees nose-down with 75 degrees of right bank.</desc>
+<g font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="13" fill="#24342b"><defs><clipPath id="clipnl2"><circle cx="150" cy="140" r="105"/></clipPath></defs><g clip-path="url(#clipnl2)"><g transform="rotate(-75 150 140) translate(0 -84.0)"><rect x="-165" y="-375" width="630" height="515" fill="#5aa6e0"/><rect x="-165" y="140" width="630" height="515" fill="#a0693a"/><line x1="-165" y1="140" x2="465" y2="140" stroke="#fff" stroke-width="2.5"/><line x1="116" y1="518.0" x2="184" y2="518.0" stroke="#fff" stroke-width="2"/><text x="190" y="523.0" fill="#fff" font-size="13" font-weight="700">90</text><text x="110" y="523.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">90</text><line x1="134" y1="497.0" x2="166" y2="497.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="476.0" x2="184" y2="476.0" stroke="#fff" stroke-width="2"/><text x="190" y="481.0" fill="#fff" font-size="13" font-weight="700">80</text><text x="110" y="481.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">80</text><line x1="134" y1="455.0" x2="166" y2="455.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="434.0" x2="184" y2="434.0" stroke="#fff" stroke-width="2"/><text x="190" y="439.0" fill="#fff" font-size="13" font-weight="700">70</text><text x="110" y="439.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">70</text><line x1="134" y1="413.0" x2="166" y2="413.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="392.0" x2="184" y2="392.0" stroke="#fff" stroke-width="2"/><text x="190" y="397.0" fill="#fff" font-size="13" font-weight="700">60</text><text x="110" y="397.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">60</text><line x1="134" y1="371.0" x2="166" y2="371.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="350.0" x2="184" y2="350.0" stroke="#fff" stroke-width="2"/><text x="190" y="355.0" fill="#fff" font-size="13" font-weight="700">50</text><text x="110" y="355.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">50</text><line x1="134" y1="329.0" x2="166" y2="329.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="308.0" x2="184" y2="308.0" stroke="#fff" stroke-width="2"/><text x="190" y="313.0" fill="#fff" font-size="13" font-weight="700">40</text><text x="110" y="313.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">40</text><line x1="134" y1="287.0" x2="166" y2="287.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="266.0" x2="184" y2="266.0" stroke="#fff" stroke-width="2"/><text x="190" y="271.0" fill="#fff" font-size="13" font-weight="700">30</text><text x="110" y="271.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">30</text><line x1="134" y1="245.0" x2="166" y2="245.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="224.0" x2="184" y2="224.0" stroke="#fff" stroke-width="2"/><text x="190" y="229.0" fill="#fff" font-size="13" font-weight="700">20</text><text x="110" y="229.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">20</text><line x1="134" y1="203.0" x2="166" y2="203.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="182.0" x2="184" y2="182.0" stroke="#fff" stroke-width="2"/><text x="190" y="187.0" fill="#fff" font-size="13" font-weight="700">10</text><text x="110" y="187.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">10</text><line x1="134" y1="161.0" x2="166" y2="161.0" stroke="#fff" stroke-width="2"/><line x1="134" y1="119.0" x2="166" y2="119.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="98.0" x2="184" y2="98.0" stroke="#fff" stroke-width="2"/><text x="190" y="103.0" fill="#fff" font-size="13" font-weight="700">10</text><text x="110" y="103.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">10</text><line x1="134" y1="77.0" x2="166" y2="77.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="56.0" x2="184" y2="56.0" stroke="#fff" stroke-width="2"/><text x="190" y="61.0" fill="#fff" font-size="13" font-weight="700">20</text><text x="110" y="61.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">20</text><line x1="134" y1="35.0" x2="166" y2="35.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="14.0" x2="184" y2="14.0" stroke="#fff" stroke-width="2"/><text x="190" y="19.0" fill="#fff" font-size="13" font-weight="700">30</text><text x="110" y="19.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">30</text><line x1="134" y1="-7.0" x2="166" y2="-7.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="-28.0" x2="184" y2="-28.0" stroke="#fff" stroke-width="2"/><text x="190" y="-23.0" fill="#fff" font-size="13" font-weight="700">40</text><text x="110" y="-23.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">40</text><line x1="134" y1="-49.0" x2="166" y2="-49.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="-70.0" x2="184" y2="-70.0" stroke="#fff" stroke-width="2"/><text x="190" y="-65.0" fill="#fff" font-size="13" font-weight="700">50</text><text x="110" y="-65.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">50</text><line x1="134" y1="-91.0" x2="166" y2="-91.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="-112.0" x2="184" y2="-112.0" stroke="#fff" stroke-width="2"/><text x="190" y="-107.0" fill="#fff" font-size="13" font-weight="700">60</text><text x="110" y="-107.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">60</text><line x1="134" y1="-133.0" x2="166" y2="-133.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="-154.0" x2="184" y2="-154.0" stroke="#fff" stroke-width="2"/><text x="190" y="-149.0" fill="#fff" font-size="13" font-weight="700">70</text><text x="110" y="-149.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">70</text><line x1="134" y1="-175.0" x2="166" y2="-175.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="-196.0" x2="184" y2="-196.0" stroke="#fff" stroke-width="2"/><text x="190" y="-191.0" fill="#fff" font-size="13" font-weight="700">80</text><text x="110" y="-191.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">80</text><line x1="134" y1="-217.0" x2="166" y2="-217.0" stroke="#fff" stroke-width="2"/><line x1="116" y1="-238.0" x2="184" y2="-238.0" stroke="#fff" stroke-width="2"/><text x="190" y="-233.0" fill="#fff" font-size="13" font-weight="700">90</text><text x="110" y="-233.0" fill="#fff" font-size="13" font-weight="700" text-anchor="end">90</text></g></g><line x1="62.5" y1="89.5" x2="74.7" y2="96.5" stroke="#fff" stroke-width="2.5"/><line x1="78.6" y1="68.6" x2="83.5" y2="73.5" stroke="#fff" stroke-width="2.5"/><line x1="99.5" y1="52.5" x2="106.5" y2="64.7" stroke="#fff" stroke-width="2.5"/><line x1="115.5" y1="45.1" x2="117.9" y2="51.7" stroke="#fff" stroke-width="2.5"/><line x1="132.5" y1="40.5" x2="133.7" y2="47.4" stroke="#fff" stroke-width="2.5"/><line x1="150.0" y1="39.0" x2="150.0" y2="53.0" stroke="#fff" stroke-width="2.5"/><line x1="167.5" y1="40.5" x2="166.3" y2="47.4" stroke="#fff" stroke-width="2.5"/><line x1="184.5" y1="45.1" x2="182.1" y2="51.7" stroke="#fff" stroke-width="2.5"/><line x1="200.5" y1="52.5" x2="193.5" y2="64.7" stroke="#fff" stroke-width="2.5"/><line x1="221.4" y1="68.6" x2="216.5" y2="73.5" stroke="#fff" stroke-width="2.5"/><line x1="237.5" y1="89.5" x2="225.3" y2="96.5" stroke="#fff" stroke-width="2.5"/><g transform="rotate(-75 150 140)"><path d="M150 55 l-9 15 h18 z" fill="#ffd24a" stroke="#333" stroke-width="1"/></g><path d="M150 41 l-8 -12 h16 z" fill="#fff"/><g fill="#ffd24a" stroke="#222" stroke-width="1.2"><rect x="80" y="136" width="44" height="8" rx="2"/><rect x="176" y="136" width="44" height="8" rx="2"/><rect x="145" y="135" width="10" height="10"/></g><circle cx="150" cy="140" r="105" fill="none" stroke="#1e2a24" stroke-width="7"/><text x="150" y="275" text-anchor="middle" font-weight="700" font-size="15">Nose-low: 20° down, 75° right bank</text></g></svg>
+<figcaption>Nose-low, high-bank upset: roll towards the sky pointer before pulling.</figcaption>
+</figure>
+
+<h2>Generic technique (based on industry guidance)</h2>
+<ol class="steps">
+  <li><strong>Recognise and confirm</strong> the situation. Announce “Nose low”, with the direction of bank.</li>
+  <li><strong>Autopilot and autothrust — disconnect.</strong></li>
+  <li><strong>Recover from the stall, if stalled</strong> — even with the nose low, the wing may be stalled (high descent rate, stall warning, buffet). Reduce the angle of attack first.</li>
+  <li><strong>Roll in the shortest direction to wings level.</strong> Full aileron and spoiler may be needed. It may be necessary to <strong>unload</strong> (reduce back pressure) to improve roll response.</li>
+  <li><strong>Recover to level flight:</strong> apply nose-up elevator smoothly, use stabiliser trim if necessary, and adjust thrust and drag as required — reduce thrust and extend the speedbrakes if the speed is high.</li>
+</ol>
+<p class="muted">Always follow the manufacturer's procedure for your type.</p>
+
+<h2>Why roll before pull</h2>
+<ul>
+  <li>With high bank, pulling back mainly <strong>tightens the turn</strong> and increases the descent — it does not raise the nose. This is how a graveyard spiral develops.</li>
+  <li>A <strong>rolling pull</strong> — rolling and pulling at the same time — produces asymmetric structural loads with lower limits.</li>
+  <li>Once the wings are near level, the lift vector points up, and the pull raises the nose efficiently.</li>
+</ul>
+
+<h2>Bank beyond 90°</h2>
+<p>If the aircraft is beyond 90° of bank, the shortest way to wings level may require continuing the roll through the inverted position — follow the sky pointer. Unload while rolling. Pulling while inverted only steepens the dive.</p>
+
+<h2>Managing speed and g</h2>
+<ul>
+  <li>Reduce thrust and use speedbrakes as needed to control the speed.</li>
+  <li>Pull smoothly to recover — firmly enough to stop the descent, but without exceeding the g limit or triggering the stall warning. Your FCTM gives type-specific guidance.</li>
+  <li>Avoid a secondary nose-high upset: as the nose passes the horizon, establish level flight and a suitable speed.</li>
+</ul>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Nose-low: automation off → stall recovery if stalled → roll wings level (shortest direction) → then pull.</li><li>Never pull with high bank — it tightens the spiral and risks a rolling pull.</li><li>Control speed with thrust and speedbrakes; pull smoothly within g limits.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">In a nose-low upset with 80° of bank and increasing speed, what should you do before pulling back?</p>
+    <ol><li>Add thrust</li><li>Roll wings level in the shortest direction (unloading if needed)</li><li>Extend the flaps</li><li>Apply full rudder</li></ol>
+    <p class="a"><b>Answer: B.</b> With high bank, pulling only tightens the turn. Roll wings level first, then pull smoothly to recover.</p></div>
+</section>
+<section class="lesson" id="lesson-23">
+  <div class="lesson-head"><div class="k">Module 7 · Lessons Learned</div>
+    <h1>Lesson 23: Lessons from Accidents</h1><div class="m">Lesson 23 of 24 · about 10 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Describe key loss of control accidents and their causal factors.</li><li>Link each accident to the prevention and recovery principles of this course.</li><li>Recognise the common threads in LOC-I accidents.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-23.jpg" alt="Airliner at night near a thunderstorm over the ocean"><figcaption>Every principle in this course was learned from real accidents.</figcaption></figure>
+  
+<h2>Case studies</h2>
+<div class="table-wrap"><table>
+  <tr><th>Accident</th><th>What happened</th><th>Lesson for us</th></tr>
+  <tr><td><strong>American Airlines 587</strong><br>Airbus A300-600, New York, November 2001</td><td>After encountering wake turbulence on climb-out, the first officer made repeated full rudder inputs in alternating directions. The loads exceeded the vertical stabiliser's design limits and it separated. 265 people died.</td><td>Never use alternating rudder inputs. Respect wake separation. V<sub>A</sub> does not protect against cyclic inputs.</td></tr>
+  <tr><td><strong>Colgan Air 3407</strong><br>Bombardier Q400, Buffalo, February 2009</td><td>During the approach the speed decayed until the stick shaker activated. The captain responded with nose-up inputs; the stick pusher activated and was overridden. The aircraft stalled and crashed into a house. 50 people died.</td><td>Monitor speed. Respond to the stall warning by reducing angle of attack. Never fight the stick pusher.</td></tr>
+  <tr><td><strong>Turkish Airlines 1951</strong><br>Boeing 737-800, Amsterdam, February 2009</td><td>A faulty radio altimeter caused the autothrottle to reduce thrust to idle during the approach. The crew did not notice the speed decay in time. The aircraft stalled at low altitude and crashed short of the runway. 9 people died.</td><td>Monitor the automation and the FMA. Watch the speed. Apply the stall recovery promptly.</td></tr>
+  <tr><td><strong>Air France 447</strong><br>Airbus A330-200, South Atlantic, June 2009</td><td>In cruise, ice crystals blocked the pitot probes; airspeed became unreliable, the autopilot disconnected and the flight control law degraded. The pilot flying made sustained nose-up inputs; the aircraft climbed, stalled, and descended in a stall until it hit the ocean. 228 people died.</td><td>Unreliable airspeed: pitch and power, small inputs. At high altitude, recover by reducing angle of attack. Recognise a stall even in degraded modes.</td></tr>
+  <tr><td><strong>Gulf Air 072</strong><br>Airbus A320, Bahrain, August 2000</td><td>During a go-around at night over the sea, the aircraft was pitched nose-down and descended into the water. Spatial disorientation (somatogravic illusion) was found to be a likely factor. 143 people died.</td><td>Go-arounds at night: follow the attitude indicator. Use standard callouts and intervene.</td></tr>
+  <tr><td><strong>Indonesia AirAsia 8501</strong><br>Airbus A320, Java Sea, December 2014</td><td>Repeated faults in the rudder travel limiter led the crew to reset a flight control computer in flight. The autopilot disengaged, the control law degraded, and the aircraft rolled. The subsequent inputs led to a stall that was not recovered. 162 people died.</td><td>Do not perform non-procedural resets. Fly the aircraft first after an autopilot disconnect. Recognise and recover from the stall.</td></tr>
+</table></div>
+
+<h2>The common threads</h2>
+<ol class="steps">
+  <li><strong>A trigger</strong> — weather, a technical fault, or a distraction.</li>
+  <li><strong>Monitoring failures</strong> — speed, automation modes or attitude were not watched closely enough.</li>
+  <li><strong>Startle and surprise</strong> — the situation did not match the crew's expectations.</li>
+  <li><strong>Inappropriate reaction</strong> — pulling back, chasing false indications, or using the wrong control.</li>
+  <li><strong>No recovery</strong> — the stall was not recognised, or the recovery was incomplete.</li>
+</ol>
+<p>Each of these steps could have been interrupted by the principles in this course: monitoring, callouts, pitch and power, angle of attack awareness and the recovery templates.</p>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>LOC-I accidents follow a pattern: trigger → monitoring failure → startle → wrong reaction → no recovery.</li><li>Every link can be broken by monitoring, callouts, pitch and power, and correct recovery technique.</li><li>Reduce angle of attack in any stall — at any altitude, with any automation state.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">Which accident showed that rapid, alternating rudder inputs can cause structural failure?</p>
+    <ol><li>Air France 447</li><li>American Airlines 587</li><li>Colgan Air 3407</li><li>Turkish Airlines 1951</li></ol>
+    <p class="a"><b>Answer: B.</b> American Airlines 587: alternating full rudder inputs after a wake encounter overloaded the vertical stabiliser.</p></div>
+</section>
+<section class="lesson" id="lesson-24">
+  <div class="lesson-head"><div class="k">Module 7 · Lessons Learned</div>
+    <h1>Lesson 24: Course Review and Simulator Training</h1><div class="m">Lesson 24 of 24 · about 8 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Review the essential principles of upset prevention and recovery.</li><li>Explain the limitations of flight simulators in UPRT.</li><li>Prepare for the practical (FSTD) component of UPRT.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-24.jpg" alt="Airliner in level flight at sunset"><figcaption>Prevention first — and practise recovery in the simulator.</figcaption></figure>
+  
+<h2>The essential principles</h2>
+<ol class="steps">
+  <li><strong>Prevention first.</strong> Flight path management, monitoring and energy awareness stop most upsets before they start.</li>
+  <li><strong>Know the aerodynamics.</strong> The wing stalls at its critical angle of attack — at any speed, attitude or power.</li>
+  <li><strong>Respect the margins</strong> — speed, buffet and g. Most upsets begin with an eroded margin.</li>
+  <li><strong>Understand the automation</strong> — and expect it to hand you a problem when it disconnects.</li>
+  <li><strong>Manage startle</strong> — small inputs, attitude first, then act on a plan.</li>
+  <li><strong>Communicate</strong> — callouts, clear transfer of control, no dual inputs.</li>
+  <li><strong>Stall recovery first</strong> — reduce the angle of attack, accept the altitude loss.</li>
+  <li><strong>Recover with the right technique</strong> — nose-high: unload, reduce thrust, bank if needed; nose-low: roll wings level, then pull.</li>
+</ol>
+
+<h2>Simulator (FSTD) training</h2>
+<p>The FSTD component of UPRT lets you practise recognition and recovery in your aircraft type. Doc 10011 emphasises that simulator training must stay within the <strong>validated training envelope</strong> of the device:</p>
+<ul>
+  <li>Simulators are based on flight test data. Beyond the stall, at extreme attitudes or sideslip, the data may be extrapolated — the simulator may not behave like the real aircraft.</li>
+  <li>A simulator cannot reproduce sustained g forces or the full physiological effects of an upset — this is why on-aeroplane training exists in licence training.</li>
+  <li>Training outside the valid envelope risks <strong>negative training</strong>: learning a technique that would not work, or would be dangerous, in the real aircraft.</li>
+  <li>Instructors must be trained to use the FSTD correctly, to recognise when it is outside its valid envelope, and to debrief using the instructor station tools.</li>
+</ul>
+
+<h2>Your next steps</h2>
+<ul>
+  <li>Complete the final quiz (20 questions, pass mark 80 %).</li>
+  <li>Review your type's FCOM and QRH procedures for stall recovery, unreliable airspeed, windshear and upset recovery.</li>
+  <li>Bring your questions to the next simulator session and practise prevention as well as recovery.</li>
+</ul>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Prevention first; stall recovery first; the right technique for nose-high and nose-low.</li><li>FSTD training must stay within the simulator&#x27;s validated envelope to avoid negative training.</li><li>Simulators cannot reproduce sustained g; on-aeroplane training fills that gap in licence training.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">Why must UPRT in a simulator stay within its validated training envelope?</p>
+    <ol><li>To save simulator time</li><li>Outside it, the simulator may not represent the aircraft accurately, which risks negative training</li><li>Because the instructor station does not work outside it</li><li>Because regulations forbid stall training</li></ol>
+    <p class="a"><b>Answer: B.</b> Beyond the validated envelope, simulator behaviour may be extrapolated and inaccurate, so pilots could learn techniques that would not work in the real aircraft.</p></div>
+</section><p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p></body></html>

@@ -16,6 +16,27 @@ COURSE = dict(
             "performance on contaminated runways.",
     audience="Flight crew (primary). Also suitable for cabin crew, flight dispatchers and ground operations staff.",
     icon="snow",
+    cert_prefix="CWO",
+    objectives=[
+        "Identify contamination and icing hazards and their effect on performance",
+        "Apply the Clean Aircraft Concept and the ground de-icing/anti-icing programme",
+        "Use holdover time guidelines and pre-take-off checks correctly",
+        "Interpret runway condition reports and assess contaminated runway performance",
+        "Operate aircraft systems safely after cold soak and in icing conditions",
+        "Apply cold temperature altimeter corrections",
+        "Use CRM and TEM to resist time pressure in winter operations",
+    ],
+    finale=dict(
+        title="Closing Case Study: Air Ontario Flight 1363",
+        intro="Thank you for completing the Cold Weather Operations course. This closing video revisits the 1989 Dryden accident "
+              "step by step, links each link in the accident chain to the lessons you have studied, and ends with three questions "
+              "to discuss with your crew or instructor. Duration: about 6 minutes.",
+        further=[
+            ("FAA Lessons Learned — Air Ontario Flight 1363 (C-FONF)", "https://www.faa.gov/lessons_learned/transport_airplane/accidents/C-FONF"),
+            ("Government of Canada — Final response to the Commission of Inquiry into the Air Ontario Crash at Dryden", "https://publications.gc.ca/site/eng/9.896149/publication.html"),
+            ("NASA — A Pilot's Guide to Ground Icing (interactive course)", "https://aircrafticing.grc.nasa.gov/2_5_2_1.html"),
+        ],
+    ),
     finale_youtube="",  # e.g. "dQw4w9WgXcQ" — the ID from a YouTube link; leave empty to use media/video/finale.mp4
     quiz_count=20,
     pass_mark=80,

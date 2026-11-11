@@ -1,0 +1,100 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Lesson 06: Load Factor and g-Awareness — Upset Prevention and Recovery</title>
+<style>
+@page{size:A4;margin:18mm 16mm 20mm}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#24342b;font-size:10.5pt;line-height:1.5;margin:0}
+h1,h2,h3{color:#14231b;line-height:1.25;break-after:avoid}
+h1{font-size:21pt;margin:0 0 6pt}h2{font-size:14pt;margin:16pt 0 6pt}h3{font-size:12pt;margin:12pt 0 4pt}
+p{margin:0 0 7pt}ul,ol{margin:0 0 8pt;padding-left:16pt}li{margin:2pt 0}
+a{color:#125a2b;text-decoration:none}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:9pt;background:#f3f9f5;border:1px solid #dbe5df;padding:0 3pt;border-radius:3pt}
+.cover{height:257mm;display:flex;flex-direction:column;justify-content:center;break-after:page;
+  background:linear-gradient(120deg,#0c3d1e,#125a2b 55%,#2a8a50);color:#fff;padding:22mm;border-radius:4mm;margin:0}
+.cover h1{color:#fff;font-size:34pt}.cover .k{letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#bfe3cb;font-size:10pt}
+.cover p{color:#e3f1e8;font-size:13pt}.cover .logo{background:#fff;padding:5mm 7mm;border-radius:3mm;display:inline-block;margin-bottom:14mm}
+.cover .logo img{height:16mm}.cover .meta{margin-top:12mm;font-size:10.5pt;color:#d3ebdb}
+.toc{break-after:page}.toc h2{margin-top:0}.toc ol{list-style:none;padding:0}
+.toc li{display:flex;gap:8pt;padding:3pt 0;border-bottom:1px dotted #c9d8cf}.toc .n{width:22pt;font-weight:700;color:#5b6b62}
+.toc .mod{margin-top:9pt;font-weight:800;color:#125a2b;border:0;text-transform:uppercase;font-size:9pt;letter-spacing:.06em}
+.lesson{break-before:page}
+.lesson-head{background:linear-gradient(120deg,#0c3d1e,#1d7a3e);color:#fff;border-radius:3mm;padding:9pt 13pt;margin-bottom:10pt}
+.lesson-head h1{color:#fff;font-size:17pt;margin:2pt 0}.lesson-head .k{font-size:8.5pt;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#c7e8d2}
+.lesson-head .m{font-size:9pt;color:#dbefe2}
+.objectives{background:#f3f9f5;border:1px solid #dbe5df;border-radius:2mm;padding:7pt 11pt;margin:0 0 10pt}
+.objectives h2,.takeaways h2,.kc h2{font-size:9.5pt;text-transform:uppercase;letter-spacing:.06em;margin:0 0 3pt;color:#125a2b}
+.lesson-figure{margin:0 0 10pt;break-inside:avoid}.lesson-figure img{width:100%;max-height:85mm;object-fit:contain;border:1px solid #dbe5df;border-radius:2mm;background:#f3f9f5}
+figure{margin:9pt 0;break-inside:avoid}figure svg{width:100%;height:auto}figcaption{font-size:8.5pt;color:#5b6b62;margin-top:3pt}
+.diagram{border:1px solid #dbe5df;border-radius:2mm;padding:5pt}
+.table-wrap{margin:8pt 0;border:1px solid #dbe5df;border-radius:2mm;overflow:hidden}
+table{border-collapse:collapse;width:100%;font-size:9pt}th,td{text-align:left;vertical-align:top;padding:4pt 6pt;border-bottom:1px solid #dbe5df}
+th{background:#f3f9f5}tr{break-inside:avoid}td.code{font-weight:800;font-size:12pt;text-align:center;width:34pt}
+.callout{border-left:3pt solid #1d7a3e;background:#f3f9f5;padding:6pt 10pt;margin:8pt 0;border-radius:0 2mm 2mm 0;break-inside:avoid}
+.callout .label{display:block;font-size:8.5pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#125a2b}
+.callout.warn{border-color:#c8102e;background:#fdecef}.callout.warn .label{color:#c8102e}
+.callout.caution{border-color:#d08a00;background:#fff5e0}.callout.caution .label{color:#9a6200}
+.callout.info{border-color:#1f5f99;background:#e9f2fb}.callout.info .label{color:#1f5f99}
+.callout > :last-child{margin-bottom:0}
+.steps{list-style:none;padding:0;counter-reset:s}.steps>li{counter-increment:s;position:relative;padding-left:20pt;margin:4pt 0}
+.steps>li::before{content:counter(s);position:absolute;left:0;top:0;width:14pt;height:14pt;border-radius:50%;background:#1d7a3e;color:#fff;font-weight:800;font-size:8pt;display:flex;align-items:center;justify-content:center}
+.dialog{border:1px solid #dbe5df;border-radius:2mm;padding:4pt 10pt;margin:8pt 0;break-inside:avoid}.dialog p{margin:4pt 0}.dialog b{color:#125a2b}
+.muted{color:#5b6b62}
+.takeaways{background:#0c3d1e;color:#e8f5ec;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}.takeaways h2{color:#fff}
+.kc{border:1.5pt dashed #b9d7c3;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}
+.kc .q{font-weight:700;margin:2pt 0 4pt}.kc ol{list-style:upper-alpha}.kc .a{font-size:9pt;margin-top:4pt;color:#125a2b}
+.disclaimer{font-size:8.5pt;color:#5b6b62;border-top:1px solid #dbe5df;padding-top:6pt;margin-top:14pt}
+</style></head><body>
+<section class="lesson" style="break-before:auto" id="lesson-6">
+  <div class="lesson-head"><div class="k">Module 2 · Aerodynamics</div>
+    <h1>Lesson 06: Load Factor and g-Awareness</h1><div class="m">Lesson 6 of 24 · about 8 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Calculate load factor in a level turn and its effect on stall speed.</li><li>State the structural limit load factors of transport aeroplanes and the meaning of manoeuvring speed.</li><li>Apply g-awareness during upset recovery.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-06.jpg" alt="Flight-deck view in a 60-degree bank"><figcaption>A 60° level turn means 2 g — and a stall speed 41 % higher.</figcaption></figure>
+  
+<h2>Load factor</h2>
+<p><strong>Load factor (n)</strong> is the ratio of lift to weight, felt as "g". In straight and level flight n = 1. In a level turn the wing must produce extra lift to hold altitude:</p>
+<p><code>n = 1 / cos(bank angle)</code> — 30° gives 1.15 g, 45° gives 1.41 g, 60° gives 2 g.</p>
+
+<figure class="diagram">
+<svg viewBox="0 0 640 340" role="img" aria-label="Load factor and stall speed against bank angle"><title>Load factor and stall speed against bank angle</title><desc>Load factor equals one over the cosine of bank angle.</desc>
+<g font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="13" fill="#24342b">
+<line x1="70" y1="280" x2="610" y2="280" stroke="#5b6b62" stroke-width="1.5"/><line x1="70" y1="280" x2="70" y2="20" stroke="#5b6b62" stroke-width="1.5"/>
+<line x1="70" y1="280" x2="70" y2="286" stroke="#5b6b62"/><text x="70" y="302" text-anchor="middle" font-size="12">0°</text><line x1="175" y1="280" x2="175" y2="286" stroke="#5b6b62"/><text x="175" y="302" text-anchor="middle" font-size="12">15°</text><line x1="280" y1="280" x2="280" y2="286" stroke="#5b6b62"/><text x="280" y="302" text-anchor="middle" font-size="12">30°</text><line x1="385" y1="280" x2="385" y2="286" stroke="#5b6b62"/><text x="385" y="302" text-anchor="middle" font-size="12">45°</text><line x1="490" y1="280" x2="490" y2="286" stroke="#5b6b62"/><text x="490" y="302" text-anchor="middle" font-size="12">60°</text><line x1="595" y1="280" x2="595" y2="286" stroke="#5b6b62"/><text x="595" y="302" text-anchor="middle" font-size="12">75°</text>
+<text x="60" y="284" text-anchor="end" font-size="12">1 g</text><line x1="70" y1="280" x2="610" y2="280" stroke="#dbe5df"/><text x="60" y="214" text-anchor="end" font-size="12">2 g</text><line x1="70" y1="210" x2="610" y2="210" stroke="#dbe5df"/><text x="60" y="144" text-anchor="end" font-size="12">3 g</text><line x1="70" y1="140" x2="610" y2="140" stroke="#dbe5df"/><text x="60" y="74" text-anchor="end" font-size="12">4 g</text><line x1="70" y1="70" x2="610" y2="70" stroke="#dbe5df"/>
+<polyline points="70.0,280.0 77.0,280.0 84.0,280.0 91.0,279.9 98.0,279.8 105.0,279.7 112.0,279.6 119.0,279.5 126.0,279.3 133.0,279.1 140.0,278.9 147.0,278.7 154.0,278.4 161.0,278.2 168.0,277.9 175.0,277.5 182.0,277.2 189.0,276.8 196.0,276.4 203.0,276.0 210.0,275.5 217.0,275.0 224.0,274.5 231.0,274.0 238.0,273.4 245.0,272.8 252.0,272.1 259.0,271.4 266.0,270.7 273.0,270.0 280.0,269.2 287.0,268.3 294.0,267.5 301.0,266.5 308.0,265.6 315.0,264.5 322.0,263.5 329.0,262.4 336.0,261.2 343.0,259.9 350.0,258.6 357.0,257.2 364.0,255.8 371.0,254.3 378.0,252.7 385.0,251.0 392.0,249.2 399.0,247.4 406.0,245.4 413.0,243.3 420.0,241.1 427.0,238.8 434.0,236.3 441.0,233.7 448.0,230.9 455.0,228.0 462.0,224.8 469.0,221.5 476.0,217.9 483.0,214.1 490.0,210.0 497.0,205.6 504.0,200.9 511.0,195.8 518.0,190.3 525.0,184.4 532.0,177.9 539.0,170.8 546.0,163.1 553.0,154.7 560.0,145.3 567.0,135.0 574.0,123.5 581.0,110.6 588.0,96.0 595.0,79.5" fill="none" stroke="#1f5f99" stroke-width="4"/>
+<polyline points="70.0,280.0 77.0,280.0 84.0,280.0 91.0,279.9 98.0,279.8 105.0,279.7 112.0,279.6 119.0,279.5 126.0,279.3 133.0,279.1 140.0,278.9 147.0,278.7 154.0,278.4 161.0,278.2 168.0,277.9 175.0,277.6 182.0,277.2 189.0,276.8 196.0,276.4 203.0,276.0 210.0,275.6 217.0,275.1 224.0,274.6 231.0,274.1 238.0,273.5 245.0,272.9 252.0,272.3 259.0,271.7 266.0,271.0 273.0,270.3 280.0,269.6 287.0,268.8 294.0,268.0 301.0,267.1 308.0,266.2 315.0,265.3 322.0,264.3 329.0,263.3 336.0,262.3 343.0,261.2 350.0,260.0 357.0,258.8 364.0,257.6 371.0,256.3 378.0,254.9 385.0,253.5 392.0,252.0 399.0,250.5 406.0,248.9 413.0,247.2 420.0,245.4 427.0,243.5 434.0,241.6 441.0,239.5 448.0,237.4 455.0,235.1 462.0,232.8 469.0,230.3 476.0,227.7 483.0,224.9 490.0,222.0 497.0,218.9 504.0,215.7 511.0,212.2 518.0,208.6 525.0,204.6 532.0,200.5 539.0,196.0 546.0,191.3 553.0,186.1 560.0,180.6 567.0,174.6 574.0,168.2 581.0,161.1 588.0,153.3 595.0,144.8" fill="none" stroke="#c8102e" stroke-width="3" stroke-dasharray="8 5"/>
+<circle cx="490" cy="210" r="6" fill="#1f5f99"/><text x="480" y="198" text-anchor="end" fill="#1f5f99" font-weight="700">60° bank = 2 g</text>
+<circle cx="490" cy="222.0" r="6" fill="#c8102e"/><text x="502" y="240.0" fill="#c8102e" font-weight="700">stall speed +41 %</text>
+<text x="340" y="325" text-anchor="middle">Bank angle in a level turn →</text>
+<text x="90" y="40" fill="#1f5f99" font-weight="700">Load factor n = 1 / cos(bank)</text>
+<text x="90" y="60" fill="#c8102e" font-weight="700">Stall speed rises with √n</text></g></svg>
+<figcaption>In a level turn, load factor rises steeply above 45° of bank, and the stall speed rises with it. Unloading (reducing g) lowers the stall speed again.</figcaption>
+</figure>
+
+<h2>Load factor and stall speed</h2>
+<p>Stall speed increases with the square root of the load factor: <code>V<sub>S(n)</sub> = V<sub>S</sub> × √n</code>. At 60° of bank (2 g) the stall speed is about 41 % higher. This is why steep turns at low speed are dangerous, and why <strong>unloading</strong> — relaxing back pressure to reduce g — is a powerful way to lower the stall speed and the angle of attack during recovery.</p>
+
+<h2>Structural limits</h2>
+<ul>
+  <li>Transport aeroplanes are typically designed for limit manoeuvring load factors of <strong>+2.5 g to −1.0 g</strong> with flaps retracted, and <strong>+2.0 g to 0 g</strong> with flaps extended. Check your AFM.</li>
+  <li>Exceeding these limits may cause permanent structural deformation; the ultimate load (1.5 × limit) is where failure may occur.</li>
+  <li>Rolling and pulling at the same time (a "rolling pull") produces asymmetric loads, which have lower limits.</li>
+</ul>
+
+<h2>Manoeuvring speed (V<sub>A</sub>)</h2>
+<p>Below V<sub>A</sub>, a single full deflection of one flight control <strong>in one axis</strong> should not exceed structural limits. V<sub>A</sub> does <strong>not</strong> protect against:</p>
+<ul>
+  <li>full deflections in more than one axis at the same time;</li>
+  <li>rapid <strong>alternating</strong> or reversing inputs, especially of the rudder (Lesson 8 — American Airlines 587).</li>
+</ul>
+
+<h2>g-awareness in recovery</h2>
+<ul>
+  <li>In a <strong>nose-high</strong> recovery, reduced or even slightly negative g (unloading) is often needed. It may feel uncomfortable; loose objects and unrestrained people can be thrown about.</li>
+  <li>In a <strong>nose-low</strong> recovery, roll wings level <strong>before</strong> pulling, then pull smoothly — avoiding both the stall warning and excessive g.</li>
+  <li>The sensation of g is not a reliable indicator of attitude; use the instruments.</li>
+</ul>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Level turn: n = 1/cos(bank); 60° of bank = 2 g.</li><li>Stall speed rises with √n: +41 % at 2 g. Unloading lowers stall speed and angle of attack.</li><li>Typical limits flaps up: +2.5 g / −1.0 g. Avoid rolling pulls.</li><li>VA does not protect against multiple-axis or alternating full inputs.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">An aircraft with a 1 g stall speed of 120 kt is in a level 60° bank turn. What is its approximate stall speed?</p>
+    <ol><li>120 kt</li><li>about 140 kt</li><li>about 170 kt</li><li>240 kt</li></ol>
+    <p class="a"><b>Answer: C.</b> 60° of bank gives 2 g; √2 ≈ 1.41; 120 × 1.41 ≈ 170 kt.</p></div>
+</section><p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p></body></html>
