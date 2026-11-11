@@ -1,0 +1,48 @@
+Domestic Airlines — Cold Weather Operations
+Lesson 11: Gate and Remote De-icing Operations
+
+Learning objectives:
+- Compare gate de-icing with remote (pad) de-icing.
+- Describe a typical remote de-icing pad procedure.
+- Manage the time between treatment and take-off.
+
+Two ways to de-ice
+
+At the gate / stand Remote pad or central facility
+
+Engines Normally shut down; APU running Normally running at idle (per AFM and facility procedure)
+
+Distance to runway Longer taxi — more holdover time used before take-off Close to the departure runway — less holdover time used
+
+Communication Ground crew via interphone or radio Pad control / de-icing coordinator by radio, then the vehicle operator
+
+Main risks HOT running out during pushback and taxi Wrong position on the pad, engines near personnel, confusion between ATC, pad control and the de-icing crew
+
+A typical remote pad procedure
+
+Before taxi, check the airport de-icing procedures (charts, NOTAMs, frequencies) and brief the sequence.
+
+ATC or the coordinator assigns a pad. Taxi in following the lead-in line and marshaller or stop-position signs, and stop on the stop line.
+
+Set the parking brake and configure the aircraft for de-icing. Report "configured" on the pad frequency.
+
+Agree the treatment and receive the start call. Hold position — no movement, power or configuration change.
+
+Receive the anti-icing code and the "all personnel and equipment clear" call.
+
+Only then reconfigure, complete the after de-icing checks, and contact ATC to leave the pad as instructed.
+
+Managing the time to take-off
+
+Coordinate with ATC before treatment so that you are not de-iced and then held for a long time.
+
+Taxi at a safe speed with good separation. Avoid the jet blast of the aircraft ahead, which blows snow and slush onto treated surfaces and thins the fluid.
+
+Some AFMs recommend delaying flap extension until close to the runway when taxiing through slush or snow. Others require flaps to be set before anti-icing so that the surfaces are protected. Follow your FCOM.
+
+Continuously compare the remaining holdover time with the expected take-off time. If it will not be enough, decide early — a planned return for re-treatment is better than a rushed decision at the holding point.
+
+Key takeaways:
+- Gate de-icing uses more holdover time; pad de-icing is closer to the runway but more complex.
+- On the pad, stay stationary and configured until “all clear” is received.
+- Keep clear of jet blast and compare remaining HOT with the expected take-off time.

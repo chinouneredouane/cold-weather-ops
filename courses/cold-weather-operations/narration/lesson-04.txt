@@ -1,0 +1,55 @@
+Domestic Airlines — Cold Weather Operations
+Lesson 4: Aircraft Icing — On the Ground and in Flight
+
+Learning objectives:
+- Distinguish ground icing from in-flight icing.
+- State the standard definition of icing conditions used for engine and wing anti-ice.
+- Describe the main types and intensities of in-flight icing.
+
+Ground icing
+
+On the ground the aircraft is exposed to precipitation, frost, freezing fog and slush from taxiways for as long as it is parked or taxiing. Ground icing is managed with de-icing and anti-icing fluids and inspections. The aircraft's own ice protection systems are not designed to clean wings on the ground.
+
+Main sources:
+
+Frost and freezing fog on parked aircraft;
+
+Falling snow, freezing rain, drizzle and ice pellets;
+
+Cold-soaked fuel frost and clear ice;
+
+Slush and spray from taxiways and runways;
+
+Blowing snow and snow blown by other aircraft's jet blast.
+
+Icing conditions — the standard definition
+
+Definition (typical AFM wording)
+Icing conditions exist when the outside air temperature (on the ground and for take-off) or total air temperature (in flight) is 10 °C or below , and visible moisture in any form is present — cloud, fog with visibility of 1 600 m (1 statute mile) or less, rain, snow, sleet or ice crystals.
+
+On the ground, icing conditions also exist when the OAT is 10 °C or below and there is snow, ice, standing water or slush on ramps, taxiways or runways that may be ingested by the engines or freeze on engines, nacelles or engine sensor probes.
+
+This definition tells you when to use engine anti-ice (and, in flight, wing anti-ice according to the AFM). Always use the exact wording and limits in your own AFM/FCOM.
+
+In-flight icing
+
+Type Conditions Appearance
+
+Rime Small droplets, colder temperatures, stratiform cloud Opaque, white, rough; forms on leading edges
+
+Clear (glaze) Large droplets, temperatures near 0 °C to about −10 °C, cumuliform cloud or freezing rain Transparent, dense; can run back and form horns or ridges
+
+Mixed Combination of the above Rough and partly clear
+
+Supercooled large droplets (SLD) Freezing drizzle and freezing rain Ice forms behind the protected areas, where ice protection systems cannot remove it
+
+Pilots report icing intensity as trace, light, moderate or severe . Severe icing is a rate at which the ice protection systems cannot reduce or control the hazard; immediate exit from the conditions is required.
+
+Why the distinction matters
+
+Ground contamination affects the whole upper surface of the wing and tail, which is where lift is generated. In-flight ice protection systems only protect leading edges, engine inlets, probes and windows. A wing that leaves the ground contaminated cannot be cleaned by switching on anti-ice.
+
+Key takeaways:
+- Icing conditions: OAT/TAT 10 °C or below with visible moisture, or contaminated surfaces on the ground.
+- Ground icing is removed with fluids — not with the aircraft's ice protection systems.
+- SLD forms ice behind protected areas; exit the conditions.

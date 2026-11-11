@@ -1,0 +1,49 @@
+Domestic Airlines — Cold Weather Operations
+Lesson 24: Cold Temperature Altimetry and En-route Considerations
+
+Learning objectives:
+- Explain why a barometric altimeter over-reads in cold air.
+- Apply cold temperature corrections to minimum altitudes.
+- Recognise the limits of baro-VNAV approaches at low temperature.
+
+Why cold air is dangerous for terrain clearance
+
+A barometric altimeter is calibrated for the ICAO Standard Atmosphere (ISA). In air colder than ISA, the pressure levels are closer together. The altimeter then shows a higher altitude than the true altitude. The aircraft is lower than indicated — “from high to low, look out below”.
+
+The error is zero at the altimeter setting source (the aerodrome) and grows with height above it. It is greatest in very cold air and over high terrain.
+
+Rule of thumb
+
+Approximation
+Correction ≈ 4 % of the height above the aerodrome for every 10 °C below ISA (ISA deviation measured at the aerodrome).
+
+Example: aerodrome elevation 2 300 ft, temperature −20 °C. ISA at 2 300 ft ≈ 15 − 4.6 ≈ +10 °C, so ISA −30 °C. Initial approach fix at 5 300 ft, which is 3 000 ft above the aerodrome. Correction ≈ 3 × 4 % × 3 000 = 360 ft. Fly 5 660 ft, or round it up as the company procedure requires.
+
+For accurate values, use the ICAO PANS-OPS cold temperature correction table or the company table. They apply to the published altitudes on the approach: minimum sector, initial, intermediate and final approach fix altitudes, step-down fixes, missed approach altitudes and the DA/MDA.
+
+Applying corrections
+
+The pilot is responsible for applying cold temperature corrections to minimum altitudes, unless the Operations Manual states otherwise.
+
+Tell ATC when you apply corrections to an assigned or published altitude, because it affects separation.
+
+Do not correct altitudes assigned by radar controllers without coordination. Ask whether the assigned altitude is temperature-corrected if you are near terrain.
+
+The correction applies to the altimeter altitudes, not to radio altimeter heights (e.g. a CAT II/III decision height).
+
+Baro-VNAV approaches
+
+A baro-VNAV glide path is affected by the same error: in cold air the actual path is lower and shallower than published. RNP approach charts with LNAV/VNAV minima state a minimum temperature below which baro-VNAV must not be used. Some FMS can apply temperature compensation. Use it only as your FCOM and Operations Manual permit.
+
+En-route winter considerations
+
+Very cold upper air masses: watch the fuel temperature (Lesson 22).
+
+Minimum en-route altitudes over high terrain need cold temperature awareness, especially at night with weak pressure gradients.
+
+Alternates may be affected by the same snow, icing or freezing rain as the destination. Check runway condition forecasts and de-icing availability.
+
+Key takeaways:
+- In cold air the aircraft is lower than the altimeter shows.
+- Correction ≈ 4 % per 10 °C below ISA per height above the aerodrome — use the official table.
+- Correct minimum and approach altitudes and inform ATC; respect baro-VNAV temperature limits.

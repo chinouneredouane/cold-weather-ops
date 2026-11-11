@@ -1,0 +1,55 @@
+Domestic Airlines — Cold Weather Operations
+Lesson 10: Communication with the De-icing Crew and the Anti-icing Code
+
+Learning objectives:
+- Use a structured communication sequence before, during and after treatment.
+- Read and record the anti-icing code.
+- Apply closed-loop communication under time pressure.
+
+Why communication matters
+
+The flight crew cannot see most of what happens during de-icing. The de-icing crew cannot see inside the flight deck. Several accidents and serious incidents happened because one side assumed what the other was doing — engines moved while people were near the aircraft, or an aircraft taxied with parts of it untreated. Communication must follow a standard sequence and use closed-loop read-back.
+
+Before treatment
+
+Establish contact on the agreed radio frequency or interphone.
+
+The crew confirms the aircraft is configured for de-icing and the brakes are set.
+
+Agree the treatment: de-icing only, one-step or two-step, fluid type and concentration, and the areas to treat.
+
+Make a PA to the passengers (and inform cabin crew) that de-icing is about to begin; they will hear noise and may smell fluid.
+
+After treatment — the anti-icing code
+
+When treatment and the post-treatment check are complete, the de-icing crew passes the anti-icing code . The SAE AS6285 format contains:
+
+Fluid type (I, II, III or IV);
+
+Concentration, as fluid/water percentage (not needed for Type I);
+
+Local time at the beginning of the final application;
+
+Date (written record);
+
+The statement “post de-icing/anti-icing check completed”.
+
+Where a brand name is known, it may also be given so you can use brand-specific tables.
+
+Example only — use the phraseology in the Operations Manual and the local de-icing procedures.
+
+Using the code
+
+Read the code back in full. Write it on the flight log or enter it as the company procedure requires.
+
+Calculate the HOT using the fluid, concentration and current conditions, and brief the end time.
+
+Do not move the aircraft, start engines or change configuration until the "all clear" call.
+
+Under time pressure De-icing usually happens at the busiest moment of a winter departure. Slow down: use standard phrases, read back every number, and ask again if anything is unclear. Thirty seconds of clarification is cheaper than a return to the pad — or an accident.
+
+Key takeaways:
+- Confirm configuration, brakes set and the treatment plan before spraying starts.
+- Anti-icing code: fluid type, concentration, start time of final step, date, check completed.
+- Read back the code and calculate HOT from the start time of the final application.
+- Do not move until the de-icing crew calls “all personnel and equipment clear”.

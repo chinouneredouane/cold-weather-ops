@@ -1,0 +1,56 @@
+Domestic Airlines — Cold Weather Operations
+Lesson 27: CRM and Threat and Error Management in Winter Operations
+
+Learning objectives:
+- Identify typical winter threats and errors.
+- Apply TEM countermeasures, including briefings and pre-agreed decision points.
+- Recognise and resist plan continuation bias and commercial pressure.
+
+Typical winter threats
+
+Changing precipitation type and intensity; darkness and low visibility;
+
+Time pressure: slot times, passenger connections, crew duty limits, de-icing queues;
+
+Complex communication between ATC, pad control, the de-icing crew and the cabin;
+
+Unfamiliar procedures at airports that rarely have winter weather;
+
+Fatigue after early starts and long delays;
+
+Equipment issues: unserviceable APU, limited de-icing equipment.
+
+Typical errors
+
+Using the wrong HOT table, fluid, concentration or start time;
+
+Not updating the HOT when conditions change;
+
+Skipping or rushing the winter-specific checklist items: anti-ice, run-ups, flaps after slush taxi, flight-control check;
+
+Using reduced thrust or wrong performance data on a contaminated runway;
+
+Assuming the de-icing crew treated an area — or assuming the flight crew is ready.
+
+Countermeasures
+
+Winter briefing. Weather, runway conditions, de-icing plan, HOT strategy, performance, anti-ice, taxi route and hazards.
+
+Pre-agreed decision points. “If HOT expires before take-off, we return.” “If RWYCC falls below 3, we wait or divert.” Decisions made calmly before the pressure arrives are better than decisions made under it.
+
+Monitoring and cross-checking. Both pilots calculate the HOT independently; the pilot monitoring tracks time and conditions.
+
+Speaking up. Any crew member who sees a threat must say so clearly. Use the company's assertiveness model — for example: get attention, state the concern, propose an action, get agreement.
+
+Workload management. Do the de-icing and HOT tasks at a planned moment, not during the taxi or take-off briefings.
+
+Plan continuation bias
+
+The closer we get to completing a plan, the harder it is to change it — even when the information shows we should. In winter this appears as “just one more aircraft ahead of us, the HOT will be fine”, or “the runway was fine for the last aircraft”. Recognise it, name it, and go back to your pre-agreed decision points.
+
+Organisational support Domestic Airlines supports any crew decision to delay, return for de-icing or divert for safety reasons. No commercial consideration justifies taking off with a contaminated aircraft.
+
+Key takeaways:
+- Brief winter threats and agree decision points before the pressure starts.
+- Both pilots calculate HOT; the pilot monitoring tracks time and conditions.
+- Recognise plan continuation bias — go back to your decision points.

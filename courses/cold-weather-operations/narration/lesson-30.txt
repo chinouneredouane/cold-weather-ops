@@ -1,0 +1,50 @@
+Domestic Airlines — Cold Weather Operations
+Lesson 30: Lessons from Accidents and Course Review
+
+Learning objectives:
+- Describe key cold weather accidents and their causal factors.
+- Link each accident to the defences covered in this course.
+- Review the essential principles before the final quiz.
+
+Accident case studies
+
+Accident What happened Lesson for us
+
+Air Florida 90 B737-200, Washington DC, January 1982 The engine anti-ice was off; iced engine pressure probes gave false high thrust indications, so the actual thrust was too low. Snow and ice were on the wings after a long wait following de-icing. The crew continued the take-off despite abnormal indications. The aircraft struck a bridge and fell into the Potomac River; 78 people died. Use engine anti-ice when required. Cross-check thrust with all parameters. Respect the holdover time. Act on abnormal take-off indications.
+
+Air Ontario 1363 Fokker F28, Dryden, Canada, March 1989 The aircraft took off in snow without de-icing. The APU was unserviceable, there was no ground start, and the engines could not be shut down. Snow was seen on the wings by cabin crew and passengers, but this was not reported to the flight deck. 24 people died. The inquiry highlighted organisational pressures and the Clean Aircraft Concept. Never take off contaminated. Check MEL implications in winter. Cabin crew must report contamination. Organisational support for safe decisions.
+
+SAS 751 MD-81, Gottröra, Sweden, December 1991 Clear ice formed overnight on the wings from cold-soaked fuel and was not removed. It broke off at take-off and was ingested by both rear-mounted engines, which surged and failed. The crew made a forced landing in a field. Everyone survived. Clear ice is hard to see — use the tactile check. Rear-mounted engines are at particular risk.
+
+USAir 405 Fokker F28, New York LaGuardia, March 1992 The aircraft was de-iced, then waited about 35 minutes in snow before take-off. Ice built up on the wings; the aircraft stalled just after lift-off and crashed into the water. 27 people died. Holdover time is limited and is an estimate. Inspect before take-off. Return for re-treatment when in doubt.
+
+American Eagle 4184 ATR 72, Roselawn, USA, October 1994 While holding in freezing drizzle (SLD), a ridge of ice formed behind the de-icing boots. It disturbed the airflow over the ailerons, causing a sudden roll upset. 68 people died. Recognise SLD and leave icing conditions immediately. Know the autopilot limitations in icing.
+
+Southwest 1248 B737-700, Chicago Midway, December 2005 The aircraft landed in snow on a contaminated runway with a tailwind. Reverse thrust was deployed late, and the landing distance assessment relied on optimistic assumptions. The aircraft overran into a road; a child in a car died. Calculate landing distance at the time of arrival with an adequate margin. Deploy reverse thrust promptly.
+
+The essential principles
+
+Clean aircraft. No frost, ice, snow or slush on critical surfaces at take-off, unless the AFM explicitly permits it.
+
+Holdover time is an estimate. It starts at the beginning of the final application. Reassess when conditions change. If it is exceeded: a PTCC within 5 minutes of take-off, or re-treat. Allowance times cannot be extended.
+
+Check, do not assume. Use tactile checks for clear ice, the post-treatment check, the pre-take-off checks, and the full and free control check.
+
+Communicate in closed loop with the de-icing crew, ATC and the cabin. Read back the anti-icing code.
+
+Use the right performance data. RWYCC, contaminated runway data, no reduced thrust, and the landing distance at time of arrival with a margin.
+
+Protect the systems. Anti-ice when icing conditions exist, run-ups in freezing fog, cold-soak precautions, fuel temperature limits.
+
+Correct for cold. Apply altimeter corrections to minimum altitudes and respect baro-VNAV temperature limits.
+
+Decide early. Brief winter threats, agree decision points, and resist pressure. Returning for de-icing is always the right choice when in doubt.
+
+Next steps
+
+You have now completed all the lessons. Take the final quiz : 20 questions drawn at random, with a pass mark of 80 %. After passing, you can print your certificate and watch the closing video.
+
+Key takeaways:
+- Most winter accidents combined contamination with time pressure and missed warnings.
+- Every defence in this course exists because of a real accident.
+- When in doubt: inspect, re-treat, recalculate — or do not go.

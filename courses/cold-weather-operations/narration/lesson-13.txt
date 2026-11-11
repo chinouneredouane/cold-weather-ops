@@ -1,0 +1,53 @@
+Domestic Airlines — Cold Weather Operations
+Lesson 13: The Pre-take-off Check and the Pre-take-off Contamination Check
+
+Learning objectives:
+- Distinguish the pre-take-off check from the pre-take-off contamination check (PTCC).
+- State when each is required, who performs it and how.
+- Recognise the signs of anti-icing fluid failure.
+
+Two different checks
+
+Pre-take-off check Pre-take-off contamination check (PTCC)
+
+When Within the holdover time, as part of the before-take-off actions When the holdover time has been exceeded , or when the crew is in doubt
+
+Timing Before take-off, as conditions require Within 5 minutes before beginning the take-off
+
+Who / where Flight crew, normally from inside the aircraft (wings or representative surfaces) A qualified person, normally from outside the aircraft, or from inside only where an approved procedure allows it
+
+What The wings or representative surfaces that can be seen The critical surfaces needed to confirm the aircraft is clean
+
+If contamination is seen Do not take off. Return for treatment.
+
+A PTCC cannot be used to extend an allowance time (ice pellets, small hail) — see Lesson 8.
+
+Signs of fluid failure
+
+The surface loses its gloss and looks dull or matt;
+
+Snow builds up on the surface rather than being absorbed;
+
+Ice crystals or slush appear in the fluid;
+
+Frozen fluid or a "slushy" texture, often starting at the leading edge or wing tips;
+
+Accumulation on other surfaces, such as wiper blades or nose cone, while the HOT is still running (a useful early warning).
+
+Fluid failure normally starts on the leading edge and wing tips , where the fluid layer is thinnest, and on surfaces exposed to wind.
+
+Practical points
+
+Use wing inspection lights at night. Check both sides.
+
+Cabin crew may be asked to look at the wings, using the company procedure. They must know what they are looking for and how to report it.
+
+If conditions get worse — heavier snow, a change to freezing rain — the HOT you calculated is no longer valid. Recalculate or return.
+
+Decision point Agree before taxi: “If the HOT expires before take-off and a PTCC is not available, we return for treatment.” A pre-briefed decision protects you from pressure at the holding point.
+
+Key takeaways:
+- Pre-take-off check: within HOT, flight crew, usually from inside.
+- PTCC: HOT exceeded, within 5 minutes of take-off, normally from outside the aircraft.
+- Dull surface, snow building up or ice crystals in the fluid mean fluid failure — return for treatment.
+- Pre-brief the decision to return before you taxi.

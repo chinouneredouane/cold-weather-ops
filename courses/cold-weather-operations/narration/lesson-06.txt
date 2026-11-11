@@ -1,0 +1,45 @@
+Domestic Airlines — Cold Weather Operations
+Lesson 6: De-icing and Anti-icing Principles
+
+Learning objectives:
+- Distinguish de-icing from anti-icing.
+- Describe one-step and two-step procedures and when holdover time starts.
+- Identify the main safety considerations for treatment.
+
+Two different jobs
+
+De-icing removes frost, ice, snow or slush from the aircraft so that surfaces are clean. It is normally done with heated fluid (often Type I, or diluted Type II/IV), at a minimum of 60 °C at the nozzle. Hot water may be used at some temperatures if the procedure allows it. Some facilities use forced air or infrared heating.
+
+Anti-icing protects clean surfaces against new accumulation for a limited period — the holdover time . It is normally done with thickened fluid (Type II, III or IV), applied unheated or heated, onto a surface that is already clean.
+
+When no precipitation is falling and no frost is forming, de-icing alone may be enough. When precipitation is falling, or is expected before take-off, anti-icing is required.
+
+One-step and two-step procedures
+
+One-step: a single application of heated, freezing-point-depressant (FPD) fluid cleans the aircraft and leaves a protective film. It is used when the expected holdover time from that fluid is enough.
+
+Two-step: the first step removes the contamination; the second step applies an anti-icing fluid for longer protection. The second step must be applied before the first-step fluid freezes — typically within 3 minutes — and treatment is done area by area if necessary.
+
+Safety principles
+
+The aircraft must be configured as the AFM and de-icing procedures require before spraying starts (Lesson 9).
+
+No aircraft movement, engine power change or configuration change during treatment unless the de-icing crew is told and agrees.
+
+Treatment must be symmetrical: if one wing is treated, the other wing must receive the same treatment.
+
+Fluid makes the ramp extremely slippery for people and vehicles.
+
+Glycol fumes in the cabin or flight deck must be prevented by switching off bleed air as required; report any smell or smoke.
+
+A post de-icing/anti-icing check is mandatory after treatment (Lesson 12).
+
+Responsibilities
+
+The de-icing service provider is responsible for the quality of the treatment and the post-treatment check. The commander remains responsible for accepting the aircraft as clean and for deciding whether it remains clean until take-off.
+
+Key takeaways:
+- De-icing removes contamination; anti-icing prevents new accumulation for a limited time.
+- Two-step: second step within about 3 minutes, before the first-step fluid freezes.
+- Holdover time starts at the beginning of the final application.
+- Treatment must be symmetrical, and a post-treatment check is mandatory.

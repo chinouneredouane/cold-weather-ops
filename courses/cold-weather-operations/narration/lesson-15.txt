@@ -1,0 +1,69 @@
+Domestic Airlines — Cold Weather Operations
+Lesson 15: Runway Condition Reporting: GRF, RCAM and RWYCC
+
+Learning objectives:
+- Explain the ICAO Global Reporting Format (GRF) and the Runway Condition Report (RCR).
+- Interpret runway condition codes (RWYCC) using the RCAM.
+- Make and use pilot braking action reports correctly.
+
+The Global Reporting Format
+
+Since November 2021, ICAO's Global Reporting Format (GRF) has been the standard method for assessing and reporting runway surface conditions. Its purpose is to give pilots a common language that links directly to aircraft performance data. The FAA uses an equivalent system called TALPA.
+
+The aerodrome operator assesses the runway and issues a Runway Condition Report (RCR) , which reaches crews through ATIS, ATC and SNOWTAM.
+
+Reading a Runway Condition Report
+
+The aircraft performance part of the RCR is given for each third of the runway, in the direction of the lower runway designator:
+
+XXXX 01170830 09 5/5/2 100/100/50 NR/NR/06 WET/WET/SLUSH
+
+Element Example Meaning
+
+Aerodrome / date-time XXXX 01170830 Location and time of assessment (month, day, hour, minute UTC)
+
+Runway 09 Lower runway designator
+
+RWYCC per third 5/5/2 Runway condition code for each third
+
+Coverage per third 100/100/50 Percentage of each third covered (reported as 25, 50, 75 or 100)
+
+Depth per third NR/NR/06 Depth in mm of loose contaminant (water, slush, dry or wet snow); NR = not reported
+
+Contaminant per third WET/WET/SLUSH Type of surface condition
+
+The Runway Condition Assessment Matrix (RCAM)
+
+RWYCC Runway surface description Pilot braking action
+
+6 DRY —
+
+5 FROST; WET (including damp, and 3 mm of water or less); SLUSH, DRY SNOW or WET SNOW 3 mm or less Good
+
+4 COMPACTED SNOW at OAT −15 °C and below Good to medium
+
+3 WET (“slippery wet” runway); DRY SNOW or WET SNOW (any depth) ON TOP OF COMPACTED SNOW; DRY SNOW or WET SNOW more than 3 mm; COMPACTED SNOW at OAT above −15 °C Medium
+
+2 STANDING WATER more than 3 mm; SLUSH more than 3 mm Medium to poor
+
+1 ICE Poor
+
+0 WET ICE; WATER ON TOP OF COMPACTED SNOW; DRY SNOW or WET SNOW ON TOP OF ICE Less than poor
+
+The aerodrome may upgrade or downgrade a code using measurements, observations and pilot reports. A runway with RWYCC 0 is not used for take-off or landing.
+
+Pilot braking action reports
+
+Pilots report braking action using the same terms — good, good to medium, medium, medium to poor, poor, less than poor — for example: “Braking action medium to poor, runway 27, second half.”
+
+Report whenever braking or directional control is worse than reported, or when asked.
+
+Your report is an important input to the aerodrome's assessment and to the crew behind you.
+
+Reports age quickly in active precipitation. Always check the time of the RCR and the trend.
+
+Key takeaways:
+- RCR is reported per runway third, in the direction of the lower designator.
+- RWYCC 6 = dry … 0 = less than poor. 2 = standing water or slush more than 3 mm; 1 = ice.
+- Use the reported codes directly with the performance data.
+- Report braking action that is worse than reported.

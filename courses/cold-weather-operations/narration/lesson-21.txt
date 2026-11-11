@@ -1,0 +1,55 @@
+Domestic Airlines — Cold Weather Operations
+Lesson 21: Aircraft Systems in Cold Conditions
+
+Learning objectives:
+- Describe the effects of low temperatures on hydraulic, pneumatic, electrical and landing gear systems.
+- Recognise cold-related problems with doors, slides, windows and water systems.
+- Apply warm-up and checking procedures before flight.
+
+Hydraulics
+
+Hydraulic fluid becomes more viscous, so actuators move more slowly and pumps work harder.
+
+Cold seals contract and harden. Small leaks may appear after a cold soak and may stop after warm-up. Report them to maintenance.
+
+Reservoir levels and accumulator pre-charge pressures read lower in the cold. Use the temperature-corrected values.
+
+Operate the systems as the FCOM requires to warm the fluid before flight-control checks.
+
+Pneumatics and air conditioning
+
+Water in ducts, water separators and drains can freeze. Check for unusual pack behaviour or fault messages.
+
+Bleed air demand from anti-ice systems reduces the bleed available for air conditioning and engine thrust.
+
+Electrical and avionics
+
+Battery capacity is significantly lower in the cold. Check the voltage before an APU start on battery power.
+
+Displays and some avionics may need time to warm up. Follow the FCOM for warm-up before alignment.
+
+Landing gear and brakes
+
+Shock struts can appear low after cold soak, because the gas and fluid contract. Check the servicing charts.
+
+Brakes can freeze after taxiing through slush or after washing. Check that the wheels turn at the start of taxi, and use gentle braking to dry and warm them.
+
+Ice and packed snow in wheel wells and on gear doors and switches can prevent retraction or extension, or cause false indications.
+
+Doors, slides and windows
+
+Door seals can freeze to the frame. Do not force a frozen door. Follow the procedure, and ask for warm air or de-icing if needed.
+
+Slide bottle pressure is lower in the cold, and slides inflate more slowly. Check the temperature-corrected pressure gauges during the walk-around.
+
+Windshields: switch on window heat early to avoid thermal stress. Do not use hot fluid or hot water on cold windshields.
+
+Water and waste
+
+Potable water lines, drains, waste tanks and valves freeze quickly in an unheated aircraft. If the aircraft was not drained overnight, check with maintenance before using the systems, and report any frozen lines. Lavatory and galley drains that freeze can lead to flooding or, in flight, ice that can break off and strike the airframe or engines.
+
+Key takeaways:
+- Cold hydraulic fluid slows actuators; seal leaks may appear after cold soak.
+- Batteries, slide bottles and oxygen bottles show lower values in the cold — use corrected charts.
+- Frozen brakes and iced wheel wells are common after slush taxi.
+- Never force a frozen door; switch on window heat early.

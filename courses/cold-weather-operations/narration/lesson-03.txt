@@ -1,0 +1,46 @@
+Domestic Airlines — Cold Weather Operations
+Lesson 3: Frost, Ice and Snow — Types and Hazards
+
+Learning objectives:
+- Identify the main forms of aircraft surface contamination.
+- Describe the specific hazard of each contaminant.
+- Recognise the conditions that produce clear ice on a cold-soaked wing.
+
+What counts as contamination
+
+Any frost, ice, snow or slush that adheres to or sits on an aircraft surface is contamination. Even a thin, smooth-looking layer changes the shape and roughness of the surface. The main types are listed below.
+
+Contaminant Description Specific hazard
+
+Frost (hoar frost) Thin, white crystalline deposit formed by direct deposition of water vapour. Surface roughness. Even thin frost can significantly reduce lift and raise the stall speed.
+
+Cold-soaked fuel frost (CSFF) Frost or ice on wing surfaces above or below fuel tanks containing very cold fuel. Can form at positive air temperatures and on a clear day; it often appears on the lower wing surface first.
+
+Clear (glaze) ice Transparent, smooth, hard ice from freezing rain or drizzle, or from rain on a cold-soaked wing. Very difficult to see; may look like a wet wing. Can break off and be ingested by rear-mounted engines.
+
+Rime ice Opaque, white, rough ice from small supercooled droplets (freezing fog). Builds on leading edges, probes, fan blades and propellers.
+
+Dry snow Fine snow that does not stick when the surface is cold. It can be blown off. Sticks to a warm or wet surface and can melt and refreeze. Never assume it will blow off on take-off.
+
+Wet snow Snow with high liquid water content, near 0 °C. Adheres readily, adds weight, and dilutes anti-icing fluid very quickly.
+
+Slush Water-saturated snow that splashes. Thrown onto flaps, gear and engines during taxi; can refreeze in flight. On runways it causes drag and reduces braking.
+
+Clear ice on a cold-soaked wing
+
+After a long flight at altitude, the fuel in the wing tanks can remain far below 0 °C for hours. If the aircraft is then exposed to rain, drizzle, fog or high humidity on the ground, the water freezes on the cold wing skin and forms clear ice . This can happen at outside air temperatures of +5 °C or more.
+
+Watch for
+The conditions are cold fuel (large fuel quantity left in the tanks after a long sector, or cold fuel uploaded), precipitation or high humidity, and air temperature near or above freezing. Clear ice cannot be reliably detected by eye — a tactile check by hand (or with an approved detection system) is required. See Lesson 12.
+
+Acceptable deposits
+
+Some AFMs permit specific, limited deposits. Typical examples are a thin layer of hoar frost on the upper fuselage, or CSFF on the lower wing surface in a defined area. These are exceptions written into the AFM for a particular type, with exact limits. If your AFM does not explicitly allow a deposit, it must be removed.
+
+"Thin hoar frost" usually means a uniform white deposit thin enough that surface features — paint lines, markings and lettering — can still be seen through it.
+
+Key takeaways:
+- All frost, ice, snow and slush on critical surfaces is contamination.
+- Clear ice looks like a wet wing; it must be checked by touch.
+- Cold-soaked fuel can produce frost or clear ice well above 0 °C.
+- Only deposits explicitly permitted by the AFM, within its limits, are acceptable.

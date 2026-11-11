@@ -1,0 +1,46 @@
+Domestic Airlines — Cold Weather Operations
+Lesson 28: Abnormal and Emergency Situations in Cold Weather
+
+Learning objectives:
+- Recognise ice-related abnormal situations on the ground, at take-off and in flight.
+- Apply the general principles for handling them.
+- Prepare for a rejected take-off, a go-around and an evacuation in winter conditions.
+
+Engine ice ingestion and icing
+
+Symptoms : high vibration, surges or stalls (bangs, EGT rise, fluctuating N1/N2), flameout.
+
+Causes : ice shed from the wings or fuselage (especially with rear-mounted engines), fan ice build-up in freezing fog, inlet icing without anti-ice, ice crystal icing at high altitude.
+
+Actions : fly the aircraft first. Then follow the QRH engine surge/stall, vibration or relight procedures, and use engine anti-ice as required. With a multiple-engine event, reduce thrust only as the QRH directs.
+
+Stall and roll-off after take-off with a contaminated wing
+
+An aircraft with contaminated wings can roll or stall right after lift-off, possibly before the stall warning . Signs are an uncommanded roll, buffet, a failure to climb at the normal pitch attitude, or stick-shaker activation at a speed above normal. Apply the stall recovery as trained: reduce the angle of attack, level the wings and use thrust as required. In ground effect, keep the pitch attitude only as high as needed to stay airborne, accelerate, and climb gradually. Prevention — a clean aircraft — is the only reliable defence.
+
+Frozen or restricted flight controls
+
+If a control is restricted before take-off, do not take off. If a restriction appears in flight, use the QRH procedure for jammed controls. Avoid large forces that could cause a sudden release, and consider descending into warmer air to melt ice or frozen residue.
+
+Landing gear and brakes
+
+Gear that does not retract or does not indicate correctly after a slush take-off: follow the QRH. Do not cycle the gear unless the procedure allows it.
+
+Frozen brakes at the start of taxi: stop, and ask for maintenance. Do not use high thrust to break them free.
+
+Anti-skid or brake failures on contaminated runways greatly increase the landing distance. Recalculate with the failure, and divert if necessary.
+
+Rejected take-off and go-around
+
+Brief the RTO for the contaminated runway — lower V1, directional control in a crosswind with reverse thrust.
+
+For a go-around after ice accretion, use the AFM speeds and configurations, and expect reduced climb performance.
+
+Evacuation in winter
+
+Assess whether an evacuation is really needed, or whether a precautionary disembarkation is safer. If an evacuation is needed, consider the wind direction, slippery surfaces and the slide stability. Arrange shelter and transport with the emergency services as soon as possible (Lesson 26).
+
+Key takeaways:
+- Ice ingestion: vibration, surge, EGT rise — fly the aircraft, then follow the QRH.
+- A contaminated wing can stall before the warning — prevention is the only real defence.
+- Never take off with restricted controls; never use high thrust on frozen brakes.

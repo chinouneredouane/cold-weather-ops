@@ -1,0 +1,54 @@
+Domestic Airlines — Cold Weather Operations
+Lesson 17: Landing on Contaminated Runways
+
+Learning objectives:
+- Perform a landing distance assessment at the time of arrival.
+- Apply landing techniques for slippery runways.
+- Recognise when to go around or divert.
+
+Landing distance assessment at the time of arrival
+
+Runway conditions at the time of arrival may be very different from those used at dispatch. Before the approach — normally before top of descent and again if conditions change — calculate the landing distance at time of arrival using:
+
+the latest RCR (RWYCC per third, contaminant and depth);
+
+expected landing mass, wind, temperature, altitude, slope, configuration and approach speed additives;
+
+the planned autobrake setting and use of reverse thrust, as the performance data allows.
+
+Add the safety margin required by the Operations Manual. Industry guidance recommends at least 15 % on the actual (unfactored) landing distance. If the result does not fit within the available landing distance, do not start the approach — hold, choose another runway, or divert.
+
+Technique
+
+Stabilised approach on speed, on profile, with the correct additives. Go around if the approach is not stabilised.
+
+Touch down firmly in the touchdown zone. Do not float — every second of float uses runway you need for stopping. A firm touchdown helps the wheels spin up and break through the water film.
+
+Lower the nosewheel promptly for steering and to put weight on the wheels.
+
+Ground spoilers deployed, verified and called.
+
+Reverse thrust early : maximum reverse as soon as possible after touchdown, as the SOP states. Reversers are most effective at high speed.
+
+Braking : autobrake as planned, or steady manual braking with the anti-skid working. Do not pump the brakes.
+
+Directional control with rudder. Use nosewheel steering at low speed, with small inputs. In a crosswind with reverse thrust, apply the same recovery technique as for the rejected take-off.
+
+When to go around or divert
+
+The approach is not stabilised, or the touchdown point will be beyond the touchdown zone.
+
+The runway report changes during the approach to a code or contaminant for which the landing distance is not enough.
+
+Braking action reports from preceding aircraft are worse than planned.
+
+Once reverse thrust is selected, you are committed to stop. The decision to go around must be made before that.
+
+After landing
+
+Taxi slowly. Report braking action if it was worse than reported. On stand, consider the risk of brakes freezing after taxiing through slush. Use chocks and follow the SOP on releasing the parking brake (Lesson 19).
+
+Key takeaways:
+- Recalculate landing distance at the time of arrival, with at least the required margin (typically 15 %).
+- Firm touchdown in the zone, no float, spoilers, early maximum reverse, steady braking.
+- Go around before selecting reverse thrust if the landing is in doubt.

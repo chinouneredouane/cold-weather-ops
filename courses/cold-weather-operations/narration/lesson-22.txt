@@ -1,0 +1,48 @@
+Domestic Airlines — Cold Weather Operations
+Lesson 22: Fuel Management at Low Temperatures
+
+Learning objectives:
+- State the freezing points of common jet fuels and the operational fuel temperature limit.
+- Manage low fuel temperature in flight.
+- Plan winter fuel for de-icing, taxi and holding.
+
+Fuel freezing points
+
+Fuel Maximum freezing point (specification)
+
+Jet A-1 −47 °C
+
+Jet A −40 °C
+
+Fuel does not freeze solid at once. As it cools, wax crystals form, which can block filters and reduce flow. The AFM limit is usually the fuel freezing point plus a margin — commonly 3 °C above the freezing point — or a fixed minimum fuel temperature, whichever is higher. If the actual freezing point of the uplifted fuel is known from the fuel documentation, the AFM may allow its use.
+
+When fuel from different sources is mixed (for example, Jet A uplifted on top of Jet A-1), the most restrictive freezing point applies unless the actual value of the mix is known.
+
+Low fuel temperature in flight
+
+On long sectors at high altitude through very cold air, fuel temperature falls slowly towards the total air temperature (TAT). If the fuel temperature approaches the limit:
+
+Increase speed — a higher Mach number raises TAT through ram-air heating. Roughly +0.01 Mach gives about +0.5 to +0.7 °C TAT;
+
+Descend into warmer air, if it is available;
+
+Change route away from the coldest air mass.
+
+Every option costs fuel, so act early. Fuel temperature changes slowly, and a corrective action can take a long time to show an effect.
+
+Water and ice in fuel
+
+Fuel always contains some dissolved water. At low temperatures it comes out as droplets and ice crystals. Fuel heaters and fuel/oil heat exchangers deal with normal amounts. Unusual accumulations of ice in the fuel system have caused engine power problems. A well-known case is the 2008 Boeing 777 accident at London Heathrow (BA38), where ice released from the fuel system restricted the fuel flow during the final approach. Regular water draining by maintenance is an important defence.
+
+Winter fuel planning
+
+Add fuel for the expected de-icing delay , longer taxi times, APU use, and the possibility of returning for a second treatment.
+
+Add fuel for holding at a destination with snow clearance or reduced runway capacity, and for a more distant alternate if nearby airports have the same weather.
+
+Remember the cold-soak effect: tankering large quantities of very cold fuel can lead to frost or clear ice on the wings at the next station (Lesson 3).
+
+Key takeaways:
+- Jet A-1 freezes at −47 °C, Jet A at −40 °C; the limit is typically the freezing point + 3 °C.
+- Low fuel temperature in flight: increase Mach, descend or reroute — act early.
+- Plan extra fuel for de-icing, taxi, holding and distant alternates.

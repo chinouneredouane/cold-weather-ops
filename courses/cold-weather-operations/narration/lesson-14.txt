@@ -1,0 +1,55 @@
+Domestic Airlines — Cold Weather Operations
+Lesson 14: Performance Effects of Cold Weather and Contamination
+
+Learning objectives:
+- Explain how runway contaminants affect acceleration and stopping.
+- Describe the performance penalties of anti-ice and contaminated runways.
+- Recognise the operational restrictions on reduced thrust and V1.
+
+Two families of effects
+
+Aircraft contamination (Lesson 5) reduces lift and increases drag and stall speed. Runway contamination affects acceleration, stopping and directional control. This lesson covers the runway.
+
+Acceleration
+
+Loose, wet contaminants — standing water, slush, wet snow and deep dry snow — slow the aircraft down through:
+
+displacement drag : tyres pushing the contaminant aside;
+
+impingement drag : spray striking the airframe, gear and flaps.
+
+The deeper and denser the contaminant, the greater the drag. Drag peaks close to the aquaplaning speed. The result is a longer take-off distance and, after an engine failure, a longer accelerate-go distance.
+
+Stopping and control
+
+Braking friction is reduced on every contaminant. On ice it can be a fraction of a dry runway.
+
+Aquaplaning reduces wheel braking and steering almost to zero (Lesson 16).
+
+Crosswind limits are reduced, depending on the runway condition code.
+
+The accelerate-stop distance grows. To compensate, performance calculations usually produce a lower V1 and may reduce the maximum take-off mass.
+
+Operational rules
+
+Typical restrictions — check your AFM
+
+Reduced (assumed temperature / FLEX) thrust is not permitted on contaminated runways. A fixed derate may be permitted when contaminated runway data exists for it.
+
+Use the contaminated runway performance data for the reported contaminant type and depth.
+
+Maximum contaminant depth for take-off is limited by the AFM — typically around 12.7 mm (½ in) of standing water, slush or wet snow, with higher limits for dry snow.
+
+Anti-ice and cold temperatures
+
+Engine and wing anti-ice take bleed air, which reduces available thrust and climb performance. Performance tables include corrections when anti-ice is on.
+
+Cold, dense air normally improves engine and aircraft performance, but very low temperatures may bring limits on engine thrust, oil temperature or fluid use.
+
+Some types use higher approach or manoeuvring speeds when ice has accumulated on unprotected surfaces. Follow the FCOM's “ice accretion” speeds and performance corrections.
+
+Key takeaways:
+- Wet contaminants add drag and lengthen take-off; all contaminants reduce braking.
+- Contaminated runways usually mean a lower V1 and possibly a lower maximum take-off mass.
+- No assumed-temperature (FLEX) reduced thrust on contaminated runways.
+- Anti-ice reduces thrust — apply the performance corrections.

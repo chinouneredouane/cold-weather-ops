@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Closing Video — Cold Weather Operations</title>
+  <meta name="description" content="Closing video for Cold Weather Operations." />
+  <meta name="theme-color" content="#125a2b" />
+  <link rel="icon" type="image/png" href="../../assets/img/logo.png" />
+  <link rel="stylesheet" href="../../assets/css/academy.css" />
+</head>
+<body data-course="cold-weather-operations" data-total="30">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="brand">
+      <a href="index.html"><img src="../../assets/img/logo.png" alt="Domestic Airlines Logo" class="logo" /></a>
+      <div class="brand-text">
+        <div class="ar">الخطوط الجوية الداخلية</div>
+        <div class="en">DOMESTIC AIRLINES — Cold Weather Operations</div>
+      </div>
+    </div>
+    <nav aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="finale.html" aria-current="page">Final Video</a>
+    </nav>
+  </header>
+  <div class="progress" aria-hidden="true"><div id="progressBar"></div></div>
+  <main id="main">
+
+    <section class="content">
+      <div class="eyebrow">Cold Weather Operations</div>
+      <h1>Closing Video</h1>
+      <p>Thank you for completing the Cold Weather Operations course. Fly safe this winter.</p>
+      <div class="video-wrap">
+        <video id="finaleVideo" controls playsinline preload="metadata">
+          <source src="media/video/finale.mp4" type="video/mp4">
+        </video>
+        <div id="videoPlaceholder" class="placeholder">
+          <div><p><strong>The closing video is not available yet.</strong></p><p>Add the file <code>media/video/finale.mp4</code> to this course folder to enable playback.</p></div>
+        </div>
+      </div>
+      <div class="btn-row" style="justify-content:center;margin-top:20px">
+        <a class="btn" href="index.html">Back to course home</a>
+        <a class="btn" href="quiz.html">Go to quiz</a>
+        <a class="btn primary" href="certificate.html">Certificate</a>
+      </div>
+    </section>
+    <script>
+      (function () {
+        var v = document.getElementById('finaleVideo');
+        var ph = document.getElementById('videoPlaceholder');
+        var shown = false;
+        function show() { ph.classList.add('show'); v.removeAttribute('controls'); shown = true; }
+        v.querySelector('source').addEventListener('error', show);
+        v.addEventListener('error', show);
+        v.addEventListener('loadedmetadata', function () { ph.classList.remove('show'); v.setAttribute('controls', ''); });
+        setTimeout(function () { if (!shown && v.readyState === 0 && v.networkState === 3) show(); }, 2000);
+      })();
+    </script>
+  </main>
+  <footer class="bottombar">
+    <img src="../../assets/img/logo.png" alt="Domestic Airlines Logo" class="logo small" />
+    <div class="copy">&copy; 2026 Domestic Airlines — Training</div>
+    <a href="../../index.html">All courses</a>
+    <p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p>
+  </footer>
+<script src="../../assets/js/course.js"></script>
+</body>
+</html>
