@@ -18,6 +18,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 
 from courses.cold_weather import COURSE as COLD_WEATHER  # noqa: E402
+from handbook import build_print  # noqa: E402
 
 COURSES = [COLD_WEATHER]
 
@@ -217,6 +218,7 @@ def build_course_home(course):
         <div class="btn-row">
           <a class="btn primary" id="resumeBtn" href="lessons/{lesson_file(1)}">Start Course</a>
           <a class="btn" href="#syllabus">View Syllabus</a>
+          <a class="btn" href="pdf/handbook.pdf" download>⬇ Course handbook (PDF)</a>
         </div>
       </div>
     </section>
@@ -306,7 +308,7 @@ def build_lesson(course, n):
           {icon(mod['icon'], 'art')}
           <div class="eyebrow">Module {mi+1} · {esc(mod['title'])}</div>
           <h1>Lesson {n:02d}: {esc(L['title'])}</h1>
-          <div class="meta"><span>Lesson {n} of {total}</span><span>≈ {L['minutes']} min</span></div>
+          <div class="meta"><span>Lesson {n} of {total}</span><span>≈ {L['minutes']} min</span><a class="pdf-link" href="../pdf/lesson-{n:02d}.pdf" download>⬇ Download PDF</a></div>
         </header>
         <div class="card lesson-body">
           <div class="audio-block">
@@ -580,6 +582,7 @@ def main():
         build_finale(c)
         build_certificate(c)
         build_media_readme(c)
+        build_print(c, module_of, write)
         print(f"Built {c['title']}: {len(c['lessons'])} lessons, {len(c['questions'])} questions")
 
 

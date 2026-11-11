@@ -1,0 +1,117 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Lesson 15: Runway Condition Reporting: GRF, RCAM and RWYCC — Cold Weather Operations</title>
+<style>
+@page{size:A4;margin:18mm 16mm 20mm}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#24342b;font-size:10.5pt;line-height:1.5;margin:0}
+h1,h2,h3{color:#14231b;line-height:1.25;break-after:avoid}
+h1{font-size:21pt;margin:0 0 6pt}h2{font-size:14pt;margin:16pt 0 6pt}h3{font-size:12pt;margin:12pt 0 4pt}
+p{margin:0 0 7pt}ul,ol{margin:0 0 8pt;padding-left:16pt}li{margin:2pt 0}
+a{color:#125a2b;text-decoration:none}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:9pt;background:#f3f9f5;border:1px solid #dbe5df;padding:0 3pt;border-radius:3pt}
+.cover{height:257mm;display:flex;flex-direction:column;justify-content:center;break-after:page;
+  background:linear-gradient(120deg,#0c3d1e,#125a2b 55%,#2a8a50);color:#fff;padding:22mm;border-radius:4mm;margin:0}
+.cover h1{color:#fff;font-size:34pt}.cover .k{letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#bfe3cb;font-size:10pt}
+.cover p{color:#e3f1e8;font-size:13pt}.cover .logo{background:#fff;padding:5mm 7mm;border-radius:3mm;display:inline-block;margin-bottom:14mm}
+.cover .logo img{height:16mm}.cover .meta{margin-top:12mm;font-size:10.5pt;color:#d3ebdb}
+.toc{break-after:page}.toc h2{margin-top:0}.toc ol{list-style:none;padding:0}
+.toc li{display:flex;gap:8pt;padding:3pt 0;border-bottom:1px dotted #c9d8cf}.toc .n{width:22pt;font-weight:700;color:#5b6b62}
+.toc .mod{margin-top:9pt;font-weight:800;color:#125a2b;border:0;text-transform:uppercase;font-size:9pt;letter-spacing:.06em}
+.lesson{break-before:page}
+.lesson-head{background:linear-gradient(120deg,#0c3d1e,#1d7a3e);color:#fff;border-radius:3mm;padding:9pt 13pt;margin-bottom:10pt}
+.lesson-head h1{color:#fff;font-size:17pt;margin:2pt 0}.lesson-head .k{font-size:8.5pt;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#c7e8d2}
+.lesson-head .m{font-size:9pt;color:#dbefe2}
+.objectives{background:#f3f9f5;border:1px solid #dbe5df;border-radius:2mm;padding:7pt 11pt;margin:0 0 10pt}
+.objectives h2,.takeaways h2,.kc h2{font-size:9.5pt;text-transform:uppercase;letter-spacing:.06em;margin:0 0 3pt;color:#125a2b}
+.lesson-figure{margin:0 0 10pt;break-inside:avoid}.lesson-figure img{width:100%;max-height:85mm;object-fit:contain;border:1px solid #dbe5df;border-radius:2mm;background:#f3f9f5}
+figure{margin:9pt 0;break-inside:avoid}figure svg{width:100%;height:auto}figcaption{font-size:8.5pt;color:#5b6b62;margin-top:3pt}
+.diagram{border:1px solid #dbe5df;border-radius:2mm;padding:5pt}
+.table-wrap{margin:8pt 0;border:1px solid #dbe5df;border-radius:2mm;overflow:hidden}
+table{border-collapse:collapse;width:100%;font-size:9pt}th,td{text-align:left;vertical-align:top;padding:4pt 6pt;border-bottom:1px solid #dbe5df}
+th{background:#f3f9f5}tr{break-inside:avoid}td.code{font-weight:800;font-size:12pt;text-align:center;width:34pt}
+.callout{border-left:3pt solid #1d7a3e;background:#f3f9f5;padding:6pt 10pt;margin:8pt 0;border-radius:0 2mm 2mm 0;break-inside:avoid}
+.callout .label{display:block;font-size:8.5pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#125a2b}
+.callout.warn{border-color:#c8102e;background:#fdecef}.callout.warn .label{color:#c8102e}
+.callout.caution{border-color:#d08a00;background:#fff5e0}.callout.caution .label{color:#9a6200}
+.callout.info{border-color:#1f5f99;background:#e9f2fb}.callout.info .label{color:#1f5f99}
+.callout > :last-child{margin-bottom:0}
+.steps{list-style:none;padding:0;counter-reset:s}.steps>li{counter-increment:s;position:relative;padding-left:20pt;margin:4pt 0}
+.steps>li::before{content:counter(s);position:absolute;left:0;top:0;width:14pt;height:14pt;border-radius:50%;background:#1d7a3e;color:#fff;font-weight:800;font-size:8pt;display:flex;align-items:center;justify-content:center}
+.dialog{border:1px solid #dbe5df;border-radius:2mm;padding:4pt 10pt;margin:8pt 0;break-inside:avoid}.dialog p{margin:4pt 0}.dialog b{color:#125a2b}
+.muted{color:#5b6b62}
+.takeaways{background:#0c3d1e;color:#e8f5ec;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}.takeaways h2{color:#fff}
+.kc{border:1.5pt dashed #b9d7c3;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}
+.kc .q{font-weight:700;margin:2pt 0 4pt}.kc ol{list-style:upper-alpha}.kc .a{font-size:9pt;margin-top:4pt;color:#125a2b}
+.disclaimer{font-size:8.5pt;color:#5b6b62;border-top:1px solid #dbe5df;padding-top:6pt;margin-top:14pt}
+</style></head><body>
+<section class="lesson" style="break-before:auto" id="lesson-15">
+  <div class="lesson-head"><div class="k">Module 4 · Runways and Performance</div>
+    <h1>Lesson 15: Runway Condition Reporting: GRF, RCAM and RWYCC</h1><div class="m">Lesson 15 of 30 · about 10 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Explain the ICAO Global Reporting Format (GRF) and the Runway Condition Report (RCR).</li><li>Interpret runway condition codes (RWYCC) using the RCAM.</li><li>Make and use pilot braking action reports correctly.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-15.jpg" alt="Illustration of good, medium and poor braking action"><figcaption>Braking action terms match the runway condition codes: good, medium, poor and the steps in between.</figcaption></figure>
+  
+<h2>The Global Reporting Format</h2>
+<p>Since November 2021, ICAO's <strong>Global Reporting Format (GRF)</strong> has been the standard method for assessing and reporting runway surface conditions. Its purpose is to give pilots a common language that links directly to aircraft performance data. The FAA uses an equivalent system called TALPA.</p>
+<p>The aerodrome operator assesses the runway and issues a <strong>Runway Condition Report (RCR)</strong>, which reaches crews through ATIS, ATC and SNOWTAM.</p>
+
+<h2>Reading a Runway Condition Report</h2>
+<p>The aircraft performance part of the RCR is given for each <strong>third</strong> of the runway, in the direction of the <strong>lower</strong> runway designator:</p>
+<p><code>XXXX 01170830 09 5/5/2 100/100/50 NR/NR/06 WET/WET/SLUSH</code></p>
+<div class="table-wrap"><table>
+  <tr><th>Element</th><th>Example</th><th>Meaning</th></tr>
+  <tr><td>Aerodrome / date-time</td><td><code>XXXX 01170830</code></td><td>Location and time of assessment (month, day, hour, minute UTC)</td></tr>
+  <tr><td>Runway</td><td><code>09</code></td><td>Lower runway designator</td></tr>
+  <tr><td>RWYCC per third</td><td><code>5/5/2</code></td><td>Runway condition code for each third</td></tr>
+  <tr><td>Coverage per third</td><td><code>100/100/50</code></td><td>Percentage of each third covered (reported as 25, 50, 75 or 100)</td></tr>
+  <tr><td>Depth per third</td><td><code>NR/NR/06</code></td><td>Depth in mm of loose contaminant (water, slush, dry or wet snow); NR = not reported</td></tr>
+  <tr><td>Contaminant per third</td><td><code>WET/WET/SLUSH</code></td><td>Type of surface condition</td></tr>
+</table></div>
+
+<figure class="diagram">
+<svg viewBox="0 0 640 210" role="img" aria-labelledby="rw-t rw-d">
+  <title id="rw-t">Runway divided into thirds with a runway condition code for each third</title>
+  <desc id="rw-d">Runway 09 is divided into three thirds reported in the direction of the lower runway designator. Example codes 5, 5 and 2: the last third has slush 6 millimetres deep.</desc>
+  <g font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="13" fill="#24342b">
+    <rect x="20" y="60" width="600" height="80" rx="4" fill="#3b4540"/>
+    <rect x="220" y="60" width="2" height="80" fill="#fff" opacity=".7"/>
+    <rect x="420" y="60" width="2" height="80" fill="#fff" opacity=".7"/>
+    <g fill="#fff"><rect x="40" y="97" width="30" height="6"/><rect x="100" y="97" width="30" height="6"/><rect x="160" y="97" width="30" height="6"/><rect x="250" y="97" width="30" height="6"/><rect x="310" y="97" width="30" height="6"/><rect x="370" y="97" width="30" height="6"/><rect x="450" y="97" width="30" height="6"/><rect x="510" y="97" width="30" height="6"/><rect x="570" y="97" width="30" height="6"/></g>
+    <rect x="422" y="60" width="198" height="80" fill="#9cc3d9" opacity=".55"/>
+    <text x="30" y="52" font-weight="700">RWY 09 →</text>
+    <text x="120" y="34" text-anchor="middle" font-weight="700">First third</text>
+    <text x="320" y="34" text-anchor="middle" font-weight="700">Second third</text>
+    <text x="520" y="34" text-anchor="middle" font-weight="700">Third third</text>
+    <circle cx="120" cy="170" r="17" fill="#1d7a3e"/><text x="120" y="176" text-anchor="middle" fill="#fff" font-weight="800" font-size="17">5</text>
+    <circle cx="320" cy="170" r="17" fill="#1d7a3e"/><text x="320" y="176" text-anchor="middle" fill="#fff" font-weight="800" font-size="17">5</text>
+    <circle cx="520" cy="170" r="17" fill="#c76a00"/><text x="520" y="176" text-anchor="middle" fill="#fff" font-weight="800" font-size="17">2</text>
+    <text x="150" y="175">WET</text><text x="350" y="175">WET</text><text x="550" y="175">SLUSH 6 mm</text>
+  </g>
+</svg>
+<figcaption>Example report <code>5/5/2</code>: runway condition codes for each third, given in the direction of the lower runway designator.</figcaption>
+</figure>
+
+<h2>The Runway Condition Assessment Matrix (RCAM)</h2>
+<div class="table-wrap"><table>
+  <tr><th>RWYCC</th><th>Runway surface description</th><th>Pilot braking action</th></tr>
+  <tr><td class="code">6</td><td>DRY</td><td>—</td></tr>
+  <tr><td class="code">5</td><td>FROST; WET (including damp, and 3 mm of water or less); SLUSH, DRY SNOW or WET SNOW 3 mm or less</td><td>Good</td></tr>
+  <tr><td class="code">4</td><td>COMPACTED SNOW at OAT −15 °C and below</td><td>Good to medium</td></tr>
+  <tr><td class="code">3</td><td>WET (“slippery wet” runway); DRY SNOW or WET SNOW (any depth) ON TOP OF COMPACTED SNOW; DRY SNOW or WET SNOW more than 3 mm; COMPACTED SNOW at OAT above −15 °C</td><td>Medium</td></tr>
+  <tr><td class="code">2</td><td>STANDING WATER more than 3 mm; SLUSH more than 3 mm</td><td>Medium to poor</td></tr>
+  <tr><td class="code">1</td><td>ICE</td><td>Poor</td></tr>
+  <tr><td class="code">0</td><td>WET ICE; WATER ON TOP OF COMPACTED SNOW; DRY SNOW or WET SNOW ON TOP OF ICE</td><td>Less than poor</td></tr>
+</table></div>
+<p>The aerodrome may upgrade or downgrade a code using measurements, observations and pilot reports. A runway with RWYCC 0 is not used for take-off or landing.</p>
+
+<h2>Pilot braking action reports</h2>
+<p>Pilots report braking action using the same terms — <strong>good, good to medium, medium, medium to poor, poor, less than poor</strong> — for example: “Braking action medium to poor, runway 27, second half.”</p>
+<ul>
+  <li>Report whenever braking or directional control is worse than reported, or when asked.</li>
+  <li>Your report is an important input to the aerodrome's assessment and to the crew behind you.</li>
+  <li>Reports age quickly in active precipitation. Always check the time of the RCR and the trend.</li>
+</ul>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>RCR is reported per runway third, in the direction of the lower designator.</li><li>RWYCC 6 = dry … 0 = less than poor. 2 = standing water or slush more than 3 mm; 1 = ice.</li><li>Use the reported codes directly with the performance data.</li><li>Report braking action that is worse than reported.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">A runway third is covered with 6 mm of slush. What RWYCC would normally be reported?</p>
+    <ol><li>5</li><li>3</li><li>2</li><li>0</li></ol>
+    <p class="a"><b>Answer: C.</b> In the RCAM, standing water or slush deeper than 3 mm corresponds to RWYCC 2 (medium to poor).</p></div>
+</section><p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p></body></html>

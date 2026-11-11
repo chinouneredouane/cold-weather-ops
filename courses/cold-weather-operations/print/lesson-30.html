@@ -1,0 +1,82 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Lesson 30: Lessons from Accidents and Course Review — Cold Weather Operations</title>
+<style>
+@page{size:A4;margin:18mm 16mm 20mm}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#24342b;font-size:10.5pt;line-height:1.5;margin:0}
+h1,h2,h3{color:#14231b;line-height:1.25;break-after:avoid}
+h1{font-size:21pt;margin:0 0 6pt}h2{font-size:14pt;margin:16pt 0 6pt}h3{font-size:12pt;margin:12pt 0 4pt}
+p{margin:0 0 7pt}ul,ol{margin:0 0 8pt;padding-left:16pt}li{margin:2pt 0}
+a{color:#125a2b;text-decoration:none}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:9pt;background:#f3f9f5;border:1px solid #dbe5df;padding:0 3pt;border-radius:3pt}
+.cover{height:257mm;display:flex;flex-direction:column;justify-content:center;break-after:page;
+  background:linear-gradient(120deg,#0c3d1e,#125a2b 55%,#2a8a50);color:#fff;padding:22mm;border-radius:4mm;margin:0}
+.cover h1{color:#fff;font-size:34pt}.cover .k{letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#bfe3cb;font-size:10pt}
+.cover p{color:#e3f1e8;font-size:13pt}.cover .logo{background:#fff;padding:5mm 7mm;border-radius:3mm;display:inline-block;margin-bottom:14mm}
+.cover .logo img{height:16mm}.cover .meta{margin-top:12mm;font-size:10.5pt;color:#d3ebdb}
+.toc{break-after:page}.toc h2{margin-top:0}.toc ol{list-style:none;padding:0}
+.toc li{display:flex;gap:8pt;padding:3pt 0;border-bottom:1px dotted #c9d8cf}.toc .n{width:22pt;font-weight:700;color:#5b6b62}
+.toc .mod{margin-top:9pt;font-weight:800;color:#125a2b;border:0;text-transform:uppercase;font-size:9pt;letter-spacing:.06em}
+.lesson{break-before:page}
+.lesson-head{background:linear-gradient(120deg,#0c3d1e,#1d7a3e);color:#fff;border-radius:3mm;padding:9pt 13pt;margin-bottom:10pt}
+.lesson-head h1{color:#fff;font-size:17pt;margin:2pt 0}.lesson-head .k{font-size:8.5pt;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#c7e8d2}
+.lesson-head .m{font-size:9pt;color:#dbefe2}
+.objectives{background:#f3f9f5;border:1px solid #dbe5df;border-radius:2mm;padding:7pt 11pt;margin:0 0 10pt}
+.objectives h2,.takeaways h2,.kc h2{font-size:9.5pt;text-transform:uppercase;letter-spacing:.06em;margin:0 0 3pt;color:#125a2b}
+.lesson-figure{margin:0 0 10pt;break-inside:avoid}.lesson-figure img{width:100%;max-height:85mm;object-fit:contain;border:1px solid #dbe5df;border-radius:2mm;background:#f3f9f5}
+figure{margin:9pt 0;break-inside:avoid}figure svg{width:100%;height:auto}figcaption{font-size:8.5pt;color:#5b6b62;margin-top:3pt}
+.diagram{border:1px solid #dbe5df;border-radius:2mm;padding:5pt}
+.table-wrap{margin:8pt 0;border:1px solid #dbe5df;border-radius:2mm;overflow:hidden}
+table{border-collapse:collapse;width:100%;font-size:9pt}th,td{text-align:left;vertical-align:top;padding:4pt 6pt;border-bottom:1px solid #dbe5df}
+th{background:#f3f9f5}tr{break-inside:avoid}td.code{font-weight:800;font-size:12pt;text-align:center;width:34pt}
+.callout{border-left:3pt solid #1d7a3e;background:#f3f9f5;padding:6pt 10pt;margin:8pt 0;border-radius:0 2mm 2mm 0;break-inside:avoid}
+.callout .label{display:block;font-size:8.5pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#125a2b}
+.callout.warn{border-color:#c8102e;background:#fdecef}.callout.warn .label{color:#c8102e}
+.callout.caution{border-color:#d08a00;background:#fff5e0}.callout.caution .label{color:#9a6200}
+.callout.info{border-color:#1f5f99;background:#e9f2fb}.callout.info .label{color:#1f5f99}
+.callout > :last-child{margin-bottom:0}
+.steps{list-style:none;padding:0;counter-reset:s}.steps>li{counter-increment:s;position:relative;padding-left:20pt;margin:4pt 0}
+.steps>li::before{content:counter(s);position:absolute;left:0;top:0;width:14pt;height:14pt;border-radius:50%;background:#1d7a3e;color:#fff;font-weight:800;font-size:8pt;display:flex;align-items:center;justify-content:center}
+.dialog{border:1px solid #dbe5df;border-radius:2mm;padding:4pt 10pt;margin:8pt 0;break-inside:avoid}.dialog p{margin:4pt 0}.dialog b{color:#125a2b}
+.muted{color:#5b6b62}
+.takeaways{background:#0c3d1e;color:#e8f5ec;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}.takeaways h2{color:#fff}
+.kc{border:1.5pt dashed #b9d7c3;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}
+.kc .q{font-weight:700;margin:2pt 0 4pt}.kc ol{list-style:upper-alpha}.kc .a{font-size:9pt;margin-top:4pt;color:#125a2b}
+.disclaimer{font-size:8.5pt;color:#5b6b62;border-top:1px solid #dbe5df;padding-top:6pt;margin-top:14pt}
+</style></head><body>
+<section class="lesson" style="break-before:auto" id="lesson-30">
+  <div class="lesson-head"><div class="k">Module 6 · Operations and Human Factors</div>
+    <h1>Lesson 30: Lessons from Accidents and Course Review</h1><div class="m">Lesson 30 of 30 · about 10 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Describe key cold weather accidents and their causal factors.</li><li>Link each accident to the defences covered in this course.</li><li>Review the essential principles before the final quiz.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-30.jpg" alt="Airliner being de-iced, with clouds of fluid spray"><figcaption>Every rule in this course exists because of a real accident.</figcaption></figure>
+  
+<h2>Accident case studies</h2>
+<div class="table-wrap"><table>
+  <tr><th>Accident</th><th>What happened</th><th>Lesson for us</th></tr>
+  <tr><td><strong>Air Florida 90</strong><br>B737-200, Washington DC, January 1982</td><td>The engine anti-ice was off; iced engine pressure probes gave false high thrust indications, so the actual thrust was too low. Snow and ice were on the wings after a long wait following de-icing. The crew continued the take-off despite abnormal indications. The aircraft struck a bridge and fell into the Potomac River; 78 people died.</td><td>Use engine anti-ice when required. Cross-check thrust with all parameters. Respect the holdover time. Act on abnormal take-off indications.</td></tr>
+  <tr><td><strong>Air Ontario 1363</strong><br>Fokker F28, Dryden, Canada, March 1989</td><td>The aircraft took off in snow without de-icing. The APU was unserviceable, there was no ground start, and the engines could not be shut down. Snow was seen on the wings by cabin crew and passengers, but this was not reported to the flight deck. 24 people died. The inquiry highlighted organisational pressures and the Clean Aircraft Concept.</td><td>Never take off contaminated. Check MEL implications in winter. Cabin crew must report contamination. Organisational support for safe decisions.</td></tr>
+  <tr><td><strong>SAS 751</strong><br>MD-81, Gottröra, Sweden, December 1991</td><td>Clear ice formed overnight on the wings from cold-soaked fuel and was not removed. It broke off at take-off and was ingested by both rear-mounted engines, which surged and failed. The crew made a forced landing in a field. Everyone survived.</td><td>Clear ice is hard to see — use the tactile check. Rear-mounted engines are at particular risk.</td></tr>
+  <tr><td><strong>USAir 405</strong><br>Fokker F28, New York LaGuardia, March 1992</td><td>The aircraft was de-iced, then waited about 35 minutes in snow before take-off. Ice built up on the wings; the aircraft stalled just after lift-off and crashed into the water. 27 people died.</td><td>Holdover time is limited and is an estimate. Inspect before take-off. Return for re-treatment when in doubt.</td></tr>
+  <tr><td><strong>American Eagle 4184</strong><br>ATR 72, Roselawn, USA, October 1994</td><td>While holding in freezing drizzle (SLD), a ridge of ice formed behind the de-icing boots. It disturbed the airflow over the ailerons, causing a sudden roll upset. 68 people died.</td><td>Recognise SLD and leave icing conditions immediately. Know the autopilot limitations in icing.</td></tr>
+  <tr><td><strong>Southwest 1248</strong><br>B737-700, Chicago Midway, December 2005</td><td>The aircraft landed in snow on a contaminated runway with a tailwind. Reverse thrust was deployed late, and the landing distance assessment relied on optimistic assumptions. The aircraft overran into a road; a child in a car died.</td><td>Calculate landing distance at the time of arrival with an adequate margin. Deploy reverse thrust promptly.</td></tr>
+</table></div>
+
+<h2>The essential principles</h2>
+<ol class="steps">
+  <li><strong>Clean aircraft.</strong> No frost, ice, snow or slush on critical surfaces at take-off, unless the AFM explicitly permits it.</li>
+  <li><strong>Holdover time is an estimate.</strong> It starts at the beginning of the final application. Reassess when conditions change. If it is exceeded: a PTCC within 5 minutes of take-off, or re-treat. Allowance times cannot be extended.</li>
+  <li><strong>Check, do not assume.</strong> Use tactile checks for clear ice, the post-treatment check, the pre-take-off checks, and the full and free control check.</li>
+  <li><strong>Communicate in closed loop</strong> with the de-icing crew, ATC and the cabin. Read back the anti-icing code.</li>
+  <li><strong>Use the right performance data.</strong> RWYCC, contaminated runway data, no reduced thrust, and the landing distance at time of arrival with a margin.</li>
+  <li><strong>Protect the systems.</strong> Anti-ice when icing conditions exist, run-ups in freezing fog, cold-soak precautions, fuel temperature limits.</li>
+  <li><strong>Correct for cold.</strong> Apply altimeter corrections to minimum altitudes and respect baro-VNAV temperature limits.</li>
+  <li><strong>Decide early.</strong> Brief winter threats, agree decision points, and resist pressure. Returning for de-icing is always the right choice when in doubt.</li>
+</ol>
+
+<h2>Next steps</h2>
+<p>You have now completed all the lessons. Take the <strong>final quiz</strong>: 20 questions drawn at random, with a pass mark of 80 %. After passing, you can print your certificate and watch the closing video.</p>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Most winter accidents combined contamination with time pressure and missed warnings.</li><li>Every defence in this course exists because of a real accident.</li><li>When in doubt: inspect, re-treat, recalculate — or do not go.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">Which accident is most closely associated with clear ice from cold-soaked fuel being ingested by rear-mounted engines?</p>
+    <ol><li>Air Florida 90</li><li>SAS 751</li><li>Southwest 1248</li><li>American Eagle 4184</li></ol>
+    <p class="a"><b>Answer: B.</b> SAS 751 (MD-81, 1991): clear ice on the wings from cold-soaked fuel broke off at take-off and was ingested by both rear-mounted engines.</p></div>
+</section><p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p></body></html>

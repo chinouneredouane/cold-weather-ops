@@ -1,0 +1,114 @@
+"""Print pages for PDF output: one handbook with every lesson, plus one page per lesson.
+
+build.py writes the HTML; tools/make_pdf.js turns it into PDF files in courses/<slug>/pdf/.
+"""
+import html
+
+PRINT_CSS = """
+@page{size:A4;margin:18mm 16mm 20mm}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#24342b;font-size:10.5pt;line-height:1.5;margin:0}
+h1,h2,h3{color:#14231b;line-height:1.25;break-after:avoid}
+h1{font-size:21pt;margin:0 0 6pt}h2{font-size:14pt;margin:16pt 0 6pt}h3{font-size:12pt;margin:12pt 0 4pt}
+p{margin:0 0 7pt}ul,ol{margin:0 0 8pt;padding-left:16pt}li{margin:2pt 0}
+a{color:#125a2b;text-decoration:none}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:9pt;background:#f3f9f5;border:1px solid #dbe5df;padding:0 3pt;border-radius:3pt}
+.cover{height:257mm;display:flex;flex-direction:column;justify-content:center;break-after:page;
+  background:linear-gradient(120deg,#0c3d1e,#125a2b 55%,#2a8a50);color:#fff;padding:22mm;border-radius:4mm;margin:0}
+.cover h1{color:#fff;font-size:34pt}.cover .k{letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#bfe3cb;font-size:10pt}
+.cover p{color:#e3f1e8;font-size:13pt}.cover .logo{background:#fff;padding:5mm 7mm;border-radius:3mm;display:inline-block;margin-bottom:14mm}
+.cover .logo img{height:16mm}.cover .meta{margin-top:12mm;font-size:10.5pt;color:#d3ebdb}
+.toc{break-after:page}.toc h2{margin-top:0}.toc ol{list-style:none;padding:0}
+.toc li{display:flex;gap:8pt;padding:3pt 0;border-bottom:1px dotted #c9d8cf}.toc .n{width:22pt;font-weight:700;color:#5b6b62}
+.toc .mod{margin-top:9pt;font-weight:800;color:#125a2b;border:0;text-transform:uppercase;font-size:9pt;letter-spacing:.06em}
+.lesson{break-before:page}
+.lesson-head{background:linear-gradient(120deg,#0c3d1e,#1d7a3e);color:#fff;border-radius:3mm;padding:9pt 13pt;margin-bottom:10pt}
+.lesson-head h1{color:#fff;font-size:17pt;margin:2pt 0}.lesson-head .k{font-size:8.5pt;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#c7e8d2}
+.lesson-head .m{font-size:9pt;color:#dbefe2}
+.objectives{background:#f3f9f5;border:1px solid #dbe5df;border-radius:2mm;padding:7pt 11pt;margin:0 0 10pt}
+.objectives h2,.takeaways h2,.kc h2{font-size:9.5pt;text-transform:uppercase;letter-spacing:.06em;margin:0 0 3pt;color:#125a2b}
+.lesson-figure{margin:0 0 10pt;break-inside:avoid}.lesson-figure img{width:100%;max-height:85mm;object-fit:contain;border:1px solid #dbe5df;border-radius:2mm;background:#f3f9f5}
+figure{margin:9pt 0;break-inside:avoid}figure svg{width:100%;height:auto}figcaption{font-size:8.5pt;color:#5b6b62;margin-top:3pt}
+.diagram{border:1px solid #dbe5df;border-radius:2mm;padding:5pt}
+.table-wrap{margin:8pt 0;border:1px solid #dbe5df;border-radius:2mm;overflow:hidden}
+table{border-collapse:collapse;width:100%;font-size:9pt}th,td{text-align:left;vertical-align:top;padding:4pt 6pt;border-bottom:1px solid #dbe5df}
+th{background:#f3f9f5}tr{break-inside:avoid}td.code{font-weight:800;font-size:12pt;text-align:center;width:34pt}
+.callout{border-left:3pt solid #1d7a3e;background:#f3f9f5;padding:6pt 10pt;margin:8pt 0;border-radius:0 2mm 2mm 0;break-inside:avoid}
+.callout .label{display:block;font-size:8.5pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#125a2b}
+.callout.warn{border-color:#c8102e;background:#fdecef}.callout.warn .label{color:#c8102e}
+.callout.caution{border-color:#d08a00;background:#fff5e0}.callout.caution .label{color:#9a6200}
+.callout.info{border-color:#1f5f99;background:#e9f2fb}.callout.info .label{color:#1f5f99}
+.callout > :last-child{margin-bottom:0}
+.steps{list-style:none;padding:0;counter-reset:s}.steps>li{counter-increment:s;position:relative;padding-left:20pt;margin:4pt 0}
+.steps>li::before{content:counter(s);position:absolute;left:0;top:0;width:14pt;height:14pt;border-radius:50%;background:#1d7a3e;color:#fff;font-weight:800;font-size:8pt;display:flex;align-items:center;justify-content:center}
+.dialog{border:1px solid #dbe5df;border-radius:2mm;padding:4pt 10pt;margin:8pt 0;break-inside:avoid}.dialog p{margin:4pt 0}.dialog b{color:#125a2b}
+.muted{color:#5b6b62}
+.takeaways{background:#0c3d1e;color:#e8f5ec;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}.takeaways h2{color:#fff}
+.kc{border:1.5pt dashed #b9d7c3;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}
+.kc .q{font-weight:700;margin:2pt 0 4pt}.kc ol{list-style:upper-alpha}.kc .a{font-size:9pt;margin-top:4pt;color:#125a2b}
+.disclaimer{font-size:8.5pt;color:#5b6b62;border-top:1px solid #dbe5df;padding-top:6pt;margin-top:14pt}
+"""
+
+DISCLAIMER = ("Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines "
+              "Operations Manual, which always take precedence.")
+
+
+def _esc(s):
+    return html.escape(str(s), quote=True)
+
+
+def lesson_section(course, n, module_of, root):
+    L = course["lessons"][n - 1]
+    mi, mod = module_of(course, n)
+    img = course.get("images", {}).get(n)
+    pic = (f'<figure class="lesson-figure"><img src="{root}media/images/lesson-{n:02d}.jpg" alt="{_esc(img[1])}">'
+           f'<figcaption>{_esc(img[2])}</figcaption></figure>') if img else ""
+    chk = L["check"]
+    letters = "ABCD"
+    return f"""
+<section class="lesson" id="lesson-{n}">
+  <div class="lesson-head"><div class="k">Module {mi+1} · {_esc(mod['title'])}</div>
+    <h1>Lesson {n:02d}: {_esc(L['title'])}</h1><div class="m">Lesson {n} of {len(course['lessons'])} · about {L['minutes']} min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul>{''.join(f'<li>{_esc(o)}</li>' for o in L['objectives'])}</ul></div>
+  {pic}
+  {L['body']}
+  <div class="takeaways"><h2>Key takeaways</h2><ul>{''.join(f'<li>{_esc(t)}</li>' for t in L['takeaways'])}</ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">{_esc(chk['q'])}</p>
+    <ol>{''.join(f'<li>{_esc(o)}</li>' for o in chk['options'])}</ol>
+    <p class="a"><b>Answer: {letters[chk['answer']]}.</b> {_esc(chk['explain'])}</p></div>
+</section>"""
+
+
+def doc(title, logo, body):
+    return f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>{_esc(title)}</title>
+<style>{PRINT_CSS}</style></head><body>{body}</body></html>"""
+
+
+def build_print(course, module_of, write):
+    slug = course["slug"]
+    total = len(course["lessons"])
+    hours = round(sum(l["minutes"] for l in course["lessons"]) / 60 * 2) / 2
+    logo = "../../../assets/img/logo.png"
+    root = "../"
+
+    toc = []
+    for i, m in enumerate(course["modules"]):
+        toc.append(f'<li class="mod">Module {i+1} — {_esc(m["title"])}</li>')
+        for n in m["lessons"]:
+            toc.append(f'<li><span class="n">{n:02d}</span><a href="#lesson-{n}">{_esc(course["lessons"][n-1]["title"])}</a></li>')
+    cover = f"""
+<section class="cover"><div><span class="logo"><img src="{logo}" alt="Domestic Airlines"></span></div>
+  <div class="k">Domestic Airlines — Training</div><h1>{_esc(course['title'])}</h1>
+  <p>Course handbook</p><p>{_esc(course['tagline'])}</p>
+  <div class="meta">{total} lessons · {len(course['modules'])} modules · about {hours:g} hours</div>
+  <div class="meta">{_esc(DISCLAIMER)}</div></section>
+<section class="toc"><h2>Contents</h2><ol>{''.join(toc)}</ol></section>"""
+    lessons = "".join(lesson_section(course, n, module_of, root) for n in range(1, total + 1))
+    write(f"courses/{slug}/print/handbook.html",
+          doc(f"{course['title']} — Course handbook", logo, cover + lessons + f'<p class="disclaimer">{_esc(DISCLAIMER)}</p>'))
+
+    for n in range(1, total + 1):
+        body = lesson_section(course, n, module_of, root).replace('class="lesson"', 'class="lesson" style="break-before:auto"', 1)
+        write(f"courses/{slug}/print/lesson-{n:02d}.html",
+              doc(f"Lesson {n:02d}: {course['lessons'][n-1]['title']} — {course['title']}", logo,
+                  body + f'<p class="disclaimer">{_esc(DISCLAIMER)}</p>'))

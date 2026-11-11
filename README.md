@@ -55,6 +55,14 @@ The build also validates the content. It checks that every lesson belongs to a m
 - **Narration:** every lesson has a recorded MP3 in `courses/<slug>/media/audio/`, generated with the open-source Kokoro neural voice by `tools/make_audio.py` (the setup steps are at the top of that file). The lesson page shows an audio player when its MP3 exists. If the MP3 is missing, the page offers a *Listen* button that uses the device's own voice instead; on iPhone that voice is silent while the phone is in Silent mode. To use a human voice-over, record from the scripts in `courses/<slug>/narration/` and replace the MP3 files. **After changing a lesson's text, regenerate its MP3:** `--lessons 5` regenerates lesson 5 only.
 - **Closing video:** put `finale.mp4` in `courses/<slug>/media/video/`.
 
+## PDF handbook
+
+`courses/<slug>/pdf/handbook.pdf` holds the full course, and `pdf/lesson-XX.pdf` holds each lesson. The website links to them from the course home page and from each lesson. To regenerate them after editing content:
+
+```bash
+python3 tools/build.py && node tools/make_pdf.js cold-weather-operations
+```
+
 ## Progress and certificates
 
 Progress, quiz results and the learner's name are stored in the learner's own browser (`localStorage`), separately for each course. No server or account is needed. Progress does not move between devices. If you later need central records, the courses can be packaged for an LMS (SCORM).

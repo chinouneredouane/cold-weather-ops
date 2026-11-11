@@ -136,6 +136,8 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:
 .lesson-head .eyebrow{color:#c7e8d2}
 .lesson-head h1{color:#fff;font-size:clamp(25px,3.4vw,34px);margin:6px 0 10px;max-width:780px}
 .lesson-head .meta{display:flex;gap:16px;flex-wrap:wrap;font-size:14px;color:#dbefe2}
+.lesson-head .pdf-link{color:#fff;font-weight:700;text-decoration:none;border:1px solid rgba(255,255,255,.5);border-radius:8px;padding:2px 10px;position:relative;z-index:1}
+.lesson-head .pdf-link:hover{background:rgba(255,255,255,.14);color:#fff}
 .lesson-head svg.art{position:absolute;right:18px;bottom:-10px;width:150px;height:150px;opacity:.2}
 article.lesson{min-width:0}
 .lesson-body{padding:28px 32px;margin-top:20px}

@@ -1,0 +1,89 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Lesson 08: Holdover Times and Allowance Times — Cold Weather Operations</title>
+<style>
+@page{size:A4;margin:18mm 16mm 20mm}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#24342b;font-size:10.5pt;line-height:1.5;margin:0}
+h1,h2,h3{color:#14231b;line-height:1.25;break-after:avoid}
+h1{font-size:21pt;margin:0 0 6pt}h2{font-size:14pt;margin:16pt 0 6pt}h3{font-size:12pt;margin:12pt 0 4pt}
+p{margin:0 0 7pt}ul,ol{margin:0 0 8pt;padding-left:16pt}li{margin:2pt 0}
+a{color:#125a2b;text-decoration:none}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:9pt;background:#f3f9f5;border:1px solid #dbe5df;padding:0 3pt;border-radius:3pt}
+.cover{height:257mm;display:flex;flex-direction:column;justify-content:center;break-after:page;
+  background:linear-gradient(120deg,#0c3d1e,#125a2b 55%,#2a8a50);color:#fff;padding:22mm;border-radius:4mm;margin:0}
+.cover h1{color:#fff;font-size:34pt}.cover .k{letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#bfe3cb;font-size:10pt}
+.cover p{color:#e3f1e8;font-size:13pt}.cover .logo{background:#fff;padding:5mm 7mm;border-radius:3mm;display:inline-block;margin-bottom:14mm}
+.cover .logo img{height:16mm}.cover .meta{margin-top:12mm;font-size:10.5pt;color:#d3ebdb}
+.toc{break-after:page}.toc h2{margin-top:0}.toc ol{list-style:none;padding:0}
+.toc li{display:flex;gap:8pt;padding:3pt 0;border-bottom:1px dotted #c9d8cf}.toc .n{width:22pt;font-weight:700;color:#5b6b62}
+.toc .mod{margin-top:9pt;font-weight:800;color:#125a2b;border:0;text-transform:uppercase;font-size:9pt;letter-spacing:.06em}
+.lesson{break-before:page}
+.lesson-head{background:linear-gradient(120deg,#0c3d1e,#1d7a3e);color:#fff;border-radius:3mm;padding:9pt 13pt;margin-bottom:10pt}
+.lesson-head h1{color:#fff;font-size:17pt;margin:2pt 0}.lesson-head .k{font-size:8.5pt;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#c7e8d2}
+.lesson-head .m{font-size:9pt;color:#dbefe2}
+.objectives{background:#f3f9f5;border:1px solid #dbe5df;border-radius:2mm;padding:7pt 11pt;margin:0 0 10pt}
+.objectives h2,.takeaways h2,.kc h2{font-size:9.5pt;text-transform:uppercase;letter-spacing:.06em;margin:0 0 3pt;color:#125a2b}
+.lesson-figure{margin:0 0 10pt;break-inside:avoid}.lesson-figure img{width:100%;max-height:85mm;object-fit:contain;border:1px solid #dbe5df;border-radius:2mm;background:#f3f9f5}
+figure{margin:9pt 0;break-inside:avoid}figure svg{width:100%;height:auto}figcaption{font-size:8.5pt;color:#5b6b62;margin-top:3pt}
+.diagram{border:1px solid #dbe5df;border-radius:2mm;padding:5pt}
+.table-wrap{margin:8pt 0;border:1px solid #dbe5df;border-radius:2mm;overflow:hidden}
+table{border-collapse:collapse;width:100%;font-size:9pt}th,td{text-align:left;vertical-align:top;padding:4pt 6pt;border-bottom:1px solid #dbe5df}
+th{background:#f3f9f5}tr{break-inside:avoid}td.code{font-weight:800;font-size:12pt;text-align:center;width:34pt}
+.callout{border-left:3pt solid #1d7a3e;background:#f3f9f5;padding:6pt 10pt;margin:8pt 0;border-radius:0 2mm 2mm 0;break-inside:avoid}
+.callout .label{display:block;font-size:8.5pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#125a2b}
+.callout.warn{border-color:#c8102e;background:#fdecef}.callout.warn .label{color:#c8102e}
+.callout.caution{border-color:#d08a00;background:#fff5e0}.callout.caution .label{color:#9a6200}
+.callout.info{border-color:#1f5f99;background:#e9f2fb}.callout.info .label{color:#1f5f99}
+.callout > :last-child{margin-bottom:0}
+.steps{list-style:none;padding:0;counter-reset:s}.steps>li{counter-increment:s;position:relative;padding-left:20pt;margin:4pt 0}
+.steps>li::before{content:counter(s);position:absolute;left:0;top:0;width:14pt;height:14pt;border-radius:50%;background:#1d7a3e;color:#fff;font-weight:800;font-size:8pt;display:flex;align-items:center;justify-content:center}
+.dialog{border:1px solid #dbe5df;border-radius:2mm;padding:4pt 10pt;margin:8pt 0;break-inside:avoid}.dialog p{margin:4pt 0}.dialog b{color:#125a2b}
+.muted{color:#5b6b62}
+.takeaways{background:#0c3d1e;color:#e8f5ec;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}.takeaways h2{color:#fff}
+.kc{border:1.5pt dashed #b9d7c3;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}
+.kc .q{font-weight:700;margin:2pt 0 4pt}.kc ol{list-style:upper-alpha}.kc .a{font-size:9pt;margin-top:4pt;color:#125a2b}
+.disclaimer{font-size:8.5pt;color:#5b6b62;border-top:1px solid #dbe5df;padding-top:6pt;margin-top:14pt}
+</style></head><body>
+<section class="lesson" style="break-before:auto" id="lesson-8">
+  <div class="lesson-head"><div class="k">Module 2 · De-icing and Anti-icing</div>
+    <h1>Lesson 08: Holdover Times and Allowance Times</h1><div class="m">Lesson 8 of 30 · about 10 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Define holdover time and explain its limits.</li><li>Use holdover time guidelines correctly, step by step.</li><li>Explain allowance times for ice pellets and small hail, and the factors that shorten protection.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-08.jpg" alt="Example holdover time table by temperature and precipitation type"><figcaption>Example of a holdover time table — illustration only. Always use the current season&#x27;s official tables.</figcaption></figure>
+  
+<h2>Definition</h2>
+<p><strong>Holdover time (HOT)</strong> is the <em>estimated</em> time for which an anti-icing fluid will prevent frost or ice from forming and snow from accumulating on the treated surfaces of an aircraft. It starts at the <strong>beginning of the final application</strong> of fluid and ends when the fluid is expected to lose its effectiveness (fluid failure).</p>
+<p>HOT guidelines are published each winter season by the FAA and Transport Canada and are used worldwide. The Domestic Airlines Operations Manual states which tables crews must use. Tables change every year, so always use the current season's tables.</p>
+
+<div class="callout warn"><span class="label">Holdover time is a guideline, not a guarantee</span>
+<p>Tables are based on tests in controlled conditions. Heavy precipitation, high moisture content, strong wind, jet blast, and an aircraft skin colder than the air all shorten the real protection time. If the surfaces show signs of contamination, the aircraft is not clean, however much holdover time remains.</p>
+</div>
+
+<h2>Using the tables — step by step</h2>
+<ol class="steps">
+  <li><strong>Identify the fluid</strong> from the anti-icing code: type, brand if known, and concentration (e.g. Type IV, 100/0).</li>
+  <li><strong>Select the correct table</strong> — brand-specific if the fluid is known, otherwise the generic table for that type.</li>
+  <li><strong>Find the OAT row.</strong> Use the outside air temperature, and check it is not below the fluid's LOUT.</li>
+  <li><strong>Find the precipitation column</strong> — frost, freezing fog, snow/snow grains, freezing drizzle, light freezing rain, rain on a cold-soaked wing. Assess snow intensity from the <em>snowfall intensity as a function of visibility</em> table, not just from the METAR.</li>
+  <li><strong>Read the time range.</strong> The <em>shorter</em> value applies to the heavier end of that intensity category, the <em>longer</em> value to the lighter end. Use the shorter time when conditions are at the heavier end or uncertain.</li>
+  <li><strong>Note the start time</strong> from the anti-icing code and calculate when the HOT ends. Write it down and brief it.</li>
+  <li><strong>Keep reassessing.</strong> If the precipitation type or intensity changes, recalculate. If no HOT exists for the new conditions, the aircraft must return for treatment.</li>
+</ol>
+
+<h2>When holdover time is exceeded</h2>
+<p>If the HOT has run out before take-off, take-off is only permitted if a <strong>pre-take-off contamination check</strong> shows the critical surfaces are clean, carried out within 5 minutes before beginning the take-off (Lesson 13). Otherwise the aircraft must be re-treated.</p>
+
+<h2>Allowance times</h2>
+<p>In <strong>ice pellets</strong> and <strong>small hail</strong>, and mixes of these with other precipitation, fluid failure is difficult to see. Instead of holdover times, the tables give <strong>allowance times</strong> for specific Type III and Type IV fluids. Allowance times:</p>
+<ul>
+  <li>start at the beginning of the final application, like a HOT;</li>
+  <li><strong>cannot be extended</strong> by a pre-take-off contamination check — when the allowance time is exceeded, the aircraft must be re-treated;</li>
+  <li>may carry extra restrictions, such as maximum rotation speed or limits on flap configuration.</li>
+</ul>
+
+<h2>Conditions with no holdover time</h2>
+<p>No HOT guidelines exist for <strong>moderate or heavy freezing rain</strong>, <strong>hail</strong>, or <strong>heavy ice pellets</strong>. Take-off in these conditions is generally not authorised. Check the Operations Manual for heavy snow, which has guidelines for some fluids only.</p>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>HOT starts at the beginning of the final application and is only an estimate.</li><li>Use the current season&#x27;s tables, the correct fluid and concentration, OAT and precipitation type/intensity.</li><li>HOT exceeded → pre-take-off contamination check within 5 minutes of take-off, or re-treat.</li><li>Allowance times (ice pellets, small hail) cannot be extended — re-treat when they expire.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">An allowance time for ice pellets has expired while you hold for take-off. What is the correct action?</p>
+    <ol><li>Carry out a pre-take-off contamination check and depart if clean</li><li>Depart immediately because ice pellets bounce off</li><li>Return for re-treatment</li><li>Switch on wing anti-ice and depart</li></ol>
+    <p class="a"><b>Answer: C.</b> Allowance times cannot be extended by a pre-take-off contamination check. When the allowance time expires, the aircraft must be re-treated.</p></div>
+</section><p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p></body></html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Lesson 23: Flight Controls, Fluid Residues and In-flight Icing — Cold Weather Operations</title>
+<style>
+@page{size:A4;margin:18mm 16mm 20mm}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#24342b;font-size:10.5pt;line-height:1.5;margin:0}
+h1,h2,h3{color:#14231b;line-height:1.25;break-after:avoid}
+h1{font-size:21pt;margin:0 0 6pt}h2{font-size:14pt;margin:16pt 0 6pt}h3{font-size:12pt;margin:12pt 0 4pt}
+p{margin:0 0 7pt}ul,ol{margin:0 0 8pt;padding-left:16pt}li{margin:2pt 0}
+a{color:#125a2b;text-decoration:none}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:9pt;background:#f3f9f5;border:1px solid #dbe5df;padding:0 3pt;border-radius:3pt}
+.cover{height:257mm;display:flex;flex-direction:column;justify-content:center;break-after:page;
+  background:linear-gradient(120deg,#0c3d1e,#125a2b 55%,#2a8a50);color:#fff;padding:22mm;border-radius:4mm;margin:0}
+.cover h1{color:#fff;font-size:34pt}.cover .k{letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#bfe3cb;font-size:10pt}
+.cover p{color:#e3f1e8;font-size:13pt}.cover .logo{background:#fff;padding:5mm 7mm;border-radius:3mm;display:inline-block;margin-bottom:14mm}
+.cover .logo img{height:16mm}.cover .meta{margin-top:12mm;font-size:10.5pt;color:#d3ebdb}
+.toc{break-after:page}.toc h2{margin-top:0}.toc ol{list-style:none;padding:0}
+.toc li{display:flex;gap:8pt;padding:3pt 0;border-bottom:1px dotted #c9d8cf}.toc .n{width:22pt;font-weight:700;color:#5b6b62}
+.toc .mod{margin-top:9pt;font-weight:800;color:#125a2b;border:0;text-transform:uppercase;font-size:9pt;letter-spacing:.06em}
+.lesson{break-before:page}
+.lesson-head{background:linear-gradient(120deg,#0c3d1e,#1d7a3e);color:#fff;border-radius:3mm;padding:9pt 13pt;margin-bottom:10pt}
+.lesson-head h1{color:#fff;font-size:17pt;margin:2pt 0}.lesson-head .k{font-size:8.5pt;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#c7e8d2}
+.lesson-head .m{font-size:9pt;color:#dbefe2}
+.objectives{background:#f3f9f5;border:1px solid #dbe5df;border-radius:2mm;padding:7pt 11pt;margin:0 0 10pt}
+.objectives h2,.takeaways h2,.kc h2{font-size:9.5pt;text-transform:uppercase;letter-spacing:.06em;margin:0 0 3pt;color:#125a2b}
+.lesson-figure{margin:0 0 10pt;break-inside:avoid}.lesson-figure img{width:100%;max-height:85mm;object-fit:contain;border:1px solid #dbe5df;border-radius:2mm;background:#f3f9f5}
+figure{margin:9pt 0;break-inside:avoid}figure svg{width:100%;height:auto}figcaption{font-size:8.5pt;color:#5b6b62;margin-top:3pt}
+.diagram{border:1px solid #dbe5df;border-radius:2mm;padding:5pt}
+.table-wrap{margin:8pt 0;border:1px solid #dbe5df;border-radius:2mm;overflow:hidden}
+table{border-collapse:collapse;width:100%;font-size:9pt}th,td{text-align:left;vertical-align:top;padding:4pt 6pt;border-bottom:1px solid #dbe5df}
+th{background:#f3f9f5}tr{break-inside:avoid}td.code{font-weight:800;font-size:12pt;text-align:center;width:34pt}
+.callout{border-left:3pt solid #1d7a3e;background:#f3f9f5;padding:6pt 10pt;margin:8pt 0;border-radius:0 2mm 2mm 0;break-inside:avoid}
+.callout .label{display:block;font-size:8.5pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#125a2b}
+.callout.warn{border-color:#c8102e;background:#fdecef}.callout.warn .label{color:#c8102e}
+.callout.caution{border-color:#d08a00;background:#fff5e0}.callout.caution .label{color:#9a6200}
+.callout.info{border-color:#1f5f99;background:#e9f2fb}.callout.info .label{color:#1f5f99}
+.callout > :last-child{margin-bottom:0}
+.steps{list-style:none;padding:0;counter-reset:s}.steps>li{counter-increment:s;position:relative;padding-left:20pt;margin:4pt 0}
+.steps>li::before{content:counter(s);position:absolute;left:0;top:0;width:14pt;height:14pt;border-radius:50%;background:#1d7a3e;color:#fff;font-weight:800;font-size:8pt;display:flex;align-items:center;justify-content:center}
+.dialog{border:1px solid #dbe5df;border-radius:2mm;padding:4pt 10pt;margin:8pt 0;break-inside:avoid}.dialog p{margin:4pt 0}.dialog b{color:#125a2b}
+.muted{color:#5b6b62}
+.takeaways{background:#0c3d1e;color:#e8f5ec;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}.takeaways h2{color:#fff}
+.kc{border:1.5pt dashed #b9d7c3;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}
+.kc .q{font-weight:700;margin:2pt 0 4pt}.kc ol{list-style:upper-alpha}.kc .a{font-size:9pt;margin-top:4pt;color:#125a2b}
+.disclaimer{font-size:8.5pt;color:#5b6b62;border-top:1px solid #dbe5df;padding-top:6pt;margin-top:14pt}
+</style></head><body>
+<section class="lesson" style="break-before:auto" id="lesson-23">
+  <div class="lesson-head"><div class="k">Module 5 · Aircraft Systems in the Cold</div>
+    <h1>Lesson 23: Flight Controls, Fluid Residues and In-flight Icing</h1><div class="m">Lesson 23 of 30 · about 9 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Perform an effective flight-control check after de-icing.</li><li>Recognise the hazard of thickened fluid residues.</li><li>Operate ice protection systems and respond to SLD and tailplane icing.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-23.jpg" alt="Ice on an aircraft wing seen from the cabin window in flight"><figcaption>Ice behind the protected areas is a warning sign of severe icing.</figcaption></figure>
+  
+<h2>Flight-control check</h2>
+<ul>
+  <li>After de-icing and before take-off, check that the flight controls move <strong>full and free</strong> in the correct sense, as the checklist requires.</li>
+  <li>Check smoothly and slowly. Any stiffness, restriction or unusual noise is a reason to stop and investigate. Do not take off with doubtful controls.</li>
+  <li>Ice or snow in control surface gaps and hinges can restrict movement even when the surfaces themselves look clean.</li>
+</ul>
+
+<h2>Thickened fluid residues</h2>
+<p>Type II and IV fluids can dry out and leave a residue in the aerodynamically quiet areas of the aircraft. This is more likely when they are used for one-step treatments without a hot Type I de-icing step. When rehydrated by rain or humidity, the residue swells into a gel that can <strong>freeze in flight</strong>.</p>
+<div class="callout warn"><span class="label">Reported symptoms</span>
+<p>Restricted or stiff elevator, aileron or trim movement, often at high altitude, sometimes with vibration. Report any unusual control feel in the technical log. Maintenance carries out residue inspections and cleaning at the intervals in the maintenance programme.</p>
+</div>
+
+<h2>Ice protection systems</h2>
+<ul>
+  <li><strong>Thermal (bleed air or electrical) anti-ice</strong> on wing leading edges, engine inlets, probes and windows: switch on before or when entering icing conditions, as the AFM requires.</li>
+  <li><strong>Pneumatic de-icing boots</strong> on many turboprops: current guidance for most modern aircraft is to activate them at the first sign of ice and keep them operating. Follow your AFM.</li>
+  <li>Ice detectors give a warning, but primary or advisory status depends on the type. Know which yours is.</li>
+  <li>Use the minimum speeds for icing and the autopilot limitations in icing conditions from the AFM. The autopilot can hide changes in handling until it disconnects.</li>
+</ul>
+
+<h2>Severe icing and SLD</h2>
+<p>Signs of severe icing or supercooled large droplets include:</p>
+<ul>
+  <li>ice behind the protected areas, such as on the upper or lower wing surface aft of the boots;</li>
+  <li>ice on the side windows, or water splashing and streaming on the windshield at sub-zero temperatures;</li>
+  <li>unusual or uncommanded roll, or unexpected aileron or trim forces;</li>
+  <li>a rapid loss of speed or climb performance.</li>
+</ul>
+<p><strong>Action:</strong> tell ATC and <strong>leave the icing conditions immediately</strong> — change altitude or heading, or move to colder or warmer air. Disconnect the autopilot carefully if the AFM requires it, holding the controls firmly, and avoid abrupt manoeuvres.</p>
+
+<h2>Tailplane icing</h2>
+<p>The tail is thinner than the wing and collects ice more efficiently. A tailplane stall is most likely when the flaps are extended during the approach. Symptoms are light or buffeting elevator forces, difficulty in trimming, or a sudden nose-down pitch. Recovery differs from a wing stall, and the procedure is type-specific — typically return the flaps to the previous setting and pull back on the controls. Follow the AFM/QRH.</p>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Full and free control check after de-icing — never take off with doubtful controls.</li><li>Thickened fluid residues can freeze in flight and restrict controls; report unusual feel.</li><li>Severe icing or SLD: inform ATC and leave the conditions immediately.</li><li>Tailplane stall is most likely with flap extension; recovery is type-specific.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">In flight, you notice ice forming on the side windows and aft of the wing de-icing boots. What should you do?</p>
+    <ol><li>Continue and cycle the boots more often</li><li>Treat it as possible severe icing/SLD — inform ATC and leave the conditions immediately</li><li>Extend flaps to increase lift</li><li>Engage the autopilot to reduce workload</li></ol>
+    <p class="a"><b>Answer: B.</b> Ice on side windows and behind protected areas are signs of severe icing or SLD. Inform ATC and leave the icing conditions without delay.</p></div>
+</section><p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p></body></html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Lesson 17: Landing on Contaminated Runways — Cold Weather Operations</title>
+<style>
+@page{size:A4;margin:18mm 16mm 20mm}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#24342b;font-size:10.5pt;line-height:1.5;margin:0}
+h1,h2,h3{color:#14231b;line-height:1.25;break-after:avoid}
+h1{font-size:21pt;margin:0 0 6pt}h2{font-size:14pt;margin:16pt 0 6pt}h3{font-size:12pt;margin:12pt 0 4pt}
+p{margin:0 0 7pt}ul,ol{margin:0 0 8pt;padding-left:16pt}li{margin:2pt 0}
+a{color:#125a2b;text-decoration:none}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:9pt;background:#f3f9f5;border:1px solid #dbe5df;padding:0 3pt;border-radius:3pt}
+.cover{height:257mm;display:flex;flex-direction:column;justify-content:center;break-after:page;
+  background:linear-gradient(120deg,#0c3d1e,#125a2b 55%,#2a8a50);color:#fff;padding:22mm;border-radius:4mm;margin:0}
+.cover h1{color:#fff;font-size:34pt}.cover .k{letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#bfe3cb;font-size:10pt}
+.cover p{color:#e3f1e8;font-size:13pt}.cover .logo{background:#fff;padding:5mm 7mm;border-radius:3mm;display:inline-block;margin-bottom:14mm}
+.cover .logo img{height:16mm}.cover .meta{margin-top:12mm;font-size:10.5pt;color:#d3ebdb}
+.toc{break-after:page}.toc h2{margin-top:0}.toc ol{list-style:none;padding:0}
+.toc li{display:flex;gap:8pt;padding:3pt 0;border-bottom:1px dotted #c9d8cf}.toc .n{width:22pt;font-weight:700;color:#5b6b62}
+.toc .mod{margin-top:9pt;font-weight:800;color:#125a2b;border:0;text-transform:uppercase;font-size:9pt;letter-spacing:.06em}
+.lesson{break-before:page}
+.lesson-head{background:linear-gradient(120deg,#0c3d1e,#1d7a3e);color:#fff;border-radius:3mm;padding:9pt 13pt;margin-bottom:10pt}
+.lesson-head h1{color:#fff;font-size:17pt;margin:2pt 0}.lesson-head .k{font-size:8.5pt;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#c7e8d2}
+.lesson-head .m{font-size:9pt;color:#dbefe2}
+.objectives{background:#f3f9f5;border:1px solid #dbe5df;border-radius:2mm;padding:7pt 11pt;margin:0 0 10pt}
+.objectives h2,.takeaways h2,.kc h2{font-size:9.5pt;text-transform:uppercase;letter-spacing:.06em;margin:0 0 3pt;color:#125a2b}
+.lesson-figure{margin:0 0 10pt;break-inside:avoid}.lesson-figure img{width:100%;max-height:85mm;object-fit:contain;border:1px solid #dbe5df;border-radius:2mm;background:#f3f9f5}
+figure{margin:9pt 0;break-inside:avoid}figure svg{width:100%;height:auto}figcaption{font-size:8.5pt;color:#5b6b62;margin-top:3pt}
+.diagram{border:1px solid #dbe5df;border-radius:2mm;padding:5pt}
+.table-wrap{margin:8pt 0;border:1px solid #dbe5df;border-radius:2mm;overflow:hidden}
+table{border-collapse:collapse;width:100%;font-size:9pt}th,td{text-align:left;vertical-align:top;padding:4pt 6pt;border-bottom:1px solid #dbe5df}
+th{background:#f3f9f5}tr{break-inside:avoid}td.code{font-weight:800;font-size:12pt;text-align:center;width:34pt}
+.callout{border-left:3pt solid #1d7a3e;background:#f3f9f5;padding:6pt 10pt;margin:8pt 0;border-radius:0 2mm 2mm 0;break-inside:avoid}
+.callout .label{display:block;font-size:8.5pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#125a2b}
+.callout.warn{border-color:#c8102e;background:#fdecef}.callout.warn .label{color:#c8102e}
+.callout.caution{border-color:#d08a00;background:#fff5e0}.callout.caution .label{color:#9a6200}
+.callout.info{border-color:#1f5f99;background:#e9f2fb}.callout.info .label{color:#1f5f99}
+.callout > :last-child{margin-bottom:0}
+.steps{list-style:none;padding:0;counter-reset:s}.steps>li{counter-increment:s;position:relative;padding-left:20pt;margin:4pt 0}
+.steps>li::before{content:counter(s);position:absolute;left:0;top:0;width:14pt;height:14pt;border-radius:50%;background:#1d7a3e;color:#fff;font-weight:800;font-size:8pt;display:flex;align-items:center;justify-content:center}
+.dialog{border:1px solid #dbe5df;border-radius:2mm;padding:4pt 10pt;margin:8pt 0;break-inside:avoid}.dialog p{margin:4pt 0}.dialog b{color:#125a2b}
+.muted{color:#5b6b62}
+.takeaways{background:#0c3d1e;color:#e8f5ec;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}.takeaways h2{color:#fff}
+.kc{border:1.5pt dashed #b9d7c3;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}
+.kc .q{font-weight:700;margin:2pt 0 4pt}.kc ol{list-style:upper-alpha}.kc .a{font-size:9pt;margin-top:4pt;color:#125a2b}
+.disclaimer{font-size:8.5pt;color:#5b6b62;border-top:1px solid #dbe5df;padding-top:6pt;margin-top:14pt}
+</style></head><body>
+<section class="lesson" style="break-before:auto" id="lesson-17">
+  <div class="lesson-head"><div class="k">Module 4 · Runways and Performance</div>
+    <h1>Lesson 17: Landing on Contaminated Runways</h1><div class="m">Lesson 17 of 30 · about 9 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Perform a landing distance assessment at the time of arrival.</li><li>Apply landing techniques for slippery runways.</li><li>Recognise when to go around or divert.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-17.jpg" alt="Airliner after a runway overrun in snow, and a damaged engine"><figcaption>Landing on a contaminated runway: assess the landing distance at the time of arrival.</figcaption></figure>
+  
+<h2>Landing distance assessment at the time of arrival</h2>
+<p>Runway conditions at the time of arrival may be very different from those used at dispatch. Before the approach — normally before top of descent and again if conditions change — calculate the <strong>landing distance at time of arrival</strong> using:</p>
+<ul>
+  <li>the latest RCR (RWYCC per third, contaminant and depth);</li>
+  <li>expected landing mass, wind, temperature, altitude, slope, configuration and approach speed additives;</li>
+  <li>the planned autobrake setting and use of reverse thrust, as the performance data allows.</li>
+</ul>
+<p>Add the safety margin required by the Operations Manual. Industry guidance recommends at least <strong>15 %</strong> on the actual (unfactored) landing distance. If the result does not fit within the available landing distance, do not start the approach — hold, choose another runway, or divert.</p>
+
+<h2>Technique</h2>
+<ol class="steps">
+  <li><strong>Stabilised approach</strong> on speed, on profile, with the correct additives. Go around if the approach is not stabilised.</li>
+  <li><strong>Touch down firmly in the touchdown zone.</strong> Do not float — every second of float uses runway you need for stopping. A firm touchdown helps the wheels spin up and break through the water film.</li>
+  <li><strong>Lower the nosewheel promptly</strong> for steering and to put weight on the wheels.</li>
+  <li><strong>Ground spoilers</strong> deployed, verified and called.</li>
+  <li><strong>Reverse thrust early</strong>: maximum reverse as soon as possible after touchdown, as the SOP states. Reversers are most effective at high speed.</li>
+  <li><strong>Braking</strong>: autobrake as planned, or steady manual braking with the anti-skid working. Do not pump the brakes.</li>
+  <li><strong>Directional control</strong> with rudder. Use nosewheel steering at low speed, with small inputs. In a crosswind with reverse thrust, apply the same recovery technique as for the rejected take-off.</li>
+</ol>
+
+<h2>When to go around or divert</h2>
+<ul>
+  <li>The approach is not stabilised, or the touchdown point will be beyond the touchdown zone.</li>
+  <li>The runway report changes during the approach to a code or contaminant for which the landing distance is not enough.</li>
+  <li>Braking action reports from preceding aircraft are worse than planned.</li>
+  <li>Once reverse thrust is selected, you are committed to stop. The decision to go around must be made before that.</li>
+</ul>
+
+<h2>After landing</h2>
+<p>Taxi slowly. Report braking action if it was worse than reported. On stand, consider the risk of brakes freezing after taxiing through slush. Use chocks and follow the SOP on releasing the parking brake (Lesson 19).</p>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Recalculate landing distance at the time of arrival, with at least the required margin (typically 15 %).</li><li>Firm touchdown in the zone, no float, spoilers, early maximum reverse, steady braking.</li><li>Go around before selecting reverse thrust if the landing is in doubt.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">Why is a firm touchdown preferred on a runway covered with water or slush?</p>
+    <ol><li>To reduce the stress on the landing gear</li><li>To help the wheels spin up, break through the water film and avoid floating</li><li>To allow a longer flare</li><li>To keep the reverse thrust in idle</li></ol>
+    <p class="a"><b>Answer: B.</b> A firm touchdown in the touchdown zone avoids wasting runway, helps the wheels penetrate the water film and spin up, and reduces the risk of aquaplaning.</p></div>
+</section><p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p></body></html>

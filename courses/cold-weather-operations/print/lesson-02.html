@@ -1,0 +1,89 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Lesson 02: Cold Weather Meteorology — Cold Weather Operations</title>
+<style>
+@page{size:A4;margin:18mm 16mm 20mm}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#24342b;font-size:10.5pt;line-height:1.5;margin:0}
+h1,h2,h3{color:#14231b;line-height:1.25;break-after:avoid}
+h1{font-size:21pt;margin:0 0 6pt}h2{font-size:14pt;margin:16pt 0 6pt}h3{font-size:12pt;margin:12pt 0 4pt}
+p{margin:0 0 7pt}ul,ol{margin:0 0 8pt;padding-left:16pt}li{margin:2pt 0}
+a{color:#125a2b;text-decoration:none}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:9pt;background:#f3f9f5;border:1px solid #dbe5df;padding:0 3pt;border-radius:3pt}
+.cover{height:257mm;display:flex;flex-direction:column;justify-content:center;break-after:page;
+  background:linear-gradient(120deg,#0c3d1e,#125a2b 55%,#2a8a50);color:#fff;padding:22mm;border-radius:4mm;margin:0}
+.cover h1{color:#fff;font-size:34pt}.cover .k{letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#bfe3cb;font-size:10pt}
+.cover p{color:#e3f1e8;font-size:13pt}.cover .logo{background:#fff;padding:5mm 7mm;border-radius:3mm;display:inline-block;margin-bottom:14mm}
+.cover .logo img{height:16mm}.cover .meta{margin-top:12mm;font-size:10.5pt;color:#d3ebdb}
+.toc{break-after:page}.toc h2{margin-top:0}.toc ol{list-style:none;padding:0}
+.toc li{display:flex;gap:8pt;padding:3pt 0;border-bottom:1px dotted #c9d8cf}.toc .n{width:22pt;font-weight:700;color:#5b6b62}
+.toc .mod{margin-top:9pt;font-weight:800;color:#125a2b;border:0;text-transform:uppercase;font-size:9pt;letter-spacing:.06em}
+.lesson{break-before:page}
+.lesson-head{background:linear-gradient(120deg,#0c3d1e,#1d7a3e);color:#fff;border-radius:3mm;padding:9pt 13pt;margin-bottom:10pt}
+.lesson-head h1{color:#fff;font-size:17pt;margin:2pt 0}.lesson-head .k{font-size:8.5pt;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#c7e8d2}
+.lesson-head .m{font-size:9pt;color:#dbefe2}
+.objectives{background:#f3f9f5;border:1px solid #dbe5df;border-radius:2mm;padding:7pt 11pt;margin:0 0 10pt}
+.objectives h2,.takeaways h2,.kc h2{font-size:9.5pt;text-transform:uppercase;letter-spacing:.06em;margin:0 0 3pt;color:#125a2b}
+.lesson-figure{margin:0 0 10pt;break-inside:avoid}.lesson-figure img{width:100%;max-height:85mm;object-fit:contain;border:1px solid #dbe5df;border-radius:2mm;background:#f3f9f5}
+figure{margin:9pt 0;break-inside:avoid}figure svg{width:100%;height:auto}figcaption{font-size:8.5pt;color:#5b6b62;margin-top:3pt}
+.diagram{border:1px solid #dbe5df;border-radius:2mm;padding:5pt}
+.table-wrap{margin:8pt 0;border:1px solid #dbe5df;border-radius:2mm;overflow:hidden}
+table{border-collapse:collapse;width:100%;font-size:9pt}th,td{text-align:left;vertical-align:top;padding:4pt 6pt;border-bottom:1px solid #dbe5df}
+th{background:#f3f9f5}tr{break-inside:avoid}td.code{font-weight:800;font-size:12pt;text-align:center;width:34pt}
+.callout{border-left:3pt solid #1d7a3e;background:#f3f9f5;padding:6pt 10pt;margin:8pt 0;border-radius:0 2mm 2mm 0;break-inside:avoid}
+.callout .label{display:block;font-size:8.5pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#125a2b}
+.callout.warn{border-color:#c8102e;background:#fdecef}.callout.warn .label{color:#c8102e}
+.callout.caution{border-color:#d08a00;background:#fff5e0}.callout.caution .label{color:#9a6200}
+.callout.info{border-color:#1f5f99;background:#e9f2fb}.callout.info .label{color:#1f5f99}
+.callout > :last-child{margin-bottom:0}
+.steps{list-style:none;padding:0;counter-reset:s}.steps>li{counter-increment:s;position:relative;padding-left:20pt;margin:4pt 0}
+.steps>li::before{content:counter(s);position:absolute;left:0;top:0;width:14pt;height:14pt;border-radius:50%;background:#1d7a3e;color:#fff;font-weight:800;font-size:8pt;display:flex;align-items:center;justify-content:center}
+.dialog{border:1px solid #dbe5df;border-radius:2mm;padding:4pt 10pt;margin:8pt 0;break-inside:avoid}.dialog p{margin:4pt 0}.dialog b{color:#125a2b}
+.muted{color:#5b6b62}
+.takeaways{background:#0c3d1e;color:#e8f5ec;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}.takeaways h2{color:#fff}
+.kc{border:1.5pt dashed #b9d7c3;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}
+.kc .q{font-weight:700;margin:2pt 0 4pt}.kc ol{list-style:upper-alpha}.kc .a{font-size:9pt;margin-top:4pt;color:#125a2b}
+.disclaimer{font-size:8.5pt;color:#5b6b62;border-top:1px solid #dbe5df;padding-top:6pt;margin-top:14pt}
+</style></head><body>
+<section class="lesson" style="break-before:auto" id="lesson-2">
+  <div class="lesson-head"><div class="k">Module 1 · Foundations</div>
+    <h1>Lesson 02: Cold Weather Meteorology</h1><div class="m">Lesson 2 of 30 · about 9 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Explain supercooled water and why it is the key ingredient of icing.</li><li>Describe how freezing rain, freezing drizzle, ice pellets and the different snow types form.</li><li>Decode the winter weather groups used in METAR and TAF reports.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-02.jpg" alt="Diagram of freezing rain forming as snow melts in a warm layer aloft and refreezes below"><figcaption>Freezing rain: snow melts in a warm layer aloft, then becomes supercooled in the cold air near the surface.</figcaption></figure>
+  
+<h2>Supercooled water</h2>
+<p>Liquid water does not automatically freeze at 0 °C. Small, pure droplets can remain liquid well below freezing — in theory down to about −40 °C. Such droplets are called <strong>supercooled</strong>. They are unstable: when one strikes a surface, such as a wing, a propeller or an engine inlet, it freezes partly or completely on impact.</p>
+<p>Supercooled water is found in cloud, fog, drizzle and rain at sub-zero temperatures. It is the source of almost all airframe icing, both in flight and on the ground.</p>
+
+<h2>Precipitation types that matter</h2>
+<div class="table-wrap"><table>
+  <tr><th>Type</th><th>METAR</th><th>How it forms</th><th>Why it matters</th></tr>
+  <tr><td>Freezing rain</td><td><code>FZRA</code></td><td>Snow melts in a warm layer aloft (a temperature inversion) and falls as rain into a sub-zero layer near the surface, becoming supercooled.</td><td>Forms clear ice rapidly. Holdover times are very short or not available. Heavy and moderate freezing rain normally prohibit take-off.</td></tr>
+  <tr><td>Freezing drizzle</td><td><code>FZDZ</code></td><td>Small supercooled drops, often from shallow stratus. It can form without a warm layer aloft.</td><td>A source of supercooled large droplets (SLD) in flight; it builds ice on the ground steadily.</td></tr>
+  <tr><td>Freezing fog</td><td><code>FZFG</code></td><td>Fog made of supercooled droplets.</td><td>Builds rime on parked and taxiing aircraft and engine fan blades. Engine run-ups may be required.</td></tr>
+  <tr><td>Snow (dry or wet)</td><td><code>SN</code></td><td>Ice crystals that grow in cloud. Wet snow falls when the temperature is near 0 °C.</td><td>Wet snow has a high water content and dilutes anti-icing fluid quickly, so holdover times are much shorter.</td></tr>
+  <tr><td>Snow grains</td><td><code>SG</code></td><td>Very small, opaque grains of ice, usually from stratus.</td><td>Treated like snow when holdover time guidelines are used.</td></tr>
+  <tr><td>Ice pellets</td><td><code>PL</code></td><td>Raindrops that refreeze while falling through a cold layer.</td><td>Fluid failure is hard to see, so special <em>allowance times</em> are used instead of holdover times.</td></tr>
+  <tr><td>Hail / small hail</td><td><code>GR</code> / <code>GS</code></td><td>Ice formed in convective cloud.</td><td>No holdover time guidelines for hail; small hail has limited allowance times.</td></tr>
+  <tr><td>Blowing snow</td><td><code>BLSN</code></td><td>Snow lifted from the ground by wind.</td><td>Re-contaminates treated surfaces and reduces visibility. Snow intensity is assessed from the falling snow only.</td></tr>
+</table></div>
+<p>The prefixes <code>-</code>, no sign and <code>+</code> indicate light, moderate and heavy intensity. Because intensity strongly affects holdover times, check it every time you read a report.</p>
+
+<h2>Frost</h2>
+<p>Frost forms when a surface cools to below the frost point of the surrounding air, typically on clear, calm nights through radiative cooling. It can also form on a wing that has been cold-soaked by very cold fuel, even when the air temperature is <strong>above</strong> 0 °C. This is <em>cold-soaked fuel frost</em> (CSFF). Frost that is still forming is called <strong>active frost</strong>, and it affects holdover times.</p>
+
+<h2>Temperature inversions</h2>
+<p>In winter, cold, dense air often collects in valleys and over high plateaus, with warmer air above. Inversions trap fog and low cloud for days and create the warm layer aloft that produces freezing rain. On the northern high plateaus and mountain airports of our network, an inversion can mean freezing fog at the field while the air a few thousand feet above is several degrees warmer.</p>
+
+<h2>Reading the reports</h2>
+<ul>
+  <li><strong>METAR</strong>: check the weather group (e.g. <code>-FZDZ BR</code>), the temperature/dew point spread (a small spread means fog or frost is likely), and the runway state or runway condition information.</li>
+  <li><strong>TAF</strong>: look for <code>TEMPO</code>, <code>BECMG</code> and <code>PROB</code> groups that bring freezing precipitation or snow within your departure or arrival window.</li>
+  <li><strong>Trends</strong>: a falling temperature with a small dew point spread at dusk is the classic frost and freezing fog set-up.</li>
+  <li><strong>Pilot reports, radar and satellite</strong> confirm what the reports suggest. A front or a terrain effect can change the precipitation type within minutes.</li>
+</ul>
+<div class="callout"><span class="label">Good practice</span><p>Brief the expected winter threats before departure: precipitation type and intensity, temperature trend, runway condition and de-icing plan. Update the brief whenever the weather changes.</p></div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Supercooled droplets freeze on impact; they cause almost all airframe icing.</li><li>Freezing rain needs a warm layer aloft; freezing drizzle and freezing fog do not.</li><li>Precipitation type and intensity drive holdover times — check them every time.</li><li>Cold-soaked fuel can create frost on wings even above 0 °C.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">A METAR reports +SN. What does the “+” mean for your de-icing planning?</p>
+    <ol><li>Snow is ending soon</li><li>Heavy snow — holdover times will be short or may not exist</li><li>Snow mixed with rain</li><li>Snow at the aerodrome but not on the runway</li></ol>
+    <p class="a"><b>Answer: B.</b> “+” indicates heavy intensity. Heavy snow sharply reduces holdover times; for some fluids and temperatures no holdover time is published.</p></div>
+</section><p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p></body></html>
