@@ -1,0 +1,34 @@
+Domestic Airlines — Approach Operations and Minima
+Lesson 4: Low-Visibility Operations Overview
+
+Learning objectives:
+- Describe the requirements for CAT II and CAT III operations.
+- Explain low-visibility procedures at aerodromes.
+- Recognise when LVO capability is lost.
+
+Requirements
+
+A specific approval (SPA.LVO) for the operator, with the aircraft certified, the crew trained and qualified, and procedures in the Operations Manual.
+
+The aerodrome with low-visibility procedures (LVP) in force, and the required ground equipment serviceable.
+
+The aircraft equipment required for the category serviceable — check the MEL and the AFM.
+
+Low-visibility procedures
+
+When LVP are in force, ATC protects the ILS sensitive and critical areas, increases spacing and uses specific taxi routes. Low-visibility take-off (LVTO) below the standard take-off minima also needs approval and suitable runway lighting.
+
+Loss of capability
+
+Aircraft failures (autopilot channels, autothrottle, displays) can downgrade the approach category — the FCOM / AOM gives the effect.
+
+Ground equipment failures can also raise the minima — see the next course on inoperative ground equipment.
+
+Fog: know the types (radiation, advection) and their trends for planning.
+
+Company authorisation The approach operations each fleet is authorised for — for example CAT I only, or CAT II for a fleet and crew with the approval — are listed in the AOC operations specifications issued by the DACM . The method and values for minima are in OM A ; the aerodrome minima are in OM C and the charts.
+
+Key takeaways:
+- CAT II / III: approval, aircraft, crew, procedures, aerodrome LVP and equipment.
+- LVP protect ILS areas and increase spacing.
+- Aircraft or ground failures can downgrade the category.

@@ -1,0 +1,34 @@
+Domestic Airlines — PBN Refresher
+Lesson 2: GNSS, Integrity and the Navigation Database
+
+Learning objectives:
+- Explain GNSS integrity monitoring and its limits.
+- Recognise GNSS interference threats.
+- Check and use the navigation database correctly.
+
+GNSS and integrity
+
+Most PBN operations rely on GNSS . Integrity is provided by receiver autonomous integrity monitoring (RAIM) or equivalent aircraft-based augmentation, and by satellite-based augmentation (SBAS) where available.
+
+Check the GNSS NOTAMs and the predicted RAIM availability for the route and the time of the approach, as the company procedure requires.
+
+Know the backup: DME/DME or IRS updating, and conventional procedures and navaids.
+
+GNSS interference
+
+Jamming (signal blocked) and spoofing (false signal) are increasingly common in some regions. Effects include loss of GNSS position, position or time jumps, EGPWS terrain alerts, ADS-B and clock errors. Follow the company and manufacturer guidance: cross-check position with other sources, consider deselecting GNSS where the procedure allows, use conventional navaids, inform ATC and report.
+
+The navigation database
+
+Check the AIRAC cycle is current before flight.
+
+Procedures must be loaded from the database by name — never built manually from waypoints for an RNP approach.
+
+Cross-check the loaded procedure with the chart: waypoint sequence, tracks, distances, altitude and speed constraints, and the vertical path angle on the final approach.
+
+Do not modify the final approach segment of an RNP approach (except where your procedure allows specific changes).
+
+Key takeaways:
+- Check GNSS NOTAMs and RAIM / integrity availability.
+- Jamming and spoofing: cross-check, use conventional navaids, inform ATC and report.
+- Current AIRAC; load procedures by name; cross-check with the chart; do not modify the final approach.

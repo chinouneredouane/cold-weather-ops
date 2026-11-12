@@ -23,9 +23,16 @@ from courses.rvsm import COURSE as RVSM  # noqa: E402
 from courses.cfit import COURSE as CFIT  # noqa: E402
 from courses.hot_weather import COURSE as HOT_WEATHER  # noqa: E402
 from courses.cpdlc import COURSE as CPDLC  # noqa: E402
+from courses.windshear import COURSE as WINDSHEAR  # noqa: E402
+from courses.pbn import COURSE as PBN  # noqa: E402
+from courses.regulations import COURSE as REGULATIONS  # noqa: E402
+from courses.mel import COURSE as MEL  # noqa: E402
+from courses.wind_limits import COURSE as WIND_LIMITS  # noqa: E402
+from courses.approach_minima import COURSE as APPROACH_MINIMA  # noqa: E402
+from courses.ground_equipment import COURSE as GROUND_EQUIPMENT  # noqa: E402
 from handbook import build_print  # noqa: E402
 
-COURSES = [COLD_WEATHER, UPSET_RECOVERY, RVSM, CFIT, HOT_WEATHER, CPDLC]
+COURSES = [COLD_WEATHER, UPSET_RECOVERY, RVSM, CFIT, HOT_WEATHER, CPDLC, WINDSHEAR, PBN, REGULATIONS, MEL, WIND_LIMITS, APPROACH_MINIMA, GROUND_EQUIPMENT]
 
 # Courses shown on the portal as "in preparation" (no pages yet).
 UPCOMING = []
@@ -34,19 +41,19 @@ UPCOMING = []
 # (code, title, link or None, note)
 REFRESHER = {
     "Winter season": [
-        ("W1", "Windshear Recovery and Thunderstorm Avoidance", None, ""),
+        ("W1", "Windshear Recovery and Thunderstorm Avoidance", "courses/windshear-thunderstorm/index.html", ""),
         ("W2", "Cold Weather Operations and Contaminated Runways (GRF)", "courses/cold-weather-operations/index.html", "Cold Weather Operations — Module 4"),
-        ("W3", "PBN Refresher", None, ""),
+        ("W3", "PBN Refresher", "courses/pbn-refresher/index.html", ""),
         ("W4", "De-icing and Anti-icing", "courses/cold-weather-operations/index.html", "Cold Weather Operations — Modules 2 and 3"),
-        ("W5", "Operations Manual (MANEX) and Regulations", None, "Company documents needed"),
-        ("W6", "MEL", None, "Company documents needed"),
+        ("W5", "Operations Manual (MANEX) and Regulations", "courses/regulations-om/index.html", "ICAO / EASA framework — company OM applies"),
+        ("W6", "MEL", "courses/mel-refresher/index.html", "Principles — company MEL applies"),
     ],
     "Summer season": [
         ("S1", "EGPWS / TAWS and CFIT Prevention", "courses/cfit-egpws-refresher/index.html", ""),
         ("S2", "RVSM (B737-800; awareness for Dash 8)", "courses/rvsm-refresher/index.html", ""),
-        ("S3", "Company Wind Limitations (OM B, FCOM, AFM)", None, "Company documents needed"),
-        ("S4", "Approaches Authorised by the DACM — Ceiling and Visibility (AOC)", None, "Company documents needed"),
-        ("S5", "Allowances for Inoperative Ground Equipment (OM A)", None, "Company documents needed"),
+        ("S3", "Company Wind Limitations (OM B, FCOM, AFM)", "courses/wind-limitations/index.html", "Principles — company limits in OM B"),
+        ("S4", "Approaches Authorised by the DACM — Ceiling and Visibility (AOC)", "courses/approach-minima/index.html", "ICAO / EASA — authorisations in the AOC"),
+        ("S5", "Allowances for Inoperative Ground Equipment (OM A)", "courses/inop-ground-equipment/index.html", "Principles — company table in OM A"),
         ("S6", "Hot Weather Operations", "courses/hot-weather-operations/index.html", ""),
     ],
     "Additional recurrent courses": [

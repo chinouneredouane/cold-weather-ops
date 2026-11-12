@@ -1,0 +1,32 @@
+Domestic Airlines — Inoperative Ground Equipment
+Lesson 3: Applying the Allowances in Flight
+
+Learning objectives:
+- Apply the table during planning and in flight.
+- Brief the revised minima.
+- Handle a failure during the approach.
+
+Planning
+
+Check the NOTAMs for the destination and alternates; apply the table to calculate the revised minima.
+
+Check that the weather allows the revised minima, with the planning minima for alternates.
+
+In flight
+
+Get the ATIS, confirm the status of aids and lighting, recalculate the minima and brief them.
+
+If a failure is reported during the approach , assess the effect: on a precision approach, a failure of the guidance usually requires a go-around unless the required visual reference is already established, as your procedure states.
+
+Do not improvise minima — if in doubt, use the more restrictive value or go around.
+
+Reporting
+
+Report any observed failure of aids or lighting to ATC; it may not have been detected on the ground.
+
+Company table The effect of each failed or downgraded item on the minima is given in the “failed or downgraded equipment” table of the Domestic Airlines OM A . Use that table — this course explains how it works, not its values.
+
+Key takeaways:
+- Apply the table at planning and again in flight with the latest ATIS.
+- Brief the revised minima.
+- If in doubt, use the more restrictive value or go around; report failures to ATC.

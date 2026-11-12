@@ -1,0 +1,31 @@
+Domestic Airlines — Approach Operations and Minima
+Lesson 3: Planning Minima and the Approach Ban
+
+Learning objectives:
+- Apply planning minima for destination and alternates.
+- Apply the approach ban rule.
+- Make the go-around decision at the minimum.
+
+Planning
+
+At the planning stage, the weather at the destination and the alternates must be at or above the planning minima for the expected time of use (often with a time window before and after the ETA). Planning minima for alternates are higher than the landing minima — the values are in OM A (based on CAT.OP.MPA.185 / 245).
+
+The approach ban
+
+Approach ban (EASA CAT.OP.MPA.305)
+The commander shall not continue an approach below 1,000 ft above the aerodrome (or into the final approach segment) if the reported RVR or visibility is less than the applicable minimum . If it falls below the minimum after passing 1,000 ft, the approach may be continued to the DA/H or MDA/H.
+
+At the minimum
+
+Continue below the DA/H or MDA/H only if the required visual reference is established and can be maintained — for example elements of the approach lights, the threshold, the touchdown zone or their lights.
+
+Otherwise, go around — and fly the published missed approach.
+
+If visual reference is lost below the minimum, go around immediately.
+
+Company authorisation The approach operations each fleet is authorised for — for example CAT I only, or CAT II for a fleet and crew with the approval — are listed in the AOC operations specifications issued by the DACM . The method and values for minima are in OM A ; the aerodrome minima are in OM C and the charts.
+
+Key takeaways:
+- Plan with planning minima (higher than landing minima) for destination and alternates.
+- Approach ban: no continuing below 1,000 ft if reported RVR / VIS is below minima.
+- Below DA/MDA only with the required visual reference.

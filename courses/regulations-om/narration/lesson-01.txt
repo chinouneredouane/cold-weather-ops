@@ -1,0 +1,48 @@
+Domestic Airlines — Operations Manual and Regulations
+Lesson 1: The International Framework: ICAO
+
+Learning objectives:
+- Describe the role of ICAO and the Chicago Convention.
+- Distinguish Standards, Recommended Practices and guidance material.
+- Identify the ICAO Annexes most relevant to flight crews.
+
+ICAO and the Chicago Convention
+
+The Convention on International Civil Aviation (Chicago, 1944) created the International Civil Aviation Organization (ICAO). Contracting States agree to apply ICAO Standards and Recommended Practices (SARPs) , published in the Annexes, and to notify ICAO of any differences (published in the AIP).
+
+Standards — “shall”: necessary for safety or regularity; States must comply or notify a difference.
+
+Recommended Practices — “should”: desirable; States endeavour to comply.
+
+PANS (e.g. PANS-OPS Doc 8168, PANS-ATM Doc 4444) — procedures with a wider level of detail.
+
+Manuals and circulars — guidance material (e.g. Doc 9613 PBN, Doc 9574 RVSM, Doc 10011 UPRT).
+
+Annexes most relevant to flight crew
+
+Annex Subject
+
+1 Personnel licensing
+
+2 Rules of the air
+
+3 Meteorological service
+
+6 Operation of aircraft (Part I: international commercial air transport — aeroplanes)
+
+8 Airworthiness
+
+10 / 11 Aeronautical telecommunications / Air traffic services
+
+12, 13 Search and rescue, Accident and incident investigation
+
+14 Aerodromes
+
+15 Aeronautical information services
+
+17, 18, 19 Security, Dangerous goods, Safety management
+
+Key takeaways:
+- The Chicago Convention created ICAO; States apply SARPs or notify differences.
+- Standards (“shall”), Recommended Practices (“should”), PANS and guidance manuals.
+- Annex 6 Part I is the core operational Annex for commercial air transport.

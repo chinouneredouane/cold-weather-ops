@@ -92,6 +92,45 @@ def scene(slug, n):
             5: lambda: '<rect width="1600" height="800" fill="#2a3139"/>' + cdu(),
             6: lambda: sky("dusk") + cloud(300, 650, 1.4, "#f1c1a6", .9) + aircraft(800, 380, 1.0, 0),
         }
+    elif slug == "windshear-thunderstorm":
+        s = {
+            1: lambda: sky("storm") + cumulonimbus(800, 380, 1.3) + '<path d="M700 520 L660 760 M760 520 L740 760 M820 520 L820 760" stroke="#9fb0c0" stroke-width="10" opacity=".6"/>' + ground(720, 0, "land") + runway(1100, 720, 70),
+            2: lambda: sky("storm") + cumulonimbus(1150, 360, 1.0) + ground(640, 0, "land") + runway(500, 640, 90) + aircraft(320, 360, 0.6, -3),
+            3: lambda: sky("storm") + cumulonimbus(300, 420, 0.9) + ground(700, 0, "land") + aircraft(900, 380, 1.0, 18),
+            4: lambda: sky("day") + cumulonimbus(950, 360, 1.4) + cloud(250, 650, 1.2) + aircraft(350, 300, 0.6, 0) + '<path d="M560 300 Q700 150 1000 120 T1500 260" stroke="#fff" stroke-width="6" stroke-dasharray="20 14" fill="none"/>',
+            5: lambda: cockpit(440, 0, "storm", extra=cumulonimbus(1100, 380, 0.7)) + pilots(),
+        }
+    elif slug == "pbn-refresher":
+        s = {
+            1: lambda: sky("day") + mountains(760, seed=14) + '<path d="M100 200 Q500 160 700 330 T1400 600" stroke="#ffd24a" stroke-width="7" stroke-dasharray="22 14" fill="none"/>' + aircraft(600, 260, 0.6, -6),
+            2: lambda: sky("high") + cloud(400, 700, 1.4) + aircraft(700, 450, 0.8, 0) + '<g transform="translate(1250 160)"><rect x="-40" y="-25" width="80" height="50" fill="#cfd8dc"/><rect x="-140" y="-15" width="90" height="30" fill="#1f5f99"/><rect x="50" y="-15" width="90" height="30" fill="#1f5f99"/></g>' + '<path d="M1200 200 L780 420" stroke="#ffd24a" stroke-width="5" stroke-dasharray="14 12"/>',
+            3: lambda: sky("day") + ground(620, 0, "land") + runway(300, 620, 90) + aircraft(800, 400, 0.8, 10) + '<path d="M400 620 Q700 400 1500 200" stroke="#fff" stroke-width="5" stroke-dasharray="18 12" fill="none"/>',
+            4: lambda: sky("day") + ground(560, 0, "land") + runway() + '<path d="M1500 150 Q1100 250 800 560" stroke="#ffd24a" stroke-width="6" stroke-dasharray="18 12" fill="none"/>' + aircraft(1180, 280, 0.6, -3, flip=True),
+            5: lambda: cockpit(440, 0, "day", extra=cloud(500, 380, 1.1)) + pilots(),
+        }
+    elif slug == "regulations-om":
+        s = {1: lambda: sky("day") + cloud(300, 650, 1.5) + cloud(1300, 620, 1.3) + aircraft(800, 380, 1.1, 2),
+             2: lambda: sky("high") + cloud(800, 720, 1.8) + aircraft(800, 380, 1.0, 0),
+             3: lambda: cockpit(440, 0, "dusk", extra=cloud(500, 380, 1.2, "#f1c1a6")) + pilots(),
+             4: lambda: cockpit(470, 0, "dusk", extra=sun(1200, 470, 60))}
+    elif slug == "mel-refresher":
+        s = {1: lambda: sky("day") + '<rect x="0" y="600" width="1600" height="200" fill="#6d757c"/>' + aircraft(800, 520, 1.2, 0),
+             2: lambda: cockpit(440, 0, "day", extra=cloud(500, 380, 1.0)),
+             3: lambda: cockpit(440, 0, "dusk", extra=cloud(1200, 360, 1.0, "#f1c1a6")) + pilots(),
+             4: lambda: sky("day") + ground(700, 0, "land") + aircraft(800, 400, 1.0, 12)}
+    elif slug == "wind-limitations":
+        s = {1: lambda: sky("day") + ground(560, 0, "land") + runway() + "".join(f'<path d="M{x} {y} l120 0" stroke="#fff" stroke-width="5" opacity=".7"/><path d="M{x+120} {y} l-18 -10 m18 10 l-18 10" stroke="#fff" stroke-width="5" opacity=".7"/>' for x, y in ((150, 250), (300, 330), (180, 420))) + aircraft(1100, 330, 0.6, -3, flip=True),
+             2: lambda: sky("cloud") + ground(560, 0, "land") + runway(740, 560, 120) + '<path d="M800 800 L860 560" stroke="#9fb0c0" stroke-width="40" opacity=".35"/>' + aircraft(1150, 360, 0.6, -3, flip=True),
+             3: lambda: cockpit(440, 0, "day", extra=cloud(500, 380, 1.0)) + pilots()}
+    elif slug == "approach-minima":
+        s = {1: lambda: sky("cloud") + cloud(800, 300, 3.0, "#dfe5ea", .95) + ground(620, 0, "land") + runway() + aircraft(1150, 420, 0.55, -3, flip=True),
+             2: lambda: '<rect width="1600" height="800" fill="#c9d1d8"/>' + runway(700, 450, 200) + "".join(f'<circle cx="{800+dx}" cy="{780-k*55}" r="9" fill="#fff3b0"/>' for k in range(6) for dx in (-60, -30, 0, 30, 60)) + '<rect width="1600" height="800" fill="#e8edf1" opacity=".45"/>',
+             3: lambda: sky("day") + ground(560, 0, "land") + runway() + aircraft(1100, 330, 0.6, -3, flip=True),
+             4: lambda: '<rect width="1600" height="800" fill="#b9c3cb"/>' + runway(600, 430, 400) + aircraft(800, 500, 0.9, 4, flip=True) + '<rect width="1600" height="800" fill="#e3e8ec" opacity=".55"/>'}
+    elif slug == "inop-ground-equipment":
+        s = {1: lambda: sky("dusk") + ground(560, 0, "night") + runway(700, 560, 200) + "".join(f'<circle cx="{800+dx}" cy="{790-k*40}" r="7" fill="#fff3b0"/>' for k in range(5) for dx in (-40, 0, 40)),
+             2: lambda: '<rect width="1600" height="800" fill="#0a1426"/>' + runway(640, 420, 320) + "".join(f'<circle cx="{800+dx}" cy="{790-k*45}" r="{9-k*0.8:.1f}" fill="{"#ff5a3c" if k == 7 else "#fff3b0"}"/>' for k in range(8) for dx in (-80, -40, 0, 40, 80)),
+             3: lambda: sky("night") + stars(60, 4) + ground(600, 0, "night") + runway(700, 600, 160) + aircraft(1150, 380, 0.6, -3, flip=True)}
     if not s or n not in s:
         raise KeyError((slug, n))
     return card(s[n]())

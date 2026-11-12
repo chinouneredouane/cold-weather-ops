@@ -1,0 +1,35 @@
+Domestic Airlines — Approach Operations and Minima
+Lesson 1: Classification of Instrument Approach Operations
+
+Learning objectives:
+- Classify instrument approach operations as 2D or 3D, Type A or Type B.
+- State the CAT I, CAT II and CAT III criteria.
+- Identify which operations need a specific approval.
+
+2D and 3D
+
+2D operation — lateral guidance only (e.g. VOR, NDB, LOC, LNAV, LP), flown to an MDA/H , using the CDFA technique.
+
+3D operation — lateral and vertical guidance (e.g. ILS, GLS, LNAV/VNAV, LPV), flown to a DA/H .
+
+Type A and Type B (ICAO Annex 6, adopted by EASA)
+
+Type Minimum height Category Criteria
+
+Type A MDH or DH at or above 250 ft — Non-precision and some 3D approaches with higher minima
+
+Type B DH below 250 ft CAT I DH not lower than 200 ft, and visibility not less than 800 m or RVR not less than 550 m
+
+CAT II DH lower than 200 ft but not lower than 100 ft, and RVR not less than 300 m
+
+CAT III DH lower than 100 ft or no DH, and RVR less than 300 m or no RVR limitation
+
+The former subdivisions CAT IIIA, IIIB and IIIC are no longer used: all are now CAT III . Operations below CAT I (CAT II, CAT III), and some operational credits, need a specific approval (EASA SPA.LVO).
+
+Company authorisation The approach operations each fleet is authorised for — for example CAT I only, or CAT II for a fleet and crew with the approval — are listed in the AOC operations specifications issued by the DACM . The method and values for minima are in OM A ; the aerodrome minima are in OM C and the charts.
+
+Key takeaways:
+- 2D to MDA/H (CDFA); 3D to DA/H.
+- Type A: 250 ft or above. Type B: below 250 ft — CAT I, II, III.
+- CAT I: DH ≥ 200 ft, VIS ≥ 800 m or RVR ≥ 550 m.
+- CAT II / III need a specific approval.

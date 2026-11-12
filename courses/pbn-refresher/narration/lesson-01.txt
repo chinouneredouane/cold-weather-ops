@@ -1,0 +1,47 @@
+Domestic Airlines — PBN Refresher
+Lesson 1: The PBN Concept
+
+Learning objectives:
+- Explain the performance-based navigation (PBN) concept.
+- Distinguish RNAV and RNP specifications.
+- Identify the elements of a PBN operation.
+
+From sensors to performance
+
+Conventional navigation is based on flying to and from ground beacons (VOR, NDB). Performance-based navigation (PBN) (ICAO Doc 9613) defines instead the performance an aircraft's area navigation system must achieve — accuracy, integrity, continuity and functionality — for a given airspace or procedure.
+
+A PBN operation has three elements:
+
+the navigation specification — the aircraft, system and crew requirements;
+
+the navaid infrastructure — GNSS, DME/DME, VOR/DME;
+
+the navigation application — the routes and procedures designed for it.
+
+RNAV and RNP
+
+An RNAV specification has no requirement for on-board performance monitoring and alerting.
+
+An RNP specification requires on-board performance monitoring and alerting — the system tells the crew when it cannot meet the required performance (for example “UNABLE REQD NAV PERF – RNP” or a similar alert).
+
+The number (e.g. RNP 1) is the lateral accuracy in nautical miles that must be achieved at least 95 % of the flight time.
+
+Navigation specifications
+
+Phase Typical specifications
+
+Oceanic / remote RNAV 10, RNP 4, RNP 2
+
+En route continental RNAV 5 (B-RNAV), RNAV 2, RNP 2, Advanced RNP
+
+Terminal (SID / STAR) RNAV 1, RNP 1, Advanced RNP
+
+Approach RNP APCH (LNAV, LNAV/VNAV, LP, LPV), RNP AR APCH
+
+The aircraft's AFM / AFM supplement states which specifications it is certified for, and the MEL gives the dispatch requirements. Check your fleet's capabilities in the OM B.
+
+Key takeaways:
+- PBN = navigation specification + navaid infrastructure + navigation application.
+- RNP requires on-board performance monitoring and alerting; RNAV does not.
+- RNP 1 = ±1 NM at least 95 % of the time.
+- Fleet capability: AFM, OM B and MEL.

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lesson 01: The PBN Concept — PBN Refresher</title>
+  <meta name="description" content="Explain the performance-based navigation (PBN) concept." />
+  <meta name="theme-color" content="#125a2b" />
+  <link rel="icon" type="image/png" href="../../../assets/img/logo.png" />
+  <link rel="stylesheet" href="../../../assets/css/academy.css" />
+</head>
+<body data-course="pbn-refresher" data-total="5" data-lesson="1">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="brand">
+      <a href="../index.html"><img src="../../../assets/img/logo.png" alt="Domestic Airlines Logo" class="logo" /></a>
+      <div class="brand-text">
+        <div class="ar">الخطوط الجوية الداخلية</div>
+        <div class="en">DOMESTIC AIRLINES — PBN Refresher</div>
+      </div>
+    </div>
+    <nav aria-label="Main">
+      <a href="../index.html">Home</a>
+      <a href="../quiz.html">Quiz</a>
+    </nav>
+  </header>
+  <div class="progress" aria-hidden="true"><div id="progressBar"></div></div>
+  <main id="main">
+
+    <div class="lesson-layout">
+      <div>
+        <button class="btn ghost sidebar-toggle" aria-controls="courseContents" aria-expanded="false">Show course contents</button>
+        <nav class="card sidebar" id="courseContents" aria-label="Course contents"><h2>Module 1 · PBN Principles</h2><ul><li><a href="lesson-01.html" data-lesson-link="1" aria-current="page"><span class="state" aria-hidden="true"></span><span>01. The PBN Concept</span></a></li><li><a href="lesson-02.html" data-lesson-link="2"><span class="state" aria-hidden="true"></span><span>02. GNSS, Integrity and the Navigation Database</span></a></li></ul><h2>Module 2 · PBN Operations</h2><ul><li><a href="lesson-03.html" data-lesson-link="3"><span class="state" aria-hidden="true"></span><span>03. RNAV Departures, Arrivals and En-route Operations</span></a></li><li><a href="lesson-04.html" data-lesson-link="4"><span class="state" aria-hidden="true"></span><span>04. RNP Approaches: LNAV, LNAV/VNAV, LPV</span></a></li><li><a href="lesson-05.html" data-lesson-link="5"><span class="state" aria-hidden="true"></span><span>05. Approvals, MEL and Crew Responsibilities</span></a></li></ul></nav>
+      </div>
+      <article class="lesson">
+        <header class="lesson-head">
+          <svg viewBox="0 0 100 100" class="art" aria-hidden="true" focusable="false"><path d="M34 92L44 8h12l10 84z" fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/><path d="M50 20v10M50 42v10M50 64v10" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg>
+          <div class="eyebrow">Module 1 · PBN Principles</div>
+          <h1>Lesson 01: The PBN Concept</h1>
+          <div class="meta"><span>Lesson 1 of 5</span><span>≈ 7 min</span><a class="pdf-link" href="../pdf/lesson-01.pdf" download>⬇ Download PDF</a></div>
+        </header>
+        <div class="card lesson-body">
+          <div class="audio-block">
+            <span class="label">Lesson narration</span>
+            <audio controls preload="metadata" style="display:none"><source src="../media/audio/lesson-01.mp3" type="audio/mpeg"></audio>
+            <button type="button" class="btn primary" data-tts style="display:none">Listen</button>
+            <button type="button" class="btn ghost" data-tts-stop style="display:none">Stop</button>
+            <div class="audio-status" aria-live="polite">Checking for narration…</div>
+          </div>
+          <section class="objectives" data-narrate>
+            <h2>Learning objectives</h2>
+            <ul><li>Explain the performance-based navigation (PBN) concept.</li><li>Distinguish RNAV and RNP specifications.</li><li>Identify the elements of a PBN operation.</li></ul>
+          </section>
+          <figure class="lesson-figure"><img src="../media/images/lesson-01.jpg" alt="Airliner following a curved RNP path" loading="lazy" decoding="async"><figcaption>PBN: the performance matters, not the sensor.</figcaption></figure>
+          <div data-narrate>
+
+<h2>From sensors to performance</h2>
+<p>Conventional navigation is based on flying to and from ground beacons (VOR, NDB). <strong>Performance-based navigation (PBN)</strong> (ICAO Doc 9613) defines instead the <strong>performance</strong> an aircraft's area navigation system must achieve — accuracy, integrity, continuity and functionality — for a given airspace or procedure.</p>
+<p>A PBN operation has three elements:</p>
+<ul>
+  <li>the <strong>navigation specification</strong> — the aircraft, system and crew requirements;</li>
+  <li>the <strong>navaid infrastructure</strong> — GNSS, DME/DME, VOR/DME;</li>
+  <li>the <strong>navigation application</strong> — the routes and procedures designed for it.</li>
+</ul>
+
+<h2>RNAV and RNP</h2>
+<figure class="diagram"><svg viewBox="0 0 820 280" role="img" aria-label="RNP containment"><title>RNP lateral performance</title>
+<desc>The desired path with a band of plus or minus the RNP value, and an outer band of two times RNP.</desc>
+<g font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="13" fill="#24342b">
+<rect x="40" y="70" width="620" height="160" rx="8" fill="#c76a00" opacity=".12"/>
+<rect x="40" y="110" width="620" height="80" rx="8" fill="#1d7a3e" opacity=".18"/>
+<line x1="40" y1="150" x2="660" y2="150" stroke="#125a2b" stroke-width="3"/>
+<path d="M60 160 Q200 132 340 155 T660 146" stroke="#1f5f99" stroke-width="3" fill="none"/>
+<path d="M100 140 l20 -4 l6 -6 l4 2 l-3 6 l16 -1 l2 3 l-16 2 l-2 7 l-4 0 l-1 -6 l-20 2z" fill="#24342b"/>
+<text x="670" y="154" fill="#125a2b" font-weight="700">desired path</text>
+<text x="670" y="118" fill="#125a2b">± RNP value (95 %)</text>
+<text x="670" y="78" fill="#c76a00">± 2 × RNP</text>
+<text x="40" y="40" font-weight="700" font-size="14">RNP: the aircraft must stay within ± the RNP value at least 95 % of the flight time —</text>
+<text x="40" y="58" fill="#5b6b62">and an RNP system must monitor its own performance and alert the crew when it cannot.</text>
+<text x="40" y="260" fill="#1f5f99">actual flight path = path definition error + flight technical error + navigation system error</text></g></svg>
+<figcaption>Total system error combines the path definition, flight technical and navigation system errors. On-board performance monitoring and alerting is what makes a specification “RNP”.</figcaption></figure>
+<ul>
+  <li>An <strong>RNAV</strong> specification has no requirement for on-board performance monitoring and alerting.</li>
+  <li>An <strong>RNP</strong> specification <strong>requires on-board performance monitoring and alerting</strong> — the system tells the crew when it cannot meet the required performance (for example “UNABLE REQD NAV PERF – RNP” or a similar alert).</li>
+  <li>The number (e.g. RNP 1) is the lateral accuracy in nautical miles that must be achieved at least 95 % of the flight time.</li>
+</ul>
+
+<h2>Navigation specifications</h2>
+<div class="table-wrap"><table>
+<tr><th>Phase</th><th>Typical specifications</th></tr>
+<tr><td>Oceanic / remote</td><td>RNAV 10, RNP 4, RNP 2</td></tr>
+<tr><td>En route continental</td><td>RNAV 5 (B-RNAV), RNAV 2, RNP 2, Advanced RNP</td></tr>
+<tr><td>Terminal (SID / STAR)</td><td>RNAV 1, RNP 1, Advanced RNP</td></tr>
+<tr><td>Approach</td><td>RNP APCH (LNAV, LNAV/VNAV, LP, LPV), RNP AR APCH</td></tr>
+</table></div>
+<p>The aircraft's <strong>AFM / AFM supplement</strong> states which specifications it is certified for, and the <strong>MEL</strong> gives the dispatch requirements. Check your fleet's capabilities in the OM B.</p>
+
+          </div>
+          <section class="takeaways" data-narrate>
+            <h2>Key takeaways</h2>
+            <ul><li>PBN = navigation specification + navaid infrastructure + navigation application.</li><li>RNP requires on-board performance monitoring and alerting; RNAV does not.</li><li>RNP 1 = ±1 NM at least 95 % of the time.</li><li>Fleet capability: AFM, OM B and MEL.</li></ul>
+          </section>
+          <section class="kc" data-answer="1" data-explain="RNP requires on-board performance monitoring and alerting.">
+            <h2>Knowledge check</h2>
+            <p class="q">What distinguishes an RNP specification from an RNAV specification?</p>
+            <div class="opts"><button type="button" class="opt" aria-pressed="false">A smaller number</button><button type="button" class="opt" aria-pressed="false">On-board performance monitoring and alerting</button><button type="button" class="opt" aria-pressed="false">The use of VOR</button><button type="button" class="opt" aria-pressed="false">Autopilot coupling</button></div>
+            <div class="fb" aria-live="polite"></div>
+          </section>
+          <div class="lesson-end"></div>
+        </div>
+        <nav class="lesson-nav" aria-label="Lesson navigation"><a class="btn" href="../index.html">◀ Course home</a><a class="btn primary" id="nextLesson" href="lesson-02.html">Next ▶<small>GNSS, Integrity and the Navigation Database</small></a></nav>
+      </article>
+    </div>
+  </main>
+  <footer class="bottombar">
+    <img src="../../../assets/img/logo.png" alt="Domestic Airlines Logo" class="logo small" />
+    <div class="copy">&copy; 2026 Domestic Airlines — Training</div>
+    <a href="../../../index.html">All courses</a>
+    <p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p>
+  </footer>
+<script src="../../../assets/js/course.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+Domestic Airlines — Operations Manual and Regulations
+Lesson 4: Commander's Authority, Duties and Key Rules
+
+Learning objectives:
+- State the authority and responsibilities of the commander.
+- Review key operational rules found in OM A.
+- Recognise the documents to be carried on board.
+
+The commander
+
+Responsible for the safety of the aircraft, persons and cargo on board, and for the conduct of the flight (ICAO Annex 6; EASA CAT.GEN.MPA.105).
+
+Has the authority to give all commands necessary for safety, to disembark persons or cargo that may be a hazard, and to refuse to carry inadmissible passengers or unsafe cargo.
+
+May deviate from rules, procedures and methods in an emergency requiring immediate decision and action, in the interest of safety — and must report it.
+
+Must not start the flight unless satisfied that all operational requirements are met: aircraft airworthiness, documents, crew fitness, weather and NOTAMs, fuel, mass and balance, MEL.
+
+Key OM A subjects to review each year
+
+Crew composition and designation of the commander; in-flight relief;
+
+flight and duty time limitations and rest (ORO.FTL), fatigue reporting;
+
+fuel policy and in-flight fuel management;
+
+aerodrome selection, operating minima and the inoperative ground equipment table;
+
+stabilised approach and go-around policy; sterile flight deck;
+
+dangerous goods, security and the handling of accidents and occurrences (reporting).
+
+Documents on board
+
+Typical documents include: certificate of registration and certificate of airworthiness (with ARC), noise certificate, AOC copy and operations specifications, radio licence, insurance, journey log / technical log, crew licences and medical certificates, relevant parts of the Operations Manual, the AFM, the MEL, charts, the operational flight plan, mass and balance documentation, NOTAMs and weather, and the NOTOC when dangerous goods are carried. The exact list is in OM A.
+
+Company documents This lesson explains the international framework. The exact company rules are in the Domestic Airlines Operations Manual and the national regulations of the DACM — always refer to the current edition.
+
+Key takeaways:
+- The commander is responsible for safety and has the authority to act for it.
+- Emergency deviation from procedures is allowed in the interest of safety — and must be reported.
+- Review OM A each year: FTL, fuel policy, minima, stabilised approach, DG, security, reporting.

@@ -1,0 +1,48 @@
+Domestic Airlines — Inoperative Ground Equipment
+Lesson 2: The Equipment and the Table
+
+Learning objectives:
+- Identify the ground equipment covered by the table.
+- Understand approach lighting classes.
+- Read the failed equipment table correctly.
+
+Equipment covered
+
+ILS / GLS components — localiser, glide path, standby transmitters, outer and middle markers or the DME replacing them.
+
+Navigation aids for non-precision approaches — VOR, NDB, DME.
+
+RVR assessment systems — touchdown zone, mid-point and stop-end sensors.
+
+Lighting — approach lights, runway edge, threshold and end lights, runway centreline lights, touchdown zone lights, and standby power for lighting.
+
+Approach lighting classes (EASA)
+
+Class Length of the approach lighting
+
+FALS — full approach lighting 720 m or more
+
+IALS — intermediate 420 m to 719 m
+
+BALS — basic 210 m to 419 m
+
+NALS — no approach lighting less than 210 m, or none
+
+The minimum RVR for an approach depends on the lighting class. When part of the approach lighting fails, the class can change — and the RVR minimum increases.
+
+Reading the table
+
+Find the failed or downgraded item.
+
+Find the column for your type of approach (e.g. CAT II/III, CAT I, 2D).
+
+Read the effect: no effect, a modified condition, an increased RVR, or “not allowed”.
+
+Apply only one entry per failed item ; if several items have failed, apply the most restrictive result, and check the notes in the table.
+
+Company table The effect of each failed or downgraded item on the minima is given in the “failed or downgraded equipment” table of the Domestic Airlines OM A . Use that table — this course explains how it works, not its values.
+
+Key takeaways:
+- Covered: ILS components, navaids, RVR systems, lighting.
+- Lighting classes FALS / IALS / BALS / NALS set the RVR minimum.
+- Read the item, the approach type column and the effect; apply the most restrictive result for multiple failures.

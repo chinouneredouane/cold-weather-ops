@@ -1,0 +1,40 @@
+Domestic Airlines — Wind Limitations
+Lesson 3: Company Limits and Crew Application
+
+Learning objectives:
+- Apply company wind limits for each fleet and crew situation.
+- Use speed additives and technique for wind.
+- Decide when the wind does not allow take-off or landing.
+
+Company limits
+
+The OM B normally defines, for each fleet:
+
+maximum crosswind for take-off and landing — dry, wet and by RWYCC — including gusts;
+
+maximum tailwind;
+
+more restrictive limits when the first officer is pilot flying or for crews with limited experience on type;
+
+limits for low-visibility operations and autoland;
+
+possible restrictions at specific aerodromes (OM C).
+
+Application
+
+Get the latest wind (ATIS / tower) and the runway condition.
+
+Calculate the components with the gust; check the most restrictive limit that applies (aircraft, company, crew, runway condition, LVO).
+
+Apply the approach speed wind additive defined in your FCOM / AOM.
+
+Brief the crosswind technique and the go-around if the limits are exceeded on short final.
+
+Decision If the wind exceeds a limit, do not take off or land — wait, use another runway or divert. Wind limits are not targets.
+
+Company limits The actual Domestic Airlines wind limits for each fleet — crosswind by runway condition, tailwind, gusts, limits for the first officer as pilot flying and for low-visibility / autoland — are in the OM B , the FCOM / AOM and the AFM . Always use them; the figures in this course are examples only.
+
+Key takeaways:
+- Use the most restrictive limit: aircraft, company, crew, runway condition, LVO, aerodrome.
+- Calculate with the gust; apply the FCOM / AOM speed additive.
+- Above a limit: wait, change runway or divert.

@@ -1,0 +1,36 @@
+Domestic Airlines — Inoperative Ground Equipment
+Lesson 1: Why Ground Equipment Matters
+
+Learning objectives:
+- Explain why published minima assume serviceable ground equipment.
+- Identify how failures are notified.
+- Describe the possible effects on an approach.
+
+Minima assume serviceable equipment
+
+Aerodrome operating minima are established for a runway with its navigation aids, lighting and RVR equipment serviceable (EASA CAT.OP.MPA.110; ICAO Doc 9365). When an item fails or is downgraded, the minima may have to be increased , or the approach may not be available .
+
+How you find out
+
+NOTAM — planned or known outages (e.g. ILS glide path unserviceable, approach lights out of service).
+
+ATIS and ATC — recent failures.
+
+Flight deck indications — loss of an ILS signal, flags, or visible lighting failures.
+
+Possible effects
+
+No effect — for example a failure that has an equivalent replacement (a marker replaced by a DME distance or another fix).
+
+Higher minima — for example an increased RVR when approach lights are out.
+
+Downgrade — for example from CAT II to CAT I, or from a 3D to a 2D approach (ILS to LOC only).
+
+Approach not available .
+
+Company table The effect of each failed or downgraded item on the minima is given in the “failed or downgraded equipment” table of the Domestic Airlines OM A . Use that table — this course explains how it works, not its values.
+
+Key takeaways:
+- Minima assume serviceable ground aids, lighting and RVR equipment.
+- Failures come from NOTAM, ATIS / ATC or flight deck indications.
+- Effects: none, higher minima, downgrade, or no approach.

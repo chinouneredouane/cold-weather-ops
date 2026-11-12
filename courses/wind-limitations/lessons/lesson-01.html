@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lesson 01: Wind Reports and Wind Components — Wind Limitations</title>
+  <meta name="description" content="Interpret wind reports correctly." />
+  <meta name="theme-color" content="#125a2b" />
+  <link rel="icon" type="image/png" href="../../../assets/img/logo.png" />
+  <link rel="stylesheet" href="../../../assets/css/academy.css" />
+</head>
+<body data-course="wind-limitations" data-total="3" data-lesson="1">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="brand">
+      <a href="../index.html"><img src="../../../assets/img/logo.png" alt="Domestic Airlines Logo" class="logo" /></a>
+      <div class="brand-text">
+        <div class="ar">الخطوط الجوية الداخلية</div>
+        <div class="en">DOMESTIC AIRLINES — Wind Limitations</div>
+      </div>
+    </div>
+    <nav aria-label="Main">
+      <a href="../index.html">Home</a>
+      <a href="../quiz.html">Quiz</a>
+    </nav>
+  </header>
+  <div class="progress" aria-hidden="true"><div id="progressBar"></div></div>
+  <main id="main">
+
+    <div class="lesson-layout">
+      <div>
+        <button class="btn ghost sidebar-toggle" aria-controls="courseContents" aria-expanded="false">Show course contents</button>
+        <nav class="card sidebar" id="courseContents" aria-label="Course contents"><h2>Module 1 · Wind and Limitations</h2><ul><li><a href="lesson-01.html" data-lesson-link="1" aria-current="page"><span class="state" aria-hidden="true"></span><span>01. Wind Reports and Wind Components</span></a></li><li><a href="lesson-02.html" data-lesson-link="2"><span class="state" aria-hidden="true"></span><span>02. Aircraft Wind Limitations</span></a></li><li><a href="lesson-03.html" data-lesson-link="3"><span class="state" aria-hidden="true"></span><span>03. Company Limits and Crew Application</span></a></li></ul></nav>
+      </div>
+      <article class="lesson">
+        <header class="lesson-head">
+          <svg viewBox="0 0 100 100" class="art" aria-hidden="true" focusable="false"><path d="M34 92L44 8h12l10 84z" fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/><path d="M50 20v10M50 42v10M50 64v10" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg>
+          <div class="eyebrow">Module 1 · Wind and Limitations</div>
+          <h1>Lesson 01: Wind Reports and Wind Components</h1>
+          <div class="meta"><span>Lesson 1 of 3</span><span>≈ 6 min</span><a class="pdf-link" href="../pdf/lesson-01.pdf" download>⬇ Download PDF</a></div>
+        </header>
+        <div class="card lesson-body">
+          <div class="audio-block">
+            <span class="label">Lesson narration</span>
+            <audio controls preload="metadata" style="display:none"><source src="../media/audio/lesson-01.mp3" type="audio/mpeg"></audio>
+            <button type="button" class="btn primary" data-tts style="display:none">Listen</button>
+            <button type="button" class="btn ghost" data-tts-stop style="display:none">Stop</button>
+            <div class="audio-status" aria-live="polite">Checking for narration…</div>
+          </div>
+          <section class="objectives" data-narrate>
+            <h2>Learning objectives</h2>
+            <ul><li>Interpret wind reports correctly.</li><li>Calculate headwind, tailwind and crosswind components.</li><li>Use gusts correctly.</li></ul>
+          </section>
+          <figure class="lesson-figure"><img src="../media/images/lesson-01.jpg" alt="Airliner approaching a runway in a crosswind" loading="lazy" decoding="async"><figcaption>Calculate the components with the gust.</figcaption></figure>
+          <div data-narrate>
+
+<h2>Wind reports</h2>
+<ul>
+  <li>In the <strong>METAR</strong>, the wind is a 10-minute mean; in reports for <strong>take-off and landing</strong> from the tower (and ATIS), it is a 2-minute mean for the runway (ICAO Annex 3).</li>
+  <li><strong>Gusts</strong> are reported when the maximum wind exceeds the mean by 10 kt or more: <code>27015G28KT</code> = 270°, 15 kt, gusting 28 kt.</li>
+  <li>Variable direction: <code>27015KT 240V300</code> — direction varies between 240° and 300°.</li>
+  <li>Directions in METAR / TAF are <strong>true</strong>; tower and ATIS winds are <strong>magnetic</strong>.</li>
+</ul>
+
+<h2>Components</h2>
+<figure class="diagram"><svg viewBox="0 0 800 300" role="img" aria-label="Wind components"><title>Headwind and crosswind components</title>
+<desc>A 20 kt wind at 30 degrees to the runway gives about 17 kt of headwind and 10 kt of crosswind.</desc>
+<g font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="13" fill="#24342b"><defs><marker id="ar11" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="context-stroke"/></marker></defs>
+<rect x="280" y="40" width="40" height="250" fill="#3b4540"/><path d="M300 60 L300 280" stroke="#fff" stroke-width="3" stroke-dasharray="14 10"/>
+<text x="300" y="32" text-anchor="middle" font-weight="700">RWY 36</text>
+<line x1="410" y1="89" x2="300" y2="280" stroke="#1f5f99" stroke-width="4" marker-end="url(#ar11)"/>
+<text x="420" y="95" fill="#1f5f99" font-weight="700">wind 030° / 20 kt</text>
+<line x1="255" y1="89" x2="255" y2="280" stroke="#1d7a3e" stroke-width="4" marker-end="url(#ar11)"/>
+<text x="245" y="170" fill="#125a2b" font-weight="700" text-anchor="end">headwind ≈ 17 kt</text>
+<line x1="410" y1="89" x2="300" y2="89" stroke="#c76a00" stroke-width="4" marker-end="url(#ar11)"/>
+<text x="420" y="67" fill="#c76a00" font-weight="700">crosswind = 10 kt</text>
+<g font-size="13"><text x="520" y="120" font-weight="700">Rule of thumb (crosswind)</text>
+<text x="520" y="145">30° off the runway → ½ of the wind</text><text x="520" y="168">45° → about 0.7 of the wind</text>
+<text x="520" y="191">60° → about 0.9 of the wind</text><text x="520" y="214">90° → all of the wind</text>
+<text x="520" y="250" fill="#5b6b62">crosswind = wind × sin(angle)</text><text x="520" y="272" fill="#5b6b62">headwind = wind × cos(angle)</text></g></g></svg>
+<figcaption>Always use the gust value when checking a crosswind limit, unless the company procedure states otherwise.</figcaption></figure>
+<ul>
+  <li>Use the FMS / EFB, the wind component chart or the rule of thumb.</li>
+  <li>For limits, check the crosswind with the <strong>gust</strong> and the tailwind with the steady wind and the gust as your procedure states.</li>
+  <li>With a variable wind direction, use the most unfavourable direction.</li>
+</ul>
+
+          </div>
+          <section class="takeaways" data-narrate>
+            <h2>Key takeaways</h2>
+            <ul><li>METAR wind: 10-min mean, true; tower / ATIS: 2-min mean, magnetic.</li><li>Gusts reported when 10 kt or more above the mean.</li><li>Crosswind ≈ wind × sin(angle); use the gust for crosswind limits.</li></ul>
+          </section>
+          <section class="kc" data-answer="1" data-explain="30° off the runway: half the wind, about 10 kt.">
+            <h2>Knowledge check</h2>
+            <p class="q">Wind 090°/20 kt on runway 06. Approximately what is the crosswind?</p>
+            <div class="opts"><button type="button" class="opt" aria-pressed="false">5 kt</button><button type="button" class="opt" aria-pressed="false">10 kt</button><button type="button" class="opt" aria-pressed="false">17 kt</button><button type="button" class="opt" aria-pressed="false">20 kt</button></div>
+            <div class="fb" aria-live="polite"></div>
+          </section>
+          <div class="lesson-end"></div>
+        </div>
+        <nav class="lesson-nav" aria-label="Lesson navigation"><a class="btn" href="../index.html">◀ Course home</a><a class="btn primary" id="nextLesson" href="lesson-02.html">Next ▶<small>Aircraft Wind Limitations</small></a></nav>
+      </article>
+    </div>
+  </main>
+  <footer class="bottombar">
+    <img src="../../../assets/img/logo.png" alt="Domestic Airlines Logo" class="logo small" />
+    <div class="copy">&copy; 2026 Domestic Airlines — Training</div>
+    <a href="../../../index.html">All courses</a>
+    <p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p>
+  </footer>
+<script src="../../../assets/js/course.js"></script>
+</body>
+</html>

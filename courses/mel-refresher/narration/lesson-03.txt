@@ -1,0 +1,40 @@
+Domestic Airlines — MEL Refresher
+Lesson 3: Using the MEL for Dispatch
+
+Learning objectives:
+- Apply the MEL dispatch process as a crew.
+- Combine several MEL items correctly.
+- Recognise items that affect specific approvals and performance.
+
+The dispatch process
+
+Read the technical log : open defects and deferred items.
+
+Find each item in the MEL and read the preamble and definitions if in doubt.
+
+Check the number required , the category and expiry date , and the remarks.
+
+Confirm that the (M) procedure has been completed and the placard fitted.
+
+Apply the (O) procedure : performance penalties, fuel, flight planning restrictions, in-flight actions.
+
+Brief the crew on the effect of the item.
+
+Several items together
+
+The MEL items are written independently. When several items are inoperative, the commander must consider their combined effect — some combinations are not acceptable even if each item alone is. Check the MEL preamble guidance on multiple items.
+
+Specific approvals and performance
+
+The MEL contains the dispatch requirements for systems that need a specific approval or capability: RVSM, RNAV/PBN, LVO , and others. An item can remove a capability (for example: no RVSM, no CAT II).
+
+Many items carry performance penalties — more critical on hot days and short runways.
+
+Some items restrict operation in icing conditions or at night.
+
+Commander's decision Dispatch under the MEL is allowed, not obligatory. The commander may refuse an aircraft if, in the actual conditions, the combination of items is unsafe.
+
+Key takeaways:
+- Tech log → MEL item → category and expiry → (M) done and placard → (O) applied → brief.
+- Consider the combined effect of several items.
+- MEL items can remove RVSM, PBN or LVO capability and add performance penalties.

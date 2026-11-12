@@ -35,6 +35,14 @@ def load_course(name):
 
 # Spoken forms for abbreviations and symbols (applied in order).
 SPOKEN = [
+    (r"\bCAT (III|II|I)\b", lambda m: "cat " + {"I": "one", "II": "two", "III": "three"}[m.group(1)]), (r"\b2D\b", "2 D"), (r"\b3D\b", "3 D"),
+    (r"\bMMEL\b", "master M E L"), (r"\bCDL\b", "C D L"), (r"\bRAIM\b", "raim"), (r"\bSBAS\b", "S-bas"), (r"\bGNSS\b", "G N S S"),
+    (r"\bAIRAC\b", "air-rack"), (r"\bLPV\b", "L P V"), (r"\bLP\b", "L P"), (r"\bLNAV\b", "L NAV"), (r"\bRVR\b", "R V R"), (r"\bCMV\b", "C M V"),
+    (r"\bOCA/H\b", "O C A or H"), (r"\bFALS\b", "fals"), (r"\bIALS\b", "I A L S"), (r"\bBALS\b", "balls"), (r"\bNALS\b", "nals"),
+    (r"\bLVP\b", "L V P"), (r"\bLVTO\b", "L V T O"), (r"\bSARPs\b", "sarps"), (r"\bPANS\b", "pans"), (r"\bAMC\b", "A M C"), (r"\bGM\b", "G M"),
+    (r"\bATA\b", "A T A"), (r"\bOM ([A-D])\b", r"O M \1"), (r"\bNOTOC\b", "no-tock"), (r"\bFTL\b", "F T L"), (r"\bAOC\b", "A O C"),
+    (r"\bEFB\b", "E F B"), (r"\+TSRA", "heavy thunderstorm with rain"), (r"\bTS\b", "T S"), (r"\bWS R26\b", "windshear runway 26"),
+    (r"Part-(ARO|ORO|CAT|SPA|FCL)", lambda m: "Part " + " ".join(m.group(1))), (r"\bAIP\b", "A I P"),
     (r"\b(ACAS|TCAS) II\b", r"\1 two"), (r"CAT\.IDE\.A\.(\d+)", r"CAT I D E A \1"), (r"\bSPA\.RVSM\b", "S P A R V S M"),
     (r"\bRVSM\b", "R V S M"), (r"\bCPDLC\b", "C P D L C"), (r"\bPM-CPDLC\b", "protected mode C P D L C"), (r"\bMASPS\b", "mass-ps"),
     (r"\bEGPWS\b", "E G P W S"), (r"\bGPWS\b", "G P W S"), (r"\bTAWS\b", "tawss"), (r"\bCFIT\b", "see-fit"), (r"\bCDFA\b", "C D F A"),

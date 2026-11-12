@@ -1,0 +1,36 @@
+Domestic Airlines — PBN Refresher
+Lesson 5: Approvals, MEL and Crew Responsibilities
+
+Learning objectives:
+- Identify the approvals and documents for PBN operations.
+- Apply the MEL to navigation equipment.
+- Summarise crew responsibilities in PBN operations.
+
+Documents and approvals
+
+The AFM states the aircraft's PBN capabilities. The OM B lists the company's PBN operations by fleet.
+
+The flight plan item 10 and item 18 ( PBN/ ) codes must match the aircraft's actual capability and approvals.
+
+Specific approvals (for example RNP AR APCH) are listed in the operations specifications of the AOC.
+
+MEL
+
+The MEL includes the dispatch requirements for systems that need a specific capability or approval — RNAV/PBN, RVSM and LVO. Check the MEL for FMS, GNSS receivers, IRS and display units before planning a PBN route or approach.
+
+Crew responsibilities
+
+Plan: NOTAMs, GNSS integrity, database currency, equipment and MEL.
+
+Load and cross-check procedures from the database.
+
+Fly with the required modes and monitor deviations and alerts.
+
+Act on alerts: inform ATC, apply the contingency, go around when required.
+
+Report navigation errors and GNSS interference.
+
+Key takeaways:
+- AFM + OM B + AOC specify PBN capability and approvals; flight plan codes must match.
+- Check the MEL for FMS, GNSS, IRS and displays.
+- Plan, load and check, fly and monitor, act on alerts, report.

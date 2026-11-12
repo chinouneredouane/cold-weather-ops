@@ -1,0 +1,247 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Windshear and Thunderstorm Avoidance — Course handbook</title>
+<style>
+@page{size:A4;margin:18mm 16mm 20mm}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#24342b;font-size:10.5pt;line-height:1.5;margin:0}
+h1,h2,h3{color:#14231b;line-height:1.25;break-after:avoid}
+h1{font-size:21pt;margin:0 0 6pt}h2{font-size:14pt;margin:16pt 0 6pt}h3{font-size:12pt;margin:12pt 0 4pt}
+p{margin:0 0 7pt}ul,ol{margin:0 0 8pt;padding-left:16pt}li{margin:2pt 0}
+a{color:#125a2b;text-decoration:none}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:9pt;background:#f3f9f5;border:1px solid #dbe5df;padding:0 3pt;border-radius:3pt}
+.cover{height:257mm;display:flex;flex-direction:column;justify-content:center;break-after:page;
+  background:linear-gradient(120deg,#0c3d1e,#125a2b 55%,#2a8a50);color:#fff;padding:22mm;border-radius:4mm;margin:0}
+.cover h1{color:#fff;font-size:34pt}.cover .k{letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#bfe3cb;font-size:10pt}
+.cover p{color:#e3f1e8;font-size:13pt}.cover .logo{background:#fff;padding:5mm 7mm;border-radius:3mm;display:inline-block;margin-bottom:14mm}
+.cover .logo img{height:16mm}.cover .meta{margin-top:12mm;font-size:10.5pt;color:#d3ebdb}
+.toc{break-after:page}.toc h2{margin-top:0}.toc ol{list-style:none;padding:0}
+.toc li{display:flex;gap:8pt;padding:3pt 0;border-bottom:1px dotted #c9d8cf}.toc .n{width:22pt;font-weight:700;color:#5b6b62}
+.toc .mod{margin-top:9pt;font-weight:800;color:#125a2b;border:0;text-transform:uppercase;font-size:9pt;letter-spacing:.06em}
+.lesson{break-before:page}
+.lesson-head{background:linear-gradient(120deg,#0c3d1e,#1d7a3e);color:#fff;border-radius:3mm;padding:9pt 13pt;margin-bottom:10pt}
+.lesson-head h1{color:#fff;font-size:17pt;margin:2pt 0}.lesson-head .k{font-size:8.5pt;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#c7e8d2}
+.lesson-head .m{font-size:9pt;color:#dbefe2}
+.objectives{background:#f3f9f5;border:1px solid #dbe5df;border-radius:2mm;padding:7pt 11pt;margin:0 0 10pt}
+.objectives h2,.takeaways h2,.kc h2{font-size:9.5pt;text-transform:uppercase;letter-spacing:.06em;margin:0 0 3pt;color:#125a2b}
+.lesson-figure{margin:0 0 10pt;break-inside:avoid}.lesson-figure img{width:100%;max-height:85mm;object-fit:contain;border:1px solid #dbe5df;border-radius:2mm;background:#f3f9f5}
+figure{margin:9pt 0;break-inside:avoid}figure svg{width:100%;height:auto}figcaption{font-size:8.5pt;color:#5b6b62;margin-top:3pt}
+.diagram{border:1px solid #dbe5df;border-radius:2mm;padding:5pt}
+.table-wrap{margin:8pt 0;border:1px solid #dbe5df;border-radius:2mm;overflow:hidden}
+table{border-collapse:collapse;width:100%;font-size:9pt}th,td{text-align:left;vertical-align:top;padding:4pt 6pt;border-bottom:1px solid #dbe5df}
+th{background:#f3f9f5}tr{break-inside:avoid}td.code{font-weight:800;font-size:12pt;text-align:center;width:34pt}
+.callout{border-left:3pt solid #1d7a3e;background:#f3f9f5;padding:6pt 10pt;margin:8pt 0;border-radius:0 2mm 2mm 0;break-inside:avoid}
+.callout .label{display:block;font-size:8.5pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#125a2b}
+.callout.warn{border-color:#c8102e;background:#fdecef}.callout.warn .label{color:#c8102e}
+.callout.caution{border-color:#d08a00;background:#fff5e0}.callout.caution .label{color:#9a6200}
+.callout.info{border-color:#1f5f99;background:#e9f2fb}.callout.info .label{color:#1f5f99}
+.callout > :last-child{margin-bottom:0}
+.steps{list-style:none;padding:0;counter-reset:s}.steps>li{counter-increment:s;position:relative;padding-left:20pt;margin:4pt 0}
+.steps>li::before{content:counter(s);position:absolute;left:0;top:0;width:14pt;height:14pt;border-radius:50%;background:#1d7a3e;color:#fff;font-weight:800;font-size:8pt;display:flex;align-items:center;justify-content:center}
+.dialog{border:1px solid #dbe5df;border-radius:2mm;padding:4pt 10pt;margin:8pt 0;break-inside:avoid}.dialog p{margin:4pt 0}.dialog b{color:#125a2b}
+.muted{color:#5b6b62}
+.takeaways{background:#0c3d1e;color:#e8f5ec;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}.takeaways h2{color:#fff}
+.kc{border:1.5pt dashed #b9d7c3;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}
+.kc .q{font-weight:700;margin:2pt 0 4pt}.kc ol{list-style:upper-alpha}.kc .a{font-size:9pt;margin-top:4pt;color:#125a2b}
+.disclaimer{font-size:8.5pt;color:#5b6b62;border-top:1px solid #dbe5df;padding-top:6pt;margin-top:14pt}
+</style></head><body>
+<section class="cover"><div><span class="logo"><img src="../../../assets/img/logo.png" alt="Domestic Airlines"></span></div>
+  <div class="k">Domestic Airlines — Training</div><h1>Windshear and Thunderstorm Avoidance</h1>
+  <p>Course handbook</p><p>Low-level windshear and microbursts, recognition and avoidance, the escape manoeuvre, weather radar and thunderstorm avoidance.</p>
+  <div class="meta">5 lessons · 2 modules · about 0.5 hours</div>
+  <div class="meta">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</div></section>
+<section class="toc"><h2>Contents</h2><ol><li class="mod">Module 1 — Windshear</li><li><span class="n">01</span><a href="#lesson-1">Windshear: Definition, Sources and Effects</a></li><li><span class="n">02</span><a href="#lesson-2">Avoidance and Recognition</a></li><li><span class="n">03</span><a href="#lesson-3">The Windshear Escape Manoeuvre</a></li><li class="mod">Module 2 — Thunderstorms and Planning</li><li><span class="n">04</span><a href="#lesson-4">Thunderstorm Avoidance and Weather Radar</a></li><li><span class="n">05</span><a href="#lesson-5">Planning, CRM and Lessons Learned</a></li></ol></section>
+<section class="lesson" id="lesson-1">
+  <div class="lesson-head"><div class="k">Module 1 · Windshear</div>
+    <h1>Lesson 01: Windshear: Definition, Sources and Effects</h1><div class="m">Lesson 1 of 5 · about 7 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Define windshear and microburst.</li><li>Identify the weather situations that produce low-level windshear.</li><li>Explain the effect of windshear on aircraft performance.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-01.jpg" alt="Thunderstorm with a rain shaft near an airport"><figcaption>Microbursts from convective clouds are the most dangerous windshear.</figcaption></figure>
+  
+<h2>Definition</h2>
+<p><strong>Windshear</strong> is a change of wind speed and/or direction over a short distance, horizontally or vertically. <strong>Low-level windshear</strong> — below about 1,600 ft above ground — is the most dangerous, because it occurs during take-off and approach, when the aircraft is slow, close to the ground and has little energy margin (ICAO Doc 9817).</p>
+
+<h2>Sources</h2>
+<ul>
+  <li><strong>Thunderstorms and convective clouds</strong> — downbursts and microbursts, gust fronts and outflow, which can extend well away from the cell.</li>
+  <li><strong>Frontal systems</strong> — especially fast-moving cold fronts with strong temperature contrasts.</li>
+  <li><strong>Low-level jet streams and temperature inversions</strong> — wind changing sharply in speed or direction across the inversion layer.</li>
+  <li><strong>Terrain and obstacles</strong> — strong winds over hills, buildings or hangars near the runway, and sea breezes.</li>
+</ul>
+
+<h2>The microburst</h2>
+
+<figure class="diagram">
+<svg viewBox="0 0 640 290" role="img" aria-label="Microburst windshear on approach"><title>Microburst windshear on approach</title><desc>Headwind, downdraft and tailwind phases of a microburst.</desc>
+<g font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="13" fill="#24342b"><defs><marker id="ar5" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="context-stroke"/></marker></defs>
+<path d="M220 30 Q320 0 420 30 Q460 40 450 60 L190 60 Q180 40 220 30z" fill="#c9d3da"/>
+<path d="M270 70 L270 190" stroke="#1f5f99" stroke-width="3" marker-end="url(#ar5)"/><path d="M320 70 L320 190" stroke="#1f5f99" stroke-width="3" marker-end="url(#ar5)"/><path d="M370 70 L370 190" stroke="#1f5f99" stroke-width="3" marker-end="url(#ar5)"/>
+<path d="M300 200 Q200 220 80 215" stroke="#1f5f99" stroke-width="3" fill="none" marker-end="url(#ar5)"/>
+<path d="M340 200 Q440 220 560 215" stroke="#1f5f99" stroke-width="3" fill="none" marker-end="url(#ar5)"/>
+<line x1="30" y1="240" x2="610" y2="240" stroke="#a0693a" stroke-width="6"/>
+<path d="M600 120 Q470 128 400 150 Q330 175 260 200 Q190 222 120 232" fill="none" stroke="#c8102e" stroke-width="3" stroke-dasharray="8 6"/>
+<g font-weight="700"><text x="630" y="105" text-anchor="end" fill="#125a2b">1. headwind: speed and climb increase</text>
+<text x="160" y="130" fill="#c76a00">2. downdraft</text><text x="30" y="275" fill="#c8102e">3. tailwind: speed and lift lost</text></g></g></svg>
+<figcaption>A microburst first gives a performance-increasing headwind, then a downdraft and a performance-decreasing tailwind. Avoid it; if caught, apply the windshear escape manoeuvre.</figcaption>
+</figure>
+
+<p>A <strong>microburst</strong> is a small, intense downdraft — typically less than about 4 km across — that spreads out on reaching the ground. It usually lasts only a few minutes. An aircraft entering it first meets an increasing headwind (performance increase), then a strong downdraft, then a tailwind (performance decrease). The pilot's natural reaction to the first phase — reducing thrust and pitch — leaves the aircraft badly placed for the dangerous second and third phases.</p>
+
+<h2>Effects</h2>
+<ul>
+  <li>An increasing headwind or decreasing tailwind raises indicated airspeed and lift — the aircraft tends to rise above the path.</li>
+  <li>A decreasing headwind or increasing tailwind reduces indicated airspeed and lift — the aircraft sinks below the path.</li>
+  <li>A downdraft directly increases the descent rate.</li>
+  <li>The combination can exceed the aircraft's climb performance close to the ground.</li>
+</ul>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Windshear: change of wind speed or direction over a short distance; most dangerous below about 1,600 ft.</li><li>Sources: convection (microbursts), fronts, inversions and low-level jets, terrain.</li><li>Microburst: headwind gain, then downdraft, then tailwind loss — do not react to the first phase by reducing energy.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">Entering a microburst on approach, what is usually encountered first?</p>
+    <ol><li>A tailwind</li><li>An increasing headwind and a performance increase</li><li>A strong downdraft</li><li>No change</li></ol>
+    <p class="a"><b>Answer: B.</b> The first phase is an increasing headwind that raises airspeed and lift — followed by downdraft and tailwind.</p></div>
+</section>
+<section class="lesson" id="lesson-2">
+  <div class="lesson-head"><div class="k">Module 1 · Windshear</div>
+    <h1>Lesson 02: Avoidance and Recognition</h1><div class="m">Lesson 2 of 5 · about 7 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Use weather reports and alerts to avoid windshear.</li><li>Recognise the cues of a windshear encounter.</li><li>Understand predictive and reactive windshear systems.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-02.jpg" alt="Airliner on approach with a storm nearby"><figcaption>Avoid: delay the approach or divert.</figcaption></figure>
+  
+<h2>Avoid — the best defence</h2>
+<ul>
+  <li>Use the METAR, TAF, SIGMET, ATIS and pilot reports: <code>TS</code>, <code>+TSRA</code>, <code>CB</code>, gusts, <code>WS</code> groups in METARs (e.g. <code>WS R26</code>) and low-level windshear alerts.</li>
+  <li>Watch for visual signs: virga, rain shafts, dust rings on the ground, roll clouds and rapidly changing wind socks.</li>
+  <li>Delay the take-off or approach when severe windshear or a microburst is reported or forecast, or when a strong thunderstorm is over or near the aerodrome. Hold or divert.</li>
+  <li>If windshear is possible: use the maximum take-off thrust or the take-off settings recommended by your FCOM/AOM, consider the longest suitable runway, and brief the escape manoeuvre.</li>
+</ul>
+
+<h2>Recognise</h2>
+<ul>
+  <li>Unexpected <strong>airspeed changes</strong> — typically more than about 15 kt.</li>
+  <li><strong>Vertical speed</strong> deviations — for example 500 ft/min or more from normal.</li>
+  <li>Pitch attitude changes and deviations from the glide path.</li>
+  <li>Unusual thrust lever positions needed to hold the speed.</li>
+  <li>Aural and visual windshear warnings.</li>
+</ul>
+
+<h2>Windshear systems</h2>
+<ul>
+  <li><strong>Predictive windshear</strong> (weather radar based, where fitted) looks ahead and alerts before the aircraft enters the windshear — “WINDSHEAR AHEAD” cautions and warnings, depending on the system.</li>
+  <li><strong>Reactive windshear</strong> (EGPWS or flight control computer based, where fitted) alerts when the aircraft is already in windshear — “WINDSHEAR, WINDSHEAR, WINDSHEAR”.</li>
+  <li>Know which systems your aircraft has and how they are inhibited during certain phases.</li>
+</ul>
+<div class="callout"><span class="label">Fleet note</span><p>The available windshear warnings differ between the B737-800, the Q400 and the Q200. Check the FCOM / AOM for your aircraft.</p></div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Avoid first: reports, radar, visual signs; delay or divert.</li><li>Cues: speed changes over about 15 kt, vertical speed deviations of about 500 ft/min, unusual thrust.</li><li>Predictive warns before entry; reactive warns when inside.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">What is the most effective defence against microburst windshear?</p>
+    <ol><li>High approach speed</li><li>Avoidance — delay the take-off or approach</li><li>Flaps up landing</li><li>Autopilot off</li></ol>
+    <p class="a"><b>Answer: B.</b> Avoidance is the most effective defence.</p></div>
+</section>
+<section class="lesson" id="lesson-3">
+  <div class="lesson-head"><div class="k">Module 1 · Windshear</div>
+    <h1>Lesson 03: The Windshear Escape Manoeuvre</h1><div class="m">Lesson 3 of 5 · about 7 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Apply the generic windshear escape principles.</li><li>Explain why configuration must not be changed.</li><li>Recover and report after the encounter.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-03.jpg" alt="Airliner climbing away at a high pitch attitude"><figcaption>Escape: maximum thrust, wings level, pitch to the target.</figcaption></figure>
+  
+<h2>When to act</h2>
+<p>Apply the escape manoeuvre immediately on a windshear warning, or when unacceptable flight path deviations occur — on take-off, initial climb or approach. Do not attempt to land if windshear is encountered on approach.</p>
+
+<h2>Generic escape principles</h2>
+<ol class="steps">
+  <li><strong>Maximum thrust / power</strong> — go-around or maximum take-off thrust, as your procedure states. Thrust levers may be pushed to the limit if ground contact is imminent, as the type procedure allows.</li>
+  <li><strong>Autopilot</strong> — as your procedure states (some types allow the autopilot or the flight director to fly the windshear guidance).</li>
+  <li><strong>Wings level, pitch up</strong> to the windshear pitch target or flight director guidance; if needed, increase pitch up to the stick shaker or pitch limit indicator — <strong>respect the stall warning</strong>.</li>
+  <li><strong>Do not change the configuration</strong> — no flap or gear changes until clear of the windshear. Retract speedbrakes.</li>
+  <li><strong>The pilot monitoring</strong> calls out vertical speed, radio altitude and the trend.</li>
+  <li>When clear of windshear: recover to a normal climb, speed and configuration, and <strong>report</strong> to ATC.</li>
+</ol>
+<div class="callout warn"><span class="label">Type procedure</span><p>The exact escape manoeuvre is a memory item for each fleet: B737-800 QRH Non-Normal Manoeuvres — Windshear Escape; Q400 and Q200 AOM / QRH windshear procedure. This course gives the principles; your manuals give the procedure.</p></div>
+
+<h2>Why no configuration change</h2>
+<p>Retracting flaps or gear during the escape reduces lift or adds drag at the worst moment. Gear retraction on some types temporarily increases drag as the doors open. The aircraft stays in its configuration until clear of the windshear.</p>
+
+<h2>Reporting</h2>
+<p>Report the windshear to ATC as soon as possible, with location, altitude and the speed gain or loss (e.g. “windshear on final runway 26, loss of 20 kt at 500 ft”). Your report protects the aircraft behind you. File the company report.</p>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Warning or unacceptable deviation: escape immediately; never continue to land.</li><li>Maximum thrust, wings level, pitch to the target / FD, respect the stall warning.</li><li>No configuration change until clear; PM calls vertical speed and radio altitude.</li><li>Report to ATC with location and speed change.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">During a windshear escape, what should be done with flaps and gear?</p>
+    <ol><li>Retract both</li><li>Do not change the configuration until clear of the windshear</li><li>Extend more flaps</li><li>Retract gear only</li></ol>
+    <p class="a"><b>Answer: B.</b> No configuration change until clear of the windshear.</p></div>
+</section>
+<section class="lesson" id="lesson-4">
+  <div class="lesson-head"><div class="k">Module 2 · Thunderstorms and Planning</div>
+    <h1>Lesson 04: Thunderstorm Avoidance and Weather Radar</h1><div class="m">Lesson 4 of 5 · about 8 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Plan thunderstorm avoidance on the ground and in flight.</li><li>Use the weather radar correctly.</li><li>Apply the avoidance distances and rules.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-04.jpg" alt="Airliner deviating around a large cumulonimbus"><figcaption>Deviate early — at least 20 NM from severe echoes.</figcaption></figure>
+  
+<h2>Thunderstorm hazards</h2>
+<p>Thunderstorms combine severe turbulence, windshear and microbursts, hail, lightning, icing, heavy rain and low visibility. Hazards extend outside the visible cloud and outside the radar echo.</p>
+
+<h2>Weather radar</h2>
+<figure class="diagram"><svg viewBox="0 0 700 345" role="img" aria-label="Weather radar picture"><title>Weather radar: avoiding a cell</title>
+<desc>A weather radar display with a strong red cell; the planned track deviates upwind, more than 20 NM from the cell.</desc>
+<g font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="13" fill="#24342b">
+<path d="M350 300 L60 60 A380 380 0 0 1 640 60 Z" fill="#0c1a12"/>
+<g fill="none" stroke="#2f5a3e"><path d="M350 300 L60 60"/><path d="M350 300 L640 60"/><path d="M200 177 A190 190 0 0 1 500 177"/><path d="M130 120 A285 285 0 0 1 570 120"/></g>
+<ellipse cx="440" cy="130" rx="70" ry="42" fill="#2fb34a"/><ellipse cx="440" cy="132" rx="45" ry="26" fill="#e6c229"/><ellipse cx="445" cy="134" rx="22" ry="13" fill="#d6342c"/>
+<path d="M500 110 Q560 95 600 130" stroke="#d6342c" stroke-width="4" fill="none"/>
+<ellipse cx="230" cy="150" rx="55" ry="25" fill="#2fb34a" opacity=".9"/>
+<path d="M350 300 L330 70" stroke="#fff" stroke-width="3" stroke-dasharray="8 6"/>
+<polygon points="350,300 340,282 360,282" fill="#fff"/>
+<text x="470" y="200" fill="#fff" font-size="13">avoid by at least 20 NM</text><text x="470" y="216" fill="#fff" font-size="13">(more downwind of the cell)</text>
+<text x="40" y="330" fill="#24342b" font-weight="700">Green → yellow → red: increasing reflectivity. A steep gradient or a “hook” suggests severe turbulence and hail.</text></g></svg>
+<figcaption>Illustrative radar picture. Deviate early, preferably upwind, and remember that radar does not show turbulence in clear air or dry hail outside the cell.</figcaption></figure>
+<ul>
+  <li><strong>Tilt</strong>: adjust tilt continuously so that the beam scans the storm's most reflective (wet) part; too high and the cell disappears, too low and ground returns hide it.</li>
+  <li><strong>Gain</strong>: use the calibrated (preset) gain for cell assessment; manual gain only for analysis.</li>
+  <li><strong>Range</strong>: use a long range for strategic planning and a shorter range for tactical avoidance.</li>
+  <li><strong>Attenuation</strong>: heavy rain absorbs the beam — the area behind a strong cell may look clear when it is not (“radar shadow”).</li>
+  <li>Dry hail, ice crystals and the upper part of a cell reflect weakly — a weak echo at high altitude can still be dangerous.</li>
+</ul>
+
+<h2>Avoidance rules (typical guidance)</h2>
+<ul>
+  <li>Avoid severe echoes by at least <strong>20 NM</strong>, and more on the downwind side and at high altitude.</li>
+  <li>Deviate <strong>upwind</strong> where possible; decide early and ask ATC in good time.</li>
+  <li>Do not fly <strong>under the anvil</strong> (hail) or between closely spaced cells less than about 40 NM apart.</li>
+  <li>Do not attempt to climb over a fast-growing cell.</li>
+  <li>On the ground: do not take off or land into a thunderstorm; consider the gust front and its windshear.</li>
+</ul>
+
+<h2>If turbulence cannot be avoided</h2>
+<ul>
+  <li>Fasten seat belts — passengers and crew — and secure the cabin.</li>
+  <li>Fly the turbulence penetration speed for your type; keep wings level and hold the <strong>attitude</strong>, not the altitude; avoid large control inputs.</li>
+  <li>Use the autopilot as your procedure recommends; engine anti-ice / ignition as required.</li>
+</ul>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Thunderstorm hazards extend beyond the cloud and the radar echo.</li><li>Manage tilt, gain and range; beware of attenuation (radar shadow).</li><li>At least 20 NM from severe echoes, upwind, never under the anvil or between close cells.</li><li>In turbulence: seat belts, penetration speed, hold attitude.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">Why can the area behind a strong radar echo be dangerous even if it looks clear?</p>
+    <ol><li>The radar is switched off there</li><li>Heavy rain attenuates the beam, creating a radar shadow</li><li>There is no weather behind storms</li><li>Ground returns</li></ol>
+    <p class="a"><b>Answer: B.</b> Attenuation by heavy rain can hide weather behind a strong cell.</p></div>
+</section>
+<section class="lesson" id="lesson-5">
+  <div class="lesson-head"><div class="k">Module 2 · Thunderstorms and Planning</div>
+    <h1>Lesson 05: Planning, CRM and Lessons Learned</h1><div class="m">Lesson 5 of 5 · about 6 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Integrate windshear and thunderstorm threats into planning and briefings.</li><li>Apply decision points and CRM.</li><li>Learn from a classic windshear accident.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-05.jpg" alt="Two pilots briefing on the flight deck"><figcaption>Brief the threat and agree the decision points.</figcaption></figure>
+  
+<h2>Planning and briefing</h2>
+<ul>
+  <li>Brief convective weather on the route and at destination, alternates, extra fuel for deviations and holding.</li>
+  <li>Before take-off or approach in convective weather: brief the windshear escape, the go-around and the decision points (“if windshear is reported on final, we hold / divert”).</li>
+  <li>Agree on the callouts for speed and vertical speed deviations.</li>
+</ul>
+
+<h2>CRM</h2>
+<ul>
+  <li>Plan continuation bias is a strong factor in convective weather — “the aircraft ahead landed”. Each aircraft meets a different part of the storm.</li>
+  <li>Either pilot can call for the escape manoeuvre; the PF executes immediately.</li>
+  <li>Use ATC and other crews' reports, and give your own.</li>
+</ul>
+
+<h2>Lesson learned — Delta Air Lines 191 (Dallas/Fort Worth, August 1985)</h2>
+<p>A Lockheed L-1011 on approach flew into a microburst from a thunderstorm close to the runway. The aircraft lost airspeed and height and struck the ground short of the runway; 137 people died. The investigation led directly to windshear training programmes and to the development of airborne windshear detection systems.</p>
+<div class="callout"><span class="label">Key message</span><p>Do not penetrate a thunderstorm or approach through one. Waiting 20 minutes for a storm to pass costs fuel — never safety.</p></div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Brief convective threats, the escape manoeuvre and decision points.</li><li>Beware of plan continuation — each aircraft meets a different storm.</li><li>Delta 191 (1985) shaped modern windshear training and detection systems.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">An aircraft ahead landed without problems in a thunderstorm area. What does this mean for you?</p>
+    <ol><li>It is safe to land</li><li>Nothing — conditions in a storm change within minutes; apply your decision points</li><li>You should land faster</li><li>You may ignore windshear warnings</li></ol>
+    <p class="a"><b>Answer: B.</b> Each aircraft meets a different part of a rapidly changing storm.</p></div>
+</section><p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p></body></html>

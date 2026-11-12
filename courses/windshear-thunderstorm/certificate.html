@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Certificate — Windshear and Thunderstorm Avoidance</title>
+  <meta name="description" content="Certificate of completion for Windshear and Thunderstorm Avoidance." />
+  <meta name="theme-color" content="#125a2b" />
+  <link rel="icon" type="image/png" href="../../assets/img/logo.png" />
+  <link rel="stylesheet" href="../../assets/css/academy.css" />
+</head>
+<body data-course="windshear-thunderstorm" data-total="5">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="brand">
+      <a href="index.html"><img src="../../assets/img/logo.png" alt="Domestic Airlines Logo" class="logo" /></a>
+      <div class="brand-text">
+        <div class="ar">الخطوط الجوية الداخلية</div>
+        <div class="en">DOMESTIC AIRLINES — Windshear and Thunderstorm Avoidance</div>
+      </div>
+    </div>
+    <nav aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="quiz.html">Quiz</a>
+    </nav>
+  </header>
+  <div class="progress" aria-hidden="true"><div id="progressBar"></div></div>
+  <main id="main">
+
+    <section class="content">
+      <div id="certLocked" class="card panel" style="display:none;text-align:center">
+        <h1>Certificate</h1>
+        <p>Your certificate becomes available after you pass the final quiz with 80 % or more.</p>
+        <a class="btn primary" href="quiz.html">Go to the final quiz</a>
+      </div>
+      <div id="certReady" style="display:none">
+        <div class="cert-form no-print">
+          <label for="learnerName" class="muted" style="flex-basis:100%">Enter your full name as it should appear on the certificate:</label>
+          <input id="learnerName" type="text" autocomplete="name" placeholder="Full name" maxlength="80" />
+          <button class="btn primary" id="printCert" type="button">Print / Save as PDF</button>
+        </div>
+        <div class="cert">
+          <img src="../../assets/img/logo.png" alt="Domestic Airlines" class="logo" />
+          <div class="eyebrow">Domestic Airlines — Training</div>
+          <h1>Certificate of Completion</h1>
+          <p class="muted">This is to certify that</p>
+          <div class="name" id="certName">&nbsp;</div>
+          <p class="muted">has successfully completed the e-learning course</p>
+          <div class="course">Windshear and Thunderstorm Avoidance</div>
+          <div class="row">
+            <div><b id="certDate">—</b>Date of completion</div>
+            <div><b id="certScore">—</b>Final quiz score</div>
+            <div><b id="certId">—</b>Certificate reference</div>
+          </div>
+        </div>
+        <p class="muted no-print" style="text-align:center;font-size:13.5px">This certificate records completion of self-paced training. Record it in your training file as the Operations Manual requires.</p>
+      </div>
+    </section>
+    <script>
+      (function () {
+        function ready(fn) { document.readyState !== 'loading' ? fn() : document.addEventListener('DOMContentLoaded', fn); }
+        ready(function () {
+          var api = window.DACourse; var st = api ? api.state() : {};
+          var q = st.quiz;
+          if (!q || !q.passed) { document.getElementById('certLocked').style.display = ''; return; }
+          document.getElementById('certReady').style.display = '';
+          var d = new Date(q.date);
+          document.getElementById('certDate').textContent = d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+          document.getElementById('certScore').textContent = q.pct + ' %';
+          var ref = 'WSA-' + d.getFullYear() + String(d.getMonth() + 1).padStart(2, '0') + String(d.getDate()).padStart(2, '0') + '-' + String(d.getTime()).slice(-5);
+          document.getElementById('certId').textContent = ref;
+          var input = document.getElementById('learnerName');
+          var out = document.getElementById('certName');
+          input.value = st.name || '';
+          function upd() { out.textContent = input.value.trim() || '\u00a0'; }
+          upd();
+          input.addEventListener('input', function () { upd(); api.saveName(input.value.trim()); });
+          document.getElementById('printCert').addEventListener('click', function () {
+            if (!input.value.trim()) { input.focus(); return; }
+            window.print();
+          });
+        });
+      })();
+    </script>
+  </main>
+  <footer class="bottombar">
+    <img src="../../assets/img/logo.png" alt="Domestic Airlines Logo" class="logo small" />
+    <div class="copy">&copy; 2026 Domestic Airlines — Training</div>
+    <a href="../../index.html">All courses</a>
+    <p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p>
+  </footer>
+<script src="../../assets/js/course.js"></script>
+</body>
+</html>

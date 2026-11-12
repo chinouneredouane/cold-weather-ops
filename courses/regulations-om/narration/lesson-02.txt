@@ -1,0 +1,40 @@
+Domestic Airlines — Operations Manual and Regulations
+Lesson 2: EASA Air Operations Structure
+
+Learning objectives:
+- Describe the structure of the EASA Air Operations Regulation.
+- Distinguish implementing rules, AMC and GM.
+- Explain how national rules relate to EASA and ICAO.
+
+The regulation
+
+In Europe, the Basic Regulation (EU) 2018/1139 sets the framework, and Regulation (EU) No 965/2012 (Air Operations) contains the detailed requirements in Annexes:
+
+Annex Part Content
+
+I Definitions Terms used throughout
+
+II Part-ARO Requirements for authorities
+
+III Part-ORO Organisation requirements: management system, manuals (MLR), flight crew (FC), cabin crew (CC), flight time limitations (FTL)
+
+IV Part-CAT Commercial air transport operations: operating procedures (OP), performance (POL), instruments and equipment (IDE)
+
+V Part-SPA Specific approvals: PBN (RNP AR), MNPS/HLA, RVSM, LVO, ETOPS, dangerous goods, NVIS…
+
+Implementing rules are binding.
+
+AMC (acceptable means of compliance) — one way to comply; alternatives need approval.
+
+GM (guidance material) — explanations.
+
+National regulations
+
+Domestic Airlines operates under the regulations and oversight of its national authority, the DACM , which implement the ICAO SARPs. Many national requirements follow the EASA structure, which is why our Operations Manual uses the same organisation and references. The AOC and its operations specifications define what the company is authorised to do.
+
+Company documents This lesson explains the international framework. The exact company rules are in the Domestic Airlines Operations Manual and the national regulations of the DACM — always refer to the current edition.
+
+Key takeaways:
+- Regulation (EU) 965/2012: Part-ARO, ORO, CAT, SPA (and others).
+- Implementing rules are binding; AMC is one accepted way to comply; GM explains.
+- Domestic Airlines operates under DACM regulations and its AOC / operations specifications.

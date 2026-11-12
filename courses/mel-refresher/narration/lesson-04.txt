@@ -1,0 +1,34 @@
+Domestic Airlines — MEL Refresher
+Lesson 4: Failures After Dispatch and Good Practice
+
+Learning objectives:
+- Handle failures after the MEL no longer applies.
+- Report defects correctly.
+- Avoid common MEL errors.
+
+Failures after dispatch
+
+After the point defined in the MEL preamble, use the QRH / FCOM / AOM non-normal procedures.
+
+The decision to continue, return or divert is taken by the commander, based on the AFM limitations, the procedures and the situation — the MEL can help to assess the consequences, but does not authorise continuation by itself.
+
+Record every defect in the technical log after the flight.
+
+Common errors
+
+Dispatching with an expired rectification interval.
+
+Forgetting the (O) procedure — for example a fuel or performance penalty.
+
+Misreading “number required”.
+
+Not checking the effect on RVSM, PBN or LVO capability.
+
+Not informing the other crew member of the restrictions.
+
+Company MEL Always use the current Domestic Airlines MEL for your fleet (e.g. MEL Ed.02) and its preamble. This course explains the principles; the MEL decides.
+
+Key takeaways:
+- After the MEL point, use QRH / FCOM / AOM and commander's judgment.
+- Record every defect in the technical log.
+- Watch expiry dates, (O) procedures, number required and capability effects.

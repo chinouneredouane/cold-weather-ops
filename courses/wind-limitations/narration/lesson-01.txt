@@ -1,0 +1,30 @@
+Domestic Airlines — Wind Limitations
+Lesson 1: Wind Reports and Wind Components
+
+Learning objectives:
+- Interpret wind reports correctly.
+- Calculate headwind, tailwind and crosswind components.
+- Use gusts correctly.
+
+Wind reports
+
+In the METAR , the wind is a 10-minute mean; in reports for take-off and landing from the tower (and ATIS), it is a 2-minute mean for the runway (ICAO Annex 3).
+
+Gusts are reported when the maximum wind exceeds the mean by 10 kt or more: 27015G28KT = 270°, 15 kt, gusting 28 kt.
+
+Variable direction: 27015KT 240V300 — direction varies between 240° and 300°.
+
+Directions in METAR / TAF are true ; tower and ATIS winds are magnetic .
+
+Components
+
+Use the FMS / EFB, the wind component chart or the rule of thumb.
+
+For limits, check the crosswind with the gust and the tailwind with the steady wind and the gust as your procedure states.
+
+With a variable wind direction, use the most unfavourable direction.
+
+Key takeaways:
+- METAR wind: 10-min mean, true; tower / ATIS: 2-min mean, magnetic.
+- Gusts reported when 10 kt or more above the mean.
+- Crosswind ≈ wind × sin(angle); use the gust for crosswind limits.

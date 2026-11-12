@@ -1,0 +1,31 @@
+Domestic Airlines — MEL Refresher
+Lesson 1: MMEL, MEL and CDL
+
+Learning objectives:
+- Explain the purpose of the MMEL and the MEL.
+- Describe how the MEL is produced and approved.
+- Distinguish the MEL from the CDL.
+
+Why a MEL?
+
+A transport aeroplane has redundant systems. The Minimum Equipment List (MEL) allows the operator to dispatch an aircraft with certain equipment inoperative, for a limited time and under defined conditions, while keeping an acceptable level of safety (ICAO Annex 6 Part I; EASA ORO.MLR.105).
+
+The MMEL (Master MEL) is produced by the aircraft manufacturer and approved by the State of design (for EASA, as part of the operational suitability data).
+
+The operator's MEL is based on the MMEL, adapted to its aircraft configuration, operations and procedures, and approved by its authority. It must not be less restrictive than the MMEL.
+
+Equipment not listed in the MEL that is required for the flight must be operative — otherwise no dispatch (unless a specific procedure applies).
+
+CDL
+
+The Configuration Deviation List (CDL) , part of the AFM, allows dispatch with certain external parts missing (for example a panel, fairing or static discharger), usually with performance penalties.
+
+When the MEL applies
+
+The MEL applies to dispatch — up to the point defined in the MEL preamble (commonly the start of the flight or the take-off roll). After that point, a failure is handled with the QRH / FCOM / AOM non-normal procedures, and the commander decides on continuation using the AFM and good airmanship.
+
+Key takeaways:
+- MMEL from the manufacturer; MEL from the operator — never less restrictive.
+- Required equipment not in the MEL must work.
+- CDL covers missing external parts, often with performance penalties.
+- After the point defined in the preamble, use the QRH, not the MEL.

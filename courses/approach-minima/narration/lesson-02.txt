@@ -1,0 +1,36 @@
+Domestic Airlines — Approach Operations and Minima
+Lesson 2: Aerodrome Operating Minima
+
+Learning objectives:
+- Explain how aerodrome operating minima are established.
+- Distinguish DA/H, MDA/H, RVR, visibility and ceiling.
+- Apply take-off and circling minima.
+
+Establishing minima
+
+The operator establishes aerodrome operating minima (EASA CAT.OP.MPA.110) for each aerodrome, taking into account: the aircraft type and performance, the crew, the runway characteristics and lighting, the navigation and visual aids, obstacles (the OCA/H of the procedure), the type of approach and the means of reporting the weather. The minima must not be lower than those established by the State of the aerodrome, unless specifically approved.
+
+The elements
+
+DA/H — the altitude or height at which a go-around must be started on a 3D approach if the required visual reference has not been established.
+
+MDA/H — the minimum on a 2D approach (with CDFA, a go-around is started at or slightly above it as the company specifies).
+
+RVR — runway visual range, measured along the runway; VIS — reported meteorological visibility.
+
+CMV — converted meteorological visibility: a reported visibility converted to an RVR-equivalent value when RVR is not available, using the company table.
+
+Ceiling — used mainly for planning (destination and alternate) and for circling and some non-precision approaches as the OM A specifies.
+
+Take-off and circling
+
+Take-off minima are expressed as RVR or visibility, sometimes with a ceiling — and depend on the runway lighting and the aircraft's ability to return or reach a take-off alternate.
+
+Circling minima (MDH and visibility) depend on the aircraft approach category (A to D). Keep visual reference with the runway throughout.
+
+Company authorisation The approach operations each fleet is authorised for — for example CAT I only, or CAT II for a fleet and crew with the approval — are listed in the AOC operations specifications issued by the DACM . The method and values for minima are in OM A ; the aerodrome minima are in OM C and the charts.
+
+Key takeaways:
+- Operator minima: never lower than the State's, unless approved.
+- DA/H for 3D, MDA/H for 2D; RVR, VIS, CMV; ceiling mainly for planning.
+- Take-off and circling minima are separate — check them.

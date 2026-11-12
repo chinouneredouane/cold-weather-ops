@@ -1,0 +1,34 @@
+Domestic Airlines — Windshear and Thunderstorm Avoidance
+Lesson 5: Planning, CRM and Lessons Learned
+
+Learning objectives:
+- Integrate windshear and thunderstorm threats into planning and briefings.
+- Apply decision points and CRM.
+- Learn from a classic windshear accident.
+
+Planning and briefing
+
+Brief convective weather on the route and at destination, alternates, extra fuel for deviations and holding.
+
+Before take-off or approach in convective weather: brief the windshear escape, the go-around and the decision points (“if windshear is reported on final, we hold / divert”).
+
+Agree on the callouts for speed and vertical speed deviations.
+
+CRM
+
+Plan continuation bias is a strong factor in convective weather — “the aircraft ahead landed”. Each aircraft meets a different part of the storm.
+
+Either pilot can call for the escape manoeuvre; the PF executes immediately.
+
+Use ATC and other crews' reports, and give your own.
+
+Lesson learned — Delta Air Lines 191 (Dallas/Fort Worth, August 1985)
+
+A Lockheed L-1011 on approach flew into a microburst from a thunderstorm close to the runway. The aircraft lost airspeed and height and struck the ground short of the runway; 137 people died. The investigation led directly to windshear training programmes and to the development of airborne windshear detection systems.
+
+Key message Do not penetrate a thunderstorm or approach through one. Waiting 20 minutes for a storm to pass costs fuel — never safety.
+
+Key takeaways:
+- Brief convective threats, the escape manoeuvre and decision points.
+- Beware of plan continuation — each aircraft meets a different storm.
+- Delta 191 (1985) shaped modern windshear training and detection systems.

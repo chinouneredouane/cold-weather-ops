@@ -1,0 +1,230 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>PBN Refresher — Course handbook</title>
+<style>
+@page{size:A4;margin:18mm 16mm 20mm}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#24342b;font-size:10.5pt;line-height:1.5;margin:0}
+h1,h2,h3{color:#14231b;line-height:1.25;break-after:avoid}
+h1{font-size:21pt;margin:0 0 6pt}h2{font-size:14pt;margin:16pt 0 6pt}h3{font-size:12pt;margin:12pt 0 4pt}
+p{margin:0 0 7pt}ul,ol{margin:0 0 8pt;padding-left:16pt}li{margin:2pt 0}
+a{color:#125a2b;text-decoration:none}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:9pt;background:#f3f9f5;border:1px solid #dbe5df;padding:0 3pt;border-radius:3pt}
+.cover{height:257mm;display:flex;flex-direction:column;justify-content:center;break-after:page;
+  background:linear-gradient(120deg,#0c3d1e,#125a2b 55%,#2a8a50);color:#fff;padding:22mm;border-radius:4mm;margin:0}
+.cover h1{color:#fff;font-size:34pt}.cover .k{letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#bfe3cb;font-size:10pt}
+.cover p{color:#e3f1e8;font-size:13pt}.cover .logo{background:#fff;padding:5mm 7mm;border-radius:3mm;display:inline-block;margin-bottom:14mm}
+.cover .logo img{height:16mm}.cover .meta{margin-top:12mm;font-size:10.5pt;color:#d3ebdb}
+.toc{break-after:page}.toc h2{margin-top:0}.toc ol{list-style:none;padding:0}
+.toc li{display:flex;gap:8pt;padding:3pt 0;border-bottom:1px dotted #c9d8cf}.toc .n{width:22pt;font-weight:700;color:#5b6b62}
+.toc .mod{margin-top:9pt;font-weight:800;color:#125a2b;border:0;text-transform:uppercase;font-size:9pt;letter-spacing:.06em}
+.lesson{break-before:page}
+.lesson-head{background:linear-gradient(120deg,#0c3d1e,#1d7a3e);color:#fff;border-radius:3mm;padding:9pt 13pt;margin-bottom:10pt}
+.lesson-head h1{color:#fff;font-size:17pt;margin:2pt 0}.lesson-head .k{font-size:8.5pt;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#c7e8d2}
+.lesson-head .m{font-size:9pt;color:#dbefe2}
+.objectives{background:#f3f9f5;border:1px solid #dbe5df;border-radius:2mm;padding:7pt 11pt;margin:0 0 10pt}
+.objectives h2,.takeaways h2,.kc h2{font-size:9.5pt;text-transform:uppercase;letter-spacing:.06em;margin:0 0 3pt;color:#125a2b}
+.lesson-figure{margin:0 0 10pt;break-inside:avoid}.lesson-figure img{width:100%;max-height:85mm;object-fit:contain;border:1px solid #dbe5df;border-radius:2mm;background:#f3f9f5}
+figure{margin:9pt 0;break-inside:avoid}figure svg{width:100%;height:auto}figcaption{font-size:8.5pt;color:#5b6b62;margin-top:3pt}
+.diagram{border:1px solid #dbe5df;border-radius:2mm;padding:5pt}
+.table-wrap{margin:8pt 0;border:1px solid #dbe5df;border-radius:2mm;overflow:hidden}
+table{border-collapse:collapse;width:100%;font-size:9pt}th,td{text-align:left;vertical-align:top;padding:4pt 6pt;border-bottom:1px solid #dbe5df}
+th{background:#f3f9f5}tr{break-inside:avoid}td.code{font-weight:800;font-size:12pt;text-align:center;width:34pt}
+.callout{border-left:3pt solid #1d7a3e;background:#f3f9f5;padding:6pt 10pt;margin:8pt 0;border-radius:0 2mm 2mm 0;break-inside:avoid}
+.callout .label{display:block;font-size:8.5pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#125a2b}
+.callout.warn{border-color:#c8102e;background:#fdecef}.callout.warn .label{color:#c8102e}
+.callout.caution{border-color:#d08a00;background:#fff5e0}.callout.caution .label{color:#9a6200}
+.callout.info{border-color:#1f5f99;background:#e9f2fb}.callout.info .label{color:#1f5f99}
+.callout > :last-child{margin-bottom:0}
+.steps{list-style:none;padding:0;counter-reset:s}.steps>li{counter-increment:s;position:relative;padding-left:20pt;margin:4pt 0}
+.steps>li::before{content:counter(s);position:absolute;left:0;top:0;width:14pt;height:14pt;border-radius:50%;background:#1d7a3e;color:#fff;font-weight:800;font-size:8pt;display:flex;align-items:center;justify-content:center}
+.dialog{border:1px solid #dbe5df;border-radius:2mm;padding:4pt 10pt;margin:8pt 0;break-inside:avoid}.dialog p{margin:4pt 0}.dialog b{color:#125a2b}
+.muted{color:#5b6b62}
+.takeaways{background:#0c3d1e;color:#e8f5ec;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}.takeaways h2{color:#fff}
+.kc{border:1.5pt dashed #b9d7c3;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}
+.kc .q{font-weight:700;margin:2pt 0 4pt}.kc ol{list-style:upper-alpha}.kc .a{font-size:9pt;margin-top:4pt;color:#125a2b}
+.disclaimer{font-size:8.5pt;color:#5b6b62;border-top:1px solid #dbe5df;padding-top:6pt;margin-top:14pt}
+</style></head><body>
+<section class="cover"><div><span class="logo"><img src="../../../assets/img/logo.png" alt="Domestic Airlines"></span></div>
+  <div class="k">Domestic Airlines — Training</div><h1>PBN Refresher</h1>
+  <p>Course handbook</p><p>Performance-based navigation: RNAV and RNP, GNSS integrity and interference, the navigation database, RNAV procedures and RNP approaches.</p>
+  <div class="meta">5 lessons · 2 modules · about 0.5 hours</div>
+  <div class="meta">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</div></section>
+<section class="toc"><h2>Contents</h2><ol><li class="mod">Module 1 — PBN Principles</li><li><span class="n">01</span><a href="#lesson-1">The PBN Concept</a></li><li><span class="n">02</span><a href="#lesson-2">GNSS, Integrity and the Navigation Database</a></li><li class="mod">Module 2 — PBN Operations</li><li><span class="n">03</span><a href="#lesson-3">RNAV Departures, Arrivals and En-route Operations</a></li><li><span class="n">04</span><a href="#lesson-4">RNP Approaches: LNAV, LNAV/VNAV, LPV</a></li><li><span class="n">05</span><a href="#lesson-5">Approvals, MEL and Crew Responsibilities</a></li></ol></section>
+<section class="lesson" id="lesson-1">
+  <div class="lesson-head"><div class="k">Module 1 · PBN Principles</div>
+    <h1>Lesson 01: The PBN Concept</h1><div class="m">Lesson 1 of 5 · about 7 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Explain the performance-based navigation (PBN) concept.</li><li>Distinguish RNAV and RNP specifications.</li><li>Identify the elements of a PBN operation.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-01.jpg" alt="Airliner following a curved RNP path"><figcaption>PBN: the performance matters, not the sensor.</figcaption></figure>
+  
+<h2>From sensors to performance</h2>
+<p>Conventional navigation is based on flying to and from ground beacons (VOR, NDB). <strong>Performance-based navigation (PBN)</strong> (ICAO Doc 9613) defines instead the <strong>performance</strong> an aircraft's area navigation system must achieve — accuracy, integrity, continuity and functionality — for a given airspace or procedure.</p>
+<p>A PBN operation has three elements:</p>
+<ul>
+  <li>the <strong>navigation specification</strong> — the aircraft, system and crew requirements;</li>
+  <li>the <strong>navaid infrastructure</strong> — GNSS, DME/DME, VOR/DME;</li>
+  <li>the <strong>navigation application</strong> — the routes and procedures designed for it.</li>
+</ul>
+
+<h2>RNAV and RNP</h2>
+<figure class="diagram"><svg viewBox="0 0 820 280" role="img" aria-label="RNP containment"><title>RNP lateral performance</title>
+<desc>The desired path with a band of plus or minus the RNP value, and an outer band of two times RNP.</desc>
+<g font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="13" fill="#24342b">
+<rect x="40" y="70" width="620" height="160" rx="8" fill="#c76a00" opacity=".12"/>
+<rect x="40" y="110" width="620" height="80" rx="8" fill="#1d7a3e" opacity=".18"/>
+<line x1="40" y1="150" x2="660" y2="150" stroke="#125a2b" stroke-width="3"/>
+<path d="M60 160 Q200 132 340 155 T660 146" stroke="#1f5f99" stroke-width="3" fill="none"/>
+<path d="M100 140 l20 -4 l6 -6 l4 2 l-3 6 l16 -1 l2 3 l-16 2 l-2 7 l-4 0 l-1 -6 l-20 2z" fill="#24342b"/>
+<text x="670" y="154" fill="#125a2b" font-weight="700">desired path</text>
+<text x="670" y="118" fill="#125a2b">± RNP value (95 %)</text>
+<text x="670" y="78" fill="#c76a00">± 2 × RNP</text>
+<text x="40" y="40" font-weight="700" font-size="14">RNP: the aircraft must stay within ± the RNP value at least 95 % of the flight time —</text>
+<text x="40" y="58" fill="#5b6b62">and an RNP system must monitor its own performance and alert the crew when it cannot.</text>
+<text x="40" y="260" fill="#1f5f99">actual flight path = path definition error + flight technical error + navigation system error</text></g></svg>
+<figcaption>Total system error combines the path definition, flight technical and navigation system errors. On-board performance monitoring and alerting is what makes a specification “RNP”.</figcaption></figure>
+<ul>
+  <li>An <strong>RNAV</strong> specification has no requirement for on-board performance monitoring and alerting.</li>
+  <li>An <strong>RNP</strong> specification <strong>requires on-board performance monitoring and alerting</strong> — the system tells the crew when it cannot meet the required performance (for example “UNABLE REQD NAV PERF – RNP” or a similar alert).</li>
+  <li>The number (e.g. RNP 1) is the lateral accuracy in nautical miles that must be achieved at least 95 % of the flight time.</li>
+</ul>
+
+<h2>Navigation specifications</h2>
+<div class="table-wrap"><table>
+<tr><th>Phase</th><th>Typical specifications</th></tr>
+<tr><td>Oceanic / remote</td><td>RNAV 10, RNP 4, RNP 2</td></tr>
+<tr><td>En route continental</td><td>RNAV 5 (B-RNAV), RNAV 2, RNP 2, Advanced RNP</td></tr>
+<tr><td>Terminal (SID / STAR)</td><td>RNAV 1, RNP 1, Advanced RNP</td></tr>
+<tr><td>Approach</td><td>RNP APCH (LNAV, LNAV/VNAV, LP, LPV), RNP AR APCH</td></tr>
+</table></div>
+<p>The aircraft's <strong>AFM / AFM supplement</strong> states which specifications it is certified for, and the <strong>MEL</strong> gives the dispatch requirements. Check your fleet's capabilities in the OM B.</p>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>PBN = navigation specification + navaid infrastructure + navigation application.</li><li>RNP requires on-board performance monitoring and alerting; RNAV does not.</li><li>RNP 1 = ±1 NM at least 95 % of the time.</li><li>Fleet capability: AFM, OM B and MEL.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">What distinguishes an RNP specification from an RNAV specification?</p>
+    <ol><li>A smaller number</li><li>On-board performance monitoring and alerting</li><li>The use of VOR</li><li>Autopilot coupling</li></ol>
+    <p class="a"><b>Answer: B.</b> RNP requires on-board performance monitoring and alerting.</p></div>
+</section>
+<section class="lesson" id="lesson-2">
+  <div class="lesson-head"><div class="k">Module 1 · PBN Principles</div>
+    <h1>Lesson 02: GNSS, Integrity and the Navigation Database</h1><div class="m">Lesson 2 of 5 · about 7 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Explain GNSS integrity monitoring and its limits.</li><li>Recognise GNSS interference threats.</li><li>Check and use the navigation database correctly.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-02.jpg" alt="Airliner with a satellite link"><figcaption>GNSS integrity — and interference — must be monitored.</figcaption></figure>
+  
+<h2>GNSS and integrity</h2>
+<ul>
+  <li>Most PBN operations rely on <strong>GNSS</strong>. Integrity is provided by <strong>receiver autonomous integrity monitoring (RAIM)</strong> or equivalent aircraft-based augmentation, and by satellite-based augmentation (SBAS) where available.</li>
+  <li>Check the <strong>GNSS NOTAMs</strong> and the predicted RAIM availability for the route and the time of the approach, as the company procedure requires.</li>
+  <li>Know the backup: DME/DME or IRS updating, and conventional procedures and navaids.</li>
+</ul>
+
+<h2>GNSS interference</h2>
+<p><strong>Jamming</strong> (signal blocked) and <strong>spoofing</strong> (false signal) are increasingly common in some regions. Effects include loss of GNSS position, position or time jumps, EGPWS terrain alerts, ADS-B and clock errors. Follow the company and manufacturer guidance: cross-check position with other sources, consider deselecting GNSS where the procedure allows, use conventional navaids, inform ATC and report.</p>
+
+<h2>The navigation database</h2>
+<ul>
+  <li>Check the <strong>AIRAC cycle</strong> is current before flight.</li>
+  <li>Procedures must be <strong>loaded from the database</strong> by name — never built manually from waypoints for an RNP approach.</li>
+  <li>Cross-check the loaded procedure with the chart: waypoint sequence, tracks, distances, altitude and speed constraints, and the vertical path angle on the final approach.</li>
+  <li>Do not modify the final approach segment of an RNP approach (except where your procedure allows specific changes).</li>
+</ul>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Check GNSS NOTAMs and RAIM / integrity availability.</li><li>Jamming and spoofing: cross-check, use conventional navaids, inform ATC and report.</li><li>Current AIRAC; load procedures by name; cross-check with the chart; do not modify the final approach.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">How must an RNP approach be loaded in the FMS?</p>
+    <ol><li>Built from individual waypoints</li><li>Loaded by name from the current navigation database and cross-checked with the chart</li><li>Copied from the previous flight</li><li>Entered as a direct-to</li></ol>
+    <p class="a"><b>Answer: B.</b> RNP approaches must be loaded from the database and checked against the chart.</p></div>
+</section>
+<section class="lesson" id="lesson-3">
+  <div class="lesson-head"><div class="k">Module 2 · PBN Operations</div>
+    <h1>Lesson 03: RNAV Departures, Arrivals and En-route Operations</h1><div class="m">Lesson 3 of 5 · about 6 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Fly RNAV SIDs and STARs correctly.</li><li>Apply flight technical error limits.</li><li>Manage contingencies on RNAV routes.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-03.jpg" alt="Airliner climbing on an RNAV departure"><figcaption>Fly the SID with LNAV and respect the constraints.</figcaption></figure>
+  
+<h2>Before departure</h2>
+<ul>
+  <li>Check that the aircraft and crew are approved and the equipment required by the MEL is operational.</li>
+  <li>Load and cross-check the SID: waypoints, fly-by and fly-over points, altitude and speed constraints.</li>
+  <li>Brief the procedure and any changes that ATC may give (e.g. direct-to clearances).</li>
+</ul>
+
+<h2>Flying the procedure</h2>
+<ul>
+  <li>Use the lateral navigation mode (LNAV) and the flight director or autopilot, as the SOP requires, to keep the <strong>flight technical error</strong> small — typically within half the navigation accuracy (for RNAV 1 / RNP 1: within 0.5 NM).</li>
+  <li>Monitor the cross-track deviation and the navigation performance indications.</li>
+  <li>Respect the published altitude and speed constraints — they are part of the procedure.</li>
+</ul>
+
+<h2>Contingencies</h2>
+<ul>
+  <li>If the navigation performance cannot be met (alert, loss of GNSS, system failure), <strong>inform ATC</strong> — “unable RNAV due equipment” or the appropriate phrase — and request an alternative clearance.</li>
+  <li>Follow the QRH / FCOM procedure for the navigation failure.</li>
+  <li>Report the event.</li>
+</ul>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Load and cross-check the SID or STAR, including constraints.</li><li>Keep flight technical error within half the navigation accuracy.</li><li>If performance is lost, tell ATC and request another clearance.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">On an RNAV 1 SID, the lateral flight technical error should normally be kept within:</p>
+    <ol><li>0.1 NM</li><li>0.5 NM</li><li>2 NM</li><li>5 NM</li></ol>
+    <p class="a"><b>Answer: B.</b> Typically within half the navigation accuracy: 0.5 NM for RNAV 1.</p></div>
+</section>
+<section class="lesson" id="lesson-4">
+  <div class="lesson-head"><div class="k">Module 2 · PBN Operations</div>
+    <h1>Lesson 04: RNP Approaches: LNAV, LNAV/VNAV, LPV</h1><div class="m">Lesson 4 of 5 · about 8 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Distinguish the RNP APCH minima lines.</li><li>Apply the temperature limits for baro-VNAV.</li><li>Fly RNP approaches with the correct technique and go-around criteria.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-04.jpg" alt="Airliner on an RNP approach to a runway"><figcaption>LNAV, LNAV/VNAV or LPV: fly the minima you are authorised for.</figcaption></figure>
+  
+<h2>Minima lines on an RNP chart</h2>
+<div class="table-wrap"><table>
+<tr><th>Minima</th><th>Guidance</th><th>Type</th></tr>
+<tr><td>LNAV</td><td>Lateral only — flown with CDFA to an MDA</td><td>2D</td></tr>
+<tr><td>LNAV/VNAV</td><td>Lateral + barometric vertical guidance (baro-VNAV) to a DA</td><td>3D</td></tr>
+<tr><td>LP</td><td>Lateral SBAS guidance to an MDA</td><td>2D</td></tr>
+<tr><td>LPV</td><td>Lateral + vertical SBAS guidance to a DA</td><td>3D</td></tr>
+</table></div>
+<p>Use only the minima line your aircraft is certified and the company is authorised for. In EASA rules, <strong>RNP APCH</strong> (LNAV, LNAV/VNAV, LP, LPV) does not need a specific approval, but crews must be trained; <strong>RNP AR APCH</strong> requires a specific approval (SPA.PBN).</p>
+
+<h2>Temperature and baro-VNAV</h2>
+<ul>
+  <li>In cold air, the baro-VNAV path is <strong>lower and shallower</strong> than published; in hot air it is higher and steeper.</li>
+  <li>Charts with LNAV/VNAV minima state a <strong>temperature limit</strong> — below it, LNAV/VNAV must not be used (use LNAV minima or another approach).</li>
+  <li>Check the aerodrome temperature against the chart before every LNAV/VNAV approach.</li>
+</ul>
+
+<h2>Technique</h2>
+<ul>
+  <li>Brief the approach with the chart and the FMS: minima, vertical path angle, temperature limit, missed approach.</li>
+  <li>Be stabilised by the company gates; use the autopilot and the appropriate vertical mode as your SOP requires.</li>
+  <li>Monitor lateral and vertical deviations. Go around if the deviation limits in your SOP are exceeded, or on any navigation alert (e.g. loss of integrity) — unless the required visual references are established.</li>
+  <li>The missed approach is part of the RNP procedure — fly it in LNAV as published.</li>
+</ul>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>LNAV and LP = 2D to an MDA; LNAV/VNAV and LPV = 3D to a DA.</li><li>RNP APCH: no specific EASA approval but training required; RNP AR: specific approval.</li><li>Respect the chart temperature limit for baro-VNAV.</li><li>Go around on excessive deviation or navigation alert.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">The OAT is below the minimum temperature published for LNAV/VNAV on the chart. What do you do?</p>
+    <ol><li>Fly LNAV/VNAV anyway</li><li>Do not use LNAV/VNAV minima — use LNAV or another approach</li><li>Increase the DA by 50 ft</li><li>Fly faster</li></ol>
+    <p class="a"><b>Answer: B.</b> Below the temperature limit the baro-VNAV path is not protected.</p></div>
+</section>
+<section class="lesson" id="lesson-5">
+  <div class="lesson-head"><div class="k">Module 2 · PBN Operations</div>
+    <h1>Lesson 05: Approvals, MEL and Crew Responsibilities</h1><div class="m">Lesson 5 of 5 · about 5 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Identify the approvals and documents for PBN operations.</li><li>Apply the MEL to navigation equipment.</li><li>Summarise crew responsibilities in PBN operations.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-05.jpg" alt="Two pilots checking documents on the flight deck"><figcaption>Plan, check, fly, monitor, act, report.</figcaption></figure>
+  
+<h2>Documents and approvals</h2>
+<ul>
+  <li>The AFM states the aircraft's PBN capabilities. The OM B lists the company's PBN operations by fleet.</li>
+  <li>The flight plan item 10 and item 18 (<code>PBN/</code>) codes must match the aircraft's actual capability and approvals.</li>
+  <li>Specific approvals (for example RNP AR APCH) are listed in the operations specifications of the AOC.</li>
+</ul>
+
+<h2>MEL</h2>
+<p>The MEL includes the dispatch requirements for systems that need a specific capability or approval — RNAV/PBN, RVSM and LVO. Check the MEL for FMS, GNSS receivers, IRS and display units before planning a PBN route or approach.</p>
+
+<h2>Crew responsibilities</h2>
+<ol class="steps">
+  <li>Plan: NOTAMs, GNSS integrity, database currency, equipment and MEL.</li>
+  <li>Load and cross-check procedures from the database.</li>
+  <li>Fly with the required modes and monitor deviations and alerts.</li>
+  <li>Act on alerts: inform ATC, apply the contingency, go around when required.</li>
+  <li>Report navigation errors and GNSS interference.</li>
+</ol>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>AFM + OM B + AOC specify PBN capability and approvals; flight plan codes must match.</li><li>Check the MEL for FMS, GNSS, IRS and displays.</li><li>Plan, load and check, fly and monitor, act on alerts, report.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">Where are specific approvals such as RNP AR APCH recorded?</p>
+    <ol><li>In the AFM only</li><li>In the operations specifications of the AOC</li><li>In the flight plan</li><li>On the chart</li></ol>
+    <p class="a"><b>Answer: B.</b> Specific approvals appear in the operations specifications.</p></div>
+</section><p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p></body></html>

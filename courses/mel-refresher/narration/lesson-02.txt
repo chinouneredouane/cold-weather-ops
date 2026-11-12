@@ -1,0 +1,51 @@
+Domestic Airlines — MEL Refresher
+Lesson 2: Reading an MEL Item
+
+Learning objectives:
+- Read the columns and conditions of an MEL item.
+- Apply the rectification interval categories.
+- Apply (M) and (O) procedures and placards.
+
+The columns
+
+Column Meaning
+
+System / item (ATA chapter) The equipment, by ATA reference (e.g. 28 fuel, 73 engine fuel and control)
+
+Rectification interval category The time allowed to repair the item (A, B, C or D)
+
+Number installed How many are fitted
+
+Number required for dispatch How many must work
+
+Remarks or exceptions The conditions, limitations and procedures for dispatch
+
+Rectification interval categories
+
+Category Interval
+
+A No standard interval — as stated in the remarks of the item
+
+B 3 consecutive calendar days, excluding the day of discovery
+
+C 10 consecutive calendar days, excluding the day of discovery
+
+D 120 consecutive calendar days, excluding the day of discovery
+
+A one-time extension of categories B, C or D may be allowed under a procedure approved by the authority — never by the crew.
+
+(M), (O) and placards
+
+(M) — a maintenance procedure must be performed before dispatch (e.g. deactivating or securing the item).
+
+(O) — an operational procedure must be applied by the crew (e.g. a performance penalty, a fuel requirement, a procedure in flight).
+
+The inoperative item must be placarded and recorded in the technical log.
+
+Example — B737-800 MEL 28-01-03-01 (from the company LOFT)
+(M)(O) One main tank aft boost pump may be inoperative provided that: (a) both main tank forward pumps operate normally; (b) at the start of take-off, fuel in the associated tank is not less than 7,500 lb (3,402 kg); (c) a minimum of 2,500 lb (1,134 kg) is maintained in the associated tank; and (d) the boost pump is deactivated. — Training example only; always use the current MEL.
+
+Key takeaways:
+- Read every column: category, installed, required, remarks.
+- Categories: A as stated, B 3 days, C 10 days, D 120 days (excluding day of discovery).
+- (M) maintenance and (O) operational procedures; placard and log the item.
