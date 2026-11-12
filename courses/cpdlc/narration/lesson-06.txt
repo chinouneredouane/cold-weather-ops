@@ -1,0 +1,36 @@
+Domestic Airlines — CPDLC — Controller-Pilot Data Link
+Lesson 6: Good Practice and Common Errors
+
+Learning objectives:
+- Apply crew procedures that prevent CPDLC errors.
+- Recognise common CPDLC errors.
+- Manage workload when using CPDLC.
+
+Crew procedures
+
+Read the whole message — aloud or silently, as the SOP requires. Conditional clauses (“AT … CLIMB TO …”, “AFTER PASSING …”) are easy to miss.
+
+Cross-check it with the other pilot before responding.
+
+Respond — then set the clearance in the FCU/MCP or FMS, and cross-check the result.
+
+If anything is unclear, revert to voice .
+
+Common errors
+
+Executing a message before responding, or responding WILCO without both pilots reading it.
+
+Missing a condition in a conditional clearance.
+
+Responding to the wrong message when several are pending.
+
+Logon failures caused by wrong flight plan or FMS data.
+
+Heads-down work with CPDLC at a critical moment — only one pilot should be heads-down at any time.
+
+Workload CPDLC reduces frequency congestion, but it can increase heads-down time. Plan its use for cruise and for non-urgent exchanges, and keep the pilot flying focused on the flight path.
+
+Key takeaways:
+- Read in full, cross-check, respond, then act — and verify the result.
+- Watch for conditional clauses and multiple pending messages.
+- Only one pilot heads-down; revert to voice when in doubt.

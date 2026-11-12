@@ -1,0 +1,53 @@
+Domestic Airlines — Hot Weather Operations
+Lesson 2: Engines, APU and Aircraft Systems in Hot Weather
+
+Learning objectives:
+- Apply engine and APU limitations in high temperatures.
+- Protect brakes, tyres and avionics in hot conditions.
+- Use the fleet-specific hot weather procedures.
+
+Engines and APU
+
+Exhaust gas / inter-turbine temperature margins are smaller in hot air. Monitor starts closely and know the start limits and the hot start and hung start procedures.
+
+Keep engine running time on the ground to a minimum, and avoid using high thrust on the ground for long periods.
+
+APU limits (EGT, load) are also closer in hot weather. Ground power and conditioned air reduce APU use.
+
+Brakes and tyres
+
+Brake temperatures rise faster and cool more slowly in hot weather. Respect the minimum brake cooling times between flights.
+
+Avoid riding the brakes during taxi — keep taxi speeds moderate (Lesson 5).
+
+Tyre pressures increase with temperature; tyres are also stressed by high ground speeds.
+
+Cockpit, cabin and avionics
+
+Use ground conditioned air or the APU to cool the cabin and avionics before boarding.
+
+Watch for avionics overheat cautions and equipment cooling failures.
+
+Protect crew performance: drink water, manage fatigue and heat stress during long ground times.
+
+Fleet-specific procedures
+
+Topic Boeing 737-800 Dash 8-Q400 / Q200
+
+Hot weather procedures FCOM Supplementary Procedures — Adverse Weather, hot weather operation (SP 16.17) AFM / AOM hot weather and high-temperature limitations
+
+Engine and APU start limits FCOM limitations; APU start on battery (SP 7.7) AFM engine start and ITT limits; APU / ground power as installed
+
+Bleeds-off operation Bleeds-off take-off and landing procedure and performance credit (FCOM / QRH performance) Bleed and pack settings for take-off per AFM performance charts
+
+Fuel system checks Spar fuel shut-off valve check (SP 12-01) AOM fuel system procedures
+
+Performance QRH performance inflight / dispatch tables; Jetplan AFM performance charts or company performance software; Jetplan
+
+Prepare Before the summer recurrent training, review the hot weather supplementary procedures and limitations for your type. The values and the exact procedure always come from your aircraft manuals.
+
+Key takeaways:
+- Smaller temperature margins on engine and APU starts — know the limits.
+- Respect brake cooling times; avoid riding the brakes.
+- Cool the aircraft with ground air or APU; watch avionics cooling.
+- Use your type's hot weather procedures (B737 FCOM SP 16.17; Dash 8 AFM/AOM).

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lesson 03: Principles of CPDLC Exchanges and Message Composition — CPDLC — Controller-Pilot Data Link</title>
+  <meta name="description" content="Apply the principles for choosing voice or CPDLC." />
+  <meta name="theme-color" content="#125a2b" />
+  <link rel="icon" type="image/png" href="../../../assets/img/logo.png" />
+  <link rel="stylesheet" href="../../../assets/css/academy.css" />
+</head>
+<body data-course="cpdlc" data-total="6" data-lesson="3">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="brand">
+      <a href="../index.html"><img src="../../../assets/img/logo.png" alt="Domestic Airlines Logo" class="logo" /></a>
+      <div class="brand-text">
+        <div class="ar">الخطوط الجوية الداخلية</div>
+        <div class="en">DOMESTIC AIRLINES — CPDLC</div>
+      </div>
+    </div>
+    <nav aria-label="Main">
+      <a href="../index.html">Home</a>
+      <a href="../quiz.html">Quiz</a>
+    </nav>
+  </header>
+  <div class="progress" aria-hidden="true"><div id="progressBar"></div></div>
+  <main id="main">
+
+    <div class="lesson-layout">
+      <div>
+        <button class="btn ghost sidebar-toggle" aria-controls="courseContents" aria-expanded="false">Show course contents</button>
+        <nav class="card sidebar" id="courseContents" aria-label="Course contents"><h2>Module 1 · CPDLC Principles</h2><ul><li><a href="lesson-01.html" data-lesson-link="1"><span class="state" aria-hidden="true"></span><span>01. CPDLC: Definition, References and Benefits</span></a></li><li><a href="lesson-02.html" data-lesson-link="2"><span class="state" aria-hidden="true"></span><span>02. Data Link Services</span></a></li><li><a href="lesson-03.html" data-lesson-link="3" aria-current="page"><span class="state" aria-hidden="true"></span><span>03. Principles of CPDLC Exchanges and Message Composition</span></a></li></ul><h2>Module 2 · Procedures and Practice</h2><ul><li><a href="lesson-04.html" data-lesson-link="4"><span class="state" aria-hidden="true"></span><span>04. Reverting to Voice, Phraseology and Failures</span></a></li><li><a href="lesson-05.html" data-lesson-link="5"><span class="state" aria-hidden="true"></span><span>05. Using the CMU-900 on the Boeing 737-800</span></a></li><li><a href="lesson-06.html" data-lesson-link="6"><span class="state" aria-hidden="true"></span><span>06. Good Practice and Common Errors</span></a></li></ul></nav>
+      </div>
+      <article class="lesson">
+        <header class="lesson-head">
+          <svg viewBox="0 0 100 100" class="art" aria-hidden="true" focusable="false"><circle cx="34" cy="32" r="13" fill="none" stroke="currentColor" stroke-width="6"/><circle cx="68" cy="36" r="11" fill="none" stroke="currentColor" stroke-width="6"/><path d="M10 86c2-18 12-28 24-28s22 10 24 28M54 86c1-14 7-22 14-22s14 8 16 22" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/></svg>
+          <div class="eyebrow">Module 1 · CPDLC Principles</div>
+          <h1>Lesson 03: Principles of CPDLC Exchanges and Message Composition</h1>
+          <div class="meta"><span>Lesson 3 of 6</span><span>≈ 7 min</span><a class="pdf-link" href="../pdf/lesson-03.pdf" download>⬇ Download PDF</a></div>
+        </header>
+        <div class="card lesson-body">
+          <div class="audio-block">
+            <span class="label">Lesson narration</span>
+            <audio controls preload="metadata" style="display:none"><source src="../media/audio/lesson-03.mp3" type="audio/mpeg"></audio>
+            <button type="button" class="btn primary" data-tts style="display:none">Listen</button>
+            <button type="button" class="btn ghost" data-tts-stop style="display:none">Stop</button>
+            <div class="audio-status" aria-live="polite">Checking for narration…</div>
+          </div>
+          <section class="objectives" data-narrate>
+            <h2>Learning objectives</h2>
+            <ul><li>Apply the principles for choosing voice or CPDLC.</li><li>Understand single- and multi-element messages.</li><li>Respond correctly to messages.</li></ul>
+          </section>
+          <figure class="lesson-figure"><img src="../media/images/lesson-03.jpg" alt="Airliner in cruise above clouds" loading="lazy" decoding="async"><figcaption>Read the whole message before responding.</figcaption></figure>
+          <div data-narrate>
+
+<h2>Principles</h2>
+<ul>
+  <li><strong>Voice and data link co-exist.</strong> CPDLC supplements voice; it does not replace it.</li>
+  <li>CPDLC is used only for <strong>non-time-critical</strong> communications. Time-criticality depends on the traffic situation, the end-to-end performance (systems and human response times) and the recovery time.</li>
+  <li>The choice of voice or CPDLC is at the discretion of the controller and the pilot.</li>
+  <li>Usually, a CPDLC message is answered by CPDLC and a voice message by voice.</li>
+</ul>
+<figure class="diagram"><svg viewBox="0 0 700 300" role="img" aria-label="CPDLC dialogue"><title>A CPDLC dialogue</title>
+<desc>An uplink clearance, an optional STANDBY and a WILCO response that closes the dialogue.</desc>
+<g font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="13" fill="#24342b"><defs><marker id="ar9" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="context-stroke"/></marker></defs>
+<rect x="20" y="40" width="170" height="210" rx="14" fill="#1f5f99" opacity=".12" stroke="#1f5f99"/>
+<text x="105" y="30" text-anchor="middle" font-weight="700" fill="#1f5f99">Controller (ATSU)</text>
+<rect x="510" y="40" width="170" height="210" rx="14" fill="#1d7a3e" opacity=".12" stroke="#1d7a3e"/>
+<text x="595" y="30" text-anchor="middle" font-weight="700" fill="#125a2b">Flight deck</text>
+<g font-size="13">
+<path d="M190 75 L508 75" stroke="#1f5f99" stroke-width="3" marker-end="url(#ar9)"/><text x="350" y="68" text-anchor="middle">1. Uplink: CLIMB TO FL360</text>
+<path d="M510 120 L192 120" stroke="#c76a00" stroke-width="3" marker-end="url(#ar9)"/><text x="350" y="113" text-anchor="middle">2. Downlink (optional): STANDBY</text>
+<path d="M510 165 L192 165" stroke="#1d7a3e" stroke-width="3" marker-end="url(#ar9)"/><text x="350" y="158" text-anchor="middle">3. Downlink: WILCO — dialogue closed</text>
+<path d="M190 215 L508 215" stroke="#5b6b62" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#ar9)"/><text x="350" y="208" text-anchor="middle" fill="#5b6b62">technical acknowledgement / message status in the ATC log</text>
+</g>
+<text x="350" y="285" text-anchor="middle" fill="#c8102e" font-weight="700">Read the whole message, cross-check with the other pilot, then respond — and only then act.</text></g></svg>
+<figcaption>A typical CPDLC dialogue. The response closes the dialogue; STANDBY keeps it open.</figcaption></figure>
+<h2>Message composition</h2>
+<ul>
+  <li>Messages use a <strong>standard format</strong> from the ICAO message set, in plain language or abbreviations — without non-essential words.</li>
+  <li>A message can have a <strong>single element</strong> (for example <code>CLIMB TO FL360</code>) or <strong>several elements</strong> (for example <code>CLIMB TO FL360, CLIMB AT 1000 FT PER MINUTE MINIMUM</code>). The maximum number of elements depends on the system and the airspace.</li>
+  <li>A single response to a multi-element message applies to <strong>all elements</strong>. If any part cannot be complied with, respond <strong>UNABLE</strong> to the whole message.</li>
+  <li>Only one open dialogue of the same type with the same aircraft is allowed at a time: horizontal profile, vertical profile, speed, or SSR code. A speed and a level dialogue can be open together; a heading and a direct-route dialogue cannot.</li>
+  <li>Systems must handle unsupported messages correctly, normally with an error message.</li>
+</ul>
+
+<h2>Responses</h2>
+<div class="table-wrap"><table>
+<tr><th>Response</th><th>Meaning</th></tr>
+<tr><td>WILCO</td><td>I will comply with the clearance or instruction.</td></tr>
+<tr><td>UNABLE</td><td>I cannot comply (with the whole message).</td></tr>
+<tr><td>STANDBY</td><td>Wait — the message is being considered; a further response will follow. The dialogue stays open.</td></tr>
+<tr><td>AFFIRM / NEGATIVE</td><td>Yes / no to a question.</td></tr>
+<tr><td>ROGER</td><td>Message received (for information messages).</td></tr>
+</table></div>
+
+          </div>
+          <section class="takeaways" data-narrate>
+            <h2>Key takeaways</h2>
+            <ul><li>Voice and CPDLC co-exist; CPDLC for non-time-critical messages only.</li><li>One response applies to all elements of a multi-element message — UNABLE if any part cannot be done.</li><li>Only one open dialogue of each type at a time.</li></ul>
+          </section>
+          <section class="kc" data-answer="1" data-explain="If any element cannot be complied with, respond UNABLE to the whole message.">
+            <h2>Knowledge check</h2>
+            <p class="q">You receive a two-element message and can comply with only one element. What do you respond?</p>
+            <div class="opts"><button type="button" class="opt" aria-pressed="false">WILCO</button><button type="button" class="opt" aria-pressed="false">UNABLE for the whole message</button><button type="button" class="opt" aria-pressed="false">ROGER</button><button type="button" class="opt" aria-pressed="false">AFFIRM</button></div>
+            <div class="fb" aria-live="polite"></div>
+          </section>
+          <div class="lesson-end"></div>
+        </div>
+        <nav class="lesson-nav" aria-label="Lesson navigation"><a class="btn" href="lesson-02.html">◀ Previous<small>Data Link Services</small></a><a class="btn primary" id="nextLesson" href="lesson-04.html">Next ▶<small>Reverting to Voice, Phraseology and Failures</small></a></nav>
+      </article>
+    </div>
+  </main>
+  <footer class="bottombar">
+    <img src="../../../assets/img/logo.png" alt="Domestic Airlines Logo" class="logo small" />
+    <div class="copy">&copy; 2026 Domestic Airlines — Training</div>
+    <a href="../../../index.html">All courses</a>
+    <p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p>
+  </footer>
+<script src="../../../assets/js/course.js"></script>
+</body>
+</html>

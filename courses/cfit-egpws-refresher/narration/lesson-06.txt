@@ -1,0 +1,44 @@
+Domestic Airlines — CFIT and EGPWS Refresher
+Lesson 6: The Escape Manoeuvre — by Fleet
+
+Learning objectives:
+- Apply the company EGPWS recovery procedure for your fleet.
+- Explain the reasons for each step.
+- Complete the recovery and inform ATC.
+
+Company procedures
+
+Fleet Pilot flying Pilot monitoring
+
+Dash 8-Q400 Company SOP, EGPWS Recovery (Rev 02)
+Calls “CHECK POWER” . Selects GA and disconnects the autopilot. Advances the power levers to the detent , rolls wings level and pitches aggressively to initiate the climb, respecting the stick shaker. Targets V GA . Once clear of terrain: establishes level flight and reconfigures the aircraft.
+Confirms NTOP on the engine display and calls “POWER SET” . Monitors radio altimeter and vertical speed and informs the PF of performance and terrain clearance. Once clear: advises ATC — “(call sign) EGPWS recovery, new altitude / flight level …”.
+
+Dash 8-Q200 Company SOP, Table 25 EGPWS recovery
+Calls “CHECK POWER” . Selects GA and disconnects the AP. Advances the power levers to MTOP , rolls wings level and pitches aggressively to initiate the climb, responding to the stick shaker. Targets V GA . Once clear: establishes level flight and configures the aircraft.
+Confirms MTOP and calls “POWER SET” . Monitors radio altimeter and vertical speed and informs the PF of performance and terrain clearance. Once clear: advises ATC of the EGPWS recovery and new altitude or flight level.
+
+Boeing 737-800
+Apply the Terrain Avoidance manoeuvre in the QRH (Non-Normal Manoeuvres) and the FCTM exactly as published. Memory item — review it in your QRH before this course.
+
+Why each step matters
+
+Maximum available power immediately — the climb gradient depends on excess thrust. Turboprops respond quickly; jets need several seconds to spool up.
+
+Autopilot off, wings level — the lift vector must point up; a bank reduces the climb.
+
+Pitch aggressively, respecting the stick shaker — the best climb gradient is obtained close to the stall warning. Do not exceed it.
+
+Do not change the configuration during the escape unless your procedure says so. Retracting flaps or gear too early can reduce the climb capability.
+
+The PM monitors radio altimeter and vertical speed and calls the trend — the PF concentrates on flying.
+
+Continue until the warning stops and terrain clearance is assured, then level off, reconfigure and inform ATC.
+
+Practise it The escape manoeuvre is a last resort. It is practised in the simulator during recurrent training — so that, if needed, it happens instinctively.
+
+Key takeaways:
+- Q400: CHECK POWER → GA, AP off → power levers to detent → wings level, pitch aggressively (stick shaker) → NTOP, POWER SET → VGA.
+- Q200: the same sequence with MTOP.
+- B737-800: QRH Terrain Avoidance manoeuvre — a memory item.
+- After the escape: level off, reconfigure, tell ATC “EGPWS recovery”.

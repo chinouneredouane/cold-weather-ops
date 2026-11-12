@@ -1,0 +1,59 @@
+Domestic Airlines — RVSM Refresher
+Lesson 4: Contingencies and Special Situations
+
+Learning objectives:
+- Recognise the contingencies that must be reported to ATC.
+- Apply the pilot actions for equipment failures, turbulence, wake and mountain waves.
+- Explain the 2,000 ft separation cases.
+
+Tell ATC as soon as possible
+
+An in-flight contingency is any unforeseen circumstance that affects the ability to meet the RVSM height-keeping requirements. Inform ATC as soon as possible of:
+
+failure of the automatic altitude control system;
+
+loss of redundancy of the primary altimetry systems, or loss of all primary altimeters;
+
+loss of thrust requiring a descent;
+
+failure of any other equipment affecting height-keeping;
+
+an encounter with greater than moderate turbulence .
+
+Obtain a revised clearance before deviating from the cleared route or level whenever possible. If that is not possible, obtain it as soon as possible afterwards. If you cannot contact ATC, follow the regional contingency procedures.
+
+When the aircraft no longer meets RVSM requirements, ATC treats it as non-RVSM and applies 2,000 ft vertical separation or a horizontal separation minimum.
+
+Scenarios
+
+Scenario Pilot actions
+
+Loss of automatic altitude control, altitude alerter or all primary altimeters Tell ATC: “Unable RVSM due equipment.” Request a clearance out of RVSM airspace unless the operational situation dictates otherwise.
+
+Only one primary altimeter remains Cross-check it with the standby altimeter. Notify ATC of operation with a single primary altimeter. If its accuracy cannot be confirmed, act as for the loss of all primary altimeters.
+
+Transponder failure Contact ATC and request authority to continue at the cleared level. Comply with any revised clearance.
+
+Severe turbulence Tell ATC: “Unable RVSM due turbulence.” Request a vector clear of traffic if not offered, and a level change or re-route if desired. ATC applies horizontal separation or 2,000 ft.
+
+Wake turbulence Usually moderate or less at RVSM levels; the wind decides the risk. Request a vector, a level change or a lateral offset (where authorised).
+
+Mountain wave activity Report it to ATC. If traffic is called at an adjacent level, request a vector to avoid merging targets; request a level change or re-route if desired.
+
+Special cases
+
+Communication failure : ICAO procedures apply 2,000 ft vertical separation between the aircraft with the failure and other aircraft in RVSM airspace, unless horizontal separation exists.
+
+RVSM suspension : in a portion of airspace where RVSM is suspended (for example in widespread severe turbulence), 2,000 ft separation is applied to all aircraft.
+
+State aircraft : non-RVSM-approved State (e.g. military) aircraft may be accommodated; ATC applies 2,000 ft separation to them.
+
+Non-RVSM aircraft climbing or descending through RVSM levels to or from FL430 and above are handled workload permitting, and must be able to climb or descend continuously at a normal rate.
+
+Regional differences : RVSM is global, but contingency procedures can differ between regions. The commander must know the procedures of the region being flown.
+
+Key takeaways:
+- Report to ATC: autopilot altitude hold, altimetry, thrust or height-keeping failures, and turbulence greater than moderate.
+- Phrases: “Unable RVSM due equipment” / “Unable RVSM due turbulence”.
+- Non-RVSM status, communication failure and RVSM suspension mean 2,000 ft separation.
+- Know the regional contingency procedures.

@@ -1,0 +1,62 @@
+Domestic Airlines — RVSM Refresher
+Lesson 6: Phraseology, Reporting and Crew Knowledge
+
+Learning objectives:
+- Use the standard RVSM phraseology.
+- Complete the post-flight entries and reports.
+- Review the RVSM knowledge items required for recurrent training.
+
+Standard phraseology
+
+Circumstance Phraseology
+
+ATC asks the RVSM status of a flight “Confirm RVSM approved.”
+
+Pilot: the flight is RVSM approved “Affirm RVSM.”
+
+Pilot: the flight is not RVSM approved “Negative RVSM.”
+
+Pilot of a State aircraft that is not RVSM approved “Negative RVSM, State aircraft.”
+
+ATC denies entry to RVSM airspace “Unable clearance into RVSM airspace, maintain (or descend to, or climb to) flight level …”
+
+Pilot: weather prevents height-keeping (e.g. severe turbulence) “Unable RVSM due turbulence.”
+
+Pilot: equipment degraded below RVSM requirements “Unable RVSM due equipment.”
+
+ATC asks to be told when RVSM can be resumed “Report able to resume RVSM.”
+
+Pilot: able to resume after a contingency “Ready to resume RVSM.”
+
+After the flight
+
+Enter in the technical log any problem with altitude-keeping, transponder failures, or altimeter differences greater than 200 ft .
+
+File the altitude deviation report for any deviation of 300 ft or more from the cleared level.
+
+File the wake turbulence encounter report after any significant wake encounter.
+
+What every crew member must know (recurrent training items)
+
+Airworthiness documents and the aircraft's RVSM approval;
+
+operating practices and procedures, the Operations Manual and checklists;
+
+the MEL items for RVSM;
+
+standard ATC phraseology and cross-checking of clearances;
+
+use of the standby altimeter in contingencies;
+
+problems of visual perception of other aircraft only 1,000 ft away;
+
+characteristics of the altitude capture system;
+
+the relationship between altimetry, automatic altitude control and transponder in normal and abnormal conditions;
+
+any airframe operating restrictions for RVSM.
+
+Key takeaways:
+- Know the standard phrases: Affirm / Negative RVSM, Unable RVSM due turbulence / equipment, Ready to resume RVSM.
+- Technical log: altimeter differences over 200 ft, altitude-keeping or transponder problems.
+- Report altitude deviations of 300 ft or more, and wake turbulence encounters.

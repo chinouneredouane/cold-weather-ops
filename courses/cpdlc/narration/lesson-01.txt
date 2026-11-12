@@ -1,0 +1,52 @@
+Domestic Airlines — CPDLC — Controller-Pilot Data Link
+Lesson 1: CPDLC: Definition, References and Benefits
+
+Learning objectives:
+- Define CPDLC and describe its purpose.
+- Identify the ICAO and European references.
+- List the expected benefits and limitations.
+
+Definition
+
+Controller–Pilot Data Link Communications (CPDLC) is a means of communication between controller and pilot using data link for ATC communications (ICAO Doc 4444, PANS-ATM). It is a two-way system by which controllers can send non-urgent, strategic messages to an aircraft as an alternative to voice. The message is displayed on a flight deck display.
+
+Controllers can issue clearances (levels, routes and deviations, speeds), frequency assignments and requests for information.
+
+Pilots can respond to messages, request and receive clearances and information, and send reports.
+
+A free text capability exchanges information that does not fit the standard formats.
+
+References
+
+Reference Content
+
+ICAO Annex 10, Volume III Communication systems, including data link
+
+ICAO Doc 4444 (PANS-ATM) CPDLC procedures and the CPDLC message set
+
+ICAO Doc 10037 — GOLD (Global Operational Data Link) Manual The global operational guidance for flight crews, operators and ATS on data link operations
+
+Commission Implementing Regulation (EU) 2023/1770 Current EU requirements for aircraft equipment and data link services in Single European Sky airspace. It repealed the original Data Link Services Implementing Rule, Regulation (EC) No 29/2009.
+
+Aircraft manuals FCOM / AFM limitations and the CMU operating procedures for your type
+
+A short history in Europe
+
+The Data Link Services Implementing Rule (Regulation (EC) No 29/2009) mandated CPDLC above FL285 in European airspace. Its implementation was affected by technical problems — random disconnections called provider aborts . An EASA investigation found that they came from a combination of factors linked to the radio-frequency environment and the single-frequency data link infrastructure, and recommended a multi-frequency infrastructure. The dates of application were therefore deferred (Regulation (EU) 2015/310 and later amendments). In 2023 the requirements were consolidated in Regulation (EU) 2023/1770.
+
+Benefits
+
+Less voice traffic on the frequency and increased sector capacity;
+
+more pilot requests handled at the same time;
+
+fewer misunderstandings — for example call sign confusion;
+
+safer frequency changes and fewer loss-of-communication events.
+
+Limitation CPDLC latency is much longer than voice — a response can take up to several minutes. Use it only for non-time-critical communications. Check your aircraft limitations: on the B737 with protected-mode CPDLC (PM-CPDLC), the installation is intended for use in the cruise phase and for non-critical messages only.
+
+Key takeaways:
+- CPDLC: data link ATC messages for non-urgent, strategic communications.
+- References: Annex 10 Vol III, PANS-ATM, ICAO GOLD (Doc 10037), EU Regulation 2023/1770.
+- Benefits: less frequency congestion, fewer misunderstandings; limitation: latency — not for time-critical messages.

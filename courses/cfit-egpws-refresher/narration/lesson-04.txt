@@ -1,0 +1,42 @@
+Domestic Airlines — CFIT and EGPWS Refresher
+Lesson 4: SOPs, Stabilised Approaches and CDFA
+
+Learning objectives:
+- Apply stabilised approach criteria and the go-around policy.
+- Fly non-precision approaches with the CDFA technique.
+- Use the autoflight system to reduce CFIT risk.
+
+Standard operating procedures
+
+Do not invent your own procedures. Follow the company SOPs.
+
+Before the approach, know which approach and runway aids are available (NOTAMs, ATIS, pilot reports) and use all of them.
+
+Understand the approach, missed approach and departure procedures, and comply with them.
+
+Stabilised approach
+
+Fly stabilised approaches. If the aircraft is not stabilised by 1,000 ft above aerodrome elevation in IMC or 500 ft in VMC (or the gates in your Operations Manual), go around . Domestic Airlines applies a no-fault go-around policy.
+
+Continuous descent final approach (CDFA)
+
+EASA requires non-precision approaches to be flown with the CDFA technique unless otherwise approved (CAT.OP.MPA.115). The company presentations also call it CANPA (constant angle non-precision approach).
+
+The aircraft descends on a constant angle — typically about 3° — from the final approach fix to the runway, without levelling off at the MDA.
+
+At the decision point (DA/H or MDA/H with the add-on defined by the company), if the required visual references are not in sight, go around.
+
+Where available and trained, use the autoflight system — for example LNAV/VNAV or FPA modes — to fly the constant angle.
+
+Automation
+
+Use automation appropriately to reduce workload and to fly stabilised approaches.
+
+Understand the autopilot modes. Monitor the FMA, and intervene manually if the aircraft does not do what is intended.
+
+Avoid excessive descent rates and low or high speeds at low altitude.
+
+Key takeaways:
+- Not stabilised by 1,000 ft IMC / 500 ft VMC (or company gates): go around.
+- Non-precision approaches: CDFA (CANPA) — constant angle, no levelling at MDA.
+- Know the autopilot modes; monitor the FMA; intervene if needed.

@@ -1,0 +1,43 @@
+Domestic Airlines — CFIT and EGPWS Refresher
+Lesson 2: Altimeters, Safe Altitudes and Charts
+
+Learning objectives:
+- Apply correct altimeter setting procedures.
+- Use minimum safe altitudes and chart information.
+- Recognise when temperature corrections are needed.
+
+Altimeters
+
+Know the units used in the area: hectopascals or inches of mercury, feet or metres. Be ready to convert feet and metres.
+
+Be vigilant during radio transmissions: read back the altimeter setting in full, and verify if in doubt — QNH 1013 and 29.92 can be confused.
+
+Apply the correct setting for the phase of flight (transition altitude and level), with a cross-check and read-back procedure on the flight deck.
+
+Cross-check the radio altimeter with the barometric altimeter , especially in the approach.
+
+Fly higher than the minimum altitudes during atmospheric anomalies — strong winds over terrain, very low temperatures.
+
+Some EGPWS installations use geometric altitude (from GPS), which reduces errors from wrong altimeter settings or non-standard temperatures.
+
+Safe altitudes
+
+Make sure the right charts are on board and up to date . Use colour terrain contours when available.
+
+Study the minimum safe altitude information — MSA, MORA / grid MORA, minimum sector altitudes and minimum vectoring altitudes.
+
+Know and fly at or above the safe altitude for your area of operation.
+
+Descend below the MSA only when established on a published instrument procedure, under radar control with an appropriate clearance, or when visual with the terrain.
+
+Know the height of the highest terrain or obstacle in the area and your position relative to it.
+
+Cold temperatures
+
+In air colder than ISA, the aircraft is lower than the altimeter shows . Apply cold temperature corrections to minimum altitudes according to PANS-OPS and the company procedure — see Lesson 24 of the Cold Weather Operations course.
+
+Key takeaways:
+- Know the units; read back and cross-check every altimeter setting.
+- Cross-check radio and barometric altimeters.
+- Use up-to-date charts; stay at or above MSA unless on a published procedure, under radar control or visual.
+- In cold air you are lower than indicated — apply corrections.

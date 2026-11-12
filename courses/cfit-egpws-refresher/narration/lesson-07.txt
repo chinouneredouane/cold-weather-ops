@@ -1,0 +1,50 @@
+Domestic Airlines — CFIT and EGPWS Refresher
+Lesson 7: Training Recommendations and Lessons from Accidents
+
+Learning objectives:
+- Describe the CFIT ground and simulator training content.
+- Learn from well-known CFIT accidents.
+- Summarise the key CFIT prevention principles.
+
+Training
+
+The ground training builds the awareness to recognise and avoid CFIT situations. The simulator training applies that knowledge and develops proficiency in the escape manoeuvre. This training is given at initial and type training and repeated in recurrent training (at least every two years for the full programme).
+
+Topics to review regularly:
+
+avoiding excessive descent rates, and low or high speeds at low level;
+
+autopilot modes, FMA and FMS callouts, and manual intervention;
+
+barometric and radio altimetry; stabilised approach criteria; descent below MSA;
+
+the missed approach — especially when it appears likely — and go-around awareness;
+
+approach charts and en-route charts (including grid MORA);
+
+CRM and threat and error management briefings that highlight terrain.
+
+The simulator session should include LOFT into airports with high terrain, non-precision approaches with CDFA, circling and visual approaches, go-arounds (especially from circling), type-specific terrain escape manoeuvres, and emergency descents over mountainous terrain using escape routes.
+
+Lessons from accidents
+
+Accident What happened Lesson
+
+Air Inter 148 Airbus A320, Mont Sainte-Odile, France, January 1992 During a night approach in mountainous terrain the aircraft descended far more steeply than intended; a confusion between vertical speed and flight path angle modes was considered a likely factor. No GPWS was fitted. 87 people died. Monitor the FMA and the vertical profile; cross-check altitude against distance.
+
+American Airlines 965 Boeing 757, near Cali, Colombia, December 1995 During a rushed approach the crew entered a wrong navigation point in the FMS; the aircraft turned towards high terrain while descending. The GPWS escape was flown, but the speedbrakes were still extended. 159 people died. Do not accept a rushed approach; verify FMS entries; in the escape, maximum performance — speedbrakes retracted.
+
+Korean Air 801 Boeing 747, Guam, August 1997 At night, in rain, the crew flew a non-precision approach while the glideslope was out of service, and descended below the minimum altitude before reaching the step-down fix. 228 people died. Brief inoperative aids; respect step-down altitudes and MDA; use CDFA.
+
+Conclusion
+
+Adhere to the company SOPs at all times — and understand why.
+
+Know your horizontal and vertical terrain clearance in every phase of flight.
+
+Respond immediately to EGPWS warnings.
+
+Key takeaways:
+- Ground training builds awareness; simulator training builds the escape manoeuvre.
+- Air Inter 148, AA965 and KAL801: mode awareness, FMS checks, step-down discipline.
+- SOPs, terrain awareness and immediate response to warnings prevent CFIT.

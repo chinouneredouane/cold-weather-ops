@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lesson 02: Data Link Services — CPDLC — Controller-Pilot Data Link</title>
+  <meta name="description" content="Describe the data link services available to the flight crew." />
+  <meta name="theme-color" content="#125a2b" />
+  <link rel="icon" type="image/png" href="../../../assets/img/logo.png" />
+  <link rel="stylesheet" href="../../../assets/css/academy.css" />
+</head>
+<body data-course="cpdlc" data-total="6" data-lesson="2">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="brand">
+      <a href="../index.html"><img src="../../../assets/img/logo.png" alt="Domestic Airlines Logo" class="logo" /></a>
+      <div class="brand-text">
+        <div class="ar">الخطوط الجوية الداخلية</div>
+        <div class="en">DOMESTIC AIRLINES — CPDLC</div>
+      </div>
+    </div>
+    <nav aria-label="Main">
+      <a href="../index.html">Home</a>
+      <a href="../quiz.html">Quiz</a>
+    </nav>
+  </header>
+  <div class="progress" aria-hidden="true"><div id="progressBar"></div></div>
+  <main id="main">
+
+    <div class="lesson-layout">
+      <div>
+        <button class="btn ghost sidebar-toggle" aria-controls="courseContents" aria-expanded="false">Show course contents</button>
+        <nav class="card sidebar" id="courseContents" aria-label="Course contents"><h2>Module 1 · CPDLC Principles</h2><ul><li><a href="lesson-01.html" data-lesson-link="1"><span class="state" aria-hidden="true"></span><span>01. CPDLC: Definition, References and Benefits</span></a></li><li><a href="lesson-02.html" data-lesson-link="2" aria-current="page"><span class="state" aria-hidden="true"></span><span>02. Data Link Services</span></a></li><li><a href="lesson-03.html" data-lesson-link="3"><span class="state" aria-hidden="true"></span><span>03. Principles of CPDLC Exchanges and Message Composition</span></a></li></ul><h2>Module 2 · Procedures and Practice</h2><ul><li><a href="lesson-04.html" data-lesson-link="4"><span class="state" aria-hidden="true"></span><span>04. Reverting to Voice, Phraseology and Failures</span></a></li><li><a href="lesson-05.html" data-lesson-link="5"><span class="state" aria-hidden="true"></span><span>05. Using the CMU-900 on the Boeing 737-800</span></a></li><li><a href="lesson-06.html" data-lesson-link="6"><span class="state" aria-hidden="true"></span><span>06. Good Practice and Common Errors</span></a></li></ul></nav>
+      </div>
+      <article class="lesson">
+        <header class="lesson-head">
+          <svg viewBox="0 0 100 100" class="art" aria-hidden="true" focusable="false"><circle cx="34" cy="32" r="13" fill="none" stroke="currentColor" stroke-width="6"/><circle cx="68" cy="36" r="11" fill="none" stroke="currentColor" stroke-width="6"/><path d="M10 86c2-18 12-28 24-28s22 10 24 28M54 86c1-14 7-22 14-22s14 8 16 22" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/></svg>
+          <div class="eyebrow">Module 1 · CPDLC Principles</div>
+          <h1>Lesson 02: Data Link Services</h1>
+          <div class="meta"><span>Lesson 2 of 6</span><span>≈ 6 min</span><a class="pdf-link" href="../pdf/lesson-02.pdf" download>⬇ Download PDF</a></div>
+        </header>
+        <div class="card lesson-body">
+          <div class="audio-block">
+            <span class="label">Lesson narration</span>
+            <audio controls preload="metadata" style="display:none"><source src="../media/audio/lesson-02.mp3" type="audio/mpeg"></audio>
+            <button type="button" class="btn primary" data-tts style="display:none">Listen</button>
+            <button type="button" class="btn ghost" data-tts-stop style="display:none">Stop</button>
+            <div class="audio-status" aria-live="polite">Checking for narration…</div>
+          </div>
+          <section class="objectives" data-narrate>
+            <h2>Learning objectives</h2>
+            <ul><li>Describe the data link services available to the flight crew.</li><li>Explain the logon (DLIC) process.</li><li>Identify the services mandated in Europe.</li></ul>
+          </section>
+          <figure class="lesson-figure"><img src="../media/images/lesson-02.jpg" alt="Flight deck at cruise" loading="lazy" decoding="async"><figcaption>Log on before entering CPDLC airspace.</figcaption></figure>
+          <div data-narrate>
+
+<h2>The services</h2>
+<div class="table-wrap"><table>
+<tr><th>Service</th><th>Purpose</th></tr>
+<tr><td><strong>DLIC</strong> — Data Link Initiation Capability</td><td>Provides the information needed to establish data link communications between an ATS unit and the aircraft. It is done <strong>before any other data link service</strong> (the logon).</td></tr>
+<tr><td><strong>ACM</strong> — ATC Communications Management</td><td>Automated assistance for the transfer of ATC communications (voice and CPDLC) between sectors and units.</td></tr>
+<tr><td><strong>ACL</strong> — ATC Clearances</td><td>Operational exchanges: pilots send requests and reports; controllers issue clearances, instructions and notifications.</td></tr>
+<tr><td><strong>AMC</strong> — ATC Microphone Check</td><td>Lets the controller send one instruction to all CPDLC aircraft on a frequency to check that none is blocking the voice channel (stuck microphone).</td></tr>
+<tr><td><strong>DCL</strong> — Departure Clearance</td><td>Requesting and delivering departure clearances by data link.</td></tr>
+<tr><td><strong>DSC</strong> — Downstream Clearance</td><td>Obtaining a clearance from an ATS unit that is not yet in control of the aircraft, when it cannot be obtained through unit-to-unit coordination.</td></tr>
+</table></div>
+<p>The European data link rules mandated the first four services: <strong>DLIC, ACM, ACL and AMC</strong>.</p>
+
+<h2>Logon</h2>
+<ul>
+  <li>The logon uses the <strong>ICAO code of the ATS unit</strong> and must match the flight plan data (aircraft identification and registration). Errors in the flight plan or the FMS cause logon failures.</li>
+  <li>Log on in good time before entering the CPDLC airspace, as published in the AIP.</li>
+  <li>Only one ATS unit is the <strong>current data authority</strong> at any time — a controlled flight is under the control of only one ATC unit at a time (ICAO Annex 11).</li>
+</ul>
+
+          </div>
+          <section class="takeaways" data-narrate>
+            <h2>Key takeaways</h2>
+            <ul><li>DLIC (logon) comes first; then ACM, ACL and AMC — the four mandated services in Europe.</li><li>DCL and DSC add departure and downstream clearances.</li><li>Logon details must match the flight plan; only one current data authority at a time.</li></ul>
+          </section>
+          <section class="kc" data-answer="1" data-explain="The ATC Microphone Check service detects a stuck microphone blocking the frequency.">
+            <h2>Knowledge check</h2>
+            <p class="q">What does the AMC service do?</p>
+            <div class="opts"><button type="button" class="opt" aria-pressed="false">Sends weather reports</button><button type="button" class="opt" aria-pressed="false">Lets the controller check that no aircraft is blocking the voice frequency</button><button type="button" class="opt" aria-pressed="false">Assigns squawk codes</button><button type="button" class="opt" aria-pressed="false">Manages the logon</button></div>
+            <div class="fb" aria-live="polite"></div>
+          </section>
+          <div class="lesson-end"></div>
+        </div>
+        <nav class="lesson-nav" aria-label="Lesson navigation"><a class="btn" href="lesson-01.html">◀ Previous<small>CPDLC: Definition, References and Benefits</small></a><a class="btn primary" id="nextLesson" href="lesson-03.html">Next ▶<small>Principles of CPDLC Exchanges and Message Composition</small></a></nav>
+      </article>
+    </div>
+  </main>
+  <footer class="bottombar">
+    <img src="../../../assets/img/logo.png" alt="Domestic Airlines Logo" class="logo small" />
+    <div class="copy">&copy; 2026 Domestic Airlines — Training</div>
+    <a href="../../../index.html">All courses</a>
+    <p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p>
+  </footer>
+<script src="../../../assets/js/course.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lesson 05: Using the CMU-900 on the Boeing 737-800 — CPDLC — Controller-Pilot Data Link</title>
+  <meta name="description" content="Navigate the main CPDLC pages of the CMU-900 on the CDU." />
+  <meta name="theme-color" content="#125a2b" />
+  <link rel="icon" type="image/png" href="../../../assets/img/logo.png" />
+  <link rel="stylesheet" href="../../../assets/css/academy.css" />
+</head>
+<body data-course="cpdlc" data-total="6" data-lesson="5">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="brand">
+      <a href="../index.html"><img src="../../../assets/img/logo.png" alt="Domestic Airlines Logo" class="logo" /></a>
+      <div class="brand-text">
+        <div class="ar">الخطوط الجوية الداخلية</div>
+        <div class="en">DOMESTIC AIRLINES — CPDLC</div>
+      </div>
+    </div>
+    <nav aria-label="Main">
+      <a href="../index.html">Home</a>
+      <a href="../quiz.html">Quiz</a>
+    </nav>
+  </header>
+  <div class="progress" aria-hidden="true"><div id="progressBar"></div></div>
+  <main id="main">
+
+    <div class="lesson-layout">
+      <div>
+        <button class="btn ghost sidebar-toggle" aria-controls="courseContents" aria-expanded="false">Show course contents</button>
+        <nav class="card sidebar" id="courseContents" aria-label="Course contents"><h2>Module 1 · CPDLC Principles</h2><ul><li><a href="lesson-01.html" data-lesson-link="1"><span class="state" aria-hidden="true"></span><span>01. CPDLC: Definition, References and Benefits</span></a></li><li><a href="lesson-02.html" data-lesson-link="2"><span class="state" aria-hidden="true"></span><span>02. Data Link Services</span></a></li><li><a href="lesson-03.html" data-lesson-link="3"><span class="state" aria-hidden="true"></span><span>03. Principles of CPDLC Exchanges and Message Composition</span></a></li></ul><h2>Module 2 · Procedures and Practice</h2><ul><li><a href="lesson-04.html" data-lesson-link="4"><span class="state" aria-hidden="true"></span><span>04. Reverting to Voice, Phraseology and Failures</span></a></li><li><a href="lesson-05.html" data-lesson-link="5" aria-current="page"><span class="state" aria-hidden="true"></span><span>05. Using the CMU-900 on the Boeing 737-800</span></a></li><li><a href="lesson-06.html" data-lesson-link="6"><span class="state" aria-hidden="true"></span><span>06. Good Practice and Common Errors</span></a></li></ul></nav>
+      </div>
+      <article class="lesson">
+        <header class="lesson-head">
+          <svg viewBox="0 0 100 100" class="art" aria-hidden="true" focusable="false"><circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" stroke-width="7"/><path d="M50 8v14M50 78v14M8 50h14M78 50h14M20 20l10 10M70 70l10 10M80 20L70 30M30 70L20 80" stroke="currentColor" stroke-width="8" stroke-linecap="round"/><circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="6"/></svg>
+          <div class="eyebrow">Module 2 · Procedures and Practice</div>
+          <h1>Lesson 05: Using the CMU-900 on the Boeing 737-800</h1>
+          <div class="meta"><span>Lesson 5 of 6</span><span>≈ 7 min</span><a class="pdf-link" href="../pdf/lesson-05.pdf" download>⬇ Download PDF</a></div>
+        </header>
+        <div class="card lesson-body">
+          <div class="audio-block">
+            <span class="label">Lesson narration</span>
+            <audio controls preload="metadata" style="display:none"><source src="../media/audio/lesson-05.mp3" type="audio/mpeg"></audio>
+            <button type="button" class="btn primary" data-tts style="display:none">Listen</button>
+            <button type="button" class="btn ghost" data-tts-stop style="display:none">Stop</button>
+            <div class="audio-status" aria-live="polite">Checking for narration…</div>
+          </div>
+          <section class="objectives" data-narrate>
+            <h2>Learning objectives</h2>
+            <ul><li>Navigate the main CPDLC pages of the CMU-900 on the CDU.</li><li>Respond to uplinked messages.</li><li>Use the ATC log and the reports and requests pages.</li></ul>
+          </section>
+          <figure class="lesson-figure"><img src="../media/images/lesson-05.jpg" alt="Flight deck with the control display unit" loading="lazy" decoding="async"><figcaption>On the B737-800, CPDLC runs through the CMU-900 on the CDU.</figcaption></figure>
+          <div data-narrate>
+
+<h2>The application</h2>
+<p>On our Boeing 737-800, the <strong>CMU-900</strong> CPDLC application allows digital communication between the aircraft and an ATC centre through the Aeronautical Telecommunication Network (ATN), using the CDU.</p>
+<ul>
+  <li><strong>LOGON/STATUS</strong> page — initiates the logon to a specified ATS facility and displays the data link status.</li>
+  <li><strong>REPORTS/REQUESTS</strong> menu — creates downlink requests: altitude, speed or direct (REQ ALT/SPD/DIR), weather deviation (REQ WX DEV) and facility monitoring (MONITORING).</li>
+  <li><strong>ATC LOG</strong> — lists all uplinks and downlinks sent and received.</li>
+</ul>
+
+<h2>Receiving a message</h2>
+<ul>
+  <li>When an uplink is received, a <strong>Hi/Lo chime</strong> sounds and <strong>•ATC MSG</strong> appears at LSK 6R on the CDU. The prompt remains while any uplink is pending.</li>
+  <li>Open the message, read it <strong>in full</strong>, and cross-check it with the other pilot.</li>
+  <li>Respond with the appropriate prompt: <strong>WILCO, STANDBY, AFFIRM, UNABLE, ROGER or NEGATIVE</strong>.</li>
+  <li>Selecting <strong>STANDBY</strong> sends a downlink and restarts the alert timer; the message is not closed until another response is sent. Selecting ROGER after STANDBY replaces STANDBY with ACCEPTED, and the message is completed.</li>
+</ul>
+
+<h2>ATC log</h2>
+<ul>
+  <li>Shows, for each message: uplink or downlink, time, source, tracking number, status and the first 22 characters of the text.</li>
+  <li>Select the message text to display the complete message with its response.</li>
+  <li>Status annunciations show whether a message is open, accepted, rejected, failed or timed out — check them when in doubt.</li>
+</ul>
+
+<h2>Dash 8 fleets</h2>
+<p>Q400 and Q200 crews: check whether your aircraft is CPDLC equipped. If not, this course gives awareness of CPDLC operations used by other traffic and ATC.</p>
+<p class="muted">Button names and page layouts depend on the installed software — always use your FCOM.</p>
+
+          </div>
+          <section class="takeaways" data-narrate>
+            <h2>Key takeaways</h2>
+            <ul><li>CMU-900 pages: LOGON/STATUS, REPORTS/REQUESTS, ATC LOG.</li><li>Uplink: chime + •ATC MSG at LSK 6R; read in full, cross-check, then respond.</li><li>STANDBY keeps the dialogue open; check the status annunciations in the ATC log.</li></ul>
+          </section>
+          <section class="kc" data-answer="1" data-explain="A Hi/Lo chime sounds and •ATC MSG is displayed at LSK 6R.">
+            <h2>Knowledge check</h2>
+            <p class="q">On the CMU-900, how is the receipt of an uplink message indicated?</p>
+            <div class="opts"><button type="button" class="opt" aria-pressed="false">Master caution only</button><button type="button" class="opt" aria-pressed="false">A Hi/Lo chime and •ATC MSG at LSK 6R on the CDU</button><button type="button" class="opt" aria-pressed="false">A message on the PFD only</button><button type="button" class="opt" aria-pressed="false">No indication</button></div>
+            <div class="fb" aria-live="polite"></div>
+          </section>
+          <div class="lesson-end"></div>
+        </div>
+        <nav class="lesson-nav" aria-label="Lesson navigation"><a class="btn" href="lesson-04.html">◀ Previous<small>Reverting to Voice, Phraseology and Failures</small></a><a class="btn primary" id="nextLesson" href="lesson-06.html">Next ▶<small>Good Practice and Common Errors</small></a></nav>
+      </article>
+    </div>
+  </main>
+  <footer class="bottombar">
+    <img src="../../../assets/img/logo.png" alt="Domestic Airlines Logo" class="logo small" />
+    <div class="copy">&copy; 2026 Domestic Airlines — Training</div>
+    <a href="../../../index.html">All courses</a>
+    <p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p>
+  </footer>
+<script src="../../../assets/js/course.js"></script>
+</body>
+</html>

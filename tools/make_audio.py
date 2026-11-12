@@ -35,6 +35,19 @@ def load_course(name):
 
 # Spoken forms for abbreviations and symbols (applied in order).
 SPOKEN = [
+    (r"\b(ACAS|TCAS) II\b", r"\1 two"), (r"CAT\.IDE\.A\.(\d+)", r"CAT I D E A \1"), (r"\bSPA\.RVSM\b", "S P A R V S M"),
+    (r"\bRVSM\b", "R V S M"), (r"\bCPDLC\b", "C P D L C"), (r"\bPM-CPDLC\b", "protected mode C P D L C"), (r"\bMASPS\b", "mass-ps"),
+    (r"\bEGPWS\b", "E G P W S"), (r"\bGPWS\b", "G P W S"), (r"\bTAWS\b", "tawss"), (r"\bCFIT\b", "see-fit"), (r"\bCDFA\b", "C D F A"),
+    (r"\bCANPA\b", "canpa"), (r"\bMSA\b", "M S A"), (r"\bMORA\b", "mora"), (r"\bMDA\b", "M D A"), (r"DA/H", "D A or H"), (r"MDA/H", "M D A or H"),
+    (r"\bNTOP\b", "N top"), (r"\bMTOP\b", "M top"), (r"V<sub>GA</sub>|\bVGA\b", "V G A"), (r"\bLOFT\b", "loft"), (r"\bZFW\b", "Z F W"),
+    (r"\bITT\b", "I T T"), (r"\bACAS\b", "ay-cass"), (r"\bTCAS\b", "tee-cass"), (r"\bRAs?\b", "R A"), (r"\bTA/RA\b", "T A, R A"), (r"\bAVSA\b", "A V S A"),
+    (r"\bSSR\b", "S S R"), (r"\bCFL\b", "cleared flight level"), (r"\bDLIC\b", "D L I C"), (r"\bACM\b", "A C M"), (r"\bACL\b", "A C L"),
+    (r"\bAMC\b", "A M C"), (r"\bDCL\b", "D C L"), (r"\bDSC\b", "D S C"), (r"\bCMU-900\b", "C M U 900"), (r"\bLSK 6R\b", "line select key 6 right"),
+    (r"\bCDU\b", "C D U"), (r"\bATN\b", "A T N"), (r"\bATSU?\b", "A T S unit"), (r"\bANSPs?\b", "air navigation service provider"), (r"\bGOLD\b", "gold"),
+    (r"\bDRSA\b", "D R S A"), (r"\bBLSA\b", "B L S A"), (r"\bSS / DS\b", "S S or D S"), (r"\bTCU\b", "T C U"), (r"\bCB\b", "C B"),
+    (r"\bDACM\b", "D A C M"), (r"\bTRI/TRE\b", "T R I or T R E"), (r"\bFCU/MCP\b", "F C U or M C P"), (r"\bLNAV/VNAV\b", "L NAV V NAV"),
+    (r"\bWAT\b", "weight altitude temperature"), (r"\bAIP\b", "A I P"), (r"\bFPA\b", "F P A"), (r"\bLVO\b", "L V O"), (r"\bPBN\b", "P B N"), (r"\bRNAV\b", "R NAV"),
+    (r"\bWILCO\b", "wilco"), (r"\bAFFIRM\b", "affirm"), (r"\bSTANDBY\b", "standby"), (r"\bUNABLE\b", "unable"),
     (r"\s*\(kt\)", " in knots"),
     (r"VS\(n\) = VS × √n", "the stall speed at load factor n equals the normal stall speed times the square root of n"),
     (r"\bLOC-I\b", "loss of control in flight"), (r"\bUPRT\b", "U P R T"), (r"\bFSTDs?\b", "simulator"),

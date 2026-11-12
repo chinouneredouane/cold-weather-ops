@@ -8,6 +8,12 @@ A static e-learning website for Domestic Airlines. It hosts several courses on o
 
 - **Command Upgrade**: the 20 practical briefings (PL 01 to PL 20). Each one ends with a 10-question knowledge check, and a score of 8/10 unlocks the next briefing; the course finishes with a certificate. This course was built separately: it is copied as-is from the `command-upgrade-handbook` repository (`web-course/`) into `courses/command-upgrade/`, with an added "All courses" link. The portal card is defined in `EXTERNAL` in `tools/build.py`. To update the course, copy the new `web-course/` files over it again and re-add the link.
 
+**Ground Refresher Training** (portal section): the seasonal programme from the Ground Refresher Training Follow-up Sheet, for all fleets (B737-800, Q400 and Q200):
+- Winter: W2 (GRF) and W4 (de-icing) are covered by Cold Weather Operations.
+- Summer: **CFIT and EGPWS Refresher** (`courses/cfit-egpws-refresher`), **RVSM Refresher** (`courses/rvsm-refresher`) and **Hot Weather Operations** (`courses/hot-weather-operations`).
+- Additional: **CPDLC** (`courses/cpdlc`).
+- Every other subject is listed as "In preparation". The list is defined in `REFRESHER` in `tools/build.py`. The refresher courses use a 10-question quiz and have no closing video (`finale=None`).
+
 All quizzes have an 80 % pass mark, except Command Upgrade (8/10 per briefing).
 
 ## Site structure

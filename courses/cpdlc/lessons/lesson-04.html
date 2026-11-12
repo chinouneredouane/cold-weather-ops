@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lesson 04: Reverting to Voice, Phraseology and Failures — CPDLC — Controller-Pilot Data Link</title>
+  <meta name="description" content="Recognise when to revert from CPDLC to voice." />
+  <meta name="theme-color" content="#125a2b" />
+  <link rel="icon" type="image/png" href="../../../assets/img/logo.png" />
+  <link rel="stylesheet" href="../../../assets/css/academy.css" />
+</head>
+<body data-course="cpdlc" data-total="6" data-lesson="4">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="brand">
+      <a href="../index.html"><img src="../../../assets/img/logo.png" alt="Domestic Airlines Logo" class="logo" /></a>
+      <div class="brand-text">
+        <div class="ar">الخطوط الجوية الداخلية</div>
+        <div class="en">DOMESTIC AIRLINES — CPDLC</div>
+      </div>
+    </div>
+    <nav aria-label="Main">
+      <a href="../index.html">Home</a>
+      <a href="../quiz.html">Quiz</a>
+    </nav>
+  </header>
+  <div class="progress" aria-hidden="true"><div id="progressBar"></div></div>
+  <main id="main">
+
+    <div class="lesson-layout">
+      <div>
+        <button class="btn ghost sidebar-toggle" aria-controls="courseContents" aria-expanded="false">Show course contents</button>
+        <nav class="card sidebar" id="courseContents" aria-label="Course contents"><h2>Module 1 · CPDLC Principles</h2><ul><li><a href="lesson-01.html" data-lesson-link="1"><span class="state" aria-hidden="true"></span><span>01. CPDLC: Definition, References and Benefits</span></a></li><li><a href="lesson-02.html" data-lesson-link="2"><span class="state" aria-hidden="true"></span><span>02. Data Link Services</span></a></li><li><a href="lesson-03.html" data-lesson-link="3"><span class="state" aria-hidden="true"></span><span>03. Principles of CPDLC Exchanges and Message Composition</span></a></li></ul><h2>Module 2 · Procedures and Practice</h2><ul><li><a href="lesson-04.html" data-lesson-link="4" aria-current="page"><span class="state" aria-hidden="true"></span><span>04. Reverting to Voice, Phraseology and Failures</span></a></li><li><a href="lesson-05.html" data-lesson-link="5"><span class="state" aria-hidden="true"></span><span>05. Using the CMU-900 on the Boeing 737-800</span></a></li><li><a href="lesson-06.html" data-lesson-link="6"><span class="state" aria-hidden="true"></span><span>06. Good Practice and Common Errors</span></a></li></ul></nav>
+      </div>
+      <article class="lesson">
+        <header class="lesson-head">
+          <svg viewBox="0 0 100 100" class="art" aria-hidden="true" focusable="false"><circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" stroke-width="7"/><path d="M50 8v14M50 78v14M8 50h14M78 50h14M20 20l10 10M70 70l10 10M80 20L70 30M30 70L20 80" stroke="currentColor" stroke-width="8" stroke-linecap="round"/><circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="6"/></svg>
+          <div class="eyebrow">Module 2 · Procedures and Practice</div>
+          <h1>Lesson 04: Reverting to Voice, Phraseology and Failures</h1>
+          <div class="meta"><span>Lesson 4 of 6</span><span>≈ 6 min</span><a class="pdf-link" href="../pdf/lesson-04.pdf" download>⬇ Download PDF</a></div>
+        </header>
+        <div class="card lesson-body">
+          <div class="audio-block">
+            <span class="label">Lesson narration</span>
+            <audio controls preload="metadata" style="display:none"><source src="../media/audio/lesson-04.mp3" type="audio/mpeg"></audio>
+            <button type="button" class="btn primary" data-tts style="display:none">Listen</button>
+            <button type="button" class="btn ghost" data-tts-stop style="display:none">Stop</button>
+            <div class="audio-status" aria-live="polite">Checking for narration…</div>
+          </div>
+          <section class="objectives" data-narrate>
+            <h2>Learning objectives</h2>
+            <ul><li>Recognise when to revert from CPDLC to voice.</li><li>Use CPDLC-related voice phraseology.</li><li>Handle message failures and CPDLC system failures.</li></ul>
+          </section>
+          <figure class="lesson-figure"><img src="../media/images/lesson-04.jpg" alt="Two pilots communicating on the flight deck" loading="lazy" decoding="async"><figcaption>When in doubt, revert to voice.</figcaption></figure>
+          <div data-narrate>
+
+<h2>When to revert to voice</h2>
+<ul>
+  <li>To clarify an unexpected, inappropriate or ambiguous CPDLC message.</li>
+  <li>To make sure an instruction is executed in time.</li>
+  <li>To correct an unintended message that has been sent.</li>
+  <li>When a time-out or an error occurs for a CPDLC message.</li>
+  <li>Always for urgent or emergency situations.</li>
+</ul>
+
+<h2>Phraseology</h2>
+<div class="table-wrap"><table>
+<tr><th>Situation</th><th>Phraseology</th></tr>
+<tr><td>Correcting a CPDLC message by voice</td><td>“(call sign) DISREGARD CPDLC (message content or type) MESSAGE, BREAK, (corrected message)”<br><span class="muted">Example: “DOMESTIC 3012, DISREGARD CPDLC CLIMB MESSAGE, BREAK, CLIMB FLIGHT LEVEL 360.”</span></td></tr>
+<tr><td>Failure of a single message</td><td>Confirm by voice the action that will be taken, prefaced with “CPDLC MESSAGE FAILURE” — or resend the message by CPDLC.</td></tr>
+<tr><td>CPDLC has failed</td><td>Revert to voice and inform the other party: “CPDLC FAILURE”.</td></tr>
+<tr><td>Complete ground system failure</td><td>Controller: “ALL STATIONS CPDLC FAILURE (unit name)”.</td></tr>
+<tr><td>Stop sending requests</td><td>“((call sign) or ALL STATIONS) STOP SENDING CPDLC REQUESTS [UNTIL ADVISED] [(reason)]”</td></tr>
+<tr><td>Resume normal use</td><td>“((call sign) or ALL STATIONS) RESUME NORMAL CPDLC OPERATIONS”</td></tr>
+</table></div>
+<div class="callout"><span class="label">Good practice</span><p>Keep listening to the voice frequency at all times while using CPDLC. A clearance received by voice takes precedence over a pending CPDLC message on the same subject — clarify if in doubt.</p></div>
+
+          </div>
+          <section class="takeaways" data-narrate>
+            <h2>Key takeaways</h2>
+            <ul><li>Revert to voice to clarify, to ensure timely execution, to correct, after a time-out or error, and always in an emergency.</li><li>Use “DISREGARD CPDLC … MESSAGE, BREAK …”, “CPDLC MESSAGE FAILURE”, “CPDLC FAILURE”.</li><li>Keep a listening watch on voice.</li></ul>
+          </section>
+          <section class="kc" data-answer="1" data-explain="After a time-out or error, revert to voice.">
+            <h2>Knowledge check</h2>
+            <p class="q">A CPDLC message times out without a response. What should you do?</p>
+            <div class="opts"><button type="button" class="opt" aria-pressed="false">Send it again repeatedly</button><button type="button" class="opt" aria-pressed="false">Revert to voice to confirm the clearance</button><button type="button" class="opt" aria-pressed="false">Ignore it</button><button type="button" class="opt" aria-pressed="false">Switch off the CMU</button></div>
+            <div class="fb" aria-live="polite"></div>
+          </section>
+          <div class="lesson-end"></div>
+        </div>
+        <nav class="lesson-nav" aria-label="Lesson navigation"><a class="btn" href="lesson-03.html">◀ Previous<small>Principles of CPDLC Exchanges and Message Composition</small></a><a class="btn primary" id="nextLesson" href="lesson-05.html">Next ▶<small>Using the CMU-900 on the Boeing 737-800</small></a></nav>
+      </article>
+    </div>
+  </main>
+  <footer class="bottombar">
+    <img src="../../../assets/img/logo.png" alt="Domestic Airlines Logo" class="logo small" />
+    <div class="copy">&copy; 2026 Domestic Airlines — Training</div>
+    <a href="../../../index.html">All courses</a>
+    <p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p>
+  </footer>
+<script src="../../../assets/js/course.js"></script>
+</body>
+</html>

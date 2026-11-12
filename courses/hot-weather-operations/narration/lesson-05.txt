@@ -1,0 +1,35 @@
+Domestic Airlines — Hot Weather Operations
+Lesson 5: Summer Flight Safety Focus Items
+
+Learning objectives:
+- Review the flight safety events selected for this season.
+- Apply the correct technique to prevent each event.
+- Report events through the safety reporting system.
+
+The training department has selected the following flight safety items for discussion with the TRI/TRE:
+
+Event Why it matters Prevention
+
+High taxi speed Hot brakes, reduced margins on turns and runway crossings, passenger injury. Respect the company taxi speeds; use idle thrust and brief, firm braking applications rather than riding the brakes.
+
+Late or long flare Each second of float at high ground speed uses a large part of the runway and increases the landing distance. Fly a stabilised approach to the aiming point; flare at the normal height; go around if a long landing develops.
+
+Incorrect flap setting, ZFW or fuel entries Wrong take-off speeds and trim — tail strike or degraded take-off performance. Independent cross-check of performance data, FMS / performance entries and the load sheet by both pilots.
+
+Hard landing Structural damage, injuries; often after an unstable approach or late flare. Stabilised approach; correct flare; report any suspected hard landing in the technical log.
+
+Bounced landing Risk of tail strike, nose gear damage or a second hard landing. Apply the company bounced landing recovery technique; go around if in doubt.
+
+Use of reverse and APU Covered by the company reminder note (note de rappel). Apply the reminder note exactly as published.
+
+Safety notes and reporting
+
+Read and discuss the latest company safety notes before the simulator session.
+
+Report events through the safety reporting system. Reports are used to improve training and procedures, under a just culture.
+
+Key takeaways:
+- Moderate taxi speeds protect brakes and people.
+- A late or long flare at high ground speed eats runway — go around if needed.
+- Cross-check flap, ZFW and fuel entries.
+- Apply the bounced and hard landing techniques; report every event.

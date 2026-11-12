@@ -1,0 +1,88 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Lesson 05: EGPWS / TAWS: Alerts and Crew Response — CFIT and EGPWS Refresher</title>
+<style>
+@page{size:A4;margin:18mm 16mm 20mm}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#24342b;font-size:10.5pt;line-height:1.5;margin:0}
+h1,h2,h3{color:#14231b;line-height:1.25;break-after:avoid}
+h1{font-size:21pt;margin:0 0 6pt}h2{font-size:14pt;margin:16pt 0 6pt}h3{font-size:12pt;margin:12pt 0 4pt}
+p{margin:0 0 7pt}ul,ol{margin:0 0 8pt;padding-left:16pt}li{margin:2pt 0}
+a{color:#125a2b;text-decoration:none}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:9pt;background:#f3f9f5;border:1px solid #dbe5df;padding:0 3pt;border-radius:3pt}
+.cover{height:257mm;display:flex;flex-direction:column;justify-content:center;break-after:page;
+  background:linear-gradient(120deg,#0c3d1e,#125a2b 55%,#2a8a50);color:#fff;padding:22mm;border-radius:4mm;margin:0}
+.cover h1{color:#fff;font-size:34pt}.cover .k{letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#bfe3cb;font-size:10pt}
+.cover p{color:#e3f1e8;font-size:13pt}.cover .logo{background:#fff;padding:5mm 7mm;border-radius:3mm;display:inline-block;margin-bottom:14mm}
+.cover .logo img{height:16mm}.cover .meta{margin-top:12mm;font-size:10.5pt;color:#d3ebdb}
+.toc{break-after:page}.toc h2{margin-top:0}.toc ol{list-style:none;padding:0}
+.toc li{display:flex;gap:8pt;padding:3pt 0;border-bottom:1px dotted #c9d8cf}.toc .n{width:22pt;font-weight:700;color:#5b6b62}
+.toc .mod{margin-top:9pt;font-weight:800;color:#125a2b;border:0;text-transform:uppercase;font-size:9pt;letter-spacing:.06em}
+.lesson{break-before:page}
+.lesson-head{background:linear-gradient(120deg,#0c3d1e,#1d7a3e);color:#fff;border-radius:3mm;padding:9pt 13pt;margin-bottom:10pt}
+.lesson-head h1{color:#fff;font-size:17pt;margin:2pt 0}.lesson-head .k{font-size:8.5pt;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#c7e8d2}
+.lesson-head .m{font-size:9pt;color:#dbefe2}
+.objectives{background:#f3f9f5;border:1px solid #dbe5df;border-radius:2mm;padding:7pt 11pt;margin:0 0 10pt}
+.objectives h2,.takeaways h2,.kc h2{font-size:9.5pt;text-transform:uppercase;letter-spacing:.06em;margin:0 0 3pt;color:#125a2b}
+.lesson-figure{margin:0 0 10pt;break-inside:avoid}.lesson-figure img{width:100%;max-height:85mm;object-fit:contain;border:1px solid #dbe5df;border-radius:2mm;background:#f3f9f5}
+figure{margin:9pt 0;break-inside:avoid}figure svg{width:100%;height:auto}figcaption{font-size:8.5pt;color:#5b6b62;margin-top:3pt}
+.diagram{border:1px solid #dbe5df;border-radius:2mm;padding:5pt}
+.table-wrap{margin:8pt 0;border:1px solid #dbe5df;border-radius:2mm;overflow:hidden}
+table{border-collapse:collapse;width:100%;font-size:9pt}th,td{text-align:left;vertical-align:top;padding:4pt 6pt;border-bottom:1px solid #dbe5df}
+th{background:#f3f9f5}tr{break-inside:avoid}td.code{font-weight:800;font-size:12pt;text-align:center;width:34pt}
+.callout{border-left:3pt solid #1d7a3e;background:#f3f9f5;padding:6pt 10pt;margin:8pt 0;border-radius:0 2mm 2mm 0;break-inside:avoid}
+.callout .label{display:block;font-size:8.5pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#125a2b}
+.callout.warn{border-color:#c8102e;background:#fdecef}.callout.warn .label{color:#c8102e}
+.callout.caution{border-color:#d08a00;background:#fff5e0}.callout.caution .label{color:#9a6200}
+.callout.info{border-color:#1f5f99;background:#e9f2fb}.callout.info .label{color:#1f5f99}
+.callout > :last-child{margin-bottom:0}
+.steps{list-style:none;padding:0;counter-reset:s}.steps>li{counter-increment:s;position:relative;padding-left:20pt;margin:4pt 0}
+.steps>li::before{content:counter(s);position:absolute;left:0;top:0;width:14pt;height:14pt;border-radius:50%;background:#1d7a3e;color:#fff;font-weight:800;font-size:8pt;display:flex;align-items:center;justify-content:center}
+.dialog{border:1px solid #dbe5df;border-radius:2mm;padding:4pt 10pt;margin:8pt 0;break-inside:avoid}.dialog p{margin:4pt 0}.dialog b{color:#125a2b}
+.muted{color:#5b6b62}
+.takeaways{background:#0c3d1e;color:#e8f5ec;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}.takeaways h2{color:#fff}
+.kc{border:1.5pt dashed #b9d7c3;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}
+.kc .q{font-weight:700;margin:2pt 0 4pt}.kc ol{list-style:upper-alpha}.kc .a{font-size:9pt;margin-top:4pt;color:#125a2b}
+.disclaimer{font-size:8.5pt;color:#5b6b62;border-top:1px solid #dbe5df;padding-top:6pt;margin-top:14pt}
+</style></head><body>
+<section class="lesson" style="break-before:auto" id="lesson-5">
+  <div class="lesson-head"><div class="k">Module 2 · EGPWS and the Escape Manoeuvre</div>
+    <h1>Lesson 05: EGPWS / TAWS: Alerts and Crew Response</h1><div class="m">Lesson 5 of 7 · about 8 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Describe the EGPWS basic modes and enhanced functions.</li><li>Distinguish cautions from warnings.</li><li>Apply the company response to EGPWS cautions.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-05.jpg" alt="Night flight deck with terrain ahead"><figcaption>At night or in IMC, follow an EGPWS warning immediately.</figcaption></figure>
+  
+<h2>The system</h2>
+<p>A terrain awareness warning system (TAWS) is required for commercial aeroplanes (ICAO Annex 6; EASA CAT.IDE.A.150). Our fleets use the <strong>Enhanced GPWS (EGPWS)</strong>, which combines the classic ground proximity modes with a <strong>terrain database</strong> and the aircraft position.</p>
+<div class="table-wrap"><table>
+<tr><th>Mode</th><th>Protects against</th><th>Typical alerts</th></tr>
+<tr><td>1</td><td>Excessive descent rate</td><td>“SINK RATE”, “PULL UP”</td></tr>
+<tr><td>2</td><td>Excessive terrain closure rate</td><td>“TERRAIN TERRAIN”, “PULL UP”</td></tr>
+<tr><td>3</td><td>Altitude loss after take-off or go-around</td><td>“DON'T SINK”</td></tr>
+<tr><td>4</td><td>Unsafe terrain clearance when not in landing configuration</td><td>“TOO LOW GEAR”, “TOO LOW FLAPS”, “TOO LOW TERRAIN”</td></tr>
+<tr><td>5</td><td>Excessive deviation below the glideslope</td><td>“GLIDESLOPE”</td></tr>
+<tr><td>6</td><td>Advisory callouts</td><td>Altitude callouts, “BANK ANGLE”</td></tr>
+<tr><td>Enhanced</td><td>Terrain and obstacles ahead (look-ahead); terrain clearance floor near runways</td><td>“CAUTION TERRAIN”, “CAUTION OBSTACLE”, “TERRAIN AHEAD”, “TERRAIN AHEAD PULL UP”, “OBSTACLE PULL UP”, “TOO LOW TERRAIN”</td></tr>
+</table></div>
+<p class="muted">Alert wording varies with the installation — check the aircraft manuals.</p>
+<figure class="diagram"><svg viewBox="0 0 700 320" role="img" aria-label="EGPWS look-ahead"><title>EGPWS terrain look-ahead</title>
+<desc>The look-ahead function compares the predicted flight path with the terrain database and gives a caution then a warning.</desc>
+<g font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="13" fill="#24342b">
+<path d="M40 300 L200 300 L260 240 L330 250 L420 140 L500 170 L560 110 L660 300z" fill="#5d7b67"/>
+<path d="M100 150 l40 -4 l10 -10 l6 2 l-4 10 l30 -2 l4 4 l-30 4 l-4 12 l-6 0 l-2 -10 l-40 4z" fill="#24342b"/>
+<path d="M190 150 L420 120 L420 200 Z" fill="#c76a00" opacity=".25"/>
+<path d="M190 150 L320 135 L320 180 Z" fill="#c8102e" opacity=".35"/>
+<text x="330" y="105" fill="#c76a00" font-weight="700">CAUTION area: “TERRAIN AHEAD” / “CAUTION TERRAIN”</text>
+<text x="200" y="215" fill="#c8102e" font-weight="700">WARNING area: “TERRAIN AHEAD, PULL UP” / “PULL UP”</text>
+<text x="40" y="40" font-weight="700" font-size="14">Enhanced function: look-ahead against the terrain database</text>
+<text x="40" y="60" fill="#5b6b62">The caution comes first (typically up to about a minute ahead), the warning later (typically about 30 seconds ahead).</text></g></svg>
+<figcaption>The look-ahead function depends on accurate aircraft position and an up-to-date terrain database. Exact timings depend on the installation.</figcaption></figure>
+<h2>Cautions and warnings</h2>
+<ul>
+  <li><strong>Caution</strong> (amber) — for example “SINK RATE”, “TERRAIN TERRAIN”, “DON'T SINK”, “TOO LOW FLAPS”, “TOO LOW GEAR”, “CAUTION TERRAIN”, “CAUTION OBSTACLE”, “BANK ANGLE”, “GLIDESLOPE”. <strong>Company SOP</strong>: the crew shall immediately assess the flight path or configuration with respect to the ground, and the PF shall take appropriate action to correct the situation. Q200 SOP: the PF verbalises the action to the PM with <strong>“CORRECTING”</strong>.</li>
+  <li><strong>Warning</strong> (red) — for example “TOO LOW TERRAIN”, “TERRAIN PULL UP”, “OBSTACLE PULL UP” or “PULL UP” (“WHOOP WHOOP PULL UP”). <strong>Apply the escape manoeuvre immediately</strong> (Lesson 6).</li>
+</ul>
+<div class="callout warn"><span class="label">No delay</span><p>At night or in IMC, a warning must be followed <strong>without hesitation and without trying to confirm it visually</strong>. The Q200 SOP adds: “The flight crew must use a good judgment in this matter.” A warning should only ever be judged spurious in daylight VMC, with the terrain and obstacles clearly in sight and no doubt about the aircraft's position. Report every alert.</p></div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>EGPWS = basic modes 1–6 plus terrain database look-ahead.</li><li>Caution: assess the flight path and correct (“CORRECTING”).</li><li>Warning (“PULL UP”, “TERRAIN AHEAD PULL UP”): escape manoeuvre immediately.</li><li>At night or in IMC, never wait to confirm a warning visually.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">At night in IMC you hear “TERRAIN AHEAD, PULL UP”. What do you do?</p>
+    <ol><li>Check the chart first</li><li>Apply the escape manoeuvre immediately</li><li>Reduce speed and level off</li><li>Ask ATC to confirm terrain clearance</li></ol>
+    <p class="a"><b>Answer: B.</b> A warning at night or in IMC requires the escape manoeuvre immediately, without trying to confirm it.</p></div>
+</section><p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p></body></html>

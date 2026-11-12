@@ -1,0 +1,42 @@
+Domestic Airlines — CPDLC — Controller-Pilot Data Link
+Lesson 4: Reverting to Voice, Phraseology and Failures
+
+Learning objectives:
+- Recognise when to revert from CPDLC to voice.
+- Use CPDLC-related voice phraseology.
+- Handle message failures and CPDLC system failures.
+
+When to revert to voice
+
+To clarify an unexpected, inappropriate or ambiguous CPDLC message.
+
+To make sure an instruction is executed in time.
+
+To correct an unintended message that has been sent.
+
+When a time-out or an error occurs for a CPDLC message.
+
+Always for urgent or emergency situations.
+
+Phraseology
+
+Situation Phraseology
+
+Correcting a CPDLC message by voice “(call sign) DISREGARD CPDLC (message content or type) MESSAGE, BREAK, (corrected message)” Example: “DOMESTIC 3012, DISREGARD CPDLC CLIMB MESSAGE, BREAK, CLIMB FLIGHT LEVEL 360.”
+
+Failure of a single message Confirm by voice the action that will be taken, prefaced with “CPDLC MESSAGE FAILURE” — or resend the message by CPDLC.
+
+CPDLC has failed Revert to voice and inform the other party: “CPDLC FAILURE”.
+
+Complete ground system failure Controller: “ALL STATIONS CPDLC FAILURE (unit name)”.
+
+Stop sending requests “((call sign) or ALL STATIONS) STOP SENDING CPDLC REQUESTS [UNTIL ADVISED] [(reason)]”
+
+Resume normal use “((call sign) or ALL STATIONS) RESUME NORMAL CPDLC OPERATIONS”
+
+Good practice Keep listening to the voice frequency at all times while using CPDLC. A clearance received by voice takes precedence over a pending CPDLC message on the same subject — clarify if in doubt.
+
+Key takeaways:
+- Revert to voice to clarify, to ensure timely execution, to correct, after a time-out or error, and always in an emergency.
+- Use “DISREGARD CPDLC … MESSAGE, BREAK …”, “CPDLC MESSAGE FAILURE”, “CPDLC FAILURE”.
+- Keep a listening watch on voice.

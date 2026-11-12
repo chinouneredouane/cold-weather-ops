@@ -19,12 +19,41 @@ sys.path.insert(0, os.path.join(ROOT, "tools"))
 
 from courses.cold_weather import COURSE as COLD_WEATHER  # noqa: E402
 from courses.upset_recovery import COURSE as UPSET_RECOVERY  # noqa: E402
+from courses.rvsm import COURSE as RVSM  # noqa: E402
+from courses.cfit import COURSE as CFIT  # noqa: E402
+from courses.hot_weather import COURSE as HOT_WEATHER  # noqa: E402
+from courses.cpdlc import COURSE as CPDLC  # noqa: E402
 from handbook import build_print  # noqa: E402
 
-COURSES = [COLD_WEATHER, UPSET_RECOVERY]
+COURSES = [COLD_WEATHER, UPSET_RECOVERY, RVSM, CFIT, HOT_WEATHER, CPDLC]
 
 # Courses shown on the portal as "in preparation" (no pages yet).
 UPCOMING = []
+
+# Ground Refresher Training Follow-up Sheet — the same 12 subjects every year, for all fleets.
+# (code, title, link or None, note)
+REFRESHER = {
+    "Winter season": [
+        ("W1", "Windshear Recovery and Thunderstorm Avoidance", None, ""),
+        ("W2", "Cold Weather Operations and Contaminated Runways (GRF)", "courses/cold-weather-operations/index.html", "Cold Weather Operations — Module 4"),
+        ("W3", "PBN Refresher", None, ""),
+        ("W4", "De-icing and Anti-icing", "courses/cold-weather-operations/index.html", "Cold Weather Operations — Modules 2 and 3"),
+        ("W5", "Operations Manual (MANEX) and Regulations", None, "Company documents needed"),
+        ("W6", "MEL", None, "Company documents needed"),
+    ],
+    "Summer season": [
+        ("S1", "EGPWS / TAWS and CFIT Prevention", "courses/cfit-egpws-refresher/index.html", ""),
+        ("S2", "RVSM (B737-800; awareness for Dash 8)", "courses/rvsm-refresher/index.html", ""),
+        ("S3", "Company Wind Limitations (OM B, FCOM, AFM)", None, "Company documents needed"),
+        ("S4", "Approaches Authorised by the DACM — Ceiling and Visibility (AOC)", None, "Company documents needed"),
+        ("S5", "Allowances for Inoperative Ground Equipment (OM A)", None, "Company documents needed"),
+        ("S6", "Hot Weather Operations", "courses/hot-weather-operations/index.html", ""),
+    ],
+    "Additional recurrent courses": [
+        ("+", "CPDLC — Controller-Pilot Data Link", "courses/cpdlc/index.html", ""),
+        ("+", "Upset Prevention and Recovery (UPRT)", "courses/upset-prevention-recovery/index.html", ""),
+    ],
+}
 
 # Courses built outside this generator and copied into courses/<folder>/ as they are.
 EXTERNAL = [
@@ -45,6 +74,7 @@ ICONS = {
     "runway": '<path d="M34 92L44 8h12l10 84z" fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/><path d="M50 20v10M50 42v10M50 64v10" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>',
     "gear": '<circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" stroke-width="7"/><path d="M50 8v14M50 78v14M8 50h14M78 50h14M20 20l10 10M70 70l10 10M80 20L70 30M30 70L20 80" stroke="currentColor" stroke-width="8" stroke-linecap="round"/><circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="6"/>',
     "plane": '<path d="M50 8c5 0 7 6 7 12v22l33 18v9l-33-9v20l10 8v7l-17-5-17 5v-7l10-8V60l-33 9v-9l33-18V20c0-6 2-12 7-12z" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/>',
+    "sun": '<circle cx="50" cy="50" r="18" fill="none" stroke="currentColor" stroke-width="6"/><path d="M50 8v14M50 78v14M8 50h14M78 50h14M20 20l10 10M70 70l10 10M80 20L70 30M30 70L20 80" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>',
     "people": '<circle cx="34" cy="32" r="13" fill="none" stroke="currentColor" stroke-width="6"/><circle cx="68" cy="36" r="11" fill="none" stroke="currentColor" stroke-width="6"/><path d="M10 86c2-18 12-28 24-28s22 10 24 28M54 86c1-14 7-22 14-22s14 8 16 22" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>',
 }
 
@@ -71,7 +101,9 @@ def page(*, title, description, root, course=None, active=None, body_attrs="", m
     header_en = f"DOMESTIC AIRLINES — {course['header_title']}" if course else f"DOMESTIC AIRLINES — {ACADEMY}"
     if course:
         c = course["_base"]
-        nav_items = [("home", f"{c}index.html", "Home"), ("quiz", f"{c}quiz.html", "Quiz"), ("finale", f"{c}finale.html", "Final Video")]
+        nav_items = [("home", f"{c}index.html", "Home"), ("quiz", f"{c}quiz.html", "Quiz")]
+        if course.get("finale"):
+            nav_items.append(("finale", f"{c}finale.html", "Final Video"))
         brand_href = f"{c}index.html"
     else:
         nav_items = [("home", "index.html", "Home")]
@@ -131,9 +163,24 @@ def course_attrs(course, lesson=0, extra=""):
 
 # --------------------------------------------------------------------------- portal
 
+def refresher_html():
+    out = []
+    for season, items in REFRESHER.items():
+        rows = []
+        for code, title, link, note in items:
+            if link:
+                rows.append(f'<a class="ref-item" href="{link}"><span class="ref-code">{esc(code)}</span><span class="ref-title">{esc(title)}'
+                            f'{f"<small>{esc(note)}</small>" if note else ""}</span><span class="pill">Available</span></a>')
+            else:
+                rows.append(f'<div class="ref-item soon"><span class="ref-code">{esc(code)}</span><span class="ref-title">{esc(title)}'
+                            f'{f"<small>{esc(note)}</small>" if note else ""}</span><span class="pill red">In preparation</span></div>')
+        out.append(f'<div class="card ref-season"><h3>{esc(season)}</h3>{"".join(rows)}</div>')
+    return f'<div class="ref-grid">{"".join(out)}</div>'
+
+
 def build_portal():
     cards = []
-    for c in COURSES:
+    for c in [c for c in COURSES if c.get("group") != "refresher"]:
         n = len(c["lessons"])
         mins = sum(l["minutes"] for l in c["lessons"])
         cards.append(f"""
@@ -178,6 +225,9 @@ def build_portal():
       <h2>Courses</h2>
       <div class="course-grid">{''.join(cards)}
       </div>
+      <h2 id="refresher">Ground Refresher Training</h2>
+      <p class="muted">The seasonal ground refresher programme for all fleets — Boeing 737-800, Dash 8-Q400 and Dash 8-Q200 — following the Ground Refresher Training Follow-up Sheet. The same subjects are repeated every year.</p>
+      {refresher_html()}
     </div>"""
     out = page(title="Training Academy — Domestic Airlines", description="Domestic Airlines e-learning courses for crews and operations staff.",
                root="", main=main, active="home")
@@ -393,7 +443,7 @@ def build_quiz(course):
     </div>"""
     out = page(title=f"Final Quiz — {course['title']}", description=f"Final quiz for {course['title']}.",
                root="../../", course=dict(course, _base=""), active="quiz",
-               body_attrs=course_attrs(course, extra=f'data-quiz-count="{course["quiz_count"]}" data-pass="{course["pass_mark"]}"'),
+               body_attrs=course_attrs(course, extra=f'data-quiz-count="{course["quiz_count"]}" data-pass="{course["pass_mark"]}" data-finale="{1 if course.get("finale") else 0}"'),
                main=main, scripts=["../../assets/js/course.js", "data/questions.js", "../../assets/js/quiz.js"])
     write(f"courses/{course['slug']}/quiz.html", out)
     data = json.dumps(course["questions"], ensure_ascii=False, indent=1)
@@ -588,7 +638,8 @@ def main():
         for n in range(1, len(c["lessons"]) + 1):
             build_lesson(c, n)
         build_quiz(c)
-        build_finale(c)
+        if c.get("finale"):
+            build_finale(c)
         build_certificate(c)
         build_media_readme(c)
         build_print(c, module_of, write)

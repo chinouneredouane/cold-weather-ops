@@ -1,0 +1,46 @@
+Domestic Airlines — CPDLC — Controller-Pilot Data Link
+Lesson 5: Using the CMU-900 on the Boeing 737-800
+
+Learning objectives:
+- Navigate the main CPDLC pages of the CMU-900 on the CDU.
+- Respond to uplinked messages.
+- Use the ATC log and the reports and requests pages.
+
+The application
+
+On our Boeing 737-800, the CMU-900 CPDLC application allows digital communication between the aircraft and an ATC centre through the Aeronautical Telecommunication Network (ATN), using the CDU.
+
+LOGON/STATUS page — initiates the logon to a specified ATS facility and displays the data link status.
+
+REPORTS/REQUESTS menu — creates downlink requests: altitude, speed or direct (REQ ALT/SPD/DIR), weather deviation (REQ WX DEV) and facility monitoring (MONITORING).
+
+ATC LOG — lists all uplinks and downlinks sent and received.
+
+Receiving a message
+
+When an uplink is received, a Hi/Lo chime sounds and •ATC MSG appears at LSK 6R on the CDU. The prompt remains while any uplink is pending.
+
+Open the message, read it in full , and cross-check it with the other pilot.
+
+Respond with the appropriate prompt: WILCO, STANDBY, AFFIRM, UNABLE, ROGER or NEGATIVE .
+
+Selecting STANDBY sends a downlink and restarts the alert timer; the message is not closed until another response is sent. Selecting ROGER after STANDBY replaces STANDBY with ACCEPTED, and the message is completed.
+
+ATC log
+
+Shows, for each message: uplink or downlink, time, source, tracking number, status and the first 22 characters of the text.
+
+Select the message text to display the complete message with its response.
+
+Status annunciations show whether a message is open, accepted, rejected, failed or timed out — check them when in doubt.
+
+Dash 8 fleets
+
+Q400 and Q200 crews: check whether your aircraft is CPDLC equipped. If not, this course gives awareness of CPDLC operations used by other traffic and ATC.
+
+Button names and page layouts depend on the installed software — always use your FCOM.
+
+Key takeaways:
+- CMU-900 pages: LOGON/STATUS, REPORTS/REQUESTS, ATC LOG.
+- Uplink: chime + •ATC MSG at LSK 6R; read in full, cross-check, then respond.
+- STANDBY keeps the dialogue open; check the status annunciations in the ATC log.

@@ -1,0 +1,37 @@
+Domestic Airlines — Hot Weather Operations
+Lesson 4: Sand, Dust and Convective Weather
+
+Learning objectives:
+- Recognise the hazards of dust, sand and drifting sand.
+- Apply precautions on the ground and in flight.
+- Manage convective weather and gusty winds in summer.
+
+Dust and sand
+
+Watch the reports for DU (dust), SA (sand), DRSA (low drifting sand), BLSA (blowing sand), SS / DS (sandstorm / duststorm). Visibility can fall very quickly.
+
+During the walk-around in dusty conditions, check pitot probes, static ports, engine inlets, APU inlet and air conditioning inlets. Fit covers when the aircraft is parked.
+
+Minimise engine and APU running and high thrust on sand-covered surfaces to limit ingestion. Use the procedure for taxi and take-off on contaminated or sandy surfaces if published.
+
+Sand on the runway reduces braking — treat it like a contaminant and report braking action if worse than expected.
+
+Convective weather and wind
+
+Summer thunderstorms ( CB , TCU ) bring gusts, windshear, turbulence and sudden dust storms. Avoid cells by a wide margin.
+
+Gusty winds — for example a reported wind of 18 kt gusting 28 kt — require a careful check of the company crosswind limits and the appropriate speed additives.
+
+Thermal turbulence close to the ground makes approaches less stable — be ready to go around.
+
+Dust devils and localised strong winds can affect take-off and landing.
+
+Go-around in hot weather
+
+Climb performance is lower in hot, high conditions. Brief the missed approach, the climb gradient and any obstacles. Know the go-around technique for your type, including engine-out, and practise it in the simulator in hot weather conditions.
+
+Key takeaways:
+- DU, SA, DRSA, SS/DS: visibility can collapse — watch the trend.
+- Protect inlets and probes; minimise ground running and high thrust on sand.
+- Summer CB and gusts: wide avoidance, check crosswind limits and speed additives.
+- Lower go-around performance in hot, high conditions — brief it.

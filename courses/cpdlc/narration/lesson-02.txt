@@ -1,0 +1,38 @@
+Domestic Airlines — CPDLC — Controller-Pilot Data Link
+Lesson 2: Data Link Services
+
+Learning objectives:
+- Describe the data link services available to the flight crew.
+- Explain the logon (DLIC) process.
+- Identify the services mandated in Europe.
+
+The services
+
+Service Purpose
+
+DLIC — Data Link Initiation Capability Provides the information needed to establish data link communications between an ATS unit and the aircraft. It is done before any other data link service (the logon).
+
+ACM — ATC Communications Management Automated assistance for the transfer of ATC communications (voice and CPDLC) between sectors and units.
+
+ACL — ATC Clearances Operational exchanges: pilots send requests and reports; controllers issue clearances, instructions and notifications.
+
+AMC — ATC Microphone Check Lets the controller send one instruction to all CPDLC aircraft on a frequency to check that none is blocking the voice channel (stuck microphone).
+
+DCL — Departure Clearance Requesting and delivering departure clearances by data link.
+
+DSC — Downstream Clearance Obtaining a clearance from an ATS unit that is not yet in control of the aircraft, when it cannot be obtained through unit-to-unit coordination.
+
+The European data link rules mandated the first four services: DLIC, ACM, ACL and AMC .
+
+Logon
+
+The logon uses the ICAO code of the ATS unit and must match the flight plan data (aircraft identification and registration). Errors in the flight plan or the FMS cause logon failures.
+
+Log on in good time before entering the CPDLC airspace, as published in the AIP.
+
+Only one ATS unit is the current data authority at any time — a controlled flight is under the control of only one ATC unit at a time (ICAO Annex 11).
+
+Key takeaways:
+- DLIC (logon) comes first; then ACM, ACL and AMC — the four mandated services in Europe.
+- DCL and DSC add departure and downstream clearances.
+- Logon details must match the flight plan; only one current data authority at a time.

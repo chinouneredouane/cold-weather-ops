@@ -1,0 +1,39 @@
+Domestic Airlines — Hot Weather Operations
+Lesson 3: Fuel in Hot Weather
+
+Learning objectives:
+- Explain the effect of temperature on fuel density and quantity.
+- Apply fuel checks and MEL fuel items.
+- Use the operational flight plan fuel figures correctly.
+
+Fuel density
+
+Hot fuel is less dense : the same mass takes up more volume. Uplift is often measured in litres but planned in kilograms — always convert with the actual density on the fuel docket.
+
+Check the uplift : the difference between the calculated and the actual uplift must be within the company tolerance.
+
+Respect any maximum fuel temperature limit in the AFM.
+
+Fuel planning
+
+Use the Jetplan figures: trip fuel, contingency, alternate, final reserve, taxi and any extra fuel. Check the effect of a change of cruise level or take-off mass.
+
+Hot weather may impose a lower cruise level or a longer climb. Plan for possible weather deviations around convective activity.
+
+Check the zero fuel weight and fuel entries carefully — incorrect ZFW or fuel entries are a recurring flight safety event (Lesson 5).
+
+Fuel system and MEL
+
+B737-800: perform the spar fuel shut-off valve check when required (FCOM SP 12-01).
+
+Read MEL fuel items in full, including the (M) maintenance and (O) operational procedures.
+
+Example from the company LOFT — B737-800, MEL 28-01-03-01
+A main tank aft fuel boost pump may be inoperative provided that: (a) both main tank forward pumps operate normally; (b) at the start of take-off, the fuel quantity in the associated tank is not less than 7,500 lb (3,402 kg); (c) a minimum fuel quantity of 2,500 lb (1,134 kg) is maintained in the associated tank; and (d) the boost pump is deactivated.
+
+Always use the current MEL — this example is for training only.
+
+Key takeaways:
+- Hot fuel is less dense — convert volume to mass with the actual density.
+- Check the uplift and the ZFW / fuel entries carefully.
+- Read every MEL item in full, including (M) and (O) procedures.

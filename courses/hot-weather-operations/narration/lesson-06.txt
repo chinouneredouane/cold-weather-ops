@@ -1,0 +1,34 @@
+Domestic Airlines — Hot Weather Operations
+Lesson 6: MEL, Dispatch and the Summer Simulator Session
+
+Learning objectives:
+- Apply the MEL and dispatch criteria for a summer flight.
+- Prepare the summer recurrent simulator session.
+- Combine hot weather, performance and LOFT topics.
+
+MEL and dispatch
+
+Check every MEL item for its effect on performance — some items impose mass penalties or limitations that matter more in hot weather.
+
+Apply the (M) and (O) procedures, the placards and any dispatch conditions.
+
+The MEL also contains the dispatch requirements for systems that need a specific approval — RVSM, RNAV/PBN and LVO.
+
+The summer recurrent programme
+
+Day 1 — ground refresher : engine and APU operation and limitations in hot weather, hot weather procedures, fuel, APU start on battery, bleeds-off take-off and landing, QRH performance, fuel system checks, RVSM, MEL and dispatch.
+
+Days 2 and 3 — simulator : LOFT sectors to and from hot, high southern aerodromes with dust and drifting sand, MEL dispatch items, go-arounds and engine failures in hot weather, an RNAV approach briefing including temperature effects, and an LVO approach.
+
+Mandatory exercises : upset recovery, windshear identification and escape, TCAS, EGPWS and pilot incapacitation — performed according to company procedures and DACM recommendations.
+
+Preparing
+
+Prepare the performance dispatch from the Jetplan in the briefing room and discuss it as a crew.
+
+Review the courses in this academy: CFIT and EGPWS, RVSM, Upset Prevention and Recovery.
+
+Key takeaways:
+- Check MEL items for performance penalties — critical in hot weather.
+- Summer recurrent: ground refresher day, then two simulator days with LOFT and mandatory exercises.
+- Prepare performance and review the related academy courses before the session.

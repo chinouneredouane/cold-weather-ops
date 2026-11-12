@@ -1,0 +1,48 @@
+Domestic Airlines — CPDLC — Controller-Pilot Data Link
+Lesson 3: Principles of CPDLC Exchanges and Message Composition
+
+Learning objectives:
+- Apply the principles for choosing voice or CPDLC.
+- Understand single- and multi-element messages.
+- Respond correctly to messages.
+
+Principles
+
+Voice and data link co-exist. CPDLC supplements voice; it does not replace it.
+
+CPDLC is used only for non-time-critical communications. Time-criticality depends on the traffic situation, the end-to-end performance (systems and human response times) and the recovery time.
+
+The choice of voice or CPDLC is at the discretion of the controller and the pilot.
+
+Usually, a CPDLC message is answered by CPDLC and a voice message by voice.
+
+Message composition
+
+Messages use a standard format from the ICAO message set, in plain language or abbreviations — without non-essential words.
+
+A message can have a single element (for example CLIMB TO FL360 ) or several elements (for example CLIMB TO FL360, CLIMB AT 1000 FT PER MINUTE MINIMUM ). The maximum number of elements depends on the system and the airspace.
+
+A single response to a multi-element message applies to all elements . If any part cannot be complied with, respond UNABLE to the whole message.
+
+Only one open dialogue of the same type with the same aircraft is allowed at a time: horizontal profile, vertical profile, speed, or SSR code. A speed and a level dialogue can be open together; a heading and a direct-route dialogue cannot.
+
+Systems must handle unsupported messages correctly, normally with an error message.
+
+Responses
+
+Response Meaning
+
+WILCO I will comply with the clearance or instruction.
+
+UNABLE I cannot comply (with the whole message).
+
+STANDBY Wait — the message is being considered; a further response will follow. The dialogue stays open.
+
+AFFIRM / NEGATIVE Yes / no to a question.
+
+ROGER Message received (for information messages).
+
+Key takeaways:
+- Voice and CPDLC co-exist; CPDLC for non-time-critical messages only.
+- One response applies to all elements of a multi-element message — UNABLE if any part cannot be done.
+- Only one open dialogue of each type at a time.

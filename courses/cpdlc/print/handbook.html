@@ -1,0 +1,273 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>CPDLC — Controller-Pilot Data Link — Course handbook</title>
+<style>
+@page{size:A4;margin:18mm 16mm 20mm}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#24342b;font-size:10.5pt;line-height:1.5;margin:0}
+h1,h2,h3{color:#14231b;line-height:1.25;break-after:avoid}
+h1{font-size:21pt;margin:0 0 6pt}h2{font-size:14pt;margin:16pt 0 6pt}h3{font-size:12pt;margin:12pt 0 4pt}
+p{margin:0 0 7pt}ul,ol{margin:0 0 8pt;padding-left:16pt}li{margin:2pt 0}
+a{color:#125a2b;text-decoration:none}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:9pt;background:#f3f9f5;border:1px solid #dbe5df;padding:0 3pt;border-radius:3pt}
+.cover{height:257mm;display:flex;flex-direction:column;justify-content:center;break-after:page;
+  background:linear-gradient(120deg,#0c3d1e,#125a2b 55%,#2a8a50);color:#fff;padding:22mm;border-radius:4mm;margin:0}
+.cover h1{color:#fff;font-size:34pt}.cover .k{letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#bfe3cb;font-size:10pt}
+.cover p{color:#e3f1e8;font-size:13pt}.cover .logo{background:#fff;padding:5mm 7mm;border-radius:3mm;display:inline-block;margin-bottom:14mm}
+.cover .logo img{height:16mm}.cover .meta{margin-top:12mm;font-size:10.5pt;color:#d3ebdb}
+.toc{break-after:page}.toc h2{margin-top:0}.toc ol{list-style:none;padding:0}
+.toc li{display:flex;gap:8pt;padding:3pt 0;border-bottom:1px dotted #c9d8cf}.toc .n{width:22pt;font-weight:700;color:#5b6b62}
+.toc .mod{margin-top:9pt;font-weight:800;color:#125a2b;border:0;text-transform:uppercase;font-size:9pt;letter-spacing:.06em}
+.lesson{break-before:page}
+.lesson-head{background:linear-gradient(120deg,#0c3d1e,#1d7a3e);color:#fff;border-radius:3mm;padding:9pt 13pt;margin-bottom:10pt}
+.lesson-head h1{color:#fff;font-size:17pt;margin:2pt 0}.lesson-head .k{font-size:8.5pt;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#c7e8d2}
+.lesson-head .m{font-size:9pt;color:#dbefe2}
+.objectives{background:#f3f9f5;border:1px solid #dbe5df;border-radius:2mm;padding:7pt 11pt;margin:0 0 10pt}
+.objectives h2,.takeaways h2,.kc h2{font-size:9.5pt;text-transform:uppercase;letter-spacing:.06em;margin:0 0 3pt;color:#125a2b}
+.lesson-figure{margin:0 0 10pt;break-inside:avoid}.lesson-figure img{width:100%;max-height:85mm;object-fit:contain;border:1px solid #dbe5df;border-radius:2mm;background:#f3f9f5}
+figure{margin:9pt 0;break-inside:avoid}figure svg{width:100%;height:auto}figcaption{font-size:8.5pt;color:#5b6b62;margin-top:3pt}
+.diagram{border:1px solid #dbe5df;border-radius:2mm;padding:5pt}
+.table-wrap{margin:8pt 0;border:1px solid #dbe5df;border-radius:2mm;overflow:hidden}
+table{border-collapse:collapse;width:100%;font-size:9pt}th,td{text-align:left;vertical-align:top;padding:4pt 6pt;border-bottom:1px solid #dbe5df}
+th{background:#f3f9f5}tr{break-inside:avoid}td.code{font-weight:800;font-size:12pt;text-align:center;width:34pt}
+.callout{border-left:3pt solid #1d7a3e;background:#f3f9f5;padding:6pt 10pt;margin:8pt 0;border-radius:0 2mm 2mm 0;break-inside:avoid}
+.callout .label{display:block;font-size:8.5pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#125a2b}
+.callout.warn{border-color:#c8102e;background:#fdecef}.callout.warn .label{color:#c8102e}
+.callout.caution{border-color:#d08a00;background:#fff5e0}.callout.caution .label{color:#9a6200}
+.callout.info{border-color:#1f5f99;background:#e9f2fb}.callout.info .label{color:#1f5f99}
+.callout > :last-child{margin-bottom:0}
+.steps{list-style:none;padding:0;counter-reset:s}.steps>li{counter-increment:s;position:relative;padding-left:20pt;margin:4pt 0}
+.steps>li::before{content:counter(s);position:absolute;left:0;top:0;width:14pt;height:14pt;border-radius:50%;background:#1d7a3e;color:#fff;font-weight:800;font-size:8pt;display:flex;align-items:center;justify-content:center}
+.dialog{border:1px solid #dbe5df;border-radius:2mm;padding:4pt 10pt;margin:8pt 0;break-inside:avoid}.dialog p{margin:4pt 0}.dialog b{color:#125a2b}
+.muted{color:#5b6b62}
+.takeaways{background:#0c3d1e;color:#e8f5ec;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}.takeaways h2{color:#fff}
+.kc{border:1.5pt dashed #b9d7c3;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}
+.kc .q{font-weight:700;margin:2pt 0 4pt}.kc ol{list-style:upper-alpha}.kc .a{font-size:9pt;margin-top:4pt;color:#125a2b}
+.disclaimer{font-size:8.5pt;color:#5b6b62;border-top:1px solid #dbe5df;padding-top:6pt;margin-top:14pt}
+</style></head><body>
+<section class="cover"><div><span class="logo"><img src="../../../assets/img/logo.png" alt="Domestic Airlines"></span></div>
+  <div class="k">Domestic Airlines — Training</div><h1>CPDLC — Controller-Pilot Data Link</h1>
+  <p>Course handbook</p><p>Controller-pilot data link communications: references, data link services, message principles, phraseology, failures and the B737 CMU-900.</p>
+  <div class="meta">6 lessons · 2 modules · about 0.5 hours</div>
+  <div class="meta">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</div></section>
+<section class="toc"><h2>Contents</h2><ol><li class="mod">Module 1 — CPDLC Principles</li><li><span class="n">01</span><a href="#lesson-1">CPDLC: Definition, References and Benefits</a></li><li><span class="n">02</span><a href="#lesson-2">Data Link Services</a></li><li><span class="n">03</span><a href="#lesson-3">Principles of CPDLC Exchanges and Message Composition</a></li><li class="mod">Module 2 — Procedures and Practice</li><li><span class="n">04</span><a href="#lesson-4">Reverting to Voice, Phraseology and Failures</a></li><li><span class="n">05</span><a href="#lesson-5">Using the CMU-900 on the Boeing 737-800</a></li><li><span class="n">06</span><a href="#lesson-6">Good Practice and Common Errors</a></li></ol></section>
+<section class="lesson" id="lesson-1">
+  <div class="lesson-head"><div class="k">Module 1 · CPDLC Principles</div>
+    <h1>Lesson 01: CPDLC: Definition, References and Benefits</h1><div class="m">Lesson 1 of 6 · about 7 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Define CPDLC and describe its purpose.</li><li>Identify the ICAO and European references.</li><li>List the expected benefits and limitations.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-01.jpg" alt="Airliner cruising with a data link connection to ground"><figcaption>CPDLC: data link messages between controller and pilot.</figcaption></figure>
+  
+<h2>Definition</h2>
+<p><strong>Controller–Pilot Data Link Communications (CPDLC)</strong> is a means of communication between controller and pilot using data link for ATC communications (ICAO Doc 4444, PANS-ATM). It is a two-way system by which controllers can send <strong>non-urgent, strategic messages</strong> to an aircraft as an alternative to voice. The message is displayed on a flight deck display.</p>
+<ul>
+  <li>Controllers can issue clearances (levels, routes and deviations, speeds), frequency assignments and requests for information.</li>
+  <li>Pilots can respond to messages, request and receive clearances and information, and send reports.</li>
+  <li>A <strong>free text</strong> capability exchanges information that does not fit the standard formats.</li>
+</ul>
+
+<h2>References</h2>
+<div class="table-wrap"><table>
+<tr><th>Reference</th><th>Content</th></tr>
+<tr><td>ICAO Annex 10, Volume III</td><td>Communication systems, including data link</td></tr>
+<tr><td>ICAO Doc 4444 (PANS-ATM)</td><td>CPDLC procedures and the CPDLC message set</td></tr>
+<tr><td>ICAO Doc 10037 — GOLD (Global Operational Data Link) Manual</td><td>The global operational guidance for flight crews, operators and ATS on data link operations</td></tr>
+<tr><td>Commission Implementing Regulation (EU) 2023/1770</td><td>Current EU requirements for aircraft equipment and data link services in Single European Sky airspace. It <strong>repealed</strong> the original Data Link Services Implementing Rule, Regulation (EC) No 29/2009.</td></tr>
+<tr><td>Aircraft manuals</td><td>FCOM / AFM limitations and the CMU operating procedures for your type</td></tr>
+</table></div>
+
+<h2>A short history in Europe</h2>
+<p>The Data Link Services Implementing Rule (Regulation (EC) No 29/2009) mandated CPDLC above FL285 in European airspace. Its implementation was affected by technical problems — random disconnections called <strong>provider aborts</strong>. An EASA investigation found that they came from a combination of factors linked to the radio-frequency environment and the single-frequency data link infrastructure, and recommended a multi-frequency infrastructure. The dates of application were therefore deferred (Regulation (EU) 2015/310 and later amendments). In 2023 the requirements were consolidated in Regulation (EU) 2023/1770.</p>
+
+<h2>Benefits</h2>
+<ul>
+  <li>Less voice traffic on the frequency and increased sector capacity;</li>
+  <li>more pilot requests handled at the same time;</li>
+  <li>fewer misunderstandings — for example call sign confusion;</li>
+  <li>safer frequency changes and fewer loss-of-communication events.</li>
+</ul>
+<div class="callout caution"><span class="label">Limitation</span><p>CPDLC latency is much longer than voice — a response can take up to several minutes. Use it only for <strong>non-time-critical</strong> communications. Check your aircraft limitations: on the B737 with protected-mode CPDLC (PM-CPDLC), the installation is intended for use in the <strong>cruise</strong> phase and for non-critical messages only.</p></div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>CPDLC: data link ATC messages for non-urgent, strategic communications.</li><li>References: Annex 10 Vol III, PANS-ATM, ICAO GOLD (Doc 10037), EU Regulation 2023/1770.</li><li>Benefits: less frequency congestion, fewer misunderstandings; limitation: latency — not for time-critical messages.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">Which regulation now contains the EU data link requirements, replacing Regulation (EC) No 29/2009?</p>
+    <ol><li>Regulation (EU) 965/2012</li><li>Commission Implementing Regulation (EU) 2023/1770</li><li>Regulation (EU) 2015/340</li><li>ICAO Doc 4444</li></ol>
+    <p class="a"><b>Answer: B.</b> Regulation (EU) 2023/1770 repealed Regulation (EC) No 29/2009.</p></div>
+</section>
+<section class="lesson" id="lesson-2">
+  <div class="lesson-head"><div class="k">Module 1 · CPDLC Principles</div>
+    <h1>Lesson 02: Data Link Services</h1><div class="m">Lesson 2 of 6 · about 6 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Describe the data link services available to the flight crew.</li><li>Explain the logon (DLIC) process.</li><li>Identify the services mandated in Europe.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-02.jpg" alt="Flight deck at cruise"><figcaption>Log on before entering CPDLC airspace.</figcaption></figure>
+  
+<h2>The services</h2>
+<div class="table-wrap"><table>
+<tr><th>Service</th><th>Purpose</th></tr>
+<tr><td><strong>DLIC</strong> — Data Link Initiation Capability</td><td>Provides the information needed to establish data link communications between an ATS unit and the aircraft. It is done <strong>before any other data link service</strong> (the logon).</td></tr>
+<tr><td><strong>ACM</strong> — ATC Communications Management</td><td>Automated assistance for the transfer of ATC communications (voice and CPDLC) between sectors and units.</td></tr>
+<tr><td><strong>ACL</strong> — ATC Clearances</td><td>Operational exchanges: pilots send requests and reports; controllers issue clearances, instructions and notifications.</td></tr>
+<tr><td><strong>AMC</strong> — ATC Microphone Check</td><td>Lets the controller send one instruction to all CPDLC aircraft on a frequency to check that none is blocking the voice channel (stuck microphone).</td></tr>
+<tr><td><strong>DCL</strong> — Departure Clearance</td><td>Requesting and delivering departure clearances by data link.</td></tr>
+<tr><td><strong>DSC</strong> — Downstream Clearance</td><td>Obtaining a clearance from an ATS unit that is not yet in control of the aircraft, when it cannot be obtained through unit-to-unit coordination.</td></tr>
+</table></div>
+<p>The European data link rules mandated the first four services: <strong>DLIC, ACM, ACL and AMC</strong>.</p>
+
+<h2>Logon</h2>
+<ul>
+  <li>The logon uses the <strong>ICAO code of the ATS unit</strong> and must match the flight plan data (aircraft identification and registration). Errors in the flight plan or the FMS cause logon failures.</li>
+  <li>Log on in good time before entering the CPDLC airspace, as published in the AIP.</li>
+  <li>Only one ATS unit is the <strong>current data authority</strong> at any time — a controlled flight is under the control of only one ATC unit at a time (ICAO Annex 11).</li>
+</ul>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>DLIC (logon) comes first; then ACM, ACL and AMC — the four mandated services in Europe.</li><li>DCL and DSC add departure and downstream clearances.</li><li>Logon details must match the flight plan; only one current data authority at a time.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">What does the AMC service do?</p>
+    <ol><li>Sends weather reports</li><li>Lets the controller check that no aircraft is blocking the voice frequency</li><li>Assigns squawk codes</li><li>Manages the logon</li></ol>
+    <p class="a"><b>Answer: B.</b> The ATC Microphone Check service detects a stuck microphone blocking the frequency.</p></div>
+</section>
+<section class="lesson" id="lesson-3">
+  <div class="lesson-head"><div class="k">Module 1 · CPDLC Principles</div>
+    <h1>Lesson 03: Principles of CPDLC Exchanges and Message Composition</h1><div class="m">Lesson 3 of 6 · about 7 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Apply the principles for choosing voice or CPDLC.</li><li>Understand single- and multi-element messages.</li><li>Respond correctly to messages.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-03.jpg" alt="Airliner in cruise above clouds"><figcaption>Read the whole message before responding.</figcaption></figure>
+  
+<h2>Principles</h2>
+<ul>
+  <li><strong>Voice and data link co-exist.</strong> CPDLC supplements voice; it does not replace it.</li>
+  <li>CPDLC is used only for <strong>non-time-critical</strong> communications. Time-criticality depends on the traffic situation, the end-to-end performance (systems and human response times) and the recovery time.</li>
+  <li>The choice of voice or CPDLC is at the discretion of the controller and the pilot.</li>
+  <li>Usually, a CPDLC message is answered by CPDLC and a voice message by voice.</li>
+</ul>
+<figure class="diagram"><svg viewBox="0 0 700 300" role="img" aria-label="CPDLC dialogue"><title>A CPDLC dialogue</title>
+<desc>An uplink clearance, an optional STANDBY and a WILCO response that closes the dialogue.</desc>
+<g font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="13" fill="#24342b"><defs><marker id="ar9" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="context-stroke"/></marker></defs>
+<rect x="20" y="40" width="170" height="210" rx="14" fill="#1f5f99" opacity=".12" stroke="#1f5f99"/>
+<text x="105" y="30" text-anchor="middle" font-weight="700" fill="#1f5f99">Controller (ATSU)</text>
+<rect x="510" y="40" width="170" height="210" rx="14" fill="#1d7a3e" opacity=".12" stroke="#1d7a3e"/>
+<text x="595" y="30" text-anchor="middle" font-weight="700" fill="#125a2b">Flight deck</text>
+<g font-size="13">
+<path d="M190 75 L508 75" stroke="#1f5f99" stroke-width="3" marker-end="url(#ar9)"/><text x="350" y="68" text-anchor="middle">1. Uplink: CLIMB TO FL360</text>
+<path d="M510 120 L192 120" stroke="#c76a00" stroke-width="3" marker-end="url(#ar9)"/><text x="350" y="113" text-anchor="middle">2. Downlink (optional): STANDBY</text>
+<path d="M510 165 L192 165" stroke="#1d7a3e" stroke-width="3" marker-end="url(#ar9)"/><text x="350" y="158" text-anchor="middle">3. Downlink: WILCO — dialogue closed</text>
+<path d="M190 215 L508 215" stroke="#5b6b62" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#ar9)"/><text x="350" y="208" text-anchor="middle" fill="#5b6b62">technical acknowledgement / message status in the ATC log</text>
+</g>
+<text x="350" y="285" text-anchor="middle" fill="#c8102e" font-weight="700">Read the whole message, cross-check with the other pilot, then respond — and only then act.</text></g></svg>
+<figcaption>A typical CPDLC dialogue. The response closes the dialogue; STANDBY keeps it open.</figcaption></figure>
+<h2>Message composition</h2>
+<ul>
+  <li>Messages use a <strong>standard format</strong> from the ICAO message set, in plain language or abbreviations — without non-essential words.</li>
+  <li>A message can have a <strong>single element</strong> (for example <code>CLIMB TO FL360</code>) or <strong>several elements</strong> (for example <code>CLIMB TO FL360, CLIMB AT 1000 FT PER MINUTE MINIMUM</code>). The maximum number of elements depends on the system and the airspace.</li>
+  <li>A single response to a multi-element message applies to <strong>all elements</strong>. If any part cannot be complied with, respond <strong>UNABLE</strong> to the whole message.</li>
+  <li>Only one open dialogue of the same type with the same aircraft is allowed at a time: horizontal profile, vertical profile, speed, or SSR code. A speed and a level dialogue can be open together; a heading and a direct-route dialogue cannot.</li>
+  <li>Systems must handle unsupported messages correctly, normally with an error message.</li>
+</ul>
+
+<h2>Responses</h2>
+<div class="table-wrap"><table>
+<tr><th>Response</th><th>Meaning</th></tr>
+<tr><td>WILCO</td><td>I will comply with the clearance or instruction.</td></tr>
+<tr><td>UNABLE</td><td>I cannot comply (with the whole message).</td></tr>
+<tr><td>STANDBY</td><td>Wait — the message is being considered; a further response will follow. The dialogue stays open.</td></tr>
+<tr><td>AFFIRM / NEGATIVE</td><td>Yes / no to a question.</td></tr>
+<tr><td>ROGER</td><td>Message received (for information messages).</td></tr>
+</table></div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Voice and CPDLC co-exist; CPDLC for non-time-critical messages only.</li><li>One response applies to all elements of a multi-element message — UNABLE if any part cannot be done.</li><li>Only one open dialogue of each type at a time.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">You receive a two-element message and can comply with only one element. What do you respond?</p>
+    <ol><li>WILCO</li><li>UNABLE for the whole message</li><li>ROGER</li><li>AFFIRM</li></ol>
+    <p class="a"><b>Answer: B.</b> If any element cannot be complied with, respond UNABLE to the whole message.</p></div>
+</section>
+<section class="lesson" id="lesson-4">
+  <div class="lesson-head"><div class="k">Module 2 · Procedures and Practice</div>
+    <h1>Lesson 04: Reverting to Voice, Phraseology and Failures</h1><div class="m">Lesson 4 of 6 · about 6 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Recognise when to revert from CPDLC to voice.</li><li>Use CPDLC-related voice phraseology.</li><li>Handle message failures and CPDLC system failures.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-04.jpg" alt="Two pilots communicating on the flight deck"><figcaption>When in doubt, revert to voice.</figcaption></figure>
+  
+<h2>When to revert to voice</h2>
+<ul>
+  <li>To clarify an unexpected, inappropriate or ambiguous CPDLC message.</li>
+  <li>To make sure an instruction is executed in time.</li>
+  <li>To correct an unintended message that has been sent.</li>
+  <li>When a time-out or an error occurs for a CPDLC message.</li>
+  <li>Always for urgent or emergency situations.</li>
+</ul>
+
+<h2>Phraseology</h2>
+<div class="table-wrap"><table>
+<tr><th>Situation</th><th>Phraseology</th></tr>
+<tr><td>Correcting a CPDLC message by voice</td><td>“(call sign) DISREGARD CPDLC (message content or type) MESSAGE, BREAK, (corrected message)”<br><span class="muted">Example: “DOMESTIC 3012, DISREGARD CPDLC CLIMB MESSAGE, BREAK, CLIMB FLIGHT LEVEL 360.”</span></td></tr>
+<tr><td>Failure of a single message</td><td>Confirm by voice the action that will be taken, prefaced with “CPDLC MESSAGE FAILURE” — or resend the message by CPDLC.</td></tr>
+<tr><td>CPDLC has failed</td><td>Revert to voice and inform the other party: “CPDLC FAILURE”.</td></tr>
+<tr><td>Complete ground system failure</td><td>Controller: “ALL STATIONS CPDLC FAILURE (unit name)”.</td></tr>
+<tr><td>Stop sending requests</td><td>“((call sign) or ALL STATIONS) STOP SENDING CPDLC REQUESTS [UNTIL ADVISED] [(reason)]”</td></tr>
+<tr><td>Resume normal use</td><td>“((call sign) or ALL STATIONS) RESUME NORMAL CPDLC OPERATIONS”</td></tr>
+</table></div>
+<div class="callout"><span class="label">Good practice</span><p>Keep listening to the voice frequency at all times while using CPDLC. A clearance received by voice takes precedence over a pending CPDLC message on the same subject — clarify if in doubt.</p></div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Revert to voice to clarify, to ensure timely execution, to correct, after a time-out or error, and always in an emergency.</li><li>Use “DISREGARD CPDLC … MESSAGE, BREAK …”, “CPDLC MESSAGE FAILURE”, “CPDLC FAILURE”.</li><li>Keep a listening watch on voice.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">A CPDLC message times out without a response. What should you do?</p>
+    <ol><li>Send it again repeatedly</li><li>Revert to voice to confirm the clearance</li><li>Ignore it</li><li>Switch off the CMU</li></ol>
+    <p class="a"><b>Answer: B.</b> After a time-out or error, revert to voice.</p></div>
+</section>
+<section class="lesson" id="lesson-5">
+  <div class="lesson-head"><div class="k">Module 2 · Procedures and Practice</div>
+    <h1>Lesson 05: Using the CMU-900 on the Boeing 737-800</h1><div class="m">Lesson 5 of 6 · about 7 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Navigate the main CPDLC pages of the CMU-900 on the CDU.</li><li>Respond to uplinked messages.</li><li>Use the ATC log and the reports and requests pages.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-05.jpg" alt="Flight deck with the control display unit"><figcaption>On the B737-800, CPDLC runs through the CMU-900 on the CDU.</figcaption></figure>
+  
+<h2>The application</h2>
+<p>On our Boeing 737-800, the <strong>CMU-900</strong> CPDLC application allows digital communication between the aircraft and an ATC centre through the Aeronautical Telecommunication Network (ATN), using the CDU.</p>
+<ul>
+  <li><strong>LOGON/STATUS</strong> page — initiates the logon to a specified ATS facility and displays the data link status.</li>
+  <li><strong>REPORTS/REQUESTS</strong> menu — creates downlink requests: altitude, speed or direct (REQ ALT/SPD/DIR), weather deviation (REQ WX DEV) and facility monitoring (MONITORING).</li>
+  <li><strong>ATC LOG</strong> — lists all uplinks and downlinks sent and received.</li>
+</ul>
+
+<h2>Receiving a message</h2>
+<ul>
+  <li>When an uplink is received, a <strong>Hi/Lo chime</strong> sounds and <strong>•ATC MSG</strong> appears at LSK 6R on the CDU. The prompt remains while any uplink is pending.</li>
+  <li>Open the message, read it <strong>in full</strong>, and cross-check it with the other pilot.</li>
+  <li>Respond with the appropriate prompt: <strong>WILCO, STANDBY, AFFIRM, UNABLE, ROGER or NEGATIVE</strong>.</li>
+  <li>Selecting <strong>STANDBY</strong> sends a downlink and restarts the alert timer; the message is not closed until another response is sent. Selecting ROGER after STANDBY replaces STANDBY with ACCEPTED, and the message is completed.</li>
+</ul>
+
+<h2>ATC log</h2>
+<ul>
+  <li>Shows, for each message: uplink or downlink, time, source, tracking number, status and the first 22 characters of the text.</li>
+  <li>Select the message text to display the complete message with its response.</li>
+  <li>Status annunciations show whether a message is open, accepted, rejected, failed or timed out — check them when in doubt.</li>
+</ul>
+
+<h2>Dash 8 fleets</h2>
+<p>Q400 and Q200 crews: check whether your aircraft is CPDLC equipped. If not, this course gives awareness of CPDLC operations used by other traffic and ATC.</p>
+<p class="muted">Button names and page layouts depend on the installed software — always use your FCOM.</p>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>CMU-900 pages: LOGON/STATUS, REPORTS/REQUESTS, ATC LOG.</li><li>Uplink: chime + •ATC MSG at LSK 6R; read in full, cross-check, then respond.</li><li>STANDBY keeps the dialogue open; check the status annunciations in the ATC log.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">On the CMU-900, how is the receipt of an uplink message indicated?</p>
+    <ol><li>Master caution only</li><li>A Hi/Lo chime and •ATC MSG at LSK 6R on the CDU</li><li>A message on the PFD only</li><li>No indication</li></ol>
+    <p class="a"><b>Answer: B.</b> A Hi/Lo chime sounds and •ATC MSG is displayed at LSK 6R.</p></div>
+</section>
+<section class="lesson" id="lesson-6">
+  <div class="lesson-head"><div class="k">Module 2 · Procedures and Practice</div>
+    <h1>Lesson 06: Good Practice and Common Errors</h1><div class="m">Lesson 6 of 6 · about 5 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Apply crew procedures that prevent CPDLC errors.</li><li>Recognise common CPDLC errors.</li><li>Manage workload when using CPDLC.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-06.jpg" alt="Airliner in level cruise at sunset"><figcaption>Only one pilot heads-down at any time.</figcaption></figure>
+  
+<h2>Crew procedures</h2>
+<ol class="steps">
+  <li><strong>Read the whole message</strong> — aloud or silently, as the SOP requires. Conditional clauses (“AT … CLIMB TO …”, “AFTER PASSING …”) are easy to miss.</li>
+  <li><strong>Cross-check</strong> it with the other pilot before responding.</li>
+  <li><strong>Respond</strong> — then set the clearance in the FCU/MCP or FMS, and cross-check the result.</li>
+  <li>If anything is unclear, <strong>revert to voice</strong>.</li>
+</ol>
+
+<h2>Common errors</h2>
+<ul>
+  <li>Executing a message before responding, or responding WILCO without both pilots reading it.</li>
+  <li>Missing a condition in a conditional clearance.</li>
+  <li>Responding to the wrong message when several are pending.</li>
+  <li>Logon failures caused by wrong flight plan or FMS data.</li>
+  <li>Heads-down work with CPDLC at a critical moment — only one pilot should be heads-down at any time.</li>
+</ul>
+<div class="callout"><span class="label">Workload</span><p>CPDLC reduces frequency congestion, but it can increase heads-down time. Plan its use for cruise and for non-urgent exchanges, and keep the pilot flying focused on the flight path.</p></div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Read in full, cross-check, respond, then act — and verify the result.</li><li>Watch for conditional clauses and multiple pending messages.</li><li>Only one pilot heads-down; revert to voice when in doubt.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">What is the correct order when handling a CPDLC clearance?</p>
+    <ol><li>Act, then read, then respond</li><li>Read in full, cross-check, respond, then act and verify</li><li>Respond, then read</li><li>Act without responding</li></ol>
+    <p class="a"><b>Answer: B.</b> Read, cross-check, respond, then act and verify.</p></div>
+</section><p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p></body></html>

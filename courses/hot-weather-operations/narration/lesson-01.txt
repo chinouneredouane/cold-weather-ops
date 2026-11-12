@@ -1,0 +1,46 @@
+Domestic Airlines — Hot Weather Operations
+Lesson 1: Hot and High: Effects on Performance
+
+Learning objectives:
+- Explain how temperature and elevation affect aircraft performance.
+- Identify the performance limits that become critical in hot weather.
+- Use the performance tools correctly.
+
+Density is everything
+
+High temperature and high aerodrome elevation both reduce air density — expressed as a high density altitude . Lower density means:
+
+less thrust or power from the engines — jets and turboprops alike are flat-rated only up to a certain temperature;
+
+less lift at a given true airspeed — so the same indicated airspeed means a higher true airspeed and ground speed ;
+
+longer take-off and landing distances, higher tyre speeds, and more energy for the brakes to absorb in a rejected take-off;
+
+reduced climb gradient — the climb limit (weight–altitude–temperature) and obstacle clearance often limit the take-off mass on hot days.
+
+Limits that become critical
+
+Climb limit and obstacle limit — especially at southern aerodromes with high elevation and temperatures.
+
+Runway limit — check NOTAMs for reduced declared distances (for example, a displaced threshold or the first part of a runway unusable).
+
+Tyre speed limit and brake energy limit — higher ground speeds at high density altitude.
+
+Landing distance — higher true airspeed at touchdown; a late or long flare uses runway very quickly.
+
+Maximum temperature limits for take-off and landing in the AFM.
+
+Performance tools
+
+Use the approved performance data: AFM / company performance software, QRH performance tables and the Jetplan operational flight plan.
+
+Enter the actual temperature, QNH, wind and runway condition. A few degrees can change the limiting mass.
+
+Check aerodrome accessibility: take-off alternate, destination alternate and en-route alternates.
+
+The first officer prepares the performance dispatch; the captain cross-checks it.
+
+Key takeaways:
+- Heat and elevation reduce density: less thrust and lift, higher true airspeed and ground speed.
+- Climb, obstacle, tyre-speed and brake-energy limits become critical.
+- Use approved performance data with actual conditions; check NOTAMs for reduced distances.

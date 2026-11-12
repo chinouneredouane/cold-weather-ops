@@ -1,0 +1,36 @@
+Domestic Airlines — RVSM Refresher
+Lesson 2: Flight Planning and Pre-flight
+
+Learning objectives:
+- Complete the flight plan correctly for an RVSM flight.
+- Perform the RVSM pre-flight checks.
+- Apply the MEL to RVSM equipment.
+
+Flight planning
+
+In the ICAO flight plan, insert the letter “W” in item 10 to indicate RVSM approval (and in a repetitive flight plan, the letter “Q” where required by the procedure).
+
+Verify that the aircraft is RVSM compliant and that no RVSM-related item is open in the technical log.
+
+Check forecast and reported weather — especially severe turbulence and mountain wave activity at cruise levels.
+
+Check the MEL : the MEL contains the dispatch requirements for systems that need a specific approval, such as RVSM, RNAV and LVO.
+
+Check any RVSM operating limitations in the AFM.
+
+Pre-flight at the aircraft
+
+Review the maintenance logs and forms for the serviceability of RVSM equipment.
+
+During the exterior inspection, check the static ports and the condition of the fuselage skin around the pitot-static sources. Damage, dents or residue near the static ports can cause altimetry errors.
+
+On the ground, compare the altimeters with the known aerodrome elevation. The difference must not exceed the limit in your FCOM (typically about 75 ft ).
+
+Before take-off, confirm that the RVSM equipment is operative.
+
+Good practice Brief the RVSM status in the departure briefing: equipment state, MEL items, expected cruise level and any turbulence or mountain wave forecast.
+
+Key takeaways:
+- Flight plan item 10: “W” for RVSM approval.
+- Check MEL, weather and technical log before an RVSM flight.
+- Inspect static ports; compare altimeters with aerodrome elevation (FCOM limit, typically 75 ft).

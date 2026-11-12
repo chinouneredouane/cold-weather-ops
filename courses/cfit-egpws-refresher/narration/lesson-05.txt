@@ -1,0 +1,43 @@
+Domestic Airlines — CFIT and EGPWS Refresher
+Lesson 5: EGPWS / TAWS: Alerts and Crew Response
+
+Learning objectives:
+- Describe the EGPWS basic modes and enhanced functions.
+- Distinguish cautions from warnings.
+- Apply the company response to EGPWS cautions.
+
+The system
+
+A terrain awareness warning system (TAWS) is required for commercial aeroplanes (ICAO Annex 6; EASA CAT.IDE.A.150). Our fleets use the Enhanced GPWS (EGPWS) , which combines the classic ground proximity modes with a terrain database and the aircraft position.
+
+Mode Protects against Typical alerts
+
+1 Excessive descent rate “SINK RATE”, “PULL UP”
+
+2 Excessive terrain closure rate “TERRAIN TERRAIN”, “PULL UP”
+
+3 Altitude loss after take-off or go-around “DON'T SINK”
+
+4 Unsafe terrain clearance when not in landing configuration “TOO LOW GEAR”, “TOO LOW FLAPS”, “TOO LOW TERRAIN”
+
+5 Excessive deviation below the glideslope “GLIDESLOPE”
+
+6 Advisory callouts Altitude callouts, “BANK ANGLE”
+
+Enhanced Terrain and obstacles ahead (look-ahead); terrain clearance floor near runways “CAUTION TERRAIN”, “CAUTION OBSTACLE”, “TERRAIN AHEAD”, “TERRAIN AHEAD PULL UP”, “OBSTACLE PULL UP”, “TOO LOW TERRAIN”
+
+Alert wording varies with the installation — check the aircraft manuals.
+
+Cautions and warnings
+
+Caution (amber) — for example “SINK RATE”, “TERRAIN TERRAIN”, “DON'T SINK”, “TOO LOW FLAPS”, “TOO LOW GEAR”, “CAUTION TERRAIN”, “CAUTION OBSTACLE”, “BANK ANGLE”, “GLIDESLOPE”. Company SOP : the crew shall immediately assess the flight path or configuration with respect to the ground, and the PF shall take appropriate action to correct the situation. Q200 SOP: the PF verbalises the action to the PM with “CORRECTING” .
+
+Warning (red) — for example “TOO LOW TERRAIN”, “TERRAIN PULL UP”, “OBSTACLE PULL UP” or “PULL UP” (“WHOOP WHOOP PULL UP”). Apply the escape manoeuvre immediately (Lesson 6).
+
+No delay At night or in IMC, a warning must be followed without hesitation and without trying to confirm it visually . The Q200 SOP adds: “The flight crew must use a good judgment in this matter.” A warning should only ever be judged spurious in daylight VMC, with the terrain and obstacles clearly in sight and no doubt about the aircraft's position. Report every alert.
+
+Key takeaways:
+- EGPWS = basic modes 1–6 plus terrain database look-ahead.
+- Caution: assess the flight path and correct (“CORRECTING”).
+- Warning (“PULL UP”, “TERRAIN AHEAD PULL UP”): escape manoeuvre immediately.
+- At night or in IMC, never wait to confirm a warning visually.

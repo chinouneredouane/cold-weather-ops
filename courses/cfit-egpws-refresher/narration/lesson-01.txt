@@ -1,0 +1,48 @@
+Domestic Airlines — CFIT and EGPWS Refresher
+Lesson 1: CFIT: Definition, Defences and Contributing Factors
+
+Learning objectives:
+- Define controlled flight into terrain (CFIT).
+- Identify where and why CFIT accidents happen.
+- List the main defences and contributing factors.
+
+Definition
+
+Controlled flight into terrain (CFIT) occurs when an airworthy aircraft, under the complete control of the crew, is inadvertently flown into terrain, water or an obstacle. The crew is generally unaware of the danger until it is too late.
+
+Most CFIT accidents happen during approach and landing , often on non-precision approaches .
+
+Many are caused by a loss of situational awareness, particularly in the vertical plane . Many crash sites lie on the extended centreline of an approach.
+
+Unfamiliarity with the approach, or misreading the approach chart, are common factors — especially where the approach has several step-down altitudes between the initial and final approach fixes.
+
+The result is almost always a hull loss with fatalities. Since terrain awareness warning systems (TAWS) became mandatory, CFIT accidents have become much rarer — but they still happen, mostly where the warning was absent, ignored or acted on too late.
+
+Defences
+
+Standard operating procedures, including briefings and callouts;
+
+terrain awareness warning systems (EGPWS / TAWS);
+
+situational awareness relative to terrain;
+
+flying the published IFR procedure — never improvising in IMC;
+
+appropriate use of the autoflight system;
+
+training — including the type-specific escape manoeuvre.
+
+Contributing factors
+
+Weather : rain, turbulence and icing increase workload; poor visibility and darkness contribute to disorientation.
+
+Communication : non-standard phraseology, misunderstood clearances, altimeter setting errors.
+
+Human factors : fatigue, complacency on familiar routes, distraction and high workload in the approach.
+
+Automation : wrong mode, wrong target, or the crew not noticing an unintended descent.
+
+Key takeaways:
+- CFIT: an airworthy aircraft, under control, flown into terrain without the crew realising.
+- Most occur in approach and landing, often non-precision approaches.
+- Defences: SOPs, EGPWS, terrain awareness, published procedures, automation, training.

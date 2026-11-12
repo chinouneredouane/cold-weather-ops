@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Lesson 04: SOPs, Stabilised Approaches and CDFA — CFIT and EGPWS Refresher</title>
+<style>
+@page{size:A4;margin:18mm 16mm 20mm}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#24342b;font-size:10.5pt;line-height:1.5;margin:0}
+h1,h2,h3{color:#14231b;line-height:1.25;break-after:avoid}
+h1{font-size:21pt;margin:0 0 6pt}h2{font-size:14pt;margin:16pt 0 6pt}h3{font-size:12pt;margin:12pt 0 4pt}
+p{margin:0 0 7pt}ul,ol{margin:0 0 8pt;padding-left:16pt}li{margin:2pt 0}
+a{color:#125a2b;text-decoration:none}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:9pt;background:#f3f9f5;border:1px solid #dbe5df;padding:0 3pt;border-radius:3pt}
+.cover{height:257mm;display:flex;flex-direction:column;justify-content:center;break-after:page;
+  background:linear-gradient(120deg,#0c3d1e,#125a2b 55%,#2a8a50);color:#fff;padding:22mm;border-radius:4mm;margin:0}
+.cover h1{color:#fff;font-size:34pt}.cover .k{letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#bfe3cb;font-size:10pt}
+.cover p{color:#e3f1e8;font-size:13pt}.cover .logo{background:#fff;padding:5mm 7mm;border-radius:3mm;display:inline-block;margin-bottom:14mm}
+.cover .logo img{height:16mm}.cover .meta{margin-top:12mm;font-size:10.5pt;color:#d3ebdb}
+.toc{break-after:page}.toc h2{margin-top:0}.toc ol{list-style:none;padding:0}
+.toc li{display:flex;gap:8pt;padding:3pt 0;border-bottom:1px dotted #c9d8cf}.toc .n{width:22pt;font-weight:700;color:#5b6b62}
+.toc .mod{margin-top:9pt;font-weight:800;color:#125a2b;border:0;text-transform:uppercase;font-size:9pt;letter-spacing:.06em}
+.lesson{break-before:page}
+.lesson-head{background:linear-gradient(120deg,#0c3d1e,#1d7a3e);color:#fff;border-radius:3mm;padding:9pt 13pt;margin-bottom:10pt}
+.lesson-head h1{color:#fff;font-size:17pt;margin:2pt 0}.lesson-head .k{font-size:8.5pt;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#c7e8d2}
+.lesson-head .m{font-size:9pt;color:#dbefe2}
+.objectives{background:#f3f9f5;border:1px solid #dbe5df;border-radius:2mm;padding:7pt 11pt;margin:0 0 10pt}
+.objectives h2,.takeaways h2,.kc h2{font-size:9.5pt;text-transform:uppercase;letter-spacing:.06em;margin:0 0 3pt;color:#125a2b}
+.lesson-figure{margin:0 0 10pt;break-inside:avoid}.lesson-figure img{width:100%;max-height:85mm;object-fit:contain;border:1px solid #dbe5df;border-radius:2mm;background:#f3f9f5}
+figure{margin:9pt 0;break-inside:avoid}figure svg{width:100%;height:auto}figcaption{font-size:8.5pt;color:#5b6b62;margin-top:3pt}
+.diagram{border:1px solid #dbe5df;border-radius:2mm;padding:5pt}
+.table-wrap{margin:8pt 0;border:1px solid #dbe5df;border-radius:2mm;overflow:hidden}
+table{border-collapse:collapse;width:100%;font-size:9pt}th,td{text-align:left;vertical-align:top;padding:4pt 6pt;border-bottom:1px solid #dbe5df}
+th{background:#f3f9f5}tr{break-inside:avoid}td.code{font-weight:800;font-size:12pt;text-align:center;width:34pt}
+.callout{border-left:3pt solid #1d7a3e;background:#f3f9f5;padding:6pt 10pt;margin:8pt 0;border-radius:0 2mm 2mm 0;break-inside:avoid}
+.callout .label{display:block;font-size:8.5pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#125a2b}
+.callout.warn{border-color:#c8102e;background:#fdecef}.callout.warn .label{color:#c8102e}
+.callout.caution{border-color:#d08a00;background:#fff5e0}.callout.caution .label{color:#9a6200}
+.callout.info{border-color:#1f5f99;background:#e9f2fb}.callout.info .label{color:#1f5f99}
+.callout > :last-child{margin-bottom:0}
+.steps{list-style:none;padding:0;counter-reset:s}.steps>li{counter-increment:s;position:relative;padding-left:20pt;margin:4pt 0}
+.steps>li::before{content:counter(s);position:absolute;left:0;top:0;width:14pt;height:14pt;border-radius:50%;background:#1d7a3e;color:#fff;font-weight:800;font-size:8pt;display:flex;align-items:center;justify-content:center}
+.dialog{border:1px solid #dbe5df;border-radius:2mm;padding:4pt 10pt;margin:8pt 0;break-inside:avoid}.dialog p{margin:4pt 0}.dialog b{color:#125a2b}
+.muted{color:#5b6b62}
+.takeaways{background:#0c3d1e;color:#e8f5ec;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}.takeaways h2{color:#fff}
+.kc{border:1.5pt dashed #b9d7c3;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}
+.kc .q{font-weight:700;margin:2pt 0 4pt}.kc ol{list-style:upper-alpha}.kc .a{font-size:9pt;margin-top:4pt;color:#125a2b}
+.disclaimer{font-size:8.5pt;color:#5b6b62;border-top:1px solid #dbe5df;padding-top:6pt;margin-top:14pt}
+</style></head><body>
+<section class="lesson" style="break-before:auto" id="lesson-4">
+  <div class="lesson-head"><div class="k">Module 1 · CFIT Awareness and Prevention</div>
+    <h1>Lesson 04: SOPs, Stabilised Approaches and CDFA</h1><div class="m">Lesson 4 of 7 · about 7 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Apply stabilised approach criteria and the go-around policy.</li><li>Fly non-precision approaches with the CDFA technique.</li><li>Use the autoflight system to reduce CFIT risk.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-04.jpg" alt="Airliner on a constant-angle approach to a runway"><figcaption>CDFA: one constant angle to the runway.</figcaption></figure>
+  
+<h2>Standard operating procedures</h2>
+<ul>
+  <li>Do not invent your own procedures. Follow the company SOPs.</li>
+  <li>Before the approach, know which approach and runway aids are available (NOTAMs, ATIS, pilot reports) and use all of them.</li>
+  <li>Understand the approach, missed approach and departure procedures, and comply with them.</li>
+</ul>
+
+<h2>Stabilised approach</h2>
+<p>Fly stabilised approaches. If the aircraft is not stabilised by <strong>1,000 ft above aerodrome elevation in IMC</strong> or <strong>500 ft in VMC</strong> (or the gates in your Operations Manual), <strong>go around</strong>. Domestic Airlines applies a no-fault go-around policy.</p>
+
+<h2>Continuous descent final approach (CDFA)</h2>
+<figure class="diagram"><svg viewBox="0 0 700 320" role="img" aria-label="CDFA versus dive and drive"><title>CDFA versus step-down descent</title>
+<desc>A continuous descent final approach follows a constant angle to the runway; a dive-and-drive profile descends early and flies level close to terrain.</desc>
+<g font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="13" fill="#24342b">
+<line x1="40" y1="280" x2="660" y2="280" stroke="#7a4c26" stroke-width="6"/>
+<rect x="560" y="272" width="100" height="8" fill="#3b4540"/><text x="610" y="300" text-anchor="middle" fill="#5b6b62">runway</text>
+<path d="M60 70 L580 272" stroke="#1d7a3e" stroke-width="4"/>
+<path d="M60 70 L160 70 L180 130 L300 130 L320 200 L470 200 L480 225" stroke="#c8102e" stroke-width="3.5" stroke-dasharray="9 6" fill="none"/>
+<line x1="40" y1="225" x2="660" y2="225" stroke="#c76a00" stroke-dasharray="4 4"/><text x="46" y="218" fill="#c76a00" font-weight="700">MDA</text>
+<path d="M240 248 l20 -32 l20 32z M380 252 l14 -24 l14 24z" fill="#3e5a4a"/>
+<text x="250" y="60" fill="#125a2b" font-weight="700">CDFA: one constant descent angle, like an ILS glide path</text>
+<text x="330" y="160" fill="#c8102e" font-weight="700">“dive and drive”: step down early,</text>
+<text x="330" y="178" fill="#c8102e">then fly level close to the terrain</text></g></svg>
+<figcaption>Continuous descent final approach (CDFA, also called CANPA) keeps the aircraft stabilised on a constant path. EASA requires CDFA for non-precision approaches unless otherwise approved (CAT.OP.MPA.115).</figcaption></figure>
+<ul>
+  <li>EASA requires non-precision approaches to be flown with the <strong>CDFA</strong> technique unless otherwise approved (CAT.OP.MPA.115). The company presentations also call it <strong>CANPA</strong> (constant angle non-precision approach).</li>
+  <li>The aircraft descends on a constant angle — typically about 3° — from the final approach fix to the runway, without levelling off at the MDA.</li>
+  <li>At the decision point (DA/H or MDA/H with the add-on defined by the company), if the required visual references are not in sight, go around.</li>
+  <li>Where available and trained, use the autoflight system — for example LNAV/VNAV or FPA modes — to fly the constant angle.</li>
+</ul>
+
+<h2>Automation</h2>
+<ul>
+  <li>Use automation appropriately to reduce workload and to fly stabilised approaches.</li>
+  <li>Understand the autopilot modes. Monitor the FMA, and intervene manually if the aircraft does not do what is intended.</li>
+  <li>Avoid excessive descent rates and low or high speeds at low altitude.</li>
+</ul>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Not stabilised by 1,000 ft IMC / 500 ft VMC (or company gates): go around.</li><li>Non-precision approaches: CDFA (CANPA) — constant angle, no levelling at MDA.</li><li>Know the autopilot modes; monitor the FMA; intervene if needed.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">What is the main CFIT benefit of the CDFA technique?</p>
+    <ol><li>It saves fuel</li><li>It avoids early step-downs and level flight close to terrain, keeping the approach stabilised</li><li>It allows descent below the MDA</li><li>It removes the need for a missed approach</li></ol>
+    <p class="a"><b>Answer: B.</b> CDFA flies a constant angle like an ILS, avoiding the dive-and-drive profile that brings the aircraft low and level near terrain.</p></div>
+</section><p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p></body></html>

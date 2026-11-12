@@ -104,7 +104,7 @@
       '<p class="muted">' + correct + ' of ' + current.length + ' correct · pass mark ' + PASS + '%</p>' +
       (passed
         ? '<h2>Congratulations — you passed.</h2><p>Review the explanations below, then collect your certificate.</p>' +
-          '<div class="btn-row" style="justify-content:center"><a class="btn primary" href="certificate.html">Get your certificate</a><a class="btn" href="finale.html">Watch the closing video</a></div>'
+          '<div class="btn-row" style="justify-content:center"><a class="btn primary" href="certificate.html">Get your certificate</a>' + (body.getAttribute('data-finale') === '0' ? '' : '<a class="btn" href="finale.html">Watch the closing video</a>') + '</div>'
         : '<h2>Not yet — keep going.</h2><p>Review the questions you missed and the linked lessons, then try a new set of questions.</p>');
 
     submit.style.display = 'none';
