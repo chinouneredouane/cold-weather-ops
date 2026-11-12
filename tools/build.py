@@ -24,8 +24,14 @@ from handbook import build_print  # noqa: E402
 COURSES = [COLD_WEATHER, UPSET_RECOVERY]
 
 # Courses shown on the portal as "in preparation" (no pages yet).
-UPCOMING = [
-    dict(title="Command Upgrade", tagline="Leadership, decision-making and the responsibilities of the commander.", cover="slate", icon="people"),
+UPCOMING = []
+
+# Courses built outside this generator and copied into courses/<folder>/ as they are.
+EXTERNAL = [
+    dict(title="Command Upgrade", href="courses/command-upgrade/index.html", cover="slate", icon="people",
+         tagline="The 20 practical briefings (PL 01 to PL 20) of the command upgrade course: operations, flight preparation, "
+                 "in-flight management, abnormal operations and severe emergencies.",
+         meta="20 briefings · knowledge check after each · certificate"),
 ]
 
 ACADEMY = "Training"
@@ -137,6 +143,16 @@ def build_portal():
           <h3>{esc(c['title'])}</h3>
           <p class="muted">{esc(c['tagline'])}</p>
           <div class="meta">{n} lessons · about {round(mins / 60 * 2) / 2:g} hours · final quiz</div>
+        </div>
+      </a>""")
+    for x in EXTERNAL:
+        cards.append(f"""
+      <a class="card course-card" href="{x['href']}">
+        <div class="cover {x['cover']}">{icon(x['icon'])}<span class="pill">Available</span></div>
+        <div class="body">
+          <h3>{esc(x['title'])}</h3>
+          <p class="muted">{esc(x['tagline'])}</p>
+          <div class="meta">{esc(x['meta'])}</div>
         </div>
       </a>""")
     for u in UPCOMING:
