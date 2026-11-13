@@ -235,6 +235,9 @@ def build_portal():
       <h2 id="refresher">Ground Refresher Training</h2>
       <p class="muted">The seasonal ground refresher programme for all fleets — Boeing 737-800, Dash 8-Q400 and Dash 8-Q200 — following the Ground Refresher Training Follow-up Sheet. The same subjects are repeated every year.</p>
       {refresher_html()}
+      <div class="card panel" style="margin-bottom:40px"><h2 style="margin-top:0;font-size:20px">For the LMS administrator</h2>
+      <p>Every course is also available as a <strong>SCORM 1.2</strong> package for the company LMS, where pilots log in with their LMS account and results are recorded.</p>
+      <a class="btn primary" href="lms/index.html">LMS packages (SCORM)</a></div>
     </div>"""
     out = page(title="Training Academy — Domestic Airlines", description="Domestic Airlines e-learning courses for crews and operations staff.",
                root="", main=main, active="home")

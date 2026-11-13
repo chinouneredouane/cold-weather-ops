@@ -9,23 +9,71 @@
   var total = parseInt(body.getAttribute('data-total'), 10) || 0;
   var lessonNum = parseInt(body.getAttribute('data-lesson'), 10) || 0;
 
+  /* ---------- LMS (SCORM 1.2) — used only when the course is launched from an LMS ---------- */
+  var LMS = (function () {
+    function find(win) {
+      for (var i = 0; win && i < 10; i++) {
+        try { if (win.API) return win.API; } catch (e) { return null; }
+        if (win.parent === win) break;
+        win = win.parent;
+      }
+      return null;
+    }
+    var api = null;
+    try { api = find(window) || (window.opener ? find(window.opener) : null); } catch (e) { api = null; }
+    if (!api) return null;
+    var started = false;
+    try {
+      var r = api.LMSInitialize('');
+      started = String(r) === 'true' || String(api.LMSGetLastError()) === '101'; // 101 = already initialised (multi-page course)
+    } catch (e) { return null; }
+    if (!started) return null;
+    function get(k) { try { return String(api.LMSGetValue(k) || ''); } catch (e) { return ''; } }
+    function set(k, v) { try { api.LMSSetValue(k, String(v)); } catch (e) { /* ignore */ } }
+    function commit() { try { api.LMSCommit(''); } catch (e) { /* ignore */ } }
+    return { get: get, set: set, commit: commit,
+             finish: function () { try { api.LMSFinish(''); } catch (e) { /* ignore */ } } };
+  })();
+  window.DALMS = LMS;
+
   /* ---------- Storage (never throws) ---------- */
   var KEY = 'da-academy:' + courseId;
   function load() {
-    try {
-      var raw = window.localStorage.getItem(KEY);
-      var data = raw ? JSON.parse(raw) : null;
-      if (data && typeof data === 'object') {
-        data.completed = Array.isArray(data.completed) ? data.completed : [];
-        return data;
-      }
-    } catch (e) { /* storage unavailable */ }
-    return { completed: [], quiz: null, name: '' };
+    var data = null;
+    if (LMS) {
+      try { data = JSON.parse(LMS.get('cmi.suspend_data') || 'null'); } catch (e) { data = null; }
+    }
+    if (!data) {
+      try { var raw = window.localStorage.getItem(KEY); data = raw ? JSON.parse(raw) : null; } catch (e) { data = null; }
+    }
+    if (!data || typeof data !== 'object') data = { completed: [], quiz: null, name: '' };
+    data.completed = Array.isArray(data.completed) ? data.completed : [];
+    if (LMS && !data.name) {
+      // SCORM 1.2 student_name is "Last, First" — show it as "First Last" on the certificate
+      var n = LMS.get('cmi.core.student_name');
+      if (n) data.name = n.indexOf(',') > -1 ? n.split(',').reverse().map(function (x) { return x.trim(); }).join(' ') : n;
+    }
+    return data;
   }
   function save(data) {
     try { window.localStorage.setItem(KEY, JSON.stringify(data)); } catch (e) { /* ignore */ }
+    if (!LMS) return;
+    var done = data.completed.filter(function (n) { return n >= 1 && n <= total; }).length;
+    LMS.set('cmi.suspend_data', JSON.stringify({ completed: data.completed, quiz: data.quiz, name: data.name, last: data.last }));
+    if (data.last) LMS.set('cmi.core.lesson_location', String(data.last));
+    if (data.quiz) {
+      LMS.set('cmi.core.score.min', 0); LMS.set('cmi.core.score.max', 100); LMS.set('cmi.core.score.raw', data.quiz.pct);
+      LMS.set('cmi.core.lesson_status', data.quiz.passed ? 'passed' : (done >= total ? 'failed' : 'incomplete'));
+    } else {
+      LMS.set('cmi.core.lesson_status', 'incomplete');
+    }
+    LMS.commit();
   }
   var state = load();
+  if (LMS) {
+    save(state);
+    window.addEventListener('pagehide', function () { LMS.set('cmi.core.exit', 'suspend'); LMS.commit(); });
+  }
 
   function isDone(n) { return state.completed.indexOf(n) !== -1; }
   function markDone(n) {
