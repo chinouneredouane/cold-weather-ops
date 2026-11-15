@@ -249,6 +249,19 @@ a.course-card:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(12,61
 .course-card .meta{font-size:14px;color:var(--muted);margin-top:auto}
 .course-card.soon{opacity:.75}
 
+/* ---------- Home page fleet slideshow ---------- */
+.fleet-hero{min-height:420px;display:flex;align-items:center;background:var(--green-deep)}
+.fleet-hero .wrap{width:100%}
+.fleet-slides{position:absolute;inset:0;z-index:0}
+.fleet-slide{position:absolute;inset:0;margin:0;opacity:0;animation:fleetFade calc(var(--n) * 6s) infinite}
+.fleet-slide img{width:100%;height:100%;object-fit:cover;display:block}
+.fleet-slide figcaption{position:absolute;right:20px;bottom:16px;z-index:2;color:#fff;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:rgba(12,61,30,.65);padding:5px 12px;border-radius:999px}
+.fleet-hero::after{background:linear-gradient(90deg,rgba(12,61,30,.92) 0%,rgba(12,61,30,.72) 45%,rgba(12,61,30,.2) 100%);z-index:1}
+.fleet-hero .wrap{z-index:2}
+@keyframes fleetFade{0%{opacity:0}5%{opacity:1}33%{opacity:1}38%{opacity:0}100%{opacity:0}}
+@media (max-width:640px){.fleet-hero{min-height:360px}.fleet-hero::after{background:rgba(12,61,30,.78)}}
+@media (prefers-reduced-motion:reduce){.fleet-slide{animation:none}.fleet-slide:first-child{opacity:1}}
+
 /* ---------- Ground refresher ---------- */
 .ref-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px;margin:16px 0 40px}
 .ref-season{padding:18px 18px 10px}

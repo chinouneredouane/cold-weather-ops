@@ -37,6 +37,14 @@ COURSES = [COLD_WEATHER, UPSET_RECOVERY, RVSM, CFIT, HOT_WEATHER, CPDLC, WINDSHE
 # Courses shown on the portal as "in preparation" (no pages yet).
 UPCOMING = []
 
+# Home page background: fleet pictures shown one after another behind the title (1600 × 700 px JPG).
+# Replace the files in assets/img/fleet/ with real fleet photos, or edit this list.
+FLEET = [
+    ("assets/img/fleet/fleet-1.jpg", "Boeing 737-800"),
+    ("assets/img/fleet/fleet-2.jpg", "Dash 8-Q400"),
+    ("assets/img/fleet/fleet-3.jpg", "Dash 8-Q200"),
+]
+
 # Ground Refresher Training Follow-up Sheet — the same 12 subjects every year, for all fleets.
 # (code, title, link or None, note)
 REFRESHER = {
@@ -219,13 +227,16 @@ def build_portal():
           <div class="meta">Coming soon</div>
         </div>
       </div>""")
+    slides = "".join(
+        f'<figure class="fleet-slide" style="animation-delay:{i * 6}s"><img src="{src}" alt="{esc(name)}" loading="{"eager" if i == 0 else "lazy"}">'
+        f'<figcaption>{esc(name)}</figcaption></figure>' for i, (src, name) in enumerate(FLEET))
     main = f"""
-    <section class="hero">
-      {icon('snow', 'hero-art')}
+    <section class="hero fleet-hero">
+      <div class="fleet-slides" style="--n:{len(FLEET)}" aria-hidden="true">{slides}</div>
       <div class="wrap">
         <div class="eyebrow">Domestic Airlines</div>
         <h1>Training Academy</h1>
-        <p class="lede">Self-paced e-learning courses for Domestic Airlines crews and operations staff. Choose a course to begin — your progress is saved in this browser.</p>
+        <p class="lede">Self-paced e-learning courses for Domestic Airlines crews and operations staff — Boeing 737-800, Dash 8-Q400 and Dash 8-Q200. Choose a course to begin; your progress is saved in this browser.</p>
       </div>
     </section>
     <div class="wrap">
