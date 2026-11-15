@@ -30,9 +30,10 @@ from courses.mel import COURSE as MEL  # noqa: E402
 from courses.wind_limits import COURSE as WIND_LIMITS  # noqa: E402
 from courses.approach_minima import COURSE as APPROACH_MINIMA  # noqa: E402
 from courses.ground_equipment import COURSE as GROUND_EQUIPMENT  # noqa: E402
+from courses.lvo import COURSE as LVO  # noqa: E402
 from handbook import build_print  # noqa: E402
 
-COURSES = [COLD_WEATHER, UPSET_RECOVERY, RVSM, CFIT, HOT_WEATHER, CPDLC, WINDSHEAR, PBN, REGULATIONS, MEL, WIND_LIMITS, APPROACH_MINIMA, GROUND_EQUIPMENT]
+COURSES = [COLD_WEATHER, UPSET_RECOVERY, RVSM, CFIT, HOT_WEATHER, CPDLC, WINDSHEAR, PBN, REGULATIONS, MEL, WIND_LIMITS, APPROACH_MINIMA, GROUND_EQUIPMENT, LVO]
 
 # Courses shown on the portal as "in preparation" (no pages yet).
 UPCOMING = []
@@ -59,6 +60,7 @@ REFRESHER = {
     "Additional recurrent courses": [
         ("+", "CPDLC — Controller-Pilot Data Link", "courses/cpdlc/index.html", ""),
         ("+", "Upset Prevention and Recovery (UPRT)", "courses/upset-prevention-recovery/index.html", ""),
+        ("+", "Low Visibility Operations (LVO) — CAT II", "courses/lvo-cat2/index.html", "B737-800"),
     ],
 }
 

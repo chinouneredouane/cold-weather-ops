@@ -3,7 +3,7 @@ SCORM 1.2 PACKAGES FOR THE COMPANY LMS — INSTRUCTIONS FOR IT
 ==============================================================
 
 CONTENTS OF THIS ZIP
-  13 course packages (SCORM 1.2), one .zip per course — do NOT unzip them:
+  14 course packages (SCORM 1.2), one .zip per course — do NOT unzip them:
 
    1. Cold Weather Operations                    30 lessons   pass mark 80%    56.7 MB   cold-weather-operations-scorm12.zip
    2. Upset Prevention and Recovery              24 lessons   pass mark 80%    42.1 MB   upset-prevention-recovery-scorm12.zip
@@ -18,6 +18,7 @@ CONTENTS OF THIS ZIP
   11. Wind Limitations                            3 lessons   pass mark 80%     2.5 MB   wind-limitations-scorm12.zip
   12. Approach Operations and Minima              4 lessons   pass mark 80%     3.9 MB   approach-minima-scorm12.zip
   13. Inoperative Ground Equipment                3 lessons   pass mark 80%     2.5 MB   inop-ground-equipment-scorm12.zip
+  14. Low Visibility Operations (LVO) — CAT II   7 lessons   pass mark 80%     SIZE   lvo-cat2-scorm12.zip  (B737-800 crews)
 
 HOW TO IMPORT (each package)
   1. In the LMS, create a course or activity of type "SCORM package".

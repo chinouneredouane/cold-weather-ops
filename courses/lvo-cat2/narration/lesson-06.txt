@@ -1,0 +1,95 @@
+Domestic Airlines — Low Visibility Operations (LVO) — CAT II
+Lesson 6: CAT II Approach and Autoland
+
+Learning objectives:
+- Check the landing requirements and required airborne equipment.
+- Set up and brief the CAT II approach.
+- Fly the CAT II autoland with the company callouts.
+
+Landing requirements (company)
+
+Item CAT I CAT II
+
+Autopilot 1 A/P Autoland
+
+Minimum DH (use Jeppesen if higher) 200 ft 100 ft
+
+TDZ RVR (use Jeppesen if higher) 550 m 350 m
+
+MID RVR (independent of Jeppesen) — 175 m
+
+Roll-out RVR — Required if reported (may be replaced by MID RVR if not reported)
+
+Ground equipment See the table of failed or downgraded ground equipment (OM A)
+
+Braking action Medium or better (µ > 0.3)
+
+Runway length Landing distance + 15 % (advisory data, braking good or medium)
+
+Weather No heavy precipitation; maximum headwind 25 kt, crosswind 20 kt, tailwind 10 kt
+
+Required airborne equipment (CAT II)
+
+All engines; flaps 30 or 40 ( flaps 40 recommended ); hydraulic systems A and B; auto speedbrakes; antiskid; both EFIS control panels; two generators on the buses; both A/Ps engaged in APP mode , with disengage switches, lights and aural warning; FD bars on both PFDs; both TO/GA switches; two ADIRUs in NAV mode; both ILS receivers with valid indications and one means to check glideslope validity (OM, DME or equivalent); both DEUs (no source transfer); standby horizon; displays, altitude and FMA on both PFDs; radio altimeter and DH on both PFDs; windshield wipers in precipitation. If any item is missing, check the full table and the MEL — the capability may be downgraded.
+
+Set-up
+
+BARO minimums: for CAT II, set threshold elevation + 500 ft (for CAT I, set the DA).
+
+RADIO minimums: set the CAT II DH (100 ft) and keep the selector on RADIO.
+
+Brief crew and aircraft status, weather, NOTAMs, fuel for destination and alternate, the approach, the go-around and the failure responses.
+
+Approach ban: do not continue beyond the outer marker or equivalent (or 1,000 ft above the aerodrome) unless the reported controlling RVR is at or above the minima.
+
+B737NG autoland sequence
+
+Both VHF NAV receivers tuned to the ILS; APP mode armed; the second A/P engaged in CMD — it must be engaged by 800 ft RA .
+
+Below 1,500 ft RA after LOC and G/S capture: the second A/P couples, the ILS deviation monitor is tested, FLARE armed is annunciated and A/P go-around arms.
+
+At 400 ft RA the stabiliser is trimmed further nose-up — if the A/Ps then disengage, forward control column force may be needed. If FLARE is not armed by about 350 ft RA, both A/Ps disengage; no FLARE armed at 500 ft: go around .
+
+About 50 ft RA : FLARE engaged; at about 27 ft : RETARD; the A/T disengages about 2 seconds after touchdown; the A/P is disengaged manually after touchdown and the roll-out is flown manually.
+
+Company procedure and callouts
+
+Phase PF (captain) PM
+
+Cleared for approach ILS NAV 1, APP mode “CHECKED”
+
+LOC alive / captured “CHECKED”; ILS NAV 2, A/P B in CMD “LOC ALIVE”; “CHECKED”
+
+GS alive “CHECKED” “GS ALIVE”
+
+OM or FAF “CHECKED” “OM / FIX … FT”
+
+500 ft above threshold “CHECKED” “STABLE, 500, FLARE ARMED” — then FMA callouts
+
+100 ft above minimum “CHECKED” “APPROACHING MINIMUM” (if no automatic callout)
+
+Minimum “CONTINUE” or “GO-AROUND” “MINIMUMS”
+
+50 ft Disconnect A/P if no FLARE green, and land manually “FLARE” or “NO FLARE”
+
+27 ft “RETARD”
+
+Touchdown Disconnect A/P; extend speedbrakes manually if not up; maximum reverse “SPEEDBRAKES UP” or “NOT UP”; “REVERSERS NORMAL” or “NO REVERSE ENG 1/2”
+
+Roll-out Manual braking; disarm autobrakes Monitor deceleration; “AUTOBRAKES DISARM”
+
+Deviation callouts (PM)
+
+“SPEED” (IAS +10 / −5 kt) · “SINK RATE” (more than 1,000 ft/min) · “PITCH” (excessive pitch change) · “BANK” (more than 7°) · “LOCALIZER” (more than ¼ dot) · “GLIDESLOPE” (more than ½ dot). FMA callouts are mandatory during LVO.
+
+Loss of visual reference
+
+Before touchdown : if the required visual reference is lost below DH, go around immediately — even if the aircraft touches down during the go-around, continue it.
+
+After touchdown : if the visual reference is lost, do not attempt a go-around .
+
+Key takeaways:
+- CAT II: DH 100 ft, TDZ RVR 350 m, MID 175 m, autoland, braking medium or better, winds 25/20/10.
+- BARO = threshold + 500 ft; RADIO = DH 100 ft.
+- Second A/P by 800 ft RA; FLARE armed by 500 ft or go around; FLARE 50 ft, RETARD 27 ft; disconnect A/P after touchdown.
+- FMA callouts mandatory; go around if reference is lost before touchdown, never after.

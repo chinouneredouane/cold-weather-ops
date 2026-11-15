@@ -17,7 +17,7 @@ const { chromium } = require('playwright');
     <span>Domestic Airlines — Training · <span class="title"></span></span><span><span class="pageNumber"></span> / <span class="totalPages"></span></span></div>`;
   for (const f of files) {
     await page.goto('file://' + path.join(printDir, f), { waitUntil: 'load' });
-    await page.evaluate(() => Promise.all([...document.images].map(i => i.decode().catch(() => {}))));
+    await page.evaluate(() => Promise.all([...document.images].map(i => { i.loading = 'eager'; return Promise.race([i.decode().catch(() => {}), new Promise(r => setTimeout(r, 5000))]); })));
     const out = path.join(outDir, f.replace('.html', '.pdf'));
     await page.pdf({ path: out, format: 'A4', printBackground: true, preferCSSPageSize: true,
       displayHeaderFooter: true, headerTemplate: '<span></span>', footerTemplate: footer });
