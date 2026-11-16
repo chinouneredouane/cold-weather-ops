@@ -18,7 +18,7 @@ CONTENTS OF THIS ZIP
   11. Wind Limitations                            3 lessons   pass mark 80%     2.5 MB   wind-limitations-scorm12.zip
   12. Approach Operations and Minima              4 lessons   pass mark 80%     3.9 MB   approach-minima-scorm12.zip
   13. Inoperative Ground Equipment                3 lessons   pass mark 80%     2.5 MB   inop-ground-equipment-scorm12.zip
-  14. Low Visibility Operations (LVO) — CAT IIIA          7 lessons   pass mark 80%   5.4 MB   lvo-scorm12.zip  (B737-800 crews)
+  14. Low Visibility Operations (LVO) — CAT IIIA          7 lessons   pass mark 80%   13.8 MB   lvo-scorm12.zip  (B737-800 crews)
 
 HOW TO IMPORT (each package)
   1. In the LMS, create a course or activity of type "SCORM package".
