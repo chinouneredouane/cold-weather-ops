@@ -60,7 +60,7 @@ REFRESHER = {
     "Additional recurrent courses": [
         ("+", "CPDLC — Controller-Pilot Data Link", "courses/cpdlc/index.html", ""),
         ("+", "Upset Prevention and Recovery (UPRT)", "courses/upset-prevention-recovery/index.html", ""),
-        ("+", "Low Visibility Operations (LVO) — CAT II", "courses/lvo-cat2/index.html", "B737-800"),
+        ("+", "Low Visibility Operations (LVO) — CAT IIIA", "courses/lvo/index.html", "B737-800"),
     ],
 }
 

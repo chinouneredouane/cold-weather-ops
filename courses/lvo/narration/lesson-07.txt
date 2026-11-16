@@ -1,0 +1,65 @@
+Domestic Airlines — Low Visibility Operations (LVO) — CAT IIIA
+Lesson 7: Failures, Contingencies and Go-around
+
+Learning objectives:
+- Respond to AFDS failures above and below 800 ft RA.
+- Handle engine failure, fire and incapacitation on a CAT II / IIIA approach.
+- Fly the CAT II / IIIA go-around.
+
+General rule
+
+In case of failure of any system, instrument or AFDS element affecting CAT II or CAT IIIA, apply the QRH. All non-normal checklists must be completed by 1,000 ft above the aerodrome ; otherwise go around and reassess the capability with the required equipment table.
+
+AFDS failures (company)
+
+Failure Above 800 ft RA At or below 800 ft RA During go-around
+
+Flashing red A/P disengage light and horn Re-engage A/P Execute manual go-around (a) Execute manual go-around
+
+Steady red A/P disengage light (stabiliser out of trim) Not applicable Disengage A/P and execute manual go-around (a) Not applicable
+
+Flashing red A/T disengage light Continue with manual thrust
+
+No FLARE armed annunciation Engage second A/P Disengage A/P and execute manual go-around (a) Not applicable
+
+Warning / caution lights Apply the QRH — NNCs completed by 1,000 ft AAL Apply the QRH
+
+ILS deviation alert Go-around (a) Not applicable
+
+(a) If suitable visual reference is established, perform a manual landing.
+
+Because the 737NG autoland is fail-passive , a single A/P channel failure below 800 ft RA disengages both autopilots. In CAT IIIA conditions a manual landing is only possible if the required visual reference is already established — otherwise go around.
+
+Engine failure, fire, incapacitation (company)
+
+Engine failure during a CAT II / IIIA approach: disconnect A/P and A/T and execute a manual go-around , or a manual landing if suitable visual reference is established.
+
+Engine or APU fire during the final CAT II / IIIA approach with no visual reference at minimums: autoland may be performed and the NNC done on the ground.
+
+Pilot incapacitation during a CAT II / IIIA approach with no visual reference at minimums: autoland may be performed ; tell ATC to get medical assistance on landing, and advise if unable to vacate the runway.
+
+Failed ground equipment
+
+Use the OM A table of failed or downgraded equipment before and during the flight. After passing 1,000 ft above the aerodrome, the commander may continue at his discretion if a ground failure is announced late.
+
+For CAT II and CAT IIIA, a combination of runway light deficiencies and RVR equipment deficiencies is not permitted. Failures other than ILS affect the RVR, not the DH.
+
+Go-around (B737NG)
+
+PF pushes TO/GA : “GO-AROUND, CHECK GA THRUST” — A/T advances to reduced go-around thrust (1,000–2,000 ft/min climb); pitch TO/GA, about 15° nose-up initially; second push for full go-around thrust if needed.
+
+“FLAPS 15” — PM sets flaps and calls “GO-AROUND THRUST SET”.
+
+Positive rate: “GEAR UP”.
+
+Above 400 ft RA , select the roll mode; below 400 ft the AFDS stays in go-around mode unless both A/Ps and FDs are disengaged.
+
+At acceleration height, retract flaps on schedule; then LVL CHG or VNAV, climb thrust, after take-off checklist.
+
+Note: the pitch mode cannot change from TO/GA until enough nose-down trim has been added for single A/P operation; if the stabiliser trim is not satisfactory, ALT ACQ is inhibited and the A/P disengage lights show steady red.
+
+Key takeaways:
+- All NNCs by 1,000 ft AAL — otherwise go around.
+- Below 800 ft RA, most A/P failures mean a manual go-around (or manual landing with visual reference).
+- Engine failure: manual go-around; fire or incapacitation with no visual reference at minimums: autoland may be performed.
+- Go-around: TO/GA, flaps 15, gear up; roll mode only above 400 ft RA.

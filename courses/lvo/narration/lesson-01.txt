@@ -1,0 +1,81 @@
+Domestic Airlines — Low Visibility Operations (LVO) — CAT IIIA
+Lesson 1: LVO Concept, Categories and Requirements
+
+Learning objectives:
+- Define all weather operations (AWO), LVO and LVP.
+- State the ICAO approach categories and the company CAT II and CAT IIIA minima.
+- Explain fail-passive, fail-operational and alert height.
+- List the four conditions required before any LVO.
+
+All weather operations
+
+All weather operations (AWO) means operating an aircraft in low visibility conditions. It includes low visibility take-off (LVTO), lower than standard CAT I, other than standard CAT II, standard CAT II and CAT III. The aim is to keep traffic regular in low visibility with a level of safety equivalent to normal operations .
+
+Low visibility operations (LVO) consist of three phases:
+
+low visibility taxi ;
+low visibility take-off (LVTO);
+low visibility approach and landing .
+
+Low visibility procedures (LVP) are the procedures applied at an aerodrome to protect these operations: protection of the runway against incursion and of the accuracy and integrity of the ILS signals. LVP are established for departures with RVR below 550 m, for CAT II and III approaches, and when weather prevents full visual observation of the manoeuvring area.
+
+Approach categories (ICAO)
+
+Category Decision height RVR
+
+I Not lower than 200 ft Visibility ≥ 800 m or RVR ≥ 550 m
+
+II Lower than 200 ft, not lower than 100 ft RVR ≥ 300 m (ICAO)
+
+IIIA Lower than 100 ft, or no DH RVR ≥ 175 m
+
+IIIB Lower than 50 ft, or no DH RVR below 175 m, not less than 50 m
+
+IIIC No DH No RVR limitation
+
+Recent ICAO and EASA texts group IIIA, IIIB and IIIC as CAT III , but the sub-categories are still used in many operations manuals and charts. When the DH and the RVR fall in different categories, the operation is conducted in the most demanding category. The company definition of CAT II also specifies the RVR at the measuring points: RVR A (threshold / touchdown zone), RVR B (mid-point) and RVR C (roll-out end).
+
+Fail-passive, fail-operational and alert height
+
+Fail-passive system — after a failure, no significant deviation of flight path or attitude, but the landing is not completed automatically: the pilot takes over or goes around.
+
+Fail-operational system — after a single failure below the alert height, the approach, flare and landing can still be completed automatically.
+
+Alert height — the height above which a CAT III approach is discontinued if a failure occurs in a redundant part of a fail-operational system. It applies to fail-operational operations without DH.
+
+B737NG With both autopilots engaged in APP mode , the 737NG autoland is fail-passive : if one channel fails, both A/Ps disengage with minimal manoeuvring and aural and visual warnings. The 737NG has no automatic roll-out guidance. This is why the B737NG operates CAT IIIA with a decision height (50 ft), not CAT IIIB or no-DH operations.
+
+Company authorisation
+
+Domestic Airlines — LVO authorisation (company operations specifications)
+
+B737-800 — CAT II approach DH 100 ft , TDZ RVR 300 m , MID RVR 175 m — autoland mandatory
+
+B737-800 — CAT IIIA approach DH 50 ft , TDZ RVR 175 m , MID RVR 175 m, stop-end RVR 75 m — fail-passive autoland mandatory (both A/Ps)
+
+B737-800 — low visibility take-off Minimum RVR 175 m — TDZ and MID RVR required
+
+All aircraft (B737-800, Q400, Q200) CAT I: DH 200 ft, RVR 550 m — take-off RVR 500 m
+
+Pilot flying The captain (left seat) is PF in all phases of LVO
+
+All company B737-800s are certified for CAT IIIA (fail-passive autoland). CAT II / IIIA operations are flown only by crews trained and qualified for CAT IIIA , only at aerodromes certified for the operation , and never below the minima published for the aerodrome (use the chart value if higher).
+
+Four conditions before any LVO
+
+Operator — authorised by the Authority (DACM) for the operation.
+
+Crew — trained, checked and current for LVO. Both pilots must be qualified.
+
+Aircraft — certified for the operation (CAT II / IIIA fail-passive autoland) with the required equipment serviceable.
+
+Aerodrome — LVP declared in force , with the required ground equipment serviceable.
+
+Company notes LVO in operation may be announced by ATIS, GND or TWR when RVR is below 800 m ; LVTO procedures must be in operation when RVR is below 400 m . When LVO is in operation and the RVR is above CAT I minimums, non-qualified crews are not authorised to conduct low visibility taxi, take-off or approach.
+
+Key takeaways:
+- LVO = LV taxi + LVTO + LV approach; LVP protect the runway and the ILS.
+- CAT I: DH 200 ft, RVR 550 m; CAT II: DH 100–200 ft; CAT IIIA: below 100 ft, RVR ≥ 175 m.
+- Company B737-800: CAT II (DH 100 ft, RVR 300 m) and CAT IIIA (DH 50 ft, RVR 175 m), autoland mandatory; LVTO 175 m; captain PF.
+- The 737NG dual-A/P autoland is fail-passive: CAT IIIA with a DH, manual roll-out.
+- Operator, crew, aircraft and aerodrome must all be qualified.

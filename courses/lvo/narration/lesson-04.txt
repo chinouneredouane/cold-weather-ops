@@ -1,0 +1,50 @@
+Domestic Airlines — Low Visibility Operations (LVO) — CAT IIIA
+Lesson 4: Planning and Low Visibility Taxi
+
+Learning objectives:
+- Prepare a flight with low visibility at departure or destination.
+- Select take-off and destination alternates.
+- Apply the company low visibility taxi procedures.
+
+Pre-flight planning
+
+Both pilots qualified and current for LVO.
+
+NOTAMs reviewed — runway lighting, RVR equipment, ILS status.
+
+LVP in force at the aerodrome (ATIS or RTF).
+
+Technical log and MEL — defects that may affect LVO capability (see the required equipment list, Lesson 6).
+
+Weather within company, crew and aerodrome minima.
+
+Fuel — extra fuel for possible delays.
+
+Alternates — take-off and destination alternates within minima.
+
+Alternates
+
+Take-off alternate — required when the weather at departure is below the landing minima, or a return is not possible. For a twin, within one hour at the one-engine-inoperative cruise speed (still air, actual take-off mass). The weather from one hour before to one hour after the ETA must be at or above the applicable minima (at least CAT I for one engine inoperative).
+
+Destination alternate — the weather from one hour before to one hour after the ETA must be at or above the planning minima in the OM A.
+
+Low visibility taxi (company procedure)
+
+Brief the taxi routing , runway crossings, stop bars , hot spots, sensitive areas and special local procedures — using the low visibility taxi chart if available.
+
+Complete checklists, set-ups, briefings and paperwork with the aircraft stopped — before taxi or at the CAT II/III holding point.
+
+Taxi at a maximum of 10 kt . The captain taxis.
+
+Both pilots keep a maximum lookout and stay aware of other traffic; sterile flight deck.
+
+Make sure every ATC clearance is understood and acknowledged; ask in case of doubt.
+
+If unsure of your position: stop immediately and ask ATC — request a follow-me vehicle or progressive taxi.
+
+Remember There is no minimum visibility for taxi, but the commander remains responsible for clearance from other aircraft, vehicles and obstacles. At many aerodromes ATC cannot see you. From the B737NG flight deck, the ground is hidden for about 12 m ahead.
+
+Key takeaways:
+- Plan: both pilots qualified, NOTAMs, LVP in force, MEL, minima, fuel, alternates.
+- Take-off alternate within 1 hour OEI when below landing minima at departure.
+- LV taxi: brief, paperwork stopped, max 10 kt, captain taxis, stop if unsure, never cross a red stop bar.

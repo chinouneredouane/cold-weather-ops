@@ -1,0 +1,105 @@
+Domestic Airlines — Low Visibility Operations (LVO) — CAT IIIA
+Lesson 6: CAT IIIA Approach and Autoland (and CAT II)
+
+Learning objectives:
+- Check the landing requirements and required airborne equipment.
+- Set up and brief the CAT II and CAT IIIA approach.
+- Fly the fail-passive autoland and the manual roll-out with the company callouts.
+
+Landing requirements (company)
+
+Item CAT I CAT II CAT IIIA
+
+Autopilot 1 A/P Autoland (both A/Ps) Fail-passive autoland (both A/Ps)
+
+Minimum DH (use Jeppesen if higher) 200 ft 100 ft 50 ft
+
+TDZ RVR (use Jeppesen if higher) 550 m 300 m 175 m
+
+MID RVR — 175 m 175 m
+
+Stop-end (roll-out) RVR — Required if reported (may be replaced by MID RVR if not reported) 75 m
+
+Ground equipment See the table of failed or downgraded ground equipment (OM A)
+
+Braking action Medium or better (µ > 0.3)
+
+Runway length Landing distance + 15 % (advisory data, braking good or medium)
+
+Weather No heavy precipitation; maximum headwind 25 kt, crosswind 20 kt, tailwind 10 kt; no gusts or windshear
+
+Aircraft Both engines operative; flaps 40 (30 non-standard); glideslope angle 2.5°–3.25°
+
+The TDZ RVR is always controlling. The MID and stop-end RVR are also controlling if reported and relevant (the part of the runway used in the high-speed phase of the landing, down to about 60 kt). Values from the company operations specifications; apply the aerodrome chart minima if higher.
+
+Required airborne equipment (CAT II and CAT IIIA)
+
+The B737NG requirements are the same for CAT II and CAT IIIA: all engines; flaps 30 or 40 ( flaps 40 recommended ); hydraulic systems A and B; auto speedbrakes; antiskid; both EFIS control panels; two generators on the buses; both A/Ps engaged in APP mode , with disengage switches, lights and aural warning; FD bars on both PFDs; both TO/GA switches; two ADIRUs in NAV mode; both ILS receivers with valid indications and one means to check glideslope validity (OM, DME or equivalent); both DEUs (no source transfer); standby horizon; displays, altitude and FMA on both PFDs; radio altimeter and DH on both PFDs; windshield wipers in precipitation. If any item is missing, check the full table and the MEL — the capability may be downgraded.
+
+Set-up
+
+BARO minimums: for CAT II and CAT IIIA, set threshold elevation + 500 ft (for CAT I, set the DA).
+
+RADIO minimums: set the DH — 100 ft for CAT II , 50 ft for CAT IIIA (or the chart value if higher) — and keep the selector on RADIO.
+
+Captain only PF; the F/O monitors the instruments until the aircraft reaches taxi speed. Brief the taxi-in route in detail; the taxi chart stays in view for both pilots.
+
+Brief crew and aircraft status, weather, NOTAMs, fuel for destination and alternate, the approach, the go-around and the failure responses.
+
+Approach ban: do not continue beyond the outer marker or equivalent (or 1,000 ft above the aerodrome) unless the reported controlling RVR is at or above the minima.
+
+B737NG autoland sequence
+
+Both VHF NAV receivers tuned to the ILS; APP mode armed; the second A/P engaged in CMD — it must be engaged by 800 ft RA .
+
+Below 1,500 ft RA after LOC and G/S capture: the second A/P couples, the ILS deviation monitor is tested, FLARE armed is annunciated and A/P go-around arms.
+
+At 400 ft RA the stabiliser is trimmed further nose-up — if the A/Ps then disengage, forward control column force may be needed. If FLARE is not armed by about 350 ft RA, both A/Ps disengage; no FLARE armed at 500 ft: go around .
+
+About 50 ft RA : FLARE engaged; at about 27 ft : RETARD; the A/T disengages about 2 seconds after touchdown; the A/P is disengaged manually after touchdown and the roll-out is flown manually.
+
+CAT IIIA — the last 50 ft At a 50 ft DH, “MINIMUMS” and “FLARE” come almost together. Decide at once: with at least a 3-light segment, continue — the autopilot lands, you monitor the flare and the RETARD. After touchdown there is no automatic roll-out : disconnect the A/P and keep the centreline lights between your feet with the rudder until taxi speed. Without the visual reference: go around .
+
+Company procedure and callouts
+
+Phase PF (captain) PM
+
+Cleared for approach ILS NAV 1, APP mode “CHECKED”
+
+LOC alive / captured “CHECKED”; ILS NAV 2, A/P B in CMD “LOC ALIVE”; “CHECKED”
+
+GS alive “CHECKED” “GS ALIVE”
+
+OM or FAF “CHECKED” “OM / FIX … FT”
+
+500 ft above threshold “CHECKED” “STABLE, 500, FLARE ARMED” — then FMA callouts
+
+100 ft above minimum “CHECKED” “APPROACHING MINIMUM” (if no automatic callout)
+
+Minimum (100 ft CAT II / 50 ft CAT IIIA) “CONTINUE” or “GO-AROUND” “MINIMUMS”
+
+50 ft Disconnect A/P if no FLARE green, and land manually “FLARE” or “NO FLARE”
+
+27 ft “RETARD”
+
+Touchdown Disconnect A/P; extend speedbrakes manually if not up; maximum reverse “SPEEDBRAKES UP” or “NOT UP”; “REVERSERS NORMAL” or “NO REVERSE ENG 1/2”
+
+Roll-out Manual braking; disarm autobrakes Monitor deceleration; “AUTOBRAKES DISARM”
+
+Deviation callouts (PM)
+
+“SPEED” (IAS +10 / −5 kt) · “SINK RATE” (more than 1,000 ft/min) · “PITCH” (excessive pitch change) · “BANK” (more than 7°) · “LOCALIZER” (more than ¼ dot) · “GLIDESLOPE” (more than ½ dot). FMA callouts are mandatory during LVO.
+
+Loss of visual reference
+
+Before touchdown : if the required visual reference is lost below DH, go around immediately — even if the aircraft touches down during the go-around, continue it.
+
+After touchdown : if the visual reference is lost, do not attempt a go-around .
+
+Key takeaways:
+- CAT II: DH 100 ft, TDZ RVR 300 m, MID 175 m. CAT IIIA: DH 50 ft, TDZ and MID RVR 175 m, stop-end 75 m.
+- Autoland mandatory; braking medium or better; winds 25/20/10; both engines; flaps 40.
+- BARO = threshold + 500 ft; RADIO = DH (100 ft CAT II, 50 ft CAT IIIA).
+- No automatic roll-out on the 737NG: steer on the centreline lights after touchdown.
+- Second A/P by 800 ft RA; FLARE armed by 500 ft or go around; FLARE 50 ft, RETARD 27 ft; disconnect A/P after touchdown.
+- FMA callouts mandatory; go around if reference is lost before touchdown, never after.
