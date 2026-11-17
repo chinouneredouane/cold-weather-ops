@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Lesson 06: The Escape Manoeuvre — by Fleet — CFIT and EGPWS Refresher</title>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Lesson 06: EGPWS Basic Modes 1 to 7 — CFIT and EGPWS Refresher</title>
 <style>
 @page{size:A4;margin:18mm 16mm 20mm}
 *{box-sizing:border-box}
@@ -44,37 +44,42 @@ th{background:#f3f9f5}tr{break-inside:avoid}td.code{font-weight:800;font-size:12
 .disclaimer{font-size:8.5pt;color:#5b6b62;border-top:1px solid #dbe5df;padding-top:6pt;margin-top:14pt}
 </style></head><body>
 <section class="lesson" style="break-before:auto" id="lesson-6">
-  <div class="lesson-head"><div class="k">Module 2 · EGPWS and the Escape Manoeuvre</div>
-    <h1>Lesson 06: The Escape Manoeuvre — by Fleet</h1><div class="m">Lesson 6 of 7 · about 6 min</div></div>
-  <div class="objectives"><h2>Learning objectives</h2><ul><li>Apply the company EGPWS recovery procedure for your fleet.</li><li>Explain the reasons for each step.</li><li>Complete the recovery and inform ATC.</li></ul></div>
-  <figure class="lesson-figure"><img src="../media/images/lesson-06.jpg" alt="Airliner climbing steeply away from high terrain"><figcaption>The escape manoeuvre: maximum power, wings level, pitch to the stick shaker.</figcaption></figure>
+  <div class="lesson-head"><div class="k">Module 2 · EGPWS / TAWS</div>
+    <h1>Lesson 06: EGPWS Basic Modes 1 to 7</h1><div class="m">Lesson 6 of 9 · about 12 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Describe what each basic mode protects against.</li><li>Recognise the aural alert of each mode.</li><li>Know which alerts are cautions and which are warnings.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-06.jpg" alt="Airliner descending towards rising terrain"><figcaption>The basic modes watch the terrain below the aircraft.</figcaption></figure>
   
-<h2>Company procedures</h2>
-
+<h2>The basic modes</h2>
+<p>The basic modes compare the radio altitude, the barometric descent rate, the configuration and the glideslope with envelopes. They work without the terrain database — but they react to the terrain <strong>below</strong>, so their warning time is short.</p>
+<figure class="diagram"><svg viewBox="0 0 700 320" role="img" aria-label="EGPWS basic modes"><title>EGPWS basic modes 1 to 7</title>
+<desc>Six panels show the situations that trigger each basic mode: excessive descent rate, excessive terrain closure, altitude loss after take-off, too low when not configured, below glideslope, and callouts, bank angle and windshear.</desc>
+<g font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="12" fill="#24342b"><defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#1f5fa8"/></marker></defs><g transform="translate(10,10)"><rect width="215" height="135" rx="8" fill="#f6f8f7" stroke="#dbe5df"/><text x="10" y="20" font-weight="700">Mode 1 — descent rate</text><text x="10" y="38" fill="#c8102e" font-weight="700">SINK RATE · PULL UP</text><path d="M0 135 L0 118 L215 118 L215 135z" fill="#7a9a83"/><path d="M20 50 L150 108" stroke="#1f5f99" stroke-width="3" fill="none" marker-end="url(#ah)"/></g><g transform="translate(242,10)"><rect width="215" height="135" rx="8" fill="#f6f8f7" stroke="#dbe5df"/><text x="10" y="20" font-weight="700">Mode 2 — terrain closure</text><text x="10" y="38" fill="#c8102e" font-weight="700">TERRAIN TERRAIN · PULL UP</text><path d="M0 135 L0 118 L110 118 L170 70 L215 80 L215 135z" fill="#7a9a83"/><path d="M15 70 L190 72" stroke="#1f5f99" stroke-width="3" fill="none" marker-end="url(#ah)"/></g><g transform="translate(474,10)"><rect width="215" height="135" rx="8" fill="#f6f8f7" stroke="#dbe5df"/><text x="10" y="20" font-weight="700">Mode 3 — loss after take-off</text><text x="10" y="38" fill="#c8102e" font-weight="700">DON'T SINK</text><path d="M0 135 L0 118 L215 118 L215 135z" fill="#7a9a83"/><path d="M15 110 L90 60 L180 80" stroke="#1f5f99" stroke-width="3" fill="none" marker-end="url(#ah)"/></g><g transform="translate(10,165)"><rect width="215" height="135" rx="8" fill="#f6f8f7" stroke="#dbe5df"/><text x="10" y="20" font-weight="700">Mode 4 — too low, not configured</text><text x="10" y="38" fill="#c8102e" font-weight="700">TOO LOW GEAR / FLAPS</text><path d="M0 135 L0 118 L215 118 L215 135z" fill="#7a9a83"/><path d="M15 70 L190 100" stroke="#1f5f99" stroke-width="3" fill="none" marker-end="url(#ah)"/></g><g transform="translate(242,165)"><rect width="215" height="135" rx="8" fill="#f6f8f7" stroke="#dbe5df"/><text x="10" y="20" font-weight="700">Mode 5 — below glideslope</text><text x="10" y="38" fill="#c8102e" font-weight="700">GLIDESLOPE</text><path d="M0 135 L0 118 L215 118 L215 135z" fill="#7a9a83"/><path d="M15 45 L200 100" stroke="#2e7d32" stroke-width="2" stroke-dasharray="6 4" fill="none"/><text x="120" y="64" fill="#2e7d32" font-size="11">glideslope</text><path d="M15 55 L190 108" stroke="#1f5f99" stroke-width="3" fill="none" marker-end="url(#ah)"/></g><g transform="translate(474,165)"><rect width="215" height="135" rx="8" fill="#f6f8f7" stroke="#dbe5df"/><text x="10" y="20" font-weight="700">Mode 6 callouts · Mode 7</text><text x="10" y="38" fill="#c8102e" font-weight="700">BANK ANGLE · WINDSHEAR</text><path d="M0 135 L0 118 L215 118 L215 135z" fill="#7a9a83"/><path d="M20 60 L120 85 L195 75" stroke="#1f5f99" stroke-width="3" fill="none" marker-end="url(#ah)"/></g></g></svg>
+<figcaption>The basic modes use the radio altimeter and aircraft data — they work even without the terrain database, but they cannot see a steep slope ahead. The enhanced look-ahead function covers that (Lesson 7).</figcaption></figure>
 <div class="table-wrap"><table>
-<tr><th>Fleet</th><th>Pilot flying</th><th>Pilot monitoring</th></tr>
-<tr><td><strong>Dash 8-Q400</strong><br><span class="muted">Company SOP, EGPWS Recovery (Rev 02)</span></td>
-<td>Calls <strong>“CHECK POWER”</strong>. Selects <strong>GA</strong> and disconnects the autopilot. Advances the power levers <strong>to the detent</strong>, rolls wings level and pitches aggressively to initiate the climb, respecting the stick shaker. Targets <strong>V<sub>GA</sub></strong>.<br>Once clear of terrain: establishes level flight and reconfigures the aircraft.</td>
-<td>Confirms <strong>NTOP</strong> on the engine display and calls <strong>“POWER SET”</strong>. Monitors radio altimeter and vertical speed and informs the PF of performance and terrain clearance.<br>Once clear: advises ATC — “(call sign) EGPWS recovery, new altitude / flight level …”.</td></tr>
-<tr><td><strong>Dash 8-Q200</strong><br><span class="muted">Company SOP, Table 25 EGPWS recovery</span></td>
-<td>Calls <strong>“CHECK POWER”</strong>. Selects <strong>GA</strong> and disconnects the AP. Advances the power levers to <strong>MTOP</strong>, rolls wings level and pitches aggressively to initiate the climb, responding to the stick shaker. Targets <strong>V<sub>GA</sub></strong>.<br>Once clear: establishes level flight and configures the aircraft.</td>
-<td>Confirms <strong>MTOP</strong> and calls <strong>“POWER SET”</strong>. Monitors radio altimeter and vertical speed and informs the PF of performance and terrain clearance.<br>Once clear: advises ATC of the EGPWS recovery and new altitude or flight level.</td></tr>
-<tr><td><strong>Boeing 737-800</strong></td>
-<td colspan="2">Apply the <strong>Terrain Avoidance</strong> manoeuvre in the <strong>QRH (Non-Normal Manoeuvres)</strong> and the FCTM exactly as published. <em>Memory item — review it in your QRH before this course.</em></td></tr>
+<tr><th>Mode</th><th>Protects against</th><th>Caution</th><th>Warning</th><th>Active</th></tr>
+<tr><td class="code">1</td><td>Excessive <strong>descent rate</strong> for the height above terrain</td><td>“SINK RATE”</td><td>“PULL UP”</td><td>All phases, close to the ground</td></tr>
+<tr><td class="code">2</td><td>Excessive <strong>closure rate</strong> with rising terrain</td><td>“TERRAIN TERRAIN”</td><td>“PULL UP”</td><td>Mainly when not in landing configuration (2A); reduced envelope in landing configuration (2B)</td></tr>
+<tr><td class="code">3</td><td><strong>Altitude loss</strong> after take-off or go-around</td><td>“DON'T SINK”</td><td>—</td><td>Climb after take-off or go-around</td></tr>
+<tr><td class="code">4</td><td><strong>Unsafe terrain clearance</strong> when not in landing configuration</td><td>“TOO LOW GEAR”, “TOO LOW FLAPS”, “TOO LOW TERRAIN”</td><td>—</td><td>4A gear up, 4B flaps not in landing position, 4C after take-off</td></tr>
+<tr><td class="code">5</td><td>Excessive deviation <strong>below the glideslope</strong></td><td>“GLIDESLOPE” (louder as the deviation grows)</td><td>—</td><td>ILS approach, at low height; can be cancelled</td></tr>
+<tr><td class="code">6</td><td><strong>Advisory callouts</strong></td><td>Altitude callouts, “MINIMUMS”, “BANK ANGLE”</td><td>—</td><td>As configured for the fleet</td></tr>
+<tr><td class="code">7</td><td><strong>Windshear</strong> (reactive), where installed</td><td>Windshear caution</td><td>“WINDSHEAR WINDSHEAR WINDSHEAR”</td><td>Take-off and approach, at low height</td></tr>
 </table></div>
-<h2>Why each step matters</h2>
-<ul>
-  <li><strong>Maximum available power immediately</strong> — the climb gradient depends on excess thrust. Turboprops respond quickly; jets need several seconds to spool up.</li>
-  <li><strong>Autopilot off, wings level</strong> — the lift vector must point up; a bank reduces the climb.</li>
-  <li><strong>Pitch aggressively, respecting the stick shaker</strong> — the best climb gradient is obtained close to the stall warning. Do not exceed it.</li>
-  <li><strong>Do not change the configuration</strong> during the escape unless your procedure says so. Retracting flaps or gear too early can reduce the climb capability.</li>
-  <li><strong>The PM monitors</strong> radio altimeter and vertical speed and calls the trend — the PF concentrates on flying.</li>
-  <li><strong>Continue</strong> until the warning stops and terrain clearance is assured, then level off, reconfigure and inform ATC.</li>
-</ul>
-<div class="callout"><span class="label">Practise it</span><p>The escape manoeuvre is a last resort. It is practised in the simulator during recurrent training — so that, if needed, it happens instinctively.</p></div>
+<p class="muted">Envelopes, heights and exact wording depend on the installation and the fleet. Predictive windshear (weather radar, B737-800) is a separate system — see the Windshear course.</p>
 
-  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Q400: CHECK POWER → GA, AP off → power levers to detent → wings level, pitch aggressively (stick shaker) → NTOP, POWER SET → VGA.</li><li>Q200: the same sequence with MTOP.</li><li>B737-800: QRH Terrain Avoidance manoeuvre — a memory item.</li><li>After the escape: level off, reconfigure, tell ATC “EGPWS recovery”.</li></ul></div>
-  <div class="kc"><h2>Knowledge check</h2><p class="q">During the Q400 EGPWS recovery, what does the PM confirm and call?</p>
-    <ol><li>“Gear up”</li><li>NTOP on the engine display — “POWER SET”</li><li>“Flaps zero”</li><li>“Autopilot on”</li></ol>
-    <p class="a"><b>Answer: B.</b> The PM confirms NTOP on the engine display and calls “POWER SET”.</p></div>
+<h2>How to react</h2>
+<ul>
+  <li><strong>Mode 1 “SINK RATE”</strong> — reduce the descent rate now. If “PULL UP” follows, escape manoeuvre.</li>
+  <li><strong>Mode 2 “TERRAIN TERRAIN”</strong> — you are closing with terrain: check position, altitude and the terrain display; climb if in doubt. “PULL UP”: escape manoeuvre.</li>
+  <li><strong>Mode 3 “DON'T SINK”</strong> — stop the descent and re-establish the climb (often after a too early flap retraction or a thrust reduction).</li>
+  <li><strong>Mode 4 “TOO LOW GEAR / FLAPS”</strong> — you are low and not configured: if this is not a planned non-normal landing, go around. “TOO LOW TERRAIN”: climb.</li>
+  <li><strong>Mode 5 “GLIDESLOPE”</strong> — correct back to the glideslope; if not possible, go around.</li>
+  <li><strong>Mode 7 “WINDSHEAR”</strong> — windshear escape manoeuvre (FCOM / AOM).</li>
+</ul>
+<div class="callout warn"><span class="label">Order of priority</span><p>When several alerts sound, the system gives priority to the most urgent — windshear and “PULL UP” first. The crew response follows the same order: a warning always means the escape manoeuvre (Lesson 8).</p></div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Mode 1 descent rate, 2 terrain closure, 3 loss after take-off, 4 too low not configured, 5 below glideslope, 6 callouts, 7 windshear.</li><li>Basic modes look down; their warning time is short.</li><li>Cautions: correct now. Warnings (“PULL UP”, “WINDSHEAR”): escape manoeuvre.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">After take-off, the crew retracts the flaps too early and the aircraft starts to sink. Which alert is expected?</p>
+    <ol><li>“SINK RATE” (mode 1)</li><li>“DON&#x27;T SINK” (mode 3)</li><li>“GLIDESLOPE” (mode 5)</li><li>“TOO LOW GEAR” (mode 4)</li></ol>
+    <p class="a"><b>Answer: B.</b> Mode 3 warns of altitude loss after take-off or go-around: “DON&#x27;T SINK”.</p></div>
 </section><p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p></body></html>

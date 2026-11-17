@@ -61,6 +61,7 @@ SPOKEN = [
     (r"\bAWO\b", "all weather operations"), (r"TO/GA", "toga"), (r"\bA/Ps\b", "autopilots"), (r"\bA/P\b", "autopilot"), (r"\bA/T\b", "autothrottle"),
     (r"\bOEI\b", "one engine inoperative"), (r"µ > 0\.3", "friction coefficient above 0 point 3"), (r"\bPFDs?\b", "P F D"), (r"\bAPU\b", "A P U"),
     (r"ft/min", "feet per minute"), (r"\bLOC\b", "localizer"), (r"\bG/S\b", "glideslope"), (r"\bGS\b", "glideslope"), (r"\bOM\b", "outer marker"),
+    (r"\bPLI\b", "pitch limit indicator"), (r"\bAHRS\b", "A H R S"), (r"\bMFD\b", "M F D"), (r"\bND\b", "navigation display"),
     (r"\bWILCO\b", "wilco"), (r"\bAFFIRM\b", "affirm"), (r"\bSTANDBY\b", "standby"), (r"\bUNABLE\b", "unable"),
     (r"\s*\(kt\)", " in knots"),
     (r"VS\(n\) = VS × √n", "the stall speed at load factor n equals the normal stall speed times the square root of n"),

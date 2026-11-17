@@ -1,44 +1,50 @@
 Domestic Airlines — CFIT and EGPWS Refresher
-Lesson 6: The Escape Manoeuvre — by Fleet
+Lesson 6: EGPWS Basic Modes 1 to 7
 
 Learning objectives:
-- Apply the company EGPWS recovery procedure for your fleet.
-- Explain the reasons for each step.
-- Complete the recovery and inform ATC.
+- Describe what each basic mode protects against.
+- Recognise the aural alert of each mode.
+- Know which alerts are cautions and which are warnings.
 
-Company procedures
+The basic modes
 
-Fleet Pilot flying Pilot monitoring
+The basic modes compare the radio altitude, the barometric descent rate, the configuration and the glideslope with envelopes. They work without the terrain database — but they react to the terrain below , so their warning time is short.
 
-Dash 8-Q400 Company SOP, EGPWS Recovery (Rev 02)
-Calls “CHECK POWER” . Selects GA and disconnects the autopilot. Advances the power levers to the detent , rolls wings level and pitches aggressively to initiate the climb, respecting the stick shaker. Targets V GA . Once clear of terrain: establishes level flight and reconfigures the aircraft.
-Confirms NTOP on the engine display and calls “POWER SET” . Monitors radio altimeter and vertical speed and informs the PF of performance and terrain clearance. Once clear: advises ATC — “(call sign) EGPWS recovery, new altitude / flight level …”.
+Mode Protects against Caution Warning Active
 
-Dash 8-Q200 Company SOP, Table 25 EGPWS recovery
-Calls “CHECK POWER” . Selects GA and disconnects the AP. Advances the power levers to MTOP , rolls wings level and pitches aggressively to initiate the climb, responding to the stick shaker. Targets V GA . Once clear: establishes level flight and configures the aircraft.
-Confirms MTOP and calls “POWER SET” . Monitors radio altimeter and vertical speed and informs the PF of performance and terrain clearance. Once clear: advises ATC of the EGPWS recovery and new altitude or flight level.
+1 Excessive descent rate for the height above terrain “SINK RATE” “PULL UP” All phases, close to the ground
 
-Boeing 737-800
-Apply the Terrain Avoidance manoeuvre in the QRH (Non-Normal Manoeuvres) and the FCTM exactly as published. Memory item — review it in your QRH before this course.
+2 Excessive closure rate with rising terrain “TERRAIN TERRAIN” “PULL UP” Mainly when not in landing configuration (2A); reduced envelope in landing configuration (2B)
 
-Why each step matters
+3 Altitude loss after take-off or go-around “DON'T SINK” — Climb after take-off or go-around
 
-Maximum available power immediately — the climb gradient depends on excess thrust. Turboprops respond quickly; jets need several seconds to spool up.
+4 Unsafe terrain clearance when not in landing configuration “TOO LOW GEAR”, “TOO LOW FLAPS”, “TOO LOW TERRAIN” — 4A gear up, 4B flaps not in landing position, 4C after take-off
 
-Autopilot off, wings level — the lift vector must point up; a bank reduces the climb.
+5 Excessive deviation below the glideslope “GLIDESLOPE” (louder as the deviation grows) — ILS approach, at low height; can be cancelled
 
-Pitch aggressively, respecting the stick shaker — the best climb gradient is obtained close to the stall warning. Do not exceed it.
+6 Advisory callouts Altitude callouts, “MINIMUMS”, “BANK ANGLE” — As configured for the fleet
 
-Do not change the configuration during the escape unless your procedure says so. Retracting flaps or gear too early can reduce the climb capability.
+7 Windshear (reactive), where installed Windshear caution “WINDSHEAR WINDSHEAR WINDSHEAR” Take-off and approach, at low height
 
-The PM monitors radio altimeter and vertical speed and calls the trend — the PF concentrates on flying.
+Envelopes, heights and exact wording depend on the installation and the fleet. Predictive windshear (weather radar, B737-800) is a separate system — see the Windshear course.
 
-Continue until the warning stops and terrain clearance is assured, then level off, reconfigure and inform ATC.
+How to react
 
-Practise it The escape manoeuvre is a last resort. It is practised in the simulator during recurrent training — so that, if needed, it happens instinctively.
+Mode 1 “SINK RATE” — reduce the descent rate now. If “PULL UP” follows, escape manoeuvre.
+
+Mode 2 “TERRAIN TERRAIN” — you are closing with terrain: check position, altitude and the terrain display; climb if in doubt. “PULL UP”: escape manoeuvre.
+
+Mode 3 “DON'T SINK” — stop the descent and re-establish the climb (often after a too early flap retraction or a thrust reduction).
+
+Mode 4 “TOO LOW GEAR / FLAPS” — you are low and not configured: if this is not a planned non-normal landing, go around. “TOO LOW TERRAIN”: climb.
+
+Mode 5 “GLIDESLOPE” — correct back to the glideslope; if not possible, go around.
+
+Mode 7 “WINDSHEAR” — windshear escape manoeuvre (FCOM / AOM).
+
+Order of priority When several alerts sound, the system gives priority to the most urgent — windshear and “PULL UP” first. The crew response follows the same order: a warning always means the escape manoeuvre (Lesson 8).
 
 Key takeaways:
-- Q400: CHECK POWER → GA, AP off → power levers to detent → wings level, pitch aggressively (stick shaker) → NTOP, POWER SET → VGA.
-- Q200: the same sequence with MTOP.
-- B737-800: QRH Terrain Avoidance manoeuvre — a memory item.
-- After the escape: level off, reconfigure, tell ATC “EGPWS recovery”.
+- Mode 1 descent rate, 2 terrain closure, 3 loss after take-off, 4 too low not configured, 5 below glideslope, 6 callouts, 7 windshear.
+- Basic modes look down; their warning time is short.
+- Cautions: correct now. Warnings (“PULL UP”, “WINDSHEAR”): escape manoeuvre.

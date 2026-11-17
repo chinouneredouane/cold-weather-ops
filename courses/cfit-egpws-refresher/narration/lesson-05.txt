@@ -1,43 +1,43 @@
 Domestic Airlines — CFIT and EGPWS Refresher
-Lesson 5: EGPWS / TAWS: Alerts and Crew Response
+Lesson 5: EGPWS / TAWS: The System and the Terrain Display
 
 Learning objectives:
-- Describe the EGPWS basic modes and enhanced functions.
-- Distinguish cautions from warnings.
-- Apply the company response to EGPWS cautions.
+- Explain why TAWS is required and what the EGPWS adds to the classic GPWS.
+- List the EGPWS inputs and the effect of a wrong input.
+- Read the terrain display and use the inhibit switches correctly.
 
-The system
+Why TAWS
 
-A terrain awareness warning system (TAWS) is required for commercial aeroplanes (ICAO Annex 6; EASA CAT.IDE.A.150). Our fleets use the Enhanced GPWS (EGPWS) , which combines the classic ground proximity modes with a terrain database and the aircraft position.
+ICAO Annex 6 and EASA CAT.IDE.A.150 require a terrain awareness warning system (TAWS) on commercial aeroplanes. The first generation, the GPWS , looked only down with the radio altimeter: it could not warn of a steep slope ahead in time. The Enhanced GPWS (EGPWS) adds a worldwide terrain, obstacle and runway database and the aircraft position, so it can look ahead of the aircraft. Since EGPWS became mandatory, CFIT accidents with a working, correctly used system have become very rare.
 
-Mode Protects against Typical alerts
+Position and altitude
 
-1 Excessive descent rate “SINK RATE”, “PULL UP”
+The look-ahead function depends on an accurate position (GNSS, or FMS position) and a valid, current database .
 
-2 Excessive terrain closure rate “TERRAIN TERRAIN”, “PULL UP”
+Many installations compute a geometric altitude from GNSS, barometric and radio altitude. It reduces errors from a wrong altimeter setting or very cold temperatures.
 
-3 Altitude loss after take-off or go-around “DON'T SINK”
+A position error, an out-of-date database or an aerodrome not in the database can cause nuisance alerts — or missed alerts . Report every nuisance alert so that the database can be checked.
 
-4 Unsafe terrain clearance when not in landing configuration “TOO LOW GEAR”, “TOO LOW FLAPS”, “TOO LOW TERRAIN”
+The terrain display
 
-5 Excessive deviation below the glideslope “GLIDESLOPE”
+Select the terrain display in the climb and descent, especially near high terrain — it gives the picture before any alert.
 
-6 Advisory callouts Altitude callouts, “BANK ANGLE”
+When a look-ahead caution or warning is triggered, the display usually pops up automatically and the threatening terrain is shown in solid yellow (caution) or solid red (warning).
 
-Enhanced Terrain and obstacles ahead (look-ahead); terrain clearance floor near runways “CAUTION TERRAIN”, “CAUTION OBSTACLE”, “TERRAIN AHEAD”, “TERRAIN AHEAD PULL UP”, “OBSTACLE PULL UP”, “TOO LOW TERRAIN”
+The terrain display is not for navigation : never use it to manoeuvre around terrain in IMC.
 
-Alert wording varies with the installation — check the aircraft manuals.
+Inhibits, failures and the MEL
 
-Cautions and warnings
+Typical controls: a flap override / flap inhibit (landing with less than landing flaps, per the QRH), a gear override , a terrain inhibit (look-ahead off, for example when position is unreliable — only when the QRH or the company procedure says so) and a glideslope cancel .
 
-Caution (amber) — for example “SINK RATE”, “TERRAIN TERRAIN”, “DON'T SINK”, “TOO LOW FLAPS”, “TOO LOW GEAR”, “CAUTION TERRAIN”, “CAUTION OBSTACLE”, “BANK ANGLE”, “GLIDESLOPE”. Company SOP : the crew shall immediately assess the flight path or configuration with respect to the ground, and the PF shall take appropriate action to correct the situation. Q200 SOP: the PF verbalises the action to the PM with “CORRECTING” .
+Never inhibit a function to silence an alert you do not understand.
 
-Warning (red) — for example “TOO LOW TERRAIN”, “TERRAIN PULL UP”, “OBSTACLE PULL UP” or “PULL UP” (“WHOOP WHOOP PULL UP”). Apply the escape manoeuvre immediately (Lesson 6).
+An EGPWS failure or a terrain function failure is shown on the flight deck; dispatch is only possible within the MEL limits, and the crew must brief the lost protection.
 
-No delay At night or in IMC, a warning must be followed without hesitation and without trying to confirm it visually . The Q200 SOP adds: “The flight crew must use a good judgment in this matter.” A warning should only ever be judged spurious in daylight VMC, with the terrain and obstacles clearly in sight and no doubt about the aircraft's position. Report every alert.
+Switch names and locations differ between the B737-800, Q400 and Q200 — check the FCOM / AOM of your fleet.
 
 Key takeaways:
-- EGPWS = basic modes 1–6 plus terrain database look-ahead.
-- Caution: assess the flight path and correct (“CORRECTING”).
-- Warning (“PULL UP”, “TERRAIN AHEAD PULL UP”): escape manoeuvre immediately.
-- At night or in IMC, never wait to confirm a warning visually.
+- TAWS is mandatory; EGPWS adds a terrain database and look-ahead to the classic GPWS.
+- Wrong position, database or radio altimeter input = wrong or missed alerts.
+- Terrain colours show height relative to the aircraft; solid yellow = caution, solid red = warning.
+- Inhibit switches only as the QRH or company procedure says; EGPWS failures per MEL.

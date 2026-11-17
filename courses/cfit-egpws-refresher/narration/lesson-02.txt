@@ -36,6 +36,8 @@ Cold temperatures
 
 In air colder than ISA, the aircraft is lower than the altimeter shows . Apply cold temperature corrections to minimum altitudes according to PANS-OPS and the company procedure — see Lesson 24 of the Cold Weather Operations course.
 
+Rule of thumb The error is about 4 % of the height above the altimeter-setting source for every 10 °C below ISA . Example: aerodrome temperature −20 °C at sea level is 35 °C below ISA, so at 3,000 ft above the aerodrome the aircraft can be about 3,000 × 4 % × 3.5 ≈ 420 ft lower than indicated. Use the PANS-OPS / company correction table for the actual values.
+
 Key takeaways:
 - Know the units; read back and cross-check every altimeter setting.
 - Cross-check radio and barometric altimeters.

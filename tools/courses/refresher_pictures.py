@@ -70,9 +70,11 @@ def scene(slug, n):
             3: lambda: cockpit(440, 0, "dusk", extra=mountains(560, "#5b4a5e", "#7a6a80", seed=2)) + pilots(),
             4: lambda: (sky("day") + ground(560, 0, "land") + runway() + mountains(620, "#3e5a4a", "#5d7b67", seed=11)
                         + '<path d="M1500 150 L800 600" stroke="#ffd24a" stroke-width="6" stroke-dasharray="18 12"/>' + aircraft(1200, 340, 0.6, -3, flip=True)),
-            5: lambda: cockpit(560, 0, "night", extra=mountains(600, "#0d1a2b", "#15263c", seed=6), ground_style="night") + adi_inset(-4, 0),
-            6: lambda: sky("day") + mountains(780, "#3e5a4a", "#5d7b67", seed=12) + aircraft(800, 420, 1.0, 22),
-            7: lambda: sky("dusk") + mountains(760, "#4a3b4e", "#6d5b70", seed=4) + aircraft(820, 360, 0.95, 12),
+            5: lambda: cockpit(480, 0, "dusk", extra=mountains(560, "#4a3b4e", "#6d5b70", seed=9)) + adi_inset(0, 0),
+            6: lambda: sky("cloud") + mountains(640, "#3e5a4a", "#5d7b67", seed=14) + aircraft(700, 300, 0.8, -8),
+            7: lambda: cockpit(560, 0, "night", extra=mountains(600, "#0d1a2b", "#15263c", seed=6), ground_style="night") + adi_inset(-4, 0),
+            8: lambda: sky("day") + mountains(780, "#3e5a4a", "#5d7b67", seed=12) + aircraft(800, 420, 1.0, 22),
+            9: lambda: sky("dusk") + mountains(760, "#4a3b4e", "#6d5b70", seed=4) + aircraft(820, 360, 0.95, 12),
         }
     elif slug == "hot-weather-operations":
         s = {
