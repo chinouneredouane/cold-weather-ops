@@ -6,7 +6,7 @@ CONTENTS OF THIS ZIP
   14 course packages (SCORM 1.2), one .zip per course — do NOT unzip them:
 
    1. Cold Weather Operations                    30 lessons   pass mark 80%    56.7 MB   cold-weather-operations-scorm12.zip
-   2. Upset Prevention and Recovery              24 lessons   pass mark 80%    42.1 MB   upset-prevention-recovery-scorm12.zip
+   2. Upset Prevention and Recovery              28 lessons   pass mark 80%    49.4 MB   upset-prevention-recovery-scorm12.zip
    3. RVSM Refresher                              6 lessons   pass mark 80%     7.4 MB   rvsm-refresher-scorm12.zip
    4. CFIT and EGPWS Refresher                    9 lessons   pass mark 80%    11.1 MB   cfit-egpws-refresher-scorm12.zip
    5. Hot Weather Operations                      6 lessons   pass mark 80%     6.3 MB   hot-weather-operations-scorm12.zip
