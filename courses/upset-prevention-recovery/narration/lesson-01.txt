@@ -36,9 +36,37 @@ FSTD (simulator) training — practice of prevention and recovery in the aircraf
 
 On-aeroplane training — training in a suitable aeroplane, usually during licence training, which gives the real physiological sensations of g and unusual attitudes.
 
+Domestic Airlines OM D — UPRT programme (2.6.76)
+
+The company UPRT programme has two parts: theoretical training (this course) and simulator training . Recurrent UPRT, theoretical and practical, is done at every simulator session and spread over a three-year cycle . The table shows where each OM D element is covered.
+
+OM D element Lessons
+
+A — Aerodynamics (characteristics, certification, high/low altitude, performance, AOA and stall, shaker and pusher, compressibility, stability, controls and trim, icing, propeller slipstream) 4–9, 24
+
+B — Causes and contributing factors (environment, pilot, mechanical) 3
+
+C — Safety review of LOC accidents and incidents 23, 25
+
+D — Load factor awareness (positive/negative, increasing/decreasing, lateral, management) 6
+
+E — Energy management (kinetic, potential, chemical; pitch–power–performance; engine effects) 10, 24
+
+F — Flight path management (automation inputs, type characteristics, automation management, manual handling) 13, 16
+
+G — Recognition (type instruments, pitch/power/roll/yaw, scan, stall protection cues, stall and upset criteria) 2, 5, 17
+
+H — Prevention and recovery techniques 19–22
+
+I — System malfunctions (flight controls, power loss, instruments, automation, protections, stall-protection and ice warning) 13, 18, 25
+
+J — Specialised elements (spiral dive, slow flight, steep turns, stalls, pusher, nose-high/low at high/low speed, LOFT/LOS) 20–22, 26 — practised in the simulator
+
+K — Human factors (situation awareness, startle and stress, TEM, monitoring, fatigue, workload, CRM) 14, 15, 27
+
 How to use this course
 
-24 lessons in 7 modules, about 3 hours in total. A lesson is marked complete when you reach its end or press Next .
+28 lessons in 8 modules, about 3 hours 40 minutes in total. A lesson is marked complete when you reach its end or press Next .
 
 Each lesson has narration, a picture, diagrams, key takeaways and a practice knowledge check.
 

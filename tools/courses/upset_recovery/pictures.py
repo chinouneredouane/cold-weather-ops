@@ -197,6 +197,14 @@ def scene(n):
     elif n == 23:
         s = sky("night") + stars(80, 9) + cumulonimbus(1150, 420, 1.2) + ground(660, 0, "night") + aircraft(520, 400, 0.85, 2)
     elif n == 24:
+        s = sky("day") + cloud(300, 600, 1.4) + ground(700, 0, "land") + aircraft(800, 400, 1.2, 10)
+    elif n == 25:
+        s = cockpit(420, -15, "day", extra=cloud(500, 300, 1.0)) + adi_inset(-5, -15)
+    elif n == 26:
+        s = sky("day") + ground(560, -25, "sea") + aircraft(800, 380, 1.0, -20)
+    elif n == 27:
+        s = cockpit(460, 0, "night", ground_style="night")
+    elif n == 28:
         s = sky("dusk") + cloud(250, 640, 1.5, "#f1c1a6", .9) + cloud(1350, 660, 1.3, "#f1c1a6", .9) + aircraft(800, 380, 1.15, 3)
     else:
         raise ValueError(n)

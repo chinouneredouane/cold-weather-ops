@@ -20,7 +20,7 @@ body="""
   <li>behaviour far beyond the stall, at extreme sideslip, or combined with failures;</li>
   <li>how an average line pilot performs when startled at night.</li>
 </ul>
-<p>Upsets can therefore take the aircraft into conditions where its behaviour is <strong>less well known</strong> — and where simulator data may also be limited (Lesson 24).</p>
+<p>Upsets can therefore take the aircraft into conditions where its behaviour is <strong>less well known</strong> — and where simulator data may also be limited (Lesson 28).</p>
 
 <h2>The flight envelope</h2>
 <div class="table-wrap"><table>

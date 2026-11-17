@@ -1,0 +1,57 @@
+Domestic Airlines — Upset Prevention and Recovery
+Lesson 25: System Malfunctions: Flight Controls, Power Loss and Stall Protection
+
+Learning objectives:
+- Recognise flight control malfunctions that can lead to an upset.
+- Manage a partial or total loss of power without losing control.
+- Recognise failures of the stall-protection and ice-warning systems.
+
+Flight control malfunctions
+
+Runaway trim — an uncommanded, continuous trim movement. On the B737-800 the stabiliser trim can overpower the elevator if not stopped: apply the QRH Runaway Stabilizer procedure (memory items) without delay.
+
+Jammed or restricted controls — use the other controls (trim, the other pilot's control column where the type allows), reduce speed changes and follow the QRH.
+
+Asymmetric flaps or spoilers — an unexpected roll during configuration change: stop the selection, control the roll, apply the QRH.
+
+Autopilot or yaw damper malfunction — disconnect, fly manually, and check the FMA (Lesson 13).
+
+The common rule: fly the aircraft first — keep attitude and energy under control — then identify the failure and apply the checklist.
+
+Partial or total loss of power
+
+Engine failure — yaw and roll towards the failed engine. Below V MCA directional control can be lost: keep the speed above it and use rudder to keep the aircraft straight.
+
+On turboprops, an unfeathered propeller adds large drag and yaw — check autofeather or feather manually per the AOM.
+
+Partial power loss or an engine that does not respond can be harder to recognise than a clean failure. Cross-check engine parameters with the aircraft's response.
+
+Total loss of power — the aircraft becomes a glider: pitch for the best glide speed, keep energy, and do not let the speed decay while handling the restart.
+
+Instrument and automation failures
+
+Unreliable airspeed and instrument failures are covered in Lesson 18; automation failures in Lesson 13. They are among the most common triggers of upsets because the crew loses the information it needs to control the aircraft.
+
+Stall-protection and ice-warning failures
+
+A false stall warning (for example from a damaged angle-of-attack vane) can lead the crew to the wrong action, or to ignore a later real warning. Cross-check attitude, speed and the other side before deciding — but never ignore a stick shaker without positive evidence that it is false.
+
+A failed stall warning removes a defence: monitor speed and angle of attack margins closely.
+
+In icing the stall can occur at a lower angle of attack. Some turboprops use an icing setting that advances the stall warning and increases the reference speeds — use it exactly as the AOM requires. An ice detection failure means the crew must judge icing visually and apply the procedures.
+
+Fly-by-wire protections (not fitted to our fleets) can degrade after failures, removing the envelope protection pilots may rely on. Pilots moving to such types must learn their degraded laws.
+
+Case studies
+
+Accident What happened Lesson
+
+Colgan Air 3407 Dash 8-Q400, Buffalo, USA, February 2009 During the approach the speed decayed; the stick shaker activated and the captain pulled back. The aircraft stalled and the stick pusher activated; the crew did not recover. 50 people died. Monitor speed; respond to the stick shaker by reducing angle of attack , never by pulling.
+
+American Eagle 4184 ATR 72, Roselawn, USA, October 1994 Holding in freezing drizzle, ice formed behind the protected areas. When the flaps were retracted the aircraft rolled uncontrollably. 68 people died. Severe icing can cause roll upsets without warning: leave the icing conditions.
+
+Key takeaways:
+- Fly the aircraft first, then the checklist.
+- B737-800 runaway stabilizer: QRH memory items without delay.
+- Engine failure: keep above VMCA, rudder to keep straight; turboprops — feather the propeller.
+- Stick shaker: reduce angle of attack — never pull (Colgan 3407).

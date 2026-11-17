@@ -34,9 +34,26 @@ body="""
   <li><strong>On-aeroplane training</strong> — training in a suitable aeroplane, usually during licence training, which gives the real physiological sensations of g and unusual attitudes.</li>
 </ul>
 
+<h2>Domestic Airlines OM D — UPRT programme (2.6.76)</h2>
+<p>The company UPRT programme has two parts: <strong>theoretical training</strong> (this course) and <strong>simulator training</strong>. Recurrent UPRT, theoretical and practical, is done at <strong>every simulator session</strong> and spread over a <strong>three-year cycle</strong>. The table shows where each OM D element is covered.</p>
+<div class="table-wrap"><table>
+  <tr><th>OM D element</th><th>Lessons</th></tr>
+  <tr><td>A — Aerodynamics (characteristics, certification, high/low altitude, performance, AOA and stall, shaker and pusher, compressibility, stability, controls and trim, icing, propeller slipstream)</td><td>4–9, 24</td></tr>
+  <tr><td>B — Causes and contributing factors (environment, pilot, mechanical)</td><td>3</td></tr>
+  <tr><td>C — Safety review of LOC accidents and incidents</td><td>23, 25</td></tr>
+  <tr><td>D — Load factor awareness (positive/negative, increasing/decreasing, lateral, management)</td><td>6</td></tr>
+  <tr><td>E — Energy management (kinetic, potential, chemical; pitch–power–performance; engine effects)</td><td>10, 24</td></tr>
+  <tr><td>F — Flight path management (automation inputs, type characteristics, automation management, manual handling)</td><td>13, 16</td></tr>
+  <tr><td>G — Recognition (type instruments, pitch/power/roll/yaw, scan, stall protection cues, stall and upset criteria)</td><td>2, 5, 17</td></tr>
+  <tr><td>H — Prevention and recovery techniques</td><td>19–22</td></tr>
+  <tr><td>I — System malfunctions (flight controls, power loss, instruments, automation, protections, stall-protection and ice warning)</td><td>13, 18, 25</td></tr>
+  <tr><td>J — Specialised elements (spiral dive, slow flight, steep turns, stalls, pusher, nose-high/low at high/low speed, LOFT/LOS)</td><td>20–22, 26 — practised in the simulator</td></tr>
+  <tr><td>K — Human factors (situation awareness, startle and stress, TEM, monitoring, fatigue, workload, CRM)</td><td>14, 15, 27</td></tr>
+</table></div>
+
 <h2>How to use this course</h2>
 <ul>
-  <li>24 lessons in 7 modules, about 3 hours in total. A lesson is marked complete when you reach its end or press <em>Next</em>.</li>
+  <li>28 lessons in 8 modules, about 3 hours 40 minutes in total. A lesson is marked complete when you reach its end or press <em>Next</em>.</li>
   <li>Each lesson has narration, a picture, diagrams, key takeaways and a practice knowledge check.</li>
   <li>The final quiz draws 20 questions from the question bank. The pass mark is 80 %.</li>
   <li>Your progress is saved in this browser on this device.</li>
@@ -245,7 +262,7 @@ body="""
   <li>Swept wings tend to stall at the tips first, which can cause roll-off and a nose-up pitching tendency. Design features (washout, vortex generators, fences) reduce this.</li>
   <li>Aircraft with T-tails may be susceptible to a <strong>deep stall</strong>, which is why they are often fitted with stick pushers.</li>
   <li>Power effects: on aircraft with underwing engines, high thrust gives a nose-up pitching moment (Lesson 10) which can work against stall recovery.</li>
-  <li>Simulators may not reproduce full-stall behaviour accurately outside their validated envelope (Lesson 24).</li>
+  <li>Simulators may not reproduce full-stall behaviour accurately outside their validated envelope (Lesson 28).</li>
 </ul>
 <div class="callout caution"><span class="label">Remember</span><p>Pulling back to "hold altitude" when the stall warning activates increases the angle of attack — the opposite of what is needed. Altitude loss is secondary; <strong>reducing the angle of attack is the priority</strong>.</p></div>
 """,
@@ -299,6 +316,14 @@ body="""
   <li>In a <strong>nose-high</strong> recovery, reduced or even slightly negative g (unloading) is often needed. It may feel uncomfortable; loose objects and unrestrained people can be thrown about.</li>
   <li>In a <strong>nose-low</strong> recovery, roll wings level <strong>before</strong> pulling, then pull smoothly — avoiding both the stall warning and excessive g.</li>
   <li>The sensation of g is not a reliable indicator of attitude; use the instruments.</li>
+</ul>
+
+<h2>Changing and lateral load factor</h2>
+<ul>
+  <li><strong>Increasing g</strong> (pulling) raises the stall speed at that moment; <strong>decreasing g</strong> (unloading) lowers the angle of attack — the basis of every stall and nose-high recovery.</li>
+  <li><strong>Negative g</strong> lifts people and objects, may cause fuel and oil system warnings on some types, and has much lower structural limits than positive g. Use only the unloading needed.</li>
+  <li><strong>Lateral load factor</strong> comes from sideslip. It is shown by the slip/skid indicator and felt as a sideways push. Large sideslip at high speed creates high loads on the fin and strong roll — keep the aircraft coordinated (Lesson 8).</li>
+  <li><strong>Managing g</strong>: smooth, deliberate inputs; know the limits of your configuration (flaps up vs down); stop the pull at the stall warning or at the g limit, whichever comes first.</li>
 </ul>
 """,
 takeaways=[

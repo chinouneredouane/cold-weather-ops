@@ -48,7 +48,7 @@ Aircraft with T-tails may be susceptible to a deep stall , which is why they are
 
 Power effects: on aircraft with underwing engines, high thrust gives a nose-up pitching moment (Lesson 10) which can work against stall recovery.
 
-Simulators may not reproduce full-stall behaviour accurately outside their validated envelope (Lesson 24).
+Simulators may not reproduce full-stall behaviour accurately outside their validated envelope (Lesson 28).
 
 Remember Pulling back to "hold altitude" when the stall warning activates increases the angle of attack — the opposite of what is needed. Altitude loss is secondary; reducing the angle of attack is the priority .
 

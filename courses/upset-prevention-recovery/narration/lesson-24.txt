@@ -1,50 +1,51 @@
 Domestic Airlines — Upset Prevention and Recovery
-Lesson 24: Course Review and Simulator Training
+Lesson 24: Engine and Propeller Effects: Jet and Turboprop
 
 Learning objectives:
-- Review the essential principles of upset prevention and recovery.
-- Explain the limitations of flight simulators in UPRT.
-- Prepare for the practical (FSTD) component of UPRT.
+- Explain total energy as kinetic, potential and chemical (thrust) energy.
+- Describe how thrust changes affect pitch on underwing-engine jets (B737-800).
+- Describe propeller slipstream, torque and asymmetric effects on turboprops (Q400, Q200) and their role in upsets and recovery.
 
-The essential principles
+Three forms of energy
 
-Prevention first. Flight path management, monitoring and energy awareness stop most upsets before they start.
+Lesson 10 described the exchange between kinetic energy (speed) and potential energy (altitude). The third form is chemical energy : the fuel, turned into thrust by the engines. Only thrust minus drag can add energy to the aircraft. How quickly and how much depends on the engine type, the altitude and the speed.
 
-Know the aerodynamics. The wing stalls at its critical angle of attack — at any speed, attitude or power.
+Turbofan (B737-800) Turboprop (Q400, Q200)
 
-Respect the margins — speed, buffet and g. Most upsets begin with an eroded margin.
+Response from low power Slow: several seconds to spool up from idle Fast: power and propeller respond quickly
 
-Understand the automation — and expect it to hand you a problem when it disconnects.
+Effect on pitch Underwing engines: thrust increase = nose-up moment; reduction = nose-down Slipstream over wing and tail changes lift and pitch with power
 
-Manage startle — small inputs, attitude first, then act on a plan.
+Effect on yaw and roll Small with both engines; large asymmetry after engine failure Torque, slipstream and asymmetric blade effect: yaw and roll with large power changes at low speed
 
-Communicate — callouts, clear transfer of control, no dual inputs.
+Thrust at high altitude Much reduced — little excess thrust Reduced; lower operating altitudes
 
-Stall recovery first — reduce the angle of attack, accept the altitude loss.
+Jets: the pitch-thrust couple
 
-Recover with the right technique — nose-high: unload, reduce thrust, bank if needed; nose-low: roll wings level, then pull.
+The B737-800 engines are below the centre of gravity . Adding thrust pitches the nose up; reducing it pitches the nose down.
 
-Simulator (FSTD) training
+At low speed with high thrust, the elevator may not be able to stop the nose-up moment. This is why, in a nose-high, low-speed upset or a stall, a thrust reduction may be needed to get the nose down (Lessons 20 and 21).
 
-The FSTD component of UPRT lets you practise recognition and recovery in your aircraft type. Doc 10011 emphasises that simulator training must stay within the validated training envelope of the device:
+From idle, the spool-up time means that thrust arrives late. Anticipate: energy that is not there cannot be created instantly.
 
-Simulators are based on flight test data. Beyond the stall, at extreme attitudes or sideslip, the data may be extrapolated — the simulator may not behave like the real aircraft.
+Turboprops: propeller effects
 
-A simulator cannot reproduce sustained g forces or the full physiological effects of an upset — this is why on-aeroplane training exists in licence training.
+Slipstream — the propellers blow air over the parts of the wing behind them and over the tail. With high power, that part of the wing produces more lift, so the power-on stall speed is lower than the power-off one. A sudden power reduction removes that extra lift.
 
-Training outside the valid envelope risks negative training : learning a technique that would not work, or would be dangerous, in the real aircraft.
+Torque and asymmetric blade effect — large power changes at low speed and high angle of attack create yaw and roll tendencies that the pilot must correct with rudder and aileron.
 
-Instructors must be trained to use the FSTD correctly, to recognise when it is outside its valid envelope, and to debrief using the instructor station tools.
+Tail effects — on T-tail aircraft such as the Dash 8 family, slipstream and wing wake over the tail change with power and angle of attack. Stall characteristics are why some types are fitted with a stick pusher (check your AOM).
 
-Your next steps
+Engine failure — a windmilling, unfeathered propeller creates large drag and yaw. The autofeather and the engine failure procedure exist to remove it quickly.
 
-Complete the final quiz (20 questions, pass mark 80 %).
+In a recovery On a turboprop at low speed, apply power smoothly and be ready with rudder to keep the aircraft coordinated. An abrupt full-power application near the stall can produce a yaw and roll that turns a recoverable situation into an upset.
 
-Review your type's FCOM and QRH procedures for stall recovery, unreliable airspeed, windshear and upset recovery.
+Icing and contamination
 
-Bring your questions to the next simulator session and practise prevention as well as recovery.
+Ice on the wing or tail raises the stall speed and can cause a stall before the normal stall warning, with roll-off or pitch-down. Turboprops spend more time at the altitudes where icing is common. Respect the ice protection procedures and the icing speed and stall-warning settings of your AOM (see the Cold Weather Operations course).
 
 Key takeaways:
-- Prevention first; stall recovery first; the right technique for nose-high and nose-low.
-- FSTD training must stay within the simulator's validated envelope to avoid negative training.
-- Simulators cannot reproduce sustained g; on-aeroplane training fills that gap in licence training.
+- Energy: kinetic, potential and chemical — only thrust minus drag adds energy.
+- B737-800: thrust up = nose up; in a nose-high low-speed upset, reducing thrust may be needed.
+- Turboprops: slipstream lowers the power-on stall speed; large power changes at low speed cause yaw and roll.
+- Ice can cause a stall before the normal warning.

@@ -18,7 +18,7 @@ behaviour far beyond the stall, at extreme sideslip, or combined with failures;
 
 how an average line pilot performs when startled at night.
 
-Upsets can therefore take the aircraft into conditions where its behaviour is less well known — and where simulator data may also be limited (Lesson 24).
+Upsets can therefore take the aircraft into conditions where its behaviour is less well known — and where simulator data may also be limited (Lesson 28).
 
 The flight envelope
 

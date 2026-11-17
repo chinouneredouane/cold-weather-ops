@@ -1,0 +1,93 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Lesson 26: Specialised Manoeuvres: Slow Flight, Steep Turns, Spiral Dive and Uncoordinated Stalls — Upset Prevention and Recovery</title>
+<style>
+@page{size:A4;margin:18mm 16mm 20mm}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#24342b;font-size:10.5pt;line-height:1.5;margin:0}
+h1,h2,h3{color:#14231b;line-height:1.25;break-after:avoid}
+h1{font-size:21pt;margin:0 0 6pt}h2{font-size:14pt;margin:16pt 0 6pt}h3{font-size:12pt;margin:12pt 0 4pt}
+p{margin:0 0 7pt}ul,ol{margin:0 0 8pt;padding-left:16pt}li{margin:2pt 0}
+a{color:#125a2b;text-decoration:none}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:9pt;background:#f3f9f5;border:1px solid #dbe5df;padding:0 3pt;border-radius:3pt}
+.cover{height:257mm;display:flex;flex-direction:column;justify-content:center;break-after:page;
+  background:linear-gradient(120deg,#0c3d1e,#125a2b 55%,#2a8a50);color:#fff;padding:22mm;border-radius:4mm;margin:0}
+.cover h1{color:#fff;font-size:34pt}.cover .k{letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#bfe3cb;font-size:10pt}
+.cover p{color:#e3f1e8;font-size:13pt}.cover .logo{background:#fff;padding:5mm 7mm;border-radius:3mm;display:inline-block;margin-bottom:14mm}
+.cover .logo img{height:16mm}.cover .meta{margin-top:12mm;font-size:10.5pt;color:#d3ebdb}
+.toc{break-after:page}.toc h2{margin-top:0}.toc ol{list-style:none;padding:0}
+.toc li{display:flex;gap:8pt;padding:3pt 0;border-bottom:1px dotted #c9d8cf}.toc .n{width:22pt;font-weight:700;color:#5b6b62}
+.toc .mod{margin-top:9pt;font-weight:800;color:#125a2b;border:0;text-transform:uppercase;font-size:9pt;letter-spacing:.06em}
+.lesson{break-before:page}
+.lesson-head{background:linear-gradient(120deg,#0c3d1e,#1d7a3e);color:#fff;border-radius:3mm;padding:9pt 13pt;margin-bottom:10pt}
+.lesson-head h1{color:#fff;font-size:17pt;margin:2pt 0}.lesson-head .k{font-size:8.5pt;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#c7e8d2}
+.lesson-head .m{font-size:9pt;color:#dbefe2}
+.objectives{background:#f3f9f5;border:1px solid #dbe5df;border-radius:2mm;padding:7pt 11pt;margin:0 0 10pt}
+.objectives h2,.takeaways h2,.kc h2{font-size:9.5pt;text-transform:uppercase;letter-spacing:.06em;margin:0 0 3pt;color:#125a2b}
+.lesson-figure{margin:0 0 10pt;break-inside:avoid}.lesson-figure img{width:100%;max-height:85mm;object-fit:contain;border:1px solid #dbe5df;border-radius:2mm;background:#f3f9f5}
+figure{margin:9pt 0;break-inside:avoid}figure svg{width:100%;height:auto}figcaption{font-size:8.5pt;color:#5b6b62;margin-top:3pt}
+.diagram{border:1px solid #dbe5df;border-radius:2mm;padding:5pt}
+.table-wrap{margin:8pt 0;border:1px solid #dbe5df;border-radius:2mm;overflow:hidden}
+table{border-collapse:collapse;width:100%;font-size:9pt}th,td{text-align:left;vertical-align:top;padding:4pt 6pt;border-bottom:1px solid #dbe5df}
+th{background:#f3f9f5}tr{break-inside:avoid}td.code{font-weight:800;font-size:12pt;text-align:center;width:34pt}
+.callout{border-left:3pt solid #1d7a3e;background:#f3f9f5;padding:6pt 10pt;margin:8pt 0;border-radius:0 2mm 2mm 0;break-inside:avoid}
+.callout .label{display:block;font-size:8.5pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#125a2b}
+.callout.warn{border-color:#c8102e;background:#fdecef}.callout.warn .label{color:#c8102e}
+.callout.caution{border-color:#d08a00;background:#fff5e0}.callout.caution .label{color:#9a6200}
+.callout.info{border-color:#1f5f99;background:#e9f2fb}.callout.info .label{color:#1f5f99}
+.callout > :last-child{margin-bottom:0}
+.steps{list-style:none;padding:0;counter-reset:s}.steps>li{counter-increment:s;position:relative;padding-left:20pt;margin:4pt 0}
+.steps>li::before{content:counter(s);position:absolute;left:0;top:0;width:14pt;height:14pt;border-radius:50%;background:#1d7a3e;color:#fff;font-weight:800;font-size:8pt;display:flex;align-items:center;justify-content:center}
+.dialog{border:1px solid #dbe5df;border-radius:2mm;padding:4pt 10pt;margin:8pt 0;break-inside:avoid}.dialog p{margin:4pt 0}.dialog b{color:#125a2b}
+.muted{color:#5b6b62}
+.takeaways{background:#0c3d1e;color:#e8f5ec;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}.takeaways h2{color:#fff}
+.kc{border:1.5pt dashed #b9d7c3;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}
+.kc .q{font-weight:700;margin:2pt 0 4pt}.kc ol{list-style:upper-alpha}.kc .a{font-size:9pt;margin-top:4pt;color:#125a2b}
+.disclaimer{font-size:8.5pt;color:#5b6b62;border-top:1px solid #dbe5df;padding-top:6pt;margin-top:14pt}
+</style></head><body>
+<section class="lesson" style="break-before:auto" id="lesson-26">
+  <div class="lesson-head"><div class="k">Module 8 · OM D Complementary Elements</div>
+    <h1>Lesson 26: Specialised Manoeuvres: Slow Flight, Steep Turns, Spiral Dive and Uncoordinated Stalls</h1><div class="m">Lesson 26 of 28 · about 9 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Describe aircraft behaviour in slow flight and steep turns.</li><li>Recognise a spiral dive and recover in the right order.</li><li>Explain uncoordinated (yaw-aggravated) stalls, stick pusher activation, and how recovery changes with speed.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-26.jpg" alt="Airliner in a steep descending turn over the sea"><figcaption>Spiral dive: roll wings level first, then pull.</figcaption></figure>
+  
+<h2>Why these manoeuvres</h2>
+<p>The OM D UPRT programme (element J) includes specialised manoeuvres trained in the simulator. This lesson gives the theory behind them, so that the simulator session builds on understanding.</p>
+
+<h2>Slow flight</h2>
+<ul>
+  <li>At low speed the controls are <strong>less effective</strong> and need larger inputs; the aircraft is close to the critical angle of attack.</li>
+  <li>Below the minimum drag speed the aircraft is on the <strong>back side of the power curve</strong>: a lower speed needs <strong>more</strong> thrust. Pitching up without power makes the speed decay further.</li>
+</ul>
+
+<h2>Steep turns</h2>
+<ul>
+  <li>In a level turn the load factor rises with bank: about 1.4 g at 45° and 2 g at 60°. The stall speed rises with the square root of the load factor (Lesson 6).</li>
+  <li>Back pressure and thrust must increase to hold altitude. At high bank the aircraft tends to <strong>overbank</strong>; hold the bank with opposite aileron.</li>
+</ul>
+
+<h2>Spiral dive</h2>
+<ul>
+  <li>A nose-low, high-bank descent with <strong>increasing speed</strong> and load factor — often entered without the crew noticing (spatial disorientation, Lesson 14).</li>
+  <li><strong>Pulling first</strong> only tightens the spiral and increases g. Recovery: reduce thrust, <strong>roll wings level first</strong>, then recover pitch smoothly within g limits; use speedbrakes if the speed is high.</li>
+</ul>
+
+<h2>Approach to stall and full stall</h2>
+<ul>
+  <li><strong>Approach to stall</strong> — first indication (stick shaker, buffet): reduce angle of attack immediately and recover the speed.</li>
+  <li><strong>Full stall</strong> — buffet, nose drop, roll-off or loss of pitch authority: reduce angle of attack until the stall indications stop, then recover (Lesson 20).</li>
+  <li><strong>Uncoordinated stall</strong> — with yaw (sideslip) at the stall, one wing stalls first and the aircraft rolls and yaws towards it (wing drop). Large aileron inputs can deepen the stall on the low wing. <strong>Reduce angle of attack first</strong>, keep the rudder neutral or use it only to stop further yaw, then roll wings level once unstalled.</li>
+  <li><strong>Stick pusher</strong> (where fitted, for example on the Q400 — check your AOM): it pushes the nose down to reduce angle of attack. <strong>Do not fight it.</strong> Let it work, then complete the stall recovery.</li>
+</ul>
+
+<h2>Recovery depends on speed</h2>
+<div class="table-wrap"><table>
+  <tr><th>Upset</th><th>High speed</th><th>Low speed</th></tr>
+  <tr><td><strong>Nose-high</strong></td><td>Plenty of energy: unload towards 1 g, let the nose come down, avoid excessive g; reduce thrust if the speed increases quickly.</td><td>Little energy, stall risk: unload (towards 0.5 g), reduce thrust if the nose will not come down (underwing engines), bank to help the nose drop (Lesson 21).</td></tr>
+  <tr><td><strong>Nose-low</strong></td><td>Speed rising fast: reduce thrust, <strong>roll wings level first</strong>, speedbrakes as needed, then recover pitch within g limits (Lesson 22).</td><td>The aircraft may be stalled: <strong>stall recovery first</strong>, then roll wings level and recover with thrust.</td></tr>
+</table></div>
+<div class="callout"><span class="label">LOFT / LOS</span><p>The programme ends with line-oriented scenarios (LOFT / LOS), where upsets develop from realistic threats such as weather, automation or system failures — training recognition and crew coordination, not only the manoeuvre.</p></div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Slow flight: weak controls, back side of the power curve.</li><li>Spiral dive: thrust reduce, roll wings level first, then pull.</li><li>Uncoordinated stall: reduce angle of attack first; avoid large aileron inputs while stalled.</li><li>Stick pusher: never fight it. Recovery technique depends on speed as well as attitude.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">In a spiral dive with increasing speed, what is the correct order?</p>
+    <ol><li>Pull hard, then roll level</li><li>Reduce thrust and roll wings level first, then recover pitch smoothly</li><li>Add thrust and pull</li><li>Extend the flaps</li></ol>
+    <p class="a"><b>Answer: B.</b> Pulling in a high bank tightens the spiral. Reduce thrust, roll wings level, then recover pitch within g limits.</p></div>
+</section><p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p></body></html>

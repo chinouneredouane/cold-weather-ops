@@ -1,0 +1,59 @@
+Domestic Airlines — Upset Prevention and Recovery
+Lesson 27: Threat and Error Management, Workload and Fatigue
+
+Learning objectives:
+- Apply the threat and error management (TEM) framework to upset prevention.
+- Explain how human information processing, fixation and distraction lead to upsets.
+- Manage workload and fatigue to keep monitoring effective.
+
+Human information processing
+
+Pilots perceive, interpret, decide and act with a limited attention . Under high workload or stress, attention narrows.
+
+Expectation shapes perception: we tend to see what we expect, and to reject information that does not fit our mental model.
+
+Fixation on one problem, distraction by another task, or simple inattention let a deviation grow unnoticed — the start of most upsets.
+
+Instrument interpretation — read the attitude first: the horizon line and the bank pointer ("sky pointer") show which way is up. Confirm with the other instruments.
+
+Threat and error management (TEM)
+
+Element Definition Upset examples
+
+Threats Events outside the crew's control that increase complexity Turbulence, icing, convective weather, system failures, late ATC changes
+
+Errors Crew actions or inactions that deviate from intentions or expectations Wrong mode selected, speed not monitored, wrong trim, missed callout
+
+Undesired aircraft states Deviations of position, speed, attitude or configuration caused by threats or errors Low speed, excessive bank, unstable approach — the step just before an upset
+
+Countermeasures: anticipate threats in the briefing, detect errors with active monitoring and cross-checks, and recover from an undesired state before it becomes an upset.
+
+Active monitoring and verification
+
+Monitoring is an active task: the PM checks the flight path and FMA, compares with expectations and speaks up (Lesson 15).
+
+Verify every change: mode, target, configuration. "What is it doing now? What will it do next?"
+
+Workload management
+
+Plan high-workload phases in advance; brief the threats.
+
+Prioritise: aviate, navigate, communicate . Delegate tasks clearly between PF and PM.
+
+Choose the level of automation that reduces workload — and revert to manual flight when the automation does not do what is needed.
+
+Fatigue
+
+Fatigue slows reactions, narrows attention and increases errors — including missed monitoring.
+
+Use the company fatigue management and reporting procedures (OM A FTL chapter). Tell the other pilot when you are tired, and use controlled rest only as the OM allows.
+
+Crew resource management
+
+All these skills come together in CRM: a shared mental model, clear communication, assertiveness and leadership. Most upset accidents show a breakdown of at least one of them.
+
+Key takeaways:
+- Limited attention, expectation, fixation and distraction let deviations grow.
+- TEM: threats → errors → undesired aircraft states → upset; anticipate, detect, recover.
+- Active monitoring and verification of every mode and target change.
+- Manage workload (aviate, navigate, communicate) and report fatigue.

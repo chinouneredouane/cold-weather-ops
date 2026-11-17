@@ -1,7 +1,7 @@
 # Media for Upset Prevention and Recovery
 
 ## Lesson narration (optional)
-Put one MP3 per lesson in `audio/`, named `lesson-01.mp3` … `lesson-24.mp3`.
+Put one MP3 per lesson in `audio/`, named `lesson-01.mp3` … `lesson-28.mp3`.
 When a file is present, the lesson page plays it. Otherwise the page reads the lesson aloud with the browser's text-to-speech voice.
 Scripts for recording are in `../narration/`. To regenerate the neural-voice MP3s, use `tools/make_audio.py`.
 
