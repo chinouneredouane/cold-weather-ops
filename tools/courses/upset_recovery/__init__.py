@@ -87,3 +87,58 @@ COURSE = dict(
     questions=QUESTIONS,
     images=IMAGES,
 )
+
+
+# ---------------------------------------------------------------------------------------------------------------
+# Figures from the Airplane Upset Recovery Training Aid, published by ICAO with Doc 10011:
+# Appendix 3-B "Airplane Upset Recovery Briefing" (Rev 1, 2004) and Appendix 3-E "High Altitude Operations" (Rev 2, 2008).
+# Each figure is inserted after the named section heading of the lesson, with its source in the caption.
+_SRC_B = "Airplane Upset Recovery Training Aid, Appendix 3-B, Figure 3-B.{n} (ICAO Doc 10011)"
+_SRC_E = "Airplane Upset Recovery Training Aid, Appendix 3-E High Altitude Operations, slide {n} (ICAO Doc 10011)"
+
+ICAO_FIGS = {
+    4: [("Three different angles", "b", 36, "Angle of attack is the angle between the wing and the relative airflow — not the pitch attitude.")],
+    5: [("Stall behaviour", "b", 37, "A stall can occur at any attitude and any speed: the angle of attack decides.")],
+    6: [("Load factor", "b", 48, "In a level turn the lift must also provide the turning force: load factor rises steeply with bank."),
+        ("Load factor and stall speed", "b", 34, "In a pull-up the flight path is curved: lift is greater than weight, so load factor is above 1 g."),
+        ("g-awareness in recovery", "b", 60, "Negative g: loose objects and unrestrained people float — expect it in an unloading recovery.")],
+    7: [("Thin air and Mach effects", "e", 26, "Drag rises sharply beyond the critical Mach number; in a turn the drag rise comes earlier."),
+        ("Buffet boundaries and the coffin corner", "e", 18, "Maximum altitude is the lowest of the certified, thrust-limited and buffet-limited altitudes. Optimum altitude is lower."),
+        ("Flight techniques at high altitude (Training Aid, Appendix 3-E)", "e", 12, "Airspeed versus drag in level flight: below L/D max (minimum drag speed) the speed is unstable — a loss of speed increases drag."),
+        ("Handling at high altitude", "e", 24, "The amber bands show the buffet margin — they do not show whether there is enough thrust to hold that speed.")],
+    8: [("Static and dynamic stability", "b", 46, "Static stability: what the aircraft does immediately after a disturbance."),
+        ("Trim", "b", 41, "A deflected trim tab reduces the control deflection still available in that direction."),
+        ("Rudder use", "b", 44, "Sideslip: rudder, aileron and spoilers in a cross-controlled condition.")],
+    9: [("The flight envelope", "b", 35, "The certified flight envelope: speed, load factor and altitude limits for each configuration.")],
+    10: [("Energy states", "b", 32, "Kinetic, potential and chemical energy: pitch exchanges the first two; thrust adds energy.")],
+    12: [("Turbulence and mountain waves", "b", 12, "Mountain waves can produce strong up- and downdrafts and severe turbulence far downwind of the ridge."),
+         ("Windshear and microbursts", "b", 15, "A microburst: a strong downdraft spreading out near the ground — headwind, downdraft, then tailwind."),
+         ("Wake turbulence", "b", 16, "Wake vortices from a preceding aircraft can roll a following aircraft beyond its roll authority.")],
+    14: [("Startle and surprise", "b", 59, "An upset arrives without warning: startle delays recognition and the correct response.")],
+    21: [("Generic technique (based on industry guidance)", "b", 67, "Nose-high: if pitch control alone is not enough, roll to obtain a nose-down pitch rate."),
+         ("Generic technique (based on industry guidance)", "b", 68, "Nose-high: reduce thrust (underwing-mounted engines) to help the nose come down."),
+         ("Points to remember", "b", 69, "Complete the recovery: approaching the horizon, roll wings level, check airspeed and thrust, establish pitch attitude.")],
+    22: [("Generic technique (based on industry guidance)", "b", 72, "Nose-low, wings level: recover from the stall first, if necessary."),
+         ("Generic technique (based on industry guidance)", "b", 74, "Nose-low, wings level: adjust thrust and drag as necessary while recovering to level flight."),
+         ("Why roll before pull", "b", 80, "High bank: simultaneously reduce thrust and roll in the shortest direction to wings level."),
+         ("Managing speed and g", "b", 77, "High bank, nose-high: complete the recovery — roll to wings level near the horizon, adjust thrust, establish pitch attitude.")],
+}
+
+
+def _icao_figure(kind, n, caption):
+    src = (_SRC_B if kind == "b" else _SRC_E).format(n=n)
+    return (f'<figure class="lesson-figure"><img src="../media/images/icao-3{kind}-{n:02d}.jpg" alt="{caption}" loading="lazy" '
+            f'style="width:100%;height:auto;max-width:720px;display:block;margin:0 auto"><figcaption>{caption} '
+            f'<span class="muted">Source: {src}.</span></figcaption></figure>')
+
+
+for _n, _figs in ICAO_FIGS.items():
+    _body = COURSE["lessons"][_n - 1]["body"]
+    for _h2, _kind, _num, _cap in reversed(_figs):
+        _tag = f"<h2>{_h2}</h2>"
+        assert _tag in _body, (_n, _h2)
+        _i = _body.index(_tag) + len(_tag)
+        _j = _body.find("<h2>", _i)
+        _j = len(_body) if _j < 0 else _j
+        _body = _body[:_j] + _icao_figure(_kind, _num, _cap) + "\n" + _body[_j:]
+    COURSE["lessons"][_n - 1]["body"] = _body

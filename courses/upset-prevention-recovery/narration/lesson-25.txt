@@ -26,6 +26,8 @@ On turboprops, an unfeathered propeller adds large drag and yaw — check autofe
 
 Partial power loss or an engine that does not respond can be harder to recognise than a clean failure. Cross-check engine parameters with the aircraft's response.
 
+High-altitude engine events (Training Aid, Appendix 3-E): a multi-engine flameout needs prompt recognition and the recall items — establish the airspeed for a windmill restart and expect a large altitude loss. After a flameout, a core lock can stop the engine core from turning: follow the QRH speed and altitude guidance to restore rotation. A rollback is an uncommanded loss of thrust (moisture, icing, fuel control problems): check the thrust actually produced against the thrust selected.
+
 Total loss of power — the aircraft becomes a glider: pitch for the best glide speed, keep energy, and do not let the speed decay while handling the restart.
 
 Instrument and automation failures

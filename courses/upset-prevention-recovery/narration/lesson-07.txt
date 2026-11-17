@@ -34,6 +34,22 @@ Control inputs should be smooth and small. Large, rapid inputs can quickly excee
 
 Watch for temperature increases and wind shifts that suddenly reduce the Mach or speed margin.
 
+Flight techniques at high altitude (Training Aid, Appendix 3-E)
+
+L/D max (minimum drag speed): below it the aircraft is on the back side of the drag curve — a speed loss increases drag and the speed keeps decaying. Above it, speed is stable.
+
+Crossover altitude : the altitude where a given CAS and Mach number give the same true airspeed. Above it, the speed limit is the Mach number.
+
+Maximum altitude is the lowest of three: the maximum certified altitude , the thrust-limited altitude (enough thrust for a minimum rate of climb) and the buffet- or manoeuvre-limited altitude (a specified margin to buffet, typically 1.3 g, about 40° of bank). Optimum altitude (best fuel economy) is lower.
+
+The amber band does not show thrust : holding a speed just above it does not guarantee enough thrust to stay there.
+
+If the speed decays and the aircraft is thrust-limited: select maximum continuous (or maximum available) thrust, reduce bank, and descend — trade altitude for energy early.
+
+Automation: in vertical speed or altitude-hold modes the autopilot can trade speed for altitude until the stall; at high altitude the only option may be to descend.
+
+Stall recovery is the priority At high altitude a stall recovery needs a reduction of angle of attack , and altitude recovery is secondary. Thrust alone may not be enough. Pilots trained to minimise altitude loss in low-altitude approach-to-stall exercises must not apply that habit here: accept the altitude loss.
+
 Recovery at high altitude
 
 Key principle

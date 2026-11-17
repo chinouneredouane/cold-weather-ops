@@ -374,6 +374,17 @@ body="""
   <li>Watch for temperature increases and wind shifts that suddenly reduce the Mach or speed margin.</li>
 </ul>
 
+<h2>Flight techniques at high altitude (Training Aid, Appendix 3-E)</h2>
+<ul>
+  <li><strong>L/D max</strong> (minimum drag speed): below it the aircraft is on the <strong>back side of the drag curve</strong> — a speed loss increases drag and the speed keeps decaying. Above it, speed is stable.</li>
+  <li><strong>Crossover altitude</strong>: the altitude where a given CAS and Mach number give the same true airspeed. Above it, the speed limit is the Mach number.</li>
+  <li><strong>Maximum altitude</strong> is the lowest of three: the <strong>maximum certified altitude</strong>, the <strong>thrust-limited altitude</strong> (enough thrust for a minimum rate of climb) and the <strong>buffet- or manoeuvre-limited altitude</strong> (a specified margin to buffet, typically 1.3 g, about 40° of bank). <strong>Optimum altitude</strong> (best fuel economy) is lower.</li>
+  <li><strong>The amber band does not show thrust</strong>: holding a speed just above it does not guarantee enough thrust to stay there.</li>
+  <li>If the speed decays and the aircraft is thrust-limited: select maximum continuous (or maximum available) thrust, reduce bank, and <strong>descend</strong> — trade altitude for energy early.</li>
+  <li>Automation: in vertical speed or altitude-hold modes the autopilot can trade speed for altitude until the stall; at high altitude the only option may be to descend.</li>
+</ul>
+<div class="callout warn"><span class="label">Stall recovery is the priority</span><p>At high altitude a stall recovery needs a <strong>reduction of angle of attack</strong>, and altitude recovery is secondary. Thrust alone may not be enough. Pilots trained to minimise altitude loss in low-altitude approach-to-stall exercises must not apply that habit here: accept the altitude loss.</p></div>
+
 <h2>Recovery at high altitude</h2>
 <div class="callout warn"><span class="label">Key principle</span>
 <p>At high altitude, an aircraft at or near the stall <strong>cannot be "powered out" of it</strong>. The excess thrust is too small. The angle of attack must be reduced, and the aircraft must be allowed to <strong>lose altitude</strong> to regain speed and margin. Trading altitude for speed is the correct action.</p>
