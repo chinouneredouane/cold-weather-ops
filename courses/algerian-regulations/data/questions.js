@@ -4,7 +4,7 @@ window.QUESTION_BANK = [
   "lesson": 1,
   "q": "What is the highest legal text in Algeria?",
   "options": [
-   "The DACM circular",
+   "The ANAC circular",
    "The Constitution",
    "The decree",
    "The law"
@@ -18,7 +18,7 @@ window.QUESTION_BANK = [
   "options": [
    "The Assembly",
    "The President or the Prime Minister",
-   "The DACM",
+   "The ANAC",
    "The airline"
   ],
   "answer": 1,
@@ -29,12 +29,12 @@ window.QUESTION_BANK = [
   "q": "Which body is the Algerian civil aviation authority?",
   "options": [
    "The AIS",
-   "The DACM",
+   "The ANAC",
    "The airport operator",
    "ICAO"
   ],
   "answer": 1,
-  "explain": "The DACM."
+  "explain": "The ANAC."
  },
  {
   "lesson": 1,

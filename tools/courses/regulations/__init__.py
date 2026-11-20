@@ -1,7 +1,7 @@
 """W5 — Operations Manual (MANEX) and Regulations (winter season), all fleets.
 Generic content from the ICAO framework (Chicago Convention, Annexes, SARPs) and the EASA Air Operations structure
 (Regulation (EU) 965/2012: Part-ORO, Part-CAT, Part-SPA; AMC1 ORO.MLR.100 Operations Manual structure).
-Company and national (DACM) specifics are in the Domestic Airlines Operations Manual."""
+Company and national (ANAC) specifics are in the Domestic Airlines Operations Manual."""
 
 
 def Q(lesson, q, options, answer, explain):
@@ -9,7 +9,7 @@ def Q(lesson, q, options, answer, explain):
 
 
 COMPANY = ('<div class="callout caution"><span class="label">Company documents</span><p>This lesson explains the international framework. '
-           'The exact company rules are in the <strong>Domestic Airlines Operations Manual</strong> and the national regulations of the <strong>DACM</strong> — '
+           'The exact company rules are in the <strong>Domestic Airlines Operations Manual</strong> and the national regulations of the <strong>ANAC</strong> — '
            'always refer to the current edition.</p></div>')
 
 LESSONS = [
@@ -64,9 +64,9 @@ body="""
 </ul>
 
 <h2>National regulations</h2>
-<p>Domestic Airlines operates under the regulations and oversight of its national authority, the <strong>DACM</strong>, which implement the ICAO SARPs. Many national requirements follow the EASA structure, which is why our Operations Manual uses the same organisation and references. The AOC and its operations specifications define what the company is authorised to do.</p>
+<p>Domestic Airlines operates under the regulations and oversight of its national authority, the <strong>ANAC</strong>, which implement the ICAO SARPs. Many national requirements follow the EASA structure, which is why our Operations Manual uses the same organisation and references. The AOC and its operations specifications define what the company is authorised to do.</p>
 """ + COMPANY,
-takeaways=["Regulation (EU) 965/2012: Part-ARO, ORO, CAT, SPA (and others).", "Implementing rules are binding; AMC is one accepted way to comply; GM explains.", "Domestic Airlines operates under DACM regulations and its AOC / operations specifications."],
+takeaways=["Regulation (EU) 965/2012: Part-ARO, ORO, CAT, SPA (and others).", "Implementing rules are binding; AMC is one accepted way to comply; GM explains.", "Domestic Airlines operates under ANAC regulations and its AOC / operations specifications."],
 check=dict(q="In Regulation (EU) 965/2012, which Part covers commercial air transport operating procedures and performance?", options=["Part-ARO", "Part-CAT", "Part-FCL", "Part-145"], answer=1, explain="Part-CAT covers CAT operations, performance and equipment."),
 ),
 

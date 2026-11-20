@@ -34,7 +34,7 @@ Documents on board
 
 Typical documents include: certificate of registration and certificate of airworthiness (with ARC), noise certificate, AOC copy and operations specifications, radio licence, insurance, journey log / technical log, crew licences and medical certificates, relevant parts of the Operations Manual, the AFM, the MEL, charts, the operational flight plan, mass and balance documentation, NOTAMs and weather, and the NOTOC when dangerous goods are carried. The exact list is in OM A.
 
-Company documents This lesson explains the international framework. The exact company rules are in the Domestic Airlines Operations Manual and the national regulations of the DACM — always refer to the current edition.
+Company documents This lesson explains the international framework. The exact company rules are in the Domestic Airlines Operations Manual and the national regulations of the ANAC — always refer to the current edition.
 
 Key takeaways:
 - The commander is responsible for safety and has the authority to act for it.

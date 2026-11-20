@@ -20,7 +20,7 @@ Day 1 — ground refresher : engine and APU operation and limitations in hot wea
 
 Days 2 and 3 — simulator : LOFT sectors to and from hot, high southern aerodromes with dust and drifting sand, MEL dispatch items, go-arounds and engine failures in hot weather, an RNAV approach briefing including temperature effects, and an LVO approach.
 
-Mandatory exercises : upset recovery, windshear identification and escape, TCAS, EGPWS and pilot incapacitation — performed according to company procedures and DACM recommendations.
+Mandatory exercises : upset recovery, windshear identification and escape, TCAS, EGPWS and pilot incapacitation — performed according to company procedures and ANAC recommendations.
 
 Preparing
 

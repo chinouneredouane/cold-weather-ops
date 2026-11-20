@@ -1,7 +1,7 @@
 """S4 — Approaches Authorised by the Authority: Ceiling and Visibility (summer season), all fleets.
 Generic content from ICAO Annex 6 (classification of instrument approach operations) and Doc 9365
 (All Weather Operations), EASA CAT.OP.MPA.110 (aerodrome operating minima), CAT.OP.MPA.305 (approach ban) and
-Part-SPA (SPA.LVO). The approaches each fleet may fly are in the AOC operations specifications (DACM) and OM A / OM C."""
+Part-SPA (SPA.LVO). The approaches each fleet may fly are in the AOC operations specifications (ANAC) and OM A / OM C."""
 from courses.upset_recovery.diagrams import FONT, INK, MUTED, GREEN, GREEN_D, RED, AMBER, BLUE
 
 
@@ -11,7 +11,7 @@ def Q(lesson, q, options, answer, explain):
 
 COMPANY = ('<div class="callout caution"><span class="label">Company authorisation</span><p>The approach operations each fleet is authorised for — '
            'for example CAT I only, or CAT II for a fleet and crew with the approval — are listed in the <strong>AOC operations specifications</strong> '
-           'issued by the <strong>DACM</strong>. The method and values for minima are in <strong>OM A</strong>; the aerodrome minima are in <strong>OM C</strong> and the charts.</p></div>')
+           'issued by the <strong>ANAC</strong>. The method and values for minima are in <strong>OM A</strong>; the aerodrome minima are in <strong>OM C</strong> and the charts.</p></div>')
 
 LESSONS = [
 dict(title="Classification of Instrument Approach Operations", minutes=7,

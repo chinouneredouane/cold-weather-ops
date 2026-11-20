@@ -63,7 +63,7 @@ All company B737-800s are certified for CAT IIIA (fail-passive autoland). CAT II
 
 Four conditions before any LVO
 
-Operator — authorised by the Authority (DACM) for the operation.
+Operator — authorised by the Authority (ANAC) for the operation.
 
 Crew — trained, checked and current for LVO. Both pilots must be qualified.
 

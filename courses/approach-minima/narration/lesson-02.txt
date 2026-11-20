@@ -28,7 +28,7 @@ Take-off minima are expressed as RVR or visibility, sometimes with a ceiling —
 
 Circling minima (MDH and visibility) depend on the aircraft approach category (A to D). Keep visual reference with the runway throughout.
 
-Company authorisation The approach operations each fleet is authorised for — for example CAT I only, or CAT II for a fleet and crew with the approval — are listed in the AOC operations specifications issued by the DACM . The method and values for minima are in OM A ; the aerodrome minima are in OM C and the charts.
+Company authorisation The approach operations each fleet is authorised for — for example CAT I only, or CAT II for a fleet and crew with the approval — are listed in the AOC operations specifications issued by the ANAC . The method and values for minima are in OM A ; the aerodrome minima are in OM C and the charts.
 
 Key takeaways:
 - Operator minima: never lower than the State's, unless approved.

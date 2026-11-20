@@ -71,7 +71,7 @@ body="""
 """ + COMPANY + """
 <h2>Four conditions before any LVO</h2>
 <ol class="steps">
-  <li><strong>Operator</strong> — authorised by the Authority (DACM) for the operation.</li>
+  <li><strong>Operator</strong> — authorised by the Authority (ANAC) for the operation.</li>
   <li><strong>Crew</strong> — trained, checked and current for LVO. Both pilots must be qualified.</li>
   <li><strong>Aircraft</strong> — certified for the operation (CAT II / IIIA fail-passive autoland) with the required equipment serviceable.</li>
   <li><strong>Aerodrome</strong> — LVP declared <strong>in force</strong>, with the required ground equipment serviceable.</li>

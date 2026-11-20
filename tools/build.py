@@ -55,7 +55,7 @@ REFRESHER = {
         ("S1", "EGPWS / TAWS and CFIT Prevention", "courses/cfit-egpws-refresher/index.html", ""),
         ("S2", "RVSM (B737-800; awareness for Dash 8)", "courses/rvsm-refresher/index.html", ""),
         ("S3", "Company Wind Limitations (OM B, FCOM, AFM)", "courses/wind-limitations/index.html", "Principles — company limits in OM B"),
-        ("S4", "Approaches Authorised by the DACM — Ceiling and Visibility (AOC)", "courses/approach-minima/index.html", "ICAO / EASA — authorisations in the AOC"),
+        ("S4", "Approaches Authorised by the ANAC — Ceiling and Visibility (AOC)", "courses/approach-minima/index.html", "ICAO / EASA — authorisations in the AOC"),
         ("S5", "Allowances for Inoperative Ground Equipment (OM A)", "courses/inop-ground-equipment/index.html", "Principles — company table in OM A"),
         ("S6", "Hot Weather Operations", "courses/hot-weather-operations/index.html", ""),
     ],

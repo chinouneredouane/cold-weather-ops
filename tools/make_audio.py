@@ -63,6 +63,7 @@ SPOKEN = [
     (r"ft/min", "feet per minute"), (r"\bLOC\b", "localizer"), (r"\bG/S\b", "glideslope"), (r"\bGS\b", "glideslope"), (r"\bOM\b", "outer marker"),
     (r"\bPLI\b", "pitch limit indicator"), (r"\bAHRS\b", "A H R S"), (r"\bMFD\b", "M F D"), (r"\bND\b", "navigation display"),
     (r"\bDTPs?\b", "D T P"), (r"\bWOCL\b", "W O C L"), (r"\bFDP\b", "F D P"), (r"\bCFMU\b", "C F M U"), (r"\bIFPS\b", "I F P S"), (r"\bAFTN\b", "A F T N"), (r"\bSITA\b", "seeta"), (r"\bQAN\b", "Q A N"), (r"\bQFE\b", "Q F E"), (r"\bQNH\b", "Q N H"), (r"\bMTOW\b", "maximum take-off weight"), (r"\bFIR\b", "F I R"), (r"\bDAAA\b", "D A A A"), (r"(\d+) h (\d\d)\b", r"\1 hours \2"),
+    (r"\bANAC\b", "A N A C"), (r"www\.anac\.dz", "the ANAC website"),
     (r"\bWILCO\b", "wilco"), (r"\bAFFIRM\b", "affirm"), (r"\bSTANDBY\b", "standby"), (r"\bUNABLE\b", "unable"),
     (r"\s*\(kt\)", " in knots"),
     (r"VS\(n\) = VS × √n", "the stall speed at load factor n equals the normal stall speed times the square root of n"),

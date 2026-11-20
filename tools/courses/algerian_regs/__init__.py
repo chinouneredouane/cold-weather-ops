@@ -1,7 +1,7 @@
 """Algerian Regulations and Duty Time (recurrent, all fleets).
 
 Source: the national "Algerian Regulation Course" presentation provided by the training department (regulation is
-national: laws, decrees, DACM circulars, AIP Algeria GEN 1.7), completed with ICAO references. Duty time rules:
+national: laws, decrees, ANAC circulars, AIP Algeria GEN 1.7), completed with ICAO references. Duty time rules:
 Law 90-11, Law 98-06, Decrees 02-89, 04-414, 10-140. The company OM A (FTL chapter) applies; where it differs,
 the most restrictive rule applies.
 
@@ -374,8 +374,8 @@ CALC = r"""
 """
 
 LESSONS = [
-dict(title="The Algerian Legal Framework and the DACM", minutes=8,
-objectives=["Rank the Algerian legal texts from the Constitution to circulars.", "Describe the role of the civil aviation authority (DACM).", "Locate the ICAO standards in Algerian laws, decrees and circulars."],
+dict(title="The Algerian Legal Framework and the ANAC", minutes=8,
+objectives=["Rank the Algerian legal texts from the Constitution to circulars.", "Describe the role of the civil aviation authority (ANAC).", "Locate the ICAO standards in Algerian laws, decrees and circulars."],
 body="""
 <h2>Algeria and international aviation law</h2>
 <p>The People's Democratic Republic of Algeria applies the ICAO Standards and Recommended Practices (SARPs). The ICAO Annexes are in force <strong>except where a difference is published</strong>. PANS-OPS (Doc 8168 Volumes I and II), the Regional Supplementary Procedures (Doc 7030) and Doc 4444 are also used.</p>
@@ -394,20 +394,21 @@ body="""
   <li><strong>Circular</strong> — the lowest level; in principle it has no legal value of its own and only explains how laws, decrees and orders apply.</li>
 </ul>
 
-<h2>The authority: DACM</h2>
-<p>The <strong>DACM</strong> is the civil aviation authority in Algeria, under the Directorate of Civil Aviation. It:</p>
+<h2>The authority: ANAC</h2>
+<p>The <strong>ANAC</strong> (Agence Nationale de l'Aviation Civile — National Civil Aviation Agency) is the civil aviation authority in Algeria. Texts issued under the former authority keep their original references, for example <em>Instruction 771/DACM</em> or <em>Circular 1830/DACM</em>. The ANAC:</p>
 <ul>
   <li>applies in Algeria the international conventions and treaties signed by the government;</li>
   <li>applies the laws and executes the decrees, and supervises and controls all air transport activities;</li>
   <li>issues and controls flight crew licences, in accordance with ICAO Annex 1 and national regulation.</li>
 </ul>
+<div class="callout info"><span class="label">ANAC website</span><p>Regulations, circulars, forms and news of the Algerian civil aviation authority: <a href="https://www.anac.dz/fr/accueil-2/" target="_blank" rel="noopener">www.anac.dz</a> (opens in a new tab).</p></div>
 <p>The main reference laws are <strong>Laws 98-06, 64-166, 08-02 and 15-14</strong>, together with their decrees. Aeronautical information is published by the AIS (SIA) of Algeria.</p>
 
 <h2>Where the ICAO standards are found</h2>
 """ + icao_map() + """
 <div class="callout"><span class="label">Most restrictive rule</span><p>Algerian laws and decrees also affect foreign operators in Algeria. When the Algerian rule and another regulation (European or foreign) differ, <strong>the most restrictive one applies</strong>.</p></div>
 """,
-takeaways=["Constitution → laws → decrees → orders → circulars.", "ICAO Annexes apply unless a difference is published (AIP GEN 1.7).", "The DACM supervises air transport and issues licences.", "Annex 6 standards: Executive Decrees 09-206/207/208, Instruction 771, Circular 1830."],
+takeaways=["Constitution → laws → decrees → orders → circulars.", "ICAO Annexes apply unless a difference is published (AIP GEN 1.7).", "The ANAC supervises air transport and issues licences.", "Annex 6 standards: Executive Decrees 09-206/207/208, Instruction 771, Circular 1830."],
 check=dict(q="Which text has the lowest level in the Algerian hierarchy?", options=["Decree", "Order (arrêté)", "Circular", "Law"], answer=2, explain="A circular only explains how the higher texts apply."),
 ),
 
@@ -415,7 +416,7 @@ dict(title="Differences from ICAO Standards", minutes=9,
 objectives=["Find where the Algerian differences are published.", "Apply the main differences to Annexes 1, 2, 4, 9, 10, 11, 12, 13 and 15.", "Apply the differences to Doc 4444 and Doc 8400."],
 body="""
 <h2>Where to find them</h2>
-<p>The differences from ICAO SARPs are published in <strong>AIP Algeria GEN 1.7</strong> and in the <strong>Jeppesen Airway Manual</strong> (Air Traffic Control — State Rules and Procedures — Africa). Annex 6 (Operation of Aircraft): no difference.</p>
+<p>The differences from ICAO SARPs are published in <strong>AIP Algeria GEN 1.7</strong> and in the <strong>Jeppesen Airway Manual</strong> (Air Traffic Control — State Rules and Procedures — Africa). Annex 6 (Operation of Aircraft): no difference. The national texts are on the ANAC website: <a href="https://www.anac.dz/fr/accueil-2/" target="_blank" rel="noopener">www.anac.dz</a>.</p>
 
 <h2>Annex 2 — Rules of the Air</h2>
 <div class="table-wrap"><table>
@@ -594,9 +595,9 @@ def Q(lesson, q, options, answer, explain):
 
 
 QUESTIONS = [
-Q(1, "What is the highest legal text in Algeria?", ["The DACM circular", "The Constitution", "The decree", "The law"], 1, "The Constitution, with the international conventions and treaties."),
-Q(1, "Who signs a decree?", ["The Assembly", "The President or the Prime Minister", "The DACM", "The airline"], 1, "A decree is a government act signed by the President or the Prime Minister."),
-Q(1, "Which body is the Algerian civil aviation authority?", ["The AIS", "The DACM", "The airport operator", "ICAO"], 1, "The DACM."),
+Q(1, "What is the highest legal text in Algeria?", ["The ANAC circular", "The Constitution", "The decree", "The law"], 1, "The Constitution, with the international conventions and treaties."),
+Q(1, "Who signs a decree?", ["The Assembly", "The President or the Prime Minister", "The ANAC", "The airline"], 1, "A decree is a government act signed by the President or the Prime Minister."),
+Q(1, "Which body is the Algerian civil aviation authority?", ["The AIS", "The ANAC", "The airport operator", "ICAO"], 1, "The ANAC."),
 Q(1, "When an Algerian rule and a foreign rule differ, which applies?", ["The foreign one", "The Algerian one always", "The most restrictive one", "The operator chooses"], 2, "The most restrictive rule applies."),
 Q(2, "Where are the Algerian differences from ICAO published?", ["AIP Algeria GEN 1.7 (and Jeppesen State Rules)", "Annex 6", "The OM B", "The NOTAM only"], 0, "AIP GEN 1.7 and the Jeppesen Airway Manual."),
 Q(2, "A flight plan is required in Algeria for:", ["IFR flights only", "All IFR flights and any flight over desert or sea", "International flights only", "Night flights only"], 1, "All IFR flights and every flight over desert areas and the sea."),
@@ -626,13 +627,13 @@ Q(7, "Two pilots, 2 legs, check-in 07:00, no WOCL. Latest check-out?", ["19:00",
 
 COURSE = dict(
     slug="algerian-regulations", title="Algerian Regulations and Duty Time", header_title="Algerian Regulations",
-    tagline="Algerian aviation law and the DACM, differences from ICAO, flight procedures and fuel, and the duty time rules — with an interactive duty time calculator and practice exercises.",
+    tagline="Algerian aviation law and the ANAC, differences from ICAO, flight procedures and fuel, and the duty time rules — with an interactive duty time calculator and practice exercises.",
     purpose="Refresh flight crew knowledge of the Algerian regulation applicable to Domestic Airlines operations and train pilots to calculate duty time, WOCL reductions, extensions and rest.",
     audience="All flight crew: Boeing 737-800, Dash 8-Q400 and Dash 8-Q200.",
-    objectives=["Rank the Algerian legal texts and describe the role of the DACM", "Apply the Algerian differences from ICAO", "Apply the flight procedures, night VFR and fuel rules",
+    objectives=["Rank the Algerian legal texts and describe the role of the ANAC", "Apply the Algerian differences from ICAO", "Apply the flight procedures, night VFR and fuel rules",
                 "Calculate the maximum duty time period with legs and WOCL", "Apply extensions, the commander's authority and waivers", "Calculate rest periods", "Use the duty time calculator"],
     icon="people", cert_prefix="ALREG", quiz_count=15, pass_mark=80, group="refresher", season="Winter", finale=None,
-    modules=[dict(title="Algerian Regulation", summary="Legal framework, DACM, differences from ICAO, procedures and fuel", icon="search", lessons=range(1, 4)),
+    modules=[dict(title="Algerian Regulation", summary="Legal framework, ANAC, differences from ICAO, procedures and fuel", icon="search", lessons=range(1, 4)),
              dict(title="Duty Time and Rest", summary="DTP, legs, WOCL, extensions, rest, examples and the interactive calculator", icon="people", lessons=range(4, 8))],
     lessons=LESSONS, questions=QUESTIONS,
     images={1: ("gen", "Airliner over the coast at dusk", "Algeria applies the ICAO standards, with published differences."),

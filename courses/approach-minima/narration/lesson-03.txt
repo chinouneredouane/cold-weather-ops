@@ -23,7 +23,7 @@ Otherwise, go around — and fly the published missed approach.
 
 If visual reference is lost below the minimum, go around immediately.
 
-Company authorisation The approach operations each fleet is authorised for — for example CAT I only, or CAT II for a fleet and crew with the approval — are listed in the AOC operations specifications issued by the DACM . The method and values for minima are in OM A ; the aerodrome minima are in OM C and the charts.
+Company authorisation The approach operations each fleet is authorised for — for example CAT I only, or CAT II for a fleet and crew with the approval — are listed in the AOC operations specifications issued by the ANAC . The method and values for minima are in OM A ; the aerodrome minima are in OM C and the charts.
 
 Key takeaways:
 - Plan with planning minima (higher than landing minima) for destination and alternates.

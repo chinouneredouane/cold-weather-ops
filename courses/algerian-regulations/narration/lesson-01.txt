@@ -1,9 +1,9 @@
 Domestic Airlines — Algerian Regulations and Duty Time
-Lesson 1: The Algerian Legal Framework and the DACM
+Lesson 1: The Algerian Legal Framework and the ANAC
 
 Learning objectives:
 - Rank the Algerian legal texts from the Constitution to circulars.
-- Describe the role of the civil aviation authority (DACM).
+- Describe the role of the civil aviation authority (ANAC).
 - Locate the ICAO standards in Algerian laws, decrees and circulars.
 
 Algeria and international aviation law
@@ -30,15 +30,17 @@ Order (arrêté) — an administrative decision; it can be specific to an activi
 
 Circular — the lowest level; in principle it has no legal value of its own and only explains how laws, decrees and orders apply.
 
-The authority: DACM
+The authority: ANAC
 
-The DACM is the civil aviation authority in Algeria, under the Directorate of Civil Aviation. It:
+The ANAC (Agence Nationale de l'Aviation Civile — National Civil Aviation Agency) is the civil aviation authority in Algeria. Texts issued under the former authority keep their original references, for example Instruction 771/DACM or Circular 1830/DACM . The ANAC:
 
 applies in Algeria the international conventions and treaties signed by the government;
 
 applies the laws and executes the decrees, and supervises and controls all air transport activities;
 
 issues and controls flight crew licences, in accordance with ICAO Annex 1 and national regulation.
+
+ANAC website Regulations, circulars, forms and news of the Algerian civil aviation authority: www.anac.dz (opens in a new tab).
 
 The main reference laws are Laws 98-06, 64-166, 08-02 and 15-14 , together with their decrees. Aeronautical information is published by the AIS (SIA) of Algeria.
 
@@ -49,5 +51,5 @@ Most restrictive rule Algerian laws and decrees also affect foreign operators in
 Key takeaways:
 - Constitution → laws → decrees → orders → circulars.
 - ICAO Annexes apply unless a difference is published (AIP GEN 1.7).
-- The DACM supervises air transport and issues licences.
+- The ANAC supervises air transport and issues licences.
 - Annex 6 standards: Executive Decrees 09-206/207/208, Instruction 771, Circular 1830.

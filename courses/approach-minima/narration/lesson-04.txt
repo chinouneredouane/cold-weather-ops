@@ -26,7 +26,7 @@ Ground equipment failures can also raise the minima — see the next course on i
 
 Fog: know the types (radiation, advection) and their trends for planning.
 
-Company authorisation The approach operations each fleet is authorised for — for example CAT I only, or CAT II for a fleet and crew with the approval — are listed in the AOC operations specifications issued by the DACM . The method and values for minima are in OM A ; the aerodrome minima are in OM C and the charts.
+Company authorisation The approach operations each fleet is authorised for — for example CAT I only, or CAT II for a fleet and crew with the approval — are listed in the AOC operations specifications issued by the ANAC . The method and values for minima are in OM A ; the aerodrome minima are in OM C and the charts.
 
 Key takeaways:
 - CAT II / III: approval, aircraft, crew, procedures, aerodrome LVP and equipment.

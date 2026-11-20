@@ -28,7 +28,7 @@ Read and acknowledge every amendment, temporary revision and operations notice a
 
 If the Operations Manual and the manufacturer's documents differ, follow the company's rule on precedence, normally stated in OM A.
 
-Company documents This lesson explains the international framework. The exact company rules are in the Domestic Airlines Operations Manual and the national regulations of the DACM — always refer to the current edition.
+Company documents This lesson explains the international framework. The exact company rules are in the Domestic Airlines Operations Manual and the national regulations of the ANAC — always refer to the current edition.
 
 Key takeaways:
 - OM A general, OM B aircraft, OM C route and aerodrome, OM D training.

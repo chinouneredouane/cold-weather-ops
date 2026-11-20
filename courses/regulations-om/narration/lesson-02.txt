@@ -30,11 +30,11 @@ GM (guidance material) — explanations.
 
 National regulations
 
-Domestic Airlines operates under the regulations and oversight of its national authority, the DACM , which implement the ICAO SARPs. Many national requirements follow the EASA structure, which is why our Operations Manual uses the same organisation and references. The AOC and its operations specifications define what the company is authorised to do.
+Domestic Airlines operates under the regulations and oversight of its national authority, the ANAC , which implement the ICAO SARPs. Many national requirements follow the EASA structure, which is why our Operations Manual uses the same organisation and references. The AOC and its operations specifications define what the company is authorised to do.
 
-Company documents This lesson explains the international framework. The exact company rules are in the Domestic Airlines Operations Manual and the national regulations of the DACM — always refer to the current edition.
+Company documents This lesson explains the international framework. The exact company rules are in the Domestic Airlines Operations Manual and the national regulations of the ANAC — always refer to the current edition.
 
 Key takeaways:
 - Regulation (EU) 965/2012: Part-ARO, ORO, CAT, SPA (and others).
 - Implementing rules are binding; AMC is one accepted way to comply; GM explains.
-- Domestic Airlines operates under DACM regulations and its AOC / operations specifications.
+- Domestic Airlines operates under ANAC regulations and its AOC / operations specifications.

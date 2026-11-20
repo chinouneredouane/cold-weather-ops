@@ -26,7 +26,7 @@ CAT III DH lower than 100 ft or no DH, and RVR less than 300 m or no RVR limitat
 
 The former subdivisions CAT IIIA, IIIB and IIIC are no longer used: all are now CAT III . Operations below CAT I (CAT II, CAT III), and some operational credits, need a specific approval (EASA SPA.LVO).
 
-Company authorisation The approach operations each fleet is authorised for — for example CAT I only, or CAT II for a fleet and crew with the approval — are listed in the AOC operations specifications issued by the DACM . The method and values for minima are in OM A ; the aerodrome minima are in OM C and the charts.
+Company authorisation The approach operations each fleet is authorised for — for example CAT I only, or CAT II for a fleet and crew with the approval — are listed in the AOC operations specifications issued by the ANAC . The method and values for minima are in OM A ; the aerodrome minima are in OM C and the charts.
 
 Key takeaways:
 - 2D to MDA/H (CDFA); 3D to DA/H.
