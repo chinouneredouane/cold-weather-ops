@@ -55,7 +55,7 @@ TECHNICAL NOTES
     incomplete chain). Please check the certificate so pilots do not see warnings.
 
 LAYOUT (November 2026)
-  All packages use the new slide-player layout (picture, section banner, control bar). Re-upload every
+  All packages use the new slide-player layout (picture, section banner, control bar); the narration follows the slide on screen. Re-upload every
   package on its existing SCORM activity: the pilots' records are kept.
 
 UPDATES
