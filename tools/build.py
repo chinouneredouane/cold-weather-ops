@@ -408,6 +408,8 @@ def build_lesson(course, n):
     bg = (f'<div class="pl-bg" role="img" aria-label="{esc(img[1])}" style="background-image:url(\'../media/images/lesson-{n:02d}.jpg\')"></div>'
           if has_img else '<div class="pl-bg none"></div>')
 
+    cue_file = os.path.join(ROOT, "courses", course["slug"], "media", "audio", f"lesson-{n:02d}.cues.json")
+    cues = json.dumps(json.load(open(cue_file))["cues"]) if os.path.exists(cue_file) else "[]"
     parts = re.split(r"<h2>(.*?)</h2>", L["body"])
     intro = parts[0].strip()
     first = f'<section class="objectives" data-narrate><h2>Learning objectives</h2><ul>{objectives}</ul></section>'
@@ -443,7 +445,7 @@ def build_lesson(course, n):
 </head>
 <body class="player-page" {course_attrs(course, n)}>
 {all_courses_drawer(root)}
-<div class="player" data-prev="{prev_href}">
+<div class="player" data-prev="{prev_href}" data-cues='{cues}'>
   <header class="pl-top">
     <a class="pl-brand" href="../index.html"><img src="{root}assets/img/logo.png" alt="Domestic Airlines" /><b>{esc(course['title'])}</b></a>
     <div class="pl-crumbs" id="plCrumbs"></div>

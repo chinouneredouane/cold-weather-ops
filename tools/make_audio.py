@@ -13,6 +13,7 @@ Usage:
     .tts/bin/python tools/make_audio.py --model kokoro.onnx --voices voices.bin [--voice af_heart] [--lessons 1,2,5] [--jobs 4]
 """
 import argparse
+import json
 import html
 import os
 import re
@@ -152,6 +153,19 @@ def lesson_script(n):
     return to_speech(" ".join(f"<p>{p}</p>" for p in parts))
 
 
+def slide_scripts(n):
+    """Speech text per slide, in the order the slide player shows them (objectives + intro, sections, takeaways)."""
+    if COURSE is None:
+        load_course("cold_weather")
+    L = COURSE["lessons"][n - 1]
+    parts = re.split(r"<h2>(.*?)</h2>", L["body"])
+    out = [to_speech(f"<p>Lesson {n}. {L['title']}.</p><p>Learning objectives. {' '.join(L['objectives'])}</p>{parts[0]}")]
+    for k in range(1, len(parts), 2):
+        out.append(to_speech(f"<p>{parts[k]}</p>{parts[k + 1]}"))
+    out.append(to_speech("<p>Key takeaways. " + " ".join(L["takeaways"]) + "</p>"))
+    return out
+
+
 def sentences(text, limit=300):
     out, cur = [], ""
     for s in re.findall(r"[^.!?]+[.!?]", text):
@@ -177,11 +191,17 @@ def render(args):
     k = Kokoro(model, voices)
     pieces = []
     sr = 24000
-    for chunk in sentences(lesson_script(n)):
-        samples, sr = k.create(chunk, voice=voice, speed=speed, lang="en-us")
-        pieces.append(samples)
-        pieces.append(np.zeros(int(sr * 0.35), dtype=samples.dtype))
+    cues, length = [], 0
+    for text in slide_scripts(n):                    # each slide starts a new sentence group -> exact slide cues
+        cues.append(round(length / sr, 2))
+        for chunk in sentences(text):
+            samples, sr = k.create(chunk, voice=voice, speed=speed, lang="en-us")
+            pieces.append(samples)
+            pieces.append(np.zeros(int(sr * 0.35), dtype=samples.dtype))
+            length += len(samples) + int(sr * 0.35)
     audio = np.concatenate(pieces)
+    with open(os.path.join(outdir, f"lesson-{n:02d}.cues.json"), "w", encoding="utf-8") as f:
+        json.dump(dict(duration=round(len(audio) / sr, 2), cues=cues + [None], source="recording"), f)
     with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as tmp:
         sf.write(tmp.name, audio, sr)
         out = os.path.join(outdir, f"lesson-{n:02d}.mp3")

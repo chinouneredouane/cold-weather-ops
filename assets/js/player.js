@@ -33,12 +33,17 @@
     if (!root) return;
     var slides = Array.prototype.slice.call(root.querySelectorAll('.pl-slide'));
     var panel = $('plPanel'), i = 0, total = slides.length;
-    var prevHref = root.getAttribute('data-prev'), nextHref = root.getAttribute('data-next');
+    var prevHref = root.getAttribute('data-prev');
     var audio = document.querySelector('.audio-block audio');
-    var tts = document.querySelector('[data-tts]'), ttsStop = document.querySelector('[data-tts-stop]');
+    var cues = []; try { cues = JSON.parse(root.getAttribute('data-cues') || '[]'); } catch (e) { cues = []; }
+    var synth = window.speechSynthesis || null;
     var playing = false, muted = false;
 
-    // menu of slides
+    function hasMp3() { return !!audio && audio.style.display !== 'none'; }
+    function synced() { return hasMp3() && cues.length === total; }
+    function cue(k) { return k >= 0 && k < cues.length ? cues[k] : null; }
+
+    // ---- slide menu
     var list = $('plSlides');
     if (list) {
       list.innerHTML = slides.map(function (s, k) { return '<div class="pl-item" data-k="' + k + '">' + (k + 1) + '. ' + s.getAttribute('data-title') + '</div>'; }).join('');
@@ -55,7 +60,38 @@
       c.innerHTML = parts.join('<i>|</i>');
     }
 
-    function show(k) {
+    // ---- narration that follows the slide
+    function seek(t) {
+      if (!audio) return;
+      if (audio.readyState > 0) { try { audio.currentTime = t; } catch (e) { /* ignore */ } }
+      else { var f = function () { try { audio.currentTime = t; } catch (e) { /* ignore */ } audio.removeEventListener('loadedmetadata', f); }; audio.addEventListener('loadedmetadata', f); }
+    }
+    function slideText(k) {
+      var c = slides[k].cloneNode(true);
+      c.querySelectorAll('figure, .table-wrap, table, .kc, .next-up, script, style, .dtcalc').forEach(function (x) { x.remove(); });
+      return (c.textContent || '').replace(/\s+/g, ' ').trim();
+    }
+    function speak(k) {
+      if (!synth) return;
+      synth.cancel();
+      var text = slideText(k);
+      if (!text || muted) return;
+      var u = new SpeechSynthesisUtterance(text);
+      u.lang = 'en-GB'; u.rate = 1;
+      u.onend = function () { if (playing && i === k) { if (k < total - 1) show(k + 1); else setPlay(false); } };
+      synth.speak(u);
+    }
+    function follow() {                       // called after the learner changes slide
+      if (!playing) return;
+      if (hasMp3()) {
+        if (!synced()) return;                // no cues: keep the lesson narration running
+        var t = cue(i);
+        if (t === null) { audio.pause(); setPlay(false); return; }   // knowledge check: no narration
+        seek(t); audio.play();
+      } else { speak(i); }
+    }
+
+    function show(k, fromAudio) {
       i = Math.max(0, Math.min(total - 1, k));
       slides.forEach(function (s, n) { s.classList.toggle('on', n === i); });
       panel.classList.toggle('tall', !!slides[i].querySelector('figure, .table-wrap, table, .kc, .dtcalc'));
@@ -65,6 +101,7 @@
       document.querySelectorAll('#plSlides .pl-item').forEach(function (e, n) { e.classList.toggle('cur', n === i); });
       crumbs();
       try { history.replaceState(null, '', '#s' + (i + 1)); } catch (e) { /* ignore */ }
+      if (!fromAudio) follow();
     }
 
     function go(d) {
@@ -79,23 +116,44 @@
       var b = $('plPlay'); b.classList.toggle('on', on); b.innerHTML = on ? ICON_PAUSE : ICON_PLAY;
       b.setAttribute('aria-label', on ? 'Pause narration' : 'Play narration');
     }
-    function hasMp3() { return audio && audio.style.display !== 'none'; }
+
     $('plPlay').addEventListener('click', function () {
-      if (hasMp3()) {
-        if (audio.paused) { audio.muted = muted; audio.play(); setPlay(true); } else { audio.pause(); setPlay(false); }
-      } else if (tts && tts.style.display !== 'none') {
-        if (!playing) { tts.click(); setPlay(true); } else { if (ttsStop) ttsStop.click(); setPlay(false); }
+      if (playing) {
+        setPlay(false);
+        if (hasMp3()) audio.pause(); else if (synth) synth.cancel();
+        return;
       }
+      setPlay(true);
+      if (hasMp3()) {
+        audio.muted = muted;
+        if (synced()) {
+          var a = cue(i), b = cue(i + 1);
+          if (a === null) { show(0); return; }                         // on the knowledge check: start the lesson again
+          if (audio.currentTime < a - 0.3 || (b !== null && audio.currentTime >= b)) seek(a);
+        }
+        audio.play();
+      } else { speak(i); }
     });
-    if (audio) audio.addEventListener('ended', function () { setPlay(false); });
+    if (audio) {
+      audio.addEventListener('timeupdate', function () {
+        if (!playing || !synced()) return;
+        var nxt = cue(i + 1);
+        if (nxt !== null && audio.currentTime >= nxt - 0.05) show(i + 1, true);   // slides follow the narration
+      });
+      audio.addEventListener('ended', function () {
+        setPlay(false);
+        if (synced()) show(total - 1, true);                           // end of narration: knowledge check
+      });
+    }
     $('plMute').addEventListener('click', function () {
       muted = !muted; this.classList.toggle('on', muted);
       if (audio) audio.muted = muted;
-      if (muted && !hasMp3() && playing && ttsStop) { ttsStop.click(); setPlay(false); }
+      if (muted && !hasMp3() && synth) synth.cancel();
+      if (!muted && playing && !hasMp3()) speak(i);
     });
     $('plReplay').addEventListener('click', function () {
+      if (hasMp3()) seek(0);
       show(0);
-      if (hasMp3()) { audio.currentTime = 0; if (playing) audio.play(); }
     });
     $('plPrev').addEventListener('click', function () { go(-1); });
     $('plNext').addEventListener('click', function () { go(1); });
@@ -105,15 +163,15 @@
       if (e.key === 'ArrowRight' || e.key === 'PageDown') go(1);
       if (e.key === 'ArrowLeft' || e.key === 'PageUp') go(-1);
     });
-    // swipe on touch screens
     var x0 = null;
     panel.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; }, { passive: true });
     panel.addEventListener('touchend', function (e) {
       if (x0 === null) return; var dx = e.changedTouches[0].clientX - x0; x0 = null;
       if (Math.abs(dx) > 70) go(dx < 0 ? 1 : -1);
     });
+    window.addEventListener('pagehide', function () { if (synth) synth.cancel(); });
     var m = /#s(\d+)/.exec(location.hash);
-    show(m ? (+m[1] - 1) : 0);
+    show(m ? (+m[1] - 1) : 0, true);
   }
 
   document.addEventListener('DOMContentLoaded', function () { setupDrawers(); setupPlayer(); });
