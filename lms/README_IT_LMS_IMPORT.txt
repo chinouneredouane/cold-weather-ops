@@ -5,7 +5,7 @@ SCORM 1.2 PACKAGES FOR THE COMPANY LMS — INSTRUCTIONS FOR IT
 CONTENTS OF THIS ZIP
   15 course packages (SCORM 1.2), one .zip per course — do NOT unzip them:
 
-   1. Cold Weather Operations                    30 lessons   pass mark 80%    56.7 MB   cold-weather-operations-scorm12.zip
+   1. Cold Weather Operations                    30 lessons   pass mark 80%    56.8 MB   cold-weather-operations-scorm12.zip
    2. Upset Prevention and Recovery              28 lessons   pass mark 80%    58.6 MB   upset-prevention-recovery-scorm12.zip
    3. RVSM Refresher                              6 lessons   pass mark 80%     7.4 MB   rvsm-refresher-scorm12.zip
    4. CFIT and EGPWS Refresher                    9 lessons   pass mark 80%    11.1 MB   cfit-egpws-refresher-scorm12.zip
@@ -15,7 +15,7 @@ CONTENTS OF THIS ZIP
    8. PBN Refresher                               5 lessons   pass mark 80%     4.8 MB   pbn-refresher-scorm12.zip
    9. Operations Manual and Regulations           4 lessons   pass mark 80%     4.1 MB   regulations-om-scorm12.zip
   10. MEL Refresher                               4 lessons   pass mark 80%     3.7 MB   mel-refresher-scorm12.zip
-  11. Wind Limitations                            3 lessons   pass mark 80%     2.5 MB   wind-limitations-scorm12.zip
+  11. Wind Limitations                            3 lessons   pass mark 80%     2.6 MB   wind-limitations-scorm12.zip
   12. Approach Operations and Minima              4 lessons   pass mark 80%     3.9 MB   approach-minima-scorm12.zip
   13. Inoperative Ground Equipment                3 lessons   pass mark 80%     2.5 MB   inop-ground-equipment-scorm12.zip
   14. Low Visibility Operations (LVO) — CAT IIIA          7 lessons   pass mark 80%   13.8 MB   lvo-scorm12.zip  (B737-800 crews)
@@ -53,6 +53,10 @@ TECHNICAL NOTES
   - Also note: the LMS address https://talexam.tassiliairlines.com presented an HTTPS
     certificate that could not be verified from outside (self-signed, expired or
     incomplete chain). Please check the certificate so pilots do not see warnings.
+
+LAYOUT (November 2026)
+  All packages use the new slide-player layout (picture, section banner, control bar). Re-upload every
+  package on its existing SCORM activity: the pilots' records are kept.
 
 UPDATES
   New or updated courses will be delivered as new packages with the same names.

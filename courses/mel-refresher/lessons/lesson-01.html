@@ -8,53 +8,24 @@
   <meta name="theme-color" content="#125a2b" />
   <link rel="icon" type="image/png" href="../../../assets/img/logo.png" />
   <link rel="stylesheet" href="../../../assets/css/academy.css" />
+  <link rel="stylesheet" href="../../../assets/css/player.css" />
 </head>
-<body data-course="mel-refresher" data-total="4" data-lesson="1">
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="topbar">
-    <div class="brand">
-      <a href="../index.html"><img src="../../../assets/img/logo.png" alt="Domestic Airlines Logo" class="logo" /></a>
-      <div class="brand-text">
-        <div class="ar">الخطوط الجوية الداخلية</div>
-        <div class="en">DOMESTIC AIRLINES — MEL Refresher</div>
-      </div>
-    </div>
-    <nav aria-label="Main">
-      <a href="../index.html">Home</a>
-      <a href="../quiz.html">Quiz</a>
-    </nav>
+<body class="player-page" data-course="mel-refresher" data-total="4" data-lesson="1">
+<button type="button" class="alltab" id="allBtn" title="All courses" aria-label="All courses"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h7v7H4zm9 0h7v7h-7zM4 13h7v7H4zm9 0h7v7h-7z"/></svg></button>
+<div class="pl-veil" id="plVeil"></div>
+<aside class="pl-drawer" id="plAll" aria-label="All courses"><header>All courses <button type="button" data-pl-close aria-label="Close">×</button></header><nav><a href="../../../index.html"><strong>Academy home</strong></a><a href="../../../courses/cold-weather-operations/index.html">Cold Weather Operations</a><a href="../../../courses/upset-prevention-recovery/index.html">Upset Prevention and Recovery</a><a href="../../../courses/rvsm-refresher/index.html">RVSM Refresher</a><a href="../../../courses/cfit-egpws-refresher/index.html">CFIT and EGPWS Refresher</a><a href="../../../courses/hot-weather-operations/index.html">Hot Weather Operations</a><a href="../../../courses/cpdlc/index.html">CPDLC — Controller-Pilot Data Link</a><a href="../../../courses/windshear-thunderstorm/index.html">Windshear and Thunderstorm Avoidance</a><a href="../../../courses/pbn-refresher/index.html">PBN Refresher</a><a href="../../../courses/regulations-om/index.html">Operations Manual and Regulations</a><a href="../../../courses/mel-refresher/index.html">MEL Refresher</a><a href="../../../courses/wind-limitations/index.html">Wind Limitations</a><a href="../../../courses/approach-minima/index.html">Approach Operations and Minima</a><a href="../../../courses/inop-ground-equipment/index.html">Inoperative Ground Equipment</a><a href="../../../courses/lvo/index.html">Low Visibility Operations (LVO) — CAT IIIA</a><a href="../../../courses/algerian-regulations/index.html">Algerian Regulations and Duty Time</a><a href="../../../courses/command-upgrade/index.html">Command Upgrade</a><a href="../../../lms/index.html">LMS packages (SCORM)</a></nav></aside>
+<div class="player" data-prev="../index.html">
+  <header class="pl-top">
+    <a class="pl-brand" href="../index.html"><img src="../../../assets/img/logo.png" alt="Domestic Airlines" /><b>MEL Refresher</b></a>
+    <div class="pl-crumbs" id="plCrumbs"></div>
   </header>
-  <div class="progress" aria-hidden="true"><div id="progressBar"></div></div>
-  <main id="main">
-
-    <div class="lesson-layout">
-      <div>
-        <button class="btn ghost sidebar-toggle" aria-controls="courseContents" aria-expanded="false">Show course contents</button>
-        <nav class="card sidebar" id="courseContents" aria-label="Course contents"><h2>Module 1 · MEL Principles</h2><ul><li><a href="lesson-01.html" data-lesson-link="1" aria-current="page"><span class="state" aria-hidden="true"></span><span>01. MMEL, MEL and CDL</span></a></li><li><a href="lesson-02.html" data-lesson-link="2"><span class="state" aria-hidden="true"></span><span>02. Reading an MEL Item</span></a></li></ul><h2>Module 2 · Using the MEL</h2><ul><li><a href="lesson-03.html" data-lesson-link="3"><span class="state" aria-hidden="true"></span><span>03. Using the MEL for Dispatch</span></a></li><li><a href="lesson-04.html" data-lesson-link="4"><span class="state" aria-hidden="true"></span><span>04. Failures After Dispatch and Good Practice</span></a></li></ul></nav>
-      </div>
-      <article class="lesson">
-        <header class="lesson-head">
-          <svg viewBox="0 0 100 100" class="art" aria-hidden="true" focusable="false"><circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" stroke-width="7"/><path d="M50 8v14M50 78v14M8 50h14M78 50h14M20 20l10 10M70 70l10 10M80 20L70 30M30 70L20 80" stroke="currentColor" stroke-width="8" stroke-linecap="round"/><circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="6"/></svg>
-          <div class="eyebrow">Module 1 · MEL Principles</div>
-          <h1>Lesson 01: MMEL, MEL and CDL</h1>
-          <div class="meta"><span>Lesson 1 of 4</span><span>≈ 6 min</span><a class="pdf-link" href="../pdf/lesson-01.pdf" download>⬇ Download PDF</a></div>
-        </header>
-        <div class="card lesson-body">
-          <div class="audio-block">
-            <span class="label">Lesson narration</span>
-            <audio controls preload="metadata" style="display:none"><source src="../media/audio/lesson-01.mp3" type="audio/mpeg"></audio>
-            <button type="button" class="btn primary" data-tts style="display:none">Listen</button>
-            <button type="button" class="btn ghost" data-tts-stop style="display:none">Stop</button>
-            <div class="audio-status" aria-live="polite">Checking for narration…</div>
-          </div>
-          <section class="objectives" data-narrate>
-            <h2>Learning objectives</h2>
-            <ul><li>Explain the purpose of the MMEL and the MEL.</li><li>Describe how the MEL is produced and approved.</li><li>Distinguish the MEL from the CDL.</li></ul>
-          </section>
-          <figure class="lesson-figure"><img src="../media/images/lesson-01.jpg" alt="Airliner on the apron before departure" loading="lazy" decoding="async"><figcaption>The MEL allows safe dispatch with some equipment inoperative.</figcaption></figure>
-          <div data-narrate>
-
-<h2>Why a MEL?</h2>
+  <main class="pl-stage" id="main">
+    <div class="pl-bg" role="img" aria-label="Airliner on the apron before departure" style="background-image:url('../media/images/lesson-01.jpg')"></div><div class="pl-shade"></div>
+    <div class="pl-tag">Lesson 1 of 4 — MMEL, MEL and CDL</div>
+    <div class="lesson-head pl-hidden"><h1>Lesson 01: MMEL, MEL and CDL</h1></div>
+    <div class="pl-panel lesson-body" id="plPanel">
+<div class="pl-slide" data-title="Learning objectives"><section class="objectives" data-narrate><h2>Learning objectives</h2><ul><li>Explain the purpose of the MMEL and the MEL.</li><li>Describe how the MEL is produced and approved.</li><li>Distinguish the MEL from the CDL.</li></ul></section><p class="muted">The MEL allows safe dispatch with some equipment inoperative.</p></div>
+<div class="pl-slide" data-title="Why a MEL?"><div data-narrate><h2>Why a MEL?</h2>
 <p>A transport aeroplane has redundant systems. The <strong>Minimum Equipment List (MEL)</strong> allows the operator to dispatch an aircraft with certain equipment inoperative, for a limited time and under defined conditions, while keeping an acceptable level of safety (ICAO Annex 6 Part I; EASA ORO.MLR.105).</p>
 <ul>
   <li>The <strong>MMEL</strong> (Master MEL) is produced by the aircraft manufacturer and approved by the State of design (for EASA, as part of the operational suitability data).</li>
@@ -62,35 +33,55 @@
   <li>Equipment <strong>not listed</strong> in the MEL that is required for the flight must be operative — otherwise no dispatch (unless a specific procedure applies).</li>
 </ul>
 
-<h2>CDL</h2>
+</div></div>
+<div class="pl-slide" data-title="CDL"><div data-narrate><h2>CDL</h2>
 <p>The <strong>Configuration Deviation List (CDL)</strong>, part of the AFM, allows dispatch with certain external parts missing (for example a panel, fairing or static discharger), usually with performance penalties.</p>
 
-<h2>When the MEL applies</h2>
+</div></div>
+<div class="pl-slide" data-title="When the MEL applies"><div data-narrate><h2>When the MEL applies</h2>
 <p>The MEL applies to dispatch — up to the point defined in the MEL preamble (commonly the start of the flight or the take-off roll). After that point, a failure is handled with the <strong>QRH / FCOM / AOM</strong> non-normal procedures, and the commander decides on continuation using the AFM and good airmanship.</p>
-
-          </div>
-          <section class="takeaways" data-narrate>
-            <h2>Key takeaways</h2>
-            <ul><li>MMEL from the manufacturer; MEL from the operator — never less restrictive.</li><li>Required equipment not in the MEL must work.</li><li>CDL covers missing external parts, often with performance penalties.</li><li>After the point defined in the preamble, use the QRH, not the MEL.</li></ul>
-          </section>
-          <section class="kc" data-answer="1" data-explain="The MEL must not be less restrictive than the MMEL.">
-            <h2>Knowledge check</h2>
-            <p class="q">Can an operator&#x27;s MEL be less restrictive than the MMEL?</p>
-            <div class="opts"><button type="button" class="opt" aria-pressed="false">Yes</button><button type="button" class="opt" aria-pressed="false">No</button><button type="button" class="opt" aria-pressed="false">Only for short flights</button><button type="button" class="opt" aria-pressed="false">Only with captain&#x27;s approval</button></div>
-            <div class="fb" aria-live="polite"></div>
-          </section>
-          <div class="lesson-end"></div>
-        </div>
-        <nav class="lesson-nav" aria-label="Lesson navigation"><a class="btn" href="../index.html">◀ Course home</a><a class="btn primary" id="nextLesson" href="lesson-02.html">Next ▶<small>Reading an MEL Item</small></a></nav>
-      </article>
+</div></div>
+<div class="pl-slide" data-title="Key takeaways"><section class="takeaways" data-narrate><h2>Key takeaways</h2><ul><li>MMEL from the manufacturer; MEL from the operator — never less restrictive.</li><li>Required equipment not in the MEL must work.</li><li>CDL covers missing external parts, often with performance penalties.</li><li>After the point defined in the preamble, use the QRH, not the MEL.</li></ul></section></div>
+<div class="pl-slide" data-title="Knowledge check"><section class="kc" data-answer="1" data-explain="The MEL must not be less restrictive than the MMEL.">
+<h2>Knowledge check</h2><p class="q">Can an operator&#x27;s MEL be less restrictive than the MMEL?</p><div class="opts"><button type="button" class="opt" aria-pressed="false">Yes</button><button type="button" class="opt" aria-pressed="false">No</button><button type="button" class="opt" aria-pressed="false">Only for short flights</button><button type="button" class="opt" aria-pressed="false">Only with captain&#x27;s approval</button></div><div class="fb" aria-live="polite"></div></section>
+<div class="next-up"><a class="btn primary" id="nextLesson" href="lesson-02.html">Next lesson: Reading an MEL Item ▶</a></div><div class="lesson-end"></div></div>
     </div>
+    <div class="pl-duration">Duration: 6 min</div>
+    <div class="pl-progress"><i id="plProg"></i></div>
   </main>
-  <footer class="bottombar">
-    <img src="../../../assets/img/logo.png" alt="Domestic Airlines Logo" class="logo small" />
-    <div class="copy">&copy; 2026 Domestic Airlines — Training</div>
-    <a href="../../../index.html">All courses</a>
-    <p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p>
+  <footer class="pl-bar">
+    <div class="pl-fill">Module 1 · MEL Principles</div>
+    <div class="pl-ctrl">
+      <button type="button" id="plReplay" title="Restart lesson" aria-label="Restart lesson"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a5 5 0 1 1-5 5H5a7 7 0 1 0 7-7z"/></svg></button>
+      <button type="button" id="plMenu" title="Lesson menu" aria-label="Lesson menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg></button>
+      <a href="../index.html" title="Course home" aria-label="Course home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 8h-3v9h-5v-6h-2v6H6v-9H3z"/></svg></a>
+      <button type="button" id="plPrev" title="Previous" aria-label="Previous"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 5l-7 7 7 7-1.6 1.6L5.3 12l8.6-8.6z"/></svg></button>
+      <span class="pl-count" id="plCount"></span>
+      <button type="button" id="plNext" title="Next" aria-label="Next"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 5l7 7-7 7 1.6 1.6 8.6-8.6-8.6-8.6z"/></svg></button>
+      <span class="pl-sep"></span>
+      <button type="button" id="plPlay" title="Play narration" aria-label="Play narration"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+      <button type="button" id="plMute" title="Sound on / off" aria-label="Sound on / off"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9zm12.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/></svg></button>
+      <a href="../../../index.html" title="Close — academy home" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.4 5L12 10.6 17.6 5 19 6.4 13.4 12 19 17.6 17.6 19 12 13.4 6.4 19 5 17.6 10.6 12 5 6.4z"/></svg></a>
+    </div>
   </footer>
+</div>
+<aside class="pl-drawer right" id="plMenuDrawer" aria-label="Lesson menu"><header>Lesson 1 — menu <button type="button" data-pl-close aria-label="Close">×</button></header>
+  <nav>
+    <div class="pl-grp">This lesson</div><div id="plSlides"></div>
+    <a href="../pdf/lesson-01.pdf" download><svg style="width:16px;height:16px;vertical-align:-3px;fill:#1d7a3e" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v10.2l3.6-3.6L17 11l-5 5-5-5 1.4-1.4 3.6 3.6V3zM5 19h14v2H5z"/></svg> Download lesson PDF</a>
+    <a href="../quiz.html">Final quiz</a>
+    <div class="pl-grp">All lessons</div>
+    <nav class="card sidebar" id="courseContents" aria-label="Course contents"><h2>Module 1 · MEL Principles</h2><ul><li><a href="lesson-01.html" data-lesson-link="1" aria-current="page"><span class="state" aria-hidden="true"></span><span>01. MMEL, MEL and CDL</span></a></li><li><a href="lesson-02.html" data-lesson-link="2"><span class="state" aria-hidden="true"></span><span>02. Reading an MEL Item</span></a></li></ul><h2>Module 2 · Using the MEL</h2><ul><li><a href="lesson-03.html" data-lesson-link="3"><span class="state" aria-hidden="true"></span><span>03. Using the MEL for Dispatch</span></a></li><li><a href="lesson-04.html" data-lesson-link="4"><span class="state" aria-hidden="true"></span><span>04. Failures After Dispatch and Good Practice</span></a></li></ul></nav>
+  </nav>
+</aside>
+<div class="audio-block pl-hidden">
+  <span class="label">Lesson narration</span>
+  <audio preload="metadata" style="display:none"><source src="../media/audio/lesson-01.mp3" type="audio/mpeg"></audio>
+  <button type="button" data-tts style="display:none">Listen</button>
+  <button type="button" data-tts-stop style="display:none">Stop</button>
+  <div class="audio-status" aria-live="polite"></div>
+</div>
 <script src="../../../assets/js/course.js"></script>
+<script src="../../../assets/js/player.js"></script>
 </body>
 </html>

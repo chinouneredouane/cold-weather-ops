@@ -8,92 +8,83 @@
   <meta name="theme-color" content="#125a2b" />
   <link rel="icon" type="image/png" href="../../../assets/img/logo.png" />
   <link rel="stylesheet" href="../../../assets/css/academy.css" />
+  <link rel="stylesheet" href="../../../assets/css/player.css" />
 </head>
-<body data-course="approach-minima" data-total="4" data-lesson="4">
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="topbar">
-    <div class="brand">
-      <a href="../index.html"><img src="../../../assets/img/logo.png" alt="Domestic Airlines Logo" class="logo" /></a>
-      <div class="brand-text">
-        <div class="ar">الخطوط الجوية الداخلية</div>
-        <div class="en">DOMESTIC AIRLINES — Approach Operations and Minima</div>
-      </div>
-    </div>
-    <nav aria-label="Main">
-      <a href="../index.html">Home</a>
-      <a href="../quiz.html">Quiz</a>
-    </nav>
+<body class="player-page" data-course="approach-minima" data-total="4" data-lesson="4">
+<button type="button" class="alltab" id="allBtn" title="All courses" aria-label="All courses"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h7v7H4zm9 0h7v7h-7zM4 13h7v7H4zm9 0h7v7h-7z"/></svg></button>
+<div class="pl-veil" id="plVeil"></div>
+<aside class="pl-drawer" id="plAll" aria-label="All courses"><header>All courses <button type="button" data-pl-close aria-label="Close">×</button></header><nav><a href="../../../index.html"><strong>Academy home</strong></a><a href="../../../courses/cold-weather-operations/index.html">Cold Weather Operations</a><a href="../../../courses/upset-prevention-recovery/index.html">Upset Prevention and Recovery</a><a href="../../../courses/rvsm-refresher/index.html">RVSM Refresher</a><a href="../../../courses/cfit-egpws-refresher/index.html">CFIT and EGPWS Refresher</a><a href="../../../courses/hot-weather-operations/index.html">Hot Weather Operations</a><a href="../../../courses/cpdlc/index.html">CPDLC — Controller-Pilot Data Link</a><a href="../../../courses/windshear-thunderstorm/index.html">Windshear and Thunderstorm Avoidance</a><a href="../../../courses/pbn-refresher/index.html">PBN Refresher</a><a href="../../../courses/regulations-om/index.html">Operations Manual and Regulations</a><a href="../../../courses/mel-refresher/index.html">MEL Refresher</a><a href="../../../courses/wind-limitations/index.html">Wind Limitations</a><a href="../../../courses/approach-minima/index.html">Approach Operations and Minima</a><a href="../../../courses/inop-ground-equipment/index.html">Inoperative Ground Equipment</a><a href="../../../courses/lvo/index.html">Low Visibility Operations (LVO) — CAT IIIA</a><a href="../../../courses/algerian-regulations/index.html">Algerian Regulations and Duty Time</a><a href="../../../courses/command-upgrade/index.html">Command Upgrade</a><a href="../../../lms/index.html">LMS packages (SCORM)</a></nav></aside>
+<div class="player" data-prev="lesson-03.html">
+  <header class="pl-top">
+    <a class="pl-brand" href="../index.html"><img src="../../../assets/img/logo.png" alt="Domestic Airlines" /><b>Approach Operations and Minima</b></a>
+    <div class="pl-crumbs" id="plCrumbs"></div>
   </header>
-  <div class="progress" aria-hidden="true"><div id="progressBar"></div></div>
-  <main id="main">
-
-    <div class="lesson-layout">
-      <div>
-        <button class="btn ghost sidebar-toggle" aria-controls="courseContents" aria-expanded="false">Show course contents</button>
-        <nav class="card sidebar" id="courseContents" aria-label="Course contents"><h2>Module 1 · Approach Operations</h2><ul><li><a href="lesson-01.html" data-lesson-link="1"><span class="state" aria-hidden="true"></span><span>01. Classification of Instrument Approach Operations</span></a></li><li><a href="lesson-02.html" data-lesson-link="2"><span class="state" aria-hidden="true"></span><span>02. Aerodrome Operating Minima</span></a></li><li><a href="lesson-03.html" data-lesson-link="3"><span class="state" aria-hidden="true"></span><span>03. Planning Minima and the Approach Ban</span></a></li><li><a href="lesson-04.html" data-lesson-link="4" aria-current="page"><span class="state" aria-hidden="true"></span><span>04. Low-Visibility Operations Overview</span></a></li></ul></nav>
-      </div>
-      <article class="lesson">
-        <header class="lesson-head">
-          <svg viewBox="0 0 100 100" class="art" aria-hidden="true" focusable="false"><path d="M34 92L44 8h12l10 84z" fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/><path d="M50 20v10M50 42v10M50 64v10" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg>
-          <div class="eyebrow">Module 1 · Approach Operations</div>
-          <h1>Lesson 04: Low-Visibility Operations Overview</h1>
-          <div class="meta"><span>Lesson 4 of 4</span><span>≈ 6 min</span><a class="pdf-link" href="../pdf/lesson-04.pdf" download>⬇ Download PDF</a></div>
-        </header>
-        <div class="card lesson-body">
-          <div class="audio-block">
-            <span class="label">Lesson narration</span>
-            <audio controls preload="metadata" style="display:none"><source src="../media/audio/lesson-04.mp3" type="audio/mpeg"></audio>
-            <button type="button" class="btn primary" data-tts style="display:none">Listen</button>
-            <button type="button" class="btn ghost" data-tts-stop style="display:none">Stop</button>
-            <div class="audio-status" aria-live="polite">Checking for narration…</div>
-          </div>
-          <section class="objectives" data-narrate>
-            <h2>Learning objectives</h2>
-            <ul><li>Describe the requirements for CAT II and CAT III operations.</li><li>Explain low-visibility procedures at aerodromes.</li><li>Recognise when LVO capability is lost.</li></ul>
-          </section>
-          <figure class="lesson-figure"><img src="../media/images/lesson-04.jpg" alt="Airliner landing in fog" loading="lazy" decoding="async"><figcaption>CAT II and III need a specific approval.</figcaption></figure>
-          <div data-narrate>
-
-<h2>Requirements</h2>
+  <main class="pl-stage" id="main">
+    <div class="pl-bg" role="img" aria-label="Airliner landing in fog" style="background-image:url('../media/images/lesson-04.jpg')"></div><div class="pl-shade"></div>
+    <div class="pl-tag">Lesson 4 of 4 — Low-Visibility Operations Overview</div>
+    <div class="lesson-head pl-hidden"><h1>Lesson 04: Low-Visibility Operations Overview</h1></div>
+    <div class="pl-panel lesson-body" id="plPanel">
+<div class="pl-slide" data-title="Learning objectives"><section class="objectives" data-narrate><h2>Learning objectives</h2><ul><li>Describe the requirements for CAT II and CAT III operations.</li><li>Explain low-visibility procedures at aerodromes.</li><li>Recognise when LVO capability is lost.</li></ul></section><p class="muted">CAT II and III need a specific approval.</p></div>
+<div class="pl-slide" data-title="Requirements"><div data-narrate><h2>Requirements</h2>
 <ul>
   <li>A <strong>specific approval</strong> (SPA.LVO) for the operator, with the aircraft certified, the crew trained and qualified, and procedures in the Operations Manual.</li>
   <li>The aerodrome with <strong>low-visibility procedures (LVP)</strong> in force, and the required ground equipment serviceable.</li>
   <li>The aircraft equipment required for the category serviceable — check the MEL and the AFM.</li>
 </ul>
 
-<h2>Low-visibility procedures</h2>
+</div></div>
+<div class="pl-slide" data-title="Low-visibility procedures"><div data-narrate><h2>Low-visibility procedures</h2>
 <p>When LVP are in force, ATC protects the ILS sensitive and critical areas, increases spacing and uses specific taxi routes. Low-visibility take-off (LVTO) below the standard take-off minima also needs approval and suitable runway lighting.</p>
 
-<h2>Loss of capability</h2>
+</div></div>
+<div class="pl-slide" data-title="Loss of capability"><div data-narrate><h2>Loss of capability</h2>
 <ul>
   <li>Aircraft failures (autopilot channels, autothrottle, displays) can downgrade the approach category — the FCOM / AOM gives the effect.</li>
   <li>Ground equipment failures can also raise the minima — see the next course on inoperative ground equipment.</li>
   <li>Fog: know the types (radiation, advection) and their trends for planning.</li>
 </ul>
-<div class="callout caution"><span class="label">Company authorisation</span><p>The approach operations each fleet is authorised for — for example CAT I only, or CAT II for a fleet and crew with the approval — are listed in the <strong>AOC operations specifications</strong> issued by the <strong>ANAC</strong>. The method and values for minima are in <strong>OM A</strong>; the aerodrome minima are in <strong>OM C</strong> and the charts.</p></div>
-          </div>
-          <section class="takeaways" data-narrate>
-            <h2>Key takeaways</h2>
-            <ul><li>CAT II / III: approval, aircraft, crew, procedures, aerodrome LVP and equipment.</li><li>LVP protect ILS areas and increase spacing.</li><li>Aircraft or ground failures can downgrade the category.</li></ul>
-          </section>
-          <section class="kc" data-answer="3" data-explain="A weather radar image is not a requirement.">
-            <h2>Knowledge check</h2>
-            <p class="q">Which is NOT required to fly a CAT II approach?</p>
-            <div class="opts"><button type="button" class="opt" aria-pressed="false">Operator specific approval</button><button type="button" class="opt" aria-pressed="false">LVP in force at the aerodrome</button><button type="button" class="opt" aria-pressed="false">Trained and qualified crew</button><button type="button" class="opt" aria-pressed="false">A weather radar image of the fog</button></div>
-            <div class="fb" aria-live="polite"></div>
-          </section>
-          <div class="lesson-end"></div>
-        </div>
-        <nav class="lesson-nav" aria-label="Lesson navigation"><a class="btn" href="lesson-03.html">◀ Previous<small>Planning Minima and the Approach Ban</small></a><a class="btn primary" id="nextLesson" href="../quiz.html">Take the Final Quiz ▶</a></nav>
-      </article>
+<div class="callout caution"><span class="label">Company authorisation</span><p>The approach operations each fleet is authorised for — for example CAT I only, or CAT II for a fleet and crew with the approval — are listed in the <strong>AOC operations specifications</strong> issued by the <strong>ANAC</strong>. The method and values for minima are in <strong>OM A</strong>; the aerodrome minima are in <strong>OM C</strong> and the charts.</p></div></div></div>
+<div class="pl-slide" data-title="Key takeaways"><section class="takeaways" data-narrate><h2>Key takeaways</h2><ul><li>CAT II / III: approval, aircraft, crew, procedures, aerodrome LVP and equipment.</li><li>LVP protect ILS areas and increase spacing.</li><li>Aircraft or ground failures can downgrade the category.</li></ul></section></div>
+<div class="pl-slide" data-title="Knowledge check"><section class="kc" data-answer="3" data-explain="A weather radar image is not a requirement.">
+<h2>Knowledge check</h2><p class="q">Which is NOT required to fly a CAT II approach?</p><div class="opts"><button type="button" class="opt" aria-pressed="false">Operator specific approval</button><button type="button" class="opt" aria-pressed="false">LVP in force at the aerodrome</button><button type="button" class="opt" aria-pressed="false">Trained and qualified crew</button><button type="button" class="opt" aria-pressed="false">A weather radar image of the fog</button></div><div class="fb" aria-live="polite"></div></section>
+<div class="next-up"><a class="btn primary" id="nextLesson" href="../quiz.html">Take the Final Quiz ▶</a></div><div class="lesson-end"></div></div>
     </div>
+    <div class="pl-duration">Duration: 6 min</div>
+    <div class="pl-progress"><i id="plProg"></i></div>
   </main>
-  <footer class="bottombar">
-    <img src="../../../assets/img/logo.png" alt="Domestic Airlines Logo" class="logo small" />
-    <div class="copy">&copy; 2026 Domestic Airlines — Training</div>
-    <a href="../../../index.html">All courses</a>
-    <p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p>
+  <footer class="pl-bar">
+    <div class="pl-fill">Module 1 · Approach Operations</div>
+    <div class="pl-ctrl">
+      <button type="button" id="plReplay" title="Restart lesson" aria-label="Restart lesson"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a5 5 0 1 1-5 5H5a7 7 0 1 0 7-7z"/></svg></button>
+      <button type="button" id="plMenu" title="Lesson menu" aria-label="Lesson menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg></button>
+      <a href="../index.html" title="Course home" aria-label="Course home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 8h-3v9h-5v-6h-2v6H6v-9H3z"/></svg></a>
+      <button type="button" id="plPrev" title="Previous" aria-label="Previous"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 5l-7 7 7 7-1.6 1.6L5.3 12l8.6-8.6z"/></svg></button>
+      <span class="pl-count" id="plCount"></span>
+      <button type="button" id="plNext" title="Next" aria-label="Next"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 5l7 7-7 7 1.6 1.6 8.6-8.6-8.6-8.6z"/></svg></button>
+      <span class="pl-sep"></span>
+      <button type="button" id="plPlay" title="Play narration" aria-label="Play narration"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+      <button type="button" id="plMute" title="Sound on / off" aria-label="Sound on / off"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9zm12.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/></svg></button>
+      <a href="../../../index.html" title="Close — academy home" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.4 5L12 10.6 17.6 5 19 6.4 13.4 12 19 17.6 17.6 19 12 13.4 6.4 19 5 17.6 10.6 12 5 6.4z"/></svg></a>
+    </div>
   </footer>
+</div>
+<aside class="pl-drawer right" id="plMenuDrawer" aria-label="Lesson menu"><header>Lesson 4 — menu <button type="button" data-pl-close aria-label="Close">×</button></header>
+  <nav>
+    <div class="pl-grp">This lesson</div><div id="plSlides"></div>
+    <a href="../pdf/lesson-04.pdf" download><svg style="width:16px;height:16px;vertical-align:-3px;fill:#1d7a3e" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v10.2l3.6-3.6L17 11l-5 5-5-5 1.4-1.4 3.6 3.6V3zM5 19h14v2H5z"/></svg> Download lesson PDF</a>
+    <a href="../quiz.html">Final quiz</a>
+    <div class="pl-grp">All lessons</div>
+    <nav class="card sidebar" id="courseContents" aria-label="Course contents"><h2>Module 1 · Approach Operations</h2><ul><li><a href="lesson-01.html" data-lesson-link="1"><span class="state" aria-hidden="true"></span><span>01. Classification of Instrument Approach Operations</span></a></li><li><a href="lesson-02.html" data-lesson-link="2"><span class="state" aria-hidden="true"></span><span>02. Aerodrome Operating Minima</span></a></li><li><a href="lesson-03.html" data-lesson-link="3"><span class="state" aria-hidden="true"></span><span>03. Planning Minima and the Approach Ban</span></a></li><li><a href="lesson-04.html" data-lesson-link="4" aria-current="page"><span class="state" aria-hidden="true"></span><span>04. Low-Visibility Operations Overview</span></a></li></ul></nav>
+  </nav>
+</aside>
+<div class="audio-block pl-hidden">
+  <span class="label">Lesson narration</span>
+  <audio preload="metadata" style="display:none"><source src="../media/audio/lesson-04.mp3" type="audio/mpeg"></audio>
+  <button type="button" data-tts style="display:none">Listen</button>
+  <button type="button" data-tts-stop style="display:none">Stop</button>
+  <div class="audio-status" aria-live="polite"></div>
+</div>
 <script src="../../../assets/js/course.js"></script>
+<script src="../../../assets/js/player.js"></script>
 </body>
 </html>

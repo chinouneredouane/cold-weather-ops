@@ -134,9 +134,11 @@ def page(*, title, description, root, course=None, active=None, body_attrs="", m
   <meta name="theme-color" content="#125a2b" />
   <link rel="icon" type="image/png" href="{root}assets/img/logo.png" />
   <link rel="stylesheet" href="{root}assets/css/academy.css" />
+  <link rel="stylesheet" href="{root}assets/css/player.css" />
 </head>
 <body {body_attrs}>
   <a class="skip-link" href="#main">Skip to content</a>
+{all_courses_drawer(root)}
   <header class="topbar">
     <div class="brand">
       <a href="{brand_href}"><img src="{root}assets/img/logo.png" alt="Domestic Airlines Logo" class="logo" /></a>
@@ -160,9 +162,41 @@ def page(*, title, description, root, course=None, active=None, body_attrs="", m
     <p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p>
   </footer>
 {script_tags}
+<script src="{root}assets/js/player.js"></script>
 </body>
 </html>
 """
+
+
+
+PL_ICON = {
+    "replay": '<path d="M12 5V2L7 6l5 4V7a5 5 0 1 1-5 5H5a7 7 0 1 0 7-7z"/>',
+    "menu": '<path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/>',
+    "home": '<path d="M12 3l9 8h-3v9h-5v-6h-2v6H6v-9H3z"/>',
+    "prev": '<path d="M15.5 5l-7 7 7 7-1.6 1.6L5.3 12l8.6-8.6z"/>',
+    "next": '<path d="M8.5 5l7 7-7 7 1.6 1.6 8.6-8.6-8.6-8.6z"/>',
+    "play": '<path d="M8 5v14l11-7z"/>',
+    "audio": '<path d="M4 9v6h4l5 4V5L8 9zm12.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/>',
+    "close": '<path d="M6.4 5L12 10.6 17.6 5 19 6.4 13.4 12 19 17.6 17.6 19 12 13.4 6.4 19 5 17.6 10.6 12 5 6.4z"/>',
+    "grid": '<path d="M4 4h7v7H4zm9 0h7v7h-7zM4 13h7v7H4zm9 0h7v7h-7z"/>',
+    "pdf": '<path d="M12 3v10.2l3.6-3.6L17 11l-5 5-5-5 1.4-1.4 3.6 3.6V3zM5 19h14v2H5z"/>',
+}
+
+
+def pl_svg(name):
+    return f'<svg viewBox="0 0 24 24" aria-hidden="true">{PL_ICON[name]}</svg>'
+
+
+def all_courses_drawer(root):
+    """Left 'All courses' tab and drawer, on every page."""
+    items = [f'<a href="{root}index.html"><strong>Academy home</strong></a>']
+    items += [f'<a href="{root}courses/{c["slug"]}/index.html">{esc(c["title"])}</a>' for c in COURSES]
+    items += [f'<a href="{root}{e["href"]}">{esc(e["title"])}</a>' for e in EXTERNAL]
+    items.append(f'<a href="{root}lms/index.html">LMS packages (SCORM)</a>')
+    return (f'<button type="button" class="alltab" id="allBtn" title="All courses" aria-label="All courses">{pl_svg("grid")}</button>\n'
+            f'<div class="pl-veil" id="plVeil"></div>\n'
+            f'<aside class="pl-drawer" id="plAll" aria-label="All courses"><header>All courses <button type="button" data-pl-close aria-label="Close">×</button></header>'
+            f'<nav>{"".join(items)}</nav></aside>')
 
 
 def course_attrs(course, lesson=0, extra=""):
@@ -354,69 +388,113 @@ def sidebar(course, current):
 
 
 def build_lesson(course, n):
+    """Lesson page in the slide-player layout: one slide per section, picture behind, control bar below."""
     L = course["lessons"][n - 1]
     total = len(course["lessons"])
     mi, mod = module_of(course, n)
+    root = "../../../"
     objectives = "".join(f"<li>{esc(o)}</li>" for o in L["objectives"])
     takeaways = "".join(f"<li>{esc(t)}</li>" for t in L["takeaways"])
     chk = L["check"]
     opts = "".join(f'<button type="button" class="opt" aria-pressed="false">{esc(o)}</button>' for o in chk["options"])
-    prev_btn = (f'<a class="btn" href="{lesson_file(n-1)}">◀ Previous<small>{esc(course["lessons"][n-2]["title"])}</small></a>'
-                if n > 1 else '<a class="btn" href="../index.html">◀ Course home</a>')
-    next_btn = (f'<a class="btn primary" id="nextLesson" href="{lesson_file(n+1)}">Next ▶<small>{esc(course["lessons"][n]["title"])}</small></a>'
-                if n < total else '<a class="btn primary" id="nextLesson" href="../quiz.html">Take the Final Quiz ▶</a>')
+    prev_href = lesson_file(n - 1) if n > 1 else "../index.html"
+    if n < total:
+        next_link = f'<a class="btn primary" id="nextLesson" href="{lesson_file(n + 1)}">Next lesson: {esc(course["lessons"][n]["title"])} ▶</a>'
+    else:
+        next_link = '<a class="btn primary" id="nextLesson" href="../quiz.html">Take the Final Quiz ▶</a>'
     audio_src = f"../media/audio/lesson-{n:02d}.mp3"
     img = course.get("images", {}).get(n)
-    picture = (f'<figure class="lesson-figure"><img src="../media/images/lesson-{n:02d}.jpg" alt="{esc(img[1])}" loading="lazy" decoding="async">'
-               f'<figcaption>{esc(img[2])}</figcaption></figure>') if img else ""
+    has_img = bool(img) and os.path.exists(os.path.join(ROOT, "courses", course["slug"], "media", "images", f"lesson-{n:02d}.jpg"))
+    bg = (f'<div class="pl-bg" role="img" aria-label="{esc(img[1])}" style="background-image:url(\'../media/images/lesson-{n:02d}.jpg\')"></div>'
+          if has_img else '<div class="pl-bg none"></div>')
 
-    main = f"""
-    <div class="lesson-layout">
-      <div>
-        <button class="btn ghost sidebar-toggle" aria-controls="courseContents" aria-expanded="false">Show course contents</button>
-        {sidebar(course, n)}
-      </div>
-      <article class="lesson">
-        <header class="lesson-head">
-          {icon(mod['icon'], 'art')}
-          <div class="eyebrow">Module {mi+1} · {esc(mod['title'])}</div>
-          <h1>Lesson {n:02d}: {esc(L['title'])}</h1>
-          <div class="meta"><span>Lesson {n} of {total}</span><span>≈ {L['minutes']} min</span><a class="pdf-link" href="../pdf/lesson-{n:02d}.pdf" download>⬇ Download PDF</a></div>
-        </header>
-        <div class="card lesson-body">
-          <div class="audio-block">
-            <span class="label">Lesson narration</span>
-            <audio controls preload="metadata" style="display:none"><source src="{audio_src}" type="audio/mpeg"></audio>
-            <button type="button" class="btn primary" data-tts style="display:none">Listen</button>
-            <button type="button" class="btn ghost" data-tts-stop style="display:none">Stop</button>
-            <div class="audio-status" aria-live="polite">Checking for narration…</div>
-          </div>
-          <section class="objectives" data-narrate>
-            <h2>Learning objectives</h2>
-            <ul>{objectives}</ul>
-          </section>
-          {picture}
-          <div data-narrate>
-{L['body']}
-          </div>
-          <section class="takeaways" data-narrate>
-            <h2>Key takeaways</h2>
-            <ul>{takeaways}</ul>
-          </section>
-          <section class="kc" data-answer="{chk['answer']}" data-explain="{esc(chk['explain'])}">
-            <h2>Knowledge check</h2>
-            <p class="q">{esc(chk['q'])}</p>
-            <div class="opts">{opts}</div>
-            <div class="fb" aria-live="polite"></div>
-          </section>
-          <div class="lesson-end"></div>
-        </div>
-        <nav class="lesson-nav" aria-label="Lesson navigation">{prev_btn}{next_btn}</nav>
-      </article>
-    </div>"""
-    out = page(title=f"Lesson {n:02d}: {L['title']} — {course['title']}", description=L["objectives"][0],
-               root="../../../", course=dict(course, _base="../"), active=None,
-               body_attrs=course_attrs(course, n), main=main, scripts=["../../../assets/js/course.js"])
+    parts = re.split(r"<h2>(.*?)</h2>", L["body"])
+    intro = parts[0].strip()
+    first = f'<section class="objectives" data-narrate><h2>Learning objectives</h2><ul>{objectives}</ul></section>'
+    if intro:
+        first += f'<div data-narrate>{intro}</div>'
+    if img:
+        first += f'<p class="muted">{esc(img[2])}</p>'
+    slides = [("Learning objectives", first)]
+    for k in range(1, len(parts), 2):
+        title = re.sub(r"<[^>]+>", "", parts[k])
+        slides.append((title, f'<div data-narrate><h2>{parts[k]}</h2>{parts[k + 1]}</div>'))
+    slides.append(("Key takeaways", f'<section class="takeaways" data-narrate><h2>Key takeaways</h2><ul>{takeaways}</ul></section>'))
+    slides.append(("Knowledge check", f"""<section class="kc" data-answer="{chk['answer']}" data-explain="{esc(chk['explain'])}">
+<h2>Knowledge check</h2><p class="q">{esc(chk['q'])}</p><div class="opts">{opts}</div><div class="fb" aria-live="polite"></div></section>
+<div class="next-up">{next_link}</div><div class="lesson-end"></div>"""))
+    slide_html = "\n".join(f'<div class="pl-slide" data-title="{esc(t)}">{h}</div>' for t, h in slides)
+
+    def btn(i, label):
+        return f'<button type="button" id="{i}" title="{label}" aria-label="{label}">'
+    pdf_icon = pl_svg("pdf").replace("<svg", '<svg style="width:16px;height:16px;vertical-align:-3px;fill:#1d7a3e"')
+    title = f"Lesson {n:02d}: {L['title']} — {course['title']}"
+    out = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{esc(title)}</title>
+  <meta name="description" content="{esc(L['objectives'][0])}" />
+  <meta name="theme-color" content="#125a2b" />
+  <link rel="icon" type="image/png" href="{root}assets/img/logo.png" />
+  <link rel="stylesheet" href="{root}assets/css/academy.css" />
+  <link rel="stylesheet" href="{root}assets/css/player.css" />
+</head>
+<body class="player-page" {course_attrs(course, n)}>
+{all_courses_drawer(root)}
+<div class="player" data-prev="{prev_href}">
+  <header class="pl-top">
+    <a class="pl-brand" href="../index.html"><img src="{root}assets/img/logo.png" alt="Domestic Airlines" /><b>{esc(course['title'])}</b></a>
+    <div class="pl-crumbs" id="plCrumbs"></div>
+  </header>
+  <main class="pl-stage" id="main">
+    {bg}<div class="pl-shade"></div>
+    <div class="pl-tag">Lesson {n} of {total} — {esc(L['title'])}</div>
+    <div class="lesson-head pl-hidden"><h1>Lesson {n:02d}: {esc(L['title'])}</h1></div>
+    <div class="pl-panel lesson-body" id="plPanel">
+{slide_html}
+    </div>
+    <div class="pl-duration">Duration: {L['minutes']} min</div>
+    <div class="pl-progress"><i id="plProg"></i></div>
+  </main>
+  <footer class="pl-bar">
+    <div class="pl-fill">Module {mi + 1} · {esc(mod['title'])}</div>
+    <div class="pl-ctrl">
+      {btn("plReplay", "Restart lesson")}{pl_svg("replay")}</button>
+      {btn("plMenu", "Lesson menu")}{pl_svg("menu")}</button>
+      <a href="../index.html" title="Course home" aria-label="Course home">{pl_svg("home")}</a>
+      {btn("plPrev", "Previous")}{pl_svg("prev")}</button>
+      <span class="pl-count" id="plCount"></span>
+      {btn("plNext", "Next")}{pl_svg("next")}</button>
+      <span class="pl-sep"></span>
+      {btn("plPlay", "Play narration")}{pl_svg("play")}</button>
+      {btn("plMute", "Sound on / off")}{pl_svg("audio")}</button>
+      <a href="{root}index.html" title="Close — academy home" aria-label="Close">{pl_svg("close")}</a>
+    </div>
+  </footer>
+</div>
+<aside class="pl-drawer right" id="plMenuDrawer" aria-label="Lesson menu"><header>Lesson {n} — menu <button type="button" data-pl-close aria-label="Close">×</button></header>
+  <nav>
+    <div class="pl-grp">This lesson</div><div id="plSlides"></div>
+    <a href="../pdf/lesson-{n:02d}.pdf" download>{pdf_icon} Download lesson PDF</a>
+    <a href="../quiz.html">Final quiz</a>
+    <div class="pl-grp">All lessons</div>
+    {sidebar(course, n)}
+  </nav>
+</aside>
+<div class="audio-block pl-hidden">
+  <span class="label">Lesson narration</span>
+  <audio preload="metadata" style="display:none"><source src="{audio_src}" type="audio/mpeg"></audio>
+  <button type="button" data-tts style="display:none">Listen</button>
+  <button type="button" data-tts-stop style="display:none">Stop</button>
+  <div class="audio-status" aria-live="polite"></div>
+</div>
+<script src="{root}assets/js/course.js"></script>
+<script src="{root}assets/js/player.js"></script>
+</body>
+</html>
+"""
     write(f"courses/{course['slug']}/lessons/{lesson_file(n)}", out)
     write_narration(course, n, L)
 
