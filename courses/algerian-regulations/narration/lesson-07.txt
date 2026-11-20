@@ -1,0 +1,33 @@
+Domestic Airlines — Algerian Regulations and Duty Time
+Lesson 7: Interactive Duty Time Calculator
+
+Learning objectives:
+- Calculate a maximum DTP for any number of legs and start time.
+- Check a planned duty and the rest that follows.
+- Practise with exercises until the method is automatic.
+
+Use the calculator
+
+Enter the crew, the number of legs and the first take-off time. The calculator applies the leg reduction, the WOCL reduction and the extension rules step by step, then draws the duty and rest on a timeline. Change the values and watch the result change.
+
+Try the three examples of Lesson 6 and check that you obtain the same results.
+
+Move the first take-off from 08:00 to 05:00 with 4 legs and watch the WOCL reduction appear.
+
+Enter a planned last landing to check whether a roster respects the limit.
+
+Remember the method
+
+Basic limit : 13 h (two pilots) or 12 h (single pilot).
+
+Legs : −30 min per leg from the third, maximum −2 h.
+
+WOCL : −100 % of the time inside if the duty starts in the WOCL (max 2 h); −50 % if it ends in or includes it.
+
+Extension : +1 h only if permitted.
+
+Check-out and rest : rest ≥ DTP flown, minimum 12 h at base or 10 h away.
+
+Key takeaways:
+- Basic limit → legs → WOCL → extension → rest.
+- Use the calculator to check rosters; the OM A and the crew planning system remain the reference.

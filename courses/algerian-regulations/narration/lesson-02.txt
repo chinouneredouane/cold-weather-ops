@@ -1,0 +1,55 @@
+Domestic Airlines — Algerian Regulations and Duty Time
+Lesson 2: Differences from ICAO Standards
+
+Learning objectives:
+- Find where the Algerian differences are published.
+- Apply the main differences to Annexes 1, 2, 4, 9, 10, 11, 12, 13 and 15.
+- Apply the differences to Doc 4444 and Doc 8400.
+
+Where to find them
+
+The differences from ICAO SARPs are published in AIP Algeria GEN 1.7 and in the Jeppesen Airway Manual (Air Traffic Control — State Rules and Procedures — Africa). Annex 6 (Operation of Aircraft): no difference.
+
+Annex 2 — Rules of the Air
+
+Subject Algerian rule
+
+Fitness to fly A crew member who feels unfit to fly shall not act as a pilot or crew member.
+
+Minimum height Except over cities, assemblies of people or dense constructions: not below 150 m (500 ft) above ground, water or the highest obstacle.
+
+IFR minimum height At least 1,500 ft (450 m) above the highest obstacle within 8 km (4.3 NM) of the estimated position.
+
+Prohibited area entered Advise ATC, leave the area and land as soon as possible at the nearest aerodrome — or the aircraft may be forced to land by the military.
+
+Flight plan Required for all IFR flights and for every flight (VFR or IFR) over desert areas and the sea .
+
+ETD in the flight plan The time the aircraft is ready to leave the parking stand.
+
+Other Annexes
+
+Reference Algerian difference
+
+Annex 1 — Licensing Algeria does not apply the multi-crew pilot licence (MPL) .
+
+Annex 4 — Charts Some 1:500,000 charts published in Algeria do not conform to Chapter 10 and are not labelled ICAO.
+
+Annex 9 — Facilitation No crew member certificate to the Appendix 7 model; crews not on regular international services need a valid passport and possibly a visa.
+
+Annex 10 — Communications Conform to the SARPs; Annex 10 Volume II procedures apply with the Algerian authority.
+
+Annex 11 — ATS Alerting (emergency phases) in the Algiers FIR follows a specific instruction, with delays adapted to desert and maritime areas.
+
+Annex 12 — SAR Foreign SAR teams need a special permission.
+
+Annexes 13 and 15 Applicable; some aeronautical publications may be without English translation; international NOTAMs are translated into English as far as possible.
+
+Doc 8400 — Abbreviations QAN (wind direction) is referenced to true north ; QNH is never given in inches of mercury.
+
+Doc 4444 — ATM Minimum obstacle clearance 1,500 ft (450 m) instead of 1,000 ft; special VFR not authorised below 1.5 km visibility (except helicopters); flight plan changes take effect only when acknowledged by ATC.
+
+Key takeaways:
+- Differences: AIP Algeria GEN 1.7 and Jeppesen State Rules.
+- IFR minimum height 1,500 ft within 8 km; minimum height 500 ft.
+- Flight plan for all IFR flights and any flight over desert or sea.
+- No MPL in Algeria; QNH never in inches.

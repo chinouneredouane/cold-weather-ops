@@ -1,0 +1,53 @@
+Domestic Airlines — Algerian Regulations and Duty Time
+Lesson 1: The Algerian Legal Framework and the DACM
+
+Learning objectives:
+- Rank the Algerian legal texts from the Constitution to circulars.
+- Describe the role of the civil aviation authority (DACM).
+- Locate the ICAO standards in Algerian laws, decrees and circulars.
+
+Algeria and international aviation law
+
+The People's Democratic Republic of Algeria applies the ICAO Standards and Recommended Practices (SARPs). The ICAO Annexes are in force except where a difference is published . PANS-OPS (Doc 8168 Volumes I and II), the Regional Supplementary Procedures (Doc 7030) and Doc 4444 are also used.
+
+Convention or treaty Signed by Algeria
+
+ICAO 07/05/1963
+Chicago 06/06/1963
+Rome 12/07/1964
+
+Warsaw 31/08/1964
+Geneva 08/11/1964
+Montreal 29/11/1965
+
+The hierarchy of texts
+
+Law — voted by the Assembly, applicable as soon as it is published in the Official Journal.
+
+Decree — a government act, without consultation of the Assembly, signed by the President or the Prime Minister.
+
+Order (arrêté) — an administrative decision; it can be specific to an activity or a geographical area.
+
+Circular — the lowest level; in principle it has no legal value of its own and only explains how laws, decrees and orders apply.
+
+The authority: DACM
+
+The DACM is the civil aviation authority in Algeria, under the Directorate of Civil Aviation. It:
+
+applies in Algeria the international conventions and treaties signed by the government;
+
+applies the laws and executes the decrees, and supervises and controls all air transport activities;
+
+issues and controls flight crew licences, in accordance with ICAO Annex 1 and national regulation.
+
+The main reference laws are Laws 98-06, 64-166, 08-02 and 15-14 , together with their decrees. Aeronautical information is published by the AIS (SIA) of Algeria.
+
+Where the ICAO standards are found
+
+Most restrictive rule Algerian laws and decrees also affect foreign operators in Algeria. When the Algerian rule and another regulation (European or foreign) differ, the most restrictive one applies .
+
+Key takeaways:
+- Constitution → laws → decrees → orders → circulars.
+- ICAO Annexes apply unless a difference is published (AIP GEN 1.7).
+- The DACM supervises air transport and issues licences.
+- Annex 6 standards: Executive Decrees 09-206/207/208, Instruction 771, Circular 1830.

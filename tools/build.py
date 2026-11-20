@@ -31,9 +31,10 @@ from courses.wind_limits import COURSE as WIND_LIMITS  # noqa: E402
 from courses.approach_minima import COURSE as APPROACH_MINIMA  # noqa: E402
 from courses.ground_equipment import COURSE as GROUND_EQUIPMENT  # noqa: E402
 from courses.lvo import COURSE as LVO  # noqa: E402
+from courses.algerian_regs import COURSE as ALGERIAN_REGS  # noqa: E402
 from handbook import build_print  # noqa: E402
 
-COURSES = [COLD_WEATHER, UPSET_RECOVERY, RVSM, CFIT, HOT_WEATHER, CPDLC, WINDSHEAR, PBN, REGULATIONS, MEL, WIND_LIMITS, APPROACH_MINIMA, GROUND_EQUIPMENT, LVO]
+COURSES = [COLD_WEATHER, UPSET_RECOVERY, RVSM, CFIT, HOT_WEATHER, CPDLC, WINDSHEAR, PBN, REGULATIONS, MEL, WIND_LIMITS, APPROACH_MINIMA, GROUND_EQUIPMENT, LVO, ALGERIAN_REGS]
 
 # Courses shown on the portal as "in preparation" (no pages yet).
 UPCOMING = []
@@ -47,6 +48,7 @@ REFRESHER = {
         ("W3", "PBN Refresher", "courses/pbn-refresher/index.html", ""),
         ("W4", "De-icing and Anti-icing", "courses/cold-weather-operations/index.html", "Cold Weather Operations — Modules 2 and 3"),
         ("W5", "Operations Manual (MANEX) and Regulations", "courses/regulations-om/index.html", "ICAO / EASA framework — company OM applies"),
+        ("W5", "Algerian Regulations and Duty Time", "courses/algerian-regulations/index.html", "National regulation — interactive duty time calculator"),
         ("W6", "MEL", "courses/mel-refresher/index.html", "Principles — company MEL applies"),
     ],
     "Summer season": [

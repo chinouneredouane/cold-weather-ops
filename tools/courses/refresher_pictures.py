@@ -63,6 +63,16 @@ def scene(slug, n):
             5: lambda: sky("high") + levels() + aircraft(1050, 420, 0.75, 0) + aircraft(500, 600, 0.75, 6) + cloud(300, 760, 1.2),
             6: lambda: cockpit(440, 0, "dusk", extra=cloud(500, 380, 1.2, "#f1c1a6") + cloud(1200, 360, 1.0, "#f1c1a6")) + pilots(),
         }
+    elif slug == "algerian-regulations":
+        s = {
+            1: lambda: sky("dusk") + ground(640, 0, "sea") + desert(700) + aircraft(820, 380, 1.0, 4),
+            2: lambda: cockpit(500, 0, "day", extra=desert(560)) + adi_inset(0, 0),
+            3: lambda: sky("day") + cloud(300, 650, 1.6) + cloud(1200, 680, 1.4) + '<ellipse cx="800" cy="420" rx="420" ry="120" fill="none" stroke="#fff" stroke-width="6" stroke-dasharray="20 14"/>' + aircraft(800, 300, 0.8, 0),
+            4: lambda: cockpit(460, 0, "dusk", extra=sun(1200, 470, 60)) + pilots(),
+            5: lambda: cockpit(560, 0, "night", ground_style="night") + adi_inset(0, 0),
+            6: lambda: sky("night") + stars(90, 4) + ground(640, 0, "night") + runway() + aircraft(800, 600, 0.7, 0),
+            7: lambda: cockpit(480, 0, "dusk", extra=sun(800, 500, 70) + desert(540)),
+        }
     elif slug == "cfit-egpws-refresher":
         s = {
             1: lambda: sky("cloud") + mountains(700, "#3e5a4a", "#5d7b67", seed=3) + cloud(500, 300, 2.0, "#e5eaee", .9) + aircraft(1050, 420, 0.7, -4, flip=True),

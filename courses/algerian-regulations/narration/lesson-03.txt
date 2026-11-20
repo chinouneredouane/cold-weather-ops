@@ -1,0 +1,53 @@
+Domestic Airlines — Algerian Regulations and Duty Time
+Lesson 3: Flight Procedures, VFR and Fuel
+
+Learning objectives:
+- Apply the Algerian holding speeds, airspace, altimeter and communication rules.
+- State the night VFR conditions.
+- Calculate the fuel with the Algerian final reserve for jets and propeller aircraft.
+
+Flight procedures
+
+Holding speeds : in accordance with Doc 8168 (table below).
+
+Instrument approaches : PANS-OPS Doc 8168 Volume II. Algeria publishes state aerodrome operating minima for landing and take-off.
+
+Airspace : only classes A, D and E are used.
+
+Altimeter settings : international aerodromes give QNH and QFE; domestic aerodromes give QFE only (QNH on request).
+
+121.5 MHz : listening watch outside controlled airspace and within 27 NM of restricted, prohibited or danger areas, especially near the FIR boundary.
+
+ACAS II : required for turbine aircraft of 5,700 kg MTOW or more, or authorised to carry more than 19 passengers (version 7.1 in EU airspace).
+
+CPDLC : log on to DAAA 15–30 minutes before entering the Algiers FIR (flight ID and registration as in the flight plan); log off 5 minutes after leaving it.
+
+Flight plans to Europe : IFPS/CFMU addressing (AFTN EUCHZMFP, EUCBZMFP; SITA BRUEP7X, PAREP7X).
+
+Levels Normal conditions Turbulence
+
+Up to 14,000 ft inclusive 230 kt (170 kt CAT A/B) 280 kt (170 kt CAT A/B)
+
+Above 14,000 to 34,000 ft 240 kt 280 kt or M0.80, whichever is less
+
+Above 34,000 ft M0.83 M0.83
+
+Turbulence holding speeds only with ATC clearance unless the published holding allows them.
+
+VFR and night VFR
+
+Special VFR is not allowed for fixed-wing aircraft.
+
+VFR is prohibited in class A airspace, above FL195 and whenever ATC suspends VFR.
+
+Cruise: at least 650 m above the highest obstacle within 8 km (450 m in some cases); semicircular levels above 900 m MSL or 650 m AGL.
+
+Not inside airways without ATC authorisation; published tracks in other controlled airspace; flight plan filed 30 minutes before ETD; continuous VHF watch.
+
+Fuel
+
+Key takeaways:
+- Airspace classes A, D, E only; domestic aerodromes give QFE.
+- CPDLC: log on DAAA 15–30 min before the Algiers FIR, log off 5 min after.
+- Night = end of civil twilight to civil dawn; night VFR only for IFR-rated pilots.
+- Final reserve: jets 30 min, propeller aircraft 45 min.

@@ -1,0 +1,33 @@
+Domestic Airlines — Algerian Regulations and Duty Time
+Lesson 4: Duty Time: References, Limits and Legs
+
+Learning objectives:
+- Name the legal references of Algerian duty time.
+- Apply the basic DTP limits and the leg reduction.
+- State the cumulative flight duty and flight time limits.
+
+References
+
+Constitution (articles 85-3° and 125); Law 90-11 of 21/04/1990 (amended); Law 98-06 of 27/06/1998; Decree 02-89; Decree 04-414 of 20/12/2004; Decree 10-140 of 23/05/2010. The company OM A FTL chapter applies these rules; where rules differ, the most restrictive applies.
+
+The duty time period (DTP)
+
+Leg reduction
+
+How to calculate Maximum DTP = basic limit (13 h two pilots / 12 h single pilot) − 30 min × (legs − 2), with a maximum reduction of 2 h. Example: 4 legs, two pilots → 13 h − 1 h = 12 h .
+
+Cumulative limits
+
+Limit Flight duty (FDP) Flight hours
+
+7 days (week) 60 h —
+
+28 consecutive days 190 h 100 h
+
+Year — 900 h
+
+Key takeaways:
+- DTP runs from check-in to check-out: 13 h two pilots, 12 h single pilot.
+- From the 3rd leg: −30 min per leg, maximum −2 h.
+- Positioning counts in the DTP but not as a leg.
+- 60 h / week and 190 h / 28 days duty; 100 h / 28 days and 900 h / year flight time.
