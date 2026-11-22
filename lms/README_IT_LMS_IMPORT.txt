@@ -8,7 +8,7 @@ CONTENTS OF THIS ZIP
    1. Cold Weather Operations                    30 lessons   pass mark 80%    58.1 MB   cold-weather-operations-scorm12.zip
    2. Upset Prevention and Recovery              28 lessons   pass mark 80%    60.6 MB   upset-prevention-recovery-scorm12.zip
    3. RVSM Refresher                              6 lessons   pass mark 80%     7.5 MB   rvsm-refresher-scorm12.zip
-   4. CFIT and EGPWS Refresher                    9 lessons   pass mark 80%    11.6 MB   cfit-egpws-refresher-scorm12.zip
+   4. CFIT and EGPWS Refresher                   13 lessons   pass mark 80%    20.5 MB   cfit-egpws-refresher-scorm12.zip
    5. Hot Weather Operations                      11 lessons   pass mark 80%     12.6 MB   hot-weather-operations-scorm12.zip
    6. CPDLC — Controller-Pilot Data Link          6 lessons   pass mark 80%     6.6 MB   cpdlc-scorm12.zip
    7. Windshear and Thunderstorm Avoidance        5 lessons   pass mark 80%     5.2 MB   windshear-thunderstorm-scorm12.zip
