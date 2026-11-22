@@ -1,53 +1,30 @@
 Domestic Airlines — Hot Weather Operations
-Lesson 2: Engines, APU and Aircraft Systems in Hot Weather
+Lesson 2: Density Altitude and Aircraft Performance
 
 Learning objectives:
-- Apply engine and APU limitations in high temperatures.
-- Protect brakes, tyres and avionics in hot conditions.
-- Use the fleet-specific hot weather procedures.
+- Define density altitude.
+- Explain how high temperature and elevation reduce thrust, lift and climb.
+- Relate indicated, true and ground speed on a hot, high runway.
 
-Engines and APU
+Warm air is less dense
 
-Exhaust gas / inter-turbine temperature margins are smaller in hot air. Monitor starts closely and know the start limits and the hot start and hung start procedures.
+At the same pressure, warm air holds fewer molecules in the same volume than cold air. Density altitude is the altitude in the standard atmosphere at which the density equals the actual density: a hot day makes the aircraft perform as if it were much higher.
 
-Keep engine running time on the ground to a minimum, and avoid using high thrust on the ground for long periods.
+What high density altitude does
 
-APU limits (EGT, load) are also closer in hot weather. Ground power and conditioned air reduce APU use.
+Less thrust or power — jets and turboprops alike (see Lesson 5: flat rating).
 
-Brakes and tyres
+Less lift at a given true airspeed — the same indicated airspeed means a higher true airspeed and ground speed .
 
-Brake temperatures rise faster and cool more slowly in hot weather. Respect the minimum brake cooling times between flights.
+Longer take-off and landing distances and lower climb gradients.
 
-Avoid riding the brakes during taxi — keep taxi speeds moderate (Lesson 5).
+Altitude and temperature together
 
-Tyre pressures increase with temperature; tyres are also stressed by high ground speeds.
+Aerodrome elevation adds to the effect of temperature. A high-elevation aerodrome on a hot afternoon is the most demanding case: the take-off distance can be far longer than at sea level.
 
-Cockpit, cabin and avionics
-
-Use ground conditioned air or the APU to cool the cabin and avionics before boarding.
-
-Watch for avionics overheat cautions and equipment cooling failures.
-
-Protect crew performance: drink water, manage fatigue and heat stress during long ground times.
-
-Fleet-specific procedures
-
-Topic Boeing 737-800 Dash 8-Q400 / Q200
-
-Hot weather procedures FCOM Supplementary Procedures — Adverse Weather, hot weather operation (SP 16.17) AFM / AOM hot weather and high-temperature limitations
-
-Engine and APU start limits FCOM limitations; APU start on battery (SP 7.7) AFM engine start and ITT limits; APU / ground power as installed
-
-Bleeds-off operation Bleeds-off take-off and landing procedure and performance credit (FCOM / QRH performance) Bleed and pack settings for take-off per AFM performance charts
-
-Fuel system checks Spar fuel shut-off valve check (SP 12-01) AOM fuel system procedures
-
-Performance QRH performance inflight / dispatch tables; Jetplan AFM performance charts or company performance software; Jetplan
-
-Prepare Before the summer recurrent training, review the hot weather supplementary procedures and limitations for your type. The values and the exact procedure always come from your aircraft manuals.
+Remember Indicated airspeed tells the wing what it needs; true airspeed and ground speed tell the runway, the tyres and the brakes what they will get. On a hot, high runway the ground speed is higher at the same V speeds.
 
 Key takeaways:
-- Smaller temperature margins on engine and APU starts — know the limits.
-- Respect brake cooling times; avoid riding the brakes.
-- Cool the aircraft with ground air or APU; watch avionics cooling.
-- Use your type's hot weather procedures (B737 FCOM SP 16.17; Dash 8 AFM/AOM).
+- Density altitude = the standard-atmosphere altitude with the actual density.
+- Hot and high: less thrust and lift, longer distances, lower climb gradient.
+- Same IAS → higher TAS and ground speed: more runway, tyre speed and brake energy.

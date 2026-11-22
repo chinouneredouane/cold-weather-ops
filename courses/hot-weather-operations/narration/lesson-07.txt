@@ -1,0 +1,35 @@
+Domestic Airlines — Hot Weather Operations
+Lesson 7: MEL and CDL in Hot Weather
+
+Learning objectives:
+- Identify MEL and CDL items that reduce performance margins.
+- Apply penalties and operational procedures correctly in high temperatures.
+- Decide whether to dispatch when margins are already small.
+
+Items that cost performance
+
+Performance penalties : some MEL items (for example anti-skid, a bleed or pack item, a thrust reverser, a spoiler) carry mass or V-speed penalties or require a longer runway.
+
+CDL items (missing panels or seals) add drag: a climb-gradient penalty that matters most on a hot day.
+
+Cooling items : a pack, avionics cooling or APU item can make a hot ground time very difficult.
+
+Apply the procedure in full
+
+Read every item in full, including the (M) maintenance and (O) operational procedures, placards and conditions.
+
+Combine penalties: two "small" penalties together on a hot, high runway can make the take-off impossible at the planned mass.
+
+Hot fuel is less dense: convert uplift with the actual density, and respect MEL fuel minimums.
+
+Example from the company LOFT — B737-800, MEL 28-01-03-01
+A main tank aft fuel boost pump may be inoperative provided that both main tank forward pumps operate normally; at the start of take-off the associated tank holds not less than 7,500 lb (3,402 kg); a minimum of 2,500 lb (1,134 kg) is maintained in that tank; and the pump is deactivated. Always use the current MEL — this example is for training only.
+
+The dispatch decision
+
+If the margins are already small, consider: a cooler departure time, an offload of payload or fuel (with a fuel stop if needed), another runway, or not dispatching. The commander has the final word.
+
+Key takeaways:
+- MEL/CDL items can add mass, speed or drag penalties — critical in heat.
+- Read (M) and (O) procedures in full; combine all penalties.
+- Small margins: cooler time, offload, other runway — or do not dispatch.

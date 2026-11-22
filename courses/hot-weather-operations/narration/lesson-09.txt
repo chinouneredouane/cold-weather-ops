@@ -1,0 +1,38 @@
+Domestic Airlines — Hot Weather Operations
+Lesson 9: Situation Awareness in Hot Weather Operations
+
+Learning objectives:
+- Maintain awareness of the environment, runway and performance margins.
+- Recognise the cues that the margins are being eroded.
+- Plan ahead for diversion, go-around and convective weather.
+
+The three levels
+
+Perceive : actual OAT and wind, ATIS changes, NOTAMs, runway condition (sand, rubber, heat), cells on the radar.
+
+Understand : what these mean for today's take-off and landing margins.
+
+Project : what happens if the temperature rises further, a cell drifts onto the departure path, or the destination closes with dust.
+
+Cues that margins are eroding
+
+Slow acceleration on the take-off roll; slow climb after lift-off.
+
+Rising temperature or a wind shift to a tailwind before departure.
+
+Long float in the flare; higher ground speed than expected on approach.
+
+Visibility trending down in dust; gust spreads increasing.
+
+Plan ahead
+
+Go-around: in hot, high conditions the climb is lower — brief the missed approach and its gradient.
+
+Alternates: check that the alternate is not affected by the same dust or convective system.
+
+Fuel: extra fuel for weather deviations and holding when convection is forecast.
+
+Key takeaways:
+- Perceive — understand — project.
+- Slow acceleration, tailwind shift, long float and falling visibility are warning cues.
+- Brief the go-around; choose an alternate outside the same weather.

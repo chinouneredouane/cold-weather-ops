@@ -1,35 +1,32 @@
 Domestic Airlines — Hot Weather Operations
-Lesson 5: Summer Flight Safety Focus Items
+Lesson 5: Engine Limitations and Hot Starts
 
 Learning objectives:
-- Review the flight safety events selected for this season.
-- Apply the correct technique to prevent each event.
-- Report events through the safety reporting system.
+- Explain flat rating and the EGT/ITT margin in hot weather.
+- Recognise and prevent hot and hung starts.
+- Apply engine and APU limitations on the ground in high temperatures.
 
-The training department has selected the following flight safety items for discussion with the TRI/TRE:
+Flat rating and EGT margin
 
-Event Why it matters Prevention
+Engines are flat-rated : they give their rated thrust up to a certain outside temperature. As the OAT rises, the engine runs hotter to make that thrust, and the EGT / ITT margin shrinks. Above the flat-rating temperature, available thrust falls.
 
-High taxi speed Hot brakes, reduced margins on turns and runway crossings, passenger injury. Respect the company taxi speeds; use idle thrust and brief, firm braking applications rather than riding the brakes.
+Hot and hung starts
 
-Late or long flare Each second of float at high ground speed uses a large part of the runway and increases the landing distance. Fly a stabilised approach to the aiming point; flare at the normal height; go around if a long landing develops.
+Hot start : EGT/ITT rising fast towards or beyond the start limit. Hung start : the engine stabilises below idle and does not accelerate.
 
-Incorrect flap setting, ZFW or fuel entries Wrong take-off speeds and trim — tail strike or degraded take-off performance. Independent cross-check of performance data, FMS / performance entries and the load sheet by both pilots.
+Hot air, a tailwind into the exhaust, low battery or air-start pressure, or a slow starter make them more likely.
 
-Hard landing Structural damage, injuries; often after an unstable approach or late flare. Stabilised approach; correct flare; report any suspected hard landing in the technical log.
+Prevention: correct start sequence, adequate start air or electrical power, monitor the parameters and be ready to abort exactly as the QRH / AOM states.
 
-Bounced landing Risk of tail strike, nose gear damage or a second hard landing. Apply the company bounced landing recovery technique; go around if in doubt.
+On the ground in the heat
 
-Use of reverse and APU Covered by the company reminder note (note de rappel). Apply the reminder note exactly as published.
+Keep ground running time and high thrust to a minimum; position into wind where possible.
 
-Safety notes and reporting
+APU limits (EGT, load) are also closer — use ground power and conditioned air where available.
 
-Read and discuss the latest company safety notes before the simulator session.
-
-Report events through the safety reporting system. Reports are used to improve training and procedures, under a just culture.
+Watch avionics and equipment cooling cautions on long ground times.
 
 Key takeaways:
-- Moderate taxi speeds protect brakes and people.
-- A late or long flare at high ground speed eats runway — go around if needed.
-- Cross-check flap, ZFW and fuel entries.
-- Apply the bounced and hard landing techniques; report every event.
+- Flat rating: thrust constant up to a temperature, EGT margin shrinking; above it thrust falls.
+- Hot and hung starts: know the signs and the abort procedure.
+- Minimise ground running; use ground power and conditioned air.

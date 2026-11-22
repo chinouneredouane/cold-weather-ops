@@ -1,39 +1,57 @@
 Domestic Airlines — Hot Weather Operations
-Lesson 3: Fuel in Hot Weather
+Lesson 3: High Temperature Take-off Planning
 
 Learning objectives:
-- Explain the effect of temperature on fuel density and quantity.
-- Apply fuel checks and MEL fuel items.
-- Use the operational flight plan fuel figures correctly.
+- Identify the limits that determine the maximum take-off mass on a hot day.
+- Select thrust and configuration correctly with approved performance data.
+- Cross-check the performance calculation as a crew.
 
-Fuel density
+The take-off mass limits
 
-Hot fuel is less dense : the same mass takes up more volume. Uplift is often measured in litres but planned in kilograms — always convert with the actual density on the fuel docket.
+The maximum take-off mass is the lowest of several limits. On hot days, the limits based on climb and energy usually become the limiting ones:
 
-Check the uplift : the difference between the calculated and the actual uplift must be within the company tolerance.
+Limit Why heat makes it critical
 
-Respect any maximum fuel temperature limit in the AFM.
+Field length (runway) Longer acceleration and stopping distances
 
-Fuel planning
+Climb (WAT — weight, altitude, temperature) Lower one-engine-out climb gradient
 
-Use the Jetplan figures: trip fuel, contingency, alternate, final reserve, taxi and any extra fuel. Check the effect of a change of cruise level or take-off mass.
+Obstacle Lower net flight path (Lesson 6)
 
-Hot weather may impose a lower cruise level or a longer climb. Plan for possible weather deviations around convective activity.
+Tyre speed Higher ground speed at lift-off
 
-Check the zero fuel weight and fuel entries carefully — incorrect ZFW or fuel entries are a recurring flight safety event (Lesson 5).
+Brake energy (VMBE) More energy to absorb in a rejected take-off (Lesson 4)
 
-Fuel system and MEL
+Structural / MEL / maximum temperature AFM maximum take-off temperature; MEL penalties (Lesson 7)
 
-B737-800: perform the spar fuel shut-off valve check when required (FCOM SP 12-01).
+Thrust and configuration
 
-Read MEL fuel items in full, including the (M) maintenance and (O) operational procedures.
+Use approved data: company performance software, QRH or AFM tables, Jetplan — with the actual OAT, QNH, wind, runway condition and NOTAM distances.
 
-Example from the company LOFT — B737-800, MEL 28-01-03-01
-A main tank aft fuel boost pump may be inoperative provided that: (a) both main tank forward pumps operate normally; (b) at the start of take-off, the fuel quantity in the associated tank is not less than 7,500 lb (3,402 kg); (c) a minimum fuel quantity of 2,500 lb (1,134 kg) is maintained in the associated tank; and (d) the boost pump is deactivated.
+Reduced (assumed temperature / derated) thrust is allowed only within the AFM and company limits; on a hot, limiting day full thrust may be required.
 
-Always use the current MEL — this example is for training only.
+A higher take-off flap setting may shorten the runway required but reduces the climb gradient — the performance tool selects the optimum.
+
+Bleeds-off / packs-off take-off can give a performance credit where the procedure is approved for your type.
+
+Re-calculate if the temperature rises, the runway or intersection changes, or the mass changes after the load sheet.
+
+Crew cross-check
+
+One pilot calculates, the other checks independently: runway, intersection, temperature, QNH, wind, mass, flap, thrust and V speeds. Wrong temperature, mass or flap entries are recurring causes of tail strikes and degraded take-offs.
+
+Fleet
+Topic Boeing 737-800 Dash 8-Q400 / Q200
+
+Hot weather procedures FCOM Supplementary Procedures — Adverse Weather, hot weather operation AFM / AOM hot weather and high-temperature limitations
+
+Engine and APU start limits FCOM limitations (EGT); APU start on battery AFM engine start and ITT limits; APU or ground power as installed
+
+Bleeds-off take-off Bleeds-off take-off procedure and performance credit (FCOM / QRH performance) Bleed and pack settings for take-off per AFM performance charts
+
+Performance Company performance software, QRH performance tables, Jetplan AFM performance charts or company software, Jetplan
 
 Key takeaways:
-- Hot fuel is less dense — convert volume to mass with the actual density.
-- Check the uplift and the ZFW / fuel entries carefully.
-- Read every MEL item in full, including (M) and (O) procedures.
+- MTOM = the lowest of field, climb, obstacle, tyre speed, brake energy and other limits.
+- Approved data, actual conditions; full thrust when limiting.
+- Independent cross-check of every performance entry.

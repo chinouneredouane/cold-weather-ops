@@ -88,12 +88,17 @@ def scene(slug, n):
         }
     elif slug == "hot-weather-operations":
         s = {
-            1: lambda: sky("day") + sun() + desert(600) + haze(600) + runway(700, 600, 120) + aircraft(760, 420, 0.95, 10),
-            2: lambda: sky("day") + sun(250, 160, 80) + desert(640) + haze(640) + '<rect x="0" y="600" width="1600" height="80" fill="#8a8f93"/>' + aircraft(820, 540, 1.1, 0),
-            3: lambda: sky("high") + sun(1350, 150, 70) + desert(700) + aircraft(800, 380, 1.0, 0),
-            4: lambda: sky("storm") + desert(640) + dust_wall(700) + cumulonimbus(1250, 300, 0.8) + aircraft(420, 360, 0.7, 2),
-            5: lambda: sky("day") + sun(1300, 140, 70) + desert(560) + runway(720, 560, 160) + aircraft(800, 470, 0.8, 4, flip=True),
-            6: lambda: cockpit(440, 0, "dusk", extra=sun(1100, 450, 50) + desert(500)) + pilots(),
+            1: lambda: sky("day") + sun(1300, 140, 70) + desert(640) + cumulonimbus(700, 330, 1.0) + haze(640),
+            2: lambda: sky("day") + sun() + desert(600) + haze(600) + runway(700, 600, 120) + aircraft(760, 420, 0.95, 10),
+            3: lambda: sky("day") + sun(1300, 140, 70) + desert(560) + haze(560) + runway(720, 560, 160) + aircraft(760, 520, 0.6, 0),
+            4: lambda: sky("day") + sun(250, 160, 80) + desert(640) + haze(640) + '<rect x="0" y="600" width="1600" height="80" fill="#8a8f93"/>' + aircraft(820, 540, 1.1, 0),
+            5: lambda: sky("high") + sun(1350, 150, 70) + desert(700) + aircraft(800, 380, 1.0, 0),
+            6: lambda: sky("day") + sun(1350, 140, 60) + mountains(700, "#8a6a45", "#a8875f", seed=5) + aircraft(700, 380, 0.9, 12),
+            7: lambda: cockpit(460, 0, "day", extra=sun(1200, 420, 50) + desert(520)) + pilots(),
+            8: lambda: cockpit(440, 0, "dusk", extra=sun(1100, 450, 50) + desert(500)) + pilots(),
+            9: lambda: sky("storm") + desert(640) + dust_wall(700) + cumulonimbus(1250, 300, 0.8) + aircraft(420, 360, 0.7, 2),
+            10: lambda: cockpit(480, 0, "day", extra=sun(800, 380, 90) + desert(540)) + adi_inset(0, 0),
+            11: lambda: sky("day") + sun(1300, 140, 70) + desert(560) + runway(720, 560, 160) + aircraft(800, 470, 0.8, 4, flip=True),
         }
     elif slug == "cpdlc":
         s = {

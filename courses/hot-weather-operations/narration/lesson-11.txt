@@ -1,0 +1,34 @@
+Domestic Airlines — Hot Weather Operations
+Lesson 11: Flight Safety Trends — Summer Season
+
+Learning objectives:
+- Review the flight safety events typical of the summer season.
+- Apply the prevention for each event.
+- Report events through the safety reporting system.
+
+Summer focus items
+
+Event Why it matters Prevention
+
+Runway excursion High ground speed, long float, tailwind, sand on the runway Stabilised approach to the aiming point; go around if a long landing develops
+
+High taxi speed Hot brakes, reduced margins, passenger injury Company taxi speeds; short firm braking, never riding the brakes
+
+Wrong flap, ZFW, fuel or temperature entries Wrong speeds and trim: tail strike, degraded take-off Independent cross-check by both pilots
+
+Hard and bounced landings Structural damage, injuries Correct flare; bounced-landing technique; go around if in doubt; report
+
+Turbulence and windshear near convective weather Injuries, loss of control Wide avoidance; seat belts on; windshear escape when required
+
+Use of reverse and APU Company reminder note Apply the reminder note exactly as published
+
+Reporting
+
+Report events and near-misses through the safety reporting system, under a just culture.
+
+Read the latest company safety notes and discuss them with the TRI/TRE before the summer simulator session (mandatory exercises: upset recovery, windshear, TCAS, EGPWS, pilot incapacitation).
+
+Key takeaways:
+- Runway excursions: stabilised approach, go around from a long landing.
+- Moderate taxi speeds; cross-check flap, ZFW, fuel and temperature entries.
+- Avoid convective weather widely; report every event.

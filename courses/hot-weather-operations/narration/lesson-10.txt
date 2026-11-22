@@ -1,0 +1,38 @@
+Domestic Airlines — Hot Weather Operations
+Lesson 10: Human Performance Limitations in High Temperature
+
+Learning objectives:
+- Describe the effects of heat stress and dehydration on the body.
+- Explain their effect on attention, memory and decision-making.
+- Apply countermeasures for crews on hot days.
+
+Heat stress and dehydration
+
+In hot flight decks and on hot aprons, the body loses water through sweat. Thirst comes late : by the time you feel thirsty you are already dehydrated.
+
+Even mild dehydration (about 2 % of body weight) is associated with reduced concentration, slower reactions and more errors.
+
+Signs: headache, fatigue, dizziness, irritability, dark urine; more serious: cramps, nausea, confusion (heat exhaustion, heat stroke).
+
+Effects on performance
+
+Attention narrows ; monitoring and cross-checks suffer.
+
+Working memory is reduced: more slips in data entry (performance, FMS, load sheet).
+
+Decision-making becomes slower and more prone to bias; fatigue builds faster on long, hot duty days.
+
+Countermeasures
+
+Drink water regularly before and during the duty, even without thirst; limit caffeine and avoid heavy meals before flight.
+
+Cool the flight deck early (ground air, APU, packs); use sun visors; dress for the heat on the walk-around.
+
+Use checklists and cross-checks deliberately; tell the other pilot if you feel unwell.
+
+Fatigue: report it through the company system (OM A FTL chapter).
+
+Key takeaways:
+- Thirst comes late; ~2 % dehydration already degrades performance.
+- Heat narrows attention, reduces memory and slows decisions.
+- Drink regularly, cool the flight deck, cross-check deliberately, report fatigue.

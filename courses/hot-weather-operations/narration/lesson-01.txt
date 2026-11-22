@@ -1,46 +1,41 @@
 Domestic Airlines — Hot Weather Operations
-Lesson 1: Hot and High: Effects on Performance
+Lesson 1: High Temperature Meteorology
 
 Learning objectives:
-- Explain how temperature and elevation affect aircraft performance.
-- Identify the performance limits that become critical in hot weather.
-- Use the performance tools correctly.
+- Describe how heat builds up during the day and in heat waves.
+- Explain how heating produces convection, thunderstorms, dust devils and dust storms.
+- Recognise the summer weather threats in the reports and forecasts.
 
-Density is everything
+Heating and the daily cycle
 
-High temperature and high aerodrome elevation both reduce air density — expressed as a high density altitude . Lower density means:
+Over land, the temperature peaks in the afternoon , well after noon, because the ground keeps absorbing more solar radiation than it loses. The hottest — and least dense — air, and the strongest convection, come in the afternoon and early evening.
 
-less thrust or power from the engines — jets and turboprops alike are flat-rated only up to a certain temperature;
+Heat waves
 
-less lift at a given true airspeed — so the same indicated airspeed means a higher true airspeed and ground speed ;
+A heat wave is a period of several days with temperatures well above normal, often under a stationary high-pressure system.
 
-longer take-off and landing distances, higher tyre speeds, and more energy for the brakes to absorb in a rejected take-off;
+Night temperatures stay high, so even early departures can be performance-limited. Plan for the actual temperature, not the seasonal average.
 
-reduced climb gradient — the climb limit (weight–altitude–temperature) and obstacle clearance often limit the take-off mass on hot days.
+Watch the TAF for TX (maximum temperature) groups and check the take-off and landing time against the forecast peak.
 
-Limits that become critical
+Convection and thunderstorms
 
-Climb limit and obstacle limit — especially at southern aerodromes with high elevation and temperatures.
+Strong surface heating creates rising thermals. With enough moisture and instability they grow into towering cumulus and cumulonimbus — with turbulence, windshear, microbursts, hail, lightning and sudden wind changes.
 
-Runway limit — check NOTAMs for reduced declared distances (for example, a displaced threshold or the first part of a runway unusable).
+Dust devils and dust storms
 
-Tyre speed limit and brake energy limit — higher ground speeds at high density altitude.
+Over dry, hot ground, intense heating creates dust devils — small, strong whirlwinds that can affect aircraft on take-off and landing. Thunderstorm outflow can raise a wall of dust and sand — a haboob — that reduces visibility to near zero within minutes.
 
-Landing distance — higher true airspeed at touchdown; a late or long flare uses runway very quickly.
+Summer threats in the reports
 
-Maximum temperature limits for take-off and landing in the AFM.
+DU dust, SA sand, DRSA low drifting sand, BLSA blowing sand, SS / DS sandstorm / duststorm, PO dust devils.
 
-Performance tools
+TS , CB , TCU , gusts ( G ), and convective SIGMETs.
 
-Use the approved performance data: AFM / company performance software, QRH performance tables and the Jetplan operational flight plan.
-
-Enter the actual temperature, QNH, wind and runway condition. A few degrees can change the limiting mass.
-
-Check aerodrome accessibility: take-off alternate, destination alternate and en-route alternates.
-
-The first officer prepares the performance dispatch; the captain cross-checks it.
+Regional threats for our network: hot, high southern aerodromes, sand and dust in the south, and convective weather in the north in summer.
 
 Key takeaways:
-- Heat and elevation reduce density: less thrust and lift, higher true airspeed and ground speed.
-- Climb, obstacle, tyre-speed and brake-energy limits become critical.
-- Use approved performance data with actual conditions; check NOTAMs for reduced distances.
+- The hottest, least dense air is in the afternoon; heat waves keep nights hot too.
+- Heating drives convection: CB, windshear and microbursts.
+- Dust devils and haboobs can cut visibility in minutes.
+- Know the codes: DU, SA, DRSA, BLSA, SS/DS, PO, TS.
