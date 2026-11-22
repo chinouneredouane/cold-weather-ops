@@ -98,3 +98,51 @@ body.player-page{margin:0;background:#fff;overflow:hidden}
 .pl-panel .objectives h2,.pl-panel .takeaways h2{color:#fff;text-transform:none;letter-spacing:0;font-size:1.2rem}
 .pl-panel .objectives li,.pl-panel .takeaways li{color:#f2f7f4}
 .pl-crumbs{max-width:55%}
+
+/* ---------- Text never covers the picture (Nov 2026) ----------
+   Wide screens: picture column (whole picture, never cropped) + text column.
+   Slides with a diagram, table, quiz or calculator: the picture becomes a thin strip on top and the text gets the full width.
+   Portrait screens and phones: picture on top, text below. */
+.pl-bg{overflow:hidden;background-color:#0c3d1e}
+.pl-bg::before,.pl-bg::after{content:"";position:absolute;inset:0;background-image:inherit;background-position:center;background-repeat:no-repeat}
+.pl-bg::before{background-size:cover;filter:blur(18px) brightness(.55);transform:scale(1.12)}
+.pl-bg::after{background-size:contain}
+.pl-bg.none::before,.pl-bg.none::after{display:none}
+.pl-shade{display:none}
+@media (min-width:761px) and (orientation:landscape){
+  .pl-bg{right:auto;width:44%;bottom:44px}
+  .pl-panel,.pl-panel.tall{top:0;left:44%;right:0;bottom:44px;max-height:none;background:#0f4423;padding:58px 28px 22px}
+  .pl-tag{left:calc(44% + 28px);top:16px;max-width:calc(56% - 56px);background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.25);z-index:2}
+  .pl-duration{left:0;right:auto;bottom:50px;border-radius:0 6px 6px 0}
+  .pl-stage.wide .pl-bg{width:auto;right:0;bottom:auto;height:96px}
+  .pl-stage.wide .pl-bg::after{background-size:cover}
+  .pl-stage.wide .pl-panel{left:0;top:96px;padding-top:20px}
+  .pl-stage.wide .pl-tag{left:24px;top:28px;max-width:calc(100% - 48px);background:rgba(255,255,255,.92);color:var(--green-dark,#125a2b);border:0}
+  .pl-stage.wide .pl-duration{top:30px;bottom:auto;right:0;left:auto;border-radius:6px 0 0 6px}
+}
+@media (min-width:761px) and (orientation:portrait){
+  .pl-stage{display:flex;flex-direction:column}
+  .pl-bg{position:relative;height:36vh;flex:none}
+  .pl-panel,.pl-panel.tall{position:relative;bottom:auto;max-height:none;flex:1;background:#0f4423}
+  .pl-stage.wide .pl-bg{height:110px}
+  .pl-duration{top:calc(36vh - 40px);bottom:auto}
+  .pl-stage.wide .pl-duration{top:70px}
+}
+@media (max-width:760px){
+  .pl-panel,.pl-panel.tall{background:#0f4423}
+  .pl-stage.wide .pl-bg{height:90px}
+  .pl-stage.wide .pl-duration{top:54px}
+}
+@media (min-width:761px) and (orientation:landscape){
+  .pl-bg{bottom:4px}
+  .pl-panel,.pl-panel.tall{bottom:4px}
+  .pl-duration{bottom:12px}
+}
+/* portrait screens: labels go between the picture and the text, never on the picture */
+@media (max-width:760px),(min-width:761px) and (orientation:portrait){
+  .pl-bg{order:0}
+  .pl-tag{order:1;position:static;max-width:none;margin:0;border-radius:0;background:#125a2b;color:#fff;padding:8px 16px;font-size:.85rem;border:0}
+  .pl-duration{order:1;position:static;align-self:stretch;text-align:right;background:#125a2b;color:#cfe8d6;padding:0 16px 8px;font-size:.8rem;border-radius:0}
+  .pl-panel,.pl-panel.tall{order:2}
+  .pl-stage.wide .pl-duration{top:auto}
+}

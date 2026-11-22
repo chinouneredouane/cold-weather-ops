@@ -94,7 +94,9 @@
     function show(k, fromAudio) {
       i = Math.max(0, Math.min(total - 1, k));
       slides.forEach(function (s, n) { s.classList.toggle('on', n === i); });
-      panel.classList.toggle('tall', !!slides[i].querySelector('figure, .table-wrap, table, .kc, .dtcalc'));
+      var tall = !!slides[i].querySelector('figure, .table-wrap, table, .kc, .dtcalc');
+      panel.classList.toggle('tall', tall);
+      if (panel.parentNode) panel.parentNode.classList.toggle('wide', tall);
       panel.scrollTop = 0;
       $('plCount').textContent = (i + 1) + '/' + total;
       $('plProg').style.width = ((i + 1) / total * 100) + '%';
