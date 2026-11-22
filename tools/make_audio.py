@@ -67,6 +67,7 @@ SPOKEN = [
     (r"\bDTPs?\b", "D T P"), (r"\bWOCL\b", "W O C L"), (r"\bFDP\b", "F D P"), (r"\bCFMU\b", "C F M U"), (r"\bIFPS\b", "I F P S"), (r"\bAFTN\b", "A F T N"), (r"\bSITA\b", "seeta"), (r"\bQAN\b", "Q A N"), (r"\bQFE\b", "Q F E"), (r"\bQNH\b", "Q N H"), (r"\bMTOW\b", "maximum take-off weight"), (r"\bFIR\b", "F I R"), (r"\bDAAA\b", "D A A A"), (r"(\d+) h (\d\d)\b", r"\1 hours \2"),
     (r"\bANAC\b", "A N A C"), (r"www\.anac\.dz", "the ANAC website"),
     (r"\bVMBE\b", "V M B E"), (r"V<tspan[^>]*>MBE</tspan>", "V M B E"), (r"\bEOSID\b", "engine-out SID"), (r"\bMTOM\b", "maximum take-off mass"), (r"\bSIDs?\b", "sid"),
+    (r"\bG-HRCs?\b", "global high-risk categories"), (r"\bGASP\b", "gasp"), (r"\bIATA\b", "eye-ah-ta"), (r"\bFSF\b", "Flight Safety Foundation"), (r"\bFOQA\b", "foqua"), (r"\bFDM\b", "F D M"), (r"\bMSAWS?\b", "M SAW"), (r"\beTOD\b", "e T O D"), (r"\bMAC\b", "mid-air collision"), (r"\bNASPs?\b", "N A S P"), (r"\bCBTA\b", "C B T A"), (r"\bPNF\b", "pilot not flying"), (r"\bNPAs?\b", "non-precision approach"), (r"\bUAS\b", "undesired aircraft state"), (r"\bRE\b", "runway excursion"), (r"\bRI\b", "runway incursion"),
     (r"\bWILCO\b", "wilco"), (r"\bAFFIRM\b", "affirm"), (r"\bSTANDBY\b", "standby"), (r"\bUNABLE\b", "unable"),
     (r"\s*\(kt\)", " in knots"),
     (r"VS\(n\) = VS × √n", "the stall speed at load factor n equals the normal stall speed times the square root of n"),

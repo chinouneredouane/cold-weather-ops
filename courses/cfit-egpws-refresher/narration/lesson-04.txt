@@ -1,42 +1,42 @@
 Domestic Airlines — CFIT and EGPWS Refresher
-Lesson 4: SOPs, Stabilised Approaches and CDFA
+Lesson 4: ATC, Complacency and Crew Alertness
 
 Learning objectives:
-- Apply stabilised approach criteria and the go-around policy.
-- Fly non-precision approaches with the CDFA technique.
-- Use the autoflight system to reduce CFIT risk.
+- Challenge clearances that conflict with terrain awareness.
+- Recognise complacency on familiar routes.
+- Use briefings and callouts to keep terrain awareness.
 
-Standard operating procedures
+Working with ATC
 
-Do not invent your own procedures. Follow the company SOPs.
+You are responsible for terrain clearance — including when accepting an altitude clearance.
 
-Before the approach, know which approach and runway aids are available (NOTAMs, ATIS, pilot reports) and use all of them.
+Challenge or refuse ATC instructions that are not clearly understood, are questionable, or conflict with your own assessment of the aircraft's position relative to terrain.
 
-Understand the approach, missed approach and departure procedures, and comply with them.
+Use standard phraseology and good radio discipline. Read back every clearance so that everyone agrees on its content.
 
-Stabilised approach
+Do not accept unreasonable clearances, such as a descent that does not fit the terrain or the approach.
 
-Fly stabilised approaches. If the aircraft is not stabilised by 1,000 ft above aerodrome elevation in IMC or 500 ft in VMC (or the gates in your Operations Manual), go around . Domestic Airlines applies a no-fault go-around policy.
+Use the autopilot mode that makes compliance with the ATC instruction easiest and most visible.
 
-Continuous descent final approach (CDFA)
+Complacency
 
-EASA requires non-precision approaches to be flown with the CDFA technique unless otherwise approved (CAT.OP.MPA.115). The company presentations also call it CANPA (constant angle non-precision approach).
+Familiarity can lead to complacency. Do not assume this flight will be like the last one.
 
-The aircraft descends on a constant angle — typically about 3° — from the final approach fix to the runway, without levelling off at the MDA.
+Keep a professional attitude, even at an aerodrome you know well.
 
-At the decision point (DA/H or MDA/H with the add-on defined by the company), if the required visual references are not in sight, go around.
+Brief the operational differences: NOTAMs, inoperative aids, a different runway, the weather.
 
-Where available and trained, use the autoflight system — for example LNAV/VNAV or FPA modes — to fly the constant angle.
+Briefings and callouts
 
-Automation
+Terrain awareness is a primary reason for briefings and callouts. Both pilots must share a common understanding of what to expect.
 
-Use automation appropriately to reduce workload and to fly stabilised approaches.
+Brief the MSA, the highest terrain, the approach and missed approach, and the escape route.
 
-Understand the autopilot modes. Monitor the FMA, and intervene manually if the aircraft does not do what is intended.
+Call out FMA and FMS changes, deviations from the path, and undesirable energy states.
 
-Avoid excessive descent rates and low or high speeds at low altitude.
+Warning During an approach in IMC, fly the published IFR approach procedure only . Do not improvise.
 
 Key takeaways:
-- Not stabilised by 1,000 ft IMC / 500 ft VMC (or company gates): go around.
-- Non-precision approaches: CDFA (CANPA) — constant angle, no levelling at MDA.
-- Know the autopilot modes; monitor the FMA; intervene if needed.
+- The crew is responsible for terrain clearance — challenge doubtful clearances.
+- Familiarity breeds complacency; brief the differences every time.
+- Brief MSA, terrain and escape route; call out FMA changes and deviations.

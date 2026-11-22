@@ -1,0 +1,30 @@
+Domestic Airlines — CFIT and EGPWS Refresher
+Lesson 10: Human Factors in CFIT Accidents
+
+Learning objectives:
+- Use the 'dirty dozen' and the ICAO pilot competencies to analyse CFIT accidents.
+- Identify the competencies most often deficient in CFIT accidents.
+- Apply threat and error management to terrain threats.
+
+Two human factors models
+
+The IATA CFIT study analysed each accident with two models: the twelve human error precursors (Dupont's "dirty dozen") and the ICAO pilot competencies used in competency-based and evidence-based training (PANS-TRG, Doc 9868).
+
+What went wrong
+
+Situational awareness was deficient in every accident.
+
+Application of procedures , communication and leadership and teamwork were frequently deficient.
+
+Among the "dirty dozen", lack of awareness , lack of knowledge , lack of communication and lack of teamwork came first.
+
+Precursors in each accident
+
+Threat and error management
+
+CFIT accidents follow the TEM chain: threats (terrain, weather, ATC, charts) and errors (wrong altitude, wrong setting, wrong mode) lead to an undesired aircraft state (below the profile, off track) — and then to terrain. Each step is a chance to stop the chain.
+
+Key takeaways:
+- Situational awareness was deficient in every CFIT accident analysed.
+- Procedures, communication and teamwork were the next most deficient competencies.
+- TEM: stop the chain at the threat, the error or the undesired state.

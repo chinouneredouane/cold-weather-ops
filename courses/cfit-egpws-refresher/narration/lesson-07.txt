@@ -1,29 +1,50 @@
 Domestic Airlines — CFIT and EGPWS Refresher
-Lesson 7: Enhanced Functions and Crew Response
+Lesson 7: EGPWS Basic Modes 1 to 7
 
 Learning objectives:
-- Describe the EGPWS look-ahead and terrain clearance floor functions.
-- Distinguish cautions from warnings.
-- Apply the company response to EGPWS cautions and warnings.
+- Describe what each basic mode protects against.
+- Recognise the aural alert of each mode.
+- Know which alerts are cautions and which are warnings.
 
-Enhanced functions
+The basic modes
 
-Terrain look-ahead — compares the predicted flight path with the terrain and obstacle database: “CAUTION TERRAIN” / “TERRAIN AHEAD” first, then “TERRAIN AHEAD, PULL UP” / “PULL UP”. Obstacle versions: “CAUTION OBSTACLE”, “OBSTACLE AHEAD, PULL UP”.
+The basic modes compare the radio altitude, the barometric descent rate, the configuration and the glideslope with envelopes. They work without the terrain database — but they react to the terrain below , so their warning time is short.
 
-Terrain clearance floor — a protection floor around each runway in the database: if the aircraft descends below it short of the runway, “TOO LOW TERRAIN”. It catches a “landing short” in a flat area where the basic modes stay silent.
+Mode Protects against Caution Warning Active
 
-Some installations add a runway field clearance floor and “peaks” display modes.
+1 Excessive descent rate for the height above terrain “SINK RATE” “PULL UP” All phases, close to the ground
 
-Cautions and warnings
+2 Excessive closure rate with rising terrain “TERRAIN TERRAIN” “PULL UP” Mainly when not in landing configuration (2A); reduced envelope in landing configuration (2B)
 
-Caution (amber) — for example “SINK RATE”, “TERRAIN TERRAIN”, “DON'T SINK”, “TOO LOW FLAPS”, “TOO LOW GEAR”, “CAUTION TERRAIN”, “CAUTION OBSTACLE”, “BANK ANGLE”, “GLIDESLOPE”. Company SOP : the crew shall immediately assess the flight path or configuration with respect to the ground, and the PF shall take appropriate action to correct the situation. Q200 SOP: the PF verbalises the action to the PM with “CORRECTING” .
+3 Altitude loss after take-off or go-around “DON'T SINK” — Climb after take-off or go-around
 
-Warning (red) — for example “TOO LOW TERRAIN”, “TERRAIN PULL UP”, “OBSTACLE PULL UP” or “PULL UP” (“WHOOP WHOOP PULL UP”). Apply the escape manoeuvre immediately (Lesson 8).
+4 Unsafe terrain clearance when not in landing configuration “TOO LOW GEAR”, “TOO LOW FLAPS”, “TOO LOW TERRAIN” — 4A gear up, 4B flaps not in landing position, 4C after take-off
 
-No delay At night or in IMC, a warning must be followed without hesitation and without trying to confirm it visually . The Q200 SOP adds: “The flight crew must use a good judgment in this matter.” A warning should only ever be judged spurious in daylight VMC, with the terrain and obstacles clearly in sight and no doubt about the aircraft's position. Report every alert.
+5 Excessive deviation below the glideslope “GLIDESLOPE” (louder as the deviation grows) — ILS approach, at low height; can be cancelled
+
+6 Advisory callouts Altitude callouts, “MINIMUMS”, “BANK ANGLE” — As configured for the fleet
+
+7 Windshear (reactive), where installed Windshear caution “WINDSHEAR WINDSHEAR WINDSHEAR” Take-off and approach, at low height
+
+Envelopes, heights and exact wording depend on the installation and the fleet. Predictive windshear (weather radar, B737-800) is a separate system — see the Windshear course.
+
+How to react
+
+Mode 1 “SINK RATE” — reduce the descent rate now. If “PULL UP” follows, escape manoeuvre.
+
+Mode 2 “TERRAIN TERRAIN” — you are closing with terrain: check position, altitude and the terrain display; climb if in doubt. “PULL UP”: escape manoeuvre.
+
+Mode 3 “DON'T SINK” — stop the descent and re-establish the climb (often after a too early flap retraction or a thrust reduction).
+
+Mode 4 “TOO LOW GEAR / FLAPS” — you are low and not configured: if this is not a planned non-normal landing, go around. “TOO LOW TERRAIN”: climb.
+
+Mode 5 “GLIDESLOPE” — correct back to the glideslope; if not possible, go around.
+
+Mode 7 “WINDSHEAR” — windshear escape manoeuvre (FCOM / AOM).
+
+Order of priority When several alerts sound, the system gives priority to the most urgent — windshear and “PULL UP” first. The crew response follows the same order: a warning always means the escape manoeuvre (Lesson 8).
 
 Key takeaways:
-- Look-ahead: CAUTION TERRAIN first, then TERRAIN AHEAD PULL UP; terrain clearance floor protects short of the runway.
-- Caution: assess the flight path and correct (“CORRECTING”).
-- Warning (“PULL UP”, “TERRAIN AHEAD PULL UP”): escape manoeuvre immediately.
-- At night or in IMC, never wait to confirm a warning visually.
+- Mode 1 descent rate, 2 terrain closure, 3 loss after take-off, 4 too low not configured, 5 below glideslope, 6 callouts, 7 windshear.
+- Basic modes look down; their warning time is short.
+- Cautions: correct now. Warnings (“PULL UP”, “WINDSHEAR”): escape manoeuvre.

@@ -1,0 +1,119 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Lesson 12: CFIT Risk Assessment: the FSF CFIT Checklist — CFIT and EGPWS Refresher</title>
+<style>
+@page{size:A4;margin:18mm 16mm 20mm}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#24342b;font-size:10.5pt;line-height:1.5;margin:0}
+h1,h2,h3{color:#14231b;line-height:1.25;break-after:avoid}
+h1{font-size:21pt;margin:0 0 6pt}h2{font-size:14pt;margin:16pt 0 6pt}h3{font-size:12pt;margin:12pt 0 4pt}
+p{margin:0 0 7pt}ul,ol{margin:0 0 8pt;padding-left:16pt}li{margin:2pt 0}
+a{color:#125a2b;text-decoration:none}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:9pt;background:#f3f9f5;border:1px solid #dbe5df;padding:0 3pt;border-radius:3pt}
+.cover{height:257mm;display:flex;flex-direction:column;justify-content:center;break-after:page;
+  background:linear-gradient(120deg,#0c3d1e,#125a2b 55%,#2a8a50);color:#fff;padding:22mm;border-radius:4mm;margin:0}
+.cover h1{color:#fff;font-size:34pt}.cover .k{letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#bfe3cb;font-size:10pt}
+.cover p{color:#e3f1e8;font-size:13pt}.cover .logo{background:#fff;padding:5mm 7mm;border-radius:3mm;display:inline-block;margin-bottom:14mm}
+.cover .logo img{height:16mm}.cover .meta{margin-top:12mm;font-size:10.5pt;color:#d3ebdb}
+.toc{break-after:page}.toc h2{margin-top:0}.toc ol{list-style:none;padding:0}
+.toc li{display:flex;gap:8pt;padding:3pt 0;border-bottom:1px dotted #c9d8cf}.toc .n{width:22pt;font-weight:700;color:#5b6b62}
+.toc .mod{margin-top:9pt;font-weight:800;color:#125a2b;border:0;text-transform:uppercase;font-size:9pt;letter-spacing:.06em}
+.lesson{break-before:page}
+.lesson-head{background:linear-gradient(120deg,#0c3d1e,#1d7a3e);color:#fff;border-radius:3mm;padding:9pt 13pt;margin-bottom:10pt}
+.lesson-head h1{color:#fff;font-size:17pt;margin:2pt 0}.lesson-head .k{font-size:8.5pt;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#c7e8d2}
+.lesson-head .m{font-size:9pt;color:#dbefe2}
+.objectives{background:#f3f9f5;border:1px solid #dbe5df;border-radius:2mm;padding:7pt 11pt;margin:0 0 10pt}
+.objectives h2,.takeaways h2,.kc h2{font-size:9.5pt;text-transform:uppercase;letter-spacing:.06em;margin:0 0 3pt;color:#125a2b}
+.lesson-figure{margin:0 0 10pt;break-inside:avoid}.lesson-figure img{width:100%;max-height:85mm;object-fit:contain;border:1px solid #dbe5df;border-radius:2mm;background:#f3f9f5}
+figure{margin:9pt 0;break-inside:avoid}figure svg{width:100%;height:auto}figcaption{font-size:8.5pt;color:#5b6b62;margin-top:3pt}
+.diagram{border:1px solid #dbe5df;border-radius:2mm;padding:5pt}
+.table-wrap{margin:8pt 0;border:1px solid #dbe5df;border-radius:2mm;overflow:hidden}
+table{border-collapse:collapse;width:100%;font-size:9pt}th,td{text-align:left;vertical-align:top;padding:4pt 6pt;border-bottom:1px solid #dbe5df}
+th{background:#f3f9f5}tr{break-inside:avoid}td.code{font-weight:800;font-size:12pt;text-align:center;width:34pt}
+.callout{border-left:3pt solid #1d7a3e;background:#f3f9f5;padding:6pt 10pt;margin:8pt 0;border-radius:0 2mm 2mm 0;break-inside:avoid}
+.callout .label{display:block;font-size:8.5pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#125a2b}
+.callout.warn{border-color:#c8102e;background:#fdecef}.callout.warn .label{color:#c8102e}
+.callout.caution{border-color:#d08a00;background:#fff5e0}.callout.caution .label{color:#9a6200}
+.callout.info{border-color:#1f5f99;background:#e9f2fb}.callout.info .label{color:#1f5f99}
+.callout > :last-child{margin-bottom:0}
+.steps{list-style:none;padding:0;counter-reset:s}.steps>li{counter-increment:s;position:relative;padding-left:20pt;margin:4pt 0}
+.steps>li::before{content:counter(s);position:absolute;left:0;top:0;width:14pt;height:14pt;border-radius:50%;background:#1d7a3e;color:#fff;font-weight:800;font-size:8pt;display:flex;align-items:center;justify-content:center}
+.dialog{border:1px solid #dbe5df;border-radius:2mm;padding:4pt 10pt;margin:8pt 0;break-inside:avoid}.dialog p{margin:4pt 0}.dialog b{color:#125a2b}
+.muted{color:#5b6b62}
+.takeaways{background:#0c3d1e;color:#e8f5ec;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}.takeaways h2{color:#fff}
+.kc{border:1.5pt dashed #b9d7c3;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}
+.kc .q{font-weight:700;margin:2pt 0 4pt}.kc ol{list-style:upper-alpha}.kc .a{font-size:9pt;margin-top:4pt;color:#125a2b}
+.disclaimer{font-size:8.5pt;color:#5b6b62;border-top:1px solid #dbe5df;padding-top:6pt;margin-top:14pt}
+</style></head><body>
+<section class="lesson" style="break-before:auto" id="lesson-12">
+  <div class="lesson-head"><div class="k">Module 3 · Escape, Human Factors and Risk</div>
+    <h1>Lesson 12: CFIT Risk Assessment: the FSF CFIT Checklist</h1><div class="m">Lesson 12 of 13 · about 10 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Identify the destination factors that raise CFIT risk.</li><li>Explain how the risk multipliers (operation, region, night, IMC, crew) work.</li><li>Score a flight with the Flight Safety Foundation CFIT Checklist and decide on mitigations.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-12.jpg" alt="Approach chart and mountains at dusk"><figcaption>Score the risk before the flight — then mitigate.</figcaption></figure>
+  
+<h2>Why assess CFIT risk</h2>
+<p>The Flight Safety Foundation CFIT Checklist turns the lessons of CFIT accidents into numbers. <strong>Part I</strong> scores the risk of a flight (negative values); <strong>Part II</strong> scores the defences of the company (positive values); <strong>Part III</strong> adds them. A <strong>negative total</strong> means a significant CFIT threat.</p>
+<ul>
+  <li>Biggest destination penalties: <strong>no radar or no ATC</strong> (−30), <strong>NDB</strong> or <strong>night black-hole visual approach</strong> (−30), <strong>limited runway lighting</strong> (−30), <strong>mountainous terrain</strong> (−20).</li>
+  <li>The penalties are <strong>multiplied</strong>: night and IMC (×5 together), the region of operation, the type of operation and a crew at maximum duty ending with a night non-precision approach.</li>
+  <li>Defences that score high: management that places <strong>safety before schedule</strong> and puts no stigma on a <strong>diversion or missed approach</strong>; procedures for <strong>terrain review</strong> and <strong>independent altitude checks</strong>; annual <strong>CFIT case reviews</strong> and <strong>GPWS escape practice</strong> in the simulator; full EGPWS and radio altimeter callouts.</li>
+</ul>
+
+<h2>Score a flight</h2>
+
+<figure class="diagram dtcalc fsfcalc" id="fsfcalc">
+<style>
+.fsfcalc fieldset{border:1px solid #dbe5df;border-radius:8px;margin:0 0 10px;padding:8px 12px}
+.fsfcalc legend{font-weight:700;color:#125a2b;font-size:.9rem}
+.fsfcalc .fsf-o{display:block;font-size:.9rem;margin:3px 0;color:#24342b}
+.fsfcalc .fsf-o b{color:#5b6b62;font-weight:600;margin-left:4px}
+.fsfcalc .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.fsfcalc .res{background:#f3f9f5;border-radius:10px;padding:12px 14px;margin-top:10px;font-size:1rem;color:#24342b}
+.fsfcalc .res .big{font-size:1.5rem;font-weight:800}
+.fsfcalc .neg{color:#c8102e} .fsfcalc .pos{color:#1d7a3e}
+.fsfcalc input[type=number]{width:90px;padding:6px;border:1px solid #cfdcd4;border-radius:6px}
+</style>
+<h3 style="margin-top:0;color:#14231b">Flight Safety Foundation CFIT Checklist — score a flight</h3>
+<p style="color:#24342b;font-size:.9rem">Part I: choose the conditions of the flight (destination factors and risk multipliers). Part II: enter your company's risk-reduction totals from the full FSF checklist (company culture, flight standards, hazard awareness and training, aircraft equipment).</p>
+<div class="cols"><div><h4 style="color:#14231b">Part I — Destination CFIT risk factors</h4><fieldset><legend>Airport and approach control capabilities</legend><label class="fsf-o"><input type="radio" name="p1g0" value="0" checked> ATC approach radar with MSAWS <b>+0</b></label><label class="fsf-o"><input type="radio" name="p1g0" value="0"> ATC minimum radar vectoring charts <b>+0</b></label><label class="fsf-o"><input type="radio" name="p1g0" value="-10"> ATC radar only <b>-10</b></label><label class="fsf-o"><input type="radio" name="p1g0" value="-15"> ATC radar coverage limited by terrain masking <b>-15</b></label><label class="fsf-o"><input type="radio" name="p1g0" value="-30"> No radar coverage available <b>-30</b></label><label class="fsf-o"><input type="radio" name="p1g0" value="-30"> No ATC service <b>-30</b></label></fieldset><fieldset><legend>Expected approach</legend><label class="fsf-o"><input type="radio" name="p1g1" value="0" checked> ILS <b>+0</b></label><label class="fsf-o"><input type="radio" name="p1g1" value="-15"> VOR/DME <b>-15</b></label><label class="fsf-o"><input type="radio" name="p1g1" value="-20"> Non-precision approach, slope FAF–TD shallower than 2.75° <b>-20</b></label><label class="fsf-o"><input type="radio" name="p1g1" value="-30"> NDB <b>-30</b></label><label class="fsf-o"><input type="radio" name="p1g1" value="-30"> Visual night &#x27;black-hole&#x27; approach <b>-30</b></label></fieldset><fieldset><legend>Terrain</legend><label class="fsf-o"><input type="checkbox" name="p1g2" value="-20"> Airport located in or near mountainous terrain <b>-20</b></label></fieldset><fieldset><legend>Runway lighting</legend><label class="fsf-o"><input type="radio" name="p1g3" value="0" checked> Complete approach lighting system <b>+0</b></label><label class="fsf-o"><input type="radio" name="p1g3" value="-30"> Limited lighting system <b>-30</b></label></fieldset><fieldset><legend>Controller / pilot language</legend><label class="fsf-o"><input type="checkbox" name="p1g4" value="-20"> Controllers and pilots speak different primary languages <b>-20</b></label><label class="fsf-o"><input type="checkbox" name="p1g4" value="-20"> Controllers&#x27; spoken English or ICAO phraseology poor <b>-20</b></label><label class="fsf-o"><input type="checkbox" name="p1g4" value="-20"> Pilots&#x27; spoken English poor <b>-20</b></label></fieldset><fieldset><legend>Departure</legend><label class="fsf-o"><input type="checkbox" name="p1g5" value="-10"> No published departure procedure <b>-10</b></label></fieldset></div>
+<div><h4 style="color:#14231b">Part I — Risk multiplier</h4><fieldset><legend>Type of operation</legend><label class="fsf-o"><input type="radio" name="mg0" value="1.0" checked> Scheduled <b>×1</b></label><label class="fsf-o"><input type="radio" name="mg0" value="1.2"> Nonscheduled <b>×1.2</b></label><label class="fsf-o"><input type="radio" name="mg0" value="1.3"> Corporate <b>×1.3</b></label><label class="fsf-o"><input type="radio" name="mg0" value="1.5"> Charter <b>×1.5</b></label><label class="fsf-o"><input type="radio" name="mg0" value="2.0"> Regional <b>×2</b></label><label class="fsf-o"><input type="radio" name="mg0" value="2.5"> Freight <b>×2.5</b></label><label class="fsf-o"><input type="radio" name="mg0" value="1.0"> Domestic <b>×1</b></label><label class="fsf-o"><input type="radio" name="mg0" value="3.0"> International <b>×3</b></label></fieldset><fieldset><legend>Departure / arrival airport region (highest)</legend><label class="fsf-o"><input type="radio" name="mg1" value="8.0" checked> Africa <b>×8</b></label><label class="fsf-o"><input type="radio" name="mg1" value="1.3"> Western Europe <b>×1.3</b></label><label class="fsf-o"><input type="radio" name="mg1" value="1.1"> Middle East <b>×1.1</b></label><label class="fsf-o"><input type="radio" name="mg1" value="1.0"> United States / Canada <b>×1</b></label><label class="fsf-o"><input type="radio" name="mg1" value="3.0"> Euro-Asia <b>×3</b></label><label class="fsf-o"><input type="radio" name="mg1" value="3.0"> Southeast Asia <b>×3</b></label><label class="fsf-o"><input type="radio" name="mg1" value="5.0"> South America / Caribbean <b>×5</b></label></fieldset><fieldset><legend>Weather / night</legend><label class="fsf-o"><input type="radio" name="mg2" value="0.0" checked> Day, no IMC <b>×0</b></label><label class="fsf-o"><input type="radio" name="mg2" value="2.0"> Night — no moon <b>×2</b></label><label class="fsf-o"><input type="radio" name="mg2" value="3.0"> IMC <b>×3</b></label><label class="fsf-o"><input type="radio" name="mg2" value="5.0"> Night and IMC <b>×5</b></label></fieldset><fieldset><legend>Crew</legend><label class="fsf-o"><input type="radio" name="mg3" value="0.0" checked> Two-pilot crew, normal duty <b>×0</b></label><label class="fsf-o"><input type="radio" name="mg3" value="1.2"> Duty day at maximum, ending with a night non-precision approach <b>×1.2</b></label><label class="fsf-o"><input type="radio" name="mg3" value="1.2"> Crew crossed five or more time zones <b>×1.2</b></label></fieldset>
+<h4 style="color:#14231b">Part II — Risk-reduction factors (company totals)</h4>
+<label class="fsf-o">Company culture (max 130) <input type="number" id="fsf-cc" value="105"></label>
+<label class="fsf-o">Flight standards (max 335) <input type="number" id="fsf-fs" value="270"></label>
+<label class="fsf-o">Hazard awareness and training (max 315) <input type="number" id="fsf-ht" value="250"></label>
+<label class="fsf-o">Aircraft equipment (max 195) <input type="number" id="fsf-ae" value="155"></label>
+</div></div>
+<div class="res" id="fsf-res"></div>
+<p class="muted" style="font-size:.82rem">FSF CFIT Checklist © 1994 Flight Safety Foundation — reprinted for training with credit to the Foundation, as the checklist permits. A training tool to understand which factors raise or reduce CFIT risk; it does not replace the company risk assessment.</p>
+<script>
+(function(){
+  var root=document.getElementById('fsfcalc');
+  function val(name){var s=0;root.querySelectorAll('input[name="'+name+'"]:checked').forEach(function(e){s+=parseFloat(e.value)});return s}
+  function num(id){return parseFloat(document.getElementById(id).value)||0}
+  function rate(v,a,b,c){return v>=a?'tops':v>=b?'good':v>=c?'improvement needed':'high CFIT risk'}
+  function calc(){
+    var dest=0;for(var i=0;i<6;i++)dest+=val('p1g'+i);
+    var mult=0;for(var j=0;j<4;j++)mult+=val('mg'+j);
+    var p1=dest*mult, cc=num('fsf-cc'), fs=num('fsf-fs'), ht=num('fsf-ht'), ae=num('fsf-ae'), p2=cc+fs+ht+ae, score=p1+p2;
+    var h='Destination factors <b>'+dest+'</b> × risk multiplier <b>'+mult.toFixed(1)+'</b> = Part I <b class="neg">'+Math.round(p1)+'</b><br>';
+    h+='Part II = '+cc+' + '+fs+' + '+ht+' + '+ae+' = <b class="pos">'+p2+'</b><br>';
+    h+='<span class="big '+(score<0?'neg':'pos')+'">CFIT risk score '+(score>0?'+':'')+Math.round(score)+'</span><br>';
+    h+=score<0?'<b class="neg">Negative score: significant CFIT threat — review the risk-reduction factors and mitigate before the flight (briefing, alternate, timing, crew).</b>':'<b class="pos">Positive score: the defences outweigh the risk factors — keep them in place.</b>';
+    h+='<br><span style="font-size:.88rem">Company culture: '+rate(cc,115,105,80)+' · Flight standards: '+rate(fs,300,270,200)+' · Training: '+rate(ht,285,250,190)+' · Equipment: '+rate(ae,175,155,115)+'</span>';
+    document.getElementById('fsf-res').innerHTML=h;
+  }
+  root.addEventListener('change',calc); root.addEventListener('input',calc); calc();
+})();
+</script>
+</figure>
+
+<h2>Use the result</h2>
+<ol class="steps">
+  <li>Try a day ILS to a radar-equipped airport, then a night NDB approach in mountainous terrain: see how the score changes.</li>
+  <li>A negative score is not a "no-go" by itself — it is a call to <strong>mitigate</strong>: brief the terrain and the MSA, use the best approach available, consider timing (daylight), fuel and alternate, and the most experienced crew.</li>
+  <li>Report the factors that the company can improve through the safety reporting system.</li>
+</ol>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Part I (risk, negative) × multipliers + Part II (defences, positive) = CFIT risk score.</li><li>Night + IMC, no radar, NDB/black-hole approaches and mountainous terrain raise the risk most.</li><li>A negative score calls for mitigation before the flight.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">In the FSF CFIT Checklist, what does a negative CFIT risk score indicate?</p>
+    <ol><li>No risk</li><li>A significant CFIT threat that requires mitigation</li><li>The flight is cancelled automatically</li><li>An error in the checklist</li></ol>
+    <p class="a"><b>Answer: B.</b> A negative score indicates a significant threat; review and mitigate.</p></div>
+</section><p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p></body></html>

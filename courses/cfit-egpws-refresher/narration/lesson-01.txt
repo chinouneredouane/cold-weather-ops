@@ -1,10 +1,10 @@
 Domestic Airlines — CFIT and EGPWS Refresher
-Lesson 1: CFIT: Definition, Defences and Contributing Factors
+Lesson 1: CFIT in the World: Definition, Data and Priorities
 
 Learning objectives:
 - Define controlled flight into terrain (CFIT).
-- Identify where and why CFIT accidents happen.
-- List the main defences and contributing factors.
+- State why ICAO lists CFIT as a global high-risk category.
+- Describe the CFIT statistics and where CFIT accidents happen.
 
 Definition
 
@@ -17,6 +17,40 @@ Many are caused by a loss of situational awareness, particularly in the vertical
 Unfamiliarity with the approach, or misreading the approach chart, are common factors — especially where the approach has several step-down altitudes between the initial and final approach fixes.
 
 The result is almost always a hull loss with fatalities. Since terrain awareness warning systems (TAWS) became mandatory, CFIT accidents have become much rarer — but they still happen, mostly where the warning was absent, ignored or acted on too late.
+
+A global high-risk category
+
+ICAO's Global Aviation Safety Plan (Doc 10004, 2026–2028) aims at zero fatal accidents in commercial operations by 2030 and beyond . It names five global high-risk categories (G-HRC) , on which States, regions and operators must concentrate:
+
+Controlled flight into terrain (CFIT)
+
+Loss of control in flight (LOC-I)
+
+Mid-air collision (MAC)
+
+Runway excursion (RE)
+
+Runway incursion (RI)
+
+The same categories apply to turboprops and jets alike. National and company safety plans (NASP, SMS) must address them.
+
+What the data say
+
+IATA study, 67 CFIT accidents 2005–2014
+
+Fatalities 1,346
+
+Hull loss 99 % of CFIT accidents
+
+Accidents with fatalities 88 %
+
+Occupants surviving about 18 %
+
+Phase of flight approach 47.7 % , landing 16.4 %
+
+CFIT is rare, but when it happens it is almost never survivable. It remains one of the two leading causes of fatal commercial accidents, with loss of control in flight.
+
+IATA notes that 24 % of CFIT accidents worldwide in 2014–2024 could not be fully classified because of insufficient data — three of them involved operators in the AFI region. Reporting matters.
 
 Defences
 

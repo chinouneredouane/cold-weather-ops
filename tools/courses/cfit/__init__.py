@@ -456,3 +456,7 @@ COURSE = dict(
             8: ("gen", "Airliner climbing steeply away from high terrain", "The escape manoeuvre: maximum power, wings level, pitch for the best climb."),
             9: ("gen", "Airliner climbing over mountains at sunset", "Every CFIT lesson was learned the hard way.")},
 )
+
+# 2026-11: extension from ICAO Doc 10004, the IATA CFIT study and implementation plan, the FSF CFIT Checklist and SKYbrary
+from .extension import extend as _extend  # noqa: E402
+COURSE = _extend(COURSE)

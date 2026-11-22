@@ -1,0 +1,32 @@
+Domestic Airlines — CFIT and EGPWS Refresher
+Lesson 12: CFIT Risk Assessment: the FSF CFIT Checklist
+
+Learning objectives:
+- Identify the destination factors that raise CFIT risk.
+- Explain how the risk multipliers (operation, region, night, IMC, crew) work.
+- Score a flight with the Flight Safety Foundation CFIT Checklist and decide on mitigations.
+
+Why assess CFIT risk
+
+The Flight Safety Foundation CFIT Checklist turns the lessons of CFIT accidents into numbers. Part I scores the risk of a flight (negative values); Part II scores the defences of the company (positive values); Part III adds them. A negative total means a significant CFIT threat.
+
+Biggest destination penalties: no radar or no ATC (−30), NDB or night black-hole visual approach (−30), limited runway lighting (−30), mountainous terrain (−20).
+
+The penalties are multiplied : night and IMC (×5 together), the region of operation, the type of operation and a crew at maximum duty ending with a night non-precision approach.
+
+Defences that score high: management that places safety before schedule and puts no stigma on a diversion or missed approach ; procedures for terrain review and independent altitude checks ; annual CFIT case reviews and GPWS escape practice in the simulator; full EGPWS and radio altimeter callouts.
+
+Score a flight
+
+Use the result
+
+Try a day ILS to a radar-equipped airport, then a night NDB approach in mountainous terrain: see how the score changes.
+
+A negative score is not a "no-go" by itself — it is a call to mitigate : brief the terrain and the MSA, use the best approach available, consider timing (daylight), fuel and alternate, and the most experienced crew.
+
+Report the factors that the company can improve through the safety reporting system.
+
+Key takeaways:
+- Part I (risk, negative) × multipliers + Part II (defences, positive) = CFIT risk score.
+- Night + IMC, no radar, NDB/black-hole approaches and mountainous terrain raise the risk most.
+- A negative score calls for mitigation before the flight.

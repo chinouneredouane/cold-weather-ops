@@ -1,45 +1,33 @@
 Domestic Airlines — CFIT and EGPWS Refresher
-Lesson 8: The Escape Manoeuvre — by Fleet
+Lesson 8: Enhanced Functions and Crew Response
 
 Learning objectives:
-- Apply the company EGPWS recovery procedure for your fleet.
-- Explain the reasons for each step.
-- Complete the recovery and inform ATC.
+- Describe the EGPWS look-ahead and terrain clearance floor functions.
+- Distinguish cautions from warnings.
+- Apply the company response to EGPWS cautions and warnings.
 
-Company procedures
+Enhanced functions
 
-Fleet Pilot flying Pilot monitoring
+Terrain look-ahead — compares the predicted flight path with the terrain and obstacle database: “CAUTION TERRAIN” / “TERRAIN AHEAD” first, then “TERRAIN AHEAD, PULL UP” / “PULL UP”. Obstacle versions: “CAUTION OBSTACLE”, “OBSTACLE AHEAD, PULL UP”.
 
-Dash 8-Q400 Company SOP, EGPWS Recovery (Rev 02)
-Calls “CHECK POWER” . Selects GA and disconnects the autopilot. Advances the power levers to the detent , rolls wings level and pitches aggressively to initiate the climb, respecting the stick shaker. Targets V GA . Once clear of terrain: establishes level flight and reconfigures the aircraft.
-Confirms NTOP on the engine display and calls “POWER SET” . Monitors radio altimeter and vertical speed and informs the PF of performance and terrain clearance. Once clear: advises ATC — “(call sign) EGPWS recovery, new altitude / flight level …”.
+Terrain clearance floor — a protection floor around each runway in the database: if the aircraft descends below it short of the runway, “TOO LOW TERRAIN”. It catches a “landing short” in a flat area where the basic modes stay silent.
 
-Dash 8-Q200 Company SOP, Table 25 EGPWS recovery
-Calls “CHECK POWER” . Selects GA and disconnects the AP. Advances the power levers to MTOP , rolls wings level and pitches aggressively to initiate the climb, responding to the stick shaker. Targets V GA . Once clear: establishes level flight and configures the aircraft.
-Confirms MTOP and calls “POWER SET” . Monitors radio altimeter and vertical speed and informs the PF of performance and terrain clearance. Once clear: advises ATC of the EGPWS recovery and new altitude or flight level.
+Some installations add a runway field clearance floor and “peaks” display modes.
 
-Boeing 737-800 Boeing QRH / FCTM — check against your current QRH
-Terrain Avoidance (QRH Non-Normal Manoeuvres, memory item): disconnect the autopilot and autothrottle ; aggressively apply maximum thrust ; simultaneously roll wings level and rotate to an initial pitch attitude of 20° ; retract the speedbrakes ; if terrain remains a threat, continue rotation up to the pitch limit indicator or stick shaker; do not change gear or flap configuration until terrain separation is assured. When clear: slowly decrease pitch and accelerate.
-Assures maximum thrust ; verifies all required actions are completed and calls out any omissions; calls out the radio altitude trend (increasing or decreasing). When clear: advises ATC.
+Cautions and warnings
 
-Why each step matters
+Caution (amber) — for example “SINK RATE”, “TERRAIN TERRAIN”, “DON'T SINK”, “TOO LOW FLAPS”, “TOO LOW GEAR”, “CAUTION TERRAIN”, “CAUTION OBSTACLE”, “BANK ANGLE”, “GLIDESLOPE”. Company SOP : the crew shall immediately assess the flight path or configuration with respect to the ground, and the PF shall take appropriate action to correct the situation. Q200 SOP: the PF verbalises the action to the PM with “CORRECTING” .
 
-Maximum available power immediately — the climb gradient depends on excess thrust. Turboprops respond quickly; jets need several seconds to spool up.
+Warning (red) — for example “TOO LOW TERRAIN”, “TERRAIN PULL UP”, “OBSTACLE PULL UP” or “PULL UP” (“WHOOP WHOOP PULL UP”). Apply the escape manoeuvre immediately (Lesson 8).
 
-Autopilot off, wings level — the lift vector must point up; a bank reduces the climb.
+No delay At night or in IMC, a warning must be followed without hesitation and without trying to confirm it visually . The Q200 SOP adds: “The flight crew must use a good judgment in this matter.” A warning should only ever be judged spurious in daylight VMC, with the terrain and obstacles clearly in sight and no doubt about the aircraft's position. Report every alert.
 
-Pitch aggressively, respecting the stick shaker — the best climb gradient is obtained close to the stall warning. Do not exceed it.
+What the accidents show
 
-Do not change the configuration during the escape unless your procedure says so. Retracting flaps or gear too early can reduce the climb capability.
-
-The PM monitors radio altimeter and vertical speed and calls the trend — the PF concentrates on flying.
-
-Continue until the warning stops and terrain clearance is assured, then level off, reconfigure and inform ATC.
-
-Practise it The escape manoeuvre is a last resort. It is practised in the simulator during recurrent training — so that, if needed, it happens instinctively.
+The IATA study found that, where fitted, the GPWS/EGPWS performed as designed . In accidents with a working terrain warning system, the system gave enough time to react — but the crew delayed the response or made an inadequate avoidance manoeuvre . The warning works only if the response is immediate and complete.
 
 Key takeaways:
-- Q400: CHECK POWER → GA, AP off → power levers to detent → wings level, pitch aggressively (stick shaker) → NTOP, POWER SET → VGA.
-- Q200: the same sequence with MTOP.
-- B737-800: A/P and A/T off, maximum thrust, wings level, pitch 20° (then PLI / stick shaker), speedbrakes retracted, no configuration change — a QRH memory item.
-- After the escape: level off, reconfigure, tell ATC “EGPWS recovery”.
+- Look-ahead: CAUTION TERRAIN first, then TERRAIN AHEAD PULL UP; terrain clearance floor protects short of the runway.
+- Caution: assess the flight path and correct (“CORRECTING”).
+- Warning (“PULL UP”, “TERRAIN AHEAD PULL UP”): escape manoeuvre immediately.
+- At night or in IMC, never wait to confirm a warning visually.

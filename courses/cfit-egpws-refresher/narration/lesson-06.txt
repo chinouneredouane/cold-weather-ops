@@ -1,50 +1,57 @@
 Domestic Airlines — CFIT and EGPWS Refresher
-Lesson 6: EGPWS Basic Modes 1 to 7
+Lesson 6: EGPWS / TAWS: The System and the Terrain Display
 
 Learning objectives:
-- Describe what each basic mode protects against.
-- Recognise the aural alert of each mode.
-- Know which alerts are cautions and which are warnings.
+- Explain why TAWS is required and what the EGPWS adds to the classic GPWS.
+- List the EGPWS inputs and the effect of a wrong input.
+- Read the terrain display and use the inhibit switches correctly.
 
-The basic modes
+Why TAWS
 
-The basic modes compare the radio altitude, the barometric descent rate, the configuration and the glideslope with envelopes. They work without the terrain database — but they react to the terrain below , so their warning time is short.
+ICAO Annex 6 and EASA CAT.IDE.A.150 require a terrain awareness warning system (TAWS) on commercial aeroplanes. The first generation, the GPWS , looked only down with the radio altimeter: it could not warn of a steep slope ahead in time. The Enhanced GPWS (EGPWS) adds a worldwide terrain, obstacle and runway database and the aircraft position, so it can look ahead of the aircraft. Since EGPWS became mandatory, CFIT accidents with a working, correctly used system have become very rare.
 
-Mode Protects against Caution Warning Active
+Position and altitude
 
-1 Excessive descent rate for the height above terrain “SINK RATE” “PULL UP” All phases, close to the ground
+The look-ahead function depends on an accurate position (GNSS, or FMS position) and a valid, current database .
 
-2 Excessive closure rate with rising terrain “TERRAIN TERRAIN” “PULL UP” Mainly when not in landing configuration (2A); reduced envelope in landing configuration (2B)
+Many installations compute a geometric altitude from GNSS, barometric and radio altitude. It reduces errors from a wrong altimeter setting or very cold temperatures.
 
-3 Altitude loss after take-off or go-around “DON'T SINK” — Climb after take-off or go-around
+A position error, an out-of-date database or an aerodrome not in the database can cause nuisance alerts — or missed alerts . Report every nuisance alert so that the database can be checked.
 
-4 Unsafe terrain clearance when not in landing configuration “TOO LOW GEAR”, “TOO LOW FLAPS”, “TOO LOW TERRAIN” — 4A gear up, 4B flaps not in landing position, 4C after take-off
+The terrain display
 
-5 Excessive deviation below the glideslope “GLIDESLOPE” (louder as the deviation grows) — ILS approach, at low height; can be cancelled
+Select the terrain display in the climb and descent, especially near high terrain — it gives the picture before any alert.
 
-6 Advisory callouts Altitude callouts, “MINIMUMS”, “BANK ANGLE” — As configured for the fleet
+When a look-ahead caution or warning is triggered, the display usually pops up automatically and the threatening terrain is shown in solid yellow (caution) or solid red (warning).
 
-7 Windshear (reactive), where installed Windshear caution “WINDSHEAR WINDSHEAR WINDSHEAR” Take-off and approach, at low height
+The terrain display is not for navigation : never use it to manoeuvre around terrain in IMC.
 
-Envelopes, heights and exact wording depend on the installation and the fleet. Predictive windshear (weather radar, B737-800) is a separate system — see the Windshear course.
+Inhibits, failures and the MEL
 
-How to react
+Typical controls: a flap override / flap inhibit (landing with less than landing flaps, per the QRH), a gear override , a terrain inhibit (look-ahead off, for example when position is unreliable — only when the QRH or the company procedure says so) and a glideslope cancel .
 
-Mode 1 “SINK RATE” — reduce the descent rate now. If “PULL UP” follows, escape manoeuvre.
+Never inhibit a function to silence an alert you do not understand.
 
-Mode 2 “TERRAIN TERRAIN” — you are closing with terrain: check position, altitude and the terrain display; climb if in doubt. “PULL UP”: escape manoeuvre.
+An EGPWS failure or a terrain function failure is shown on the flight deck; dispatch is only possible within the MEL limits, and the crew must brief the lost protection.
 
-Mode 3 “DON'T SINK” — stop the descent and re-establish the climb (often after a too early flap retraction or a thrust reduction).
+Switch names and locations differ between the B737-800, Q400 and Q200 — check the FCOM / AOM of your fleet.
 
-Mode 4 “TOO LOW GEAR / FLAPS” — you are low and not configured: if this is not a planned non-normal landing, go around. “TOO LOW TERRAIN”: climb.
+Keeping the system effective (IATA CFIT plan)
 
-Mode 5 “GLIDESLOPE” — correct back to the glideslope; if not possible, go around.
+Up-to-date software and databases — terrain, obstacle and runway databases updated as issued by the manufacturer, under one department's responsibility and a formal process.
 
-Mode 7 “WINDSHEAR” — windshear escape manoeuvre (FCOM / AOM).
+GNSS position source — the EGPWS should use GPS/GNSS position; without it, the look-ahead depends on the FMS position.
 
-Order of priority When several alerts sound, the system gives priority to the most urgent — windshear and “PULL UP” first. The crew response follows the same order: a warning always means the escape manoeuvre (Lesson 8).
+Terrain display policy — at least one pilot selects the terrain display in critical phases (climb, and descent below MSA); both pilots when weather is not a threat.
+
+Always active and serviceable — procedures ensure the EGPWS is never left inhibited.
+
+GPS interference — report GNSS jamming or spoofing and radio altimeter anomalies immediately to ATC and the authority: they degrade the EGPWS.
+
+Not a navigation tool The EGPWS is not a primary reference for terrain or obstacle avoidance. The crew remains responsible for terrain clearance — and, on a visual approach, for its own separation from terrain and obstacles.
 
 Key takeaways:
-- Mode 1 descent rate, 2 terrain closure, 3 loss after take-off, 4 too low not configured, 5 below glideslope, 6 callouts, 7 windshear.
-- Basic modes look down; their warning time is short.
-- Cautions: correct now. Warnings (“PULL UP”, “WINDSHEAR”): escape manoeuvre.
+- TAWS is mandatory; EGPWS adds a terrain database and look-ahead to the classic GPWS.
+- Wrong position, database or radio altimeter input = wrong or missed alerts.
+- Terrain colours show height relative to the aircraft; solid yellow = caution, solid red = warning.
+- Inhibit switches only as the QRH or company procedure says; EGPWS failures per MEL.

@@ -76,15 +76,19 @@ def scene(slug, n):
     elif slug == "cfit-egpws-refresher":
         s = {
             1: lambda: sky("cloud") + mountains(700, "#3e5a4a", "#5d7b67", seed=3) + cloud(500, 300, 2.0, "#e5eaee", .9) + aircraft(1050, 420, 0.7, -4, flip=True),
-            2: lambda: cockpit(520, 0, "day", extra=mountains(600, "#3e5a4a", "#5d7b67", seed=8)) + adi_inset(-3, 0),
-            3: lambda: cockpit(440, 0, "dusk", extra=mountains(560, "#5b4a5e", "#7a6a80", seed=2)) + pilots(),
-            4: lambda: (sky("day") + ground(560, 0, "land") + runway() + mountains(620, "#3e5a4a", "#5d7b67", seed=11)
+            2: lambda: sky("cloud") + mountains(660, "#46604f", "#66806e", seed=21) + cloud(900, 360, 2.2, "#d9e0e5", .92) + aircraft(600, 330, 0.7, -6),
+            3: lambda: cockpit(520, 0, "day", extra=mountains(600, "#3e5a4a", "#5d7b67", seed=8)) + adi_inset(-3, 0),
+            4: lambda: cockpit(440, 0, "dusk", extra=mountains(560, "#5b4a5e", "#7a6a80", seed=2)) + pilots(),
+            5: lambda: (sky("day") + ground(560, 0, "land") + runway() + mountains(620, "#3e5a4a", "#5d7b67", seed=11)
                         + '<path d="M1500 150 L800 600" stroke="#ffd24a" stroke-width="6" stroke-dasharray="18 12"/>' + aircraft(1200, 340, 0.6, -3, flip=True)),
-            5: lambda: cockpit(480, 0, "dusk", extra=mountains(560, "#4a3b4e", "#6d5b70", seed=9)) + adi_inset(0, 0),
-            6: lambda: sky("cloud") + mountains(640, "#3e5a4a", "#5d7b67", seed=14) + aircraft(700, 300, 0.8, -8),
-            7: lambda: cockpit(560, 0, "night", extra=mountains(600, "#0d1a2b", "#15263c", seed=6), ground_style="night") + adi_inset(-4, 0),
-            8: lambda: sky("day") + mountains(780, "#3e5a4a", "#5d7b67", seed=12) + aircraft(800, 420, 1.0, 22),
-            9: lambda: sky("dusk") + mountains(760, "#4a3b4e", "#6d5b70", seed=4) + aircraft(820, 360, 0.95, 12),
+            6: lambda: cockpit(480, 0, "dusk", extra=mountains(560, "#4a3b4e", "#6d5b70", seed=9)) + adi_inset(0, 0),
+            7: lambda: sky("cloud") + mountains(640, "#3e5a4a", "#5d7b67", seed=14) + aircraft(700, 300, 0.8, -8),
+            8: lambda: cockpit(560, 0, "night", extra=mountains(600, "#0d1a2b", "#15263c", seed=6), ground_style="night") + adi_inset(-4, 0),
+            9: lambda: sky("day") + mountains(780, "#3e5a4a", "#5d7b67", seed=12) + aircraft(800, 420, 1.0, 22),
+            10: lambda: cockpit(460, 0, "night", extra=mountains(580, "#0d1a2b", "#15263c", seed=17), ground_style="night") + pilots(),
+            11: lambda: sky("storm") + ground(640, 0, "sea") + mountains(660, "#33463b", "#4d6356", seed=23) + aircraft(1000, 380, 0.7, -3, flip=True),
+            12: lambda: sky("dusk") + mountains(720, "#4a3b4e", "#6d5b70", seed=27) + aircraft(560, 300, 0.6, 0),
+            13: lambda: sky("dusk") + mountains(760, "#4a3b4e", "#6d5b70", seed=4) + aircraft(820, 360, 0.95, 12),
         }
     elif slug == "hot-weather-operations":
         s = {

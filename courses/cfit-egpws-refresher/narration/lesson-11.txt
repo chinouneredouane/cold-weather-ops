@@ -1,0 +1,56 @@
+Domestic Airlines — CFIT and EGPWS Refresher
+Lesson 11: CFIT Case Studies
+
+Learning objectives:
+- Learn from CFIT accidents analysed by IATA.
+- Recognise the near-CFIT events on Dash 8 aircraft.
+- Relate each case to the defences in this course.
+
+Accidents analysed by IATA (de-identified)
+
+Case What happened Lesson
+
+Jet, mountain, 2005 — VOR/DME approach, snowstorm, 105 killed Did not proceed to the VOR as instructed and descended below the assigned altitude before being established on any segment of the approach. Never descend before being established on a published segment.
+
+Twin turboprop, ridge, 2005 — RNAV (GNSS) NPA in IMC, 15 killed Departed from the descent path and did not follow the chart's constant-angle descent points; descended below the 2,060 ft segment minimum after the FAF. Fly the constant angle (CDFA); check each step altitude.
+
+Jet, sea, 2006 — night IMC approach, 113 killed Night flight after poor daytime rest; loss of situational awareness during the approach and go-around. Fatigue and night approaches multiply the CFIT risk.
+
+Jet, mountain, 2010 — circling in monsoon rain, 152 killed During a circling approach the selected altitude was reduced below the circling minimum, contrary to SOP; the aircraft hit high ground. Never descend below circling minima until on final with the runway in sight.
+
+Accidents analysed by IATA (continued)
+
+Case What happened Lesson
+
+Jet, hill, 2011 — ILS/DME approach in low cloud, 12 killed The aircraft drifted off the localiser; a go-around was started only 2 seconds before impact. When the approach is not right, go around early.
+
+Jet, sea, 2013 — VOR/DME NPA in rain, all survived Continued below MDA without the required visual reference; the go-around was called at 20 ft. No visual reference at MDA: go around immediately.
+
+Cargo jet, short of runway, 2013 — night localiser NPA Only the shorter runway with a non-precision approach was available; the descent continued below MDA without visual reference. Brief NOTAMs and the approach options; respect the MDA.
+
+Summarised from IATA, CFIT — A Study of TAWS Capability and Human Factors in CFIT Accidents 2005–2014, sections 7–15.
+
+Dash 8 near-CFIT events
+
+Event What happened Lesson
+
+DHC-8, Svolvær, Norway, 2022 On final in cloud, the aircraft came within less than 300 ft of terrain. An incorrect altimeter setting put the approach 700 ft below the profile. The crew responded to a valid EGPWS warning and went around. Read back and cross-check every altimeter setting; trust the EGPWS.
+
+DHC-8, Val-d'Or, Canada, 2023 The captain made an incorrect FMS entry ; the first officer (PF) continued an excessively steep, off-track descent without visual reference until terrain alerts ended the approach. Verify FMS entries; monitor the vertical and lateral path; PM speaks up.
+
+Source: SKYbrary, Controlled Flight Into Terrain — accidents and incidents.
+
+Classic CFIT accidents
+
+Accident What happened Lesson
+
+Air Inter 148 Airbus A320, Mont Sainte-Odile, France, January 1992 During a night approach in mountainous terrain the aircraft descended far more steeply than intended; a confusion between vertical speed and flight path angle modes was considered a likely factor. No GPWS was fitted. 87 people died. Monitor the FMA and the vertical profile; cross-check altitude against distance.
+
+American Airlines 965 Boeing 757, near Cali, Colombia, December 1995 During a rushed approach the crew entered a wrong navigation point in the FMS; the aircraft turned towards high terrain while descending. The GPWS escape was flown, but the speedbrakes were still extended. 159 people died. Do not accept a rushed approach; verify FMS entries; in the escape, maximum performance — speedbrakes retracted.
+
+Korean Air 801 Boeing 747, Guam, August 1997 At night, in rain, the crew flew a non-precision approach while the glideslope was out of service, and descended below the minimum altitude before reaching the step-down fix. 228 people died. Brief inoperative aids; respect step-down altitudes and MDA; use CDFA.
+
+Key takeaways:
+- Descending before being established, below step or circling minima, or below MDA without visual reference: the recurring trap.
+- Fatigue, night and IMC multiply the risk.
+- Dash 8 lessons: wrong altimeter setting, wrong FMS entry — cross-check and trust the EGPWS.

@@ -1,43 +1,50 @@
 Domestic Airlines — CFIT and EGPWS Refresher
-Lesson 5: EGPWS / TAWS: The System and the Terrain Display
+Lesson 5: SOPs, Stabilised Approaches and CDFA
 
 Learning objectives:
-- Explain why TAWS is required and what the EGPWS adds to the classic GPWS.
-- List the EGPWS inputs and the effect of a wrong input.
-- Read the terrain display and use the inhibit switches correctly.
+- Apply stabilised approach criteria and the go-around policy.
+- Fly non-precision approaches with the CDFA technique.
+- Use the autoflight system to reduce CFIT risk.
 
-Why TAWS
+Standard operating procedures
 
-ICAO Annex 6 and EASA CAT.IDE.A.150 require a terrain awareness warning system (TAWS) on commercial aeroplanes. The first generation, the GPWS , looked only down with the radio altimeter: it could not warn of a steep slope ahead in time. The Enhanced GPWS (EGPWS) adds a worldwide terrain, obstacle and runway database and the aircraft position, so it can look ahead of the aircraft. Since EGPWS became mandatory, CFIT accidents with a working, correctly used system have become very rare.
+Do not invent your own procedures. Follow the company SOPs.
 
-Position and altitude
+Before the approach, know which approach and runway aids are available (NOTAMs, ATIS, pilot reports) and use all of them.
 
-The look-ahead function depends on an accurate position (GNSS, or FMS position) and a valid, current database .
+Understand the approach, missed approach and departure procedures, and comply with them.
 
-Many installations compute a geometric altitude from GNSS, barometric and radio altitude. It reduces errors from a wrong altimeter setting or very cold temperatures.
+Stabilised approach
 
-A position error, an out-of-date database or an aerodrome not in the database can cause nuisance alerts — or missed alerts . Report every nuisance alert so that the database can be checked.
+Fly stabilised approaches. If the aircraft is not stabilised by 1,000 ft above aerodrome elevation in IMC or 500 ft in VMC (or the gates in your Operations Manual), go around . Domestic Airlines applies a no-fault go-around policy.
 
-The terrain display
+Continuous descent final approach (CDFA)
 
-Select the terrain display in the climb and descent, especially near high terrain — it gives the picture before any alert.
+EASA requires non-precision approaches to be flown with the CDFA technique unless otherwise approved (CAT.OP.MPA.115). The company presentations also call it CANPA (constant angle non-precision approach).
 
-When a look-ahead caution or warning is triggered, the display usually pops up automatically and the threatening terrain is shown in solid yellow (caution) or solid red (warning).
+The aircraft descends on a constant angle — typically about 3° — from the final approach fix to the runway, without levelling off at the MDA.
 
-The terrain display is not for navigation : never use it to manoeuvre around terrain in IMC.
+At the decision point (DA/H or MDA/H with the add-on defined by the company), if the required visual references are not in sight, go around.
 
-Inhibits, failures and the MEL
+Where available and trained, use the autoflight system — for example LNAV/VNAV or FPA modes — to fly the constant angle.
 
-Typical controls: a flap override / flap inhibit (landing with less than landing flaps, per the QRH), a gear override , a terrain inhibit (look-ahead off, for example when position is unreliable — only when the QRH or the company procedure says so) and a glideslope cancel .
+Automation
 
-Never inhibit a function to silence an alert you do not understand.
+Use automation appropriately to reduce workload and to fly stabilised approaches.
 
-An EGPWS failure or a terrain function failure is shown on the flight deck; dispatch is only possible within the MEL limits, and the crew must brief the lost protection.
+Understand the autopilot modes. Monitor the FMA, and intervene manually if the aircraft does not do what is intended.
 
-Switch names and locations differ between the B737-800, Q400 and Q200 — check the FCOM / AOM of your fleet.
+Avoid excessive descent rates and low or high speeds at low altitude.
+
+The briefing: the first defence
+
+IATA's CFIT implementation plan stresses that a thorough briefing lets the crew know the main features of the departure, descent, approach and missed approach, the terrain and the hazards. Brief:
+
+Departure briefing Approach briefing
+
+Significant terrain and obstacles along the departure route; the SID and the MSA; the engine-out procedure Descent profile and energy management; terrain and approach hazards; the elements of an unstable approach; the missed approach; MSA and the applicable minima (visibility, RVR, ceiling); the go-around altitude
 
 Key takeaways:
-- TAWS is mandatory; EGPWS adds a terrain database and look-ahead to the classic GPWS.
-- Wrong position, database or radio altimeter input = wrong or missed alerts.
-- Terrain colours show height relative to the aircraft; solid yellow = caution, solid red = warning.
-- Inhibit switches only as the QRH or company procedure says; EGPWS failures per MEL.
+- Not stabilised by 1,000 ft IMC / 500 ft VMC (or company gates): go around.
+- Non-precision approaches: CDFA (CANPA) — constant angle, no levelling at MDA.
+- Know the autopilot modes; monitor the FMA; intervene if needed.

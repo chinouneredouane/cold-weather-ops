@@ -1,0 +1,64 @@
+Domestic Airlines — CFIT and EGPWS Refresher
+Lesson 13: Preventing CFIT: Training, the IATA Plan and the Company Role
+
+Learning objectives:
+- Describe the CFIT ground and simulator training content.
+- Apply the IATA CFIT implementation plan at operator and pilot level.
+- Summarise the key CFIT prevention principles.
+
+Training
+
+The ground training builds the awareness to recognise and avoid CFIT situations. The simulator training applies that knowledge and develops proficiency in the escape manoeuvre. This training is given at initial and type training and repeated in recurrent training (at least every two years for the full programme).
+
+Topics to review regularly:
+
+avoiding excessive descent rates, and low or high speeds at low level;
+
+autopilot modes, FMA and FMS callouts, and manual intervention;
+
+barometric and radio altimetry; stabilised approach criteria; descent below MSA;
+
+the missed approach — especially when it appears likely — and go-around awareness;
+
+approach charts and en-route charts (including grid MORA);
+
+CRM and threat and error management briefings that highlight terrain.
+
+The simulator session should include LOFT into airports with high terrain, non-precision approaches with CDFA, circling and visual approaches, go-arounds (especially from circling), type-specific terrain escape manoeuvres, and emergency descents over mountainous terrain using escape routes.
+
+The IATA CFIT implementation plan
+
+Who What is required
+
+Safety management Leadership commitment and a positive safety culture; FDM/FOQA monitoring of crew responses to EGPWS events; awareness of the consequences of deviating from procedures
+
+Training Gap analysis against the latest EGPWS training guidance (IATA, EASA, FAA, ICAO, manufacturers); competency-based and evidence-based training
+
+Flight operations Terrain display policy; immediate response to EGPWS warnings; reporting of GPS interference to ATC and authorities
+
+Engineering and maintenance EGPWS software and terrain database kept up to date; GNSS as position source
+
+Pilots Situational awareness at all times; thorough briefings; responsibility for terrain clearance, including on visual approaches; tell ATC when unable to maintain clearance
+
+IATA study recommendations for operators
+
+Review CRM , situational awareness and SOP compliance training — with emphasis on emergency checklists in all situations.
+
+Procedures that let the pilot monitoring easily and quickly initiate a go-around when circumstances dictate.
+
+Use flight data analysis to identify CFIT precursors and feed them into training.
+
+One department owns the terrain database updates , with a formal process for EGPWS software.
+
+Conclusion
+
+Adhere to the company SOPs at all times — and understand why.
+
+Know your horizontal and vertical terrain clearance in every phase of flight.
+
+Respond immediately to EGPWS warnings.
+
+Key takeaways:
+- Ground training builds awareness; simulator training builds the escape manoeuvre.
+- IATA plan: safety culture, FDM, current EGPWS databases, GNSS position, terrain display policy, immediate response.
+- SOPs, terrain awareness, a PM who can call a go-around, and immediate response to warnings prevent CFIT.
