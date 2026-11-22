@@ -146,3 +146,28 @@ body.player-page{margin:0;background:#fff;overflow:hidden}
   .pl-panel,.pl-panel.tall{order:2}
   .pl-stage.wide .pl-duration{top:auto}
 }
+
+/* ---------- Picture slides: picture and text both fit the screen, no scrolling (Nov 2026) ---------- */
+.pl-panel p,.pl-panel li,.pl-panel td,.pl-panel th{font-size:1em}
+.pl-panel h2{font-size:1.2em}
+.pl-panel.figmode{overflow:hidden}
+.pl-slide.has-fig.on{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr);gap:22px;height:100%;align-items:stretch}
+.pl-slide.has-fig .fig-text{overflow:auto;min-height:0}
+.pl-slide.has-fig .fig-pic{min-height:0;display:flex}
+.pl-slide.has-fig .fig-pic figure{margin:0;flex:1;display:flex;flex-direction:column;min-height:0;padding:10px}
+.pl-slide.has-fig .fig-pic figure>img,.pl-slide.has-fig .fig-pic figure>svg{flex:1 1 auto;min-height:0;width:100%;height:100%;max-width:none!important;max-height:none;object-fit:contain}
+.pl-slide.has-fig .fig-pic figcaption{flex:none;font-size:.82rem;line-height:1.4;margin-top:6px}
+@media (min-width:761px) and (orientation:landscape){
+  .pl-stage.figmode .pl-bg,.pl-stage.figmode .pl-duration{display:none}
+  .pl-stage.figmode .pl-panel{left:0;top:0;padding:16px 24px 14px}
+  .pl-stage.figmode .pl-tag{display:none}
+}
+@media (max-width:760px),(min-width:761px) and (orientation:portrait){
+  .pl-stage.figmode .pl-bg{display:none}
+  .pl-slide.has-fig.on{grid-template-columns:1fr;grid-template-rows:minmax(0,46%) minmax(0,1fr);gap:12px}
+  .pl-slide.has-fig .fig-pic{order:-1}
+}
+.pl-panel .table-wrap td,.pl-panel .table-wrap th,.pl-panel table td,.pl-panel table th{font-size:.92em!important}
+/* picture with no text of its own: full width, title above */
+.pl-slide.has-fig.fig-only.on{grid-template-columns:1fr;grid-template-rows:auto minmax(0,1fr);gap:8px}
+.pl-slide.has-fig.fig-only .fig-pic{order:0}

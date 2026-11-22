@@ -94,9 +94,12 @@
     function show(k, fromAudio) {
       i = Math.max(0, Math.min(total - 1, k));
       slides.forEach(function (s, n) { s.classList.toggle('on', n === i); });
-      var tall = !!slides[i].querySelector('figure, .table-wrap, table, .kc, .dtcalc');
+      var figmode = slides[i].classList.contains('has-fig');
+      var tall = !figmode && !!slides[i].querySelector('figure, .table-wrap, table, .kc, .dtcalc');
       panel.classList.toggle('tall', tall);
-      if (panel.parentNode) panel.parentNode.classList.toggle('wide', tall);
+      panel.classList.toggle('figmode', figmode);
+      if (panel.parentNode) { panel.parentNode.classList.toggle('wide', tall); panel.parentNode.classList.toggle('figmode', figmode); }
+      fit();
       panel.scrollTop = 0;
       $('plCount').textContent = (i + 1) + '/' + total;
       $('plProg').style.width = ((i + 1) / total * 100) + '%';
@@ -106,6 +109,15 @@
       if (!fromAudio) follow();
     }
 
+    // shrink the text (never the picture) until the slide fits the screen without scrolling
+    function fit() {
+      var sl = slides[i]; if (!sl) return;
+      var box = sl.classList.contains('has-fig') ? sl.querySelector('.fig-text') : panel;
+      var size = 17; sl.style.fontSize = size + 'px';
+      var guard = 0;
+      while (box.scrollHeight > box.clientHeight + 2 && size > 12.5 && guard++ < 20) { size -= 0.5; sl.style.fontSize = size + 'px'; }
+    }
+    window.addEventListener('resize', function () { fit(); });
     function go(d) {
       var k = i + d;
       if (k >= total) { var nx = document.getElementById('nextLesson'); if (nx) nx.click(); return; }

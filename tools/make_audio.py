@@ -25,6 +25,7 @@ from concurrent.futures import ProcessPoolExecutor
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 import importlib  # noqa: E402
+import slides as slides_mod  # noqa: E402
 
 COURSE = None
 
@@ -123,7 +124,7 @@ SPOKEN = [
 
 
 def to_speech(html_text):
-    t = re.sub(r"<figure.*?</figure>", " ", html_text, flags=re.S)
+    t = re.sub(r"<figure\b.*?</figure>", lambda m: " " + slides_mod.caption_speech(m.group(0)) + " ", html_text, flags=re.S)
     t = re.sub(r'<div class="dialog".*?</div>', " ", t, flags=re.S)
     t = re.sub(r'<p class="muted">Example only.*?</p>', " ", t, flags=re.S)
     t = re.sub(r"<(sub|sup)>(.*?)</\1>", r"\2", t)
@@ -158,10 +159,11 @@ def slide_scripts(n):
     if COURSE is None:
         load_course("cold_weather")
     L = COURSE["lessons"][n - 1]
-    parts = re.split(r"<h2>(.*?)</h2>", L["body"])
-    out = [to_speech(f"<p>Lesson {n}. {L['title']}.</p><p>Learning objectives. {' '.join(L['objectives'])}</p>{parts[0]}")]
-    for k in range(1, len(parts), 2):
-        out.append(to_speech(f"<p>{parts[k]}</p>{parts[k + 1]}"))
+    intro, body = slides_mod.body_slides(L["body"])
+    out = [to_speech(f"<p>Lesson {n}. {L['title']}.</p><p>Learning objectives. {' '.join(L['objectives'])}</p>{intro}")]
+    for _t, h in body:
+        h = re.sub(r"<h2>[^<]*\(\d+\)</h2>", "", h)          # continuation slide: do not read the title again
+        out.append(to_speech(h.replace("<h2>", "<p>").replace("</h2>", "</p>")))
     out.append(to_speech("<p>Key takeaways. " + " ".join(L["takeaways"]) + "</p>"))
     return out
 

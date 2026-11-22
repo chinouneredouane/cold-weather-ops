@@ -52,3 +52,62 @@ COURSE = dict(
     questions=QUESTIONS,
     images=IMAGES,
 )
+
+
+# ---------------------------------------------------------------------------------------------------------------
+# Real pictures (public domain, US Federal Aviation Administration). Each picture is placed after the first paragraph
+# (or list) of the named section, so the picture slide holds the text that introduces it.
+_WX = "FAA Aviation Weather Handbook FAA-H-8083-28B"
+_PHAK = "FAA Pilot's Handbook of Aeronautical Knowledge FAA-H-8083-25C"
+_AC = "FAA Advisory Circular AC 91-74B, Pilot Guide: Flight in Icing Conditions"
+FAA_FIGS = {
+    2: [("Precipitation types that matter", "faa-icing-fronts", "Icing with fronts: supercooled droplets above the frontal surface; freezing rain and ice pellets fall into the cold air below.", f"{_WX}, Figure 20-1"),
+        ("Temperature inversions", "faa-warm-front", "A warm front: warm air rises over cold air. Rain falling from the warm layer into sub-zero air becomes freezing rain.", f"{_AC}, Figure 2-1")],
+    4: [("In-flight icing", "faa-ice-types", "The forms of structural icing: clear ice, clear ice with horns, rime ice and mixed ice.", f"{_AC}, Figures 3-1 to 3-4"),
+        ("In-flight icing", "faa-inflight-ice", "In-flight ice formation on a leading edge.", f"{_PHAK}, Figure 5-40"),
+        ("In-flight icing", "faa-icing-mountains", "Icing with mountains: upslope lift on the windward side gives the most severe icing zone above the ridge.", f"{_WX}, Figure 20-2")],
+    5: [("What contamination does", "faa-ice-lift-drag", "Ice on the wing: maximum lift falls and the wing stalls at a lower angle of attack, while drag rises sharply.", f"{_AC}, Figures 3-5 and 3-6")],
+    20: [("Turboprops and propellers", "faa-propeller-ice-sld", "Propeller ice accretion during a supercooled large droplet (SLD) encounter.", f"{_AC}, Figure 3-10")],
+    23: [("Ice protection systems", "faa-wing-boot", "Pneumatic de-icing boots (as on the Dash 8): tubes deflated in normal flight, inflated to crack off the ice.", f"{_AC}, Figure 3-7"),
+         ("Tailplane icing", "faa-tailplane-stall", "Tailplane stall: the tail down-force balances the nose-down moment; if the iced tailplane stalls, the nose pitches down.", f"{_AC}, Figures 3-8 and 3-9")],
+    24: [("Why cold air is dangerous for terrain clearance", "faa-cold-altimeter", "In air colder than standard, the aircraft is lower than the altimeter indicates.", f"{_PHAK}, Figure 8-3")],
+}
+
+
+def _faa_figure(img, caption, src):
+    return (f'<figure class="lesson-figure"><img src="../media/images/{img}.jpg" alt="{caption}" loading="lazy">'
+            f'<figcaption>{caption} <span class="muted">Source: {src} (public domain).</span></figcaption></figure>')
+
+
+def _insert_after_first_block(body, h2, html):
+    import re as _re
+    tag = f"<h2>{h2}</h2>"
+    assert tag in body, h2
+    i = body.index(tag) + len(tag)
+    nxt = body.find("<h2>", i)
+    nxt = len(body) if nxt < 0 else nxt
+    # end of the first top-level block after the heading (tags nested inside it are skipped)
+    at, depth = nxt, 0
+    for m in _re.finditer(r"<(/?)(p|ul|ol|div|table|figure)\b[^>]*>", body[i:nxt]):
+        depth += -1 if m.group(1) else 1
+        if depth == 0:
+            at = i + m.end()
+            break
+    return body[:at] + "\n" + html + "\n" + body[at:]
+
+
+for _n, _figs in FAA_FIGS.items():
+    _b = COURSE["lessons"][_n - 1]["body"]
+    _done = {}
+    for _h2, _img, _cap, _src in _figs:
+        # several pictures in one section: each goes after the previous one
+        if _h2 in _done:
+            _at = _b.index(_done[_h2]) + len(_done[_h2])
+            _html = _faa_figure(_img, _cap, _src)
+            _b = _b[:_at] + "\n" + _html + _b[_at:]
+            _done[_h2] = _html
+        else:
+            _html = _faa_figure(_img, _cap, _src)
+            _b = _insert_after_first_block(_b, _h2, _html)
+            _done[_h2] = _html
+    COURSE["lessons"][_n - 1]["body"] = _b

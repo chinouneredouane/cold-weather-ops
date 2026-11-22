@@ -16,6 +16,8 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
+import slides as slides_mod  # noqa: E402
+sys.path.insert(0, os.path.join(ROOT, "tools"))
 
 from courses.cold_weather import COURSE as COLD_WEATHER  # noqa: E402
 from courses.upset_recovery import COURSE as UPSET_RECOVERY  # noqa: E402
@@ -410,22 +412,27 @@ def build_lesson(course, n):
 
     cue_file = os.path.join(ROOT, "courses", course["slug"], "media", "audio", f"lesson-{n:02d}.cues.json")
     cues = json.dumps(json.load(open(cue_file))["cues"]) if os.path.exists(cue_file) else "[]"
-    parts = re.split(r"<h2>(.*?)</h2>", L["body"])
-    intro = parts[0].strip()
+    intro, body_parts = slides_mod.body_slides(L["body"])
     first = f'<section class="objectives" data-narrate><h2>Learning objectives</h2><ul>{objectives}</ul></section>'
     if intro:
         first += f'<div data-narrate>{intro}</div>'
     if img:
         first += f'<p class="muted">{esc(img[2])}</p>'
     slides = [("Learning objectives", first)]
-    for k in range(1, len(parts), 2):
-        title = re.sub(r"<[^>]+>", "", parts[k])
-        slides.append((title, f'<div data-narrate><h2>{parts[k]}</h2>{parts[k + 1]}</div>'))
+    for title, h in body_parts:
+        figs = slides_mod.FIG.findall(h)
+        if len(figs) == 1 and "dtcalc" not in h:
+            # picture slide: text beside the picture, both fitted to the screen
+            text = slides_mod.FIG.sub("", h)
+            only = "" if slides_mod._has_text(text) else " fig-only"
+            slides.append((title, f'<div class="fig-text{only}" data-narrate>{text}</div><div class="fig-pic">{figs[0]}</div>'))
+        else:
+            slides.append((title, f'<div data-narrate>{h}</div>'))
     slides.append(("Key takeaways", f'<section class="takeaways" data-narrate><h2>Key takeaways</h2><ul>{takeaways}</ul></section>'))
     slides.append(("Knowledge check", f"""<section class="kc" data-answer="{chk['answer']}" data-explain="{esc(chk['explain'])}">
 <h2>Knowledge check</h2><p class="q">{esc(chk['q'])}</p><div class="opts">{opts}</div><div class="fb" aria-live="polite"></div></section>
 <div class="next-up">{next_link}</div><div class="lesson-end"></div>"""))
-    slide_html = "\n".join(f'<div class="pl-slide" data-title="{esc(t)}">{h}</div>' for t, h in slides)
+    slide_html = "\n".join(f'<div class="pl-slide{" has-fig" if "<figure" in h and "dtcalc" not in h else ""}{" fig-only" if "fig-text fig-only" in h else ""}" data-title="{esc(t)}">{h}</div>' for t, h in slides)
 
     def btn(i, label):
         return f'<button type="button" id="{i}" title="{label}" aria-label="{label}">'

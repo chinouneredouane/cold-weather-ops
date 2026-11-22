@@ -25,14 +25,14 @@
     <div class="lesson-head pl-hidden"><h1>Lesson 03: Principles of CPDLC Exchanges and Message Composition</h1></div>
     <div class="pl-panel lesson-body" id="plPanel">
 <div class="pl-slide" data-title="Learning objectives"><section class="objectives" data-narrate><h2>Learning objectives</h2><ul><li>Apply the principles for choosing voice or CPDLC.</li><li>Understand single- and multi-element messages.</li><li>Respond correctly to messages.</li></ul></section><p class="muted">Read the whole message before responding.</p></div>
-<div class="pl-slide" data-title="Principles"><div data-narrate><h2>Principles</h2>
+<div class="pl-slide has-fig" data-title="Principles"><div class="fig-text" data-narrate><h2>Principles</h2>
 <ul>
   <li><strong>Voice and data link co-exist.</strong> CPDLC supplements voice; it does not replace it.</li>
   <li>CPDLC is used only for <strong>non-time-critical</strong> communications. Time-criticality depends on the traffic situation, the end-to-end performance (systems and human response times) and the recovery time.</li>
   <li>The choice of voice or CPDLC is at the discretion of the controller and the pilot.</li>
   <li>Usually, a CPDLC message is answered by CPDLC and a voice message by voice.</li>
 </ul>
-<figure class="diagram"><svg viewBox="0 0 700 300" role="img" aria-label="CPDLC dialogue"><title>A CPDLC dialogue</title>
+</div><div class="fig-pic"><figure class="diagram"><svg viewBox="0 0 700 300" role="img" aria-label="CPDLC dialogue"><title>A CPDLC dialogue</title>
 <desc>An uplink clearance, an optional STANDBY and a WILCO response that closes the dialogue.</desc>
 <g font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="13" fill="#24342b"><defs><marker id="ar9" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="context-stroke"/></marker></defs>
 <rect x="20" y="40" width="170" height="210" rx="14" fill="#1f5f99" opacity=".12" stroke="#1f5f99"/>
@@ -46,8 +46,7 @@
 <path d="M190 215 L508 215" stroke="#5b6b62" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#ar9)"/><text x="350" y="208" text-anchor="middle" fill="#5b6b62">technical acknowledgement / message status in the ATC log</text>
 </g>
 <text x="350" y="285" text-anchor="middle" fill="#c8102e" font-weight="700">Read the whole message, cross-check with the other pilot, then respond — and only then act.</text></g></svg>
-<figcaption>A typical CPDLC dialogue. The response closes the dialogue; STANDBY keeps it open.</figcaption></figure>
-</div></div>
+<figcaption>A typical CPDLC dialogue. The response closes the dialogue; STANDBY keeps it open.</figcaption></figure></div></div>
 <div class="pl-slide" data-title="Message composition"><div data-narrate><h2>Message composition</h2>
 <ul>
   <li>Messages use a <strong>standard format</strong> from the ICAO message set, in plain language or abbreviations — without non-essential words.</li>

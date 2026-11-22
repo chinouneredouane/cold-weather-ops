@@ -34,11 +34,12 @@ for name in os.listdir(os.path.join(ROOT, "tools", "courses")):
 def slide_texts(course, n):
     """Speech text of each slide, in the order build_lesson creates the slides (knowledge check: None)."""
     L = course["lessons"][n - 1]
-    parts = re.split(r"<h2>(.*?)</h2>", L["body"])
-    first = f"<p>Lesson {n}. {L['title']}.</p><p>Learning objectives. {' '.join(L['objectives'])}</p>{parts[0]}"
+    intro, body = make_audio.slides_mod.body_slides(L["body"])
+    first = f"<p>Lesson {n}. {L['title']}.</p><p>Learning objectives. {' '.join(L['objectives'])}</p>{intro}"
     out = [make_audio.to_speech(first)]
-    for k in range(1, len(parts), 2):
-        out.append(make_audio.to_speech(f"<p>{parts[k]}</p>{parts[k + 1]}"))
+    for _t, h in body:
+        h = re.sub(r"<h2>[^<]*\(\d+\)</h2>", "", h)
+        out.append(make_audio.to_speech(h.replace("<h2>", "<p>").replace("</h2>", "</p>")))
     out.append(make_audio.to_speech("<p>Key takeaways. " + " ".join(L["takeaways"]) + "</p>"))
     out.append(None)
     return out
