@@ -103,6 +103,9 @@ def esc(s):
     return html.escape(str(s), quote=True)
 
 
+from pwa import pwa_head, build_pwa  # noqa: E402  (installable app + offline support)
+
+
 def lesson_file(n):
     return f"lesson-{n:02d}.html"
 
@@ -137,6 +140,7 @@ def page(*, title, description, root, course=None, active=None, body_attrs="", m
   <link rel="icon" type="image/png" href="{root}assets/img/logo.png" />
   <link rel="stylesheet" href="{root}assets/css/academy.css" />
   <link rel="stylesheet" href="{root}assets/css/player.css" />
+{pwa_head(root)}
 </head>
 <body {body_attrs}>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -449,6 +453,7 @@ def build_lesson(course, n):
   <link rel="icon" type="image/png" href="{root}assets/img/logo.png" />
   <link rel="stylesheet" href="{root}assets/css/academy.css" />
   <link rel="stylesheet" href="{root}assets/css/player.css" />
+{pwa_head(root)}
 </head>
 <body class="player-page" {course_attrs(course, n)}>
 {all_courses_drawer(root)}
@@ -745,6 +750,7 @@ def main():
         build_media_readme(c)
         build_print(c, module_of, write)
         print(f"Built {c['title']}: {len(c['lessons'])} lessons, {len(c['questions'])} questions")
+    build_pwa(ROOT)
 
 
 if __name__ == "__main__":
