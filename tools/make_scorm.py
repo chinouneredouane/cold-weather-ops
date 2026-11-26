@@ -9,6 +9,7 @@ score (cmi.core.score.raw, lesson_status passed/failed) — see assets/js/course
 accounts are managed by the LMS itself.
 """
 import os
+import re
 import sys
 import zipfile
 from xml.sax.saxutils import escape
@@ -17,7 +18,11 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 import build  # noqa: E402
 
-SKIP_DIRS = {"print", "narration"}
+SKIP_DIRS = {"print", "narration", "icons"}
+SKIP_FILES = {"assets/js/pwa.js"}
+# The installable-app tags (tools/pwa.py) belong to the website only: inside the LMS there is no app to install.
+PWA_TAGS = re.compile(r'\s*<meta name="(?:apple-)?mobile-web-app-[^>]*>|\s*<meta name="apple-mobile-web-app-[^>]*>'
+                      r'|\s*<link rel="(?:apple-touch-icon|manifest)"[^>]*>|\s*<script src="[^"]*assets/js/pwa\.js"[^>]*></script>')
 
 
 def files_for(slug):
@@ -28,7 +33,9 @@ def files_for(slug):
             for fn in fns:
                 if fn.startswith(".") or fn.endswith(".md"):
                     continue
-                out.append(os.path.relpath(os.path.join(dp, fn), ROOT).replace(os.sep, "/"))
+                rel = os.path.relpath(os.path.join(dp, fn), ROOT).replace(os.sep, "/")
+                if rel not in SKIP_FILES:
+                    out.append(rel)
     return sorted(out)
 
 
@@ -67,7 +74,11 @@ def package(course):
     with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as z:
         z.writestr("imsmanifest.xml", manifest(course, files))
         for f in files:
-            z.write(os.path.join(ROOT, f), f)
+            if f.endswith(".html"):
+                with open(os.path.join(ROOT, f), encoding="utf-8") as h:
+                    z.writestr(f, PWA_TAGS.sub("", h.read()))
+            else:
+                z.write(os.path.join(ROOT, f), f)
     return out, len(files)
 
 
