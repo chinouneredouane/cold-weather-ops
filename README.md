@@ -16,6 +16,18 @@ A static e-learning website for Domestic Airlines. It hosts several courses on o
 
 All quizzes have an 80 % pass mark, except Command Upgrade (8/10 per briefing).
 
+## DAL TRAINING app (install from Safari, works offline)
+
+The academy can be installed on iPhone and iPad as the **DAL TRAINING** app, for free and with no App Store:
+open the site in **Safari**, tap **Share**, then **Add to Home Screen**, then **Add**. A banner on the home page and on each course page shows these steps.
+
+- **Offline:** on the first visit every page, style sheet, script and picture is stored on the device (about 19 MB).
+- **Narration, PDFs and videos** are stored when the learner plays or opens them. Each course home page also has a **Save for offline** button that downloads all of that course's media at once, for use in flight.
+- **Updates:** after you rebuild and push, learners see a "New training content is available, Update" bar.
+- SCORM packages (`lms/`), `tools/` and `demo/` are never stored on the device.
+
+How it is built: `tools/build.py` calls `tools/pwa.py`, which adds the app tags to every page and writes `manifest.webmanifest` and `sw.js` (from `tools/sw_template.js`). The browser-side code is in `assets/js/pwa.js`, and the icons are in `assets/img/icons/`. Always rebuild after changing content, so that `sw.js` gets a new version.
+
 ## Site structure
 
 ```
