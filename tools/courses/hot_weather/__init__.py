@@ -420,6 +420,6 @@ COURSE = dict(
             7: ("gen", "Two pilots on the flight deck at dusk", "Combine every MEL and CDL penalty."),
             8: ("gen", "Two pilots on the flight deck", "Both pilots know today's limiting factor."),
             9: ("gen", "Dust storm approaching an aerodrome", "Perceive, understand, project."),
-            10: ("gen", "Flight deck in bright sun", "Thirst comes late: drink regularly."),
+            10: ("gen", "Airliner climbing into a blazing hot sunset sky", "Thirst comes late: drink regularly."),
             11: ("gen", "Airliner landing on a sunny runway", "Stabilised approach — go around from a long landing.")},
 )
