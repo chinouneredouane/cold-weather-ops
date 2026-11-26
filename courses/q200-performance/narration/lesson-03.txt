@@ -1,0 +1,32 @@
+Domestic Airlines — Dash 8-Q200 Performance
+Lesson 3: Segments, Climb and Descent Types, Driftdown
+
+Learning objectives:
+- Describe the take-off segments and the approach segments.
+- Name the three climb types and three descent types.
+- Define driftdown speed and driftdown altitude.
+
+Take-off segments
+
+For a twin: 1st segment positive gradient (gear retracting), 2nd segment at least 2.4 % (gear up, take-off flap, V2), 3rd segment level acceleration, final segment at least 1.2 % (clean, MCP).
+
+Approach segments
+
+Types of climb
+
+The Dash 8 offers three climb schedules: Type I (high speed, about 210 kt), Type II (intermediate, about 170 kt) and Type III (low speed, about 130 kt) — speeds decrease with altitude per the chart.
+
+Types of descent
+
+Similarly, three descent types: Type I high speed, Type II intermediate and Type III low speed, each with its own torque setting.
+
+Driftdown
+
+Driftdown speed (DDS) — the speed for the minimum drag and the best air distance per unit of height lost.
+
+Driftdown altitude — the altitude to which the aeroplane descends to sustain level flight after the failure of one engine.
+
+Key takeaways:
+- Twin: 2nd segment 2.4 %, final 1.2 %; net = gross − 0.8 %.
+- Climb types I (fast), II, III (slow); descent types I, II, III.
+- Driftdown speed = minimum drag; driftdown altitude = one-engine ceiling.

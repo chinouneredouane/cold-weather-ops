@@ -1,0 +1,20 @@
+Domestic Airlines — Dash 8-Q200 Performance
+Lesson 8: Go-around Performance
+
+Learning objectives:
+- Define the approach climb and balked landing climb requirements.
+- Read the approach gross climb gradient (one engine) and balked landing gradient (both engines) charts.
+
+Two go-around cases
+
+Approach climb — one engine inoperative, approach flap, gear up: at least 2.1 % gross for a twin (CS 25.121(d)).
+
+Balked landing (landing climb) — both engines, landing configuration, gear down: at least 3.2 % (CS 25.119).
+
+These requirements are the basis of the landing WAT limit. In operation, the published missed approach may need a higher gradient (2.5 % or more): check it with the charts below.
+
+Briefing When the missed approach requires more than the standard gradient, compare the chart gradient with the procedure — at high temperature or with ice the aeroplane may not achieve it with one engine.
+
+Key takeaways:
+- Approach climb (OEI) ≥ 2.1 %; balked landing (AEO) ≥ 3.2 %.
+- Check the published missed approach gradient on hot days and in icing.

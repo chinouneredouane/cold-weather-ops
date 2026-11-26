@@ -1,0 +1,375 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Boeing 737-800 NG Performance — Course handbook</title>
+<style>
+@page{size:A4;margin:18mm 16mm 20mm}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#24342b;font-size:10.5pt;line-height:1.5;margin:0}
+h1,h2,h3{color:#14231b;line-height:1.25;break-after:avoid}
+h1{font-size:21pt;margin:0 0 6pt}h2{font-size:14pt;margin:16pt 0 6pt}h3{font-size:12pt;margin:12pt 0 4pt}
+p{margin:0 0 7pt}ul,ol{margin:0 0 8pt;padding-left:16pt}li{margin:2pt 0}
+a{color:#125a2b;text-decoration:none}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:9pt;background:#f3f9f5;border:1px solid #dbe5df;padding:0 3pt;border-radius:3pt}
+.cover{height:257mm;display:flex;flex-direction:column;justify-content:center;break-after:page;
+  background:linear-gradient(120deg,#0c3d1e,#125a2b 55%,#2a8a50);color:#fff;padding:22mm;border-radius:4mm;margin:0}
+.cover h1{color:#fff;font-size:34pt}.cover .k{letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#bfe3cb;font-size:10pt}
+.cover p{color:#e3f1e8;font-size:13pt}.cover .logo{background:#fff;padding:5mm 7mm;border-radius:3mm;display:inline-block;margin-bottom:14mm}
+.cover .logo img{height:16mm}.cover .meta{margin-top:12mm;font-size:10.5pt;color:#d3ebdb}
+.toc{break-after:page}.toc h2{margin-top:0}.toc ol{list-style:none;padding:0}
+.toc li{display:flex;gap:8pt;padding:3pt 0;border-bottom:1px dotted #c9d8cf}.toc .n{width:22pt;font-weight:700;color:#5b6b62}
+.toc .mod{margin-top:9pt;font-weight:800;color:#125a2b;border:0;text-transform:uppercase;font-size:9pt;letter-spacing:.06em}
+.lesson{break-before:page}
+.lesson-head{background:linear-gradient(120deg,#0c3d1e,#1d7a3e);color:#fff;border-radius:3mm;padding:9pt 13pt;margin-bottom:10pt}
+.lesson-head h1{color:#fff;font-size:17pt;margin:2pt 0}.lesson-head .k{font-size:8.5pt;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#c7e8d2}
+.lesson-head .m{font-size:9pt;color:#dbefe2}
+.objectives{background:#f3f9f5;border:1px solid #dbe5df;border-radius:2mm;padding:7pt 11pt;margin:0 0 10pt}
+.objectives h2,.takeaways h2,.kc h2{font-size:9.5pt;text-transform:uppercase;letter-spacing:.06em;margin:0 0 3pt;color:#125a2b}
+.lesson-figure{margin:0 0 10pt;break-inside:avoid}.lesson-figure img{width:100%;max-height:85mm;object-fit:contain;border:1px solid #dbe5df;border-radius:2mm;background:#f3f9f5}
+figure{margin:9pt 0;break-inside:avoid}figure svg{width:100%;height:auto}figcaption{font-size:8.5pt;color:#5b6b62;margin-top:3pt}
+.diagram{border:1px solid #dbe5df;border-radius:2mm;padding:5pt}
+.table-wrap{margin:8pt 0;border:1px solid #dbe5df;border-radius:2mm;overflow:hidden}
+table{border-collapse:collapse;width:100%;font-size:9pt}th,td{text-align:left;vertical-align:top;padding:4pt 6pt;border-bottom:1px solid #dbe5df}
+th{background:#f3f9f5}tr{break-inside:avoid}td.code{font-weight:800;font-size:12pt;text-align:center;width:34pt}
+.callout{border-left:3pt solid #1d7a3e;background:#f3f9f5;padding:6pt 10pt;margin:8pt 0;border-radius:0 2mm 2mm 0;break-inside:avoid}
+.callout .label{display:block;font-size:8.5pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#125a2b}
+.callout.warn{border-color:#c8102e;background:#fdecef}.callout.warn .label{color:#c8102e}
+.callout.caution{border-color:#d08a00;background:#fff5e0}.callout.caution .label{color:#9a6200}
+.callout.info{border-color:#1f5f99;background:#e9f2fb}.callout.info .label{color:#1f5f99}
+.callout > :last-child{margin-bottom:0}
+.steps{list-style:none;padding:0;counter-reset:s}.steps>li{counter-increment:s;position:relative;padding-left:20pt;margin:4pt 0}
+.steps>li::before{content:counter(s);position:absolute;left:0;top:0;width:14pt;height:14pt;border-radius:50%;background:#1d7a3e;color:#fff;font-weight:800;font-size:8pt;display:flex;align-items:center;justify-content:center}
+.dialog{border:1px solid #dbe5df;border-radius:2mm;padding:4pt 10pt;margin:8pt 0;break-inside:avoid}.dialog p{margin:4pt 0}.dialog b{color:#125a2b}
+.muted{color:#5b6b62}
+.takeaways{background:#0c3d1e;color:#e8f5ec;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}.takeaways h2{color:#fff}
+.kc{border:1.5pt dashed #b9d7c3;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}
+.kc .q{font-weight:700;margin:2pt 0 4pt}.kc ol{list-style:upper-alpha}.kc .a{font-size:9pt;margin-top:4pt;color:#125a2b}
+.disclaimer{font-size:8.5pt;color:#5b6b62;border-top:1px solid #dbe5df;padding-top:6pt;margin-top:14pt}
+</style></head><body>
+<section class="cover"><div><span class="logo"><img src="../../../assets/img/logo.png" alt="Domestic Airlines"></span></div>
+  <div class="k">Domestic Airlines — Training</div><h1>Boeing 737-800 NG Performance</h1>
+  <p>Course handbook</p><p>Take-off, en-route and landing performance of the Boeing 737-800 NG: speeds, limiting weights, runway condition, climb and obstacles, reduced thrust, cruise, driftdown and landing distance.</p>
+  <div class="meta">10 lessons · 3 modules · about 1.5 hours</div>
+  <div class="meta">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</div></section>
+<section class="toc"><h2>Contents</h2><ol><li class="mod">Module 1 — Take-off Performance</li><li><span class="n">01</span><a href="#lesson-1">Performance Framework and Take-off Speeds</a></li><li><span class="n">02</span><a href="#lesson-2">Maximum Take-off Weight and Field Length</a></li><li><span class="n">03</span><a href="#lesson-3">Balanced Take-off and Runway Surface Condition</a></li><li><span class="n">04</span><a href="#lesson-4">Take-off Climb Requirements and Improved Climb</a></li><li><span class="n">05</span><a href="#lesson-5">Obstacles, Tyre Speed, Brake Energy and Flap Selection</a></li><li><span class="n">06</span><a href="#lesson-6">Reduced and Derated Take-off Thrust</a></li><li class="mod">Module 2 — En-route Performance</li><li><span class="n">07</span><a href="#lesson-7">En-route Climb and Cruise</a></li><li><span class="n">08</span><a href="#lesson-8">Driftdown and En-route Obstacle Clearance</a></li><li class="mod">Module 3 — Landing Performance</li><li><span class="n">09</span><a href="#lesson-9">Landing Speeds and Dispatch Landing Requirements</a></li><li><span class="n">10</span><a href="#lesson-10">In-flight Landing Distance and Runway Condition Reports</a></li></ol></section>
+<section class="lesson" id="lesson-1">
+  <div class="lesson-head"><div class="k">Module 1 · Take-off Performance</div>
+    <h1>Lesson 01: Performance Framework and Take-off Speeds</h1><div class="m">Lesson 1 of 10 · about 10 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Name the speeds demonstrated during certification.</li><li>Define the operational take-off speeds V1, VR, VLOF and V2.</li><li>Explain how weight, density, flaps, slope and wind move V1, VR and V2.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-01.jpg" alt="Boeing 737 lined up for take-off"><figcaption>Every speed has a meaning.</figcaption></figure>
+  
+<h2>Why performance is regulated</h2>
+<p>Performance rules make sure that an engine failure at the most critical moment of a flight never leaves the crew without a safe option. Certification (EASA CS-25) demonstrates what the aeroplane can do; the operating rules (Part-CAT, CAT.POL.A) say how much margin the airline must keep on every flight. For the B737-800 the results are delivered through the company performance tool, the FCOM Performance Inflight (PI) chapter and the QRH.</p>
+<h2>Demonstrated speeds</h2>
+<ul>
+  <li><strong>VS / VSR</strong> — stall speed. Certification uses the reference stall speed VSR, a calibrated airspeed not lower than the 1-g stall speed (CS 25.103).</li>
+  <li><strong>VMU</strong> — minimum unstick speed: the lowest speed at which the aeroplane can safely lift off and continue the take-off, at the maximum attainable angle of attack on the ground (CS 25.107).</li>
+  <li><strong>VMCG</strong> — minimum control speed on the ground: after a sudden failure of the critical engine, the crew keeps the lateral deviation within 30 ft of the centreline with <strong>rudder only</strong> — no nosewheel steering. Determined at maximum take-off thrust, aft CG, trimmed for take-off (CS 25.149).</li>
+  <li><strong>VMCA</strong> — minimum control speed in the air: straight flight with not more than 5° of bank and a heading change of 20° at most during the recovery.</li>
+  <li><strong>VTIRE</strong> — maximum certified tyre speed: 225 mph (195 kt ground speed) for the B737.</li>
+</ul>
+<div class="callout caution"><span class="label">Note</span><p>Crosswind and slippery runways are <strong>not</strong> taken into account when VMCG and VMCA are determined.</p></div>
+<figure class="lesson-figure"><img src="../media/images/b738-speeds-overview.jpg" alt="Overview of the take-off speeds: demonstrated, operational, related and certified speeds in their order along the take-off." loading="lazy"><figcaption>Overview of the take-off speeds: demonstrated, operational, related and certified speeds in their order along the take-off. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure>
+<h2>Operational speeds</h2>
+<ul>
+  <li><strong>VEF</strong> — the speed at which the critical engine is assumed to fail; not less than VMCG.</li>
+  <li><strong>V1</strong> — the maximum speed at which the first action to stop must be taken, and the minimum speed from which the take-off can be continued after a failure at VEF. One second of recognition is allowed between VEF and V1. A single V1 is used for both cases (CAT.POL.A.205). V1 ≥ VMCG and V1 ≤ VR and VMBE.</li>
+  <li><strong>VR</strong> — rotation speed, chosen so that a normal rotation (about 3° per second) gives V2 at 35 ft after an engine failure at VEF. VR ≥ V1 and VR ≥ 1.05 VMCA.</li>
+  <li><strong>VLOF</strong> — lift-off speed (≥ 1.1 VMU all engines, ≥ 1.05 VMU one engine inoperative).</li>
+  <li><strong>V2</strong> — take-off safety speed at the screen height: V2 ≥ 1.13 VSR and ≥ 1.1 VMCA.</li>
+</ul>
+<h2>What moves the speeds</h2>
+<table><thead><tr><th>Factor</th><th>V1</th><th>VR</th><th>V2</th></tr></thead><tbody>
+<tr><td>Higher weight</td><td>Higher (limited by the ability to stop)</td><td>Higher</td><td>Higher</td></tr>
+<tr><td>Lower density (hot, high)</td><td>Higher</td><td>Higher</td><td>Lower to keep TODR within TODA; pressure altitude matters more than OAT</td></tr>
+<tr><td>More flap</td><td>Lower</td><td>Lower</td><td>Lower</td></tr>
+<tr><td>Downslope / tailwind</td><td>Lower (stopping is harder)</td><td>No effect</td><td>No effect</td></tr>
+<tr><td>Upslope / headwind</td><td>Higher allowed</td><td>No effect</td><td>No effect</td></tr>
+</tbody></table>
+<div class="callout info"><span class="label">Boeing practice</span><p>In windshear or gusty crosswind conditions VR (and V2) may be increased, up to the VR for the performance-limited weight and by 20 kt at most, to improve the climb capability.</p></div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Certification demonstrates VSR, VMU, VMCG, VMCA and VTIRE.</li><li>VMCG ≤ VEF &lt; V1 ≤ VR; V2 ≥ 1.13 VSR and ≥ 1.1 VMCA.</li><li>Heavier → all speeds higher; downslope and tailwind lower V1.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">How is VMCG demonstrated?</p>
+    <ol><li>With nosewheel steering and brakes</li><li>With rudder only, keeping within 30 ft of the centreline</li><li>On a wet runway with crosswind</li><li>With both engines at idle</li></ol>
+    <p class="a"><b>Answer: B.</b> VMCG uses aerodynamic controls only — no nosewheel steering — and the lateral deviation must stay within 30 ft.</p></div>
+</section>
+<section class="lesson" id="lesson-2">
+  <div class="lesson-head"><div class="k">Module 1 · Take-off Performance</div>
+    <h1>Lesson 02: Maximum Take-off Weight and Field Length</h1><div class="m">Lesson 2 of 10 · about 10 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>List the limits that make up the performance-limited take-off weight.</li><li>Define TORA, TODA, ASDA, stopway and clearway.</li><li>Explain the accelerate-stop and take-off distance requirements and the line-up correction.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-02.jpg" alt="Runway seen from the threshold"><figcaption>The lowest limit decides.</figcaption></figure>
+  
+<h2>The most limiting weight wins</h2>
+<p>The <strong>performance-limited take-off weight (PLTOW)</strong> is the lowest of the field length, climb, obstacle, tyre speed and brake energy limit weights, further reduced by MEL items. The <strong>maximum allowable take-off weight</strong> is the lowest of the PLTOW, the maximum certified structural take-off weight and the maximum allowable landing weight plus trip fuel.</p>
+<figure class="lesson-figure"><img src="../media/images/b738-max-allowable-tow.jpg" alt="Building the maximum allowable take-off weight: the lowest of all limit weights." loading="lazy"><figcaption>Building the maximum allowable take-off weight: the lowest of all limit weights. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure>
+<h2>Declared distances</h2>
+<ul>
+  <li><strong>TORA</strong> — runway length declared available and suitable for the ground run.</li>
+  <li><strong>ASDA</strong> — TORA plus stopway (if declared). <strong>Stopway</strong>: at least as wide as the runway, able to support the aeroplane during a rejected take-off.</li>
+  <li><strong>TODA</strong> — TORA plus clearway. <strong>Clearway</strong>: under airport control, at least 500 ft wide, no object above a 1.25 % plane, not longer than half the TORA.</li>
+</ul>
+<figure class="lesson-figure"><img src="../media/images/b738-clearway-stopway.jpg" alt="Stopway = ASDA − TORA; clearway = TODA − TORA." loading="lazy"><figcaption>Stopway = ASDA − TORA; clearway = TODA − TORA. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure><figure class="lesson-figure"><img src="../media/images/b738-clearway-stopway-table.jpg" alt="Clearway and stopway compared. The runway end safety area (RESA) is neither and is never used in performance calculations." loading="lazy"><figcaption>Clearway and stopway compared. The runway end safety area (RESA) is neither and is never used in performance calculations. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure>
+<h2>Accelerate-stop distance</h2>
+<p>The accelerate-stop distance is the distance to accelerate with all engines to V1 (including one second between VEF and V1), to keep V1 for two seconds while the stopping configuration is set, and to decelerate to a full stop. On a <strong>dry</strong> runway no credit is taken for reverse thrust; on a wet or contaminated runway one reverser may be credited. Brakes are assumed fully worn (CS 25.101).</p>
+<figure class="lesson-figure"><img src="../media/images/b738-asd.jpg" alt="Accelerate-stop distance for a given take-off weight: acceleration, transition and deceleration." loading="lazy"><figcaption>Accelerate-stop distance for a given take-off weight: acceleration, transition and deceleration. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure>
+<h2>Take-off distance and run</h2>
+<p>CAT.POL.A.205 requires: accelerate-stop distance ≤ ASDA, take-off distance ≤ TODA, take-off run ≤ TORA. The take-off distance is the longer of the distance to 35 ft with an engine failure at VEF, and 115 % of the all-engine distance to 35 ft. The <strong>field length limit weight</strong> is the lower of the ASD-limited and TOD-limited weights.</p>
+<h2>Line-up correction</h2>
+<p>Lining up uses runway. Whenever the aeroplane cannot start at the threshold, the available distances are reduced (CAT.POL.A.205): ASDA by the threshold-to-nose-gear distance, TODA by the threshold-to-main-gear distance, taking the minimum edge safety distance into account.</p>
+<figure class="lesson-figure"><img src="../media/images/b738-lineup-correction.jpg" alt="Line-up corrections: (A) for TODA, measured to the main gear; (B) for ASDA, measured to the nose gear." loading="lazy"><figcaption>Line-up corrections: (A) for TODA, measured to the main gear; (B) for ASDA, measured to the nose gear. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure><figure class="lesson-figure"><img src="../media/images/b738-lineup.jpg" alt="Line-up assumptions for 90° and 180° turns. Following the yellow exit line from a high-speed intersection loses more runway than the data assume." loading="lazy"><figcaption>Line-up assumptions for 90° and 180° turns. Following the yellow exit line from a high-speed intersection loses more runway than the data assume. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure>
+<div class="callout caution"><span class="label">Intersection take-off</span><p>Use the data computed for the actual intersection. Company take-off data normally already include the standard line-up corrections.</p></div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Max allowable TOW = lowest of PLTOW, structural TOW, and max landing weight + trip fuel.</li><li>ASD ≤ ASDA, TOD ≤ TODA, TOR ≤ TORA.</li><li>No reverse thrust credit on a dry runway; brakes assumed fully worn.</li><li>Correct ASDA to the nose gear and TODA to the main gear for line-up.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">Which distance may include a stopway?</p>
+    <ol><li>TORA</li><li>TODA</li><li>ASDA</li><li>LDA</li></ol>
+    <p class="a"><b>Answer: C.</b> ASDA = TORA + stopway; clearway is added to TODA.</p></div>
+</section>
+<section class="lesson" id="lesson-3">
+  <div class="lesson-head"><div class="k">Module 1 · Take-off Performance</div>
+    <h1>Lesson 03: Balanced Take-off and Runway Surface Condition</h1><div class="m">Lesson 3 of 10 · about 10 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Explain the balanced V1 and the balanced field length.</li><li>Compare dry, wet and contaminated runway take-off rules.</li><li>Explain the V1(MCG) limit weight and why clearway is restricted on wet and contaminated runways.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-03.jpg" alt="Wet runway at dusk"><figcaption>Wet and contaminated runways change the rules.</figcaption></figure>
+  
+<h2>Balanced V1</h2>
+<p>For a fixed runway, a heavy take-off needs a <strong>low V1</strong> to be able to stop within the ASDA, but a <strong>high V1</strong> to reach V2 at 35 ft within the TODA after an engine failure. The highest weight is obtained where the two requirements meet: the <strong>balanced V1</strong> and the balanced take-off weight.</p>
+<figure class="lesson-figure"><img src="../media/images/b738-balanced-graph1.jpg" alt="Graph 1 — take-off weight versus V1 for a fixed runway: the ASDA line (red) and the TODA line (green) cross at the balanced V1." loading="lazy"><figcaption>Graph 1 — take-off weight versus V1 for a fixed runway: the ASDA line (red) and the TODA line (green) cross at the balanced V1. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure>
+<h2>Balanced field length</h2>
+<p>For a fixed weight, a low V1 shortens the accelerate-stop distance but lengthens the take-off distance, and the reverse for a high V1. The shortest required runway is where ASDR equals TODR: the <strong>balanced field length</strong>. With a stopway or clearway the optimum V1 moves and the take-off is "unbalanced".</p>
+<figure class="lesson-figure"><img src="../media/images/b738-balanced-graph2.jpg" alt="Graph 2 — required field length versus V1 for a fixed weight: ASDR = TODR gives the balanced field length." loading="lazy"><figcaption>Graph 2 — required field length versus V1 for a fixed weight: ASDR = TODR gives the balanced field length. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure>
+<h2>Dry and wet runways</h2>
+<p>A <strong>damp</strong> runway (not shiny) may be treated as dry, except grass (CAT.POL.A.105); industry (TALPA) and ICAO guidance recommend treating it as wet. A <strong>wet</strong> runway has a reflective surface without significant standing water. Acceleration is unchanged but stopping is worse, so:</p>
+<ul>
+  <li>V1 is re-balanced to a lower value and the field length limit weight decreases;</li>
+  <li>one reverser may be credited in the accelerate-stop distance;</li>
+  <li>the screen height is reduced from 35 ft to <strong>15 ft</strong>, therefore clearway cannot be used;</li>
+  <li>the weight may never exceed the dry-runway weight in the same conditions (CAT.POL.A.205(b)(5)) — the "dry check".</li>
+</ul>
+<figure class="lesson-figure"><img src="../media/images/b738-wet-screen-height.jpg" alt="Wet runway take-off: lower V1 and weight, 15 ft screen height — the same TODR and ASDR as on a dry runway." loading="lazy"><figcaption>Wet runway take-off: lower V1 and weight, 15 ft screen height — the same TODR and ASDR as on a dry runway. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure>
+<h2>Contaminated runways</h2>
+<p>A runway is contaminated when more than 25 % of the surface in use is covered by standing water or slush deeper than 3 mm, loose snow (ICAO: deeper than 20 mm), compacted snow or ice. <strong>Fluid</strong> contaminants add displacement and spray drag and can cause aquaplaning; <strong>hard</strong> contaminants reduce friction without adding drag.</p>
+<figure class="lesson-figure"><img src="../media/images/b738-fluid-contaminant.jpg" alt="Fluid contaminant: spray and displacement drag increase with depth." loading="lazy"><figcaption>Fluid contaminant: spray and displacement drag increase with depth. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure><figure class="lesson-figure"><img src="../media/images/b738-hard-contaminant.jpg" alt="Hard contaminant: reduced tyre-to-ground friction; depth is not relevant." loading="lazy"><figcaption>Hard contaminant: reduced tyre-to-ground friction; depth is not relevant. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure>
+<p>The rules credit reverse thrust and a 15 ft screen height, but <strong>assumed-temperature reduced thrust is not allowed</strong>. GM1 CAT.POL.A.400: such operations should be rare — the first option is to wait for the runway to be cleared.</p>
+<h2>V1(MCG) limit weight</h2>
+<p>On a slippery runway V1 may need to be reduced so much that it falls below VMCG. V1 is then set equal to VMCG, which needs more stopping distance; the weight for which the aeroplane can accelerate to VMCG and just stop within the ASDA is the <strong>V1(MCG) limit weight</strong>. A derate (not an assumed temperature) lowers VMCG and can raise this limit.</p>
+<h2>Clearway on contaminated runways</h2>
+<p>The contaminated-runway adjustments give the same distance to 15 ft as the dry weight needs to 35 ft. If the dry weight already used clearway, the height at the runway end after an engine failure could be <strong>close to zero</strong>.</p>
+<figure class="lesson-figure"><img src="../media/images/b738-contaminated-clearway.jpg" alt="With clearway credited, the runway end crossing height on a contaminated runway can fall to 0–15 ft." loading="lazy"><figcaption>With clearway credited, the runway end crossing height on a contaminated runway can fall to 0–15 ft. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure><figure class="lesson-figure"><img src="../media/images/b738-contaminated-climb.jpg" alt="Once airborne, the lower (field-limited) weight on a contaminated runway gives a better climb gradient and more obstacle clearance." loading="lazy"><figcaption>Once airborne, the lower (field-limited) weight on a contaminated runway gives a better climb gradient and more obstacle clearance. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure>
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Balanced V1: ASD-limited and TOD-limited weights equal — the maximum field-limited weight.</li><li>Wet: lower V1, one reverser credit, 15 ft screen height, no clearway, never heavier than dry.</li><li>Contaminated: no assumed-temperature reduced thrust; check the V1(MCG) limit weight.</li><li>Waiting for the runway to be cleared is always the first option.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">What screen height is used at the end of the take-off distance on a wet runway?</p>
+    <ol><li>50 ft</li><li>35 ft</li><li>15 ft</li><li>0 ft</li></ol>
+    <p class="a"><b>Answer: C.</b> The wet-runway rules reduce the screen height to 15 ft — and so clearway cannot be used.</p></div>
+</section>
+<section class="lesson" id="lesson-4">
+  <div class="lesson-head"><div class="k">Module 1 · Take-off Performance</div>
+    <h1>Lesson 04: Take-off Climb Requirements and Improved Climb</h1><div class="m">Lesson 4 of 10 · about 9 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Describe the four take-off flight path segments and their minimum gradients.</li><li>Define the climb limit weight and the climb gradient.</li><li>Explain improved climb, its advantages and its restrictions.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-04.jpg" alt="Airliner climbing away after take-off"><figcaption>One engine out, the gradient must still be there.</figcaption></figure>
+  
+<h2>The take-off flight path</h2>
+<p>The take-off path runs from brake release to 1,500 ft above the runway (or the end of the transition to the en-route configuration, if higher). The <strong>take-off flight path</strong> starts at 35 ft at the end of the take-off distance and is computed with the critical engine inoperative from VEF, in still air, without ground effect (CS 25.111, 25.115). Boeing uses the minimum clean manoeuvring speed (VREF40 + 70 kt) as the final take-off speed.</p>
+<figure class="lesson-figure"><img src="../media/images/b738-takeoff-segments.jpg" alt="The four take-off flight path segments for a twin: gear retraction (gradient > 0), second segment at V2 (≥ 2.4 %), level acceleration (third segment) and final segment (≥ 1.2 %) at maximum continuous thrust." loading="lazy"><figcaption>The four take-off flight path segments for a twin: gear retraction (gradient > 0), second segment at V2 (≥ 2.4 %), level acceleration (third segment) and final segment (≥ 1.2 %) at maximum continuous thrust. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure>
+<table><thead><tr><th>Segment</th><th>Configuration</th><th>Minimum gross gradient (twin)</th></tr></thead><tbody>
+<tr><td>First</td><td>Take-off flaps, gear retracting, V2, take-off thrust</td><td>Positive</td></tr>
+<tr><td>Second</td><td>Gear up, take-off flaps, V2, take-off thrust</td><td>2.4 %</td></tr>
+<tr><td>Third</td><td>Level acceleration (min 400 ft) and flap retraction</td><td>—</td></tr>
+<tr><td>Final</td><td>Clean, maximum continuous thrust, final take-off speed</td><td>1.2 %</td></tr>
+</tbody></table>
+<p>The take-off thrust time limit (10 minutes with an engine out) ends the third segment. If any gradient cannot be achieved, the weight is reduced to the <strong>climb limit weight</strong>. More flap means more drag and a lower climb limit weight.</p>
+<figure class="lesson-figure"><img src="../media/images/b738-climb-gradient.jpg" alt="Climb gradient = altitude gain / horizontal distance. Rule of thumb: vertical speed (ft/min) divided by ground speed (kt) gives the gradient in percent." loading="lazy"><figcaption>Climb gradient = altitude gain / horizontal distance. Rule of thumb: vertical speed (ft/min) divided by ground speed (kt) gives the gradient in percent. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure>
+<h2>Improved climb</h2>
+<p>When the runway is longer than the field limit requires, the excess runway can be traded for <strong>higher V1, VR and V2</strong>. The aeroplane then climbs at a speed closer to its best climb speed, so the climb limit weight (and often the obstacle limit weight) increases. Speeds can be raised until the field length or tyre speed limit becomes limiting, and V1 must stay below VMBE.</p>
+<figure class="lesson-figure"><img src="../media/images/b738-improved-climb.jpg" alt="Improved climb: a higher V2 gives either the same gradient at a higher weight (B) or a higher gradient at the same weight (C)." loading="lazy"><figcaption>Improved climb: a higher V2 gives either the same gradient at a higher weight (B) or a higher gradient at the same weight (C). <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure><figure class="lesson-figure"><img src="../media/images/b738-improved-climb-tow.jpg" alt="The maximum improved-climb weight lies where the rising climb limit meets the falling field and tyre speed limit." loading="lazy"><figcaption>The maximum improved-climb weight lies where the rising climb limit meets the falling field and tyre speed limit. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure>
+<h2>Benefits and restrictions</h2>
+<ul>
+  <li><strong>Benefits</strong>: higher weight or higher assumed temperature when climb- or obstacle-limited; more tail clearance; distant obstacles become less limiting; the end of the third segment is reached higher.</li>
+  <li><strong>Restrictions</strong>: smaller rejected take-off margin; close-in obstacles can become more limiting; more tyre wear; closer to VTIRE and VMBE — a slow rotation can exceed the tyre speed. Not with anti-skid inoperative. Speeds come from the performance tool or FPPM, not from the FMC.</li>
+</ul>
+<figure class="lesson-figure"><img src="../media/images/b738-improved-climb-obstacles.jpg" alt="Improved climb increases the clearance over distant obstacles but reduces it over close-in obstacles." loading="lazy"><figcaption>Improved climb increases the clearance over distant obstacles but reduces it over close-in obstacles. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure>
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Twin minimum gross gradients: 1st &gt; 0, 2nd 2.4 %, final 1.2 %.</li><li>The climb limit weight is computed one engine out, in still air.</li><li>Improved climb trades excess runway for higher speeds and a better gradient.</li><li>Improved climb increases tyre speed and brake energy exposure.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">What is the minimum second-segment gross climb gradient for a twin-engine aeroplane?</p>
+    <ol><li>1.2 %</li><li>1.7 %</li><li>2.4 %</li><li>3.2 %</li></ol>
+    <p class="a"><b>Answer: C.</b> CS 25.121(b): 2.4 % for two-engine aeroplanes, gear up, take-off flaps, V2.</p></div>
+</section>
+<section class="lesson" id="lesson-5">
+  <div class="lesson-head"><div class="k">Module 1 · Take-off Performance</div>
+    <h1>Lesson 05: Obstacles, Tyre Speed, Brake Energy and Flap Selection</h1><div class="m">Lesson 5 of 10 · about 10 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Apply the net take-off flight path and obstacle clearance rules.</li><li>Explain the engine failure procedure (SID deviation and restriction points).</li><li>Explain the tyre speed and brake energy limits and how the take-off flap setting changes each limit.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-05.jpg" alt="Airliner climbing over hills"><figcaption>The net path must clear every obstacle.</figcaption></figure>
+  
+<h2>Obstacle accountability area</h2>
+<p>Every obstacle inside the obstacle accountability area (departure sector) must be cleared with one engine inoperative until the aeroplane reaches 1,500 ft net height. CAT.POL.A.210 sets the lateral limits: a semi-width of 90 m + 0.125 D (60 m + half the wingspan for small wingspans), up to 300 m with sufficient navigation accuracy or 600 m otherwise for track changes up to 15°, and wider (600 m / 900 m) for larger track changes.</p>
+<figure class="lesson-figure"><img src="../media/images/b738-oaa.jpg" alt="Obstacle accountability area for track changes up to 15°." loading="lazy"><figcaption>Obstacle accountability area for track changes up to 15°. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure>
+<h2>Net flight path</h2>
+<p>The <strong>gross</strong> flight path is what an average aeroplane achieves with one engine out. The <strong>net</strong> flight path is the gross gradient reduced by <strong>0.8 %</strong> for a twin, to cover pilot technique and fleet variation. The net path must clear every obstacle by at least <strong>35 ft</strong>, or <strong>50 ft</strong> when the bank angle exceeds 15°. The most penalising obstacle gives the <strong>obstacle limit weight</strong>.</p>
+<figure class="lesson-figure"><img src="../media/images/b738-net-flight-path.jpg" alt="Vertical obstacle clearance: the net take-off flight path clears obstacles by at least 35 ft." loading="lazy"><figcaption>Vertical obstacle clearance: the net take-off flight path clears obstacles by at least 35 ft. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure><figure class="lesson-figure"><img src="../media/images/b738-reduced-screen-height.jpg" alt="Wet or contaminated runway: the gross path starts at 15 ft, so a close-in obstacle may be cleared by between 15 and 35 ft (AMC1 CAT.POL.A.210)." loading="lazy"><figcaption>Wet or contaminated runway: the gross path starts at 15 ft, so a close-in obstacle may be cleared by between 15 and 35 ft (AMC1 CAT.POL.A.210). <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure>
+<h2>Engine failure procedures</h2>
+<p>Where obstacles would make the straight-out limit too restrictive, the company publishes an <strong>engine failure procedure</strong> (emergency turn). PANS-OPS makes this the operator's responsibility. Two points may be defined on a SID: the <strong>SID deviation point</strong>, where the engine-out route leaves the SID, and the <strong>SID restriction point</strong>, after which the SID itself can be followed safely with one engine inoperative.</p>
+<div class="callout warn"><span class="label">Remember</span><p>A SID climb gradient (standard 3.3 %) is an all-engines gradient: meeting it does not prove one-engine-inoperative obstacle clearance.</p></div>
+<figure class="lesson-figure"><img src="../media/images/b738-thrust-drag.jpg" alt="Excess thrust with both engines is about four times the one-engine excess thrust: the height gained before a failure matters." loading="lazy"><figcaption>Excess thrust with both engines is about four times the one-engine excess thrust: the height gained before a failure matters. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure>
+<h2>Tyre speed and brake energy</h2>
+<ul>
+  <li>The <strong>tyre speed limit weight</strong> is the weight whose lift-off ground speed equals the certified tyre speed (B737: 225 mph / 195 kt). It can limit at hot and high airports or with improved climb. More flap or less weight lowers VLOF. Rotate at the normal rate — a slow rotation raises the actual lift-off speed.</li>
+  <li><strong>VMBE</strong> is the highest V1 from which the brakes can absorb the energy of a stop. It is demonstrated with 90 % worn brakes, no reverse thrust and residual heat equal to 3 taxi miles and 3 stops; a safe evacuation must remain possible for 5 minutes after the stop. If V1 exceeds VMBE, reduce the weight or unbalance V1.</li>
+</ul>
+<h2>Choosing the take-off flap</h2>
+<p>More flap creates more lift and more drag: shorter take-off distance and higher field limit weight, more tail clearance — but a lower climb limit and obstacle limit weight. <strong>Field-limited: choose more flap. Climb- or obstacle-limited: choose less flap.</strong> The performance tool normally optimises the flap setting.</p>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Net path = gross − 0.8 % (twin); clearance ≥ 35 ft, ≥ 50 ft if bank &gt; 15°.</li><li>Meeting a SID gradient does not guarantee engine-out obstacle clearance.</li><li>Tyre speed limits VLOF; VMBE limits V1.</li><li>Field-limited → more flap; climb- or obstacle-limited → less flap.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">The take-off is obstacle-limited. Which flap change usually helps?</p>
+    <ol><li>More flap</li><li>Less flap</li><li>Flap has no effect</li><li>Flaps up</li></ol>
+    <p class="a"><b>Answer: B.</b> Less flap reduces drag and improves the climb gradient — provided the field length allows it.</p></div>
+</section>
+<section class="lesson" id="lesson-6">
+  <div class="lesson-head"><div class="k">Module 1 · Take-off Performance</div>
+    <h1>Lesson 06: Reduced and Derated Take-off Thrust</h1><div class="m">Lesson 6 of 10 · about 10 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Explain flat rating and EGT margin on the CFM56-7B.</li><li>Compare derated thrust and the assumed temperature method.</li><li>List the restrictions on reduced thrust and its effect on the take-off speeds.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-06.jpg" alt="Airliner taking off on a cool morning"><figcaption>Reduce thrust whenever you can.</figcaption></figure>
+  
+<h2>Flat-rated engine</h2>
+<p>The CFM56-7B gives constant take-off thrust up to the <strong>flat-rating temperature</strong> (FRT, corner point; about ISA + 15 °C). Below it the engine is pressure-limited and N1 and EGT rise with OAT; above it the engine is temperature-limited: EGT stays at the limit and thrust falls.</p>
+<figure class="lesson-figure"><img src="../media/images/b738-flat-rating.jpg" alt="CFM56 flat rating: constant TO/GA thrust up to the flat-rated temperature; above it thrust decreases while EGT is held. EGT margin = red line − EGT at full thrust above the FRT." loading="lazy"><figcaption>CFM56 flat rating: constant TO/GA thrust up to the flat-rated temperature; above it thrust decreases while EGT is held. EGT margin = red line − EGT at full thrust above the FRT. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure>
+<h2>EGT margin and engine life</h2>
+<p>Engine deterioration lowers the EGT margin; when the OAT limit falls below the FRT, a full-thrust take-off can exceed the red line. Engines cause about two thirds of aircraft performance deterioration. CFM figures: a 10 °C loss of EGT margin is about 3,000 cycles and costs about 0.7 % fuel; 1 % N1 ≈ 10 °C EGT; 1 °C of assumed temperature ≈ 3.5 °C EGT. Pilot tools: <strong>reduce take-off thrust whenever possible</strong>, and allow at least 3 minutes of cooling at or near idle after landing (taxi included).</p>
+<h2>Derated thrust (fixed)</h2>
+<p>A derate is a lower certified rating with its own AFM data — as if the aircraft had smaller engines. The derated value is a <strong>limit</strong>: VMCG and VMCA are computed at the derated thrust, so they are lower. Advantages: higher V1(MCG) limit weight, allowed on contaminated runways and with anti-skid inoperative, better trimmed, may improve loadability. Danger: advancing the levers beyond the derate after an engine failure at low speed can cause loss of directional control.</p>
+<h2>Assumed temperature method (ATM)</h2>
+<p>The crew enters a temperature higher than the OAT; the engine produces the thrust for that temperature. The thrust setting is <strong>not a limit</strong>: full thrust for the actual OAT may be selected at any time (AMC 25-13), because VMCG and VMCA are based on full thrust at the actual OAT. The maximum reduction is <strong>25 %</strong> of the rated thrust; the assumed temperature cannot be below the FRT; and it is limited by the actual weight reaching the performance-limited weight.</p>
+<figure class="lesson-figure"><img src="../media/images/b738-assumed-temp-thrust.jpg" alt="Assumed temperature: reduced thrust between the actual OAT and the maximum assumed temperature; at most 25 % below the available thrust." loading="lazy"><figcaption>Assumed temperature: reduced thrust between the actual OAT and the maximum assumed temperature; at most 25 % below the available thrust. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure>
+<h2>Built-in margins of ATM</h2>
+<p>At the actual (lower) temperature the air is denser: the <strong>true airspeed is lower</strong> for the same IAS and the <strong>thrust is higher</strong> than computed. The aeroplane therefore uses less runway and climbs better than assumed. These margins exist only when the assumed temperature is above the FRT and above the OAT, they do not exist with a derate, and they must never be used for weight planning.</p>
+<figure class="lesson-figure"><img src="../media/images/b738-atm-margins.jpg" alt="ATM is conservative: the actual performance is always better than the assumed performance." loading="lazy"><figcaption>ATM is conservative: the actual performance is always better than the assumed performance. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure>
+<h2>Restrictions and effects</h2>
+<ul>
+  <li>No ATM on contaminated runways; on wet runways only with suitable data; not when items increase workload (inoperative engine instruments, reversers or anti-skid, engine intermix, non-standard procedures) — AMC 25-13.</li>
+  <li><strong>Double derate</strong>: ATM applied to a derate, at most 25 % below the derated thrust.</li>
+  <li>Reduced thrust needs a <strong>higher V1</strong> (re-balancing) and a <strong>lower V2</strong>; the trim is set for full thrust, so expect a nose-up trim after take-off.</li>
+  <li>The application of reduced thrust is always at the commander's discretion; company restrictions apply.</li>
+</ul>
+<div class="callout info"><span class="label">Optimised take-off</span><p>The performance tool combines flap settings and improved climb to find the highest assumed temperature — this does not reduce the margins: a higher assumed temperature gives more TAS and thrust margin.</p></div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>CFM56 flat rated to about ISA + 15 °C; reduce thrust whenever possible to protect EGT margin.</li><li>Derate = a new limit (lower VMC); ATM = not a limit, full thrust always available.</li><li>ATM: maximum 25 % reduction, not below the FRT, never on contaminated runways.</li><li>ATM margins come from lower TAS and higher actual thrust — never plan with them.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">With the assumed temperature method, may the crew advance the thrust levers to full thrust after an engine failure?</p>
+    <ol><li>No — the reduced thrust is a limit</li><li>Yes — reduced thrust is not a limit</li><li>Only above V2</li><li>Only with a derate</li></ol>
+    <p class="a"><b>Answer: B.</b> AMC 25-13: with reduced (ATM) thrust, full take-off thrust may be selected at any time; VMCG/VMCA were computed with full thrust.</p></div>
+</section>
+<section class="lesson" id="lesson-7">
+  <div class="lesson-head"><div class="k">Module 2 · En-route Performance</div>
+    <h1>Lesson 07: En-route Climb and Cruise</h1><div class="m">Lesson 7 of 10 · about 9 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Explain the cost index and its effect on speeds.</li><li>Describe the climb profile and the crossover altitude.</li><li>Choose a cruise altitude and speed: optimum and maximum altitude, step climb, MRC, LRC and ECON.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-07.jpg" alt="Airliner cruising above the clouds"><figcaption>Cost index decides the speed.</figcaption></figure>
+  
+<h2>Cost index</h2>
+<p><strong>Cost index (CI) = time-related costs / fuel costs.</strong> A low CI flies slower and burns less fuel; a high CI flies faster to save time-related costs. CI 0 gives the maximum range cruise speed.</p>
+<h2>Climb</h2>
+<p>The economy climb speed increases with weight and cost index. Climbing at constant IAS, the TAS increases; at constant Mach, it decreases. The change from IAS to Mach happens at the <strong>crossover altitude</strong> (around FL290 for 300 kt / M0.78).</p>
+<figure class="lesson-figure"><img src="../media/images/b738-ias-mach.jpg" alt="IAS and Mach versus altitude: climb profile 250 kt – 300 kt – M0.78, crossover altitude and tropopause." loading="lazy"><figcaption>IAS and Mach versus altitude: climb profile 250 kt – 300 kt – M0.78, crossover altitude and tropopause. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure>
+<h2>Optimum and maximum altitude</h2>
+<ul>
+  <li>The <strong>optimum altitude</strong> gives the best fuel mileage (or, at ECON speed, the lowest cost). It rises as weight decreases. Stay within about ±2,000 ft (±1,000 ft in RVSM airspace): 2,000 ft below optimum costs about 1 % fuel, 2,000 ft above about 2 %.</li>
+  <li>The <strong>maximum altitude</strong> is the lowest of the certified ceiling, the thrust-limited altitude (residual climb 100 ft/min in cruise, 300 ft/min in climb) and the manoeuvre-margin altitude (buffet margin 1.3 g ≈ 40° bank; optimum altitude gives about 1.5 g).</li>
+</ul>
+<figure class="lesson-figure"><img src="../media/images/b738-step-climb.jpg" alt="Step climbs keep the aeroplane close to the optimum altitude as fuel burns." loading="lazy"><figcaption>Step climbs keep the aeroplane close to the optimum altitude as fuel burns. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure><figure class="lesson-figure"><img src="../media/images/b738-cg-travel.jpg" alt="737NG CG travel with fuel burn. Enter a realistic cruise CG in the FMC: the default forward CG gives a conservative maximum altitude." loading="lazy"><figcaption>737NG CG travel with fuel burn. Enter a realistic cruise CG in the FMC: the default forward CG gives a conservative maximum altitude. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure>
+<div class="callout caution"><span class="label">Near the maximum altitude</span><p>Only LNAV protects the bank angle against the thrust limit. Otherwise fly at least 10 kt above the lower amber band and keep the bank below 10°. The FMC maximum altitude does not account for stick-shaker speeds.</p></div>
+<h2>Cruise speed</h2>
+<ul>
+  <li><strong>MRC</strong> — maximum range cruise: the best fuel mileage for the weight (CI 0); poor speed stability.</li>
+  <li><strong>LRC</strong> — long range cruise: about 1 % less mileage but 3–5 % faster, with better speed stability.</li>
+  <li><strong>ECON</strong> — speed for the minimum total cost, from MRC at CI 0 up to the cruise thrust limit. Tailwind lowers it, headwind raises it. Typical airline CI values give a speed between MRC and LRC.</li>
+</ul>
+<figure class="lesson-figure"><img src="../media/images/b738-mrc-lrc.jpg" alt="Fuel mileage versus cruise speed: MRC and LRC decrease as the weight decreases." loading="lazy"><figcaption>Fuel mileage versus cruise speed: MRC and LRC decrease as the weight decreases. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure><figure class="lesson-figure"><img src="../media/images/b738-econ-speed.jpg" alt="ECON speed: the minimum of fuel plus time-related costs." loading="lazy"><figcaption>ECON speed: the minimum of fuel plus time-related costs. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure>
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>CI = time costs / fuel costs; CI 0 = MRC.</li><li>Optimum altitude rises as weight decreases; step climb to stay within ±2,000 ft (RVSM ±1,000 ft).</li><li>Maximum altitude: certified, thrust-limited or buffet-limited (1.3 g), whichever is lowest.</li><li>LRC ≈ 1 % less mileage than MRC but 3–5 % faster.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">What does a cost index of zero give?</p>
+    <ol><li>Maximum speed</li><li>Maximum range cruise (minimum fuel)</li><li>Long range cruise</li><li>Holding speed</li></ol>
+    <p class="a"><b>Answer: B.</b> With no time-related cost, the FMC minimises fuel: MRC.</p></div>
+</section>
+<section class="lesson" id="lesson-8">
+  <div class="lesson-head"><div class="k">Module 2 · En-route Performance</div>
+    <h1>Lesson 08: Driftdown and En-route Obstacle Clearance</h1><div class="m">Lesson 8 of 10 · about 8 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Describe the driftdown procedure and the driftdown ceiling.</li><li>Apply the net driftdown flight path clearance rules (CAT.POL.A.215).</li><li>Explain the lateral corridor and the route study.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-08.jpg" alt="Airliner over mountains"><figcaption>Driftdown: stay as high as possible.</figcaption></figure>
+  
+<h2>Why the aeroplane drifts down</h2>
+<p>After an engine failure in cruise the thrust required exceeds the maximum continuous thrust of the remaining engine. The aeroplane must descend to a lower altitude where denser air gives enough thrust to balance the drag.</p>
+<h2>The driftdown procedure</h2>
+<ol>
+  <li>Set <strong>maximum continuous thrust</strong> on the remaining engine.</li>
+  <li>Decelerate to the <strong>optimum driftdown speed</strong> (best lift-to-drag ratio) while maintaining altitude.</li>
+  <li>Descend at this speed to the <strong>driftdown ceiling</strong> (level-off altitude).</li>
+</ol>
+<p>A higher speed gives a steeper descent and a lower level-off altitude. After the driftdown, LRC gives the best range.</p>
+<figure class="lesson-figure"><img src="../media/images/b738-driftdown-speed.jpg" alt="A higher driftdown speed gives a lower level-off altitude." loading="lazy"><figcaption>A higher driftdown speed gives a lower level-off altitude. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure>
+<h2>Vertical clearance</h2>
+<p>The <strong>net driftdown flight path</strong> (gross gradient reduced by 1.1 % for a twin) must clear all obstacles by <strong>2,000 ft</strong> during the descent and by <strong>1,000 ft</strong> after level-off, within 5 NM either side of the track, and allow level flight at 1,500 ft above the aerodrome of intended landing (CAT.POL.A.215). Anti-ice drag and the most unfavourable CG are included when applicable.</p>
+<figure class="lesson-figure"><img src="../media/images/b738-driftdown-requirements.jpg" alt="Driftdown requirements: gross and net driftdown paths, 2,000 ft and 1,000 ft obstacle clearances, 1,500 ft over the diversion airport." loading="lazy"><figcaption>Driftdown requirements: gross and net driftdown paths, 2,000 ft and 1,000 ft obstacle clearances, 1,500 ft over the diversion airport. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure>
+<h2>Lateral clearance and route study</h2>
+<p>EASA requires 5 NM either side of the intended track (more than the ICAO 5 statute miles), increased to 10 NM when the navigation accuracy is not met. For mountainous routes, a route study defines escape procedures and decision points from the most critical point of failure. If the requirements cannot be met, the weight is restricted or another route is chosen.</p>
+<figure class="lesson-figure"><img src="../media/images/b738-driftdown-route.jpg" alt="Driftdown route analysis: escape paths and decision points over high terrain." loading="lazy"><figcaption>Driftdown route analysis: escape paths and decision points over high terrain. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure>
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Driftdown: MCT, decelerate to the best L/D speed, descend to the driftdown ceiling.</li><li>Net path = gross − 1.1 % (twin); 2,000 ft clearance in descent, 1,000 ft after level-off.</li><li>Corridor 5 NM each side (10 NM without the navigation accuracy).</li><li>Mountain routes need a route study with escape procedures.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">During driftdown, by how much must the net flight path clear the terrain?</p>
+    <ol><li>500 ft</li><li>1,000 ft</li><li>2,000 ft</li><li>35 ft</li></ol>
+    <p class="a"><b>Answer: C.</b> CAT.POL.A.215: 2,000 ft during the descent, 1,000 ft for level flight.</p></div>
+</section>
+<section class="lesson" id="lesson-9">
+  <div class="lesson-head"><div class="k">Module 3 · Landing Performance</div>
+    <h1>Lesson 09: Landing Speeds and Dispatch Landing Requirements</h1><div class="m">Lesson 9 of 10 · about 10 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Define LDA and explain the displaced threshold.</li><li>Define VREF and the final approach speed (FAS).</li><li>Apply the dispatch landing field length rules for dry, wet and contaminated runways.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-09.jpg" alt="Airliner on final approach"><figcaption>60 % of the LDA for dispatch.</figcaption></figure>
+  
+<h2>Landing distance available</h2>
+<p>The LDA is the runway length declared suitable for the landing ground run. Stopway cannot be used. An obstacle in the approach funnel creates a <strong>displaced threshold</strong>: the LDA starts at the displaced threshold, while the paved area before it remains usable for taxi, take-off and the landing roll-out of the opposite direction.</p>
+<figure class="lesson-figure"><img src="../media/images/b738-displaced-threshold.jpg" alt="Displaced threshold due to an obstacle in the approach path." loading="lazy"><figcaption>Displaced threshold due to an obstacle in the approach path. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure>
+<h2>Landing speeds</h2>
+<p><strong>VREF</strong> is at least 1.23 VSR0 in the landing configuration and not less than VMCL. The <strong>final approach speed</strong> (FAS) is VREF plus a correction: half the steady headwind component plus the full gust increment, at least 5 kt and at most 20 kt, and at least 5 kt below the flap placard speed. The gust increment is kept to touchdown; touchdown is normally between VREF and VREF − 5 kt.</p>
+<figure class="lesson-figure"><img src="../media/images/b738-landing-speeds.jpg" alt="Landing speeds: FAS down to 50 ft at the threshold, touchdown between VREF and VREF − 5 kt." loading="lazy"><figcaption>Landing speeds: FAS down to 50 ft at the threshold, touchdown between VREF and VREF − 5 kt. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure>
+<h2>Maximum allowable landing weight</h2>
+<p>For dispatch, the landing weight at destination and alternates is the lowest of the <strong>landing field limit weight</strong>, the <strong>landing climb limit weight</strong> (approach and landing climb gradients), the maximum structural landing weight and, where relevant, the quick-turnaround brake cooling limit. Not more than 50 % of the headwind and not less than 150 % of the tailwind are used, and slopes beyond ±2 % are accounted for (the B737NG is limited to ±2 %).</p>
+<h2>Certified landing distance</h2>
+<p>The flight-test landing distance (from 50 ft, aggressive technique, maximum manual braking, no reverse) is multiplied by <strong>1.67</strong> for a dry runway — the aeroplane must stop within <strong>60 % of the LDA</strong> (CAT.POL.A.230). On a wet runway the requirement is 115 % of the dry distance (CAT.POL.A.235): <strong>52 % of the LDA</strong>. On a contaminated runway it is the longer of the wet distance and 115 % of the approved contaminated landing distance.</p>
+<figure class="lesson-figure"><img src="../media/images/b738-certified-landing-distance.jpg" alt="Certified landing distances: flight-test distance + 67 % (dry), + 15 % more (wet)." loading="lazy"><figcaption>Certified landing distances: flight-test distance + 67 % (dry), + 15 % more (wet). <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure><figure class="lesson-figure"><img src="../media/images/b738-lflw-margins.jpg" alt="Planning margins on the LDA: 40 % dry and 48 % wet." loading="lazy"><figcaption>Planning margins on the LDA: 40 % dry and 48 % wet. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure>
+<h2>Which runway?</h2>
+<p>The dispatch check is made for the most favourable runway in still air <strong>and</strong> for the runway most likely to be assigned with the expected wind (GM1 CAT.POL.A.230). If the weight only meets the first case, dispatch is possible with two suitable alternates; if it only fails the second, one suitable alternate is required — and in flight the actual landing weight must meet the limit for the actual wind.</p>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>VREF ≥ 1.23 VSR0; FAS = VREF + ½ steady headwind + full gust (5–20 kt).</li><li>Dispatch dry: stop within 60 % of LDA (factor 1.67).</li><li>Wet: 115 % of the dry distance (52 % of LDA).</li><li>Check both the longest runway in still air and the expected runway with the expected wind.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">For dispatch to a dry runway, a jet must be able to stop within what part of the LDA?</p>
+    <ol><li>50 %</li><li>60 %</li><li>70 %</li><li>85 %</li></ol>
+    <p class="a"><b>Answer: B.</b> CAT.POL.A.230: turbojet aeroplanes — 60 % of the LDA.</p></div>
+</section>
+<section class="lesson" id="lesson-10">
+  <div class="lesson-head"><div class="k">Module 3 · Landing Performance</div>
+    <h1>Lesson 10: In-flight Landing Distance and Runway Condition Reports</h1><div class="m">Lesson 10 of 10 · about 9 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Explain the in-flight landing performance assessment at the time of arrival.</li><li>Use runway condition reports (GRF / RCAM) in the assessment.</li><li>Recall the go-around climb gradients and the autoland correction.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-10.jpg" alt="Airliner landing on a wet runway"><figcaption>Assess the landing distance before every approach.</figcaption></figure>
+  
+<h2>Dispatch is not the end</h2>
+<p>The dispatch rules use planning assumptions. Before starting an approach, the commander must be satisfied that the weather, the runway condition and the aeroplane's performance allow a safe approach, landing or missed approach (CAT.OP.MPA.300). The assessment uses the actual landing weight and the actual conditions:</p>
+<ul>
+  <li>the <strong>landing distance required</strong> must not exceed the LDA;</li>
+  <li>the <strong>go-around gradient</strong> must be achievable.</li>
+</ul>
+<h2>Factored in-flight landing distance</h2>
+<p>The in-flight landing distance from the QRH / performance tool is an operational distance for the actual braking action, speed additives, reverser use and autobrake. A margin of <strong>15 %</strong> is applied when the runway is not dry — company data normally include it. QRH Normal Configuration Landing Distance tables for slippery runways are already factored by 15 %. Landing distance data are based on fully worn brakes (CS 25.101).</p>
+<h2>Runway condition reports</h2>
+<p>Under the Global Reporting Format (ICAO Annex 14 / PANS-Aerodromes, applicable since November 2021), the aerodrome reports a <strong>runway condition code</strong> (RWYCC 6 to 0) for each third of the runway, with the contaminant type, depth and coverage. The code links directly to a braking action and to the performance data:</p>
+<table><thead><tr><th>RWYCC</th><th>Typical description</th><th>Braking action</th></tr></thead><tbody>
+<tr><td>6</td><td>Dry</td><td>—</td></tr>
+<tr><td>5</td><td>Wet (up to 3 mm), frost</td><td>Good</td></tr>
+<tr><td>4</td><td>Compacted snow (OAT −15 °C or colder)</td><td>Good to medium</td></tr>
+<tr><td>3</td><td>Slush, dry/wet snow over 3 mm, wet "slippery wet" runway</td><td>Medium</td></tr>
+<tr><td>2</td><td>Standing water or slush over 3 mm</td><td>Medium to poor</td></tr>
+<tr><td>1</td><td>Ice</td><td>Poor</td></tr>
+<tr><td>0</td><td>Wet ice, water on compacted snow</td><td>Less than poor — no operations</td></tr>
+</tbody></table>
+<h2>Pilot reports of braking action</h2>
+<p>The reported code is an assessment made at a given time. Conditions change quickly with precipitation, temperature and traffic.</p>
+<div class="callout warn"><span class="label">Pilot reports</span><p>An air-report of braking action worse than the reported code is an important threat: downgrade the assessment and share the report. See the Cold Weather Operations course (GRF module) for full detail.</p></div>
+<h2>Go-around and autoland</h2>
+<ul>
+  <li><strong>Approach climb</strong> (one engine inoperative, approach flaps, gear up): at least <strong>2.1 %</strong> for a twin (CS 25.121(d)).</li>
+  <li><strong>Landing climb</strong> (all engines, landing configuration, gear down): at least <strong>3.2 %</strong> (CS 25.119).</li>
+  <li>Autoland may need a longer landing distance (CS-AWO): reduce the LDA by the published autoland increment (AMC7 CAT.POL.A.320).</li>
+  <li>If the dispatch relied on the actual wind at a single-runway destination, check that the actual landing weight does not exceed the limit for the actual wind.</li>
+</ul>
+<div class="callout info"><span class="label">Good practice</span><p>Brief the landing distance assessment with the approach briefing: runway, RWYCC, wind, autobrake, flap, reverser plan, and the go-around gradient if the missed approach is demanding.</p></div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Before every approach: actual landing distance ≤ LDA and go-around gradient achievable (CAT.OP.MPA.300).</li><li>Apply 15 % to the in-flight landing distance when the runway is not dry.</li><li>RWYCC 6–0 links runway condition to braking action and data; RWYCC 0 = no operations.</li><li>Approach climb 2.1 % (OEI), landing climb 3.2 % (AEO).</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">The runway condition code reported is 0. What does it mean?</p>
+    <ol><li>Dry runway</li><li>Good braking</li><li>Less than poor braking — no operations</li><li>Medium braking</li></ol>
+    <p class="a"><b>Answer: C.</b> RWYCC 0 (wet ice, water on compacted snow): braking less than poor — operations are not permitted.</p></div>
+</section><p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p></body></html>

@@ -1,0 +1,30 @@
+Domestic Airlines — Dash 8-Q200 Performance
+Lesson 6: Climb and Cruise Performance
+
+Learning objectives:
+- Read the climb speed and torque tables (900 and 1050 rpm).
+- Read maximum climb and maximum cruise power tables.
+- Compare long range cruise, maximum endurance and single-engine cruise, and choose the cruise altitude.
+
+Climb tables
+
+For each climb type, the Operating Data Manual gives the speed and torque setting at propeller 900 rpm and 1050 rpm, with time, fuel and distance to climb.
+
+Cruise
+
+Maximum cruise power — highest cruise speed.
+
+Long range cruise — the best distance per unit of fuel (range is fuel used over distance).
+
+Maximum endurance — the least fuel per hour (endurance is fuel used over time): for holding.
+
+Single-engine cruise at maximum continuous power — after an engine failure.
+
+Choosing the cruise altitude
+
+The best altitude depends on the stage length and the winds: on short sectors the climb and descent dominate. The minimum block time table gives the cruise altitude and technique for the shortest block time.
+
+Key takeaways:
+- Each climb type has tables at 900 and 1050 rpm.
+- Range = distance per fuel (LRC); endurance = time per fuel (holding).
+- Single-engine cruise uses MCP at 1200 rpm.

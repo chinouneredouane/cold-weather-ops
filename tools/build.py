@@ -34,9 +34,12 @@ from courses.approach_minima import COURSE as APPROACH_MINIMA  # noqa: E402
 from courses.ground_equipment import COURSE as GROUND_EQUIPMENT  # noqa: E402
 from courses.lvo import COURSE as LVO  # noqa: E402
 from courses.algerian_regs import COURSE as ALGERIAN_REGS  # noqa: E402
+from courses.perf_b737 import COURSE as PERF_B737  # noqa: E402
+from courses.perf_q400 import COURSE as PERF_Q400  # noqa: E402
+from courses.perf_q200 import COURSE as PERF_Q200  # noqa: E402
 from handbook import build_print  # noqa: E402
 
-COURSES = [COLD_WEATHER, UPSET_RECOVERY, RVSM, CFIT, HOT_WEATHER, CPDLC, WINDSHEAR, PBN, REGULATIONS, MEL, WIND_LIMITS, APPROACH_MINIMA, GROUND_EQUIPMENT, LVO, ALGERIAN_REGS]
+COURSES = [COLD_WEATHER, UPSET_RECOVERY, RVSM, CFIT, HOT_WEATHER, CPDLC, WINDSHEAR, PBN, REGULATIONS, MEL, WIND_LIMITS, APPROACH_MINIMA, GROUND_EQUIPMENT, LVO, ALGERIAN_REGS, PERF_B737, PERF_Q400, PERF_Q200]
 
 # Courses shown on the portal as "in preparation" (no pages yet).
 UPCOMING = []
@@ -65,6 +68,11 @@ REFRESHER = {
         ("+", "CPDLC — Controller-Pilot Data Link", "courses/cpdlc/index.html", ""),
         ("+", "Upset Prevention and Recovery (UPRT)", "courses/upset-prevention-recovery/index.html", ""),
         ("+", "Low Visibility Operations (LVO) — CAT IIIA", "courses/lvo/index.html", "B737-800"),
+    ],
+    "Aircraft performance": [
+        ("737", "Boeing 737-800 NG Performance", "courses/b737-performance/index.html", "Take-off, en-route and landing — 10 lessons"),
+        ("Q400", "Dash 8-Q400 Performance", "courses/q400-performance/index.html", "AFM charts, runway analysis, landing — 8 lessons"),
+        ("Q200", "Dash 8-Q200 Performance", "courses/q200-performance/index.html", "All phases of flight with AFM / ODM data — 11 lessons"),
     ],
 }
 

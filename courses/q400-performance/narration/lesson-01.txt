@@ -1,0 +1,56 @@
+Domestic Airlines — Dash 8-Q400 Performance
+Lesson 1: Environmental Factors and Performance Definitions
+
+Learning objectives:
+- Explain how pressure altitude, temperature, wind, runway condition and slope affect performance.
+- Define the Q400 performance speeds.
+- Define the declared distances and the field length requirements.
+
+Five environmental factors
+
+Pressure altitude — higher aerodromes: less dense air, less power and lift, longer distances.
+
+Temperature — hot air is less dense. The PW150A is flat rated: torque is available up to a limiting temperature, then decreases.
+
+Wind — headwind shortens, tailwind lengthens the ground distances. AFM charts use 50 % of the headwind and 150 % of the tailwind.
+
+Runway condition — wet or contaminated surfaces degrade braking and may add drag.
+
+Runway slope — uphill lengthens the take-off and shortens the stop; downhill the opposite.
+
+Performance speeds
+
+Speed Meaning
+
+V1 Take-off decision speed: the maximum speed for the first stopping action and the minimum speed to continue after an engine failure
+
+VR Rotation speed
+
+V2 Take-off safety speed at 35 ft with one engine inoperative
+
+VMCG Minimum control speed on the ground (rudder only)
+
+VMCA Minimum control speed in the air (≤ 5° bank)
+
+VMCL Minimum control speed in the landing configuration
+
+VREF Reference landing speed at 50 ft
+
+Declared distances
+
+TORA — take-off run available (runway).
+
+ASDA — TORA + stopway.
+
+TODA — TORA + clearway.
+
+LDA — landing distance available; it begins at a displaced threshold when one exists.
+
+Field requirements
+
+For every take-off the aeroplane must meet three requirements: the take-off run required (TORR) ≤ TORA, the take-off distance required (TODR) ≤ TODA and the accelerate-stop distance required (ASDR) ≤ ASDA (CAT.POL.A.205). Each is the longer of the engine-failure case and 115 % of the all-engines case (for distance and run).
+
+Key takeaways:
+- Altitude and temperature reduce density: less power and lift, longer distances.
+- Charts use 50 % headwind and 150 % tailwind.
+- TORR ≤ TORA, TODR ≤ TODA, ASDR ≤ ASDA.

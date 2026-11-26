@@ -1,0 +1,35 @@
+Domestic Airlines — Boeing 737-800 NG Performance
+Lesson 8: Driftdown and En-route Obstacle Clearance
+
+Learning objectives:
+- Describe the driftdown procedure and the driftdown ceiling.
+- Apply the net driftdown flight path clearance rules (CAT.POL.A.215).
+- Explain the lateral corridor and the route study.
+
+Why the aeroplane drifts down
+
+After an engine failure in cruise the thrust required exceeds the maximum continuous thrust of the remaining engine. The aeroplane must descend to a lower altitude where denser air gives enough thrust to balance the drag.
+
+The driftdown procedure
+
+Set maximum continuous thrust on the remaining engine.
+
+Decelerate to the optimum driftdown speed (best lift-to-drag ratio) while maintaining altitude.
+
+Descend at this speed to the driftdown ceiling (level-off altitude).
+
+A higher speed gives a steeper descent and a lower level-off altitude. After the driftdown, LRC gives the best range.
+
+Vertical clearance
+
+The net driftdown flight path (gross gradient reduced by 1.1 % for a twin) must clear all obstacles by 2,000 ft during the descent and by 1,000 ft after level-off, within 5 NM either side of the track, and allow level flight at 1,500 ft above the aerodrome of intended landing (CAT.POL.A.215). Anti-ice drag and the most unfavourable CG are included when applicable.
+
+Lateral clearance and route study
+
+EASA requires 5 NM either side of the intended track (more than the ICAO 5 statute miles), increased to 10 NM when the navigation accuracy is not met. For mountainous routes, a route study defines escape procedures and decision points from the most critical point of failure. If the requirements cannot be met, the weight is restricted or another route is chosen.
+
+Key takeaways:
+- Driftdown: MCT, decelerate to the best L/D speed, descend to the driftdown ceiling.
+- Net path = gross − 1.1 % (twin); 2,000 ft clearance in descent, 1,000 ft after level-off.
+- Corridor 5 NM each side (10 NM without the navigation accuracy).
+- Mountain routes need a route study with escape procedures.

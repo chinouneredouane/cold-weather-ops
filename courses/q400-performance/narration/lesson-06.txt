@@ -1,0 +1,44 @@
+Domestic Airlines — Dash 8-Q400 Performance
+Lesson 6: Climb Segments and Runway Analysis
+
+Learning objectives:
+- Describe the take-off climb segments of the Q400.
+- Read a runway analysis page and its limit codes.
+- Explain the engine failure procedure (special departure).
+
+Climb segments
+
+Segment From – to Configuration Minimum gross gradient (twin)
+
+1st 35 ft – gear retracted Take-off flap, gear retracting, V2 Positive
+
+2nd Gear up – acceleration altitude (min 400 ft) Take-off flap, V2, take-off power 2.4 %
+
+3rd Acceleration Level acceleration, flap retraction —
+
+4th Flaps retracted – 1,500 ft Clean, maximum continuous power, final climb speed 1.2 %
+
+The net flight path (gross − 0.8 %) must clear obstacles by 35 ft (CAT.POL.A.210). Obstacles are handled by the runway analysis .
+
+Reading a runway analysis page
+
+A runway analysis page is produced for one runway and one aeroplane / engine type (DHC-8-402, PW150A). It shows:
+
+The aerodrome and runway, elevation, length, line-up shift, clearway, stopway and slope.
+
+Any special engine-failure procedure : "climb at … via … reaching … or … turn …", the flap retraction height and any hold.
+
+Conditions: flap, bleeds, anti-ice.
+
+For each temperature and wind: the maximum weight, with a limit code (for example field, climb, obstacle, brake energy, structural) and the V-speeds.
+
+Read the limit code A "climb limit" (dry runway) code means more runway will not help; only a lower temperature, less weight, or a different flap setting will. A field-limit code means distance is the problem.
+
+Engine failure procedures
+
+If an obstacle is critical, the company publishes a special procedure for an engine failure after V1. Brief it before every take-off: the turn point or altitude, the track, the acceleration altitude and where to hold.
+
+Key takeaways:
+- Twin gradients: 2nd segment 2.4 %, 4th (final) 1.2 % gross; net = gross − 0.8 %.
+- The runway analysis gives the maximum weight, the limit code and the special procedure.
+- Brief the engine failure procedure before every take-off.

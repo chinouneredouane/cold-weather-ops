@@ -1,0 +1,21 @@
+Domestic Airlines — Dash 8-Q200 Performance
+Lesson 10: Brake Energy and Minimum Turnaround Time
+
+Learning objectives:
+- Explain why brake energy limits rejected take-offs and quick turnarounds.
+- Read the brake energy and minimum turnaround time charts.
+
+Energy into heat
+
+During a rejected take-off or a landing, most of the aeroplane's kinetic energy becomes heat in the brakes. Too much heat can melt the fusible plugs of the wheels: the tyres deflate to prevent a burst. The brakes then need time to cool before another take-off can be made safely.
+
+Rejected take-off
+
+Landing
+
+Hot and short High weight, high temperature, high elevation and tailwind all raise the brake energy. Respect the minimum turnaround time before the next departure, and after a high-energy rejected take-off keep clear of the wheels — fusible plugs may release.
+
+Key takeaways:
+- Brake energy grows with weight and the square of the speed.
+- Fusible plugs deflate overheated tyres to prevent a burst.
+- Respect the minimum turnaround time from the charts.

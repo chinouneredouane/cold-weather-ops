@@ -1,0 +1,26 @@
+Domestic Airlines — Dash 8-Q200 Performance
+Lesson 4: Take-off Speeds and WAT Limit
+
+Learning objectives:
+- Find VR, V1 (V1/VR ratio), V2 and the climb speed from the AFM charts.
+- Apply the V1 correction for a wet or contaminated runway.
+- Find the maximum permissible take-off weight (WAT limit).
+
+V1 and VR
+
+V2
+
+Final take-off climb speed
+
+V1 on a wet or contaminated runway
+
+When the runway is wet or contaminated, V1 is reduced according to the AFM supplement: in the company course the reduction is about 8 kt , adjusted for the wind — slightly less with a headwind, more with a tailwind. Always use the current supplement and the runway analysis for the actual condition.
+
+WAT limit
+
+The maximum permissible take-off weight (WAT limit) gives the minimum one-engine-inoperative climb gradients for the aerodrome altitude and temperature.
+
+Key takeaways:
+- Find VR first, then V1 from the V1/VR ratio, then V2.
+- Wet/contaminated: reduce V1 per the AFM supplement (about 8 kt, wind-corrected).
+- The WAT limit depends on altitude and temperature, not runway length.

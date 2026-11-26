@@ -1,0 +1,32 @@
+Domestic Airlines — Dash 8-Q200 Performance
+Lesson 11: Performance in Abnormal Situations
+
+Learning objectives:
+- Use the abnormal landing distance factors.
+- Find the unfactored landing distance and apply the factors.
+- Check the result against the LDA before the approach.
+
+Unfactored landing distance
+
+The AFM unfactored landing distance is the distance from 50 ft to a full stop in the normal configuration. It is the starting point for both dispatch (with the regulatory factors) and abnormal situations.
+
+Abnormal configurations
+
+The unfactored landing distance in an abnormal configuration is the normal unfactored distance multiplied by the abnormal landing distance factor from the AFM tables (for example propeller, engine, flap, flight control, hydraulic or anti-skid failures).
+
+Decision
+
+Complete the QRH procedure and note the landing flap, VREF increment and the factor.
+
+Compute the abnormal landing distance for the actual weight, wind and runway condition.
+
+Compare with the LDA; if it does not fit with a reasonable margin, choose a longer runway.
+
+Brief the landing technique, braking and reverser plan.
+
+Do not rush Abnormal landing distances can double the normal distance. Take the time to compute and cross-check.
+
+Key takeaways:
+- Abnormal distance = normal unfactored distance × AFM abnormal factor.
+- Always compare with the LDA before the approach.
+- Brief the technique and the go-around.

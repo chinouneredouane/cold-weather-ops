@@ -1,0 +1,28 @@
+Domestic Airlines — Dash 8-Q200 Performance
+Lesson 9: Performance in Icing Conditions
+
+Learning objectives:
+- Distinguish the three icing performance cases.
+- Apply the icing corrections to take-off, en-route and landing data.
+
+Why ice changes the numbers
+
+Ice on the unprotected surfaces and between boot cycles increases drag and raises the stall speed. The engine intakes and bleeds used for ice protection reduce the power available. Speeds increase, gradients decrease and distances increase.
+
+1 — Before entering icing conditions
+
+Take-off performance data with ice protection ON and no ice accumulation ; ice accumulation is assumed for the fourth (final) segment gradient in the net flight path.
+
+2 — In icing conditions
+
+En-route and landing data with ice protection ON and ice on unprotected surfaces plus ice build-up on protected surfaces between boot cycles.
+
+3 — After flight in icing conditions
+
+En-route and landing data with ice protection OFF and ice suspected on unprotected surfaces.
+
+Remember Use the increased (icing) speeds and the corrected landing distance. Never take off with ice, frost or snow on the aeroplane — see the Cold Weather Operations course.
+
+Key takeaways:
+- Three cases: before icing (ON, no ice), in icing (ON, ice), after icing (OFF, suspected ice).
+- Icing: higher speeds, lower gradients, longer distances.

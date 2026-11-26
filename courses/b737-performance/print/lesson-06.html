@@ -1,0 +1,78 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Lesson 06: Reduced and Derated Take-off Thrust — Boeing 737-800 NG Performance</title>
+<style>
+@page{size:A4;margin:18mm 16mm 20mm}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#24342b;font-size:10.5pt;line-height:1.5;margin:0}
+h1,h2,h3{color:#14231b;line-height:1.25;break-after:avoid}
+h1{font-size:21pt;margin:0 0 6pt}h2{font-size:14pt;margin:16pt 0 6pt}h3{font-size:12pt;margin:12pt 0 4pt}
+p{margin:0 0 7pt}ul,ol{margin:0 0 8pt;padding-left:16pt}li{margin:2pt 0}
+a{color:#125a2b;text-decoration:none}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:9pt;background:#f3f9f5;border:1px solid #dbe5df;padding:0 3pt;border-radius:3pt}
+.cover{height:257mm;display:flex;flex-direction:column;justify-content:center;break-after:page;
+  background:linear-gradient(120deg,#0c3d1e,#125a2b 55%,#2a8a50);color:#fff;padding:22mm;border-radius:4mm;margin:0}
+.cover h1{color:#fff;font-size:34pt}.cover .k{letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#bfe3cb;font-size:10pt}
+.cover p{color:#e3f1e8;font-size:13pt}.cover .logo{background:#fff;padding:5mm 7mm;border-radius:3mm;display:inline-block;margin-bottom:14mm}
+.cover .logo img{height:16mm}.cover .meta{margin-top:12mm;font-size:10.5pt;color:#d3ebdb}
+.toc{break-after:page}.toc h2{margin-top:0}.toc ol{list-style:none;padding:0}
+.toc li{display:flex;gap:8pt;padding:3pt 0;border-bottom:1px dotted #c9d8cf}.toc .n{width:22pt;font-weight:700;color:#5b6b62}
+.toc .mod{margin-top:9pt;font-weight:800;color:#125a2b;border:0;text-transform:uppercase;font-size:9pt;letter-spacing:.06em}
+.lesson{break-before:page}
+.lesson-head{background:linear-gradient(120deg,#0c3d1e,#1d7a3e);color:#fff;border-radius:3mm;padding:9pt 13pt;margin-bottom:10pt}
+.lesson-head h1{color:#fff;font-size:17pt;margin:2pt 0}.lesson-head .k{font-size:8.5pt;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#c7e8d2}
+.lesson-head .m{font-size:9pt;color:#dbefe2}
+.objectives{background:#f3f9f5;border:1px solid #dbe5df;border-radius:2mm;padding:7pt 11pt;margin:0 0 10pt}
+.objectives h2,.takeaways h2,.kc h2{font-size:9.5pt;text-transform:uppercase;letter-spacing:.06em;margin:0 0 3pt;color:#125a2b}
+.lesson-figure{margin:0 0 10pt;break-inside:avoid}.lesson-figure img{width:100%;max-height:85mm;object-fit:contain;border:1px solid #dbe5df;border-radius:2mm;background:#f3f9f5}
+figure{margin:9pt 0;break-inside:avoid}figure svg{width:100%;height:auto}figcaption{font-size:8.5pt;color:#5b6b62;margin-top:3pt}
+.diagram{border:1px solid #dbe5df;border-radius:2mm;padding:5pt}
+.table-wrap{margin:8pt 0;border:1px solid #dbe5df;border-radius:2mm;overflow:hidden}
+table{border-collapse:collapse;width:100%;font-size:9pt}th,td{text-align:left;vertical-align:top;padding:4pt 6pt;border-bottom:1px solid #dbe5df}
+th{background:#f3f9f5}tr{break-inside:avoid}td.code{font-weight:800;font-size:12pt;text-align:center;width:34pt}
+.callout{border-left:3pt solid #1d7a3e;background:#f3f9f5;padding:6pt 10pt;margin:8pt 0;border-radius:0 2mm 2mm 0;break-inside:avoid}
+.callout .label{display:block;font-size:8.5pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#125a2b}
+.callout.warn{border-color:#c8102e;background:#fdecef}.callout.warn .label{color:#c8102e}
+.callout.caution{border-color:#d08a00;background:#fff5e0}.callout.caution .label{color:#9a6200}
+.callout.info{border-color:#1f5f99;background:#e9f2fb}.callout.info .label{color:#1f5f99}
+.callout > :last-child{margin-bottom:0}
+.steps{list-style:none;padding:0;counter-reset:s}.steps>li{counter-increment:s;position:relative;padding-left:20pt;margin:4pt 0}
+.steps>li::before{content:counter(s);position:absolute;left:0;top:0;width:14pt;height:14pt;border-radius:50%;background:#1d7a3e;color:#fff;font-weight:800;font-size:8pt;display:flex;align-items:center;justify-content:center}
+.dialog{border:1px solid #dbe5df;border-radius:2mm;padding:4pt 10pt;margin:8pt 0;break-inside:avoid}.dialog p{margin:4pt 0}.dialog b{color:#125a2b}
+.muted{color:#5b6b62}
+.takeaways{background:#0c3d1e;color:#e8f5ec;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}.takeaways h2{color:#fff}
+.kc{border:1.5pt dashed #b9d7c3;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}
+.kc .q{font-weight:700;margin:2pt 0 4pt}.kc ol{list-style:upper-alpha}.kc .a{font-size:9pt;margin-top:4pt;color:#125a2b}
+.disclaimer{font-size:8.5pt;color:#5b6b62;border-top:1px solid #dbe5df;padding-top:6pt;margin-top:14pt}
+</style></head><body>
+<section class="lesson" style="break-before:auto" id="lesson-6">
+  <div class="lesson-head"><div class="k">Module 1 · Take-off Performance</div>
+    <h1>Lesson 06: Reduced and Derated Take-off Thrust</h1><div class="m">Lesson 6 of 10 · about 10 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Explain flat rating and EGT margin on the CFM56-7B.</li><li>Compare derated thrust and the assumed temperature method.</li><li>List the restrictions on reduced thrust and its effect on the take-off speeds.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-06.jpg" alt="Airliner taking off on a cool morning"><figcaption>Reduce thrust whenever you can.</figcaption></figure>
+  
+<h2>Flat-rated engine</h2>
+<p>The CFM56-7B gives constant take-off thrust up to the <strong>flat-rating temperature</strong> (FRT, corner point; about ISA + 15 °C). Below it the engine is pressure-limited and N1 and EGT rise with OAT; above it the engine is temperature-limited: EGT stays at the limit and thrust falls.</p>
+<figure class="lesson-figure"><img src="../media/images/b738-flat-rating.jpg" alt="CFM56 flat rating: constant TO/GA thrust up to the flat-rated temperature; above it thrust decreases while EGT is held. EGT margin = red line − EGT at full thrust above the FRT." loading="lazy"><figcaption>CFM56 flat rating: constant TO/GA thrust up to the flat-rated temperature; above it thrust decreases while EGT is held. EGT margin = red line − EGT at full thrust above the FRT. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure>
+<h2>EGT margin and engine life</h2>
+<p>Engine deterioration lowers the EGT margin; when the OAT limit falls below the FRT, a full-thrust take-off can exceed the red line. Engines cause about two thirds of aircraft performance deterioration. CFM figures: a 10 °C loss of EGT margin is about 3,000 cycles and costs about 0.7 % fuel; 1 % N1 ≈ 10 °C EGT; 1 °C of assumed temperature ≈ 3.5 °C EGT. Pilot tools: <strong>reduce take-off thrust whenever possible</strong>, and allow at least 3 minutes of cooling at or near idle after landing (taxi included).</p>
+<h2>Derated thrust (fixed)</h2>
+<p>A derate is a lower certified rating with its own AFM data — as if the aircraft had smaller engines. The derated value is a <strong>limit</strong>: VMCG and VMCA are computed at the derated thrust, so they are lower. Advantages: higher V1(MCG) limit weight, allowed on contaminated runways and with anti-skid inoperative, better trimmed, may improve loadability. Danger: advancing the levers beyond the derate after an engine failure at low speed can cause loss of directional control.</p>
+<h2>Assumed temperature method (ATM)</h2>
+<p>The crew enters a temperature higher than the OAT; the engine produces the thrust for that temperature. The thrust setting is <strong>not a limit</strong>: full thrust for the actual OAT may be selected at any time (AMC 25-13), because VMCG and VMCA are based on full thrust at the actual OAT. The maximum reduction is <strong>25 %</strong> of the rated thrust; the assumed temperature cannot be below the FRT; and it is limited by the actual weight reaching the performance-limited weight.</p>
+<figure class="lesson-figure"><img src="../media/images/b738-assumed-temp-thrust.jpg" alt="Assumed temperature: reduced thrust between the actual OAT and the maximum assumed temperature; at most 25 % below the available thrust." loading="lazy"><figcaption>Assumed temperature: reduced thrust between the actual OAT and the maximum assumed temperature; at most 25 % below the available thrust. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure>
+<h2>Built-in margins of ATM</h2>
+<p>At the actual (lower) temperature the air is denser: the <strong>true airspeed is lower</strong> for the same IAS and the <strong>thrust is higher</strong> than computed. The aeroplane therefore uses less runway and climbs better than assumed. These margins exist only when the assumed temperature is above the FRT and above the OAT, they do not exist with a derate, and they must never be used for weight planning.</p>
+<figure class="lesson-figure"><img src="../media/images/b738-atm-margins.jpg" alt="ATM is conservative: the actual performance is always better than the assumed performance." loading="lazy"><figcaption>ATM is conservative: the actual performance is always better than the assumed performance. <span class="muted">Source: Domestic Airlines B737-800 NG performance course.</span></figcaption></figure>
+<h2>Restrictions and effects</h2>
+<ul>
+  <li>No ATM on contaminated runways; on wet runways only with suitable data; not when items increase workload (inoperative engine instruments, reversers or anti-skid, engine intermix, non-standard procedures) — AMC 25-13.</li>
+  <li><strong>Double derate</strong>: ATM applied to a derate, at most 25 % below the derated thrust.</li>
+  <li>Reduced thrust needs a <strong>higher V1</strong> (re-balancing) and a <strong>lower V2</strong>; the trim is set for full thrust, so expect a nose-up trim after take-off.</li>
+  <li>The application of reduced thrust is always at the commander's discretion; company restrictions apply.</li>
+</ul>
+<div class="callout info"><span class="label">Optimised take-off</span><p>The performance tool combines flap settings and improved climb to find the highest assumed temperature — this does not reduce the margins: a higher assumed temperature gives more TAS and thrust margin.</p></div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>CFM56 flat rated to about ISA + 15 °C; reduce thrust whenever possible to protect EGT margin.</li><li>Derate = a new limit (lower VMC); ATM = not a limit, full thrust always available.</li><li>ATM: maximum 25 % reduction, not below the FRT, never on contaminated runways.</li><li>ATM margins come from lower TAS and higher actual thrust — never plan with them.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">With the assumed temperature method, may the crew advance the thrust levers to full thrust after an engine failure?</p>
+    <ol><li>No — the reduced thrust is a limit</li><li>Yes — reduced thrust is not a limit</li><li>Only above V2</li><li>Only with a derate</li></ol>
+    <p class="a"><b>Answer: B.</b> AMC 25-13: with reduced (ATM) thrust, full take-off thrust may be selected at any time; VMCG/VMCA were computed with full thrust.</p></div>
+</section><p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p></body></html>

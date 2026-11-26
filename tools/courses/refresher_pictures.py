@@ -51,6 +51,21 @@ def cdu():
             '<text x="520" y="460" fill="#fff">&lt;REJECT</text><text x="880" y="460" fill="#fff">ACCEPT&gt;</text></g>' + keys)
 
 
+
+def turboprop(x, y, s=1.0, pitch=0, col="#f4f6f8", accent="#1d7a3e", flip=False):
+    """Side view of a generic high-wing twin turboprop with a T-tail, nose to the right."""
+    sx = -s if flip else s
+    return (f'<g transform="translate({x} {y}) rotate({-pitch if not flip else pitch}) scale({sx} {s})">'
+            f'<path d="M-300 -8 Q-306 -20 -280 -22 L200 -22 Q262 -22 296 -2 Q304 6 292 12 Q250 24 200 24 L-250 20 Q-300 16 -300 -8z" fill="{col}" stroke="#334" stroke-width="3"/>'
+            f'<path d="M-235 -20 L-285 -150 L-252 -150 L-180 -20z" fill="{col}" stroke="#334" stroke-width="3"/>'
+            f'<path d="M-330 -156 L-200 -150 L-205 -140 L-325 -144z" fill="{col}" stroke="#334" stroke-width="3"/>'
+            f'<path d="M-60 -24 L120 -24 L110 -36 L-50 -36z" fill="#d9dee3" stroke="#334" stroke-width="3"/>'
+            f'<rect x="0" y="-48" width="120" height="30" rx="12" fill="#c7ced4" stroke="#334" stroke-width="3"/>'
+            f'<ellipse cx="126" cy="-33" rx="6" ry="44" fill="#56616a" opacity=".55"/>'
+            f'<path d="M-280 -4 L240 -4" stroke="{accent}" stroke-width="7"/>'
+            f'<path d="M250 -14 L280 -6 L272 0 L246 -4z" fill="#1d2a33"/>'
+            + "".join(f'<circle cx="{wx}" cy="-10" r="5" fill="#1d2a33"/>' for wx in range(-200, 200, 40)) + '</g>')
+
 def scene(slug, n):
     s = None
     if slug == "rvsm-refresher":
@@ -152,6 +167,33 @@ def scene(slug, n):
         s = {1: lambda: sky("dusk") + ground(560, 0, "night") + runway(700, 560, 200) + "".join(f'<circle cx="{800+dx}" cy="{790-k*40}" r="7" fill="#fff3b0"/>' for k in range(5) for dx in (-40, 0, 40)),
              2: lambda: '<rect width="1600" height="800" fill="#0a1426"/>' + runway(640, 420, 320) + "".join(f'<circle cx="{800+dx}" cy="{790-k*45}" r="{9-k*0.8:.1f}" fill="{"#ff5a3c" if k == 7 else "#fff3b0"}"/>' for k in range(8) for dx in (-80, -40, 0, 40, 80)),
              3: lambda: sky("night") + stars(60, 4) + ground(600, 0, "night") + runway(700, 600, 160) + aircraft(1150, 380, 0.6, -3, flip=True)}
+    elif slug == "b737-performance":
+        s = {
+            1: lambda: sky("day") + ground(620, 0, "land") + runway(760, 620, 140) + aircraft(800, 560, 0.7, 0),
+            2: lambda: sky("day") + ground(560, 0, "land") + runway(800, 560, 260),
+            3: lambda: sky("dusk") + ground(560, 0, "land") + runway(780, 560, 220) + '<rect x="0" y="560" width="1600" height="240" fill="#9fb4c8" opacity=".35"/>',
+            4: lambda: sky("day") + ground(700, 0, "land") + aircraft(820, 380, 1.0, 12),
+            5: lambda: sky("day") + mountains(700, "#3e5a4a", "#5d7b67", seed=7) + aircraft(700, 340, 0.9, 12),
+            6: lambda: sky("dusk") + ground(640, 0, "land") + runway(760, 640, 160) + aircraft(820, 520, 0.85, 8),
+            7: lambda: sky("high") + cloud(300, 680, 1.6) + cloud(1200, 700, 1.4) + aircraft(800, 400, 1.0, 0),
+            8: lambda: sky("high") + mountains(760, "#4b5d6b", "#6c7f8c", seed=9) + aircraft(800, 360, 0.9, -3),
+            9: lambda: sky("day") + ground(560, 0, "land") + runway(760, 560, 200) + aircraft(1000, 380, 0.7, -3, flip=True),
+            10: lambda: sky("cloud") + ground(600, 0, "land") + runway(760, 600, 180) + aircraft(900, 520, 0.8, 4, flip=True) + '<rect x="0" y="600" width="1600" height="200" fill="#9fb4c8" opacity=".35"/>',
+        }
+    elif slug in ("q400-performance", "q200-performance"):
+        s = {
+            1: lambda: sky("day") + sun(1300, 150, 70) + ground(640, 0, "land") + turboprop(800, 560, 1.0, 0),
+            2: lambda: cockpit(480, 0, "day") + pilots(),
+            3: lambda: sky("day") + sun(1300, 140, 70) + desert(600) + haze(600) + runway(760, 600, 140) + turboprop(780, 560, 0.7, 0),
+            4: lambda: sky("day") + ground(560, 0, "land") + runway(800, 560, 260) + turboprop(800, 520, 0.5, 0),
+            5: lambda: sky("day") + ground(640, 0, "land") + runway(760, 640, 160) + turboprop(820, 560, 0.9, 6),
+            6: lambda: sky("day") + mountains(700, "#3e5a4a", "#5d7b67", seed=5) + turboprop(720, 360, 0.9, 12),
+            7: lambda: sky("high") + mountains(780, "#4b5d6b", "#6c7f8c", seed=3) + cloud(300, 700, 1.4) + turboprop(800, 380, 1.0, 0),
+            8: lambda: sky("day") + ground(560, 0, "land") + runway(760, 560, 200) + turboprop(1000, 380, 0.8, -3, flip=True),
+            9: lambda: sky("cloud") + cloud(400, 420, 2.2, "#dfe5ea") + cloud(1200, 460, 2.0, "#dfe5ea") + turboprop(800, 420, 0.9, 2),
+            10: lambda: sky("day") + ground(600, 0, "land") + runway(760, 600, 160) + turboprop(820, 540, 1.0, 0),
+            11: lambda: sky("dusk") + ground(580, 0, "land") + runway(760, 580, 200) + turboprop(1000, 400, 0.8, -3, flip=True),
+        }
     if not s or n not in s:
         raise KeyError((slug, n))
     return card(s[n]())

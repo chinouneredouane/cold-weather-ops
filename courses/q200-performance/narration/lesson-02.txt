@@ -1,0 +1,53 @@
+Domestic Airlines — Dash 8-Q200 Performance
+Lesson 2: Speeds and Runway Distances
+
+Learning objectives:
+- Define V1, VEF, VR, VLOF, V2, VREF, VS, VMCA and VMCG.
+- Define TORA, TODA, ASDA, clearway and stopway.
+- Define take-off distance, take-off run, LDA and LDR.
+
+Speed definitions
+
+VEF — speed at which the critical engine is assumed to fail.
+
+V1 — decision speed: beyond it the take-off should no longer be rejected.
+
+VR — rotation speed; VLOF — lift-off speed.
+
+V2 — take-off safety speed: safe climb with one engine inoperative.
+
+VREF — reference landing (threshold) speed.
+
+VS — stall speed.
+
+VMCA / VMCG — minimum control speeds in the air / on the ground with the critical engine inoperative.
+
+Runway distances
+
+TORA is the runway length available for the take-off run. TODA is TORA plus clearway. ASDA is TORA plus stopway.
+
+Clearway — an area beyond the runway, under airport control, at least 152 m wide, with no object above a plane rising at 1.25 %.
+
+Stopway — an area beyond the runway, at least as wide as the runway, able to support the aeroplane during a rejected take-off.
+
+Take-off distance and take-off run
+
+Take-off distance Take-off run
+
+All engines 115 % of the distance to 35 ft 115 % of the distance to the mid-point between lift-off and 35 ft
+
+Engine failure, dry Distance to 35 ft, failure recognised at V1 Distance to the mid-point between lift-off and 35 ft
+
+Engine failure, wet Distance to 15 ft, failure recognised at V1
+
+The longer of the cases is used.
+
+LDA and LDR
+
+The LDA is declared by the authority. The LDR is calculated by the crew from the AFM with landing mass, wind, temperature, elevation, slope and surface condition — and includes the regulatory safety factor.
+
+Key takeaways:
+- V1 = decision speed; V2 = one-engine safe climb speed.
+- TODA = TORA + clearway; ASDA = TORA + stopway.
+- TOD = longer of 115 % all-engine distance and engine-failure distance (35 ft dry, 15 ft wet).
+- LDR (with safety factor) ≤ LDA.

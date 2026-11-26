@@ -37,6 +37,23 @@ def load_course(name):
 
 # Spoken forms for abbreviations and symbols (applied in order).
 SPOKEN = [
+    # aircraft performance courses (before the general rules: % MAC, V-speeds, distances)
+    (r"% MAC", " percent M A C"), (r"V1\(MCG\)", "V one M C G"), (r"V1/VR", "V one to V R"), (r"\bVREF ?\+ ?(\d+)", r"V ref plus \1"),
+    (r"\bVREF40\b", "V ref 40"), (r"\bVSR0\b", "V S R zero"), (r"\bVSR\b", "V S R"), (r"\bVMCG\b", "V M C G"), (r"\bVMCA\b", "V M C A"),
+    (r"\bVMCL\b", "V M C L"), (r"\bVMU\b", "V M U"), (r"\bVLOF\b", "V lof"), (r"\bVTIRE\b", "V tyre"), (r"\bVEF\b", "V E F"),
+    (r"\bVREF\b", "V ref"), (r"\bVR\b", "V R"), (r"\bV2\b", "V 2"), (r"\bTORA\b", "tora"), (r"\bTODA\b", "toda"), (r"\bASDA\b", "asda"),
+    (r"\bTORR\b", "T O R R"), (r"\bTODR\b", "T O D R"), (r"\bASDR\b", "A S D R"), (r"\bTOR\b", "T O R"), (r"\bTOD\b", "T O D"), (r"\bASD\b", "A S D"),
+    (r"\bLDA\b", "L D A"), (r"\bLDR\b", "L D R"), (r"\bPLTOW\b", "performance limited take-off weight"), (r"\bTOW\b", "take-off weight"),
+    (r"\bLDW\b", "landing weight"), (r"\bLFLW\b", "landing field limit weight"), (r"\bCLD\b", "certified landing distance"),
+    (r"\bFAS\b", "final approach speed"), (r"\bFRT\b", "flat-rating temperature"), (r"\bATM\b", "assumed temperature method"),
+    (r"\bMRC\b", "M R C"), (r"\bLRC\b", "L R C"), (r"\bECON\b", "econ"), (r"\bCI\b", "C I"), (r"\bMCT\b", "M C T"), (r"\bMCP\b", "M C P"),
+    (r"\bOAA\b", "obstacle accountability area"), (r"\bRESA\b", "resa"), (r"\bFPPM\b", "F P P M"), (r"\bDDS\b", "driftdown speed"),
+    (r"\bODM\b", "operating data manual"), (r"\bAOM\b", "A O M"), (r"\bAEO\b", "all engines operating"), (r"\bKIAS\b", "knots indicated"),
+    (r"\bRTO\b", "rejected take-off"), (r"\bL/D\b", "lift to drag"), (r"\bTALPA\b", "talpa"), (r"\bPI\b", "P I"), (r"\bOPT FL\b", "optimum flight level"),
+    (r"CAT\.POL\.A\.(\d+)", r"cat pol A \1"), (r"\bCS 25\.(\d+)", r"C S 25, \1"), (r"\bCS-AWO\b", "C S A W O"), (r"\bCFM56-7B\b", "C F M 56, 7 B"),
+    (r"\bCFM56\b", "C F M 56"), (r"\bCFM\b", "C F M"), (r"\bPW150A\b", "P W 150 A"), (r"\bPW123\b", "P W 123"), (r"\bDHC-8-402\b", "D H C 8, 402"),
+    (r"\bQ200\b", "Q 200"), (r"\bFL(\d{3})\b", r"flight level \1"), (r"\bM0\.(\d+)", r"Mach point \1"), (r"(\d)\s?lb\b", r"\1 pounds"),
+    (r"(\d)\s?kg\b", r"\1 kilograms"), (r"\bhPa\b", "hectopascals"), (r"\brpm\b", "R P M"), (r"\bmph\b", "miles per hour"), (r"\bNM\b", "nautical miles"),
     (r"\bCAT (III|II|I)\b", lambda m: "cat " + {"I": "one", "II": "two", "III": "three"}[m.group(1)]), (r"\b2D\b", "2 D"), (r"\b3D\b", "3 D"),
     (r"\bMMEL\b", "master M E L"), (r"\bCDL\b", "C D L"), (r"\bRAIM\b", "raim"), (r"\bSBAS\b", "S-bas"), (r"\bGNSS\b", "G N S S"),
     (r"\bAIRAC\b", "air-rack"), (r"\bLPV\b", "L P V"), (r"\bLP\b", "L P"), (r"\bLNAV\b", "L NAV"), (r"\bRVR\b", "R V R"), (r"\bCMV\b", "C M V"),

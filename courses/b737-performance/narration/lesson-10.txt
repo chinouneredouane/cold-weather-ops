@@ -1,0 +1,63 @@
+Domestic Airlines — Boeing 737-800 NG Performance
+Lesson 10: In-flight Landing Distance and Runway Condition Reports
+
+Learning objectives:
+- Explain the in-flight landing performance assessment at the time of arrival.
+- Use runway condition reports (GRF / RCAM) in the assessment.
+- Recall the go-around climb gradients and the autoland correction.
+
+Dispatch is not the end
+
+The dispatch rules use planning assumptions. Before starting an approach, the commander must be satisfied that the weather, the runway condition and the aeroplane's performance allow a safe approach, landing or missed approach (CAT.OP.MPA.300). The assessment uses the actual landing weight and the actual conditions:
+
+the landing distance required must not exceed the LDA;
+
+the go-around gradient must be achievable.
+
+Factored in-flight landing distance
+
+The in-flight landing distance from the QRH / performance tool is an operational distance for the actual braking action, speed additives, reverser use and autobrake. A margin of 15 % is applied when the runway is not dry — company data normally include it. QRH Normal Configuration Landing Distance tables for slippery runways are already factored by 15 %. Landing distance data are based on fully worn brakes (CS 25.101).
+
+Runway condition reports
+
+Under the Global Reporting Format (ICAO Annex 14 / PANS-Aerodromes, applicable since November 2021), the aerodrome reports a runway condition code (RWYCC 6 to 0) for each third of the runway, with the contaminant type, depth and coverage. The code links directly to a braking action and to the performance data:
+
+RWYCC Typical description Braking action
+
+6 Dry —
+
+5 Wet (up to 3 mm), frost Good
+
+4 Compacted snow (OAT −15 °C or colder) Good to medium
+
+3 Slush, dry/wet snow over 3 mm, wet "slippery wet" runway Medium
+
+2 Standing water or slush over 3 mm Medium to poor
+
+1 Ice Poor
+
+0 Wet ice, water on compacted snow Less than poor — no operations
+
+Pilot reports of braking action
+
+The reported code is an assessment made at a given time. Conditions change quickly with precipitation, temperature and traffic.
+
+Pilot reports An air-report of braking action worse than the reported code is an important threat: downgrade the assessment and share the report. See the Cold Weather Operations course (GRF module) for full detail.
+
+Go-around and autoland
+
+Approach climb (one engine inoperative, approach flaps, gear up): at least 2.1 % for a twin (CS 25.121(d)).
+
+Landing climb (all engines, landing configuration, gear down): at least 3.2 % (CS 25.119).
+
+Autoland may need a longer landing distance (CS-AWO): reduce the LDA by the published autoland increment (AMC7 CAT.POL.A.320).
+
+If the dispatch relied on the actual wind at a single-runway destination, check that the actual landing weight does not exceed the limit for the actual wind.
+
+Good practice Brief the landing distance assessment with the approach briefing: runway, RWYCC, wind, autobrake, flap, reverser plan, and the go-around gradient if the missed approach is demanding.
+
+Key takeaways:
+- Before every approach: actual landing distance ≤ LDA and go-around gradient achievable (CAT.OP.MPA.300).
+- Apply 15 % to the in-flight landing distance when the runway is not dry.
+- RWYCC 6–0 links runway condition to braking action and data; RWYCC 0 = no operations.
+- Approach climb 2.1 % (OEI), landing climb 3.2 % (AEO).

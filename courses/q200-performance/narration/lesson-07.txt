@@ -1,0 +1,30 @@
+Domestic Airlines — Dash 8-Q200 Performance
+Lesson 7: Descent and Landing Performance
+
+Learning objectives:
+- Use the descent type tables.
+- Find the approach, landing and go-around speeds.
+- List the four limits on the maximum permissible landing weight.
+
+Descent
+
+The three descent types (I high, II intermediate, III low speed) each have a table of speed and torque, with time, fuel and distance to descend.
+
+Approach, landing and go-around speeds
+
+Maximum permissible landing weight
+
+The landing weight must not exceed:
+
+the structural maximum landing weight;
+
+the WAT limit for altitude and temperature (approach and landing climb gradients);
+
+the weight allowed by the landing field length available (for a turboprop, stop within 70 % of the LDA — CAT.POL.A.230; wet +15 %);
+
+the weight for which the brake energy does not exceed the limit.
+
+Key takeaways:
+- Descent types I, II, III each with speed and torque tables.
+- Landing weight: structural, WAT, field length (70 % LDA for turboprops), brake energy.
+- Flap 35 gives shorter landings but a lower WAT limit than flap 15.

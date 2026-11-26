@@ -1,0 +1,34 @@
+Domestic Airlines — Dash 8-Q400 Performance
+Lesson 2: Reading AFM Performance Charts
+
+Learning objectives:
+- Describe the layout of a carpet-type AFM chart.
+- Use reference lines and guide lines correctly.
+- Read the normal take-off power torque setting.
+
+How the charts are built
+
+AFM Section 5 charts are "carpet" charts: several panels side by side, each adding one variable. A typical take-off chart starts with OAT and pressure altitude , then moves to weight , then to wind and slope corrections, and ends on the result scale.
+
+Reference lines and guide lines
+
+Enter the first panel with the first variable and move to the line of the second variable.
+
+Move horizontally to the reference line of the next panel.
+
+From the reference line, follow the guide lines (parallel to the nearest curve) until you reach the value of the new variable — then continue horizontally.
+
+At the last panel, read the result on the scale. Use a sharp pencil and a straight edge: a few millimetres can mean hundreds of feet or pounds.
+
+Watch the limits Hatched or shaded areas, "structural limit" lines and "maximum" annotations are limits, not suggestions. Never extrapolate outside the chart.
+
+Take-off power
+
+The first step of every take-off computation is the normal take-off power torque for the OAT and pressure altitude (propeller 1020 rpm, bleeds and de-icing as indicated on the chart). Below a certain temperature the torque is constant (flat rated); above it, the torque decreases with temperature.
+
+In the line The company runway analysis and the EFB performance tool use the same AFM data. Learning the charts explains why the numbers change — and lets you catch an input error.
+
+Key takeaways:
+- Carpet charts add one variable per panel.
+- At each reference line follow the guide lines to the new value.
+- Always start with the take-off power torque for OAT and pressure altitude.

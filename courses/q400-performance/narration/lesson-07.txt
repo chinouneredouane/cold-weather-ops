@@ -1,0 +1,30 @@
+Domestic Airlines — Dash 8-Q400 Performance
+Lesson 7: En-route Performance and Driftdown
+
+Learning objectives:
+- Describe the one-engine-inoperative en-route requirements.
+- Explain the driftdown speed and altitude.
+- Use the en-route data in the AOM/FCOM.
+
+Engine failure in cruise
+
+After an engine failure at cruise level the remaining engine at maximum continuous power cannot hold altitude: the aeroplane drifts down to the altitude where power equals drag.
+
+Driftdown speed : the speed for the best lift-to-drag ratio — the shallowest descent and highest level-off altitude.
+
+Driftdown altitude (ceiling) : where level flight can be maintained with one engine at MCP.
+
+Rules
+
+CAT.POL.A.215: the net flight path (gross reduced by 1.1 % for a twin) must clear the terrain by 2,000 ft while descending and 1,000 ft in level flight, within 5 NM of the track (10 NM without the navigation accuracy), and allow a landing at a suitable aerodrome.
+
+Cruise data
+
+The AOM/FCOM gives tables for maximum cruise power, long-range cruise, maximum endurance and single-engine cruise at maximum continuous power, with torque, fuel flow and TAS for weight, altitude and ISA deviation. The Q200 course shows how these tables are read; the Q400 method is identical.
+
+Icing Ice protection on and ice accretion reduce the single-engine ceiling: use the icing performance data in mountainous areas.
+
+Key takeaways:
+- Engine failure in cruise: MCP, best L/D speed, drift down to the ceiling.
+- Net path = gross − 1.1 %; 2,000 ft / 1,000 ft clearance within 5 NM.
+- Icing lowers the single-engine ceiling.

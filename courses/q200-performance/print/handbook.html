@@ -1,0 +1,330 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Dash 8-Q200 Performance — Course handbook</title>
+<style>
+@page{size:A4;margin:18mm 16mm 20mm}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#24342b;font-size:10.5pt;line-height:1.5;margin:0}
+h1,h2,h3{color:#14231b;line-height:1.25;break-after:avoid}
+h1{font-size:21pt;margin:0 0 6pt}h2{font-size:14pt;margin:16pt 0 6pt}h3{font-size:12pt;margin:12pt 0 4pt}
+p{margin:0 0 7pt}ul,ol{margin:0 0 8pt;padding-left:16pt}li{margin:2pt 0}
+a{color:#125a2b;text-decoration:none}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:9pt;background:#f3f9f5;border:1px solid #dbe5df;padding:0 3pt;border-radius:3pt}
+.cover{height:257mm;display:flex;flex-direction:column;justify-content:center;break-after:page;
+  background:linear-gradient(120deg,#0c3d1e,#125a2b 55%,#2a8a50);color:#fff;padding:22mm;border-radius:4mm;margin:0}
+.cover h1{color:#fff;font-size:34pt}.cover .k{letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#bfe3cb;font-size:10pt}
+.cover p{color:#e3f1e8;font-size:13pt}.cover .logo{background:#fff;padding:5mm 7mm;border-radius:3mm;display:inline-block;margin-bottom:14mm}
+.cover .logo img{height:16mm}.cover .meta{margin-top:12mm;font-size:10.5pt;color:#d3ebdb}
+.toc{break-after:page}.toc h2{margin-top:0}.toc ol{list-style:none;padding:0}
+.toc li{display:flex;gap:8pt;padding:3pt 0;border-bottom:1px dotted #c9d8cf}.toc .n{width:22pt;font-weight:700;color:#5b6b62}
+.toc .mod{margin-top:9pt;font-weight:800;color:#125a2b;border:0;text-transform:uppercase;font-size:9pt;letter-spacing:.06em}
+.lesson{break-before:page}
+.lesson-head{background:linear-gradient(120deg,#0c3d1e,#1d7a3e);color:#fff;border-radius:3mm;padding:9pt 13pt;margin-bottom:10pt}
+.lesson-head h1{color:#fff;font-size:17pt;margin:2pt 0}.lesson-head .k{font-size:8.5pt;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#c7e8d2}
+.lesson-head .m{font-size:9pt;color:#dbefe2}
+.objectives{background:#f3f9f5;border:1px solid #dbe5df;border-radius:2mm;padding:7pt 11pt;margin:0 0 10pt}
+.objectives h2,.takeaways h2,.kc h2{font-size:9.5pt;text-transform:uppercase;letter-spacing:.06em;margin:0 0 3pt;color:#125a2b}
+.lesson-figure{margin:0 0 10pt;break-inside:avoid}.lesson-figure img{width:100%;max-height:85mm;object-fit:contain;border:1px solid #dbe5df;border-radius:2mm;background:#f3f9f5}
+figure{margin:9pt 0;break-inside:avoid}figure svg{width:100%;height:auto}figcaption{font-size:8.5pt;color:#5b6b62;margin-top:3pt}
+.diagram{border:1px solid #dbe5df;border-radius:2mm;padding:5pt}
+.table-wrap{margin:8pt 0;border:1px solid #dbe5df;border-radius:2mm;overflow:hidden}
+table{border-collapse:collapse;width:100%;font-size:9pt}th,td{text-align:left;vertical-align:top;padding:4pt 6pt;border-bottom:1px solid #dbe5df}
+th{background:#f3f9f5}tr{break-inside:avoid}td.code{font-weight:800;font-size:12pt;text-align:center;width:34pt}
+.callout{border-left:3pt solid #1d7a3e;background:#f3f9f5;padding:6pt 10pt;margin:8pt 0;border-radius:0 2mm 2mm 0;break-inside:avoid}
+.callout .label{display:block;font-size:8.5pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#125a2b}
+.callout.warn{border-color:#c8102e;background:#fdecef}.callout.warn .label{color:#c8102e}
+.callout.caution{border-color:#d08a00;background:#fff5e0}.callout.caution .label{color:#9a6200}
+.callout.info{border-color:#1f5f99;background:#e9f2fb}.callout.info .label{color:#1f5f99}
+.callout > :last-child{margin-bottom:0}
+.steps{list-style:none;padding:0;counter-reset:s}.steps>li{counter-increment:s;position:relative;padding-left:20pt;margin:4pt 0}
+.steps>li::before{content:counter(s);position:absolute;left:0;top:0;width:14pt;height:14pt;border-radius:50%;background:#1d7a3e;color:#fff;font-weight:800;font-size:8pt;display:flex;align-items:center;justify-content:center}
+.dialog{border:1px solid #dbe5df;border-radius:2mm;padding:4pt 10pt;margin:8pt 0;break-inside:avoid}.dialog p{margin:4pt 0}.dialog b{color:#125a2b}
+.muted{color:#5b6b62}
+.takeaways{background:#0c3d1e;color:#e8f5ec;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}.takeaways h2{color:#fff}
+.kc{border:1.5pt dashed #b9d7c3;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}
+.kc .q{font-weight:700;margin:2pt 0 4pt}.kc ol{list-style:upper-alpha}.kc .a{font-size:9pt;margin-top:4pt;color:#125a2b}
+.disclaimer{font-size:8.5pt;color:#5b6b62;border-top:1px solid #dbe5df;padding-top:6pt;margin-top:14pt}
+</style></head><body>
+<section class="cover"><div><span class="logo"><img src="../../../assets/img/logo.png" alt="Domestic Airlines"></span></div>
+  <div class="k">Domestic Airlines — Training</div><h1>Dash 8-Q200 Performance</h1>
+  <p>Course handbook</p><p>Dash 8-Q200 performance through all phases of flight with the AFM charts and Operating Data Manual tables: definitions, take-off, climb, cruise, descent, landing, go-around, icing, brake energy and abnormal situations.</p>
+  <div class="meta">11 lessons · 4 modules · about 1.5 hours</div>
+  <div class="meta">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</div></section>
+<section class="toc"><h2>Contents</h2><ol><li class="mod">Module 1 — Definitions</li><li><span class="n">01</span><a href="#lesson-1">Environmental Factors and Performance</a></li><li><span class="n">02</span><a href="#lesson-2">Speeds and Runway Distances</a></li><li><span class="n">03</span><a href="#lesson-3">Segments, Climb and Descent Types, Driftdown</a></li><li class="mod">Module 2 — Take-off</li><li><span class="n">04</span><a href="#lesson-4">Take-off Speeds and WAT Limit</a></li><li><span class="n">05</span><a href="#lesson-5">Take-off Climb Gradients and Field Lengths</a></li><li class="mod">Module 3 — Climb, Cruise, Descent and Landing</li><li><span class="n">06</span><a href="#lesson-6">Climb and Cruise Performance</a></li><li><span class="n">07</span><a href="#lesson-7">Descent and Landing Performance</a></li><li><span class="n">08</span><a href="#lesson-8">Go-around Performance</a></li><li class="mod">Module 4 — Special Cases</li><li><span class="n">09</span><a href="#lesson-9">Performance in Icing Conditions</a></li><li><span class="n">10</span><a href="#lesson-10">Brake Energy and Minimum Turnaround Time</a></li><li><span class="n">11</span><a href="#lesson-11">Performance in Abnormal Situations</a></li></ol></section>
+<section class="lesson" id="lesson-1">
+  <div class="lesson-head"><div class="k">Module 1 · Definitions</div>
+    <h1>Lesson 01: Environmental Factors and Performance</h1><div class="m">Lesson 1 of 11 · about 9 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Define pressure altitude and density altitude.</li><li>Explain the effect of temperature, wind, runway condition and slope on performance.</li><li>Define wet and contaminated runways.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-01.jpg" alt="Turboprop on a hot apron"><figcaption>Hot and high = less performance.</figcaption></figure>
+  
+<h2>Pressure altitude and density altitude</h2>
+<p><strong>Pressure altitude</strong> is the altitude read with 1013 hPa set — the value transmitted by the transponder and used for flight levels. <strong>Density altitude</strong> is pressure altitude corrected for the temperature deviation from ISA, and it is what the aeroplane "feels": all performance computations depend on it.</p>
+<ul>
+  <li>Standard day: density altitude = pressure altitude.</li>
+  <li>Warm day: density altitude <strong>higher</strong> than pressure altitude.</li>
+  <li>Cold day: density altitude <strong>lower</strong> than pressure altitude.</li>
+</ul>
+<figure class="lesson-figure"><img src="../media/images/q200-density-warm.jpg" alt="Warm day: the aeroplane behaves as if it were higher than its true altitude." loading="lazy"><figcaption>Warm day: the aeroplane behaves as if it were higher than its true altitude. <span class="muted">Source: Domestic Airlines Q200 performance course.</span></figcaption></figure><figure class="lesson-figure"><img src="../media/images/q200-density-cold.jpg" alt="Cold day: the aeroplane behaves as if it were lower than its true altitude." loading="lazy"><figcaption>Cold day: the aeroplane behaves as if it were lower than its true altitude. <span class="muted">Source: Domestic Airlines Q200 performance course.</span></figcaption></figure>
+<h2>High density altitude = less performance</h2>
+<p>A high density altitude reduces engine power, propeller thrust and lift: take-off and landing distances increase and the rate of climb decreases. A low density altitude gives the opposite. <strong>Temperature</strong> has the same effect: high temperature — less performance.</p>
+<figure class="lesson-figure"><img src="../media/images/q200-temperature.jpg" alt="At sea level and normal temperature the aeroplane climbs steeply; in hot and high conditions the take-off run is longer and the climb shallower." loading="lazy"><figcaption>At sea level and normal temperature the aeroplane climbs steeply; in hot and high conditions the take-off run is longer and the climb shallower. <span class="muted">Source: Domestic Airlines Q200 performance course.</span></figcaption></figure>
+<h2>Wind</h2>
+<p>A headwind gives a shorter take-off distance and a lower ground speed for the same airspeed; a tailwind gives a longer distance and a higher ground speed. In flight, wind changes the ground speed and the drift.</p>
+<figure class="lesson-figure"><img src="../media/images/q200-wind-ground.jpg" alt="Head wind: shorter take-off distance, lower ground speed. Tail wind: longer take-off distance, higher ground speed — the airspeed is the same." loading="lazy"><figcaption>Head wind: shorter take-off distance, lower ground speed. Tail wind: longer take-off distance, higher ground speed — the airspeed is the same. <span class="muted">Source: Domestic Airlines Q200 performance course.</span></figcaption></figure><figure class="lesson-figure"><img src="../media/images/q200-wind-triangle.jpg" alt="Effect of wind in flight: the wind triangle (heading, track, drift angle)." loading="lazy"><figcaption>Effect of wind in flight: the wind triangle (heading, track, drift angle). <span class="muted">Source: Domestic Airlines Q200 performance course.</span></figcaption></figure>
+<h2>Runway condition</h2>
+<p>A runway is <strong>wet</strong> when its surface is reflective with water, but without significant standing water. It is <strong>contaminated</strong> when more than 25 % of the surface in use is covered by water, slush or loose snow deeper than 3 mm (water equivalent), compacted snow or ice. Contaminants increase the wheel drag (longer acceleration) and degrade braking (longer stop and landing).</p>
+<h2>Runway slope</h2>
+<p>A downslope helps the acceleration and shortens the take-off distance but lengthens the stop; an upslope does the opposite.</p>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Density altitude decides the performance: hot and high = less performance.</li><li>Headwind shortens, tailwind lengthens the ground distances.</li><li>Contaminated: &gt; 25 % covered, &gt; 3 mm water/slush/loose snow, compacted snow or ice.</li><li>Downslope helps take-off acceleration but hurts stopping.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">On a warm day, density altitude is:</p>
+    <ol><li>Equal to pressure altitude</li><li>Higher than pressure altitude</li><li>Lower than pressure altitude</li><li>Zero</li></ol>
+    <p class="a"><b>Answer: B.</b> Warm air is less dense: the aeroplane performs as if it were higher.</p></div>
+</section>
+<section class="lesson" id="lesson-2">
+  <div class="lesson-head"><div class="k">Module 1 · Definitions</div>
+    <h1>Lesson 02: Speeds and Runway Distances</h1><div class="m">Lesson 2 of 11 · about 9 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Define V1, VEF, VR, VLOF, V2, VREF, VS, VMCA and VMCG.</li><li>Define TORA, TODA, ASDA, clearway and stopway.</li><li>Define take-off distance, take-off run, LDA and LDR.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-02.jpg" alt="Runway with stopway seen from the threshold"><figcaption>TORA, TODA, ASDA.</figcaption></figure>
+  
+<h2>Speed definitions</h2>
+<ul>
+  <li><strong>VEF</strong> — speed at which the critical engine is assumed to fail.</li>
+  <li><strong>V1</strong> — decision speed: beyond it the take-off should no longer be rejected.</li>
+  <li><strong>VR</strong> — rotation speed; <strong>VLOF</strong> — lift-off speed.</li>
+  <li><strong>V2</strong> — take-off safety speed: safe climb with one engine inoperative.</li>
+  <li><strong>VREF</strong> — reference landing (threshold) speed.</li>
+  <li><strong>VS</strong> — stall speed.</li>
+  <li><strong>VMCA</strong> / <strong>VMCG</strong> — minimum control speeds in the air / on the ground with the critical engine inoperative.</li>
+</ul>
+<h2>Runway distances</h2>
+<p><strong>TORA</strong> is the runway length available for the take-off run. <strong>TODA</strong> is TORA plus clearway. <strong>ASDA</strong> is TORA plus stopway.</p>
+<ul>
+  <li><strong>Clearway</strong> — an area beyond the runway, under airport control, at least 152 m wide, with no object above a plane rising at 1.25 %.</li>
+  <li><strong>Stopway</strong> — an area beyond the runway, at least as wide as the runway, able to support the aeroplane during a rejected take-off.</li>
+</ul>
+<figure class="lesson-figure"><img src="../media/images/q200-runway-distances.jpg" alt="Declared distances: (A) runway only, (B) with clearway, (C) with stopway, (D) and (E) with displaced thresholds." loading="lazy"><figcaption>Declared distances: (A) runway only, (B) with clearway, (C) with stopway, (D) and (E) with displaced thresholds. <span class="muted">Source: Domestic Airlines Q200 performance course.</span></figcaption></figure>
+<h2>Take-off distance and take-off run</h2>
+<table><thead><tr><th></th><th>Take-off distance</th><th>Take-off run</th></tr></thead><tbody>
+<tr><td>All engines</td><td>115 % of the distance to 35 ft</td><td>115 % of the distance to the mid-point between lift-off and 35 ft</td></tr>
+<tr><td>Engine failure, dry</td><td>Distance to 35 ft, failure recognised at V1</td><td>Distance to the mid-point between lift-off and 35 ft</td></tr>
+<tr><td>Engine failure, wet</td><td colspan="2">Distance to 15 ft, failure recognised at V1</td></tr>
+</tbody></table>
+<p>The longer of the cases is used.</p>
+<h2>LDA and LDR</h2>
+<p>The <strong>LDA</strong> is declared by the authority. The <strong>LDR</strong> is calculated by the crew from the AFM with landing mass, wind, temperature, elevation, slope and surface condition — and includes the regulatory safety factor.</p>
+<figure class="lesson-figure"><img src="../media/images/q200-landing-distances.jpg" alt="Landing distances: calculated landing distance plus the safety factor gives the LDR, which must not exceed the LDA." loading="lazy"><figcaption>Landing distances: calculated landing distance plus the safety factor gives the LDR, which must not exceed the LDA. <span class="muted">Source: Domestic Airlines Q200 performance course.</span></figcaption></figure>
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>V1 = decision speed; V2 = one-engine safe climb speed.</li><li>TODA = TORA + clearway; ASDA = TORA + stopway.</li><li>TOD = longer of 115 % all-engine distance and engine-failure distance (35 ft dry, 15 ft wet).</li><li>LDR (with safety factor) ≤ LDA.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">The minimum width of a clearway is:</p>
+    <ol><li>30 m</li><li>152 m (500 ft)</li><li>Runway width</li><li>300 m</li></ol>
+    <p class="a"><b>Answer: B.</b> Clearway: at least 152 m wide, centred on the extended centreline.</p></div>
+</section>
+<section class="lesson" id="lesson-3">
+  <div class="lesson-head"><div class="k">Module 1 · Definitions</div>
+    <h1>Lesson 03: Segments, Climb and Descent Types, Driftdown</h1><div class="m">Lesson 3 of 11 · about 8 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Describe the take-off segments and the approach segments.</li><li>Name the three climb types and three descent types.</li><li>Define driftdown speed and driftdown altitude.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-03.jpg" alt="Turboprop climbing away"><figcaption>Segments and climb types.</figcaption></figure>
+  
+<h2>Take-off segments</h2>
+<figure class="lesson-figure"><img src="../media/images/q200-takeoff-segments.jpg" alt="Take-off segments: start, thrust, speed, gear, flaps and minimum gradients for 2, 3 and 4 engines. Net flight path = gross flight path decreased by 0.8 % (twin)." loading="lazy"><figcaption>Take-off segments: start, thrust, speed, gear, flaps and minimum gradients for 2, 3 and 4 engines. Net flight path = gross flight path decreased by 0.8 % (twin). <span class="muted">Source: Domestic Airlines Q200 performance course.</span></figcaption></figure>
+<p>For a twin: 1st segment positive gradient (gear retracting), 2nd segment at least 2.4 % (gear up, take-off flap, V2), 3rd segment level acceleration, final segment at least 1.2 % (clean, MCP).</p>
+<h2>Approach segments</h2>
+<figure class="lesson-figure"><img src="../media/images/q200-approach-segments.jpg" alt="Instrument approach segments: arrival, initial, intermediate, final and missed approach." loading="lazy"><figcaption>Instrument approach segments: arrival, initial, intermediate, final and missed approach. <span class="muted">Source: Domestic Airlines Q200 performance course.</span></figcaption></figure>
+<h2>Types of climb</h2>
+<p>The Dash 8 offers three climb schedules: <strong>Type I</strong> (high speed, about 210 kt), <strong>Type II</strong> (intermediate, about 170 kt) and <strong>Type III</strong> (low speed, about 130 kt) — speeds decrease with altitude per the chart.</p>
+<figure class="lesson-figure"><img src="../media/images/q200-climb-speeds.jpg" alt="Climb speeds — Types I, II and III (IAS versus altitude), applicable to all weights and temperatures." loading="lazy"><figcaption>Climb speeds — Types I, II and III (IAS versus altitude), applicable to all weights and temperatures. <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure>
+<h2>Types of descent</h2>
+<p>Similarly, three descent types: <strong>Type I</strong> high speed, <strong>Type II</strong> intermediate and <strong>Type III</strong> low speed, each with its own torque setting.</p>
+<h2>Driftdown</h2>
+<ul>
+  <li><strong>Driftdown speed (DDS)</strong> — the speed for the minimum drag and the best air distance per unit of height lost.</li>
+  <li><strong>Driftdown altitude</strong> — the altitude to which the aeroplane descends to sustain level flight after the failure of one engine.</li>
+</ul>
+<figure class="lesson-figure"><img src="../media/images/q200-driftdown-speed.jpg" alt="Driftdown speed, one engine inoperative, flap 0°: IAS versus weight." loading="lazy"><figcaption>Driftdown speed, one engine inoperative, flap 0°: IAS versus weight. <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure>
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Twin: 2nd segment 2.4 %, final 1.2 %; net = gross − 0.8 %.</li><li>Climb types I (fast), II, III (slow); descent types I, II, III.</li><li>Driftdown speed = minimum drag; driftdown altitude = one-engine ceiling.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">Which climb type is the slowest?</p>
+    <ol><li>Type I</li><li>Type II</li><li>Type III</li><li>All the same</li></ol>
+    <p class="a"><b>Answer: C.</b> Type III is the low speed climb (about 130 kt).</p></div>
+</section>
+<section class="lesson" id="lesson-4">
+  <div class="lesson-head"><div class="k">Module 2 · Take-off</div>
+    <h1>Lesson 04: Take-off Speeds and WAT Limit</h1><div class="m">Lesson 4 of 11 · about 9 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Find VR, V1 (V1/VR ratio), V2 and the climb speed from the AFM charts.</li><li>Apply the V1 correction for a wet or contaminated runway.</li><li>Find the maximum permissible take-off weight (WAT limit).</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-04.jpg" alt="Turboprop lined up for take-off"><figcaption>VR, V1, V2 and the WAT limit.</figcaption></figure>
+  
+<h2>V1 and VR</h2>
+<figure class="lesson-figure"><img src="../media/images/q200-v1-vr.jpg" alt="Rotation speed VR and conversion of VR and V1/VR ratio to V1, flap 5°." loading="lazy"><figcaption>Rotation speed VR and conversion of VR and V1/VR ratio to V1, flap 5°. <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure>
+<h2>V2</h2>
+<figure class="lesson-figure"><img src="../media/images/q200-v2.jpg" alt="Take-off safety speed V2, flap 5°: OAT, pressure altitude and weight, with the minimum V2 marked." loading="lazy"><figcaption>Take-off safety speed V2, flap 5°: OAT, pressure altitude and weight, with the minimum V2 marked. <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure>
+<h2>Final take-off climb speed</h2>
+<figure class="lesson-figure"><img src="../media/images/q200-vclimb.jpg" alt="Final take-off climb speed, flap 0°, versus weight." loading="lazy"><figcaption>Final take-off climb speed, flap 0°, versus weight. <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure>
+<h2>V1 on a wet or contaminated runway</h2>
+<p>When the runway is wet or contaminated, <strong>V1 is reduced</strong> according to the AFM supplement: in the company course the reduction is about <strong>8 kt</strong>, adjusted for the wind — slightly less with a headwind, more with a tailwind. Always use the current supplement and the runway analysis for the actual condition.</p>
+<h2>WAT limit</h2>
+<p>The <strong>maximum permissible take-off weight (WAT limit)</strong> gives the minimum one-engine-inoperative climb gradients for the aerodrome altitude and temperature.</p>
+<figure class="lesson-figure"><img src="../media/images/q200-wat-takeoff.jpg" alt="Maximum permissible take-off weight (WAT limit), take-off flap 5°, with the structural limit." loading="lazy"><figcaption>Maximum permissible take-off weight (WAT limit), take-off flap 5°, with the structural limit. <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure>
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Find VR first, then V1 from the V1/VR ratio, then V2.</li><li>Wet/contaminated: reduce V1 per the AFM supplement (about 8 kt, wind-corrected).</li><li>The WAT limit depends on altitude and temperature, not runway length.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">On a wet runway, V1 is:</p>
+    <ol><li>Increased</li><li>Reduced per the AFM supplement</li><li>Unchanged</li><li>Set to V2</li></ol>
+    <p class="a"><b>Answer: B.</b> Braking is worse, so the stop must start earlier.</p></div>
+</section>
+<section class="lesson" id="lesson-5">
+  <div class="lesson-head"><div class="k">Module 2 · Take-off</div>
+    <h1>Lesson 05: Take-off Climb Gradients and Field Lengths</h1><div class="m">Lesson 5 of 11 · about 10 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Find the second-segment and final-segment gradients with one engine inoperative.</li><li>Find the take-off run, take-off distance and accelerate-stop distance required.</li><li>Apply wind and slope corrections.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-05.jpg" alt="Turboprop climbing over hills"><figcaption>Gradients and field lengths.</figcaption></figure>
+  
+<h2>Second segment gradient</h2>
+<figure class="lesson-figure"><img src="../media/images/q200-second-segment.jpg" alt="Second segment take-off gross climb gradient, one engine inoperative, flap 5°." loading="lazy"><figcaption>Second segment take-off gross climb gradient, one engine inoperative, flap 5°. <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure>
+<h2>Final segment gradient</h2>
+<figure class="lesson-figure"><img src="../media/images/q200-final-segment.jpg" alt="Final take-off gross climb gradient, one engine inoperative, flap 0°." loading="lazy"><figcaption>Final take-off gross climb gradient, one engine inoperative, flap 0°. <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure>
+<h2>Take-off run and distance</h2>
+<figure class="lesson-figure"><img src="../media/images/q200-tor.jpg" alt="Take-off run required — zero wind, zero runway slope, flap 5°." loading="lazy"><figcaption>Take-off run required — zero wind, zero runway slope, flap 5°. <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure><figure class="lesson-figure"><img src="../media/images/q200-tod.jpg" alt="Take-off distance required — zero wind, zero runway slope, flap 5°." loading="lazy"><figcaption>Take-off distance required — zero wind, zero runway slope, flap 5°. <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure><figure class="lesson-figure"><img src="../media/images/q200-tor-tod-wind.jpg" alt="Take-off run or take-off distance required — wind and runway slope correction, flap 5°." loading="lazy"><figcaption>Take-off run or take-off distance required — wind and runway slope correction, flap 5°. <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure>
+<h2>Accelerate-stop distance</h2>
+<figure class="lesson-figure"><img src="../media/images/q200-asd.jpg" alt="Accelerate-stop distance required — zero wind, zero runway slope, flap 5°." loading="lazy"><figcaption>Accelerate-stop distance required — zero wind, zero runway slope, flap 5°. <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure><figure class="lesson-figure"><img src="../media/images/q200-asd-wind.jpg" alt="Accelerate-stop distance required — wind and runway slope correction, flap 5°." loading="lazy"><figcaption>Accelerate-stop distance required — wind and runway slope correction, flap 5°. <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure>
+<div class="callout info"><span class="label">Method</span><p>Compute each requirement, correct for wind and slope, compare with TORA, TODA and ASDA. The lowest weight from field length, WAT, obstacles, brake energy and structure is the maximum take-off weight.</p></div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>2nd segment ≥ 2.4 %, final ≥ 1.2 % gross (one engine inoperative).</li><li>TOR, TOD and ASD are read at zero wind/slope, then corrected.</li><li>The most limiting weight applies.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">The field length charts are drawn for:</p>
+    <ol><li>Actual wind and slope</li><li>Zero wind and zero slope — a correction chart follows</li><li>Wet runway</li><li>Flap 0°</li></ol>
+    <p class="a"><b>Answer: B.</b> The wind and slope correction chart converts the result.</p></div>
+</section>
+<section class="lesson" id="lesson-6">
+  <div class="lesson-head"><div class="k">Module 3 · Climb, Cruise, Descent and Landing</div>
+    <h1>Lesson 06: Climb and Cruise Performance</h1><div class="m">Lesson 6 of 11 · about 9 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Read the climb speed and torque tables (900 and 1050 rpm).</li><li>Read maximum climb and maximum cruise power tables.</li><li>Compare long range cruise, maximum endurance and single-engine cruise, and choose the cruise altitude.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-06.jpg" alt="Turboprop cruising above the clouds"><figcaption>Range or endurance?</figcaption></figure>
+  
+<h2>Climb tables</h2>
+<p>For each climb type, the Operating Data Manual gives the speed and torque setting at propeller 900 rpm and 1050 rpm, with time, fuel and distance to climb.</p>
+<figure class="lesson-figure"><img src="../media/images/q200-climb-type1-900.jpg" alt="Type I climb (high speed): speed and torque setting, propeller 900 rpm." loading="lazy"><figcaption>Type I climb (high speed): speed and torque setting, propeller 900 rpm. <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure><figure class="lesson-figure"><img src="../media/images/q200-max-climb-power.jpg" alt="Maximum climb power: torque setting and fuel flow, propeller 900 rpm, ISA." loading="lazy"><figcaption>Maximum climb power: torque setting and fuel flow, propeller 900 rpm, ISA. <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure>
+<h2>Cruise</h2>
+<ul>
+  <li><strong>Maximum cruise power</strong> — highest cruise speed.</li>
+  <li><strong>Long range cruise</strong> — the best distance per unit of fuel (range is fuel used over distance).</li>
+  <li><strong>Maximum endurance</strong> — the least fuel per hour (endurance is fuel used over time): for holding.</li>
+  <li><strong>Single-engine cruise at maximum continuous power</strong> — after an engine failure.</li>
+</ul>
+<figure class="lesson-figure"><img src="../media/images/q200-max-cruise-power.jpg" alt="Maximum cruise power: torque setting and fuel flow, propeller 900 rpm." loading="lazy"><figcaption>Maximum cruise power: torque setting and fuel flow, propeller 900 rpm. <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure><figure class="lesson-figure"><img src="../media/images/q200-lrc.jpg" alt="Long range cruise: speed and torque setting, propeller 1050 rpm." loading="lazy"><figcaption>Long range cruise: speed and torque setting, propeller 1050 rpm. <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure><figure class="lesson-figure"><img src="../media/images/q200-max-endurance.jpg" alt="Maximum endurance: speed and torque setting, propeller 900 rpm." loading="lazy"><figcaption>Maximum endurance: speed and torque setting, propeller 900 rpm. <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure><figure class="lesson-figure"><img src="../media/images/q200-se-cruise-mcp.jpg" alt="Single-engine cruise at maximum continuous power: speed and torque setting, propeller 1200 rpm." loading="lazy"><figcaption>Single-engine cruise at maximum continuous power: speed and torque setting, propeller 1200 rpm. <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure>
+<h2>Choosing the cruise altitude</h2>
+<p>The best altitude depends on the stage length and the winds: on short sectors the climb and descent dominate. The minimum block time table gives the cruise altitude and technique for the shortest block time.</p>
+<figure class="lesson-figure"><img src="../media/images/q200-optimum-altitude.jpg" alt="Minimum block time technique: recommended cruise altitude for the stage length." loading="lazy"><figcaption>Minimum block time technique: recommended cruise altitude for the stage length. <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure>
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Each climb type has tables at 900 and 1050 rpm.</li><li>Range = distance per fuel (LRC); endurance = time per fuel (holding).</li><li>Single-engine cruise uses MCP at 1200 rpm.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">Which cruise schedule should be used for holding?</p>
+    <ol><li>Maximum cruise power</li><li>Long range cruise</li><li>Maximum endurance</li><li>Single-engine MCP</li></ol>
+    <p class="a"><b>Answer: C.</b> Endurance minimises the fuel used per hour.</p></div>
+</section>
+<section class="lesson" id="lesson-7">
+  <div class="lesson-head"><div class="k">Module 3 · Climb, Cruise, Descent and Landing</div>
+    <h1>Lesson 07: Descent and Landing Performance</h1><div class="m">Lesson 7 of 11 · about 9 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Use the descent type tables.</li><li>Find the approach, landing and go-around speeds.</li><li>List the four limits on the maximum permissible landing weight.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-07.jpg" alt="Turboprop descending toward the airport"><figcaption>Four limits on the landing weight.</figcaption></figure>
+  
+<h2>Descent</h2>
+<p>The three descent types (I high, II intermediate, III low speed) each have a table of speed and torque, with time, fuel and distance to descend.</p>
+<figure class="lesson-figure"><img src="../media/images/q200-descent-type1.jpg" alt="Type I descent (high speed): speed and torque setting, propeller 900 rpm." loading="lazy"><figcaption>Type I descent (high speed): speed and torque setting, propeller 900 rpm. <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure>
+<h2>Approach, landing and go-around speeds</h2>
+<figure class="lesson-figure"><img src="../media/images/q200-landing-speeds.jpg" alt="Landing speeds: approach and go-around speed (flap 5°) and VREF (flap 15°) versus weight." loading="lazy"><figcaption>Landing speeds: approach and go-around speed (flap 5°) and VREF (flap 15°) versus weight. <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure>
+<h2>Maximum permissible landing weight</h2>
+<p>The landing weight must not exceed:</p>
+<ol>
+  <li>the <strong>structural</strong> maximum landing weight;</li>
+  <li>the <strong>WAT limit</strong> for altitude and temperature (approach and landing climb gradients);</li>
+  <li>the weight allowed by the <strong>landing field length</strong> available (for a turboprop, stop within 70 % of the LDA — CAT.POL.A.230; wet +15 %);</li>
+  <li>the weight for which the <strong>brake energy</strong> does not exceed the limit.</li>
+</ol>
+<figure class="lesson-figure"><img src="../media/images/q200-wat-landing-15.jpg" alt="Maximum permissible landing weight (WAT limit), landing flap 15°, approach flap 5°." loading="lazy"><figcaption>Maximum permissible landing weight (WAT limit), landing flap 15°, approach flap 5°. <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure><figure class="lesson-figure"><img src="../media/images/q200-wat-landing-35.jpg" alt="Maximum permissible landing weight (WAT limit), landing flap 35°, approach flap 15°." loading="lazy"><figcaption>Maximum permissible landing weight (WAT limit), landing flap 35°, approach flap 15°. <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure>
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Descent types I, II, III each with speed and torque tables.</li><li>Landing weight: structural, WAT, field length (70 % LDA for turboprops), brake energy.</li><li>Flap 35 gives shorter landings but a lower WAT limit than flap 15.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">Which is NOT one of the four limits on the landing weight?</p>
+    <ol><li>Structural</li><li>WAT</li><li>Landing field length</li><li>Cruise altitude</li></ol>
+    <p class="a"><b>Answer: D.</b> The four limits are structural, WAT, field length and brake energy.</p></div>
+</section>
+<section class="lesson" id="lesson-8">
+  <div class="lesson-head"><div class="k">Module 3 · Climb, Cruise, Descent and Landing</div>
+    <h1>Lesson 08: Go-around Performance</h1><div class="m">Lesson 8 of 11 · about 7 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Define the approach climb and balked landing climb requirements.</li><li>Read the approach gross climb gradient (one engine) and balked landing gradient (both engines) charts.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-08.jpg" alt="Turboprop going around"><figcaption>2.1 % OEI, 3.2 % all engines.</figcaption></figure>
+  
+<h2>Two go-around cases</h2>
+<ul>
+  <li><strong>Approach climb</strong> — one engine inoperative, approach flap, gear up: at least <strong>2.1 %</strong> gross for a twin (CS 25.121(d)).</li>
+  <li><strong>Balked landing (landing climb)</strong> — both engines, landing configuration, gear down: at least <strong>3.2 %</strong> (CS 25.119).</li>
+</ul>
+<p>These requirements are the basis of the landing WAT limit. In operation, the published missed approach may need a higher gradient (2.5 % or more): check it with the charts below.</p>
+<figure class="lesson-figure"><img src="../media/images/q200-approach-climb-5.jpg" alt="Approach gross climb gradient — one engine inoperative, flap 5°." loading="lazy"><figcaption>Approach gross climb gradient — one engine inoperative, flap 5°. <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure><figure class="lesson-figure"><img src="../media/images/q200-approach-climb-15.jpg" alt="Approach gross climb gradient — one engine inoperative, flap 15°." loading="lazy"><figcaption>Approach gross climb gradient — one engine inoperative, flap 15°. <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure><figure class="lesson-figure"><img src="../media/images/q200-balked-landing-15.jpg" alt="Balked landing gross climb gradient — both engines operating, flap 35°." loading="lazy"><figcaption>Balked landing gross climb gradient — both engines operating, flap 35°. <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure>
+<div class="callout caution"><span class="label">Briefing</span><p>When the missed approach requires more than the standard gradient, compare the chart gradient with the procedure — at high temperature or with ice the aeroplane may not achieve it with one engine.</p></div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Approach climb (OEI) ≥ 2.1 %; balked landing (AEO) ≥ 3.2 %.</li><li>Check the published missed approach gradient on hot days and in icing.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">The balked landing climb is computed with:</p>
+    <ol><li>One engine, clean</li><li>Both engines, landing configuration, gear down</li><li>One engine, gear up</li><li>Both engines, flaps up</li></ol>
+    <p class="a"><b>Answer: B.</b> CS 25.119: all engines, landing configuration.</p></div>
+</section>
+<section class="lesson" id="lesson-9">
+  <div class="lesson-head"><div class="k">Module 4 · Special Cases</div>
+    <h1>Lesson 09: Performance in Icing Conditions</h1><div class="m">Lesson 9 of 11 · about 8 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Distinguish the three icing performance cases.</li><li>Apply the icing corrections to take-off, en-route and landing data.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-09.jpg" alt="Turboprop in icing clouds"><figcaption>Before, in and after icing.</figcaption></figure>
+  
+<h2>Why ice changes the numbers</h2>
+<p>Ice on the unprotected surfaces and between boot cycles increases drag and raises the stall speed. The engine intakes and bleeds used for ice protection reduce the power available. Speeds increase, gradients decrease and distances increase.</p>
+<figure class="lesson-figure"><img src="../media/images/q200-icing-photo.jpg" alt="Ice accretion on an unprotected surface." loading="lazy"><figcaption>Ice accretion on an unprotected surface. <span class="muted">Source: Domestic Airlines Q200 performance course.</span></figcaption></figure>
+<h2>1 — Before entering icing conditions</h2>
+<p>Take-off performance data with <strong>ice protection ON and no ice accumulation</strong>; ice accumulation is assumed for the fourth (final) segment gradient in the net flight path.</p>
+<figure class="lesson-figure"><img src="../media/images/q200-icing-before.jpg" alt="Performance corrections before entering icing conditions (ice protection systems ON)." loading="lazy"><figcaption>Performance corrections before entering icing conditions (ice protection systems ON). <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure>
+<h2>2 — In icing conditions</h2>
+<p>En-route and landing data with <strong>ice protection ON</strong> and ice on unprotected surfaces plus ice build-up on protected surfaces between boot cycles.</p>
+<figure class="lesson-figure"><img src="../media/images/q200-icing-in.jpg" alt="Performance corrections in icing conditions (ice protection systems ON)." loading="lazy"><figcaption>Performance corrections in icing conditions (ice protection systems ON). <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure>
+<h2>3 — After flight in icing conditions</h2>
+<p>En-route and landing data with <strong>ice protection OFF</strong> and ice suspected on unprotected surfaces.</p>
+<figure class="lesson-figure"><img src="../media/images/q200-icing-after.jpg" alt="Performance corrections after flight in icing conditions with suspected ice accumulation on unprotected surfaces (ice protection systems OFF)." loading="lazy"><figcaption>Performance corrections after flight in icing conditions with suspected ice accumulation on unprotected surfaces (ice protection systems OFF). <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure>
+<div class="callout warn"><span class="label">Remember</span><p>Use the increased (icing) speeds and the corrected landing distance. Never take off with ice, frost or snow on the aeroplane — see the Cold Weather Operations course.</p></div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Three cases: before icing (ON, no ice), in icing (ON, ice), after icing (OFF, suspected ice).</li><li>Icing: higher speeds, lower gradients, longer distances.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">Which data apply after leaving icing conditions with ice suspected on unprotected surfaces?</p>
+    <ol><li>Normal data</li><li>Ice protection OFF with suspected ice accumulation</li><li>Take-off data</li><li>No correction</li></ol>
+    <p class="a"><b>Answer: B.</b> The third case: protection off, ice suspected on unprotected surfaces.</p></div>
+</section>
+<section class="lesson" id="lesson-10">
+  <div class="lesson-head"><div class="k">Module 4 · Special Cases</div>
+    <h1>Lesson 10: Brake Energy and Minimum Turnaround Time</h1><div class="m">Lesson 10 of 11 · about 8 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Explain why brake energy limits rejected take-offs and quick turnarounds.</li><li>Read the brake energy and minimum turnaround time charts.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-10.jpg" alt="Turboprop on a short runway"><figcaption>Respect the turnaround time.</figcaption></figure>
+  
+<h2>Energy into heat</h2>
+<p>During a rejected take-off or a landing, most of the aeroplane's kinetic energy becomes heat in the brakes. Too much heat can melt the <strong>fusible plugs</strong> of the wheels: the tyres deflate to prevent a burst. The brakes then need time to cool before another take-off can be made safely.</p>
+<figure class="lesson-figure"><img src="../media/images/q200-brake-photo.jpg" alt="Hot brakes after a heavy stop." loading="lazy"><figcaption>Hot brakes after a heavy stop. <span class="muted">Source: Domestic Airlines Q200 performance course.</span></figcaption></figure>
+<h2>Rejected take-off</h2>
+<figure class="lesson-figure"><img src="../media/images/q200-brake-energy-rto.jpg" alt="Brake energy in accelerate-stop — zero wind, zero runway slope, flap 5° (pre-mod 8/2484 aeroplanes, AFM amendment 1)." loading="lazy"><figcaption>Brake energy in accelerate-stop — zero wind, zero runway slope, flap 5° (pre-mod 8/2484 aeroplanes, AFM amendment 1). <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure><figure class="lesson-figure"><img src="../media/images/q200-turnaround.jpg" alt="Minimum turnaround time from the brake energy level for a landing or a prior accelerate-stop, versus OAT." loading="lazy"><figcaption>Minimum turnaround time from the brake energy level for a landing or a prior accelerate-stop, versus OAT. <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure>
+<h2>Landing</h2>
+<figure class="lesson-figure"><img src="../media/images/q200-brake-energy-landing.jpg" alt="Brake energy in landing — zero wind, zero runway slope, flap 15°." loading="lazy"><figcaption>Brake energy in landing — zero wind, zero runway slope, flap 15°. <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure>
+<div class="callout caution"><span class="label">Hot and short</span><p>High weight, high temperature, high elevation and tailwind all raise the brake energy. Respect the minimum turnaround time before the next departure, and after a high-energy rejected take-off keep clear of the wheels — fusible plugs may release.</p></div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Brake energy grows with weight and the square of the speed.</li><li>Fusible plugs deflate overheated tyres to prevent a burst.</li><li>Respect the minimum turnaround time from the charts.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">What is the purpose of the fusible plugs?</p>
+    <ol><li>To cool the brakes</li><li>To deflate overheated tyres before they burst</li><li>To measure brake wear</li><li>To lock the wheels</li></ol>
+    <p class="a"><b>Answer: B.</b> They melt at a set temperature and release the tyre pressure.</p></div>
+</section>
+<section class="lesson" id="lesson-11">
+  <div class="lesson-head"><div class="k">Module 4 · Special Cases</div>
+    <h1>Lesson 11: Performance in Abnormal Situations</h1><div class="m">Lesson 11 of 11 · about 8 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Use the abnormal landing distance factors.</li><li>Find the unfactored landing distance and apply the factors.</li><li>Check the result against the LDA before the approach.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-11.jpg" alt="Turboprop on final approach"><figcaption>Unfactored × abnormal factor.</figcaption></figure>
+  
+<h2>Unfactored landing distance</h2>
+<p>The AFM unfactored landing distance is the distance from 50 ft to a full stop in the normal configuration. It is the starting point for both dispatch (with the regulatory factors) and abnormal situations.</p>
+<figure class="lesson-figure"><img src="../media/images/q200-unfactored-ld-15.jpg" alt="Unfactored landing distance, flap 15°." loading="lazy"><figcaption>Unfactored landing distance, flap 15°. <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure><figure class="lesson-figure"><img src="../media/images/q200-unfactored-ld-35.jpg" alt="Unfactored landing distance, flap 35°." loading="lazy"><figcaption>Unfactored landing distance, flap 35°. <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure>
+<h2>Abnormal configurations</h2>
+<p>The unfactored landing distance in an abnormal configuration is the normal unfactored distance <strong>multiplied by the abnormal landing distance factor</strong> from the AFM tables (for example propeller, engine, flap, flight control, hydraulic or anti-skid failures).</p>
+<figure class="lesson-figure"><img src="../media/images/q200-abnormal-factors-1.jpg" alt="Landing distance factors for abnormal configurations (part 1)." loading="lazy"><figcaption>Landing distance factors for abnormal configurations (part 1). <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure><figure class="lesson-figure"><img src="../media/images/q200-abnormal-factors-2.jpg" alt="Landing distance factors for abnormal configurations (part 2)." loading="lazy"><figcaption>Landing distance factors for abnormal configurations (part 2). <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure><figure class="lesson-figure"><img src="../media/images/q200-abnormal-ld.jpg" alt="Unfactored landing distance in abnormal configurations." loading="lazy"><figcaption>Unfactored landing distance in abnormal configurations. <span class="muted">Source: Dash 8 Series 200 AFM / Operating Data Manual (from the company Q200 course) — for training only, use the current documents.</span></figcaption></figure>
+<h2>Decision</h2>
+<ol>
+  <li>Complete the QRH procedure and note the landing flap, VREF increment and the factor.</li>
+  <li>Compute the abnormal landing distance for the actual weight, wind and runway condition.</li>
+  <li>Compare with the LDA; if it does not fit with a reasonable margin, choose a longer runway.</li>
+  <li>Brief the landing technique, braking and reverser plan.</li>
+</ol>
+<div class="callout warn"><span class="label">Do not rush</span><p>Abnormal landing distances can double the normal distance. Take the time to compute and cross-check.</p></div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Abnormal distance = normal unfactored distance × AFM abnormal factor.</li><li>Always compare with the LDA before the approach.</li><li>Brief the technique and the go-around.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">How is the abnormal landing distance found?</p>
+    <ol><li>Normal factored distance + 10 %</li><li>Normal unfactored distance × the AFM abnormal factor</li><li>Take-off distance</li><li>QRH guess</li></ol>
+    <p class="a"><b>Answer: B.</b> The AFM abnormal landing distance factor multiplies the unfactored distance.</p></div>
+</section><p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p></body></html>

@@ -256,7 +256,7 @@ a.course-card:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(12,61
 .ref-item{display:flex;align-items:center;gap:12px;padding:10px 8px;border-top:1px solid var(--line);text-decoration:none;color:var(--text)}
 a.ref-item:hover{background:var(--green-tint)}
 .ref-item.soon{opacity:.7}
-.ref-code{flex:none;width:34px;height:34px;border-radius:9px;display:grid;place-items:center;font-weight:800;font-size:13px;color:#fff;background:var(--green)}
+.ref-code{flex:none;min-width:48px;padding:0 6px;height:34px;border-radius:9px;display:grid;place-items:center;font-weight:800;font-size:13px;color:#fff;background:var(--green)}
 .ref-item.soon .ref-code{background:#8a9a91}
 .ref-title{flex:1;min-width:0;font-weight:600;line-height:1.35}
 .ref-title small{display:block;font-weight:400;color:var(--muted);font-size:13px}

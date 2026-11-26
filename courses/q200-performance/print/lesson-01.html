@@ -1,0 +1,75 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Lesson 01: Environmental Factors and Performance — Dash 8-Q200 Performance</title>
+<style>
+@page{size:A4;margin:18mm 16mm 20mm}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#24342b;font-size:10.5pt;line-height:1.5;margin:0}
+h1,h2,h3{color:#14231b;line-height:1.25;break-after:avoid}
+h1{font-size:21pt;margin:0 0 6pt}h2{font-size:14pt;margin:16pt 0 6pt}h3{font-size:12pt;margin:12pt 0 4pt}
+p{margin:0 0 7pt}ul,ol{margin:0 0 8pt;padding-left:16pt}li{margin:2pt 0}
+a{color:#125a2b;text-decoration:none}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:9pt;background:#f3f9f5;border:1px solid #dbe5df;padding:0 3pt;border-radius:3pt}
+.cover{height:257mm;display:flex;flex-direction:column;justify-content:center;break-after:page;
+  background:linear-gradient(120deg,#0c3d1e,#125a2b 55%,#2a8a50);color:#fff;padding:22mm;border-radius:4mm;margin:0}
+.cover h1{color:#fff;font-size:34pt}.cover .k{letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#bfe3cb;font-size:10pt}
+.cover p{color:#e3f1e8;font-size:13pt}.cover .logo{background:#fff;padding:5mm 7mm;border-radius:3mm;display:inline-block;margin-bottom:14mm}
+.cover .logo img{height:16mm}.cover .meta{margin-top:12mm;font-size:10.5pt;color:#d3ebdb}
+.toc{break-after:page}.toc h2{margin-top:0}.toc ol{list-style:none;padding:0}
+.toc li{display:flex;gap:8pt;padding:3pt 0;border-bottom:1px dotted #c9d8cf}.toc .n{width:22pt;font-weight:700;color:#5b6b62}
+.toc .mod{margin-top:9pt;font-weight:800;color:#125a2b;border:0;text-transform:uppercase;font-size:9pt;letter-spacing:.06em}
+.lesson{break-before:page}
+.lesson-head{background:linear-gradient(120deg,#0c3d1e,#1d7a3e);color:#fff;border-radius:3mm;padding:9pt 13pt;margin-bottom:10pt}
+.lesson-head h1{color:#fff;font-size:17pt;margin:2pt 0}.lesson-head .k{font-size:8.5pt;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#c7e8d2}
+.lesson-head .m{font-size:9pt;color:#dbefe2}
+.objectives{background:#f3f9f5;border:1px solid #dbe5df;border-radius:2mm;padding:7pt 11pt;margin:0 0 10pt}
+.objectives h2,.takeaways h2,.kc h2{font-size:9.5pt;text-transform:uppercase;letter-spacing:.06em;margin:0 0 3pt;color:#125a2b}
+.lesson-figure{margin:0 0 10pt;break-inside:avoid}.lesson-figure img{width:100%;max-height:85mm;object-fit:contain;border:1px solid #dbe5df;border-radius:2mm;background:#f3f9f5}
+figure{margin:9pt 0;break-inside:avoid}figure svg{width:100%;height:auto}figcaption{font-size:8.5pt;color:#5b6b62;margin-top:3pt}
+.diagram{border:1px solid #dbe5df;border-radius:2mm;padding:5pt}
+.table-wrap{margin:8pt 0;border:1px solid #dbe5df;border-radius:2mm;overflow:hidden}
+table{border-collapse:collapse;width:100%;font-size:9pt}th,td{text-align:left;vertical-align:top;padding:4pt 6pt;border-bottom:1px solid #dbe5df}
+th{background:#f3f9f5}tr{break-inside:avoid}td.code{font-weight:800;font-size:12pt;text-align:center;width:34pt}
+.callout{border-left:3pt solid #1d7a3e;background:#f3f9f5;padding:6pt 10pt;margin:8pt 0;border-radius:0 2mm 2mm 0;break-inside:avoid}
+.callout .label{display:block;font-size:8.5pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#125a2b}
+.callout.warn{border-color:#c8102e;background:#fdecef}.callout.warn .label{color:#c8102e}
+.callout.caution{border-color:#d08a00;background:#fff5e0}.callout.caution .label{color:#9a6200}
+.callout.info{border-color:#1f5f99;background:#e9f2fb}.callout.info .label{color:#1f5f99}
+.callout > :last-child{margin-bottom:0}
+.steps{list-style:none;padding:0;counter-reset:s}.steps>li{counter-increment:s;position:relative;padding-left:20pt;margin:4pt 0}
+.steps>li::before{content:counter(s);position:absolute;left:0;top:0;width:14pt;height:14pt;border-radius:50%;background:#1d7a3e;color:#fff;font-weight:800;font-size:8pt;display:flex;align-items:center;justify-content:center}
+.dialog{border:1px solid #dbe5df;border-radius:2mm;padding:4pt 10pt;margin:8pt 0;break-inside:avoid}.dialog p{margin:4pt 0}.dialog b{color:#125a2b}
+.muted{color:#5b6b62}
+.takeaways{background:#0c3d1e;color:#e8f5ec;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}.takeaways h2{color:#fff}
+.kc{border:1.5pt dashed #b9d7c3;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}
+.kc .q{font-weight:700;margin:2pt 0 4pt}.kc ol{list-style:upper-alpha}.kc .a{font-size:9pt;margin-top:4pt;color:#125a2b}
+.disclaimer{font-size:8.5pt;color:#5b6b62;border-top:1px solid #dbe5df;padding-top:6pt;margin-top:14pt}
+</style></head><body>
+<section class="lesson" style="break-before:auto" id="lesson-1">
+  <div class="lesson-head"><div class="k">Module 1 · Definitions</div>
+    <h1>Lesson 01: Environmental Factors and Performance</h1><div class="m">Lesson 1 of 11 · about 9 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Define pressure altitude and density altitude.</li><li>Explain the effect of temperature, wind, runway condition and slope on performance.</li><li>Define wet and contaminated runways.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-01.jpg" alt="Turboprop on a hot apron"><figcaption>Hot and high = less performance.</figcaption></figure>
+  
+<h2>Pressure altitude and density altitude</h2>
+<p><strong>Pressure altitude</strong> is the altitude read with 1013 hPa set — the value transmitted by the transponder and used for flight levels. <strong>Density altitude</strong> is pressure altitude corrected for the temperature deviation from ISA, and it is what the aeroplane "feels": all performance computations depend on it.</p>
+<ul>
+  <li>Standard day: density altitude = pressure altitude.</li>
+  <li>Warm day: density altitude <strong>higher</strong> than pressure altitude.</li>
+  <li>Cold day: density altitude <strong>lower</strong> than pressure altitude.</li>
+</ul>
+<figure class="lesson-figure"><img src="../media/images/q200-density-warm.jpg" alt="Warm day: the aeroplane behaves as if it were higher than its true altitude." loading="lazy"><figcaption>Warm day: the aeroplane behaves as if it were higher than its true altitude. <span class="muted">Source: Domestic Airlines Q200 performance course.</span></figcaption></figure><figure class="lesson-figure"><img src="../media/images/q200-density-cold.jpg" alt="Cold day: the aeroplane behaves as if it were lower than its true altitude." loading="lazy"><figcaption>Cold day: the aeroplane behaves as if it were lower than its true altitude. <span class="muted">Source: Domestic Airlines Q200 performance course.</span></figcaption></figure>
+<h2>High density altitude = less performance</h2>
+<p>A high density altitude reduces engine power, propeller thrust and lift: take-off and landing distances increase and the rate of climb decreases. A low density altitude gives the opposite. <strong>Temperature</strong> has the same effect: high temperature — less performance.</p>
+<figure class="lesson-figure"><img src="../media/images/q200-temperature.jpg" alt="At sea level and normal temperature the aeroplane climbs steeply; in hot and high conditions the take-off run is longer and the climb shallower." loading="lazy"><figcaption>At sea level and normal temperature the aeroplane climbs steeply; in hot and high conditions the take-off run is longer and the climb shallower. <span class="muted">Source: Domestic Airlines Q200 performance course.</span></figcaption></figure>
+<h2>Wind</h2>
+<p>A headwind gives a shorter take-off distance and a lower ground speed for the same airspeed; a tailwind gives a longer distance and a higher ground speed. In flight, wind changes the ground speed and the drift.</p>
+<figure class="lesson-figure"><img src="../media/images/q200-wind-ground.jpg" alt="Head wind: shorter take-off distance, lower ground speed. Tail wind: longer take-off distance, higher ground speed — the airspeed is the same." loading="lazy"><figcaption>Head wind: shorter take-off distance, lower ground speed. Tail wind: longer take-off distance, higher ground speed — the airspeed is the same. <span class="muted">Source: Domestic Airlines Q200 performance course.</span></figcaption></figure><figure class="lesson-figure"><img src="../media/images/q200-wind-triangle.jpg" alt="Effect of wind in flight: the wind triangle (heading, track, drift angle)." loading="lazy"><figcaption>Effect of wind in flight: the wind triangle (heading, track, drift angle). <span class="muted">Source: Domestic Airlines Q200 performance course.</span></figcaption></figure>
+<h2>Runway condition</h2>
+<p>A runway is <strong>wet</strong> when its surface is reflective with water, but without significant standing water. It is <strong>contaminated</strong> when more than 25 % of the surface in use is covered by water, slush or loose snow deeper than 3 mm (water equivalent), compacted snow or ice. Contaminants increase the wheel drag (longer acceleration) and degrade braking (longer stop and landing).</p>
+<h2>Runway slope</h2>
+<p>A downslope helps the acceleration and shortens the take-off distance but lengthens the stop; an upslope does the opposite.</p>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Density altitude decides the performance: hot and high = less performance.</li><li>Headwind shortens, tailwind lengthens the ground distances.</li><li>Contaminated: &gt; 25 % covered, &gt; 3 mm water/slush/loose snow, compacted snow or ice.</li><li>Downslope helps take-off acceleration but hurts stopping.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">On a warm day, density altitude is:</p>
+    <ol><li>Equal to pressure altitude</li><li>Higher than pressure altitude</li><li>Lower than pressure altitude</li><li>Zero</li></ol>
+    <p class="a"><b>Answer: B.</b> Warm air is less dense: the aeroplane performs as if it were higher.</p></div>
+</section><p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p></body></html>

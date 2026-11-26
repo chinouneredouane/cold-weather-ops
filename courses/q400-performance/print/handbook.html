@@ -1,0 +1,296 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Dash 8-Q400 Performance — Course handbook</title>
+<style>
+@page{size:A4;margin:18mm 16mm 20mm}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#24342b;font-size:10.5pt;line-height:1.5;margin:0}
+h1,h2,h3{color:#14231b;line-height:1.25;break-after:avoid}
+h1{font-size:21pt;margin:0 0 6pt}h2{font-size:14pt;margin:16pt 0 6pt}h3{font-size:12pt;margin:12pt 0 4pt}
+p{margin:0 0 7pt}ul,ol{margin:0 0 8pt;padding-left:16pt}li{margin:2pt 0}
+a{color:#125a2b;text-decoration:none}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:9pt;background:#f3f9f5;border:1px solid #dbe5df;padding:0 3pt;border-radius:3pt}
+.cover{height:257mm;display:flex;flex-direction:column;justify-content:center;break-after:page;
+  background:linear-gradient(120deg,#0c3d1e,#125a2b 55%,#2a8a50);color:#fff;padding:22mm;border-radius:4mm;margin:0}
+.cover h1{color:#fff;font-size:34pt}.cover .k{letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#bfe3cb;font-size:10pt}
+.cover p{color:#e3f1e8;font-size:13pt}.cover .logo{background:#fff;padding:5mm 7mm;border-radius:3mm;display:inline-block;margin-bottom:14mm}
+.cover .logo img{height:16mm}.cover .meta{margin-top:12mm;font-size:10.5pt;color:#d3ebdb}
+.toc{break-after:page}.toc h2{margin-top:0}.toc ol{list-style:none;padding:0}
+.toc li{display:flex;gap:8pt;padding:3pt 0;border-bottom:1px dotted #c9d8cf}.toc .n{width:22pt;font-weight:700;color:#5b6b62}
+.toc .mod{margin-top:9pt;font-weight:800;color:#125a2b;border:0;text-transform:uppercase;font-size:9pt;letter-spacing:.06em}
+.lesson{break-before:page}
+.lesson-head{background:linear-gradient(120deg,#0c3d1e,#1d7a3e);color:#fff;border-radius:3mm;padding:9pt 13pt;margin-bottom:10pt}
+.lesson-head h1{color:#fff;font-size:17pt;margin:2pt 0}.lesson-head .k{font-size:8.5pt;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#c7e8d2}
+.lesson-head .m{font-size:9pt;color:#dbefe2}
+.objectives{background:#f3f9f5;border:1px solid #dbe5df;border-radius:2mm;padding:7pt 11pt;margin:0 0 10pt}
+.objectives h2,.takeaways h2,.kc h2{font-size:9.5pt;text-transform:uppercase;letter-spacing:.06em;margin:0 0 3pt;color:#125a2b}
+.lesson-figure{margin:0 0 10pt;break-inside:avoid}.lesson-figure img{width:100%;max-height:85mm;object-fit:contain;border:1px solid #dbe5df;border-radius:2mm;background:#f3f9f5}
+figure{margin:9pt 0;break-inside:avoid}figure svg{width:100%;height:auto}figcaption{font-size:8.5pt;color:#5b6b62;margin-top:3pt}
+.diagram{border:1px solid #dbe5df;border-radius:2mm;padding:5pt}
+.table-wrap{margin:8pt 0;border:1px solid #dbe5df;border-radius:2mm;overflow:hidden}
+table{border-collapse:collapse;width:100%;font-size:9pt}th,td{text-align:left;vertical-align:top;padding:4pt 6pt;border-bottom:1px solid #dbe5df}
+th{background:#f3f9f5}tr{break-inside:avoid}td.code{font-weight:800;font-size:12pt;text-align:center;width:34pt}
+.callout{border-left:3pt solid #1d7a3e;background:#f3f9f5;padding:6pt 10pt;margin:8pt 0;border-radius:0 2mm 2mm 0;break-inside:avoid}
+.callout .label{display:block;font-size:8.5pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#125a2b}
+.callout.warn{border-color:#c8102e;background:#fdecef}.callout.warn .label{color:#c8102e}
+.callout.caution{border-color:#d08a00;background:#fff5e0}.callout.caution .label{color:#9a6200}
+.callout.info{border-color:#1f5f99;background:#e9f2fb}.callout.info .label{color:#1f5f99}
+.callout > :last-child{margin-bottom:0}
+.steps{list-style:none;padding:0;counter-reset:s}.steps>li{counter-increment:s;position:relative;padding-left:20pt;margin:4pt 0}
+.steps>li::before{content:counter(s);position:absolute;left:0;top:0;width:14pt;height:14pt;border-radius:50%;background:#1d7a3e;color:#fff;font-weight:800;font-size:8pt;display:flex;align-items:center;justify-content:center}
+.dialog{border:1px solid #dbe5df;border-radius:2mm;padding:4pt 10pt;margin:8pt 0;break-inside:avoid}.dialog p{margin:4pt 0}.dialog b{color:#125a2b}
+.muted{color:#5b6b62}
+.takeaways{background:#0c3d1e;color:#e8f5ec;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}.takeaways h2{color:#fff}
+.kc{border:1.5pt dashed #b9d7c3;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}
+.kc .q{font-weight:700;margin:2pt 0 4pt}.kc ol{list-style:upper-alpha}.kc .a{font-size:9pt;margin-top:4pt;color:#125a2b}
+.disclaimer{font-size:8.5pt;color:#5b6b62;border-top:1px solid #dbe5df;padding-top:6pt;margin-top:14pt}
+</style></head><body>
+<section class="cover"><div><span class="logo"><img src="../../../assets/img/logo.png" alt="Domestic Airlines"></span></div>
+  <div class="k">Domestic Airlines — Training</div><h1>Dash 8-Q400 Performance</h1>
+  <p>Course handbook</p><p>Dash 8-Q400 performance with the AFM charts: environmental factors, chart technique, WAT limit, take-off field lengths, V1 reductions, runway analysis, en-route and landing, abnormal landing factors.</p>
+  <div class="meta">8 lessons · 3 modules · about 1 hours</div>
+  <div class="meta">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</div></section>
+<section class="toc"><h2>Contents</h2><ol><li class="mod">Module 1 — Basics and Chart Technique</li><li><span class="n">01</span><a href="#lesson-1">Environmental Factors and Performance Definitions</a></li><li><span class="n">02</span><a href="#lesson-2">Reading AFM Performance Charts</a></li><li class="mod">Module 2 — Take-off and Climb</li><li><span class="n">03</span><a href="#lesson-3">Take-off Weight Limits — the WAT Limit</a></li><li><span class="n">04</span><a href="#lesson-4">Take-off Field Lengths — TOR, TOD and ASD</a></li><li><span class="n">05</span><a href="#lesson-5">V1 Reductions and Take-off Speeds</a></li><li><span class="n">06</span><a href="#lesson-6">Climb Segments and Runway Analysis</a></li><li class="mod">Module 3 — En-route and Landing</li><li><span class="n">07</span><a href="#lesson-7">En-route Performance and Driftdown</a></li><li><span class="n">08</span><a href="#lesson-8">Landing Performance and Abnormal Landing Factors</a></li></ol></section>
+<section class="lesson" id="lesson-1">
+  <div class="lesson-head"><div class="k">Module 1 · Basics and Chart Technique</div>
+    <h1>Lesson 01: Environmental Factors and Performance Definitions</h1><div class="m">Lesson 1 of 8 · about 9 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Explain how pressure altitude, temperature, wind, runway condition and slope affect performance.</li><li>Define the Q400 performance speeds.</li><li>Define the declared distances and the field length requirements.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-01.jpg" alt="Turboprop airliner on a sunny apron"><figcaption>Altitude, temperature, wind, runway and slope.</figcaption></figure>
+  
+<h2>Five environmental factors</h2>
+<ul>
+  <li><strong>Pressure altitude</strong> — higher aerodromes: less dense air, less power and lift, longer distances.</li>
+  <li><strong>Temperature</strong> — hot air is less dense. The PW150A is flat rated: torque is available up to a limiting temperature, then decreases.</li>
+  <li><strong>Wind</strong> — headwind shortens, tailwind lengthens the ground distances. AFM charts use 50 % of the headwind and 150 % of the tailwind.</li>
+  <li><strong>Runway condition</strong> — wet or contaminated surfaces degrade braking and may add drag.</li>
+  <li><strong>Runway slope</strong> — uphill lengthens the take-off and shortens the stop; downhill the opposite.</li>
+</ul>
+<h2>Performance speeds</h2>
+<table><thead><tr><th>Speed</th><th>Meaning</th></tr></thead><tbody>
+<tr><td>V1</td><td>Take-off decision speed: the maximum speed for the first stopping action and the minimum speed to continue after an engine failure</td></tr>
+<tr><td>VR</td><td>Rotation speed</td></tr>
+<tr><td>V2</td><td>Take-off safety speed at 35 ft with one engine inoperative</td></tr>
+<tr><td>VMCG</td><td>Minimum control speed on the ground (rudder only)</td></tr>
+<tr><td>VMCA</td><td>Minimum control speed in the air (≤ 5° bank)</td></tr>
+<tr><td>VMCL</td><td>Minimum control speed in the landing configuration</td></tr>
+<tr><td>VREF</td><td>Reference landing speed at 50 ft</td></tr>
+</tbody></table>
+<h2>Declared distances</h2>
+<ul>
+  <li><strong>TORA</strong> — take-off run available (runway).</li>
+  <li><strong>ASDA</strong> — TORA + stopway.</li>
+  <li><strong>TODA</strong> — TORA + clearway.</li>
+  <li><strong>LDA</strong> — landing distance available; it begins at a <strong>displaced threshold</strong> when one exists.</li>
+</ul>
+<h2>Field requirements</h2>
+<p>For every take-off the aeroplane must meet three requirements: the <strong>take-off run required</strong> (TORR) ≤ TORA, the <strong>take-off distance required</strong> (TODR) ≤ TODA and the <strong>accelerate-stop distance required</strong> (ASDR) ≤ ASDA (CAT.POL.A.205). Each is the longer of the engine-failure case and 115 % of the all-engines case (for distance and run).</p>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Altitude and temperature reduce density: less power and lift, longer distances.</li><li>Charts use 50 % headwind and 150 % tailwind.</li><li>TORR ≤ TORA, TODR ≤ TODA, ASDR ≤ ASDA.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">ASDA equals:</p>
+    <ol><li>TORA + clearway</li><li>TORA + stopway</li><li>LDA + stopway</li><li>TODA − TORA</li></ol>
+    <p class="a"><b>Answer: B.</b> Accelerate-stop distance available = runway + stopway.</p></div>
+</section>
+<section class="lesson" id="lesson-2">
+  <div class="lesson-head"><div class="k">Module 1 · Basics and Chart Technique</div>
+    <h1>Lesson 02: Reading AFM Performance Charts</h1><div class="m">Lesson 2 of 8 · about 8 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Describe the layout of a carpet-type AFM chart.</li><li>Use reference lines and guide lines correctly.</li><li>Read the normal take-off power torque setting.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-02.jpg" alt="Flight deck with performance documents"><figcaption>Reference line, guide lines, result.</figcaption></figure>
+  
+<h2>How the charts are built</h2>
+<p>AFM Section 5 charts are "carpet" charts: several panels side by side, each adding one variable. A typical take-off chart starts with <strong>OAT</strong> and <strong>pressure altitude</strong>, then moves to <strong>weight</strong>, then to <strong>wind</strong> and <strong>slope</strong> corrections, and ends on the result scale.</p>
+<h2>Reference lines and guide lines</h2>
+<ol>
+  <li>Enter the first panel with the first variable and move to the line of the second variable.</li>
+  <li>Move horizontally to the <strong>reference line</strong> of the next panel.</li>
+  <li>From the reference line, follow the <strong>guide lines</strong> (parallel to the nearest curve) until you reach the value of the new variable — then continue horizontally.</li>
+  <li>At the last panel, read the result on the scale. Use a sharp pencil and a straight edge: a few millimetres can mean hundreds of feet or pounds.</li>
+</ol>
+<div class="callout caution"><span class="label">Watch the limits</span><p>Hatched or shaded areas, "structural limit" lines and "maximum" annotations are limits, not suggestions. Never extrapolate outside the chart.</p></div>
+<h2>Take-off power</h2>
+<p>The first step of every take-off computation is the <strong>normal take-off power torque</strong> for the OAT and pressure altitude (propeller 1020 rpm, bleeds and de-icing as indicated on the chart). Below a certain temperature the torque is constant (flat rated); above it, the torque decreases with temperature.</p>
+<figure class="lesson-figure"><img src="../media/images/q400-takeoff-torque.jpg" alt="Normal take-off power torque setting (ground), propeller 1020 rpm, de-icing on or off, bleeds off: enter OAT, move to the pressure altitude, read the torque." loading="lazy"><figcaption>Normal take-off power torque setting (ground), propeller 1020 rpm, de-icing on or off, bleeds off: enter OAT, move to the pressure altitude, read the torque. <span class="muted">Source: Dash 8-400 AFM, Section 5 (type-rating course material) — for training only, use the current AFM.</span></figcaption></figure>
+<div class="callout info"><span class="label">In the line</span><p>The company runway analysis and the EFB performance tool use the same AFM data. Learning the charts explains <em>why</em> the numbers change — and lets you catch an input error.</p></div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Carpet charts add one variable per panel.</li><li>At each reference line follow the guide lines to the new value.</li><li>Always start with the take-off power torque for OAT and pressure altitude.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">At a reference line, how do you correct for the next variable?</p>
+    <ol><li>Move vertically down</li><li>Follow the guide lines to the value, then continue horizontally</li><li>Read the result directly</li><li>Ignore the line</li></ol>
+    <p class="a"><b>Answer: B.</b> Guide lines carry the value from the reference line to the actual value of the variable.</p></div>
+</section>
+<section class="lesson" id="lesson-3">
+  <div class="lesson-head"><div class="k">Module 2 · Take-off and Climb</div>
+    <h1>Lesson 03: Take-off Weight Limits — the WAT Limit</h1><div class="m">Lesson 3 of 8 · about 8 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>List the factors that can limit the take-off weight.</li><li>Explain the WAT (weight–altitude–temperature) limit.</li><li>Read the maximum permissible take-off weight chart.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-03.jpg" alt="Turboprop lined up on a hot runway"><figcaption>Is the aircraft WAT limited?</figcaption></figure>
+  
+<h2>What can limit the take-off weight?</h2>
+<ul>
+  <li>The <strong>structural</strong> maximum take-off weight.</li>
+  <li>The <strong>WAT limit</strong> — climb performance with one engine inoperative.</li>
+  <li>The <strong>field lengths</strong>: take-off run, take-off distance, accelerate-stop distance.</li>
+  <li><strong>Obstacles</strong> in the take-off flight path (runway analysis).</li>
+  <li>Brake energy, the landing weight at destination (plus trip fuel), and MEL/CDL penalties.</li>
+</ul>
+<h2>The WAT limit</h2>
+<p>The <strong>WAT limit</strong> is the maximum permissible take-off weight for the aerodrome <strong>altitude and temperature</strong> that still gives the minimum climb gradients with one engine inoperative (second segment 2.4 %, final segment 1.2 % gross for a twin — CS 25.121). It does not depend on runway length: on a hot, high aerodrome the aeroplane can be WAT-limited on a very long runway.</p>
+<figure class="lesson-figure"><img src="../media/images/q400-wat-takeoff.jpg" alt="Maximum permissible take-off weight (WAT limit), take-off flap 15°: enter OAT, move to the pressure altitude, read the weight — never above the structural limit." loading="lazy"><figcaption>Maximum permissible take-off weight (WAT limit), take-off flap 15°: enter OAT, move to the pressure altitude, read the weight — never above the structural limit. <span class="muted">Source: Dash 8-400 AFM, Section 5 (type-rating course material) — for training only, use the current AFM.</span></figcaption></figure>
+<h2>Exercise approach</h2>
+<p>The type-rating exercise plans a departure from a short runway (Toronto City Centre, runway 08: elevation 251 ft, 4,000 ft, no clearway or stopway, slope −0.02 %). The questions to ask are always the same:</p>
+<ol>
+  <li>What sources do I need? — AFM / runway analysis, weather, NOTAMs, aerodrome chart.</li>
+  <li>What do I need about the airport? — elevation, runway length, slope, clearway, stopway, line-up allowance, obstacles.</li>
+  <li>What weather affects the calculation? — OAT, QNH (pressure altitude), wind (head/tail and crosswind components), runway condition.</li>
+  <li>What is the take-off torque? Is the aeroplane WAT-limited?</li>
+  <li>What weight do the TOR, TOD and ASD allow?</li>
+</ol>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>The lowest of structural, WAT, field, obstacle, brake and landing limits applies.</li><li>The WAT limit protects the one-engine-inoperative climb gradients.</li><li>A long runway does not remove the WAT limit.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">What does the WAT limit protect?</p>
+    <ol><li>The accelerate-stop distance</li><li>The minimum one-engine-inoperative climb gradients</li><li>The brake energy</li><li>The tyre speed</li></ol>
+    <p class="a"><b>Answer: B.</b> Weight–altitude–temperature limit: the heaviest weight that still meets the OEI climb gradients.</p></div>
+</section>
+<section class="lesson" id="lesson-4">
+  <div class="lesson-head"><div class="k">Module 2 · Take-off and Climb</div>
+    <h1>Lesson 04: Take-off Field Lengths — TOR, TOD and ASD</h1><div class="m">Lesson 4 of 8 · about 10 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Correct the available distances for wind and slope.</li><li>Find the weight allowed by the take-off run, take-off distance and accelerate-stop distance.</li><li>Identify the limiting requirement.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-04.jpg" alt="Short runway seen from the threshold"><figcaption>TOR, TOD, ASD — the lowest weight wins.</figcaption></figure>
+  
+<h2>Wind and slope correction</h2>
+<p>The field length charts are drawn for <strong>zero wind and zero slope</strong>. The first step converts the actual distance available into an equivalent zero-wind, zero-slope distance using the wind and slope correction charts.</p>
+<figure class="lesson-figure"><img src="../media/images/q400-tor-tod-wind.jpg" alt="Take-off run and take-off distance required — wind and runway slope correction, flap 15°." loading="lazy"><figcaption>Take-off run and take-off distance required — wind and runway slope correction, flap 15°. <span class="muted">Source: Dash 8-400 AFM, Section 5 (type-rating course material) — for training only, use the current AFM.</span></figcaption></figure>
+<h2>Take-off run and take-off distance</h2>
+<p>With the corrected distance, the TOR and TOD charts give the maximum weight for the OAT and pressure altitude. In the exercise, the 4,000 ft runway corrected to about <strong>3,200 ft</strong>: the take-off run allows about <strong>56,200 lb</strong> and the take-off distance about <strong>55,000 lb</strong>.</p>
+<figure class="lesson-figure"><img src="../media/images/q400-tor.jpg" alt="Take-off run required — zero wind, zero runway slope, flap 15°." loading="lazy"><figcaption>Take-off run required — zero wind, zero runway slope, flap 15°. <span class="muted">Source: Dash 8-400 AFM, Section 5 (type-rating course material) — for training only, use the current AFM.</span></figcaption></figure><figure class="lesson-figure"><img src="../media/images/q400-tod.jpg" alt="Take-off distance required — zero wind, zero runway slope, flap 15°." loading="lazy"><figcaption>Take-off distance required — zero wind, zero runway slope, flap 15°. <span class="muted">Source: Dash 8-400 AFM, Section 5 (type-rating course material) — for training only, use the current AFM.</span></figcaption></figure>
+<h2>Accelerate-stop distance</h2>
+<p>The ASDA is corrected the same way (4,000 ft became about <strong>3,300 ft</strong>), then the accelerate-stop chart gives the weight: about <strong>49,000 lb</strong>.</p>
+<figure class="lesson-figure"><img src="../media/images/q400-asd-wind.jpg" alt="Accelerate-stop distance required — wind and runway slope correction, flap 15°." loading="lazy"><figcaption>Accelerate-stop distance required — wind and runway slope correction, flap 15°. <span class="muted">Source: Dash 8-400 AFM, Section 5 (type-rating course material) — for training only, use the current AFM.</span></figcaption></figure><figure class="lesson-figure"><img src="../media/images/q400-asd.jpg" alt="Accelerate-stop distance required — zero wind, zero runway slope, flap 15°." loading="lazy"><figcaption>Accelerate-stop distance required — zero wind, zero runway slope, flap 15°. <span class="muted">Source: Dash 8-400 AFM, Section 5 (type-rating course material) — for training only, use the current AFM.</span></figcaption></figure>
+<h2>The limiting requirement</h2>
+<table><thead><tr><th>Requirement</th><th>Weight allowed (exercise)</th></tr></thead><tbody>
+<tr><td>Take-off run</td><td>56,200 lb</td></tr>
+<tr><td>Take-off distance</td><td>55,000 lb</td></tr>
+<tr><td>Accelerate-stop distance</td><td><strong>49,000 lb — limiting</strong></td></tr>
+</tbody></table>
+<p>On a short runway without stopway, the accelerate-stop distance is often limiting. The next lesson shows how a V1 reduction (V1/VR split) recovers weight.</p>
+<div class="callout warn"><span class="label">Training values</span><p>The figures above are a classroom exercise from the type-rating course. In operation use the company runway analysis or EFB tool with the actual conditions.</p></div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Correct distances for wind and slope first.</li><li>Read the weight from the TOR, TOD and ASD charts; the lowest limits.</li><li>Short runway without stopway: often ASD-limited.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">In the exercise, which requirement limited the take-off weight?</p>
+    <ol><li>Take-off run</li><li>Take-off distance</li><li>Accelerate-stop distance</li><li>WAT</li></ol>
+    <p class="a"><b>Answer: C.</b> The ASD allowed 49,000 lb, lower than the TOR (56,200 lb) and TOD (55,000 lb).</p></div>
+</section>
+<section class="lesson" id="lesson-5">
+  <div class="lesson-head"><div class="k">Module 2 · Take-off and Climb</div>
+    <h1>Lesson 05: V1 Reductions and Take-off Speeds</h1><div class="m">Lesson 5 of 8 · about 8 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Explain how a V1/VR split changes TOR, TOD and ASD.</li><li>Use the V1/VR ratio in the AFM.</li><li>Read VR and V1 from the rotation speed chart.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-05.jpg" alt="Turboprop accelerating on the runway"><figcaption>V1 ≤ VR ≤ V2.</figcaption></figure>
+  
+<h2>Splitting V1 and VR</h2>
+<p>When V1 is reduced below VR (V1/VR ratio below 1.0):</p>
+<ul>
+  <li>The <strong>accelerate-stop distance decreases</strong> — the stop starts at a lower speed.</li>
+  <li>The <strong>take-off distance increases</strong> — after an engine failure at the lower V1, the aeroplane accelerates longer on one engine to VR.</li>
+  <li>The <strong>take-off run</strong> also increases slightly.</li>
+</ul>
+<p>When the take-off is ASD-limited and there is spare take-off distance, a V1 reduction moves the take-off towards balance and allows a higher weight.</p>
+<h2>Exercise result</h2>
+<p>At 49,000 lb with a reduced V1/VR ratio, the exercise gave a take-off run of about <strong>2,800 ft</strong>, a take-off distance of about <strong>3,100 ft</strong> and an accelerate-stop distance of about <strong>2,800 ft</strong> — all within the corrected distances.</p>
+<h2>Rotation speed and V1</h2>
+<p>The rotation speed chart gives <strong>VR</strong> from OAT, pressure altitude and weight, then converts VR to <strong>V1</strong> with the V1/VR ratio. In the exercise, VR was about <strong>102 KIAS</strong>. The chart also shows the minimum VR (based on VMCA) and the minimum V1 (VMCG).</p>
+<figure class="lesson-figure"><img src="../media/images/q400-v1-vr.jpg" alt="Rotation speed VR and conversion of VR and V1/VR ratio to V1, flap 15°: minimum VR and minimum V1 limits are marked." loading="lazy"><figcaption>Rotation speed VR and conversion of VR and V1/VR ratio to V1, flap 15°: minimum VR and minimum V1 limits are marked. <span class="muted">Source: Dash 8-400 AFM, Section 5 (type-rating course material) — for training only, use the current AFM.</span></figcaption></figure>
+<h2>Sanity check of the speeds</h2>
+<p>Always check: V1 ≤ VR ≤ V2. A set such as V1 120, VR 128, V2 138 is consistent; V1 above VR, or V2 below VR, is not.</p>
+<div class="callout info"><span class="label">Wet or contaminated runways</span><p>Use the AFM supplement data: V1 is reduced, the screen height is lower and the take-off weight may be restricted. Reduced take-off power is not used on contaminated runways.</p></div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>V1/VR split: ASD down, TOD and TOR up.</li><li>Use it when ASD-limited with spare TODA.</li><li>Always V1 ≤ VR ≤ V2; V1 ≥ VMCG.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">How does a V1/VR split affect the TOD and ASD?</p>
+    <ol><li>Both decrease</li><li>TOD increases, ASD decreases</li><li>TOD decreases, ASD increases</li><li>No effect</li></ol>
+    <p class="a"><b>Answer: B.</b> A lower V1 means an earlier, shorter stop, but a longer one-engine acceleration to VR.</p></div>
+</section>
+<section class="lesson" id="lesson-6">
+  <div class="lesson-head"><div class="k">Module 2 · Take-off and Climb</div>
+    <h1>Lesson 06: Climb Segments and Runway Analysis</h1><div class="m">Lesson 6 of 8 · about 9 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Describe the take-off climb segments of the Q400.</li><li>Read a runway analysis page and its limit codes.</li><li>Explain the engine failure procedure (special departure).</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-06.jpg" alt="Turboprop climbing away over hills"><figcaption>Read the limit code.</figcaption></figure>
+  
+<h2>Climb segments</h2>
+<table><thead><tr><th>Segment</th><th>From – to</th><th>Configuration</th><th>Minimum gross gradient (twin)</th></tr></thead><tbody>
+<tr><td>1st</td><td>35 ft – gear retracted</td><td>Take-off flap, gear retracting, V2</td><td>Positive</td></tr>
+<tr><td>2nd</td><td>Gear up – acceleration altitude (min 400 ft)</td><td>Take-off flap, V2, take-off power</td><td>2.4 %</td></tr>
+<tr><td>3rd</td><td>Acceleration</td><td>Level acceleration, flap retraction</td><td>—</td></tr>
+<tr><td>4th</td><td>Flaps retracted – 1,500 ft</td><td>Clean, maximum continuous power, final climb speed</td><td>1.2 %</td></tr>
+</tbody></table>
+<p>The net flight path (gross − 0.8 %) must clear obstacles by 35 ft (CAT.POL.A.210). Obstacles are handled by the <strong>runway analysis</strong>.</p>
+<h2>Reading a runway analysis page</h2>
+<p>A runway analysis page is produced for one runway and one aeroplane / engine type (DHC-8-402, PW150A). It shows:</p>
+<ul>
+  <li>The aerodrome and runway, elevation, length, line-up shift, clearway, stopway and slope.</li>
+  <li>Any <strong>special engine-failure procedure</strong>: "climb at … via … reaching … or … turn …", the flap retraction height and any hold.</li>
+  <li>Conditions: flap, bleeds, anti-ice.</li>
+  <li>For each temperature and wind: the maximum weight, with a <strong>limit code</strong> (for example field, climb, obstacle, brake energy, structural) and the V-speeds.</li>
+</ul>
+<div class="callout caution"><span class="label">Read the limit code</span><p>A "climb limit" (dry runway) code means more runway will not help; only a lower temperature, less weight, or a different flap setting will. A field-limit code means distance is the problem.</p></div>
+<h2>Engine failure procedures</h2>
+<p>If an obstacle is critical, the company publishes a special procedure for an engine failure after V1. Brief it before every take-off: the turn point or altitude, the track, the acceleration altitude and where to hold.</p>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Twin gradients: 2nd segment 2.4 %, 4th (final) 1.2 % gross; net = gross − 0.8 %.</li><li>The runway analysis gives the maximum weight, the limit code and the special procedure.</li><li>Brief the engine failure procedure before every take-off.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">The runway analysis shows a climb limit. Will a longer runway increase the weight?</p>
+    <ol><li>Yes</li><li>No — the limit is the climb gradient, not distance</li><li>Only with a tailwind</li><li>Only on a wet runway</li></ol>
+    <p class="a"><b>Answer: B.</b> A climb limit depends on altitude, temperature, configuration and weight, not on runway length.</p></div>
+</section>
+<section class="lesson" id="lesson-7">
+  <div class="lesson-head"><div class="k">Module 3 · En-route and Landing</div>
+    <h1>Lesson 07: En-route Performance and Driftdown</h1><div class="m">Lesson 7 of 8 · about 7 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Describe the one-engine-inoperative en-route requirements.</li><li>Explain the driftdown speed and altitude.</li><li>Use the en-route data in the AOM/FCOM.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-07.jpg" alt="Turboprop cruising over mountains"><figcaption>MCP and best L/D speed.</figcaption></figure>
+  
+<h2>Engine failure in cruise</h2>
+<p>After an engine failure at cruise level the remaining engine at <strong>maximum continuous power</strong> cannot hold altitude: the aeroplane drifts down to the altitude where power equals drag.</p>
+<ul>
+  <li><strong>Driftdown speed</strong>: the speed for the best lift-to-drag ratio — the shallowest descent and highest level-off altitude.</li>
+  <li><strong>Driftdown altitude (ceiling)</strong>: where level flight can be maintained with one engine at MCP.</li>
+</ul>
+<h2>Rules</h2>
+<p>CAT.POL.A.215: the net flight path (gross reduced by 1.1 % for a twin) must clear the terrain by 2,000 ft while descending and 1,000 ft in level flight, within 5 NM of the track (10 NM without the navigation accuracy), and allow a landing at a suitable aerodrome.</p>
+<h2>Cruise data</h2>
+<p>The AOM/FCOM gives tables for maximum cruise power, long-range cruise, maximum endurance and single-engine cruise at maximum continuous power, with torque, fuel flow and TAS for weight, altitude and ISA deviation. The Q200 course shows how these tables are read; the Q400 method is identical.</p>
+<div class="callout info"><span class="label">Icing</span><p>Ice protection on and ice accretion reduce the single-engine ceiling: use the icing performance data in mountainous areas.</p></div>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Engine failure in cruise: MCP, best L/D speed, drift down to the ceiling.</li><li>Net path = gross − 1.1 %; 2,000 ft / 1,000 ft clearance within 5 NM.</li><li>Icing lowers the single-engine ceiling.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">What speed gives the highest level-off altitude after an engine failure in cruise?</p>
+    <ol><li>VMO</li><li>Best lift-to-drag (driftdown) speed</li><li>V2</li><li>VREF</li></ol>
+    <p class="a"><b>Answer: B.</b> The best L/D speed gives the shallowest descent and the highest driftdown ceiling.</p></div>
+</section>
+<section class="lesson" id="lesson-8">
+  <div class="lesson-head"><div class="k">Module 3 · En-route and Landing</div>
+    <h1>Lesson 08: Landing Performance and Abnormal Landing Factors</h1><div class="m">Lesson 8 of 8 · about 10 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Find the landing WAT limit.</li><li>Compute the unfactored and factored landing field length.</li><li>Apply the abnormal landing distance factors (example: hydraulic system failure).</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-08.jpg" alt="Turboprop on final approach"><figcaption>70 % of the LDA for a turboprop.</figcaption></figure>
+  
+<h2>Landing WAT limit</h2>
+<p>The <strong>maximum permissible landing weight (WAT limit)</strong> ensures the approach climb gradient (one engine, approach flap: 2.1 %) and the landing climb gradient (all engines, landing flap: 3.2 %) for the aerodrome altitude and temperature.</p>
+<figure class="lesson-figure"><img src="../media/images/q400-wat-landing-15.jpg" alt="Maximum permissible landing weight (WAT limit), landing flap 15°, approach flap 10°." loading="lazy"><figcaption>Maximum permissible landing weight (WAT limit), landing flap 15°, approach flap 10°. <span class="muted">Source: Dash 8-400 AFM, Section 5 (type-rating course material) — for training only, use the current AFM.</span></figcaption></figure><figure class="lesson-figure"><img src="../media/images/q400-wat-landing-35.jpg" alt="Maximum permissible landing weight (WAT limit), landing flap 35°, approach flap 15°." loading="lazy"><figcaption>Maximum permissible landing weight (WAT limit), landing flap 35°, approach flap 15°. <span class="muted">Source: Dash 8-400 AFM, Section 5 (type-rating course material) — for training only, use the current AFM.</span></figcaption></figure>
+<h2>Worked example</h2>
+<p>Aerodrome elevation 1,217 ft, runway 21, wind 220/09G14 (headwind 9 kt, crosswind 2 kt), temperature 26 °C, landing weight 59,000 lb.</p>
+<figure class="lesson-figure"><img src="../media/images/q400-unfactored-ld-15.jpg" alt="Unfactored landing distance, flap 15°: weight, airfield altitude, wind and slope — about 2,600 ft in the example." loading="lazy"><figcaption>Unfactored landing distance, flap 15°: weight, airfield altitude, wind and slope — about 2,600 ft in the example. <span class="muted">Source: Dash 8-400 AFM, Section 5 (type-rating course material) — for training only, use the current AFM.</span></figcaption></figure>
+<h2>From unfactored to factored distance</h2>
+<p>The unfactored distance is what a test pilot achieves. The operating rules require the aeroplane to stop within a fraction of the LDA. For turboprops, CAT.POL.A.230 requires a full stop within <strong>70 %</strong> of the LDA (factor 1/0.7 ≈ <strong>1.43</strong>); with the 60 % rule the factor is 1.67. On a wet runway the result is increased by a further 15 %.</p>
+<figure class="lesson-figure"><img src="../media/images/q400-landing-field-length.jpg" alt="Landing field length required: the unfactored distance multiplied by the operational landing field length factor." loading="lazy"><figcaption>Landing field length required: the unfactored distance multiplied by the operational landing field length factor. <span class="muted">Source: Dash 8-400 AFM, Section 5 (type-rating course material) — for training only, use the current AFM.</span></figcaption></figure>
+<table><thead><tr><th>Flap</th><th>Unfactored</th><th>× 1.43 (70 % rule)</th><th>× 1.67 (60 % rule)</th></tr></thead><tbody>
+<tr><td>15°</td><td>2,600 ft</td><td>3,718 ft</td><td>4,342 ft</td></tr>
+<tr><td>35°</td><td>2,300 ft</td><td>3,289 ft</td><td>3,841 ft</td></tr>
+</tbody></table>
+<figure class="lesson-figure"><img src="../media/images/q400-unfactored-ld-35.jpg" alt="Unfactored landing distance, flap 35°: about 2,300 ft in the same example." loading="lazy"><figcaption>Unfactored landing distance, flap 35°: about 2,300 ft in the same example. <span class="muted">Source: Dash 8-400 AFM, Section 5 (type-rating course material) — for training only, use the current AFM.</span></figcaption></figure>
+<h2>Abnormal landing factors</h2>
+<p>For a failure that affects landing (for example a <strong>hydraulic system failure</strong>, QRH), the unfactored landing distance in abnormal configurations is the normal unfactored distance multiplied by the <strong>abnormal landing distance factor</strong>, with further increases for a wet runway and/or a higher approach speed (VREF + 10).</p>
+<figure class="lesson-figure"><img src="../media/images/q400-abnormal-ld.jpg" alt="Unfactored landing distance in abnormal configurations: in the example, about 6,100 ft for a wet runway AND VREF + 10." loading="lazy"><figcaption>Unfactored landing distance in abnormal configurations: in the example, about 6,100 ft for a wet runway AND VREF + 10. <span class="muted">Source: Dash 8-400 AFM, Section 5 (type-rating course material) — for training only, use the current AFM.</span></figcaption></figure>
+<div class="callout warn"><span class="label">In flight</span><p>Before the approach, compare the abnormal landing distance with the LDA (CAT.OP.MPA.300). If it does not fit, divert to a longer runway.</p></div>
+<h2>Review</h2>
+<ul>
+  <li>TORA is the runway length declared available for the take-off run.</li>
+  <li>The WAT limit is the maximum weight for altitude and temperature.</li>
+  <li>A V1/VR split increases the TOD and reduces the ASD.</li>
+  <li>Crosswind and tailwind limits are in the AFM and OM B (tailwind 10 kt unless approved otherwise).</li>
+</ul>
+
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Landing WAT: approach climb 2.1 % (OEI) and landing climb 3.2 % (AEO).</li><li>Turboprop dispatch: stop within 70 % of LDA (factor 1.43); wet +15 %.</li><li>Abnormal configurations: apply the AFM/QRH factors and check against the LDA before the approach.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">For a turboprop, a full stop must be achieved within what part of the LDA (dry, dispatch)?</p>
+    <ol><li>50 %</li><li>60 %</li><li>70 %</li><li>85 %</li></ol>
+    <p class="a"><b>Answer: C.</b> CAT.POL.A.230(a)(2): turbo-propeller aeroplanes — 70 % of the LDA.</p></div>
+</section><p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p></body></html>

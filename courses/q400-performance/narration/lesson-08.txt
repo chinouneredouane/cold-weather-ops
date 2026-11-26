@@ -1,0 +1,46 @@
+Domestic Airlines — Dash 8-Q400 Performance
+Lesson 8: Landing Performance and Abnormal Landing Factors
+
+Learning objectives:
+- Find the landing WAT limit.
+- Compute the unfactored and factored landing field length.
+- Apply the abnormal landing distance factors (example: hydraulic system failure).
+
+Landing WAT limit
+
+The maximum permissible landing weight (WAT limit) ensures the approach climb gradient (one engine, approach flap: 2.1 %) and the landing climb gradient (all engines, landing flap: 3.2 %) for the aerodrome altitude and temperature.
+
+Worked example
+
+Aerodrome elevation 1,217 ft, runway 21, wind 220/09G14 (headwind 9 kt, crosswind 2 kt), temperature 26 °C, landing weight 59,000 lb.
+
+From unfactored to factored distance
+
+The unfactored distance is what a test pilot achieves. The operating rules require the aeroplane to stop within a fraction of the LDA. For turboprops, CAT.POL.A.230 requires a full stop within 70 % of the LDA (factor 1/0.7 ≈ 1.43 ); with the 60 % rule the factor is 1.67. On a wet runway the result is increased by a further 15 %.
+
+Flap Unfactored × 1.43 (70 % rule) × 1.67 (60 % rule)
+
+15° 2,600 ft 3,718 ft 4,342 ft
+
+35° 2,300 ft 3,289 ft 3,841 ft
+
+Abnormal landing factors
+
+For a failure that affects landing (for example a hydraulic system failure , QRH), the unfactored landing distance in abnormal configurations is the normal unfactored distance multiplied by the abnormal landing distance factor , with further increases for a wet runway and/or a higher approach speed (VREF + 10).
+
+In flight Before the approach, compare the abnormal landing distance with the LDA (CAT.OP.MPA.300). If it does not fit, divert to a longer runway.
+
+Review
+
+TORA is the runway length declared available for the take-off run.
+
+The WAT limit is the maximum weight for altitude and temperature.
+
+A V1/VR split increases the TOD and reduces the ASD.
+
+Crosswind and tailwind limits are in the AFM and OM B (tailwind 10 kt unless approved otherwise).
+
+Key takeaways:
+- Landing WAT: approach climb 2.1 % (OEI) and landing climb 3.2 % (AEO).
+- Turboprop dispatch: stop within 70 % of LDA (factor 1.43); wet +15 %.
+- Abnormal configurations: apply the AFM/QRH factors and check against the LDA before the approach.

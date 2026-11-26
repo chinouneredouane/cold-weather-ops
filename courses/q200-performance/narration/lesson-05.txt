@@ -1,0 +1,22 @@
+Domestic Airlines — Dash 8-Q200 Performance
+Lesson 5: Take-off Climb Gradients and Field Lengths
+
+Learning objectives:
+- Find the second-segment and final-segment gradients with one engine inoperative.
+- Find the take-off run, take-off distance and accelerate-stop distance required.
+- Apply wind and slope corrections.
+
+Second segment gradient
+
+Final segment gradient
+
+Take-off run and distance
+
+Accelerate-stop distance
+
+Method Compute each requirement, correct for wind and slope, compare with TORA, TODA and ASDA. The lowest weight from field length, WAT, obstacles, brake energy and structure is the maximum take-off weight.
+
+Key takeaways:
+- 2nd segment ≥ 2.4 %, final ≥ 1.2 % gross (one engine inoperative).
+- TOR, TOD and ASD are read at zero wind/slope, then corrected.
+- The most limiting weight applies.
