@@ -412,7 +412,7 @@ COURSE = dict(
              dict(title="Human Factors and Safety", summary="CRM, situation awareness, human performance and summer safety trends", icon="people", lessons=range(8, 12))],
     lessons=LESSONS, questions=QUESTIONS,
     images={1: ("gen", "Thunderstorm building over a hot plain", "Heating drives convection, dust devils and dust storms."),
-            2: ("gen", "Airliner taking off over a desert aerodrome in the heat", "Hot and high: less density, less thrust, longer distances."),
+            2: ("gen", "Airliner climbing out into a hot, hazy sunset sky", "Hot and high: less density, less thrust, longer distances."),
             3: ("gen", "Airliner lined up on a hot runway with heat haze", "The lowest limit decides the take-off mass."),
             4: ("gen", "Airliner on a hot apron with heat haze", "Brake energy grows with the square of speed."),
             5: ("gen", "Airliner cruising over the desert", "Flat rating: the EGT margin shrinks as the temperature rises."),

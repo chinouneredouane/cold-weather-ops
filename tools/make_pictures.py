@@ -28,4 +28,12 @@ for n in COURSE["images"]:
         f.write(scene(n))
 out = os.path.join(ROOT, "courses", COURSE["slug"], "media", "images")
 subprocess.run(["node", os.path.join(ROOT, "tools", "make_pictures.js"), work, out], check=True)
+# Real photographs supplied by the training department replace the generated picture of the same name.
+import shutil
+photos = os.path.join(ROOT, "tools", "photos", COURSE["slug"])
+if os.path.isdir(photos):
+    for f in sorted(os.listdir(photos)):
+        if f.endswith(".jpg"):
+            shutil.copyfile(os.path.join(photos, f), os.path.join(out, f))
+            print(f"  kept real photo {f}")
 print(f"{COURSE['title']}: wrote {len(COURSE['images'])} pictures to {os.path.relpath(out, ROOT)}")
