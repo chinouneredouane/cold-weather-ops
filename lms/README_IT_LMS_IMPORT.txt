@@ -3,13 +3,13 @@ SCORM 1.2 PACKAGES FOR THE COMPANY LMS — INSTRUCTIONS FOR IT
 ==============================================================
 
 CONTENTS OF THIS ZIP
-  15 course packages (SCORM 1.2), one .zip per course — do NOT unzip them:
+  18 course packages (SCORM 1.2), one .zip per course — do NOT unzip them:
 
    1. Cold Weather Operations                    30 lessons   pass mark 80%    58.1 MB   cold-weather-operations-scorm12.zip
    2. Upset Prevention and Recovery              28 lessons   pass mark 80%    60.6 MB   upset-prevention-recovery-scorm12.zip
    3. RVSM Refresher                              6 lessons   pass mark 80%     7.5 MB   rvsm-refresher-scorm12.zip
    4. CFIT and EGPWS Refresher                   13 lessons   pass mark 80%    20.5 MB   cfit-egpws-refresher-scorm12.zip
-   5. Hot Weather Operations                      11 lessons   pass mark 80%     12.6 MB   hot-weather-operations-scorm12.zip
+   5. Hot Weather Operations                      11 lessons   pass mark 80%    12.9 MB   hot-weather-operations-scorm12.zip
    6. CPDLC — Controller-Pilot Data Link          6 lessons   pass mark 80%     6.6 MB   cpdlc-scorm12.zip
    7. Windshear and Thunderstorm Avoidance        5 lessons   pass mark 80%     5.2 MB   windshear-thunderstorm-scorm12.zip
    8. PBN Refresher                               5 lessons   pass mark 80%     4.9 MB   pbn-refresher-scorm12.zip
@@ -20,6 +20,9 @@ CONTENTS OF THIS ZIP
   13. Inoperative Ground Equipment                3 lessons   pass mark 80%     2.5 MB   inop-ground-equipment-scorm12.zip
   14. Low Visibility Operations (LVO) — CAT IIIA          7 lessons   pass mark 80%   14.2 MB   lvo-scorm12.zip  (B737-800 crews)
   15. Algerian Regulations and Duty Time         7 lessons   pass mark 80%     8.9 MB   algerian-regulations-scorm12.zip  (interactive duty time calculator)
+  16. Boeing 737-800 NG Performance             10 lessons   pass mark 80%    21.5 MB   b737-performance-scorm12.zip  (B737-800 crews)
+  17. Dash 8-Q400 Performance                    8 lessons   pass mark 80%    27.8 MB   q400-performance-scorm12.zip  (Q400 crews)
+  18. Dash 8-Q200 Performance                   11 lessons   pass mark 80%    24.0 MB   q200-performance-scorm12.zip  (Q200 crews)
 
 HOW TO IMPORT (each package)
   1. In the LMS, create a course or activity of type "SCORM package".
