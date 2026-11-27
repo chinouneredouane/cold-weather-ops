@@ -82,6 +82,49 @@ def package(course):
     return out, len(files)
 
 
+
+def locked_section(inner_html, password):
+    """The administrator page content, encrypted (AES-256-GCM, key from PBKDF2-SHA256). The password itself is never written
+    to the site or the repository: only the encrypted content, the salt and the IV are published."""
+    import base64
+    import secrets
+    from cryptography.hazmat.primitives.ciphers.aead import AESGCM
+    from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
+    from cryptography.hazmat.primitives import hashes
+    salt, iv, rounds = secrets.token_bytes(16), secrets.token_bytes(12), 310000
+    key = PBKDF2HMAC(algorithm=hashes.SHA256(), length=32, salt=salt, iterations=rounds).derive(password.encode())
+    ct = AESGCM(key).encrypt(iv, inner_html.encode(), None)
+    b = lambda x: base64.b64encode(x).decode()
+    return f"""
+    <section class="content" id="lmsAdmin">
+      <div class="eyebrow">For the LMS administrator</div>
+      <h1>LMS Packages (SCORM 1.2)</h1>
+      <form id="lmsLock" class="card panel" style="max-width:420px" autocomplete="off">
+        <label for="lmsPw"><strong>Enter your password</strong></label>
+        <input id="lmsPw" type="password" required style="display:block;width:100%;margin:10px 0;padding:10px;font-size:16px;border:1px solid #b8c4bd;border-radius:8px">
+        <button class="btn primary" type="submit">Open</button>
+        <p id="lmsErr" class="muted" role="alert" style="color:#b3261e;min-height:1.4em"></p>
+      </form>
+    </section>
+    <script>
+    (function () {{
+      var D = {{ s: "{b(salt)}", i: "{b(iv)}", c: "{b(ct)}", n: {rounds} }};
+      function u(x) {{ return Uint8Array.from(atob(x), function (ch) {{ return ch.charCodeAt(0); }}); }}
+      async function open(pw) {{
+        var base = await crypto.subtle.importKey("raw", new TextEncoder().encode(pw), "PBKDF2", false, ["deriveKey"]);
+        var key = await crypto.subtle.deriveKey({{ name: "PBKDF2", salt: u(D.s), iterations: D.n, hash: "SHA-256" }}, base, {{ name: "AES-GCM", length: 256 }}, false, ["decrypt"]);
+        var html = new TextDecoder().decode(await crypto.subtle.decrypt({{ name: "AES-GCM", iv: u(D.i) }}, key, u(D.c)));
+        document.getElementById("lmsAdmin").innerHTML = html;
+      }}
+      document.getElementById("lmsLock").addEventListener("submit", function (e) {{
+        e.preventDefault();
+        var err = document.getElementById("lmsErr"); err.textContent = "Checking…";
+        if (!window.crypto || !crypto.subtle) {{ err.textContent = "This browser cannot open the page (secure connection needed)."; return; }}
+        open(document.getElementById("lmsPw").value).catch(function () {{ err.textContent = "Wrong password."; }});
+      }});
+    }})();
+    </script>"""
+
 def index_page():
     rows = []
     for c in build.COURSES:
@@ -89,8 +132,7 @@ def index_page():
         if os.path.exists(z):
             rows.append(f'<tr><td><strong>{escape(c["title"])}</strong></td><td>{len(c["lessons"])}</td><td>{c["pass_mark"]} %</td>'
                         f'<td>{os.path.getsize(z) / 1e6:.1f} MB</td><td><a class="btn" href="{c["slug"]}-scorm12.zip" download>Download</a></td></tr>')
-    main = f"""
-    <section class="content">
+    secret = f"""
       <div class="eyebrow">For the LMS administrator</div>
       <h1>LMS Packages (SCORM 1.2)</h1>
       <p>Each academy course is available as a <strong>SCORM 1.2</strong> package for import into the company LMS (Moodle, Cornerstone, SAP SuccessFactors, TalentLMS and most others). In the LMS, pilots log in with their LMS account; the LMS administrator creates users, manages passwords and sees each pilot's progress, quiz score and completion.</p>
@@ -113,7 +155,12 @@ def index_page():
         <li>Enrol the pilots or their groups (B737-800, Q400, Q200).</li>
       </ol>
       <p class="muted">The Command Upgrade course has its own design and progress system and is not included as a SCORM package yet.</p>
-    </section>"""
+"""
+    password = os.environ.get("LMS_ADMIN_PASSWORD")
+    if not password:
+        print("LMS_ADMIN_PASSWORD not set: lms/index.html left unchanged (the page is locked with the administrator password).")
+        return
+    main = locked_section(secret, password)
     out = build.page(title="LMS Packages — Domestic Airlines Training", description="SCORM 1.2 packages of the academy courses for the company LMS.",
                      root="../", main=main)
     with open(os.path.join(ROOT, "lms", "index.html"), "w", encoding="utf-8") as f:
