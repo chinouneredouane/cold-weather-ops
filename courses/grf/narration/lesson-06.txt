@@ -1,0 +1,50 @@
+Domestic Airlines — Global Reporting Format (GRF)
+Lesson 6: Pilot Reports (AIREP) and Adjusting the RWYCC
+
+Learning objectives:
+- Describe the AIREP and its role in the GRF.
+- Apply the reassessment triggers.
+- Apply the upgrade and downgrade rules for the RWYCC.
+
+Special air-reports of braking action
+
+Pilots report braking action on the frequency to the controller, using the standard RCAM terms. An AIREP depends on the aircraft's braking and control during the landing, applies to part of the runway, and may differ from one aircraft to another (for example a Q400 followed by a B777). There is no AIREP for RWYCC 6.
+
+Tap a card to turn it over.
+GOOD Braking deceleration normal; directional control normal — corresponds to RWYCC 5 . GOOD TO MEDIUM Between good and medium — RWYCC 4 . MEDIUM Braking deceleration or directional control noticeably reduced — RWYCC 3 . MEDIUM TO POOR Between medium and poor — RWYCC 2 . POOR Braking deceleration or directional control significantly reduced — RWYCC 1 . LESS THAN POOR Braking deceleration minimal to non-existent, or directional control uncertain — RWYCC 0 .
+
+Three situations
+
+First inspection of the day , no pilot report yet: inspect, apply the matrix, adjust with AIREPs when they arrive, publish.
+
+A RWYCC is already published and the situation evolves (AIREP different from the published code…): inspect, apply the matrix, adjust, publish.
+
+After a decontamination action (chemical treatment, snow clearing): inspect, apply the matrix, adjust with new AIREPs, publish.
+
+When must the runway be reassessed?
+
+A new assessment of the surface (new inspection) is required after two consecutive POOR AIREPs, or one LESS THAN POOR AIREP (AMC1 ADR.OPS.B.037(c)). AIREPs are used to trigger reassessments, confirm the initial assessment, and adjust the RWYCC.
+
+Upgrade and downgrade
+
+Tap a card to turn it over.
+Downgrade lower the RWYCC Possible when evidence or criteria in the procedures (AIREPs, measurements…) show worse conditions than the visual assessment. Upgrade from 2 or more raise the RWYCC Not allowed. Upgrade from 0 or 1 raise the RWYCC Allowed up to RWYCC 3 at most , only with evident proof defined in the procedures (e.g. friction measurements showing wet-runway equivalence, number of AIREPs above a threshold). After an upgrade Frequent reassessment is mandatory to make sure the RWYCC does not get worse — typically after decontamination.
+
+Worked example 1 — snow
+
+Runway 04R/22L, 22L in use, 3,000 m, OAT +3 °C. Third 1: dry snow 4 mm, 75 %. Third 2: dry snow 1–3 mm, 50 %. Third 3: wet snow 3 mm, 50 %.
+
+Decide, then tap.
+Initial RWYCC? per third 3 / 5 / 5 — dry snow more than 3 mm gives 3; up to 3 mm gives 5. AIREPs: GOOD, GOOD, GOOD TO MEDIUM, GOOD Change the codes? No. No upgrade (initial ≥ 2). No downgrade: one GOOD TO MEDIUM (code 4) without other evidence is not enough.
+
+Worked example 2 — water
+
+Same runway, OAT +10 °C. Third 1: dry. Third 2: water 2 mm, 40 %. Third 3: standing water 4 mm, 90 %.
+
+Decide, then tap.
+Initial RWYCC? per third 6 / 5 / 2 AIREPs: MEDIUM, MEDIUM, MEDIUM, GOOD TO MEDIUM Change the codes? Consider a downgrade of thirds 1 and 2: MEDIUM (code 3) is worse than the codes assessed. No upgrade of third 3 (initial ≥ 2).
+
+Key takeaways:
+- AIREP terms = RCAM braking action terms; no AIREP for 6.
+- Reassess after 2 consecutive POOR or 1 LESS THAN POOR.
+- Downgrade with evidence; upgrade only from 0 or 1, up to 3, with evident proof.

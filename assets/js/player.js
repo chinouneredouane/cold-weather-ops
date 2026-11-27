@@ -190,3 +190,13 @@
 
   document.addEventListener('DOMContentLoaded', function () { setupDrawers(); setupPlayer(); });
 })();
+
+/* Flip cards: tap or press Enter/Space to turn a definition card over. */
+(function () {
+  document.addEventListener('click', function (e) {
+    var c = e.target.closest && e.target.closest('.flipcard');
+    if (!c) return;
+    c.classList.toggle('flipped');
+    c.setAttribute('aria-pressed', c.classList.contains('flipped') ? 'true' : 'false');
+  });
+})();

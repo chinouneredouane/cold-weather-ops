@@ -37,9 +37,10 @@ from courses.algerian_regs import COURSE as ALGERIAN_REGS  # noqa: E402
 from courses.perf_b737 import COURSE as PERF_B737  # noqa: E402
 from courses.perf_q400 import COURSE as PERF_Q400  # noqa: E402
 from courses.perf_q200 import COURSE as PERF_Q200  # noqa: E402
+from courses.grf import COURSE as GRF  # noqa: E402
 from handbook import build_print  # noqa: E402
 
-COURSES = [COLD_WEATHER, UPSET_RECOVERY, RVSM, CFIT, HOT_WEATHER, CPDLC, WINDSHEAR, PBN, REGULATIONS, MEL, WIND_LIMITS, APPROACH_MINIMA, GROUND_EQUIPMENT, LVO, ALGERIAN_REGS, PERF_B737, PERF_Q400, PERF_Q200]
+COURSES = [COLD_WEATHER, UPSET_RECOVERY, RVSM, CFIT, HOT_WEATHER, CPDLC, WINDSHEAR, PBN, REGULATIONS, MEL, WIND_LIMITS, APPROACH_MINIMA, GROUND_EQUIPMENT, LVO, ALGERIAN_REGS, PERF_B737, PERF_Q400, PERF_Q200, GRF]
 
 # Courses shown on the portal as "in preparation" (no pages yet).
 UPCOMING = []
@@ -68,6 +69,7 @@ REFRESHER = {
         ("+", "CPDLC — Controller-Pilot Data Link", "courses/cpdlc/index.html", ""),
         ("+", "Upset Prevention and Recovery (UPRT)", "courses/upset-prevention-recovery/index.html", ""),
         ("+", "Low Visibility Operations (LVO) — CAT IIIA", "courses/lvo/index.html", "B737-800"),
+        ("+", "Global Reporting Format (GRF) — RCAM, RCR, SNOWTAM", "courses/grf/index.html", "All fleets — interactive definition cards"),
     ],
     "Aircraft performance": [
         ("737", "Boeing 737-800 NG Performance", "courses/b737-performance/index.html", "Take-off, en-route and landing — 10 lessons"),

@@ -1,0 +1,51 @@
+Domestic Airlines — Global Reporting Format (GRF)
+Lesson 8: Writing the RCR
+
+Learning objectives:
+- Fill in the performance section in the correct format.
+- Use the standard expressions of the situational awareness section.
+- Write RCRs for typical situations.
+
+Performance section — format
+
+Item Format Example
+
+Aerodrome location indicator (Doc 7910) nnnn DAAG
+
+Date and time of assessment (UTC) MMDDhhmm 01030723
+
+Lower runway designator nn[L/C/R] 05
+
+RWYCC per third n/n/n 5/5/2
+
+Coverage per third NR, 25, 50, 75, 100 100/100/75
+
+Depth per third NR or 2–3 digits NR/NR/06
+
+Contaminant per third CAPITALS WET/WET/STANDING WATER
+
+Width to which the codes apply, if less than published nn 30
+
+Typical RCRs
+
+Write it on paper, then tap to compare.
+After a shower: whole runway, water < 3 mm write the codes 5/5/5 100/100/100 NR/NR/NR WET/WET/WET Temperature and wind have dried the runway write the codes 6/6/6 NR/NR/NR NR/NR/NR DRY/DRY/DRY Rubber in the touchdown zone, poor texture write the codes 3/3/3 100/100/100 NR/NR/NR SLIPPERY WET/SLIPPERY WET/SLIPPERY WET Mixed: 09R wet · slush 6 mm 50 % · slush 6 mm 75 % 09R 5/2/2 100/50/75 NR/06/06 WET/SLUSH/SLUSH
+
+Situational awareness section
+
+RWY nn LDA REDUCED TO [n]nnn · RWY nn DRIFTING SNOW · RWY nn LOOSE SAND · RWY nn CHEMICALLY TREATED
+
+RWY nn SNOWBANK Lnn / Rnn / LRnn FM CL · TWY nn SNOWBANK · RWY nn ADJ SNOWBANKS
+
+TWY nn POOR · APRON nnnn POOR · free-text remarks
+
+UPGRADED or DOWNGRADED to report an adjustment of the RWYCC.
+
+Only CAPITAL letters and digits. In the performance section, a space separates the items and "/" the thirds; in the situational awareness section a full stop separates the groups. Example: RWY 22L LDA REDUCED TO 1450. RWY 02R LOOSE SAND. TWY B POOR.
+
+The drafting aid
+
+Key takeaways:
+- Performance section: aerodrome, MMDDhhmm, lower designator, RWYCC, coverage, depth, contaminant — per third.
+- Capitals and digits only; space between items, full stop between situational awareness groups.
+- UPGRADED / DOWNGRADED report an adjustment.

@@ -1,0 +1,57 @@
+Domestic Airlines — Global Reporting Format (GRF)
+Lesson 2: The New System: Actors and Key Changes
+
+Learning objectives:
+- Describe the role of each actor in the GRF.
+- List the main changes: definitions, RCAM, RWYCC, RCR, SNOWTAM.
+- Describe the general process from inspection to publication.
+
+Who does what
+
+Actor Role
+
+Aerodrome operator Inspects the movement area, assesses the surface, assigns the RWYCC with the RCAM, writes the RCR, requests the SNOWTAM, collects pilot reports
+
+Air traffic services (ATS) Pass the RCR to pilots by radio and ATIS; pass AIREPs to the aerodrome operator
+
+Aeronautical information service (AIS) Publishes the SNOWTAM (new format)
+
+Pilots Use the information; report the braking action (AIREP) to ATS
+
+Aircraft manufacturer Provides performance data linked to the RWYCC (Annex 8)
+
+Airline Assesses aircraft braking performance; updates its procedures (Annex 6)
+
+Key definitions
+
+Tap a card to turn it over.
+RWYCC Runway condition code A number from 6 (dry) to 0 (less than poor) for each third of the runway, assigned with the RCAM. RCAM Runway Condition Assessment Matrix The matrix that links the observed contaminant, depth and temperature to a RWYCC, and pilot braking reports to a downgrade. RCR Runway Condition Report The standardised report of the runway surface condition: a performance section (per third) and a situational awareness section. SNOWTAM Special series NOTAM The NOTAM that publishes the RCR. New format since the GRF; valid 8 hours at most. AIREP Special air-report of braking action Pilot report of braking action — GOOD, GOOD TO MEDIUM, MEDIUM, MEDIUM TO POOR, POOR, LESS THAN POOR. Runway third Tiers de piste The runway (TORA) divided in three equal parts; the first third starts at the lower runway designator.
+
+The main changes
+
+New definitions : four runway surface states (dry, wet, slippery wet, contaminated) and standard contaminant descriptors.
+
+RCAM to assign a RWYCC per third, and compare the aerodrome's observations with pilot reports.
+
+RCR , evolving with the situation and used by pilots, published all year — not only in winter.
+
+New SNOWTAM format , new information content and new update criteria.
+
+Friction measurements are no longer reported.
+
+The general process
+
+Runway inspection and analysis of the observations (coverage criteria).
+
+Characterisation of the situation with the RCAM: initial RWYCC (Module 2).
+
+Collection of data (AIREPs…) and adjustment of the RWYCC (Module 2).
+
+Writing the RCR (Module 3).
+
+Transmission of the information (SNOWTAM, ATS, ATIS) and follow-up of its accuracy (Module 4).
+
+Key takeaways:
+- Aerodrome assesses and reports; ATS and AIS transmit; pilots use and report.
+- New: RCAM, RWYCC per third, RCR all year, new SNOWTAM, no friction values.
+- Process: inspect → RCAM → adjust with AIREPs → RCR → SNOWTAM/ATS → follow-up.

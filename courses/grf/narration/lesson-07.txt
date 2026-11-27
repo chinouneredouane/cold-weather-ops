@@ -1,0 +1,43 @@
+Domestic Airlines — Global Reporting Format (GRF)
+Lesson 7: The RCR — Principles and Triggers
+
+Learning objectives:
+- Describe the two sections of the RCR.
+- List the events that require a new RCR.
+- Apply the significant change criteria for coverage and depth.
+
+Two sections
+
+Tap a card to turn it over.
+Aeroplane performance calculation section mandatory Per runway third: RWYCC , coverage, depth and contaminant type, plus the width to which the codes apply if reduced. Situational awareness section optional Qualitative information: reduced length, drifting snow, loose sand, chemical treatment, snowbanks, taxiway and apron conditions, free text.
+
+When to write an RCR
+
+A contaminant appears (e.g. water on a dry runway).
+
+The contaminant type changes (e.g. thin dry snow turns to water).
+
+The reported coverage changes.
+
+The reported depth changes significantly.
+
+New relevant information arrives: AIREPs, weather, decontamination, one LESS THAN POOR or two consecutive POOR.
+
+The need for an RCR triggers an inspection — and an inspection can trigger an RCR. Inspections are either scheduled or "special".
+
+Coverage changes
+
+Is a new RCR needed? Tap to check.
+Third: 20 % → 40 % New RCR : the reported coverage changes from 25 to 50. Third: 80 % → 100 % No new RCR : the reported coverage stays 100.
+
+Depth changes
+
+A change of depth is significant when it changes the RWYCC, or when the increase of the reported depth reaches a fixed value:
+
+Is a new RCR needed? Tap to check.
+Dry snow 5 mm → 15 mm same area No new RCR required : +10 mm is below the 20 mm fixed value (if the RWYCC does not change). Standing water 5 mm → 8 mm New RCR : +3 mm reaches the 3 mm value.
+
+Key takeaways:
+- RCR = mandatory performance section + optional situational awareness section.
+- New RCR: new contaminant, type change, reported coverage change, significant depth change, new information.
+- Significant depth change: water 3 mm, slush 3 mm, wet snow 5 mm, dry snow 20 mm.

@@ -1,0 +1,84 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Lesson 08: Writing the RCR — Global Reporting Format (GRF)</title>
+<style>
+@page{size:A4;margin:18mm 16mm 20mm}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#24342b;font-size:10.5pt;line-height:1.5;margin:0}
+h1,h2,h3{color:#14231b;line-height:1.25;break-after:avoid}
+h1{font-size:21pt;margin:0 0 6pt}h2{font-size:14pt;margin:16pt 0 6pt}h3{font-size:12pt;margin:12pt 0 4pt}
+p{margin:0 0 7pt}ul,ol{margin:0 0 8pt;padding-left:16pt}li{margin:2pt 0}
+a{color:#125a2b;text-decoration:none}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:9pt;background:#f3f9f5;border:1px solid #dbe5df;padding:0 3pt;border-radius:3pt}
+.cover{height:257mm;display:flex;flex-direction:column;justify-content:center;break-after:page;
+  background:linear-gradient(120deg,#0c3d1e,#125a2b 55%,#2a8a50);color:#fff;padding:22mm;border-radius:4mm;margin:0}
+.cover h1{color:#fff;font-size:34pt}.cover .k{letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#bfe3cb;font-size:10pt}
+.cover p{color:#e3f1e8;font-size:13pt}.cover .logo{background:#fff;padding:5mm 7mm;border-radius:3mm;display:inline-block;margin-bottom:14mm}
+.cover .logo img{height:16mm}.cover .meta{margin-top:12mm;font-size:10.5pt;color:#d3ebdb}
+.toc{break-after:page}.toc h2{margin-top:0}.toc ol{list-style:none;padding:0}
+.toc li{display:flex;gap:8pt;padding:3pt 0;border-bottom:1px dotted #c9d8cf}.toc .n{width:22pt;font-weight:700;color:#5b6b62}
+.toc .mod{margin-top:9pt;font-weight:800;color:#125a2b;border:0;text-transform:uppercase;font-size:9pt;letter-spacing:.06em}
+.lesson{break-before:page}
+.lesson-head{background:linear-gradient(120deg,#0c3d1e,#1d7a3e);color:#fff;border-radius:3mm;padding:9pt 13pt;margin-bottom:10pt}
+.lesson-head h1{color:#fff;font-size:17pt;margin:2pt 0}.lesson-head .k{font-size:8.5pt;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#c7e8d2}
+.lesson-head .m{font-size:9pt;color:#dbefe2}
+.objectives{background:#f3f9f5;border:1px solid #dbe5df;border-radius:2mm;padding:7pt 11pt;margin:0 0 10pt}
+.objectives h2,.takeaways h2,.kc h2{font-size:9.5pt;text-transform:uppercase;letter-spacing:.06em;margin:0 0 3pt;color:#125a2b}
+.lesson-figure{margin:0 0 10pt;break-inside:avoid}.lesson-figure img{width:100%;max-height:85mm;object-fit:contain;border:1px solid #dbe5df;border-radius:2mm;background:#f3f9f5}
+figure{margin:9pt 0;break-inside:avoid}figure svg{width:100%;height:auto}figcaption{font-size:8.5pt;color:#5b6b62;margin-top:3pt}
+.diagram{border:1px solid #dbe5df;border-radius:2mm;padding:5pt}
+.table-wrap{margin:8pt 0;border:1px solid #dbe5df;border-radius:2mm;overflow:hidden}
+table{border-collapse:collapse;width:100%;font-size:9pt}th,td{text-align:left;vertical-align:top;padding:4pt 6pt;border-bottom:1px solid #dbe5df}
+th{background:#f3f9f5}tr{break-inside:avoid}td.code{font-weight:800;font-size:12pt;text-align:center;width:34pt}
+.callout{border-left:3pt solid #1d7a3e;background:#f3f9f5;padding:6pt 10pt;margin:8pt 0;border-radius:0 2mm 2mm 0;break-inside:avoid}
+.callout .label{display:block;font-size:8.5pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#125a2b}
+.callout.warn{border-color:#c8102e;background:#fdecef}.callout.warn .label{color:#c8102e}
+.callout.caution{border-color:#d08a00;background:#fff5e0}.callout.caution .label{color:#9a6200}
+.callout.info{border-color:#1f5f99;background:#e9f2fb}.callout.info .label{color:#1f5f99}
+.callout > :last-child{margin-bottom:0}
+.steps{list-style:none;padding:0;counter-reset:s}.steps>li{counter-increment:s;position:relative;padding-left:20pt;margin:4pt 0}
+.steps>li::before{content:counter(s);position:absolute;left:0;top:0;width:14pt;height:14pt;border-radius:50%;background:#1d7a3e;color:#fff;font-weight:800;font-size:8pt;display:flex;align-items:center;justify-content:center}
+.dialog{border:1px solid #dbe5df;border-radius:2mm;padding:4pt 10pt;margin:8pt 0;break-inside:avoid}.dialog p{margin:4pt 0}.dialog b{color:#125a2b}
+.muted{color:#5b6b62}
+.takeaways{background:#0c3d1e;color:#e8f5ec;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}.takeaways h2{color:#fff}
+.kc{border:1.5pt dashed #b9d7c3;border-radius:2mm;padding:7pt 11pt;margin-top:10pt;break-inside:avoid}
+.kc .q{font-weight:700;margin:2pt 0 4pt}.kc ol{list-style:upper-alpha}.kc .a{font-size:9pt;margin-top:4pt;color:#125a2b}
+.disclaimer{font-size:8.5pt;color:#5b6b62;border-top:1px solid #dbe5df;padding-top:6pt;margin-top:14pt}
+.flipcards{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:8px 0}
+.flipcard{display:block;border:1px solid #1d7a3e;border-radius:6px;padding:6px 8px;background:#fff;text-align:left;font:inherit;break-inside:avoid}
+.flipcard .fc-front{display:block;font-weight:700;color:#1d7a3e}.flipcard .fc-front small{font-weight:400;color:#555;margin-left:6px}
+.flipcard .fc-back{display:block;font-size:.95em}.flip-hint{display:none}
+</style></head><body>
+<section class="lesson" style="break-before:auto" id="lesson-8">
+  <div class="lesson-head"><div class="k">Module 3 · The RCR</div>
+    <h1>Lesson 08: Writing the RCR</h1><div class="m">Lesson 8 of 10 · about 14 min</div></div>
+  <div class="objectives"><h2>Learning objectives</h2><ul><li>Fill in the performance section in the correct format.</li><li>Use the standard expressions of the situational awareness section.</li><li>Write RCRs for typical situations.</li></ul></div>
+  <figure class="lesson-figure"><img src="../media/images/lesson-08.jpg" alt="Wet snow close-up"><figcaption>Capitals, codes, thirds.</figcaption></figure>
+  
+<h2>Performance section — format</h2>
+<table><thead><tr><th>Item</th><th>Format</th><th>Example</th></tr></thead><tbody>
+<tr><td>Aerodrome location indicator (Doc 7910)</td><td>nnnn</td><td>DAAG</td></tr>
+<tr><td>Date and time of assessment (UTC)</td><td>MMDDhhmm</td><td>01030723</td></tr>
+<tr><td>Lower runway designator</td><td>nn[L/C/R]</td><td>05</td></tr>
+<tr><td>RWYCC per third</td><td>n/n/n</td><td>5/5/2</td></tr>
+<tr><td>Coverage per third</td><td>NR, 25, 50, 75, 100</td><td>100/100/75</td></tr>
+<tr><td>Depth per third</td><td>NR or 2–3 digits</td><td>NR/NR/06</td></tr>
+<tr><td>Contaminant per third</td><td>CAPITALS</td><td>WET/WET/STANDING WATER</td></tr>
+<tr><td>Width to which the codes apply, if less than published</td><td>nn</td><td>30</td></tr>
+</tbody></table>
+<figure class="lesson-figure"><img src="../media/images/rcr-form.jpg" alt="RCR form — aeroplane performance calculation section and situational awareness section." loading="lazy"><figcaption>RCR form — aeroplane performance calculation section and situational awareness section. <span class="muted">Source: Company GRF documentation — RCR form.</span></figcaption></figure>
+<h2>Typical RCRs</h2>
+<p class="flip-hint">Write it on paper, then tap to compare.</p><div class="flipcards quiz"><button type="button" class="flipcard" aria-pressed="false"><span class="fc-inner"><span class="fc-face fc-front">After a shower: whole runway, water &lt; 3 mm<small>write the codes</small></span><span class="fc-face fc-back"><b>5/5/5 100/100/100 NR/NR/NR WET/WET/WET</b></span></span></button><button type="button" class="flipcard" aria-pressed="false"><span class="fc-inner"><span class="fc-face fc-front">Temperature and wind have dried the runway<small>write the codes</small></span><span class="fc-face fc-back"><b>6/6/6 NR/NR/NR NR/NR/NR DRY/DRY/DRY</b></span></span></button><button type="button" class="flipcard" aria-pressed="false"><span class="fc-inner"><span class="fc-face fc-front">Rubber in the touchdown zone, poor texture<small>write the codes</small></span><span class="fc-face fc-back"><b>3/3/3 100/100/100 NR/NR/NR SLIPPERY WET/SLIPPERY WET/SLIPPERY WET</b></span></span></button><button type="button" class="flipcard" aria-pressed="false"><span class="fc-inner"><span class="fc-face fc-front">Mixed: 09R<small>wet · slush 6 mm 50 % · slush 6 mm 75 %</small></span><span class="fc-face fc-back"><b>09R 5/2/2 100/50/75 NR/06/06 WET/SLUSH/SLUSH</b></span></span></button></div>
+<h2>Situational awareness section</h2>
+<ul>
+  <li>RWY nn LDA REDUCED TO [n]nnn · RWY nn DRIFTING SNOW · RWY nn LOOSE SAND · RWY nn CHEMICALLY TREATED</li>
+  <li>RWY nn SNOWBANK Lnn / Rnn / LRnn FM CL · TWY nn SNOWBANK · RWY nn ADJ SNOWBANKS</li>
+  <li>TWY nn POOR · APRON nnnn POOR · free-text remarks</li>
+  <li><strong>UPGRADED</strong> or <strong>DOWNGRADED</strong> to report an adjustment of the RWYCC.</li>
+</ul>
+<p>Only CAPITAL letters and digits. In the performance section, a <strong>space</strong> separates the items and "/" the thirds; in the situational awareness section a <strong>full stop</strong> separates the groups. Example: <strong>RWY 22L LDA REDUCED TO 1450. RWY 02R LOOSE SAND. TWY B POOR.</strong></p>
+<h2>The drafting aid</h2>
+<figure class="lesson-figure"><img src="../media/images/rcr-guide.jpg" alt="RCR drafting aid: launch, coverage criteria per third, characterisation of each third with the RCAM, RCR and SNOWTAM." loading="lazy"><figcaption>RCR drafting aid: launch, coverage criteria per third, characterisation of each third with the RCAM, RCR and SNOWTAM. <span class="muted">Source: Company GRF documentation — RCR drafting aid.</span></figcaption></figure>
+  <div class="takeaways"><h2>Key takeaways</h2><ul><li>Performance section: aerodrome, MMDDhhmm, lower designator, RWYCC, coverage, depth, contaminant — per third.</li><li>Capitals and digits only; space between items, full stop between situational awareness groups.</li><li>UPGRADED / DOWNGRADED report an adjustment.</li></ul></div>
+  <div class="kc"><h2>Knowledge check</h2><p class="q">How is a whole wet runway (less than 3 mm) reported?</p>
+    <ol><li>6/6/6 DRY</li><li>5/5/5 100/100/100 NR/NR/NR WET/WET/WET</li><li>2/2/2 STANDING WATER</li><li>5/5/5 NR/NR/NR 03/03/03</li></ol>
+    <p class="a"><b>Answer: B.</b> WET, RWYCC 5, coverage 100, depth not reported.</p></div>
+</section><p class="disclaimer">Training material only. It does not replace the Aircraft Flight Manual, FCOM, QRH, MEL or the Domestic Airlines Operations Manual, which always take precedence.</p></body></html>

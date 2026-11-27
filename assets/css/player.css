@@ -171,3 +171,19 @@ body.player-page{margin:0;background:#fff;overflow:hidden}
 /* picture with no text of its own: full width, title above */
 .pl-slide.has-fig.fig-only.on{grid-template-columns:1fr;grid-template-rows:auto minmax(0,1fr);gap:8px}
 .pl-slide.has-fig.fig-only .fig-pic{order:0}
+
+/* ---------- Flip cards (definitions): tap a card to turn it over ---------- */
+.flipcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;margin:12px 0}
+.flipcard{all:unset;cursor:pointer;display:grid;perspective:900px;-webkit-tap-highlight-color:transparent}
+.flipcard .fc-inner{display:grid;transition:transform .5s ease;transform-style:preserve-3d;min-height:108px;height:100%}
+.flipcard.flipped .fc-inner{transform:rotateY(180deg)}
+.flipcard .fc-face{grid-area:1/1;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:12px;padding:14px 16px;
+  display:flex;flex-direction:column;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,.18)}
+.flipcard .fc-front{background:#1d7a3e;color:#fff;font-weight:800;font-size:1.05em;text-align:center;align-items:center}
+.flipcard .fc-front small{display:block;font-weight:600;opacity:.85;font-size:.78em;margin-top:6px}
+.flipcard .fc-back{display:block;background:#fff;color:#14231b;transform:rotateY(180deg);font-size:.92em;line-height:1.35;border:2px solid #1d7a3e;overflow-wrap:anywhere}
+.flipcard .fc-back b{color:#1d7a3e}
+.flipcard:focus-visible .fc-face{outline:3px solid #f2b705;outline-offset:2px}
+.flip-hint{font-size:.85em;opacity:.8;margin:4px 0 0}
+@media print{.flipcard .fc-inner{transform:none!important;display:block}.flipcard .fc-face{backface-visibility:visible;transform:none;box-shadow:none;margin-bottom:4px}
+  .flipcard .fc-front{background:#e8f3ec;color:#14231b}.flip-hint{display:none}}

@@ -1,0 +1,45 @@
+Domestic Airlines — Global Reporting Format (GRF)
+Lesson 9: Transmission of the Information — SNOWTAM, ATS and ATIS
+
+Learning objectives:
+- Describe the SNOWTAM rules (format, language, validity, replacement).
+- Apply the SNOWTAM publication criteria.
+- Describe how ATS and ATIS pass the RCR to pilots and how AIREPs come back.
+
+The information flow
+
+The aerodrome operator sends the RCR to the air traffic services and requests a SNOWTAM from the aeronautical information service. ATS pass the information to pilots by radio and ATIS ; pilots send AIREPs back through ATS.
+
+SNOWTAM rules
+
+Tap a card to turn it over.
+SNOWTAM definition A special series NOTAM, in a standard format, that publishes the RCR — new format since the GRF (EU 2020/469). Language Issued in English (national language in addition if necessary). Validity 8 hours maximum. A new SNOWTAM is issued with each new RCR and replaces the previous one. Times Filing time is after the observation time — ideally as close as possible. Error Issue a new SNOWTAM and cancel the previous one; check the accuracy of what is published and inform the personnel concerned. Two SNOWTAMs? Never: the new one replaces the old one.
+
+Example
+
+SNOWTAM 0131, EADD: 02170055 09L 5/5/5 100/100/100 NR/NR/03 WET/WET/WET SNOW 02170135 09R 5/2/2 100/50/75 NR/06/06 WET/SLUSH/SLUSH
+
+One SNOWTAM can contain the RCR of one or several runways, each with its own observation time.
+
+When is a SNOWTAM published?
+
+Runway Action
+
+Contaminated (standing water, snow, slush, ice, frost) on at least part SNOWTAM via AIS and RCR to ATS
+
+Dry, wet or slippery wet after removal or treatment of snow, slush, ice or frost SNOWTAM via AIS and RCR to ATS
+
+Wet or slippery wet in other cases (e.g. a dry runway becomes wet) RCR to ATS (controller or AFIS) only
+
+ATS and ATIS
+
+ATS transmit the RCR information in the landing direction of the runway in use, by radio and on the ATIS.
+
+Basic rule: when the runway is not dry, ATS request AIREPs from pilots.
+
+Pilots report the braking action when it is equal to or worse than the reported condition.
+
+Key takeaways:
+- RCR → ATS (radio, ATIS); RCR → AIS → SNOWTAM.
+- SNOWTAM: English, 8 h maximum, new one replaces old, filed after observation.
+- Runway not dry → ATS request AIREPs.

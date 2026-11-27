@@ -37,6 +37,13 @@ def load_course(name):
 
 # Spoken forms for abbreviations and symbols (applied in order).
 SPOKEN = [
+    # GRF course
+    (r"\b(EU|UE|\(EU\)|\(UE\)) ?(?:n ?° ?)?(\d{3,4}) ?/ ?(\d{4})", r"\1 regulation \2 of \3"), (r"\s<\s*", " below "), (r"\s>\s*", " above "), (r"≥", "at least "),
+    (r"ADR\.OPS\.([AB])\.0?(\d+)(\([a-z]\))?", lambda m: "A D R ops " + m.group(1) + " " + m.group(2)), (r"ADR\.OR\.D\.0?(\d+)", r"A D R O R D \1"),
+    (r"\bAIREPs?\b", "air-rep"), (r"\bCFME\b", "C F M E"), (r"\bLDTA\b", "L D T A"), (r"\bAIS\b", "A I S"), (r"\bATS\b", "A T S"),
+    (r"\bAFIS\b", "ay-fis"), (r"\bEAPPRE\b", "E A P P R E"), (r"\bMMDDhhmm\b", "month, day, hours, minutes"), (r"\bTALPA\b", "talpa"),
+    (r"\bAMC1\b", "A M C 1"), (r"\bGM1\b", "G M 1"), (r"\bDAAG\b", "D A A G"), (r"\bEADD\b", "E A D D"), (r"\bLDA REDUCED\b", "L D A reduced"),
+    (r"(\d)/(\d)/(\d)\b", r"\1, \2, \3"), (r"\bnn\[L/C/R\]", "runway designator"), (r"Tap a card to turn it over\.|Read the clues, decide, then tap to check\.|Find the code in the matrix, then tap to check\.|Decide, then tap\.|Is a new RCR needed\? Tap to check\.|Write it on paper, then tap to compare\.", ""),
     # aircraft performance courses (before the general rules: % MAC, V-speeds, distances)
     (r"% MAC", " percent M A C"), (r"V1\(MCG\)", "V one M C G"), (r"V1/VR", "V one to V R"), (r"\bVREF ?\+ ?(\d+)", r"V ref plus \1"),
     (r"\bVREF40\b", "V ref 40"), (r"\bVSR0\b", "V S R zero"), (r"\bVSR\b", "V S R"), (r"\bVMCG\b", "V M C G"), (r"\bVMCA\b", "V M C A"),
@@ -146,6 +153,10 @@ def to_speech(html_text):
     t = re.sub(r"<figure\b.*?</figure>", lambda m: " " + slides_mod.caption_speech(m.group(0)) + " ", html_text, flags=re.S)
     t = re.sub(r'<div class="dialog".*?</div>', " ", t, flags=re.S)
     t = re.sub(r'<p class="muted">Example only.*?</p>', " ", t, flags=re.S)
+    # flip cards: front, then back; exercise cards: read the clue only (the pilot turns the card to check)
+    t = re.sub(r'<div class="flipcards quiz">.*?</div>', lambda m: re.sub(r'<span class="fc-face fc-back">.*?</span></span>', '. ', m.group(0), flags=re.S), t, flags=re.S)
+    t = re.sub(r'<span class="fc-face fc-back">', '. ', t)
+    t = re.sub(r'<small>', ', ', t)
     t = re.sub(r"<(sub|sup)>(.*?)</\1>", r"\2", t)
     t = re.sub(r"</(td|th)>", ". ", t)
     t = re.sub(r"</(p|li|h2|h3|tr|div|table|ol|ul)>", ". ", t)

@@ -1,0 +1,47 @@
+Domestic Airlines — Global Reporting Format (GRF)
+Lesson 3: Runway Surface States and Contaminant Identification
+
+Learning objectives:
+- Define the four runway surface states.
+- Identify the eight contaminant descriptors from observations and photos.
+- Explain the impact of the GRF on runway inspection work.
+
+Four runway surface states
+
+Tap a card to turn it over.
+DRY Sèche A runway clear of contaminants and visible moisture within the required length and width. WET Mouillée Surface covered by any visible dampness or water up to and including 3 mm . A damp runway is reported WET. SLIPPERY WET Mouillée glissante A wet runway whose surface friction is degraded — rubber deposits in the touchdown zone, poor texture, poor drainage. Identified by measurements, prior methods or AIREPs. CONTAMINATED Contaminée A significant part of the surface (more than 25 % of a third in use) covered by one or more contaminant descriptors.
+
+Fluid and hard contaminants
+
+Eight descriptors exist (Annex 1 of EU 139/2014). They can be combined to describe the surface — for example dry snow on top of ice.
+
+Tap a card to turn it over.
+STANDING WATER Eau stagnante — fluid Water deeper than 3 mm . Often only in puddles: check the coverage. SLUSH Neige fondante — fluid Water-saturated snow: water runs when you squeeze it and splashes when you step on it. Typically 0 to +5 °C. WET SNOW Neige mouillée — fluid Snow with liquid water: it forms a compact ball, but no water runs out. Not to be confused with slush. DRY SNOW Neige sèche — fluid Falls in cold weather (around −5 °C or below). Light flakes that do not stick: it will not form a ball. COMPACTED SNOW Neige compactée — hard Snow compressed into a solid mass: a vehicle does not sink in; it breaks into lumps when picked up. FROST Gelée / givre — hard Ice crystals formed from airborne moisture on a surface below 0 °C: granular texture, often after calm, clear nights. ICE Glace — hard Frozen water: thicker than frost, very slippery, not shiny; removal is difficult. WET ICE Glace mouillée — hard Ice with water on top, or melting ice — often after freezing rain when the temperature rises above 0 °C. Shiny and wet.
+
+Contaminants in pictures (1)
+
+Contaminants in pictures (2)
+
+Contaminants in pictures (3)
+
+Exercise: identify the contaminant
+
+Read the clues, decide, then tap to check.
+Clue 1 After snowfall · a vehicle does not sink in · it breaks in lumps · OAT < 0 °C COMPACTED SNOW Clue 2 Very slippery but not shiny · OAT well below 0 °C for hours ICE Clue 3 After snowfall · forms a compact ball, no water runs out · OAT near 0 °C WET SNOW Clue 4 After snowfall · water runs when squeezed, splashes under the foot · OAT about +5 °C SLUSH Clue 5 After freezing rain · shiny and wet · negative for hours, just became positive WET ICE Clue 6 Cold, dry weather · will not form a ball · falls apart when blown DRY SNOW Clue 7 No wind · granular texture · more on metal signs · ground well below 0 °C FROST Clue 8 After rain · only in puddles · more than 3 mm · positive temperature STANDING WATER
+
+Impact on the aerodrome operator
+
+Before : in case of doubt a friction measurement or decelerometer was used. Now : the surface is described precisely with predefined codes and terms; friction values are not reported.
+
+The operator issues the NOTAM / SNOWTAM, monitors the runway and performs as many inspections as necessary (ADR.OPS.B.037).
+
+Contamination is no longer only a winter problem: an RWYCC and an RCR are published all year .
+
+New procedures, new training, consistency between reality and what is published, consistency between actors, reliable exchanges with ATS (AIREP, RCR) and AIS (NOTAM, SNOWTAM).
+
+Decision aids Use the meteorological data and the reports of previous inspections to identify the contaminant. Pilots should know these descriptors: they are the words of the RCR.
+
+Key takeaways:
+- Four states: DRY, WET (≤ 3 mm), SLIPPERY WET, CONTAMINATED.
+- Eight descriptors: standing water, slush, wet snow, dry snow, compacted snow, frost, ice, wet ice — can be combined.
+- Identification uses observation, temperature and the history of the day.

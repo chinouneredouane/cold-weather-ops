@@ -1,0 +1,39 @@
+Domestic Airlines — Global Reporting Format (GRF)
+Lesson 10: For Flight Crews — GRF and Aircraft Performance
+
+Learning objectives:
+- Explain how contaminants affect acceleration and braking.
+- Use the RWYCC as a direct input to the landing performance assessment at the time of arrival.
+- Describe the effects on dispatch and take-off, and the robustness margins.
+
+Effects of contaminants on performance
+
+Braking reduced : lower wheel-to-ground friction, aquaplaning.
+
+Acceleration reduced : contaminant drag — displacement/compression drag and spray impingement drag.
+
+Why the 3 mm and 25 % values?
+
+Landing — assessment at the time of arrival
+
+The RWYCC is a direct input to the in-flight landing distance computation, together with OAT, approach speed, autoland, autobrake and reverse thrust. A 15 % margin is applied to the in-flight landing distance.
+
+Robustness to misreported RWYCC
+
+The computation is not always robust to an optimistic error of one code . Pay particular attention to the transitions dry to wet (6 to 5) , wet to standing water (5 to 2) and to POOR or LESS THAN POOR (1 or 0) .
+
+Dispatch and take-off
+
+Dispatch is nominally unchanged. Crosscheck the dispatch result with the landing distance at time of arrival before every flight; compute again in flight only in case of changes (runway, weather or surface condition, failures).
+
+Take-off performance for contaminated surfaces follows EASA AMC 25.1591; some RCAM contaminant types are missing in the data, and a downgraded RWYCC with fluid contaminants needs care — enter both contaminant type and depth, and the RWYCC.
+
+Benefits for operators
+
+Tap a card to turn it over.
+One global standard The same terms and codes everywhere — easier to understand than the old SNOWTAM. Direct link to performance The RWYCC is entered directly into the landing performance computation. Same information everywhere RCR, SNOWTAM, ATIS and ATC give the same picture. Continuous observation AIREPs from crews keep the report close to reality — report braking action.
+
+Key takeaways:
+- Contaminants: less braking (friction, aquaplaning) and less acceleration (drag).
+- RWYCC = direct input at time of arrival; add 15 %.
+- Beware optimistic codes at 6→5, 5→2 and to 1/0; report braking action.
