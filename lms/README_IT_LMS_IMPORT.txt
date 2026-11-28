@@ -3,7 +3,7 @@ SCORM 1.2 PACKAGES FOR THE COMPANY LMS — INSTRUCTIONS FOR IT
 ==============================================================
 
 CONTENTS OF THIS ZIP
-  19 course packages (SCORM 1.2), one .zip per course — do NOT unzip them:
+  20 course packages (SCORM 1.2), one .zip per course — do NOT unzip them:
 
    1. Cold Weather Operations                    30 lessons   pass mark 80%    58.1 MB   cold-weather-operations-scorm12.zip
    2. Upset Prevention and Recovery              28 lessons   pass mark 80%    60.6 MB   upset-prevention-recovery-scorm12.zip
@@ -24,6 +24,7 @@ CONTENTS OF THIS ZIP
   17. Dash 8-Q400 Performance                    8 lessons   pass mark 80%    27.8 MB   q400-performance-scorm12.zip  (Q400 crews)
   18. Dash 8-Q200 Performance                   11 lessons   pass mark 80%    24.0 MB   q200-performance-scorm12.zip  (Q200 crews)
   19. Global Reporting Format (GRF)            10 lessons   pass mark 80%    28.7 MB   grf-scorm12.zip  (all fleets)
+  20. CRM / TEM — Initial and Recurrent        13 lessons   pass mark 80%     __ MB   crm-tem-scorm12.zip  (all fleets, interactive TEM exercises)
 
 HOW TO IMPORT (each package)
   1. In the LMS, create a course or activity of type "SCORM package".
