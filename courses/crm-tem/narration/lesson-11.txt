@@ -1,0 +1,33 @@
+Domestic Airlines — CRM/TEM — Initial and Recurrent
+Lesson 11: Automation and the Philosophy of its Use
+
+Learning objectives:
+- Define an automation surprise.
+- Apply the company philosophy of automation use.
+- Recognise when to downgrade the level of automation.
+
+Automation surprise
+
+An automation surprise is a behaviour of the automation not anticipated by the pilot. It may come from internal logic, inadequate manipulation, lack of transparency or lack of understanding, and it can seriously load the pilot's cognitive capacity — "what is it doing now?".
+
+Principles
+
+Brief the automation : who sets what, which modes are planned for the approach.
+
+Verbalise and verify the FMA : every mode change is announced and checked.
+
+Use the appropriate level : the highest level that reduces workload is not always the best; if the automation does not do what you want, take a lower level — basic modes or manual flight.
+
+Cross-check entries : performance data, FMS routes and approach selection are verified by the other pilot.
+
+Keep manual flying skills : see the UPRT course.
+
+Back to the B777 case
+
+Think, then tap.
+What should the crew have done? Verbalise the FMA change, understand VNAV PATH logic, keep VNAV or use V/S with path monitoring, and never FLCH on final below 1,000 ft. When the aircraft was low? Switch from error management to UAS management: fly the path, stop the descent, go around.
+
+Key takeaways:
+- Automation surprise = unanticipated behaviour; ask 'what is it doing now?'.
+- Brief, verbalise, verify the FMA; cross-check entries.
+- If the automation does not do what you want, take a lower level.

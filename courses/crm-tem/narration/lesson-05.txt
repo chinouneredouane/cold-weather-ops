@@ -1,0 +1,52 @@
+Domestic Airlines — CRM/TEM — Initial and Recurrent
+Lesson 5: Errors and Error Management
+
+Learning objectives:
+- Define a flight crew error.
+- Classify errors: aircraft handling, procedural, communication.
+- Describe error detection and response.
+
+Definition
+
+Errors are "actions or inactions by the flight crew that lead to deviations from organisational or flight crew intentions or expectations". They reduce safety margins and increase the probability of adverse events. Errors can be spontaneous, linked to a threat, or part of an error chain.
+
+Three categories — by the primary interaction
+
+Tap a card to turn it over.
+Aircraft handling error the crew interacts with the aircraft Manual flying (vertical, lateral, speed deviations, flaps, speedbrakes, power); automation (wrong altitude, speed, heading, mode, entries); systems (packs, anti-ice, altimeter, fuel, speed bugs, frequency); ground navigation (wrong taxiway, too fast, failure to hold short). Procedural error the crew interacts with a procedure SOPs (no cross-verification of automation inputs); checklists (missed items, wrong time); callouts omitted; briefings omitted; documentation (wrong weight and balance, fuel, ATIS, clearance, logbook, MEL). Communication error the crew interacts with people Crew to external: missed calls, misinterpreted instructions, wrong read-back, wrong clearance/taxiway/runway. Pilot to pilot: miscommunication or misinterpretation. Intentional non-compliance a sub-set Deliberate deviation from SOPs or regulations — inside any of the three categories, not a separate one. Proficiency a sub-set Skill or knowledge deficiencies, training deficiencies — underlying any of the three categories.
+
+Error management
+
+What matters is whether the error is detected , by whom, how the crew responds , and the outcome . Predictive monitoring identifies threats; reactive monitoring identifies errors. Systemic countermeasures (TCAS, GPWS, windshear warning, SOPs, checklists, briefings) and human-skill countermeasures (knowledge, monitoring, teamwork, workload management) resist and resolve errors.
+
+Practice: threat or error?
+
+Classify each situation: tap Threat, Error or Undesired aircraft state.
+The PF selects a wrong altitude in the MCP after the clearance.
+Threat Error Undesired aircraft state
+Error — Aircraft handling error (automation) — trapped by the PM cross-check.
+
+The crew misses an item of the before-take-off checklist.
+Threat Error Undesired aircraft state
+Error — Procedural error (checklist).
+
+The PM reads back the wrong runway and nobody notices.
+Threat Error Undesired aircraft state
+Error — Communication error (crew to external).
+
+Practice: threat or error? (2)
+
+Classify each situation: tap Threat, Error or Undesired aircraft state.
+The controller gives a clearance into terrain by mistake.
+Threat Error Undesired aircraft state
+Threat — An ATC error is a threat for the flight crew — it is outside their influence.
+
+The crew enters the zero-fuel weight in place of the take-off weight in the FMS.
+Threat Error Undesired aircraft state
+Error — Procedural error (documentation / data entry) — cross-check the performance data.
+
+Key takeaways:
+- Errors come from the crew: actions or inactions leading to deviations.
+- Handling, procedural, communication — by the primary interaction.
+- Non-compliance and proficiency are sub-sets, not categories.
+- Detect, respond, check the outcome.

@@ -187,3 +187,20 @@ body.player-page{margin:0;background:#fff;overflow:hidden}
 .flip-hint{font-size:.85em;opacity:.8;margin:4px 0 0}
 @media print{.flipcard .fc-inner{transform:none!important;display:block}.flipcard .fc-face{backface-visibility:visible;transform:none;box-shadow:none;margin-bottom:4px}
   .flipcard .fc-front{background:#e8f3ec;color:#14231b}.flip-hint{display:none}}
+
+/* ---------- TEM sorter: classify a situation as Threat / Error / Undesired aircraft state ---------- */
+.tem-sort{display:grid;gap:7px;margin:8px 0}
+.tem-item{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);border-radius:12px;padding:7px 10px}
+.tem-q{margin:0 0 6px;font-weight:600}
+.tem-btns{display:flex;flex-wrap:wrap;gap:6px}
+.tem-btns button{all:unset;cursor:pointer;padding:4px 10px;border-radius:999px;font-weight:700;font-size:.88em;background:#fff;color:#14231b;border:2px solid transparent}
+.tem-btns button[data-c="threat"]{border-color:#2f6fd6}.tem-btns button[data-c="error"]{border-color:#e0a100}.tem-btns button[data-c="uas"]{border-color:#d0342c}
+.tem-btns button:focus-visible{outline:3px solid #f2b705}
+.tem-item.done .tem-btns button{opacity:.45;cursor:default}
+.tem-item.done .tem-btns button.pick{opacity:1}
+.tem-btns button.right{background:#1d7a3e;color:#fff;border-color:#1d7a3e;opacity:1}
+.tem-btns button.wrong{background:#b3261e;color:#fff;border-color:#b3261e}
+.tem-why{margin:6px 0 0;font-size:.88em}
+.tem-why[hidden]{display:none}
+.tem-score{font-weight:700;margin:4px 0 0}
+@media print{.tem-btns{display:none}.tem-why[hidden]{display:block!important}.tem-item{border-color:#1d7a3e}}

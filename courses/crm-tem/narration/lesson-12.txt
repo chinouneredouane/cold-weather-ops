@@ -1,0 +1,33 @@
+Domestic Airlines — CRM/TEM — Initial and Recurrent
+Lesson 12: Assessing Non-Technical Skills (NOTECHS)
+
+Learning objectives:
+- Describe the four NOTECHS categories and their elements.
+- Use the rating scale of the company form (OM D 2.6.68).
+- Explain the observation and feedback cycle.
+
+The four categories
+
+Tap a card to turn it over.
+Co-operation Team building and maintaining · consideration of others · support of others · conflict solving. Leadership and managerial skills Use of authority and assertiveness · providing and maintaining standards · planning and co-ordination · workload management. Situation awareness Awareness of aircraft systems · of the external environment · of time. Decision making Problem definition and diagnosis · option generation · risk assessment and option selection.
+
+The rating scale
+
+The company form (OM D 2.6.68) rates each crew member by sector or simulator session, from very poor to very good, with comments:
+
+Principles of assessment
+
+Only observable behaviour is rated — not personality or attitude.
+
+A rating must be linked to a technical consequence to be "unacceptable".
+
+Repeated behaviour is needed to conclude a problem.
+
+The behaviour must be explained in the debriefing.
+
+In the company Recurrent CRM/TEM elements are not assessed; non-technical skills are observed by TRI/TRE in simulator and line checks, and the recurrent programme is updated from these crew assessments (OM D 2.4.5).
+
+Key takeaways:
+- NOTECHS: co-operation, leadership/managerial, situation awareness, decision making.
+- Rate observable behaviour, with the technical consequence.
+- Observations update the training — a continuous cycle.

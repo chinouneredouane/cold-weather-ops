@@ -1,0 +1,47 @@
+Domestic Airlines — CRM/TEM — Initial and Recurrent
+Lesson 13: Case Studies: CRM That Saved the Day
+
+Learning objectives:
+- Analyse three events where CRM contributed to a safe outcome.
+- Identify the threats, errors, UAS and countermeasures in each.
+
+Qantas 32 — A380, uncontained engine failure (2010)
+
+After an uncontained failure of engine 2 shortly after take-off from Singapore, the crew faced dozens of ECAM messages. With five pilots on the flight deck, they shared the workload, verified the systems status, calculated the landing performance and landed safely. All 469 occupants survived. The FAA described the crew performance as an example of CRM at its best.
+
+Tap a card to turn it over.
+Threats Engine explosion, multiple system failures, fuel leaks, heavy weight, degraded braking. Countermeasures Fly first, then manage; clear leadership; delegation; cross-checking the ECAM against reality; performance verification; no rush.
+
+Northwest 85 — B747-400, rudder hard-over (2002)
+
+Over the Bering Sea, a lower rudder jammed. For tens of minutes the crew fought to keep the aircraft stable, then diverted and landed in Anchorage. The captain said it was "a classic application of CRM": four pilots shared the physical and mental work and kept everyone informed.
+
+Tap a card to turn it over.
+Threat Sudden rudder hard-over — a technical failure, not a UAS. Countermeasures Workload sharing between four pilots; communication with company and ATC; planning the diversion and the landing.
+
+US Airways 1549 — A320, Hudson River (2009)
+
+After a bird strike caused the loss of both engines, the crew ditched in the Hudson River; all 155 occupants survived. The NTSB noted that crew teamwork and CRM contributed to the outcome: the captain flew, the first officer ran the checklist, and decisions were made in seconds.
+
+Tap a card to turn it over.
+Threats Birds, dual engine failure, low altitude, dense urban area. Countermeasures Clear task sharing ("my aircraft"), checklist use, rapid decision on the best option, cabin crew coordination.
+
+Your turn
+
+Classify each situation: tap Threat, Error or Undesired aircraft state.
+A bird strike causes the loss of both engines.
+Threat Error Undesired aircraft state
+Threat — An external event beyond the crew's influence.
+
+Both pilots try to restart the engines and nobody flies the aircraft.
+Threat Error Undesired aircraft state
+Error — A workload management error — the countermeasure is task sharing: one flies.
+
+The aircraft decelerates below the minimum speed during the troubleshooting.
+Threat Error Undesired aircraft state
+Undesired aircraft state — A crew-induced speed deviation reducing margins.
+
+Key takeaways:
+- In every case: fly first, share the workload, communicate, decide, verify.
+- CRM turns individual skills into crew performance.
+- Use TEM to analyse any event: threats, errors, UAS, countermeasures.

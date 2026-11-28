@@ -1,0 +1,33 @@
+Domestic Airlines — CRM/TEM — Initial and Recurrent
+Lesson 2: Human Error, Reliability and the Error Chain
+
+Learning objectives:
+- Explain why human error is normal and how it is managed.
+- Describe the error chain and the defences.
+- Distinguish error causality from error management.
+
+Error is normal
+
+About 80 % of aviation accidents involve pilot error — committed by qualified, experienced and trained crews. Error is part of human performance: the aim is not zero error, but errors detected and managed before they matter .
+
+Human factors
+
+Human factors is the science of the interaction between people, technology and organisation. Its areas range from the human–machine interface to teams and communication, procedures and roles, training, organisation and staffing — and recovery from failures.
+
+The error chain
+
+An accident is rarely one error. It is a chain : a threat, a first error, an error that is not detected, a second error, an undesired state, an outcome. Each link is an opportunity to break the chain. Defences exist at three moments:
+
+Tap a card to turn it over.
+Avoid before Prevent the error: planning, briefing, SOPs, anticipation of threats. Trap during Catch the error before it has consequences: monitoring, cross-checking, checklists, callouts. Mitigate after Limit the consequences of an error that got through: recovery, go-around, emergency procedures.
+
+From causality to management
+
+TEM looks less at why an error was made and more at whether it was detected and how the crew responded . An error detected and corrected in time — that does not lead to an undesired aircraft state — is operationally inconsequential . A mismanaged error is one that leads to another error or to an undesired aircraft state.
+
+Good practice Expect errors — your own and your colleague's. Say what you do, check what the other does, and treat each detected error as a success of the crew, not a failure of a person.
+
+Key takeaways:
+- Error is part of human performance; the goal is detection and management.
+- Break the chain: avoid, trap, mitigate.
+- A detected and corrected error is inconsequential; a mismanaged error leads to another error or a UAS.

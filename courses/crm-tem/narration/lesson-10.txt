@@ -1,0 +1,46 @@
+Domestic Airlines — CRM/TEM — Initial and Recurrent
+Lesson 10: Communication, Leadership, Teamwork and Synergy
+
+Learning objectives:
+- Apply effective communication inside and outside the flight deck.
+- Use authority and assertiveness appropriately.
+- Build and maintain an effective team.
+
+Communication
+
+Clear, concise, standard phraseology; closed loop: message → read-back → confirmation.
+
+Inside the flight deck: share the plan, the intentions, the doubts. Outside: ATC, cabin crew, maintenance, dispatch, ground staff.
+
+Barriers: hierarchy, culture, language, noise, workload, assumptions.
+
+Speaking up
+
+How does a young first officer tell an experienced captain that he is wrong? With a graded, persistent message:
+
+Tap a card to turn it over.
+1. Get attention "Captain…" 2. State the concern "We are 20 knots fast and above the path…" 3. State the problem "…we will not be stable at 500 feet…" 4. Propose a solution "…I suggest we go around." 5. Obtain agreement "Do you agree?" — and repeat, more firmly, if needed.
+
+Leadership and authority
+
+NOTECHS leadership and managerial skills: use of authority and assertiveness, providing and maintaining standards, planning and co-ordination, workload management . The cockpit gradient should be neither too steep (the first officer does not dare to speak) nor too flat (nobody decides). The captain sets the tone in the briefing: "If you see anything you don't like, tell me."
+
+Co-operation and synergy
+
+NOTECHS co-operation: team building and maintaining, consideration of others, support of others, conflict solving . Synergy: a crew performs better than the sum of its members when information is shared and every member is used.
+
+Practice: communication
+
+Classify each situation: tap Threat, Error or Undesired aircraft state.
+ATC clears 'descend FL120'; the PM reads back 'FL110' and the controller does not correct it.
+Threat Error Undesired aircraft state
+Error — Communication error by the crew — and the uncorrected read-back is an ATC threat. Closed-loop communication traps it.
+
+The cabin crew does not report smoke smell because 'the pilots are busy'.
+Threat Error Undesired aircraft state
+Threat — For the flight crew, a cabin event not reported is a threat; the cure is a joint briefing that invites communication.
+
+Key takeaways:
+- Closed-loop, standard, shared communication.
+- Speak up: attention, concern, problem, solution, agreement.
+- Balanced authority gradient; co-operation, support, conflict solving.

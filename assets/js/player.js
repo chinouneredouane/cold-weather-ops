@@ -118,6 +118,7 @@
       while (box.scrollHeight > box.clientHeight + 2 && size > 12.5 && guard++ < 20) { size -= 0.5; sl.style.fontSize = size + 'px'; }
     }
     window.addEventListener('resize', function () { fit(); });
+    document.addEventListener('pl:refit', function () { fit(); });
     function go(d) {
       var k = i + d;
       if (k >= total) { var nx = document.getElementById('nextLesson'); if (nx) nx.click(); return; }
@@ -198,5 +199,24 @@
     if (!c) return;
     c.classList.toggle('flipped');
     c.setAttribute('aria-pressed', c.classList.contains('flipped') ? 'true' : 'false');
+  });
+})();
+
+/* TEM sorter: pick Threat / Error / UAS; feedback and running score per block. */
+(function () {
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest && e.target.closest('.tem-btns button');
+    if (!b) return;
+    var item = b.closest('.tem-item');
+    if (!item || item.classList.contains('done')) return;
+    var ok = b.getAttribute('data-c') === item.getAttribute('data-answer');
+    item.classList.add('done', ok ? 'ok' : 'ko');
+    b.classList.add('pick', ok ? 'right' : 'wrong');
+    if (!ok) { var r = item.querySelector('.tem-btns button[data-c="' + item.getAttribute('data-answer') + '"]'); if (r) r.classList.add('right'); }
+    var why = item.querySelector('.tem-why'); if (why) why.hidden = false;
+    document.dispatchEvent(new Event('pl:refit'));
+    var box = item.closest('.tem-sort'), all = box.querySelectorAll('.tem-item'), done = box.querySelectorAll('.tem-item.done');
+    var s = box.querySelector('.tem-score');
+    if (s && done.length === all.length) s.textContent = 'Score: ' + box.querySelectorAll('.tem-item.ok').length + ' / ' + all.length;
   });
 })();

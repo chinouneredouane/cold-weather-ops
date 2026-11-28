@@ -1,0 +1,37 @@
+Domestic Airlines — CRM/TEM — Initial and Recurrent
+Lesson 8: Situation Awareness, Information Processing and Workload
+
+Learning objectives:
+- Define situation awareness and its three levels.
+- Describe how information is acquired and processed.
+- Apply workload management.
+
+The CRM skills
+
+Situation awareness
+
+Tap a card to turn it over.
+Level 1 — Perceive Gather the relevant information: instruments, outside, radio, crew, cabin. Level 2 — Understand Give it meaning: what does this mean for my flight? Level 3 — Project Anticipate: what will happen next, and what will I do if…? Loss of SA warning signs Ambiguity, confusion, fixation, nobody flying, deviations, unresolved discrepancies, "what is it doing now?".
+
+The best situation awareness keeps the smallest gap between the crew's picture and reality. The NOTECHS elements are: awareness of aircraft systems, of the external environment, and of time .
+
+Information acquisition and processing
+
+Attention is limited: we sample information, and under stress the sampling narrows.
+
+Expectation shapes perception: we hear the clearance we expect, and see the runway we expect.
+
+Verbalise: thinking aloud lets the other pilot check your picture ("verbalise, verify, monitor").
+
+Use "What if…?" to keep projecting ahead.
+
+Workload management
+
+Priorities do not change: aviate, navigate, communicate, manage systems . Plan the high-workload phases early (briefings before top of descent), delegate tasks, use the automation level that reduces workload, and say when you are saturated. Avoid task fixation: one pilot always flies the aircraft.
+
+Under-load Low workload is also a threat: vigilance drops on long cruise phases at night. Keep monitoring routines and planned cross-checks.
+
+Key takeaways:
+- SA: perceive, understand, project.
+- Awareness of systems, environment and time.
+- Aviate, navigate, communicate — plan, delegate, avoid fixation.

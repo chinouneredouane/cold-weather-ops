@@ -153,6 +153,8 @@ def to_speech(html_text):
     t = re.sub(r"<figure\b.*?</figure>", lambda m: " " + slides_mod.caption_speech(m.group(0)) + " ", html_text, flags=re.S)
     t = re.sub(r'<div class="dialog".*?</div>', " ", t, flags=re.S)
     t = re.sub(r'<p class="muted">Example only.*?</p>', " ", t, flags=re.S)
+    # TEM sorter: read the situations only, then ask the question (the pilot answers on screen)
+    t = re.sub(r'<div class="tem-btns">.*?</div>|<p class="tem-why"[^>]*>.*?</p>|<p class="tem-score"[^>]*>.*?</p>', ' ', t, flags=re.S)
     # flip cards: front, then back; exercise cards: read the clue only (the pilot turns the card to check)
     t = re.sub(r'<div class="flipcards quiz">.*?</div>', lambda m: re.sub(r'<span class="fc-face fc-back">.*?</span></span>', '. ', m.group(0), flags=re.S), t, flags=re.S)
     t = re.sub(r'<span class="fc-face fc-back">', '. ', t)

@@ -1,0 +1,29 @@
+Domestic Airlines — CRM/TEM — Initial and Recurrent
+Lesson 3: Safety Culture, SOPs and Organisational Factors
+
+Learning objectives:
+- Describe a positive safety culture.
+- Explain the role of SOPs and the gap between procedures and reality.
+- Recognise organisational (latent) threats.
+
+Safety culture
+
+The safety culture of a company is "how we do things here when nobody is watching". A positive culture is reporting (errors are reported), just (honest errors are not punished; reckless behaviour is), learning (data change the procedures and the training) and informed (management knows the real risks).
+
+SOPs
+
+Standard operating procedures make crews predictable to each other: any two pilots of the company can fly together. SOPs are systemic countermeasures — but they describe the work as imagined . Line observation (LOSA) and checks show the work as done .
+
+Organisational threats
+
+Organisational threats can be removed or minimised at source by the company. They are often latent : not visible from the flight deck until a safety analysis uncovers them.
+
+Tap a card to turn it over.
+Operational pressure Delays, late arrivals, short turn-arounds, schedule changes. Aircraft Malfunctions, automation anomalies, MEL/CDL items. Cabin / maintenance / ground Cabin events, maintenance errors, ground handling and de-icing events. Dispatch and documentation Paperwork errors, manual or chart errors, incomplete documentation. Organisation Culture and organisational changes, crew scheduling, equipment design issues. Crew remains the last line But the organisation has earlier opportunities to remove these threats — report them.
+
+Intentional non-compliance Skipping a required checklist "because we are late" turns an organisational threat (pressure) into an error. Reporting the pressure is the professional answer; adapting the procedure on your own is not.
+
+Key takeaways:
+- Positive culture: reporting, just, learning, informed.
+- SOPs = systemic countermeasure; LOSA shows the gap between SOP and reality.
+- Organisational threats are often latent — report them so they can be removed at source.
