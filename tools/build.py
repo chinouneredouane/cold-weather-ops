@@ -428,7 +428,10 @@ def build_lesson(course, n):
 
     cue_file = os.path.join(ROOT, "courses", course["slug"], "media", "audio", f"lesson-{n:02d}.cues.json")
     cues = json.dumps(json.load(open(cue_file))["cues"]) if os.path.exists(cue_file) else "[]"
-    intro, body_parts = slides_mod.body_slides(L["body"])
+    body_html = slides_mod.number_cards(L["body"])
+    intro, body_parts = slides_mod.body_slides(body_html)
+    clip_dir = os.path.join(ROOT, "courses", course["slug"], "media", "audio", "cards")
+    clips = "1" if os.path.exists(os.path.join(clip_dir, f"lesson-{n:02d}-1.mp3")) else "0"
     first = f'<section class="objectives" data-narrate><h2>Learning objectives</h2><ul>{objectives}</ul></section>'
     if intro:
         first += f'<div data-narrate>{intro}</div>'
@@ -469,7 +472,7 @@ def build_lesson(course, n):
 </head>
 <body class="player-page" {course_attrs(course, n)}>
 {all_courses_drawer(root)}
-<div class="player" data-prev="{prev_href}" data-cues='{cues}'>
+<div class="player" data-prev="{prev_href}" data-cues='{cues}' data-clips="{clips}" data-clipbase="../media/audio/cards/lesson-{n:02d}-">
   <header class="pl-top">
     <a class="pl-brand" href="../index.html"><img src="{root}assets/img/logo.png" alt="Domestic Airlines" /><b>{esc(course['title'])}</b></a>
     <div class="pl-crumbs" id="plCrumbs"></div>

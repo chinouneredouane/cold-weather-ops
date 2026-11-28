@@ -38,6 +38,27 @@
     var cues = []; try { cues = JSON.parse(root.getAttribute('data-cues') || '[]'); } catch (e) { cues = []; }
     var synth = window.speechSynthesis || null;
     var playing = false, muted = false;
+    // ---- interactive cards: each card has its own clip, played only when the learner taps it
+    var clipsOn = root.getAttribute('data-clips') === '1', clipBase = root.getAttribute('data-clipbase') || '';
+    var cardAudio = new Audio(); cardAudio.preload = 'none';
+    function stopCard() { try { cardAudio.pause(); } catch (e) { /* ignore */ } if (synth && !hasMp3()) synth.cancel(); }
+    function cardText(el) {
+      var c = el.cloneNode(true);
+      c.querySelectorAll('.tem-btns, .tem-score').forEach(function (x) { x.remove(); });
+      return (c.textContent || '').replace(/\s+/g, ' ').trim();
+    }
+    function playCard(el) {
+      stopCard();
+      if (hasMp3() && !audio.paused) audio.pause();             // the card takes over from the slide narration
+      if (synth) synth.cancel();
+      if (muted || !el) return;
+      var no = el.getAttribute('data-clip');
+      if (clipsOn && no) { cardAudio.src = clipBase + no + '.mp3'; cardAudio.currentTime = 0; cardAudio.play().catch(function () {}); }
+      else if (synth) { var u = new SpeechSynthesisUtterance(cardText(el)); u.lang = 'en-GB'; synth.speak(u); }
+    }
+    document.addEventListener('pl:card', function (e) { playCard(e.detail); });
+    document.addEventListener('pl:cardstop', function () { stopCard(); });
+    function hasCards(k) { return !!(slides[k] && slides[k].querySelector('.flipcard, .tem-item')); }
 
     function hasMp3() { return !!audio && audio.style.display !== 'none'; }
     function synced() { return hasMp3() && cues.length === total; }
@@ -68,7 +89,7 @@
     }
     function slideText(k) {
       var c = slides[k].cloneNode(true);
-      c.querySelectorAll('figure, .table-wrap, table, .kc, .next-up, script, style, .dtcalc').forEach(function (x) { x.remove(); });
+      c.querySelectorAll('figure, .table-wrap, table, .kc, .next-up, script, style, .dtcalc, .flipcards, .tem-sort, .flip-hint').forEach(function (x) { x.remove(); });
       return (c.textContent || '').replace(/\s+/g, ' ').trim();
     }
     function speak(k) {
@@ -78,7 +99,7 @@
       if (!text || muted) return;
       var u = new SpeechSynthesisUtterance(text);
       u.lang = 'en-GB'; u.rate = 1;
-      u.onend = function () { if (playing && i === k) { if (k < total - 1) show(k + 1); else setPlay(false); } };
+      u.onend = function () { if (playing && i === k && !hasCards(k)) { if (k < total - 1) show(k + 1); else setPlay(false); } };
       synth.speak(u);
     }
     function follow() {                       // called after the learner changes slide
@@ -93,6 +114,7 @@
 
     function show(k, fromAudio) {
       i = Math.max(0, Math.min(total - 1, k));
+      stopCard();
       slides.forEach(function (s, n) { s.classList.toggle('on', n === i); });
       var figmode = slides[i].classList.contains('has-fig');
       var tall = !figmode && !!slides[i].querySelector('figure, .table-wrap, table, .kc, .dtcalc');
@@ -153,7 +175,10 @@
       audio.addEventListener('timeupdate', function () {
         if (!playing || !synced()) return;
         var nxt = cue(i + 1);
-        if (nxt !== null && audio.currentTime >= nxt - 0.05) show(i + 1, true);   // slides follow the narration
+        if (nxt !== null && audio.currentTime >= nxt - 0.05) {
+          if (hasCards(i)) { audio.pause(); seek(nxt); return; }      // cards: wait for the learner, then Next
+          show(i + 1, true);                                            // slides follow the narration
+        }
       });
       audio.addEventListener('ended', function () {
         setPlay(false);
@@ -198,7 +223,9 @@
     var c = e.target.closest && e.target.closest('.flipcard');
     if (!c) return;
     c.classList.toggle('flipped');
-    c.setAttribute('aria-pressed', c.classList.contains('flipped') ? 'true' : 'false');
+    var on = c.classList.contains('flipped');
+    c.setAttribute('aria-pressed', on ? 'true' : 'false');
+    document.dispatchEvent(on ? new CustomEvent('pl:card', { detail: c }) : new Event('pl:cardstop'));
   });
 })();
 
@@ -215,6 +242,7 @@
     if (!ok) { var r = item.querySelector('.tem-btns button[data-c="' + item.getAttribute('data-answer') + '"]'); if (r) r.classList.add('right'); }
     var why = item.querySelector('.tem-why'); if (why) why.hidden = false;
     document.dispatchEvent(new Event('pl:refit'));
+    document.dispatchEvent(new CustomEvent('pl:card', { detail: item }));
     var box = item.closest('.tem-sort'), all = box.querySelectorAll('.tem-item'), done = box.querySelectorAll('.tem-item.done');
     var s = box.querySelector('.tem-score');
     if (s && done.length === all.length) s.textContent = 'Score: ' + box.querySelectorAll('.tem-item.ok').length + ' / ' + all.length;

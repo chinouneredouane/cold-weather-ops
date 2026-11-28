@@ -153,12 +153,10 @@ def to_speech(html_text):
     t = re.sub(r"<figure\b.*?</figure>", lambda m: " " + slides_mod.caption_speech(m.group(0)) + " ", html_text, flags=re.S)
     t = re.sub(r'<div class="dialog".*?</div>', " ", t, flags=re.S)
     t = re.sub(r'<p class="muted">Example only.*?</p>', " ", t, flags=re.S)
-    # TEM sorter: read the situations only, then ask the question (the pilot answers on screen)
-    t = re.sub(r'<div class="tem-btns">.*?</div>|<p class="tem-why"[^>]*>.*?</p>|<p class="tem-score"[^>]*>.*?</p>', ' ', t, flags=re.S)
-    # flip cards: front, then back; exercise cards: read the clue only (the pilot turns the card to check)
-    t = re.sub(r'<div class="flipcards quiz">.*?</div>', lambda m: re.sub(r'<span class="fc-face fc-back">.*?</span></span>', '. ', m.group(0), flags=re.S), t, flags=re.S)
-    t = re.sub(r'<span class="fc-face fc-back">', '. ', t)
-    t = re.sub(r'<small>', ', ', t)
+    # interactive cards are NOT read with the slide: each card has its own clip, played when the learner taps it
+    t = re.sub(r'<p class="flip-hint">.*?</p>', ' ', t, flags=re.S)
+    t = re.sub(r'<div class="flipcards[^"]*">.*?</div>', '<p>Tap each card to hear it.</p>', t, flags=re.S)
+    t = re.sub(r'<div class="tem-sort">.*?<p class="tem-score"[^>]*></p></div>', '<p>Answer each situation on the screen.</p>', t, flags=re.S)
     t = re.sub(r"<(sub|sup)>(.*?)</\1>", r"\2", t)
     t = re.sub(r"</(td|th)>", ". ", t)
     t = re.sub(r"</(p|li|h2|h3|tr|div|table|ol|ul)>", ". ", t)
@@ -191,12 +189,34 @@ def slide_scripts(n):
     if COURSE is None:
         load_course("cold_weather")
     L = COURSE["lessons"][n - 1]
+    return [t + " " + b if t else b for t, b in slide_parts(n)]
+
+
+def slide_parts(n):
+    """(title, body) speech per slide — the title is spoken on its own, followed by a short pause."""
+    if COURSE is None:
+        load_course("cold_weather")
+    L = COURSE["lessons"][n - 1]
     intro, body = slides_mod.body_slides(L["body"])
-    out = [to_speech(f"<p>Lesson {n}. {L['title']}.</p><p>Learning objectives. {' '.join(L['objectives'])}</p>{intro}")]
+    out = [(to_speech(f"<p>Lesson {n}. {L['title']}.</p>"), to_speech(f"<p>Learning objectives. {' '.join(L['objectives'])}</p>{intro}"))]
     for _t, h in body:
-        h = re.sub(r"<h2>[^<]*\(\d+\)</h2>", "", h)          # continuation slide: do not read the title again
-        out.append(to_speech(h.replace("<h2>", "<p>").replace("</h2>", "</p>")))
-    out.append(to_speech("<p>Key takeaways. " + " ".join(L["takeaways"]) + "</p>"))
+        m = re.match(r"\s*<h2>(.*?)</h2>", h, re.S)
+        title = "" if (not m or re.search(r"\(\d+\)$", m.group(1).strip())) else to_speech(f"<p>{m.group(1)}</p>")
+        rest = h[m.end():] if m else h
+        out.append((title, to_speech(rest)))
+    out.append((to_speech("<p>Key takeaways.</p>"), to_speech("<p>" + " ".join(L["takeaways"]) + "</p>")))
+    return out
+
+
+def card_scripts(n):
+    """[(slide_index, clip_no, speech)] for the interactive cards of a lesson."""
+    L = COURSE["lessons"][n - 1]
+    intro, body = slides_mod.body_slides(slides_mod.number_cards(L["body"]))
+    out, k = [], 0
+    for si, h in enumerate([intro] + [h for _t, h in body]):
+        for _no, html_ in slides_mod.card_html(h):
+            k += 1
+            out.append((si, k, to_speech(html_)))
     return out
 
 
@@ -216,33 +236,75 @@ def sentences(text, limit=300):
     return out
 
 
+# Three narrators: the instructor opens and closes each lesson; the content sections alternate between the two others.
+VOICES = dict(instructor="bm_george", woman="af_heart", young="am_fenrir")
+TITLE_PAUSE = 0.1           # extra pause after a title before the narration starts (s)
+GAP = 0.35                  # pause between sentence groups (s)
+
+
+def voice_for(k, total):
+    if k == 0 or k == total - 1:
+        return VOICES["instructor"]
+    return VOICES["woman"] if k % 2 else VOICES["young"]
+
+
+def _lang(v):
+    return "en-gb" if v.startswith("b") else "en-us"
+
+
+def _encode(audio, sr, out, title):
+    import soundfile as sf
+    with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as tmp:
+        sf.write(tmp.name, audio, sr)
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", tmp.name, "-ac", "1", "-ar", "24000",
+                        "-codec:a", "libmp3lame", "-b:a", "48k", "-metadata", f"title={title}",
+                        "-metadata", "artist=Domestic Airlines Training", out], check=True)
+        os.unlink(tmp.name)
+
+
 def render(args):
     n, model, voices, voice, speed, outdir, course = args
     load_course(course)
     import numpy as np
-    import soundfile as sf
     from kokoro_onnx import Kokoro
     k = Kokoro(model, voices)
-    pieces = []
     sr = 24000
-    cues, length = [], 0
-    for text in slide_scripts(n):                    # each slide starts a new sentence group -> exact slide cues
-        cues.append(round(length / sr, 2))
+    pieces, cues, length = [], [], 0
+    parts = slide_parts(n)
+
+    def say(text, v, pause):
+        nonlocal length
         for chunk in sentences(text):
-            samples, sr = k.create(chunk, voice=voice, speed=speed, lang="en-us")
+            samples, _sr = k.create(chunk, voice=v, speed=speed, lang=_lang(v))
             pieces.append(samples)
-            pieces.append(np.zeros(int(sr * 0.35), dtype=samples.dtype))
-            length += len(samples) + int(sr * 0.35)
+            pieces.append(np.zeros(int(sr * pause), dtype=samples.dtype))
+            length += len(samples) + int(sr * pause)
+
+    for si, (title, body) in enumerate(parts):         # each slide starts a new sentence group -> exact slide cues
+        cues.append(round(length / sr, 2))
+        v = voice_for(si, len(parts))
+        if title:
+            say(title, v, GAP + TITLE_PAUSE)
+        if body:
+            say(body, v, GAP)
     audio = np.concatenate(pieces)
     with open(os.path.join(outdir, f"lesson-{n:02d}.cues.json"), "w", encoding="utf-8") as f:
-        json.dump(dict(duration=round(len(audio) / sr, 2), cues=cues + [None], source="recording"), f)
-    with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as tmp:
-        sf.write(tmp.name, audio, sr)
-        out = os.path.join(outdir, f"lesson-{n:02d}.mp3")
-        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", tmp.name, "-ac", "1", "-ar", "24000",
-                        "-codec:a", "libmp3lame", "-b:a", "48k", "-metadata", f"title=Lesson {n}: {COURSE['lessons'][n-1]['title']}",
-                        "-metadata", "artist=Domestic Airlines Training", out], check=True)
-        os.unlink(tmp.name)
+        json.dump(dict(duration=round(len(audio) / sr, 2), cues=cues + [None], source="recording",
+                       voices=[voice_for(si, len(parts)) for si in range(len(parts))]), f)
+    _encode(audio, sr, os.path.join(outdir, f"lesson-{n:02d}.mp3"), f"Lesson {n}: {COURSE['lessons'][n-1]['title']}")
+    # one clip per interactive card, in the voice of its slide
+    cdir = os.path.join(outdir, "cards")
+    cs = card_scripts(n)
+    if cs:
+        os.makedirs(cdir, exist_ok=True)
+    for si, no, text in cs:
+        v = voice_for(si, len(parts))
+        seg = []
+        for chunk in sentences(text):
+            samples, _sr = k.create(chunk, voice=v, speed=speed, lang=_lang(v))
+            seg += [samples, np.zeros(int(sr * 0.2), dtype=samples.dtype)]
+        if seg:
+            _encode(np.concatenate(seg), sr, os.path.join(cdir, f"lesson-{n:02d}-{no}.mp3"), f"Lesson {n} card {no}")
     return n, len(audio) / sr
 
 

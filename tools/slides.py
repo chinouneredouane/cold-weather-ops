@@ -63,3 +63,33 @@ def caption_speech(fig_html):
     cap = re.sub(r'<span class="muted">\s*Source:.*?</span>', "", m.group(1), flags=re.S)
     cap = re.sub(r"Source:.*$", "", re.sub(r"<[^>]+>", " ", cap), flags=re.S).strip()
     return f"<p>In the figure: {cap}</p>" if cap else ""
+
+
+# ---------------------------------------------------------------- interactive cards (flip cards, TEM sorter)
+_CARD = re.compile(r'class="(flipcard|tem-item)"')
+
+
+def number_cards(html):
+    """Give every interactive card a clip number (document order): its own narration is played only when tapped."""
+    k = [0]
+    def rep(m):
+        k[0] += 1
+        return f'{m.group(0)} data-clip="{k[0]}"'
+    return _CARD.sub(rep, html)
+
+
+def card_html(html):
+    """[(clip_no, speech_html)] for the interactive cards in html, in document order (numbering as number_cards)."""
+    ms = list(_CARD.finditer(html))
+    out = []
+    for n, m in enumerate(ms, 1):
+        seg = html[m.start(): ms[n].start() if n < len(ms) else len(html)]
+        if m.group(1) == "flipcard":
+            f = re.search(r'<span class="fc-face fc-front">(.*?)</span><span class="fc-face fc-back">(.*?)</span></span>', seg, re.S)
+            parts = [f.group(1).replace("<small>", ". <small>"), f.group(2)] if f else []
+        else:
+            q = re.search(r'<p class="tem-q">(.*?)</p>', seg, re.S)
+            w = re.search(r'<p class="tem-why"[^>]*>(.*?)</p>', seg, re.S)
+            parts = [q.group(1) if q else "", w.group(1) if w else ""]
+        out.append((n, "".join(f"<p>{p}</p>" for p in parts if p)))
+    return out
